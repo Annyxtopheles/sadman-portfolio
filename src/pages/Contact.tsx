@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, FileText, ArrowUpRight, Copy, Check, Send } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 
@@ -53,18 +52,12 @@ const Contact: React.FC = () => {
                 <button
                   type="button"
                   onClick={copyEmail}
-                  className="inline-flex items-center gap-1 text-xs font-mono text-[#CBD5E1] hover:text-[#FFFFFF] transition-colors"
+                  className="text-xs font-mono text-[#CBD5E1] hover:text-[#00E5FF] transition-colors"
                 >
                   {copied ? (
-                    <>
-                      <Check className="w-3.5 h-3.5 text-[#4ADE80]" />
-                      <span className="text-[#4ADE80] font-semibold">Copied!</span>
-                    </>
+                    <span className="text-[#4ADE80] font-semibold">Copied!</span>
                   ) : (
-                    <>
-                      <Copy className="w-3.5 h-3.5" />
-                      <span>Copy</span>
-                    </>
+                    <span>Copy</span>
                   )}
                 </button>
               </div>
@@ -73,7 +66,7 @@ const Contact: React.FC = () => {
                 className="group flex items-center justify-between text-base sm:text-lg font-medium text-[#FFFFFF] hover:text-[#00E5FF] transition-colors"
               >
                 <span>{email}</span>
-                <ArrowUpRight className="w-4 h-4 text-[#94A3B8] group-hover:text-[#00E5FF] transition-colors" />
+                <span className="text-[#94A3B8] group-hover:text-[#00E5FF] transition-colors">↗</span>
               </a>
             </div>
 
@@ -87,7 +80,7 @@ const Contact: React.FC = () => {
                 className="group flex items-center justify-between text-base sm:text-lg font-medium text-[#FFFFFF] hover:text-[#00E5FF] transition-colors"
               >
                 <span>linkedin.com/in/sadmanzamankhan</span>
-                <ArrowUpRight className="w-4 h-4 text-[#94A3B8] group-hover:text-[#00E5FF] transition-colors" />
+                <span className="text-[#94A3B8] group-hover:text-[#00E5FF] transition-colors">↗</span>
               </a>
             </div>
 
@@ -101,9 +94,7 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full font-mono text-xs font-medium uppercase tracking-wider bg-[#FFFFFF] text-[#0A0A0A] hover:bg-[#F1F5F9] transition-all shadow-sm font-bold"
               >
-                <FileText className="w-4 h-4" />
-                <span>Download Resume (PDF)</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span>Download Resume (PDF) ↗</span>
               </a>
             </div>
           </div>
@@ -117,9 +108,8 @@ const Contact: React.FC = () => {
 
             {submitted ? (
               <div className="p-6 rounded-xl bg-[#18181B] border border-[#4ADE80]/40 text-[#4ADE80] space-y-2">
-                <div className="font-semibold flex items-center gap-2">
-                  <Check className="w-5 h-5" />
-                  <span>Opening your email client...</span>
+                <div className="font-semibold">
+                  Opening your email client...
                 </div>
                 <p className="text-xs text-[#CBD5E1]">
                   If your email client didn't open automatically, you can email me directly at <strong className="text-[#FFFFFF]">{email}</strong>.
@@ -174,10 +164,9 @@ const Contact: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full text-xs font-mono font-medium uppercase tracking-wider bg-[#00E5FF] text-[#0A0A0A] hover:bg-[#38BDF8] transition-colors font-bold shadow-md"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full text-xs font-mono font-medium uppercase tracking-wider bg-[#00E5FF] text-[#0A0A0A] hover:bg-[#38BDF8] transition-colors font-bold shadow-md cursor-pointer"
                 >
-                  <Send className="w-4 h-4" />
-                  <span>Send Message</span>
+                  <span>Send Message ↗</span>
                 </button>
               </form>
             )}

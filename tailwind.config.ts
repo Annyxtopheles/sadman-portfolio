@@ -14,10 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
-        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        'display': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
+        'sans': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'mono': ['"JetBrains Mono"', 'monospace'],
-        'heading': ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+        'heading': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {
         'xs':   ['13px', { lineHeight: '18px', letterSpacing: '0.02em' }],

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FileText, ArrowUpRight, CheckCircle2, ShieldCheck, Award, Briefcase, Wrench } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 
@@ -130,9 +129,7 @@ const About: React.FC = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-mono font-medium uppercase tracking-wider bg-[#FFFFFF] text-[#0A0A0A] hover:bg-[#F1F5F9] transition-all shadow-sm font-bold"
                 >
-                  <FileText className="w-4 h-4" />
-                  <span>Download Résumé (PDF)</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
+                  <span>Download Résumé (PDF) ↗</span>
                 </a>
                 <a
                   href="mailto:sadmanz.khan@gmail.com"
@@ -167,8 +164,7 @@ const About: React.FC = () => {
 
         {/* 2. Experience Timeline */}
         <section className="py-14 border-b border-[#27272A] space-y-8">
-          <div className="flex items-center gap-2">
-            <Briefcase className="w-5 h-5 text-[#00E5FF]" />
+          <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Experience
             </h2>
@@ -211,8 +207,7 @@ const About: React.FC = () => {
 
         {/* 3. Skills & Capabilities */}
         <section className="py-14 border-b border-[#27272A] space-y-8">
-          <div className="flex items-center gap-2">
-            <Wrench className="w-5 h-5 text-[#00E5FF]" />
+          <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Skills &amp; Capabilities
             </h2>
@@ -227,7 +222,7 @@ const About: React.FC = () => {
                 <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
                   {group.items.map((item, iIdx) => (
                     <li key={iIdx} className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#4ADE80] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -260,8 +255,7 @@ const About: React.FC = () => {
 
         {/* 5. Certifications */}
         <section className="py-14 space-y-8">
-          <div className="flex items-center gap-2">
-            <Award className="w-5 h-5 text-[#00E5FF]" />
+          <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Certifications
             </h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Project } from '@/data/projects';
+import TiltedCard from './TiltedCard';
 
 interface WorkCardProps {
   project: Project;
@@ -10,17 +11,23 @@ export const WorkCard: React.FC<WorkCardProps> = ({ project }) => {
   return (
     <Link
       to={`/work/${project.slug}`}
-      className="group flex flex-col rounded-xl overflow-hidden bg-[#141414] hover:bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] transition-all duration-200 hover:scale-[1.01] hover:shadow-xl"
+      className="group flex flex-col rounded-xl overflow-hidden bg-[#141414] hover:bg-[#18181B] border border-[#27272A] hover:border-[#3F3F46] transition-all duration-200"
     >
-      {/* Card Image — clean screenshot without distracting tag overlays */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A0A0A]">
-        <img
-          src={project.coverImage}
-          alt={project.title}
-          loading="lazy"
-          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+      {/* Tilted Card Image with 3D Spring Physics */}
+      <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A0A0A] p-2 sm:p-3">
+        <TiltedCard
+          imageSrc={project.coverImage}
+          altText={project.title}
+          captionText={project.category}
+          containerHeight="100%"
+          containerWidth="100%"
+          imageHeight="100%"
+          imageWidth="100%"
+          rotateAmplitude={12}
+          scaleOnHover={1.04}
+          showTooltip={true}
+          showMobileWarning={false}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#141414]/60 via-transparent to-transparent opacity-30 group-hover:opacity-10 transition-opacity" />
       </div>
 
       {/* Text block */}

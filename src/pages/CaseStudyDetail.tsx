@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, Cpu, Clock, Layers, Sparkles } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import { getProjectBySlug, getAdjacentProjects } from '@/data/projects';
@@ -15,9 +14,6 @@ const CaseStudyDetail: React.FC = () => {
   }
 
   const { prev, next } = getAdjacentProjects(project.slug);
-  const isShipped = project.status === 'SHIPPED';
-  const isCaseStudy = project.status === 'CASE STUDY';
-  const dotColor = isShipped ? 'bg-[#4ADE80]' : isCaseStudy ? 'bg-[#7DA2FF]' : 'bg-[#FF6B35]';
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#00E5FF] selection:text-[#0A0A0A]">
@@ -34,8 +30,7 @@ const CaseStudyDetail: React.FC = () => {
             to="/work"
             className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#CBD5E1] hover:text-[#00E5FF] transition-colors"
           >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Back to all projects</span>
+            <span>← Back to all projects</span>
           </Link>
         </div>
 
@@ -64,8 +59,7 @@ const CaseStudyDetail: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-[#FFFFFF] text-[#0A0A0A] hover:bg-[#F1F5F9] transition-colors font-bold"
               >
-                <span>Live Preview</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span>Live Preview ↗</span>
               </a>
             </div>
           )}
@@ -93,9 +87,8 @@ const CaseStudyDetail: React.FC = () => {
 
         {/* 3. TL;DR Callout Box */}
         <section className="my-12 p-6 sm:p-8 rounded-xl bg-[#141414] border-l-4 border-l-[#00E5FF] border-y border-r border-[#27272A] space-y-4">
-          <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF] font-semibold flex items-center gap-2">
-            <Sparkles className="w-4 h-4" />
-            <span>Executive TL;DR</span>
+          <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF] font-semibold">
+            Executive TL;DR
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 text-sm">
@@ -167,7 +160,7 @@ const CaseStudyDetail: React.FC = () => {
                   <ul className="space-y-2 pt-2 border-t border-[#27272A] text-xs text-[#CBD5E1]">
                     {step.details.map((detail, dIdx) => (
                       <li key={dIdx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-[#4ADE80] shrink-0 mt-0.5" />
+                        <span className="text-[#00E5FF] mt-0.5">•</span>
                         <span>{detail}</span>
                       </li>
                     ))}
@@ -179,18 +172,13 @@ const CaseStudyDetail: React.FC = () => {
 
           {/* AI-Augmented Workflow Specifics */}
           {project.aiWorkflow && (
-            <div className="p-6 rounded-xl bg-[#141414] border border-[#27272A] flex items-start gap-4">
-              <div className="p-2 rounded-lg bg-[#1C1C1C] border border-[#27272A] text-[#00E5FF] shrink-0 mt-0.5">
-                <Cpu className="w-5 h-5" />
+            <div className="p-6 rounded-xl bg-[#141414] border border-[#27272A] space-y-2">
+              <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF] font-semibold">
+                AI-Augmented Prototyping Workflow
               </div>
-              <div className="space-y-1">
-                <div className="font-mono text-xs uppercase tracking-wider text-[#FFFFFF] font-semibold">
-                  AI-Augmented Prototyping Workflow
-                </div>
-                <p className="text-sm text-[#CBD5E1] leading-relaxed">
-                  {project.aiWorkflow}
-                </p>
-              </div>
+              <p className="text-sm text-[#CBD5E1] leading-relaxed">
+                {project.aiWorkflow}
+              </p>
             </div>
           )}
         </section>
@@ -261,9 +249,8 @@ const CaseStudyDetail: React.FC = () => {
               to={`/work/${prev.slug}`}
               className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#27272A] hover:border-[#3F3F46] transition-all space-y-2"
             >
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors">
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Previous Project</span>
+              <div className="text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors">
+                ← Previous Project
               </div>
               <div className="font-display text-lg font-semibold text-[#FFFFFF] group-hover:text-[#00E5FF] transition-colors">
                 {prev.title}
@@ -276,9 +263,8 @@ const CaseStudyDetail: React.FC = () => {
               to={`/work/${next.slug}`}
               className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#27272A] hover:border-[#3F3F46] transition-all space-y-2 text-left sm:text-right"
             >
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors justify-start sm:justify-end w-full">
-                <span>Next Project</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+              <div className="text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors">
+                Next Project →
               </div>
               <div className="font-display text-lg font-semibold text-[#FFFFFF] group-hover:text-[#00E5FF] transition-colors">
                 {next.title}
