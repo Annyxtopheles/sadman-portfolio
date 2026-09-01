@@ -147,11 +147,6 @@ const About: React.FC = () => {
               <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
                 Versatile UI/UX Designer with hands-on experience across enterprise dashboards, brand systems, and AI-augmented prototyping. Uses Figma AI and low-code tools (Lovable) to move from concept to testable prototype quickly, reducing client revision cycles. Sole designer at SJ Innovation since February 2026, independently owning all client and internal design work.
               </p>
-
-              <div className="pt-2 font-mono text-xs text-[#94A3B8] space-y-1">
-                <div>Dhaka, Bangladesh · <a href="mailto:sadmanz.khan@gmail.com" className="text-[#FFFFFF] hover:text-[#00E5FF] transition-colors">sadmanz.khan@gmail.com</a></div>
-                <div>Diploma in Engineering in Computer Science | Munshiganj Polytechnic Institute (2021 – 2025)</div>
-              </div>
             </div>
 
             {/* Illustration of Sadman */}
