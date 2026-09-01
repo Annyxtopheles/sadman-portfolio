@@ -120,42 +120,42 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#00E5FF] selection:text-[#0A0A0A]">
+    <div className="min-h-screen bg-[#000000] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title="About & Experience — Sadman Zaman Khan"
         description="Experience timeline, competencies, and background of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper."
       />
 
-      <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full pt-[100px] md:pt-[120px]">
+      <main className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px]">
         {/* 1. Profile Header & Bio with Illustration */}
-        <section className="py-10 md:py-14 border-b border-[#27272A]">
+        <section className="py-10 md:py-14 border-b border-[#1F1F1F]">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
             <div className="max-w-3xl space-y-6">
               <div className="space-y-2">
                 <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#FFFFFF]">
                   Sadman Zaman Khan
                 </h1>
-                <div className="font-mono text-xs sm:text-sm text-[#94A3B8] tracking-wider">
+                <div className="text-xs sm:text-sm text-[#888888] tracking-wider">
                   /sɑːd.mɑːn zɑː.mɑːn kɑːn/ · (Saad-maan Zaa-maan Khaan)
                 </div>
-                <p className="font-display text-xl sm:text-2xl text-[#00E5FF] font-medium pt-1">
+                <p className="font-display text-xl sm:text-2xl text-[#FFFFFF] font-medium pt-1">
                   UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                 </p>
               </div>
 
               {/* Bio matching Resume Summary */}
-              <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
+              <p className="text-base sm:text-lg text-[#999999] leading-relaxed">
                 Versatile UI/UX Designer with hands-on experience across enterprise dashboards, brand systems, and AI-augmented prototyping. Uses Figma AI and low-code tools (Lovable) to move from concept to testable prototype quickly, reducing client revision cycles. Sole designer at SJ Innovation since February 2026, independently owning all client and internal design work.
               </p>
             </div>
 
             {/* Illustration of Sadman */}
             <div className="lg:w-72 shrink-0 flex justify-center">
-              <div className="relative w-56 sm:w-64 rounded-2xl overflow-hidden border border-[#27272A] bg-[#141414] shadow-2xl p-2 hover:border-[#00E5FF]/40 transition-colors">
+              <div className="relative w-56 sm:w-64 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors">
                 <img
                   src={profileIllustration}
                   alt="Sadman Zaman Khan Illustration"
-                  className="w-full h-auto rounded-xl object-contain bg-white/95"
+                  className="w-full h-auto rounded-[2px] object-contain bg-white/95"
                 />
               </div>
             </div>
@@ -163,7 +163,7 @@ const About: React.FC = () => {
         </section>
 
         {/* 2. Experience Timeline */}
-        <section className="py-14 border-b border-[#27272A] space-y-8">
+        <section className="py-14 border-b border-[#1F1F1F] space-y-8">
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Experience
@@ -174,28 +174,28 @@ const About: React.FC = () => {
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-xl bg-[#141414] border border-[#27272A] space-y-4 hover:border-[#3F3F46] transition-colors"
+                className="p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 hover:border-[#333333] transition-colors"
               >
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
                   <div className="space-y-0.5">
                     <h3 className="font-display text-xl font-bold text-[#FFFFFF]">{exp.role}</h3>
-                    <div className="text-sm text-[#00E5FF] font-medium">{exp.company} · {exp.location}</div>
+                    <div className="text-sm text-[#888888] font-medium">{exp.company} · {exp.location}</div>
                   </div>
-                  <span className="font-mono text-xs text-[#CBD5E1] px-3 py-1 rounded-full bg-[#1C1C1C] border border-[#27272A] shrink-0">
+                  <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0">
                     {exp.period}
                   </span>
                 </div>
 
                 {exp.highlight && (
-                  <p className="text-xs font-mono text-[#4ADE80] bg-[#4ADE80]/10 border border-[#4ADE80]/20 px-3 py-1.5 rounded-lg">
+                  <p className="text-xs text-[#FFFFFF] bg-[#141414] border border-[#1F1F1F] px-3 py-1.5 rounded-[4px]">
                     {exp.highlight}
                   </p>
                 )}
 
-                <ul className="space-y-3 pt-2 text-sm text-[#CBD5E1] leading-relaxed">
+                <ul className="space-y-3 pt-2 text-sm text-[#999999] leading-relaxed">
                   {exp.bullets.map((bullet, bIdx) => (
                     <li key={bIdx} className="flex items-start gap-2.5">
-                      <span className="text-[#00E5FF] mt-1 shrink-0">•</span>
+                      <span className="text-[#FFFFFF] mt-1 shrink-0">•</span>
                       <span>{bullet}</span>
                     </li>
                   ))}
@@ -206,7 +206,7 @@ const About: React.FC = () => {
         </section>
 
         {/* 3. Technical & Core Competencies */}
-        <section className="py-14 border-b border-[#27272A] space-y-8">
+        <section className="py-14 border-b border-[#1F1F1F] space-y-8">
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Technical &amp; Core Competencies
@@ -215,14 +215,14 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {skillGroups.map((group, idx) => (
-              <div key={idx} className="p-6 rounded-xl bg-[#141414] border border-[#27272A] space-y-4">
-                <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF] font-semibold border-b border-[#27272A] pb-2">
+              <div key={idx} className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4">
+                <div className="text-xs uppercase tracking-wider text-[#FFFFFF] font-semibold border-b border-[#1F1F1F] pb-2">
                   {group.category}
                 </div>
-                <ul className="space-y-2.5 text-sm text-[#CBD5E1]">
+                <ul className="space-y-2.5 text-sm text-[#999999]">
                   {group.items.map((item, iIdx) => (
                     <li key={iIdx} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF] shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -247,15 +247,15 @@ const About: React.FC = () => {
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-5 rounded-xl bg-[#141414] border border-[#27272A] hover:border-[#00E5FF]/40 space-y-1 transition-all block"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] space-y-1 transition-all block"
               >
-                <div className="text-sm font-semibold text-[#FFFFFF] group-hover:text-[#00E5FF] transition-colors flex items-center justify-between">
+                <div className="text-sm font-semibold text-[#FFFFFF] group-hover:text-[#FFFFFF] transition-colors flex items-center justify-between">
                   <span>{cert.title}</span>
-                  <span className="text-[#94A3B8] group-hover:text-[#00E5FF] text-xs transition-colors">↗</span>
+                  <span className="text-[#888888] group-hover:text-[#FFFFFF] text-xs transition-colors">↗</span>
                 </div>
-                <div className="font-mono text-xs text-[#CBD5E1] flex items-center justify-between pt-1">
+                <div className="text-xs text-[#888888] flex items-center justify-between pt-1">
                   <span>{cert.issuer}</span>
-                  <span className="text-[#94A3B8]">{cert.date}</span>
+                  <span>{cert.date}</span>
                 </div>
               </a>
             ))}
