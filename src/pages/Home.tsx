@@ -15,15 +15,12 @@ const Home: React.FC = () => {
         {/* 1. Hero Section */}
         <section className="pt-8 md:pt-14 pb-14 md:pb-18 border-b border-[#1F1F1F]">
           <div className="max-w-4xl space-y-6">
-            {/* Title, Name Pronunciation & Role Line */}
+            {/* Title & Role Line */}
             <div className="space-y-3">
               <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#FFFFFF] leading-[1.08]">
                 Sadman Zaman Khan
               </h1>
-              <div className="text-xs sm:text-sm text-[#888888] tracking-wider">
-                /sɑːd.mɑːn zɑː.mɑːn kɑːn/ · (Saad-maan Zaa-maan Khaan)
-              </div>
-              <p className="font-display text-xl sm:text-2xl md:text-3xl font-medium text-[#FFFFFF] pt-1">
+              <p className="font-display text-xl sm:text-2xl md:text-3xl font-medium text-[#FFFFFF]">
                 UI/UX Designer &amp; AI-Augmented Prototyper
               </p>
             </div>

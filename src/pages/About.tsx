@@ -126,18 +126,15 @@ const About: React.FC = () => {
         description="Experience timeline, competencies, and background of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper."
       />
 
-      <main className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px]">
-        {/* 1. Profile Header & Bio with Illustration */}
-        <section className="py-10 md:py-14 border-b border-[#1F1F1F]">
+      <main className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-16">
+        {/* 1. Profile Header & Bio with Illustration (No separating border) */}
+        <section className="pt-6">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
             <div className="max-w-3xl space-y-6">
               <div className="space-y-2">
                 <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#FFFFFF]">
                   Sadman Zaman Khan
                 </h1>
-                <div className="text-xs sm:text-sm text-[#888888] tracking-wider">
-                  /sɑːd.mɑːn zɑː.mɑːn kɑːn/ · (Saad-maan Zaa-maan Khaan)
-                </div>
                 <p className="font-display text-xl sm:text-2xl text-[#FFFFFF] font-medium pt-1">
                   UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                 </p>
@@ -162,26 +159,26 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 2. Experience Timeline */}
-        <section className="py-14 border-b border-[#1F1F1F] space-y-8">
+        {/* 2. Experience Timeline (Full width without separator) */}
+        <section className="space-y-8">
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Experience
             </h2>
           </div>
 
-          <div className="space-y-8 max-w-4xl">
+          <div className="space-y-8 w-full">
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 hover:border-[#333333] transition-colors"
+                className="p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 hover:border-[#333333] transition-colors w-full"
               >
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
                   <div className="space-y-0.5">
                     <h3 className="font-display text-xl font-bold text-[#FFFFFF]">{exp.role}</h3>
                     <div className="text-sm text-[#888888] font-medium">{exp.company} · {exp.location}</div>
                   </div>
-                  <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0">
+                  <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0 self-start sm:self-auto">
                     {exp.period}
                   </span>
                 </div>
@@ -205,8 +202,8 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 3. Technical & Core Competencies */}
-        <section className="py-14 border-b border-[#1F1F1F] space-y-8">
+        {/* 3. Technical & Core Competencies (No separator) */}
+        <section className="space-y-8">
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Technical &amp; Core Competencies
@@ -233,7 +230,7 @@ const About: React.FC = () => {
         </section>
 
         {/* 4. Certifications & Verification */}
-        <section className="py-14 space-y-8">
+        <section className="space-y-8 pb-12">
           <div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Certifications

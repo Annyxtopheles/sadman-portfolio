@@ -12,16 +12,24 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
   showFilters = true,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<'All' | ProjectCategory>(initialCategory);
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const filteredProjects = selectedCategory === 'All'
     ? PROJECTS
     : PROJECTS.filter((p) => p.category === selectedCategory);
 
   return (
-    <div className="w-full space-y-8">
+    <div className="w-full space-y-8 relative">
+      {/* Subtle backdrop overlay when hovering any card */}
+      <div
+        className={`fixed inset-0 bg-[#000000]/60 backdrop-blur-[1px] pointer-events-none transition-opacity duration-300 z-10 ${
+          hoveredId ? 'opacity-100' : 'opacity-0'
+        }`}
+      />
+
       {/* Category Filter Header */}
       {showFilters && (
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-4 border-b border-[#1F1F1F]">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-4 border-b border-[#1F1F1F] relative z-20">
           {CATEGORIES.map((cat) => {
             const isSelected = selectedCategory === cat;
 
@@ -43,18 +51,18 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
         </div>
       )}
 
-      {/* 3-Col Grid matching Whitman layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      {/* 3-Col Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 relative z-20">
         {filteredProjects.map((project) => (
-          <WorkCard key={project.id} project={project} />
+          <WorkCard
+            key={project.id}
+            project={project}
+            isHovered={hoveredId === project.id}
+            isAnyHovered={hoveredId !== null}
+            onHoverStart={() => setHoveredId(project.id)}
+            onHoverEnd={() => setHoveredId(null)}
+          />
         ))}
-      </div>
-
-      {/* Total count footer */}
-      <div className="pt-8 border-t border-[#1F1F1F] flex items-center justify-between text-xs text-[#888888]">
-        <div>
-          Total: <span className="text-[#FFFFFF] font-medium">{filteredProjects.length} Works</span>
-        </div>
       </div>
     </div>
   );
