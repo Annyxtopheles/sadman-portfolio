@@ -1,0 +1,1 @@
+ALTER TABLE public.matrimony_family_nodes ADD COLUMN IF NOT EXISTS photo_path text;

@@ -1,0 +1,1 @@
+GRANT EXECUTE ON FUNCTION public.log_audit_action(text, text, uuid, text, jsonb) TO authenticated;

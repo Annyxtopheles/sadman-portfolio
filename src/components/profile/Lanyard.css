@@ -1,0 +1,20 @@
+.lanyard-fullscreen-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: none;
+  pointer-events: none !important;
+  overflow: visible;
+  z-index: 20;
+}
+
+.lanyard-fullscreen-wrapper canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none !important;
+}

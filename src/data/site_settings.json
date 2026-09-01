@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fc7edad2-7eaf-4e50-811a-2a912155c00f",
+    "key": "profile",
+    "value": {
+      "name": "Sadman Zaman Khan"
+    },
+    "asset_path": "https://media.licdn.com/dms/image/v2/D5603AQFcYA2EQMly4g/profile-displayphoto-scale_400_400/B56Z4IUfPdKoAg-/0/1778256052652?e=1784160000&v=beta&t=txs4zD55fmruROcwVrde3x7rUg-_Be0JlSaASnX-UZ4",
+    "updated_at": "2026-06-24T15:02:31.433+00:00",
+    "updated_by": "010fa170-62cd-4e6d-96ad-3d1819f07b68"
+  },
+  {
+    "id": "790f5a1f-90cc-4340-ad93-cd6a174593b3",
+    "key": "branding",
+    "value": {
+      "status_line": "Drinking filtered tap water, fiddling with Figma, listening to Godspeed You! Black Emperor.",
+      "hero_targets": {
+        "builds": {
+          "navPaths": [
+            "/portfolio"
+          ],
+          "sectionIds": []
+        },
+        "writes": {
+          "navPaths": [
+            "/poetry"
+          ],
+          "sectionIds": []
+        },
+        "enabled": true
+      }
+    },
+    "asset_path": null,
+    "updated_at": "2026-06-26T14:44:03.491319+00:00",
+    "updated_by": "010fa170-62cd-4e6d-96ad-3d1819f07b68"
+  },
+  {
+    "id": "be140764-3092-4cb3-bd18-ca1b39f543ae",
+    "key": "poetry_viewer",
+    "value": {
+      "show_toggle": true,
+      "default_mode": "modern"
+    },
+    "asset_path": null,
+    "updated_at": "2026-06-30T12:26:49.944342+00:00",
+    "updated_by": "010fa170-62cd-4e6d-96ad-3d1819f07b68"
+  },
+  {
+    "id": "f8ef1abd-7af0-4fdc-abe4-1b594f0fc871",
+    "key": "integrations",
+    "value": {
+      "lastfm_username": "Asphyxtonihil",
+      "anilist_username": "Annyxtopheles",
+      "letterboxd_username": "Annyxtopheles"
+    },
+    "asset_path": null,
+    "updated_at": "2026-06-30T15:19:34.194+00:00",
+    "updated_by": "010fa170-62cd-4e6d-96ad-3d1819f07b68"
+  },
+  {
+    "id": "7f02e9d1-65ec-42a9-b58d-d1e7c94c6afd",
+    "key": "seo",
+    "value": {
+      "default_title": "",
+      "default_description": ""
+    },
+    "asset_path": null,
+    "updated_at": "2026-07-14T13:15:28.950216+00:00",
+    "updated_by": "5113b59a-5962-47c0-b810-1df28eedcb5f"
+  },
+  {
+    "id": "f3863f09-f3d5-4a35-a43b-7ffd98eadb60",
+    "key": "contact",
+    "value": {
+      "email": ""
+    },
+    "asset_path": null,
+    "updated_at": "2026-07-14T13:16:34.217+00:00",
+    "updated_by": "5113b59a-5962-47c0-b810-1df28eedcb5f"
+  },
+  {
+    "id": "a5caa949-94e5-4a57-92e6-6e3ed5625237",
+    "key": "resume",
+    "value": {},
+    "asset_path": "https://tr.ee/n5vARoGAq1",
+    "updated_at": "2026-07-14T13:17:35.887+00:00",
+    "updated_by": "5113b59a-5962-47c0-b810-1df28eedcb5f"
+  },
+  {
+    "id": "b02eb5a8-0780-4301-b978-76a675b9e4cc",
+    "key": "social",
+    "value": {
+      "spotify": "https://open.spotify.com/user/cy4txrib5jrbw5b5d25iq9l9f",
+      "twitter": "https://x.com/annyxtopheles",
+      "youtube": "https://www.youtube.com/@annyxtopheles",
+      "facebook": "https://facebook.com/SadmanZ.Khan",
+      "linkedin": "https://www.linkedin.com/in/sadmanzamankhan/",
+      "instagram": "https://www.instagram.com/ananyanwu",
+      "letterboxd": "https://letterboxd.com/Annyxtopheles/",
+      "myanimelist": "https://myanimelist.net/profile/Annyxtopheles"
+    },
+    "asset_path": null,
+    "updated_at": "2026-07-14T13:18:50.75176+00:00",
+    "updated_by": "5113b59a-5962-47c0-b810-1df28eedcb5f"
+  }
+]

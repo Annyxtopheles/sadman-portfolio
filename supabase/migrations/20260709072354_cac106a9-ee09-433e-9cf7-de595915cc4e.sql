@@ -1,0 +1,1 @@
+ALTER TABLE public.matrimony_config ADD COLUMN IF NOT EXISTS ambient jsonb NOT NULL DEFAULT '{}'::jsonb;

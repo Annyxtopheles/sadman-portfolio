@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system with --color-* OKLCH tokens. Light = warm paper, dark = metallic charcoal. */
+
+@layer base {
+  :root {
+    --color-background: #0A0A0A;
+    --color-surface: #141414;
+    --color-surface-hover: #1C1C1C;
+    --color-border: #242424;
+    --color-foreground: #F5F5F0;
+    --color-text-secondary: #9A9A93;
+    --color-text-tertiary: #5C5C56;
+    --color-accent: #FF6B35;
+    --color-success: #4ADE80;
+    --color-info: #7DA2FF;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --color-background: #0A0A0A;
+    --color-surface: #141414;
+    --color-surface-hover: #1C1C1C;
+    --color-border: #242424;
+    --color-foreground: #F5F5F0;
+    --color-text-secondary: #9A9A93;
+    --color-text-tertiary: #5C5C56;
+    --color-accent: #FF6B35;
+    --color-success: #4ADE80;
+    --color-info: #7DA2FF;
+  }
+}
+
+@layer base {
+  * {
+    border-color: #242424;
+  }
+
+  html {
+    background-color: #0A0A0A;
+    color: #F5F5F0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #F5F5F0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    color: #F5F5F0;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #FF6B35;
+    color: #0A0A0A;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bg-surface-2 {
+    background-color: var(--color-surface-2);
+  }
+
+  .border-hairline {
+    border-color: var(--color-border-hairline);
+  }
+
+  .bg-metal-gradient {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+  }
+
+  /* Clean monochrome accent surface: inverted solid tones in light/dark */
+  .bg-accent-surface {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+  }
+  .hover\:bg-accent-surface:hover {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+  }
+
+  .text-metal-gradient {
+    color: inherit;
+  }
+
+  /* Hairline card lift on hover — keeps the skeletal language */
+  .card-lift {
+    transition: box-shadow 250ms ease, transform 250ms ease;
+  }
+  .card-lift:hover {
+    box-shadow: 0 1px 0 0 currentColor;
+  }
+
+  /* ——— Film grain overlay ——— */
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1500; /* above page content (navbar portal sits at 2000) */
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-size: 180px 180px;
+  }
+  .dark .grain-overlay {
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+
+  /* ——— Breathing empty-state ——— */
+  @keyframes breathe {
+    0%, 100% { opacity: 0.6; }
+    50%      { opacity: 1;   }
+  }
+  .animate-breathe {
+    animation: breathe 4.5s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-breathe { animation: none; }
+    .grain-overlay { opacity: 0.025; }
+  }
+
+  /* ——— Infinite gallery carousel (right-to-left, loops seamlessly) ——— */
+  .animate-gallery-scroll {
+    animation: scroll-left 60s linear infinite;
+  }
+  .animate-gallery-scroll:hover {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-gallery-scroll { animation: none; }
+  }
+
+  /* ——— Fluid scroll-snap for long-form writing ——— */
+  .snap-writing {
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 6rem;
+  }
+  .snap-writing > * {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .snap-writing { scroll-snap-type: none; }
+  }
+
+  /* ——— Family tree capsule cards: hover lift + overlay reveal ——— */
+  .family-card {
+    z-index: 10;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease, box-shadow 260ms ease;
+  }
+  .family-card:hover,
+  .family-card:focus-visible {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px -12px hsl(var(--foreground) / 0.28);
+    z-index: 30;
+  }
+  .family-card:hover .family-card-reveal,
+  .family-card:focus-visible .family-card-reveal {
+    max-height: 96px;
+    opacity: 1;
+  }
+  .family-card:focus-visible {
+    outline: 2px solid hsl(var(--accent));
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .family-card { transition: border-color 250ms ease; }
+    .family-card:hover, .family-card:focus-visible { transform: none; }
+  }
+
+  /* ——— Rich-text prose (admin editor + blog detail) ——— */
+  .prose-content { color: inherit; }
+  .prose-content h2 { @apply text-2xl md:text-3xl font-medium tracking-[-0.01em] mt-10 mb-4; }
+  .prose-content h3 { @apply text-xl md:text-2xl font-medium mt-8 mb-3; }
+  .prose-content p  { @apply mb-6 leading-relaxed; }
+  .prose-content a  { @apply underline underline-offset-4 hover:opacity-60 transition-opacity; }
+  .prose-content ul { @apply list-disc pl-6 mb-6 space-y-1; }
+  .prose-content ol { @apply list-decimal pl-6 mb-6 space-y-1; }
+  .prose-content blockquote { @apply border-l-2 border-foreground pl-4 italic opacity-80 my-6; }
+  .prose-content strong { font-weight: 600; }
+  .prose-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border: 1px solid hsl(var(--foreground));
+  }
+  .prose-content p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+    height: 0;
+  }
+}
+
+/* ——— Scanport custom typeface ——— */
+@font-face {
+  font-family: 'Scanport';
+  src: url('/fonts/Scanport-VF.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
+/* ——— Isolated poetry viewer canvas ——— */
+@font-face {
+  font-family: 'CustomAntique';
+  src: url('/__l5e/assets-v1/421adcdc-a02e-47e5-8b76-551690f41c80/CaslonAntique.ttf') format('truetype');
+  font-display: swap;
+}
+
+.poetry-canvas {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+.poetry-canvas .poem-body {
+  transition: font-family 350ms ease, line-height 350ms ease, letter-spacing 350ms ease;
+}
+
+/* Antique — font swap only, no color/background changes */
+.poetry-canvas.antique .poem-body {
+  font-family: 'CustomAntique', 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.45;
+  letter-spacing: 0.005em;
+  font-weight: 400;
+}
+.poetry-canvas.antique .poem-title {
+  font-family: 'CustomAntique', 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* Modern mode — defer to existing typography (no override needed) */
+.poetry-canvas.modern .poem-body {
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+}
+
+

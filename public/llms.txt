@@ -1,0 +1,11 @@
+# Sadman Zaman Khan
+
+> Personal site of Sadman Zaman Khan — a portfolio of selected work, a notebook of poems, and a quiet blog about design, software, and attention.
+
+## Pages
+
+- [Home](/): Hero, featured projects, recent poetry and writing.
+- [Portfolio](/portfolio): Selected design, product, and side projects.
+- [Poetry](/poetry): A growing notebook of poems.
+- [Blog](/blog): Essays and short writing.
+- [Contact](/contact): Send Sadman a message.

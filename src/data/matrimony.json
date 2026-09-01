@@ -1,0 +1,570 @@
+{
+  "quiz": [
+    {
+      "id": "6354d58e-aba3-4c84-b1a3-edbc39e65841",
+      "axis": "lifestyle",
+      "prompt": "A perfect weekend looks like…",
+      "weight": 1,
+      "options": [
+        {
+          "id": "0ce9e035-bbd8-4acc-8836-28da017297be",
+          "label": "Long walks and a quiet coffee",
+          "score": 1,
+          "sort_order": 0
+        },
+        {
+          "id": "01408480-905e-4bfe-b1ba-8e9f5ba58160",
+          "label": "Cooking something new at home",
+          "score": 2,
+          "sort_order": 1
+        },
+        {
+          "id": "38b54487-6a78-40ca-bc65-6160413e7d9a",
+          "label": "A trip somewhere unfamiliar",
+          "score": 3,
+          "sort_order": 2
+        }
+      ],
+      "sort_order": 0,
+      "owner_ideal_score": 2
+    },
+    {
+      "id": "af5b8774-0c5d-474e-bc14-fff89054bf3a",
+      "axis": "communication",
+      "prompt": "How do you handle a disagreement?",
+      "weight": 1,
+      "options": [
+        {
+          "id": "5164e93b-1bfe-4131-b77d-f20b7b3a0077",
+          "label": "Talk it through the same day",
+          "score": 3,
+          "sort_order": 0
+        },
+        {
+          "id": "1db0a9d4-316d-4ea8-addd-486181cc18ab",
+          "label": "Take a night, then talk",
+          "score": 2,
+          "sort_order": 1
+        },
+        {
+          "id": "82e47072-1d78-436e-99f8-52691df6f102",
+          "label": "Write it out first",
+          "score": 1,
+          "sort_order": 2
+        }
+      ],
+      "sort_order": 1,
+      "owner_ideal_score": 3
+    },
+    {
+      "id": "35786952-5c29-4f0e-af9d-d1e82f7d4ccb",
+      "axis": "values",
+      "prompt": "What matters most in a partner?",
+      "weight": 1,
+      "options": [
+        {
+          "id": "81bde417-aa4f-42ae-a4ad-f2c161ece2dc",
+          "label": "Ambition",
+          "score": 1,
+          "sort_order": 0
+        },
+        {
+          "id": "a1cae456-a720-47e2-9ee3-f8c73c061046",
+          "label": "Kindness",
+          "score": 3,
+          "sort_order": 1
+        },
+        {
+          "id": "644f0030-7ce0-414c-9d76-0f9a842cb5d0",
+          "label": "Curiosity",
+          "score": 2,
+          "sort_order": 2
+        }
+      ],
+      "sort_order": 2,
+      "owner_ideal_score": 3
+    },
+    {
+      "id": "3b0b1c70-cbc4-40be-9df2-8f23e9620465",
+      "axis": "humor",
+      "prompt": "Pick your humor:",
+      "weight": 1,
+      "options": [
+        {
+          "id": "fd6f22a8-8538-46c2-a1db-d5f16318b9c0",
+          "label": "Dry & observational",
+          "score": 2,
+          "sort_order": 0
+        },
+        {
+          "id": "14b50c62-8d1a-407a-8261-eadb09905569",
+          "label": "Warm & silly",
+          "score": 3,
+          "sort_order": 1
+        },
+        {
+          "id": "b8ed4155-38fd-4c26-9595-8472548be7f5",
+          "label": "Sharp & witty",
+          "score": 1,
+          "sort_order": 2
+        }
+      ],
+      "sort_order": 3,
+      "owner_ideal_score": 2
+    }
+  ],
+  "photos": [
+    {
+      "id": "4035a7b7-348f-440a-8c00-69ab06f56aa9",
+      "url": "https://i.ibb.co.com/8LSLVJM7/385544297-230650383346130-7229487388909424682-n.png",
+      "caption": null,
+      "category": "portraits",
+      "sort_order": 5,
+      "focal_position": "50% 50%"
+    },
+    {
+      "id": "0c8c1f98-e65b-47a2-af7f-1f295b23cf80",
+      "url": "https://i.ibb.co.com/N6ypd008/IMG-20251218-100655.jpg",
+      "caption": null,
+      "category": "Portraits",
+      "sort_order": 3,
+      "focal_position": "50% 50%"
+    },
+    {
+      "id": "5c047f4e-0c5e-47e3-b589-1766c6daaaae",
+      "url": "https://i.ibb.co.com/CC6FXsJ/1764960174755.jpg",
+      "caption": "AI Hackathon Certificate Photoshoot",
+      "category": "Portraits",
+      "sort_order": 4,
+      "focal_position": "50% 50%"
+    },
+    {
+      "id": "2c807f81-b137-426b-9a40-efc9e66fce8c",
+      "url": "https://i.ibb.co.com/5gY5kqPX/348619678-626467566167160-2574069293751357365-n-copy.jpg",
+      "caption": null,
+      "category": "Portraits",
+      "sort_order": 6,
+      "focal_position": "50% 50%"
+    },
+    {
+      "id": "f09900c9-5567-4776-bf3d-b9c9be678566",
+      "url": "https://i.ibb.co.com/qMBYWqyc/IMG-20241009-165411-V.jpg",
+      "caption": null,
+      "category": "Portraits",
+      "sort_order": 7,
+      "focal_position": "50% 50%"
+    },
+    {
+      "id": "2145c61e-1b3f-41f3-af6f-6b646404518a",
+      "url": "https://i.ibb.co.com/PZZKcsnV/yours-truly-in-bright-sunlight.jpg",
+      "caption": null,
+      "category": "Portraits",
+      "sort_order": 8,
+      "focal_position": "50% 50%"
+    }
+  ],
+  "skills": [
+    {
+      "id": "f9731e80-2f68-4a67-8314-9388448c183e",
+      "url": null,
+      "kind": "language",
+      "label": "Bengali",
+      "level": "5",
+      "detail": "Native",
+      "sort_order": 0
+    },
+    {
+      "id": "a6ef5e78-81ae-4da8-ace4-c23314189b9e",
+      "url": null,
+      "kind": "language",
+      "label": "English",
+      "level": "5",
+      "detail": "Fluent (C2)",
+      "sort_order": 1
+    },
+    {
+      "id": "fc4b387b-73e4-4b2a-8079-2e12d67331cf",
+      "url": null,
+      "kind": "language",
+      "label": "Arabic",
+      "level": null,
+      "detail": "Want to learn",
+      "sort_order": 2
+    },
+    {
+      "id": "ec64ddb1-a668-4ec3-bb14-afdbbdd5d6a6",
+      "url": null,
+      "kind": "skill",
+      "label": "Graphic Design",
+      "level": "4",
+      "detail": "Brand identity",
+      "sort_order": 0
+    },
+    {
+      "id": "efbaf19d-6c36-409b-aea5-aeed221b9a33",
+      "url": null,
+      "kind": "skill",
+      "label": "Poetry Writing",
+      "level": "4",
+      "detail": "Dark, cosmic",
+      "sort_order": 1
+    }
+  ],
+  "profile": {
+    "bio": "I am a UI/UX Designer and Writer based in Dhaka, Bangladesh, currently working full-time at SJ Innovation. Beyond design systems and creative technology, I find grounding in literature, writing poetry, exploring cinema, and spending meaningful time with family. My roots are in Munshiganj and Dhaka, shaped by deep cultural values, empathy, and intellectual curiosity.\n\nMy life philosophy centers on honesty, quiet focus, and continuous growth. I value open communication, shared humor, and mutual respect. I am looking for a companion who appreciates warmth, emotional intelligence, and values—someone with whom life feels like a thoughtful, supportive partnership.",
+    "faq": [
+      {
+        "answer": "5 feet 8 inches. I'm tired of people lying about their heights or dick size, I personally find it pathetic. I am 5'8\" naturally, and when wearing shoes perhaps 1 or 2 more inches are added. Furthermore, I don't think I'm tall. 5'10\" is tall. I'm above average height.",
+        "question": "How tall are you really?"
+      }
+    ],
+    "goals": {
+      "Staying fit": [],
+      "Eating healthy": [],
+      "Learning arabic": []
+    },
+    "family": {
+      "Piety": "Faith is a prerequisite"
+    },
+    "pdfUrl": "pdf/1783573282773-qesxno-Sadman-Zaman-Khan-Resume-2026.pdf",
+    "ambient": {
+      "url": "https://youtu.be/Wof1dSX-G2o?si=DD5MBELrMuZ5OyyU",
+      "loop": true,
+      "source": "url",
+      "volume": 0.15,
+      "enabled": true
+    },
+    "contact": {
+      "items": [
+        {
+          "icon": "phone",
+          "label": "+880 1869 504 000",
+          "value": "+880 1869 504 000"
+        },
+        {
+          "icon": "mail",
+          "label": "sadmanz.khan@gmail.com",
+          "value": "sadmanz.khan@gmail.com"
+        },
+        {
+          "icon": "message-circle",
+          "label": "Whatsapp",
+          "value": "https://wa.me/8801869504388"
+        }
+      ]
+    },
+    "headline": "Sadman Zaman Khan",
+    "videoUrl": "https://youtu.be/dZrEayPIrVE?si=RooTw-axYL9bK0J3",
+    "interests": {
+      "Poetry": [
+        {
+          "url": "https://hellopoetry.com/@szk",
+          "label": "Writing poetry."
+        }
+      ]
+    },
+    "updatedAt": "2026-08-28T06:41:40.474302+00:00"
+  },
+  "familyNodes": [
+    {
+      "id": "868bed49-6ec4-4160-9772-a80e1f756558",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Ferdousi Begum",
+      "note": null,
+      "is_self": false,
+      "photoUrl": "https://scontent.fdac152-1.fna.fbcdn.net/v/t1.6435-9/33608619_104856457072125_2390808818222104576_n.jpg?stp=dst-jpg_tt6&cstp=mx720x720&ctp=s720x720&_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeElFHUu2sRONsGo-YSAME2p9wzZlon_5fz3DNmWif_l_N9NuIWL-AzoshtiwaZyGvMmA-ey8F2iSr2hI3Zqn5vD&_nc_ohc=k5ICTgsSK00Q7kNvwFwu5F0&_nc_oc=AdqLyRn7lD-dsI0FmdfZggwwSU79yQ0LkdkZe0_JlpLP4UyzKOwN5tsVf7Y55NKMt_c&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=wHwR8EXnBG0tM87CrqfXiA&_nc_ss=7b2a8&oh=00_AQHsut3c-HZ3rhko_EiX2wz3UJb1tzrwcYxtQgb5UkFcVw&oe=6AB8B14A",
+      "relation": "Mother",
+      "education": null,
+      "father_id": "3dd311a7-b0d0-42dd-a365-c10db933a46a",
+      "mother_id": "e99dbd76-bdb3-41e2-bb6e-2ae72a9a5721",
+      "birth_year": 1964,
+      "profession": "Retired Headmistress",
+      "sort_order": 0,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": "Retired School Headmistress"
+    },
+    {
+      "id": "82f4e171-9cd8-43f7-8922-f83324c3e9b3",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Khan Muhammad Wahiduzzaman",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Father",
+      "education": null,
+      "father_id": "898da004-d9a3-457c-9bc2-7380af42ccf7",
+      "mother_id": "43df2eb8-2d85-4103-9e98-48ba8416cb60",
+      "birth_year": 1961,
+      "profession": "Retired Engineer, Tutor",
+      "sort_order": 1,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": "Retired Civil Engineer\\nFormer Asst. General Manager at CBBL\\nRetired Madrasa Tutor"
+    },
+    {
+      "id": "7505b414-74b9-4673-b1b5-139d60806b70",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Farhan Zaman Khan",
+      "note": null,
+      "is_self": false,
+      "photoUrl": "https://media.licdn.com/dms/image/v2/C5603AQF1MikBuP2TfA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1608247668279?e=1789603200&v=beta&t=hjuZO7v6KEj5yRIuMAH0DdP8gDl9b-7LRLNsnTsM-CQ",
+      "relation": "Brother",
+      "education": null,
+      "father_id": "82f4e171-9cd8-43f7-8922-f83324c3e9b3",
+      "mother_id": "868bed49-6ec4-4160-9772-a80e1f756558",
+      "birth_year": 1995,
+      "profession": "Software Engineer",
+      "sort_order": 2,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "3893d36c-801c-4348-b5f7-a7aed1b160ab",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Sadman Zaman Khan",
+      "note": null,
+      "is_self": true,
+      "photoUrl": "https://i.ibb.co.com/8LSLVJM7/385544297-230650383346130-7229487388909424682-n.png",
+      "relation": "Myself",
+      "education": null,
+      "father_id": "82f4e171-9cd8-43f7-8922-f83324c3e9b3",
+      "mother_id": "868bed49-6ec4-4160-9772-a80e1f756558",
+      "birth_year": 2001,
+      "profession": "Designer",
+      "sort_order": 3,
+      "birth_place": "Midford Hospital",
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": "UI/UX Designer at SJ Innovation"
+    },
+    {
+      "id": "3dd311a7-b0d0-42dd-a365-c10db933a46a",
+      "bio": "Principal at Barishal BM College",
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Saime Arshad",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Grandfather",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": "Professor",
+      "sort_order": 4,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "898da004-d9a3-457c-9bc2-7380af42ccf7",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Shamsuddin Ahmed Khan",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Grandfather",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 5,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "43df2eb8-2d85-4103-9e98-48ba8416cb60",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Rizia Begum",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Grandmother",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 6,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "e99dbd76-bdb3-41e2-bb6e-2ae72a9a5721",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Rupban Banu",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Grandmother",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 7,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "5830051e-1705-4bad-b6f5-3a911fb80b9a",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Musa",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Nephew",
+      "education": null,
+      "father_id": "7505b414-74b9-4673-b1b5-139d60806b70",
+      "mother_id": "bb31f4e8-523f-444c-8767-988e35ee7e24",
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 8,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "3a389925-f587-41b4-9241-17fda6e8f299",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Yusuf",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "",
+      "education": null,
+      "father_id": "7505b414-74b9-4673-b1b5-139d60806b70",
+      "mother_id": "bb31f4e8-523f-444c-8767-988e35ee7e24",
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 9,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "bb31f4e8-523f-444c-8767-988e35ee7e24",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Suraya Parvin",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Sister-in-Law",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": "Homemaker",
+      "sort_order": 10,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "154bfdb6-d84c-42eb-abb6-ddf42cb70f66",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Future Wife",
+      "education": null,
+      "father_id": null,
+      "mother_id": null,
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 11,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    },
+    {
+      "id": "eaeb2e8b-5ca4-4ffb-a58f-ad09e0a77e4c",
+      "bio": null,
+      "lat": null,
+      "lng": null,
+      "icon": null,
+      "name": "Our progeny",
+      "note": null,
+      "is_self": false,
+      "photoUrl": null,
+      "relation": "Child",
+      "education": null,
+      "father_id": "3893d36c-801c-4348-b5f7-a7aed1b160ab",
+      "mother_id": "154bfdb6-d84c-42eb-abb6-ddf42cb70f66",
+      "birth_year": null,
+      "profession": null,
+      "sort_order": 12,
+      "birth_place": null,
+      "achievements": [],
+      "contact_info": {},
+      "location_label": null,
+      "occupation_detail": null
+    }
+  ],
+  "testimonials": []
+}

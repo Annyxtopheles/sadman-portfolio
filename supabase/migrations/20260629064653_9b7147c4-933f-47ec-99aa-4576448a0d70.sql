@@ -1,0 +1,4 @@
+ALTER TABLE public.posts ADD COLUMN IF NOT EXISTS cover_focal_position TEXT NOT NULL DEFAULT 'center' CHECK (cover_focal_position IN ('center','top','bottom'));
+ALTER TABLE public.movies ADD COLUMN IF NOT EXISTS cover_focal_position TEXT NOT NULL DEFAULT 'center' CHECK (cover_focal_position IN ('center','top','bottom'));
+ALTER TABLE public.anime_items ADD COLUMN IF NOT EXISTS cover_focal_position TEXT NOT NULL DEFAULT 'center' CHECK (cover_focal_position IN ('center','top','bottom'));
+ALTER TABLE public.music_items ADD COLUMN IF NOT EXISTS cover_focal_position TEXT NOT NULL DEFAULT 'center' CHECK (cover_focal_position IN ('center','top','bottom'));

@@ -1,0 +1,1 @@
+ALTER TABLE public.matrimony_photos ADD COLUMN IF NOT EXISTS focal_position TEXT NOT NULL DEFAULT '50% 50%';
