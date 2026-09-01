@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { CATEGORIES, PROJECTS, ProjectCategory } from '@/data/projects';
 import { WorkCard } from './WorkCard';
 
@@ -19,11 +19,10 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
 
   return (
     <div className="w-full space-y-8">
-      {/* Category Index Filter Header */}
+      {/* Category Filter Header (No numbers) */}
       {showFilters && (
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-2 border-b border-[#242424]">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-4 border-b border-[#27272A]">
           {CATEGORIES.map((cat) => {
-            const count = cat === 'All' ? PROJECTS.length : PROJECTS.filter((p) => p.category === cat).length;
             const isSelected = selectedCategory === cat;
 
             return (
@@ -31,20 +30,13 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono tracking-wider transition-all duration-150 ${
+                className={`inline-flex items-center px-4 py-2 rounded-full text-xs font-mono tracking-wider transition-all duration-150 ${
                   isSelected
-                    ? 'bg-[#F5F5F0] text-[#0A0A0A] font-semibold'
-                    : 'bg-[#141414] text-[#9A9A93] hover:text-[#F5F5F0] hover:bg-[#1C1C1C] border border-[#242424]'
+                    ? 'bg-[#00E5FF] text-[#0A0A0A] font-bold shadow-sm'
+                    : 'bg-[#141414] text-[#CBD5E1] hover:text-[#FFFFFF] hover:bg-[#1C1C1C] border border-[#27272A] hover:border-[#00E5FF]/40'
                 }`}
               >
                 <span>{cat}</span>
-                <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                    isSelected ? 'bg-[#0A0A0A]/20 text-[#0A0A0A]' : 'bg-[#242424] text-[#5C5C56] group-hover:text-[#9A9A93]'
-                  }`}
-                >
-                  {count}
-                </span>
               </button>
             );
           })}

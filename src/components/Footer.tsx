@@ -27,67 +27,60 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
   }, []);
 
   return (
-    <footer className={`w-full bg-[#0A0A0A] border-t border-[#242424] pt-16 pb-12 mt-20 ${className}`}>
+    <footer className={`w-full bg-[#0A0A0A] border-t border-[#27272A] pt-14 pb-12 mt-20 ${className}`}>
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pb-12">
-          {/* Col 1: Direct Contact */}
-          <div className="space-y-3">
-            <div className="font-mono text-xs uppercase tracking-wider text-[#5C5C56]">Direct Contact</div>
-            <div className="space-y-2 text-sm">
-              <a
-                href="mailto:sadmanz.khan@gmail.com"
-                className="group flex items-center gap-2 text-[#F5F5F0] hover:text-[#FF6B35] transition-colors"
-              >
-                <Mail className="w-4 h-4 text-[#FF6B35]" />
-                <span>sadmanz.khan@gmail.com</span>
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <p className="text-xs text-[#9A9A93]">
-                Available for enterprise product design, AI UX consulting &amp; design systems.
-              </p>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pb-10">
+          {/* Col 1: Direct Email */}
+          <div className="space-y-2">
+            <a
+              href="mailto:sadmanz.khan@gmail.com"
+              className="group inline-flex items-center gap-2 text-base font-medium text-[#FFFFFF] hover:text-[#00E5FF] transition-colors"
+            >
+              <Mail className="w-4 h-4 text-[#00E5FF]" />
+              <span>sadmanz.khan@gmail.com</span>
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </a>
+            <p className="text-sm text-[#CBD5E1]">
+              Available for enterprise product design, design systems &amp; prototypes.
+            </p>
           </div>
 
-          {/* Col 2: Social & Profiles */}
-          <div className="space-y-3">
-            <div className="font-mono text-xs uppercase tracking-wider text-[#5C5C56]">Connect &amp; Verification</div>
-            <div className="flex flex-col space-y-2 text-sm">
-              <a
-                href="https://linkedin.com/in/sadmanzamankhan"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 text-[#9A9A93] hover:text-[#F5F5F0] transition-colors"
-              >
-                <Linkedin className="w-4 h-4 text-[#7DA2FF]" />
-                <span>LinkedIn Profile</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#5C5C56] group-hover:text-[#F5F5F0] transition-colors" />
-              </a>
-              <a
-                href="/Sadman_Zaman_Khan_Resume.pdf"
-                download="Sadman_Zaman_Khan_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 text-[#9A9A93] hover:text-[#F5F5F0] transition-colors"
-              >
-                <FileText className="w-4 h-4 text-[#4ADE80]" />
-                <span>Download Resume (PDF)</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#5C5C56] group-hover:text-[#F5F5F0] transition-colors" />
-              </a>
-            </div>
+          {/* Col 2: Social & Resume Links */}
+          <div className="flex flex-col space-y-3 text-sm">
+            <a
+              href="https://linkedin.com/in/sadmanzamankhan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 text-[#CBD5E1] hover:text-[#FFFFFF] transition-colors font-medium"
+            >
+              <Linkedin className="w-4 h-4 text-[#00E5FF]" />
+              <span>LinkedIn Profile</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#94A3B8] group-hover:text-[#FFFFFF] transition-colors" />
+            </a>
+            <a
+              href="/Sadman_Zaman_Khan_Resume.pdf"
+              download="Sadman_Zaman_Khan_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 text-[#CBD5E1] hover:text-[#FFFFFF] transition-colors font-medium"
+            >
+              <FileText className="w-4 h-4 text-[#4ADE80]" />
+              <span>Download Resume (PDF)</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#94A3B8] group-hover:text-[#FFFFFF] transition-colors" />
+            </a>
           </div>
 
-          {/* Col 3: Navigation & Live Time */}
-          <div className="space-y-3">
-            <div className="font-mono text-xs uppercase tracking-wider text-[#5C5C56]">Index</div>
-            <div className="flex flex-wrap gap-4 text-sm text-[#9A9A93]">
-              <Link to="/work" className="hover:text-[#F5F5F0] transition-colors">Work</Link>
-              <span className="text-[#242424]">·</span>
-              <Link to="/about" className="hover:text-[#F5F5F0] transition-colors">About</Link>
-              <span className="text-[#242424]">·</span>
-              <Link to="/contact" className="hover:text-[#F5F5F0] transition-colors">Contact</Link>
+          {/* Col 3: Navigation Links & Live Time */}
+          <div className="space-y-4">
+            <div className="flex flex-wrap gap-5 text-sm font-medium text-[#CBD5E1]">
+              <Link to="/work" className="hover:text-[#FFFFFF] transition-colors">Work</Link>
+              <span className="text-[#3F3F46]">·</span>
+              <Link to="/about" className="hover:text-[#FFFFFF] transition-colors">About</Link>
+              <span className="text-[#3F3F46]">·</span>
+              <Link to="/contact" className="hover:text-[#FFFFFF] transition-colors">Contact</Link>
             </div>
             {time && (
-              <div className="pt-2 font-mono text-xs text-[#5C5C56] flex items-center gap-2">
+              <div className="font-mono text-xs text-[#94A3B8] flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse" />
                 <span className="tabular-nums">{time} Dhaka (GMT+6)</span>
               </div>
@@ -96,9 +89,9 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
         </div>
 
         {/* Bottom copyright row */}
-        <div className="pt-8 border-t border-[#242424] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-[#5C5C56]">
-          <span>© {new Date().getFullYear()} Sadman Zaman Khan. All rights reserved.</span>
-          <span>Designed with high-density precision &amp; AI-augmented velocity.</span>
+        <div className="pt-8 border-t border-[#27272A] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-[#94A3B8]">
+          <span>© {new Date().getFullYear()} Sadman Zaman Khan</span>
+          <span>UI/UX Designer &amp; AI-Augmented Prototyper</span>
         </div>
       </div>
     </footer>

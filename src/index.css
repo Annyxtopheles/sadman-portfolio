@@ -11,13 +11,13 @@
     --color-background: #0A0A0A;
     --color-surface: #141414;
     --color-surface-hover: #1C1C1C;
-    --color-border: #242424;
-    --color-foreground: #F5F5F0;
-    --color-text-secondary: #9A9A93;
-    --color-text-tertiary: #5C5C56;
-    --color-accent: #FF6B35;
+    --color-border: #27272A;
+    --color-foreground: #FFFFFF;
+    --color-text-secondary: #CBD5E1;
+    --color-text-tertiary: #94A3B8;
+    --color-accent: #00E5FF;
     --color-success: #4ADE80;
-    --color-info: #7DA2FF;
+    --color-info: #38BDF8;
     --radius: 0.5rem;
   }
 
@@ -25,43 +25,43 @@
     --color-background: #0A0A0A;
     --color-surface: #141414;
     --color-surface-hover: #1C1C1C;
-    --color-border: #242424;
-    --color-foreground: #F5F5F0;
-    --color-text-secondary: #9A9A93;
-    --color-text-tertiary: #5C5C56;
-    --color-accent: #FF6B35;
+    --color-border: #27272A;
+    --color-foreground: #FFFFFF;
+    --color-text-secondary: #CBD5E1;
+    --color-text-tertiary: #94A3B8;
+    --color-accent: #00E5FF;
     --color-success: #4ADE80;
-    --color-info: #7DA2FF;
+    --color-info: #38BDF8;
   }
 }
 
 @layer base {
   * {
-    border-color: #242424;
+    border-color: #27272A;
   }
 
   html {
     background-color: #0A0A0A;
-    color: #F5F5F0;
+    color: #FFFFFF;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
   }
 
   body {
     background-color: #0A0A0A;
-    color: #F5F5F0;
+    color: #CBD5E1;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading {
     font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    color: #F5F5F0;
+    color: #FFFFFF;
     letter-spacing: -0.02em;
   }
 
   ::selection {
-    background-color: #FF6B35;
+    background-color: #00E5FF;
     color: #0A0A0A;
   }
 }

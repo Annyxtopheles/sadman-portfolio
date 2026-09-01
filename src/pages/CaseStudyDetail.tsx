@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, Cpu, Clock, Layers, Sparkles } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
@@ -20,20 +20,11 @@ const CaseStudyDetail: React.FC = () => {
   const dotColor = isShipped ? 'bg-[#4ADE80]' : isCaseStudy ? 'bg-[#7DA2FF]' : 'bg-[#FF6B35]';
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#F5F5F0] flex flex-col justify-between selection:bg-[#FF6B35] selection:text-[#0A0A0A]">
+    <div className="min-h-screen bg-[#0A0A0A] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#00E5FF] selection:text-[#0A0A0A]">
       <SEOHead
         title={`${project.title} — Case Study by Sadman Zaman Khan`}
         description={project.summary}
         image={project.coverImage}
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'CreativeWork',
-          name: project.title,
-          description: project.summary,
-          image: project.coverImage,
-          author: { '@type': 'Person', name: 'Sadman Zaman Khan' },
-          url: `https://sadmanzamankhan.pages.dev/work/${project.slug}`,
-        }}
       />
 
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full pt-[100px] md:pt-[120px]">
@@ -41,7 +32,7 @@ const CaseStudyDetail: React.FC = () => {
         <div className="pt-4 pb-8">
           <Link
             to="/work"
-            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#9A9A93] hover:text-[#FF6B35] transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#CBD5E1] hover:text-[#00E5FF] transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Back to all projects</span>
@@ -49,22 +40,18 @@ const CaseStudyDetail: React.FC = () => {
         </div>
 
         {/* 1. Header Block */}
-        <section className="space-y-6 pb-10 border-b border-[#242424]">
+        <section className="space-y-6 pb-10 border-b border-[#27272A]">
           <div className="flex flex-wrap items-center gap-3">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-mono text-xs font-medium uppercase tracking-wider bg-[#141414] border border-[#242424] text-[#F5F5F0]">
-              <span className={`w-1.5 h-1.5 rounded-full ${dotColor} animate-pulse`} />
-              <span>{project.status}</span>
-            </div>
-            <span className="font-mono text-xs text-[#9A9A93] px-3 py-1 rounded-full bg-[#141414] border border-[#242424]">
+            <span className="font-mono text-xs text-[#00E5FF] px-3.5 py-1.5 rounded-full bg-[#141414] border border-[#27272A] font-medium">
               {project.category}
             </span>
           </div>
 
           <div className="space-y-3">
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#F5F5F0] leading-[1.1]">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#FFFFFF] leading-[1.1]">
               {project.title}
             </h1>
-            <p className="text-lg sm:text-xl text-[#9A9A93] max-w-3xl leading-relaxed">
+            <p className="text-lg sm:text-xl text-[#CBD5E1] max-w-3xl leading-relaxed">
               {project.summary}
             </p>
           </div>
@@ -75,7 +62,7 @@ const CaseStudyDetail: React.FC = () => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-[#F5F5F0] text-[#0A0A0A] hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-[#FFFFFF] text-[#0A0A0A] hover:bg-[#F1F5F9] transition-colors font-bold"
               >
                 <span>Live Preview</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -84,51 +71,51 @@ const CaseStudyDetail: React.FC = () => {
           )}
 
           {/* 2. Meta Row: Year · Scope · Client · Duration */}
-          <div className="pt-6 border-t border-[#242424]/60 grid grid-cols-2 sm:grid-cols-4 gap-6 font-mono text-xs">
+          <div className="pt-6 border-t border-[#27272A] grid grid-cols-2 sm:grid-cols-4 gap-6 font-mono text-xs">
             <div>
-              <span className="text-[#5C5C56] block uppercase tracking-wider mb-1">Client / Org</span>
-              <span className="text-[#F5F5F0] font-medium">{project.client}</span>
+              <span className="text-[#94A3B8] block uppercase tracking-wider mb-1">Client / Org</span>
+              <span className="text-[#FFFFFF] font-medium text-sm">{project.client}</span>
             </div>
             <div>
-              <span className="text-[#5C5C56] block uppercase tracking-wider mb-1">Timeline</span>
-              <span className="text-[#F5F5F0] font-medium">{project.year}</span>
+              <span className="text-[#94A3B8] block uppercase tracking-wider mb-1">Timeline</span>
+              <span className="text-[#FFFFFF] font-medium text-sm">{project.year}</span>
             </div>
             <div>
-              <span className="text-[#5C5C56] block uppercase tracking-wider mb-1">Duration</span>
-              <span className="text-[#F5F5F0] font-medium">{project.duration}</span>
+              <span className="text-[#94A3B8] block uppercase tracking-wider mb-1">Duration</span>
+              <span className="text-[#FFFFFF] font-medium text-sm">{project.duration}</span>
             </div>
             <div>
-              <span className="text-[#5C5C56] block uppercase tracking-wider mb-1">Scope</span>
-              <span className="text-[#F5F5F0] font-medium">{project.scope.join(', ')}</span>
+              <span className="text-[#94A3B8] block uppercase tracking-wider mb-1">Scope</span>
+              <span className="text-[#FFFFFF] font-medium text-sm">{project.scope.join(', ')}</span>
             </div>
           </div>
         </section>
 
-        {/* 3. TL;DR Callout Box (visually distinct, top of content) */}
-        <section className="my-12 p-6 sm:p-8 rounded-xl bg-[#141414] border-l-4 border-l-[#FF6B35] border-y border-r border-[#242424] space-y-4">
-          <div className="font-mono text-xs uppercase tracking-wider text-[#FF6B35] font-semibold flex items-center gap-2">
+        {/* 3. TL;DR Callout Box */}
+        <section className="my-12 p-6 sm:p-8 rounded-xl bg-[#141414] border-l-4 border-l-[#00E5FF] border-y border-r border-[#27272A] space-y-4">
+          <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF] font-semibold flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
             <span>Executive TL;DR</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 text-sm">
             <div className="space-y-1.5">
-              <div className="font-mono text-xs text-[#9A9A93] uppercase tracking-wider">The Challenge</div>
-              <p className="text-[#F5F5F0] leading-relaxed">{project.tldr.challenge}</p>
+              <div className="font-mono text-xs text-[#94A3B8] uppercase tracking-wider">The Challenge</div>
+              <p className="text-[#FFFFFF] leading-relaxed">{project.tldr.challenge}</p>
             </div>
             <div className="space-y-1.5">
-              <div className="font-mono text-xs text-[#9A9A93] uppercase tracking-wider">My Role</div>
-              <p className="text-[#F5F5F0] leading-relaxed">{project.tldr.role}</p>
+              <div className="font-mono text-xs text-[#94A3B8] uppercase tracking-wider">My Role</div>
+              <p className="text-[#FFFFFF] leading-relaxed">{project.tldr.role}</p>
             </div>
             <div className="space-y-1.5">
-              <div className="font-mono text-xs text-[#9A9A93] uppercase tracking-wider">Method &amp; Execution</div>
-              <p className="text-[#F5F5F0] leading-relaxed">{project.tldr.method}</p>
+              <div className="font-mono text-xs text-[#94A3B8] uppercase tracking-wider">Method &amp; Execution</div>
+              <p className="text-[#FFFFFF] leading-relaxed">{project.tldr.method}</p>
             </div>
           </div>
         </section>
 
         {/* Cover Hero Image */}
-        <section className="my-10 rounded-2xl overflow-hidden border border-[#242424] bg-[#141414]">
+        <section className="my-10 rounded-2xl overflow-hidden border border-[#27272A] bg-[#141414]">
           <img
             src={project.coverImage}
             alt={project.title}
@@ -137,24 +124,24 @@ const CaseStudyDetail: React.FC = () => {
         </section>
 
         {/* 4. Problem & Constraints */}
-        <section className="py-12 border-b border-[#242424] space-y-4 max-w-3xl">
-          <div className="font-mono text-xs uppercase tracking-wider text-[#FF6B35]">Context &amp; Challenge</div>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#F5F5F0]">
+        <section className="py-12 border-b border-[#27272A] space-y-4 max-w-3xl">
+          <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF]">Context &amp; Challenge</div>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
             The Problem &amp; Core Constraints
           </h2>
-          <p className="text-base sm:text-lg text-[#9A9A93] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
             {project.problem}
           </p>
         </section>
 
         {/* 5. Process & Engineering Acceleration */}
-        <section className="py-12 border-b border-[#242424] space-y-10">
+        <section className="py-12 border-b border-[#27272A] space-y-10">
           <div className="max-w-3xl space-y-3">
-            <div className="font-mono text-xs uppercase tracking-wider text-[#FF6B35]">Implementation</div>
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#F5F5F0]">
+            <div className="font-mono text-xs uppercase tracking-wider text-[#00E5FF]">Implementation</div>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
               Architecture, Systems &amp; Prototyping Process
             </h2>
-            <p className="text-sm sm:text-base text-[#9A9A93]">
+            <p className="text-sm sm:text-base text-[#CBD5E1]">
               How the solution was engineered to satisfy high-density requirements and accelerate handoff.
             </p>
           </div>
@@ -163,21 +150,21 @@ const CaseStudyDetail: React.FC = () => {
             {project.process.map((step, idx) => (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-xl bg-[#141414] border border-[#242424] space-y-4 hover:border-[#333] transition-colors"
+                className="p-6 sm:p-8 rounded-xl bg-[#141414] border border-[#27272A] space-y-4 hover:border-[#3F3F46] transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-xs px-2.5 py-1 rounded bg-[#1C1C1C] border border-[#242424] text-[#FF6B35] font-semibold">
+                  <span className="font-mono text-xs px-2.5 py-1 rounded bg-[#1C1C1C] border border-[#27272A] text-[#00E5FF] font-semibold">
                     0{idx + 1}
                   </span>
-                  <h3 className="font-display text-lg sm:text-xl font-semibold text-[#F5F5F0]">
+                  <h3 className="font-display text-lg sm:text-xl font-semibold text-[#FFFFFF]">
                     {step.title}
                   </h3>
                 </div>
-                <p className="text-sm text-[#9A9A93] leading-relaxed">
+                <p className="text-sm text-[#CBD5E1] leading-relaxed">
                   {step.description}
                 </p>
                 {step.details && (
-                  <ul className="space-y-2 pt-2 border-t border-[#242424]/80 text-xs text-[#9A9A93]">
+                  <ul className="space-y-2 pt-2 border-t border-[#27272A] text-xs text-[#CBD5E1]">
                     {step.details.map((detail, dIdx) => (
                       <li key={dIdx} className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-[#4ADE80] shrink-0 mt-0.5" />
@@ -192,15 +179,15 @@ const CaseStudyDetail: React.FC = () => {
 
           {/* AI-Augmented Workflow Specifics */}
           {project.aiWorkflow && (
-            <div className="p-6 rounded-xl bg-[#141414] border border-[#242424] flex items-start gap-4">
-              <div className="p-2 rounded-lg bg-[#1C1C1C] border border-[#242424] text-[#FF6B35] shrink-0 mt-0.5">
+            <div className="p-6 rounded-xl bg-[#141414] border border-[#27272A] flex items-start gap-4">
+              <div className="p-2 rounded-lg bg-[#1C1C1C] border border-[#27272A] text-[#00E5FF] shrink-0 mt-0.5">
                 <Cpu className="w-5 h-5" />
               </div>
               <div className="space-y-1">
-                <div className="font-mono text-xs uppercase tracking-wider text-[#F5F5F0] font-semibold">
+                <div className="font-mono text-xs uppercase tracking-wider text-[#FFFFFF] font-semibold">
                   AI-Augmented Prototyping Workflow
                 </div>
-                <p className="text-sm text-[#9A9A93] leading-relaxed">
+                <p className="text-sm text-[#CBD5E1] leading-relaxed">
                   {project.aiWorkflow}
                 </p>
               </div>
@@ -208,12 +195,12 @@ const CaseStudyDetail: React.FC = () => {
           )}
         </section>
 
-        {/* 6. Outcome (Real metrics only) */}
+        {/* 6. Outcome */}
         {project.outcomes && project.outcomes.length > 0 && (
-          <section className="py-12 border-b border-[#242424] space-y-8">
+          <section className="py-12 border-b border-[#27272A] space-y-8">
             <div className="max-w-3xl space-y-2">
               <div className="font-mono text-xs uppercase tracking-wider text-[#4ADE80]">Results &amp; Impact</div>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#F5F5F0]">
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
                 Measurable Outcomes
               </h2>
             </div>
@@ -222,16 +209,16 @@ const CaseStudyDetail: React.FC = () => {
               {project.outcomes.map((metric, mIdx) => (
                 <div
                   key={mIdx}
-                  className="p-6 rounded-xl bg-[#141414] border border-[#242424] space-y-2"
+                  className="p-6 rounded-xl bg-[#141414] border border-[#27272A] space-y-2"
                 >
-                  <div className="font-display text-3xl sm:text-4xl font-bold text-[#F5F5F0]">
+                  <div className="font-display text-3xl sm:text-4xl font-bold text-[#FFFFFF]">
                     {metric.value}
                   </div>
-                  <div className="font-mono text-xs text-[#FF6B35] font-semibold uppercase tracking-wider">
+                  <div className="font-mono text-xs text-[#00E5FF] font-semibold uppercase tracking-wider">
                     {metric.label}
                   </div>
                   {metric.subtext && (
-                    <p className="text-xs text-[#9A9A93] leading-relaxed pt-1">
+                    <p className="text-xs text-[#CBD5E1] leading-relaxed pt-1">
                       {metric.subtext}
                     </p>
                   )}
@@ -240,32 +227,27 @@ const CaseStudyDetail: React.FC = () => {
             </div>
 
             {project.outcomeSummary && (
-              <p className="text-sm sm:text-base text-[#9A9A93] italic border-l-2 border-[#242424] pl-4">
+              <p className="text-sm sm:text-base text-[#CBD5E1] italic border-l-2 border-[#27272A] pl-4">
                 "{project.outcomeSummary}"
               </p>
             )}
           </section>
         )}
 
-        {/* 7. Full-bleed Final Imagery & Mockups */}
+        {/* 7. Production Screens & Artifacts */}
         <section className="py-12 space-y-8">
-          <div className="font-mono text-xs uppercase tracking-wider text-[#9A9A93]">Production Screens &amp; Artifacts</div>
+          <div className="font-mono text-xs uppercase tracking-wider text-[#94A3B8]">Production Screens &amp; Artifacts</div>
           <div className="space-y-8">
             {project.galleryImages.map((img, gIdx) => (
-              <figure key={gIdx} className="space-y-3 rounded-2xl overflow-hidden border border-[#242424] bg-[#141414] p-2">
+              <figure key={gIdx} className="space-y-3 rounded-2xl overflow-hidden border border-[#27272A] bg-[#141414] p-2">
                 <img
                   src={img.url}
                   alt={img.caption}
                   loading="lazy"
                   className="w-full h-auto rounded-xl object-cover"
                 />
-                <figcaption className="px-4 py-2 font-mono text-xs text-[#9A9A93] flex items-center justify-between">
+                <figcaption className="px-4 py-2 font-mono text-xs text-[#CBD5E1] flex items-center justify-between">
                   <span>{img.caption}</span>
-                  {img.type && (
-                    <span className="uppercase text-[10px] px-2 py-0.5 rounded bg-[#1C1C1C] border border-[#242424] text-[#5C5C56]">
-                      {img.type}
-                    </span>
-                  )}
                 </figcaption>
               </figure>
             ))}
@@ -273,17 +255,17 @@ const CaseStudyDetail: React.FC = () => {
         </section>
 
         {/* 8. Next / Previous Project Navigation */}
-        <section className="my-16 pt-12 border-t border-[#242424] grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <section className="my-16 pt-12 border-t border-[#27272A] grid grid-cols-1 sm:grid-cols-2 gap-6">
           {prev && (
             <Link
               to={`/work/${prev.slug}`}
-              className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#242424] hover:border-[#333] transition-all space-y-2"
+              className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#27272A] hover:border-[#3F3F46] transition-all space-y-2"
             >
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#9A9A93] uppercase tracking-wider group-hover:text-[#FF6B35] transition-colors">
+              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors">
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>Previous Project</span>
               </div>
-              <div className="font-display text-lg font-semibold text-[#F5F5F0] group-hover:text-[#FF6B35] transition-colors">
+              <div className="font-display text-lg font-semibold text-[#FFFFFF] group-hover:text-[#00E5FF] transition-colors">
                 {prev.title}
               </div>
             </Link>
@@ -292,13 +274,13 @@ const CaseStudyDetail: React.FC = () => {
           {next && (
             <Link
               to={`/work/${next.slug}`}
-              className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#242424] hover:border-[#333] transition-all space-y-2 text-left sm:text-right"
+              className="group p-6 rounded-xl bg-[#141414] hover:bg-[#1C1C1C] border border-[#27272A] hover:border-[#3F3F46] transition-all space-y-2 text-left sm:text-right"
             >
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#9A9A93] uppercase tracking-wider group-hover:text-[#FF6B35] transition-colors justify-start sm:justify-end w-full">
+              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] uppercase tracking-wider group-hover:text-[#00E5FF] transition-colors justify-start sm:justify-end w-full">
                 <span>Next Project</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
-              <div className="font-display text-lg font-semibold text-[#F5F5F0] group-hover:text-[#FF6B35] transition-colors">
+              <div className="font-display text-lg font-semibold text-[#FFFFFF] group-hover:text-[#00E5FF] transition-colors">
                 {next.title}
               </div>
             </Link>
