@@ -14,7 +14,6 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const AnimatedRoutes = () => {
@@ -33,7 +32,7 @@ const AnimatedRoutes = () => {
             <Route path="/portfolio/:slug" element={<CaseStudyDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/profile" element={<Navigate to="/about" replace />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Navigate to="/about" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </PageTransition>

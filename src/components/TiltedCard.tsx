@@ -9,37 +9,27 @@ const springValues = {
 };
 
 export interface TiltedCardProps {
-  imageSrc: string;
+  children?: React.ReactNode;
+  imageSrc?: string;
   altText?: string;
   captionText?: string;
-  containerHeight?: string;
-  containerWidth?: string;
-  imageHeight?: string;
-  imageWidth?: string;
+  className?: string;
   scaleOnHover?: number;
   rotateAmplitude?: number;
-  showMobileWarning?: boolean;
   showTooltip?: boolean;
-  overlayContent?: React.ReactNode;
-  displayOverlayContent?: boolean;
 }
 
 export default function TiltedCard({
+  children,
   imageSrc,
   altText = 'Tilted card image',
   captionText = '',
-  containerHeight = '100%',
-  containerWidth = '100%',
-  imageHeight = '100%',
-  imageWidth = '100%',
-  scaleOnHover = 1.05,
-  rotateAmplitude = 12,
-  showMobileWarning = false,
+  className = '',
+  scaleOnHover = 1.025,
+  rotateAmplitude = 8,
   showTooltip = false,
-  overlayContent = null,
-  displayOverlayContent = false
 }: TiltedCardProps) {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -55,7 +45,7 @@ export default function TiltedCard({
 
   const [lastY, setLastY] = useState(0);
 
-  function handleMouse(e: React.MouseEvent<HTMLElement>) {
+  function handleMouse(e: React.MouseEvent<HTMLDivElement>) {
     if (!ref.current) return;
 
     const rect = ref.current.getBoundingClientRect();
@@ -90,48 +80,36 @@ export default function TiltedCard({
   }
 
   return (
-    <figure
+    <div
       ref={ref}
-      className="tilted-card-figure"
-      style={{
-        height: containerHeight,
-        width: containerWidth
-      }}
+      className={`tilted-card-container ${className}`}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {showMobileWarning && (
-        <div className="tilted-card-mobile-alert">This effect is not optimized for mobile. Check on desktop.</div>
-      )}
-
       <motion.div
         className="tilted-card-inner w-full h-full"
         style={{
-          width: imageWidth,
-          height: imageHeight,
           rotateX,
           rotateY,
           scale
         }}
       >
-        <motion.img
-          src={imageSrc}
-          alt={altText}
-          className="tilted-card-img w-full h-full"
-          style={{
-            width: imageWidth,
-            height: imageHeight
-          }}
-        />
-
-        {displayOverlayContent && overlayContent && (
-          <motion.div className="tilted-card-overlay w-full h-full">{overlayContent}</motion.div>
+        {children ? (
+          children
+        ) : (
+          imageSrc && (
+            <motion.img
+              src={imageSrc}
+              alt={altText}
+              className="tilted-card-img w-full h-full"
+            />
+          )
         )}
       </motion.div>
 
       {showTooltip && captionText && (
-        <motion.figcaption
+        <motion.div
           className="tilted-card-caption"
           style={{
             x,
@@ -141,8 +119,8 @@ export default function TiltedCard({
           }}
         >
           {captionText}
-        </motion.figcaption>
+        </motion.div>
       )}
-    </figure>
+    </div>
   );
 }
