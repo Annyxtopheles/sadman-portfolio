@@ -15,6 +15,7 @@ import Work from "./pages/Work";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import ClickSpark from "@/components/ClickSpark";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -48,11 +49,13 @@ const App = () => (
       <Sonner />
       <HeroHoverProvider>
         <AudioProvider>
-          <SkipLink />
-          <GrainOverlay />
-          <div id="main-content" tabIndex={-1} className="outline-none">
-            <AnimatedRoutes />
-          </div>
+          <ClickSpark sparkColor="#FFFFFF" sparkCount={8} sparkRadius={20} sparkSize={10}>
+            <SkipLink />
+            <GrainOverlay />
+            <div id="main-content" tabIndex={-1} className="outline-none">
+              <AnimatedRoutes />
+            </div>
+          </ClickSpark>
         </AudioProvider>
       </HeroHoverProvider>
     </TooltipProvider>
