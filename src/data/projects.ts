@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     slug: "collabai-platform",
     title: "Collab RT Multi-Agent Workspace",
     category: "AI Systems",
-    status: "SHIPPED",
+    status: "LIVE",
     company: "CollabAI",
     client: "CollabAI Platform",
     year: "2025 – 2026",
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     scope: ["Multi-Agent UX", "Real-Time Streaming", "Global Composer", "Design System", "Full-Stack Prototype"],
     summary: "Full UI/UX redesign of CollabAI's multi-agent collaboration platform, replacing a cluttered neon interface with a minimal dark workspace featuring multi-model streaming (Groq, Gemini, OpenRouter), agent orchestration, and in-context tool execution.",
     coverImage: "/assets/projects/collabai-mockup.webp",
-    liveUrl: null,
+    liveUrl: "https://collabai-redesign.onrender.com/",
     tldr: {
       challenge: "The initial platform suffered from high visual clutter, confusing agent orchestration controls, and poor readability during multi-agent code generation.",
       role: "Lead UI/UX Designer — stripped away redundant UI layers, redesigned the design system, and built functional prototypes with live model streaming.",
