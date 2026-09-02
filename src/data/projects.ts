@@ -165,6 +165,56 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "clandest-agency",
+    slug: "clandest-agency",
+    title: "Clandest Agency Landing Page",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Clandest Agency",
+    client: "Clandest Studio",
+    year: "2026",
+    duration: "1 Month",
+    scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
+    summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
+    coverImage: "/assets/projects/clandest-mockup.webp",
+    liveUrl: "https://annyxtopheles.github.io/clandest-agency-site/",
+    tldr: {
+      challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
+      role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
+      method: "Engineered fluid clamp-based typography (Host Grotesk & Roboto Flex), custom animated SVG button states, and lightweight interactive service cards."
+    },
+    problem: "Most creative agency websites are bloated with heavy JavaScript bundles, slow load times, and vague positioning copy that hides who is actually doing the work.",
+    process: [
+      {
+        title: "Direct Visual Hierarchy & Fluid Typography",
+        description: "Developed a human, conversational headline structure paired with fluid typography scales that automatically adapt across mobile, tablet, and ultra-wide screens without jarring layout shifts.",
+        details: [
+          "Curated distinct brand palette: Base Canvas (#E6E6E6) paired with deep Brand Navy (#2E4F94)",
+          "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
+          "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
+        ]
+      }
+    ],
+    aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
+    outcomes: [
+      { label: "Performance Score", value: "100", subtext: "Zero-framework vanilla architecture scoring 100 on Google PageSpeed" },
+      { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
+    ],
+    outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
+    galleryImages: [
+      {
+        url: "/assets/projects/clandest-mockup.webp",
+        caption: "Clandest Agency — Studio homepage showcasing brand, web development, and marketing video services",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/clandest-services.webp",
+        caption: "Services visual architecture — responsive card grid with fluid micro-interactions",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "control-tower-suite",
     slug: "control-tower-suite",
     title: "AI-Native Control Tower Suite",
