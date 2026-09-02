@@ -256,11 +256,6 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/szk-mockup.webp",
         caption: "SZK Archive — Minimalist editorial landing view with stark typography and poetry navigation",
         type: "desktop"
-      },
-      {
-        url: "/assets/projects/szk-lanyard.webp",
-        caption: "Interactive 3D Rapier physics badge & identity card system",
-        type: "desktop"
       }
     ]
   },
