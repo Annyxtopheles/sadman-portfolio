@@ -12,6 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
-Disallow: /matrimony
 
-Sitemap: https://sadmanzamankhan.pages.dev/sitemap.xml
+Sitemap: https://sadman-portfolio.pages.dev/sitemap.xml
