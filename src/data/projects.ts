@@ -56,6 +56,51 @@ export const CATEGORIES: ('All' | ProjectCategory)[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "collabai-platform",
+    slug: "collabai-platform",
+    title: "Collab RT Multi-Agent Workspace",
+    category: "AI Systems",
+    status: "SHIPPED",
+    company: "CollabAI",
+    client: "CollabAI Platform",
+    year: "2025 – 2026",
+    duration: "2 Months",
+    scope: ["Multi-Agent UX", "Real-Time Streaming", "Global Composer", "Design System", "Full-Stack Prototype"],
+    summary: "Full UI/UX redesign of CollabAI's multi-agent collaboration platform, replacing a cluttered neon interface with a minimal dark workspace featuring multi-model streaming (Groq, Gemini, OpenRouter), agent orchestration, and in-context tool execution.",
+    coverImage: "/assets/projects/collabai-mockup.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "The initial platform suffered from high visual clutter, confusing agent orchestration controls, and poor readability during multi-agent code generation.",
+      role: "Lead UI/UX Designer — stripped away redundant UI layers, redesigned the design system, and built functional prototypes with live model streaming.",
+      method: "Designed an intuitive global composer with @agent and #tag shortcuts, multi-model provider switching (Groq 120fps, Gemini, OpenRouter), and clean workspace hierarchy."
+    },
+    problem: "When orchestrating multiple autonomous AI agents simultaneously, users were overwhelmed by jumping layout frames, indistinct agent roles, and unclear streaming feedback.",
+    process: [
+      {
+        title: "Distraction-Free Multi-Agent Canvas & Composer",
+        description: "Restructured the core dashboard around a global quick composer with @agent routing, #tag shortcuts, and unified workspace breadcrumbs.",
+        details: [
+          "Distinct visual identity cards for individual agents (Aster Architect, Reasoning Advisor, Color Palette Gen)",
+          "Seamless model provider selection with real-time switching between Groq, Gemini, and OpenRouter",
+          "Directory-connected Knowledge Base, persistent projects, and in-context tool attachments"
+        ]
+      }
+    ],
+    aiWorkflow: "Implemented live functional prototypes with Server-Sent Events (SSE) token streaming to test responsiveness and UI stability during high-frequency agent output.",
+    outcomes: [
+      { label: "Visual Clarity", value: "100%", subtext: "Replaced cluttered neon aesthetic with unified minimal dark architecture" },
+      { label: "Execution Speed", value: "120 fps", subtext: "Integrated low-latency Groq model routing for instantaneous chat responses" }
+    ],
+    outcomeSummary: "Transformed a cluttered technical proof-of-concept into a clean, modern AI workspace praised by users for its speed, clarity, and ergonomic multi-agent orchestration.",
+    galleryImages: [
+      {
+        url: "/assets/projects/collabai-mockup.webp",
+        caption: "Collab RT Overview — Global quick composer with @agent routing, real-time automation metrics, and active agent streams",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "icr-debt-surveillance",
     slug: "icr-debt-surveillance",
     title: "ICR Debt Surveillance Terminal",
@@ -233,51 +278,6 @@ export const PROJECTS: Project[] = [
       {
         url: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=1400&auto=format&fit=crop",
         caption: "Back-office inventory management and appointment CRM workflow",
-        type: "desktop"
-      }
-    ]
-  },
-  {
-    id: "collabai-platform",
-    slug: "collabai-platform",
-    title: "CollabAI Multi-Agent Workspace",
-    category: "AI Systems",
-    status: "SHIPPED",
-    company: "CollabAI",
-    client: "CollabAI Platform",
-    year: "2025",
-    duration: "2 Months",
-    scope: ["Web Application", "Multi-Agent Chat", "Streaming UI", "UX Redesign"],
-    summary: "Full UI/UX redesign of a multi-agent AI collaboration platform, transforming a complex dashboard into an intuitive agent canvas.",
-    coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1400&auto=format&fit=crop",
-    liveUrl: null,
-    tldr: {
-      challenge: "The initial platform suffered from high visual clutter, confusing agent orchestration controls, and poor readability during multi-agent code generation.",
-      role: "Lead UI/UX Designer — stripped away redundant UI layers and created an intuitive, distraction-free multi-agent canvas.",
-      method: "Designed minimal conversation threads with real-time model switching (Groq, Gemini, OpenRouter) and collapsible agent inspector panes."
-    },
-    problem: "When orchestrating multiple autonomous AI agents simultaneously, users were overwhelmed by jumping layout frames, indistinct agent roles, and unclear streaming feedback.",
-    process: [
-      {
-        title: "Distraction-Free Agent Interaction Canvas",
-        description: "Restructured the core interface around a clean central chat column with contextual drawer controls for agent system prompts and tool bindings.",
-        details: [
-          "Distinct visual identity cards for individual agents with status pulses",
-          "Optimized markdown and syntax-highlighted code block rendering without layout shifting",
-          "Seamless provider selection allowing instantaneous toggling between LLM engines"
-        ]
-      }
-    ],
-    aiWorkflow: "Built live interactive prototypes to stress-test token streaming speeds and ensure UI smoothness during high-frequency agent output.",
-    outcomes: [
-      { label: "Onboarding Drop-off", value: "-50%", subtext: "Reduction in drop-offs following the simplified agent setup flow" },
-      { label: "Chat Legibility", value: "AA+", subtext: "Enhanced code block syntax highlighting and typographic hierarchy" }
-    ],
-    outcomeSummary: "Transformed a cluttered technical proof-of-concept into a clean, modern AI workspace praised by users for its speed and clarity.",
-    galleryImages: [
-      {
-        url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1400&auto=format&fit=crop",
-        caption: "CollabAI multi-agent canvas and real-time streaming interaction",
         type: "desktop"
       }
     ]

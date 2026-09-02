@@ -17,7 +17,7 @@ const CaseStudyDetail: React.FC = () => {
 
   const allImages = [
     { url: project.coverImage, caption: `${project.title} — Overview` },
-    ...project.galleryImages
+    ...project.galleryImages.filter((img) => img.url !== project.coverImage),
   ];
 
   return (
