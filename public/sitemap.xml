@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadman-portfolio.pages.dev/work/szk-personal-archive</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadman-portfolio.pages.dev/work/control-tower-suite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

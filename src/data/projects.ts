@@ -215,6 +215,56 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "szk-personal-archive",
+    slug: "szk-personal-archive",
+    title: "SZK Personal Digital Archive",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Independent / Personal",
+    client: "Sadman Zaman Khan",
+    year: "2025 – 2026",
+    duration: "3 Months",
+    scope: ["3D WebGL", "Physics Simulation", "Creative Direction", "Bilingual Poetry UI", "Full-Stack React"],
+    summary: "An expressive personal digital archive and initial portfolio combining 3D physics lanyard simulation, bilingual poetry reader, multimedia pastime tracking, and vintage editorial typography.",
+    coverImage: "/assets/projects/szk-mockup.webp",
+    liveUrl: "https://sadmanzamankhan.pages.dev/",
+    tldr: {
+      challenge: "Creating an intimate, unfiltered digital sanctuary that breaks away from cookie-cutter designer portfolios—blending technical 3D physics with poetry, cinema, and literary personal essays.",
+      role: "Creator, Designer & Engineer — conceived the editorial identity, engineered the Rapier3D interactive physics lanyard badge, and built custom reader modes.",
+      method: "Engineered with React Three Fiber, Rapier 3D rigid-body dynamics, custom audio synthesis, and Caslon Antique typography with ambient grain overlays."
+    },
+    problem: "Standard hiring portfolios sanitize personality in favor of safe corporate templates. This project was conceived as an authentic digital habitat celebrating personal prose, pastime logs, and deep creative engineering.",
+    process: [
+      {
+        title: "Interactive 3D Physics Lanyard Badge",
+        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D physics engines with dynamic lighting, collision detection, and tactile spring dynamics.",
+        details: [
+          "Real-time WebGL mesh rendering with ambient grain and scanline post-processing",
+          "Bilingual poetry interface with paper-textured reader toggle and custom Bengali typography",
+          "Integrated multimedia pastime tracker with live status chips for anime, cinema, and literature"
+        ]
+      }
+    ],
+    aiWorkflow: "Used generative design and procedural math scripting in GLSL shaders to tune realistic cloth physics and rope tension for the 3D lanyard strap.",
+    outcomes: [
+      { label: "3D Physics", value: "60 fps", subtext: "Silky smooth rigid-body simulation on both mobile and desktop browsers" },
+      { label: "Authenticity", value: "100%", subtext: "Direct uncompromised expression of design, poetry, and technical craft" }
+    ],
+    outcomeSummary: "An unapologetically personal, tactile web experience that proves depth of craft and technical mastery beyond conventional portfolio bounds.",
+    galleryImages: [
+      {
+        url: "/assets/projects/szk-mockup.webp",
+        caption: "SZK Archive — Minimalist editorial landing view with stark typography and poetry navigation",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/szk-lanyard.webp",
+        caption: "Interactive 3D Rapier physics badge & identity card system",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "control-tower-suite",
     slug: "control-tower-suite",
     title: "AI-Native Control Tower Suite",
