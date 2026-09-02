@@ -39,13 +39,13 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-bold tracking-tight"
+          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
         >
           Sadman Zaman Khan
         </Link>
 
         {/* Desktop Nav Items */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-normal">
           {navLinks.map((item) => {
             if (item.isExternal) {
               return (
@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors"
+                  className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors font-normal"
                 >
                   {item.label} ↗
                 </a>
@@ -66,9 +66,9 @@ export const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 aria-current={active ? 'page' : undefined}
-                className={`relative py-1.5 transition-colors ${
+                className={`relative py-1.5 transition-colors font-normal ${
                   active
-                    ? 'text-[#FFFFFF] font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
+                    ? 'text-[#FFFFFF] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
                     : 'text-[#888888] hover:text-[#FFFFFF]'
                 }`}
               >

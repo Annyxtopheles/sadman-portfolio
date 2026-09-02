@@ -35,16 +35,11 @@ export const WorkCard: React.FC<WorkCardProps> = ({
           to={`/work/${project.slug}`}
           className="group flex flex-col h-full space-y-3 cursor-pointer"
         >
-          {/* Card Header: Project Name on Left, Date on Right */}
-          <div className="flex items-baseline justify-between gap-4 text-xs">
-            <div className="flex items-baseline gap-2 overflow-hidden">
-              <h3 className="text-sm font-semibold text-[#FFFFFF] group-hover:text-[#FFFFFF] truncate leading-tight">
-                {project.title}
-              </h3>
-              <span className="text-[#666666] text-xs font-normal shrink-0">
-                · {project.category}
-              </span>
-            </div>
+          {/* Card Header: Project Name on Left, Date on Right (No category, regular weight) */}
+          <div className="flex items-baseline justify-between gap-4 text-xs font-normal">
+            <h3 className="text-sm font-normal text-[#FFFFFF] group-hover:text-[#FFFFFF] truncate leading-tight">
+              {project.title}
+            </h3>
             <span className="text-[#888888] text-xs font-normal tabular-nums shrink-0 whitespace-nowrap">
               {project.year}
             </span>

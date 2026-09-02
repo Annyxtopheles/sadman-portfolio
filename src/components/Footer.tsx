@@ -41,7 +41,7 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
           </a>
           <a
             href="mailto:sadmanz.khan@gmail.com"
-            className="font-medium text-[#FFFFFF] hover:text-[#CCCCCC] underline underline-offset-4 transition-colors"
+            className="font-normal text-[#FFFFFF] hover:text-[#CCCCCC] underline underline-offset-4 transition-colors"
           >
             sadmanz.khan@gmail.com
           </a>

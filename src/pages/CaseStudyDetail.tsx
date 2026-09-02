@@ -15,7 +15,6 @@ const CaseStudyDetail: React.FC = () => {
 
   const { prev, next } = getAdjacentProjects(project.slug);
 
-  // Combine cover image with gallery images if needed or display all project images side by side
   const allImages = [
     { url: project.coverImage, caption: `${project.title} — Overview` },
     ...project.galleryImages
@@ -29,14 +28,14 @@ const CaseStudyDetail: React.FC = () => {
         image={project.coverImage}
       />
 
-      <main className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-12">
+      <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-12">
         {/* 1. Header Block */}
         <section className="space-y-6 pt-4">
           <div className="space-y-3">
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#FFFFFF] leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FFFFFF] leading-[1.1]">
               {project.title}
             </h1>
-            <p className="text-lg sm:text-xl text-[#999999] max-w-4xl leading-relaxed">
+            <p className="text-lg sm:text-xl text-[#999999] font-normal max-w-4xl leading-relaxed">
               {project.summary}
             </p>
           </div>
@@ -47,26 +46,26 @@ const CaseStudyDetail: React.FC = () => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-colors font-bold"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-colors font-normal"
               >
                 <span>Live Preview ↗</span>
               </a>
             </div>
           )}
 
-          {/* 2. Clean Meta Row: Client · Timeline · Duration (No Scope, No separators) */}
-          <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 text-xs max-w-2xl">
+          {/* 2. Clean Meta Row: Client · Timeline · Duration */}
+          <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 text-xs max-w-2xl font-normal">
             <div>
               <span className="text-[#666666] block uppercase tracking-wider mb-1">Client / Org</span>
-              <span className="text-[#FFFFFF] font-medium text-sm">{project.client}</span>
+              <span className="text-[#FFFFFF] text-sm font-normal">{project.client}</span>
             </div>
             <div>
               <span className="text-[#666666] block uppercase tracking-wider mb-1">Timeline</span>
-              <span className="text-[#FFFFFF] font-medium text-sm">{project.year}</span>
+              <span className="text-[#FFFFFF] text-sm font-normal">{project.year}</span>
             </div>
             <div>
               <span className="text-[#666666] block uppercase tracking-wider mb-1">Duration</span>
-              <span className="text-[#FFFFFF] font-medium text-sm">{project.duration}</span>
+              <span className="text-[#FFFFFF] text-sm font-normal">{project.duration}</span>
             </div>
           </div>
         </section>
@@ -82,7 +81,7 @@ const CaseStudyDetail: React.FC = () => {
                   loading="lazy"
                   className="w-full aspect-[16/10] object-cover object-center rounded-[2px]"
                 />
-                <figcaption className="px-2 py-1 text-xs text-[#888888] flex items-center justify-between">
+                <figcaption className="px-2 py-1 text-xs text-[#888888] font-normal flex items-center justify-between">
                   <span>{img.caption}</span>
                 </figcaption>
               </figure>
@@ -91,7 +90,7 @@ const CaseStudyDetail: React.FC = () => {
         </section>
 
         {/* 4. Next / Previous Project Navigation */}
-        <section className="pt-12 pb-16 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <section className="pt-12 pb-16 grid grid-cols-1 sm:grid-cols-2 gap-6 font-normal">
           {prev ? (
             <Link
               to={`/work/${prev.slug}`}
@@ -100,7 +99,7 @@ const CaseStudyDetail: React.FC = () => {
               <div className="text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
                 ← Previous Project
               </div>
-              <div className="font-display text-lg font-semibold text-[#FFFFFF] transition-colors">
+              <div className="text-lg font-normal text-[#FFFFFF] transition-colors">
                 {prev.title}
               </div>
             </Link>
@@ -114,7 +113,7 @@ const CaseStudyDetail: React.FC = () => {
               <div className="text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
                 Next Project →
               </div>
-              <div className="font-display text-lg font-semibold text-[#FFFFFF] transition-colors">
+              <div className="text-lg font-normal text-[#FFFFFF] transition-colors">
                 {next.title}
               </div>
             </Link>

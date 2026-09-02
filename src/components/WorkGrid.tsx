@@ -20,16 +20,16 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
 
   return (
     <div className="w-full space-y-8 relative">
-      {/* Subtle backdrop overlay when hovering any card */}
+      {/* Subtle gentle backdrop overlay when hovering any card */}
       <div
-        className={`fixed inset-0 bg-[#000000]/60 backdrop-blur-[1px] pointer-events-none transition-opacity duration-300 z-10 ${
+        className={`fixed inset-0 bg-[#000000]/25 pointer-events-none transition-opacity duration-300 z-10 ${
           hoveredId ? 'opacity-100' : 'opacity-0'
         }`}
       />
 
-      {/* Category Filter Header */}
+      {/* Category Filter Header (Only shown on Work page) */}
       {showFilters && (
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-4 border-b border-[#1F1F1F] relative z-20">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 pb-6 border-b border-[#1F1F1F] relative z-20">
           {CATEGORIES.map((cat) => {
             const isSelected = selectedCategory === cat;
 
@@ -38,9 +38,9 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`inline-flex items-center px-3.5 py-1.5 rounded-[4px] text-xs font-medium transition-all duration-150 cursor-pointer ${
+                className={`inline-flex items-center px-3 py-1 rounded-[4px] text-xs font-normal transition-all duration-150 cursor-pointer ${
                   isSelected
-                    ? 'bg-[#FFFFFF] text-[#000000] font-semibold'
+                    ? 'bg-[#FFFFFF] text-[#000000]'
                     : 'bg-[#0A0A0A] text-[#888888] hover:text-[#FFFFFF] border border-[#1F1F1F] hover:border-[#333333]'
                 }`}
               >
