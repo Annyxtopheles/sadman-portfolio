@@ -42,6 +42,23 @@ const About: React.FC = () => {
         'Implemented a local AI workflow prototype (Ollama/Perplexica) for competitive UX analysis and set up ComfyUI workflows with safetensors models to generate images locally.',
         'Recognized by a senior business analyst for ownership mindset: proactively delivering work with integrated self-critique and recommended improvements, streamlining review cycles.',
         'Led a full UI/UX redesign of CollabAI\'s multi-agent platform, replacing a cluttered, neon-heavy interface with a clean, minimal design; implemented live AI chat with real model provider integrations (Groq, Gemini, OpenRouter) and user access controls, tested across desktop and mobile browsers.'
+      ],
+      images: [
+        {
+          url: '/assets/projects/collabai-mockup.webp',
+          caption: 'CollabAI — Multi-agent interface redesign & live chat system',
+          tag: 'UI/UX Redesign'
+        },
+        {
+          url: '/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp',
+          caption: 'Control Tower — Visual identity & enterprise ops suite',
+          tag: 'Brand & UI'
+        },
+        {
+          url: '/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp',
+          caption: 'NonProfit AI — High-converting Meta ad creative suite',
+          tag: 'Paid Social'
+        }
       ]
     },
     {
@@ -51,6 +68,18 @@ const About: React.FC = () => {
       period: 'May 2025 – Aug 2025',
       bullets: [
         'Orchestrated a digital asset pipeline supporting US-based global campaigns: developed 200+ high-engagement digital and print collateral pieces (targeted Meta ads, optimized LinkedIn carousels, large-format corporate event banners, internal office installations) for multicultural marketing initiatives and product launches.'
+      ],
+      images: [
+        {
+          url: '/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp',
+          caption: 'NSA/CISA Data Security — 10-step editorial carousel cover',
+          tag: 'Editorial Design'
+        },
+        {
+          url: '/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp',
+          caption: 'Vertical story ad creative with direct booking CTA',
+          tag: '9:16 Social'
+        }
       ]
     },
     {
@@ -60,6 +89,18 @@ const About: React.FC = () => {
       period: 'Mar 2025 – Apr 2025',
       bullets: [
         'Completed 4 client engagements for US-based businesses (edtech branding, physical store signage, gym marketing collateral) during post-graduation period, delivering logo designs and brand systems with 100% on-time delivery.'
+      ],
+      images: [
+        {
+          url: '/assets/projects/clandest-mockup.webp',
+          caption: 'Clandest Agency — Brand identity & studio web presence',
+          tag: 'Brand Identity'
+        },
+        {
+          url: '/assets/projects/clandest-services.webp',
+          caption: 'Services layout & typographic architecture',
+          tag: 'Web Systems'
+        }
       ]
     }
   ];
@@ -187,36 +228,75 @@ const About: React.FC = () => {
             </h2>
           </div>
 
-          <div className="space-y-8 w-full">
+          <div className="space-y-12">
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 hover:border-[#333333] transition-colors w-full"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
               >
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-                  <div className="space-y-0.5">
-                    <h3 className="text-xl font-normal text-[#FFFFFF]">{exp.role}</h3>
-                    <div className="text-sm text-[#888888] font-normal">{exp.company} · {exp.location}</div>
+                {/* Left Column: Experience Details */}
+                <div className="lg:col-span-7 p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 hover:border-[#333333] transition-colors">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+                    <div className="space-y-0.5">
+                      <h3 className="text-xl font-normal text-[#FFFFFF]">{exp.role}</h3>
+                      <div className="text-sm text-[#888888] font-normal">{exp.company} · {exp.location}</div>
+                    </div>
+                    <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0 self-start sm:self-auto font-normal">
+                      {exp.period}
+                    </span>
                   </div>
-                  <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0 self-start sm:self-auto font-normal">
-                    {exp.period}
-                  </span>
+
+                  {exp.highlight && (
+                    <p className="text-xs text-[#FFFFFF] bg-[#141414] border border-[#1F1F1F] px-3 py-1.5 rounded-[4px] font-normal">
+                      {exp.highlight}
+                    </p>
+                  )}
+
+                  <ul className="space-y-3 pt-2 text-sm text-[#999999] font-normal leading-relaxed">
+                    {exp.bullets.map((bullet, bIdx) => (
+                      <li key={bIdx} className="flex items-start gap-2.5">
+                        <span className="text-[#FFFFFF] mt-1 shrink-0">•</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                {exp.highlight && (
-                  <p className="text-xs text-[#FFFFFF] bg-[#141414] border border-[#1F1F1F] px-3 py-1.5 rounded-[4px] font-normal">
-                    {exp.highlight}
-                  </p>
-                )}
+                {/* Right Column: Contextual Visual Artifacts */}
+                {exp.images && exp.images.length > 0 && (
+                  <div className="lg:col-span-5 space-y-4">
+                    <div className="text-[11px] font-mono uppercase tracking-wider text-[#666666] px-1 flex items-center justify-between">
+                      <span>Artifacts &amp; Context</span>
+                      <span>{exp.images.length} {exp.images.length === 1 ? 'preview' : 'previews'}</span>
+                    </div>
 
-                <ul className="space-y-3 pt-2 text-sm text-[#999999] font-normal leading-relaxed">
-                  {exp.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} className="flex items-start gap-2.5">
-                      <span className="text-[#FFFFFF] mt-1 shrink-0">•</span>
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                      {exp.images.map((img, imgIdx) => (
+                        <figure
+                          key={imgIdx}
+                          className="rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-all group"
+                        >
+                          <div className="relative overflow-hidden rounded-[2px] bg-[#141414] aspect-[16/10] flex items-center justify-center">
+                            <img
+                              src={img.url}
+                              alt={img.caption}
+                              loading="lazy"
+                              className="w-full h-full object-cover object-top rounded-[2px] group-hover:scale-[1.02] transition-transform duration-300"
+                            />
+                            {img.tag && (
+                              <div className="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider uppercase bg-[#000000]/80 text-[#CCCCCC] backdrop-blur-sm border border-[#333333]">
+                                {img.tag}
+                              </div>
+                            )}
+                          </div>
+                          <figcaption className="px-1.5 pt-2 pb-0.5 text-xs text-[#888888] font-normal leading-normal">
+                            {img.caption}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
