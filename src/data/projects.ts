@@ -275,6 +275,18 @@ export const PROJECTS: Project[] = [
             caption: "Slide 05 — 10-Step NSA/CISA Data Security Checklist (Steps 1–4)",
             type: "carousel",
             aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-06-checklist-part2.webp",
+            caption: "Slide 06 — 10-Step NSA/CISA Data Security Checklist (Steps 5–10)",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-07-consultation-cta.webp",
+            caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
+            type: "carousel",
+            aspectRatio: "4/5"
           }
         ]
       }
@@ -307,6 +319,18 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/buildyourai/byai-nsa-cisa-05-checklist-part1.webp",
         caption: "Slide 05 — 10-Step NSA/CISA Data Security Checklist (Steps 1–4)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-06-checklist-part2.webp",
+        caption: "Slide 06 — 10-Step NSA/CISA Data Security Checklist (Steps 5–10)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-07-consultation-cta.webp",
+        caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
         type: "carousel",
         aspectRatio: "4/5"
       }
