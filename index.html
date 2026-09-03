@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark" style="background-color: #000000;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,19 +8,21 @@
     <meta name="author" content="Sadman Zaman Khan" />
     <meta name="google-site-verification" content="google37d6c51d34eeaa78" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://api.fontshare.com" />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet" />
+    
+    <!-- Inline anti-FOUC critical styling: prevents background white flash -->
+    <style>
+      html, body {
+        background-color: #000000 !important;
+        color: #FFFFFF;
+        margin: 0;
+      }
+    </style>
 
-    <script>
-      (function() {
-        try {
-          var theme = localStorage.getItem('szk-theme');
-          if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-          }
-        } catch(e) {}
-      })();
-    </script>
+    <!-- Font Preloading to prevent FOUT (Flash of Unstyled Text) -->
+    <link rel="preload" href="/fonts/Scanport-VF.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet" />
 
     <!-- OpenGraph / Facebook / LinkedIn / WhatsApp -->
     <meta property="og:type" content="website" />

@@ -154,20 +154,20 @@ export const ExplorationHUD: React.FC = () => {
                   <motion.div
                     initial={{ opacity: 0, y: -5 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="p-4 rounded-[4px] bg-[#121212] border border-[#2E2E2E] space-y-2.5"
+                    className="p-4 rounded-[4px] bg-[#121212] border border-[#262626] space-y-2.5"
                   >
-                    <div className="flex items-center gap-2 text-[#FFFFFF] font-medium">
-                      <span>☕</span>
-                      <span>The Cozy Break Room is Unlocked</span>
+                    <div className="flex items-center gap-2 text-[#FFFFFF] font-normal text-xs">
+                      <span className="text-cyan-400">✦</span>
+                      <span>Process Archive Unlocked</span>
                     </div>
-                    <p className="text-[#AAAAAA] text-[11px] leading-relaxed">
-                      You've taken the time to see every project. Take a breather and claim your comfy reward.
+                    <p className="text-[#888888] text-[11px] leading-relaxed">
+                      You have explored all projects. Inspect behind-the-scenes field notes and direct line.
                     </p>
                     <button
                       onClick={handleOpenReward}
                       className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                     >
-                      <span>Claim Your Cozy Reward ☕</span>
+                      <span>Open Process Archive</span>
                       <span>→</span>
                     </button>
                   </motion.div>

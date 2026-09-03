@@ -349,7 +349,7 @@ const About: React.FC = () => {
           <div className="max-w-4xl mx-auto space-y-10 text-center">
             {/* SZK Header */}
             <div className="space-y-3">
-              <span className="font-scanport text-xs lowercase tracking-wider text-[#9E9484]">
+              <span className="font-scanport text-[15pt] uppercase tracking-wider text-[#9E9484]">
                 beyond the corporate showcase
               </span>
               <h2 className="font-fell text-4xl sm:text-5xl md:text-6xl font-normal lowercase tracking-tight text-[#F7F2EB]">
