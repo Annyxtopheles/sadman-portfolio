@@ -87,24 +87,71 @@ export const CaseStudyDetail: React.FC = () => {
           </div>
         </section>
 
-        {/* 3. Screenshots (2 Columns Side by Side) */}
-        <section className="pt-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {allImages.map((img, gIdx) => (
-              <figure key={gIdx} className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors">
-                <img
-                  src={img.url}
-                  alt={img.caption}
-                  loading="lazy"
-                  className="w-full aspect-[16/10] object-cover object-center rounded-[2px]"
-                />
-                <figcaption className="px-2 py-1 text-xs text-[#888888] font-normal flex items-center justify-between">
-                  <span>{img.caption}</span>
-                </figcaption>
-              </figure>
+        {/* 3. Media Sections / Gallery */}
+        {project.gallerySections && project.gallerySections.length > 0 ? (
+          <div className="space-y-16 pt-4">
+            {project.gallerySections.map((section, sIdx) => (
+              <section key={sIdx} className="space-y-6">
+                <div className="space-y-2 border-b border-[#1F1F1F] pb-4">
+                  <h2 className="text-xl sm:text-2xl font-normal text-[#FFFFFF] tracking-tight">
+                    {section.sectionTitle}
+                  </h2>
+                  {section.sectionDescription && (
+                    <p className="text-sm sm:text-base text-[#999999] font-normal max-w-3xl leading-relaxed">
+                      {section.sectionDescription}
+                    </p>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                  {section.images.map((img, gIdx) => (
+                    <figure
+                      key={gIdx}
+                      className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors"
+                    >
+                      <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A]">
+                        <img
+                          src={img.url}
+                          alt={img.caption}
+                          loading="lazy"
+                          className={`w-full ${
+                            img.aspectRatio === '4/5' || img.type === 'carousel'
+                              ? 'aspect-[4/5] object-contain'
+                              : 'aspect-[16/10] object-cover'
+                          } object-center rounded-[2px]`}
+                        />
+                      </div>
+                      <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between">
+                        <span>{img.caption}</span>
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
-        </section>
+        ) : (
+          <section className="pt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {allImages.map((img, gIdx) => (
+                <figure
+                  key={gIdx}
+                  className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors"
+                >
+                  <img
+                    src={img.url}
+                    alt={img.caption}
+                    loading="lazy"
+                    className="w-full aspect-[16/10] object-cover object-center rounded-[2px]"
+                  />
+                  <figcaption className="px-2 py-1 text-xs text-[#888888] font-normal flex items-center justify-between">
+                    <span>{img.caption}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* 4. Next / Previous Project Navigation with Interactive Image Trails */}
         <section className="pt-12 pb-16 grid grid-cols-1 sm:grid-cols-2 gap-6 font-normal">

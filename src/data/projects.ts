@@ -19,6 +19,19 @@ export interface CaseStudyProcessStep {
   details?: string[];
 }
 
+export interface GalleryImage {
+  url: string;
+  caption: string;
+  type?: 'desktop' | 'mobile' | 'system' | 'mockup' | 'carousel' | 'portrait';
+  aspectRatio?: string;
+}
+
+export interface GallerySection {
+  sectionTitle: string;
+  sectionDescription?: string;
+  images: GalleryImage[];
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -39,11 +52,8 @@ export interface Project {
   aiWorkflow?: string;
   outcomes?: CaseStudyMetric[];
   outcomeSummary?: string;
-  galleryImages: {
-    url: string;
-    caption: string;
-    type?: 'desktop' | 'mobile' | 'system' | 'mockup';
-  }[];
+  galleryImages: GalleryImage[];
+  gallerySections?: GallerySection[];
 }
 
 export const CATEGORIES: ('All' | ProjectCategory)[] = [
@@ -192,6 +202,113 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/clandest-services.webp",
         caption: "Services visual architecture — responsive card grid with fluid micro-interactions",
         type: "desktop"
+      }
+    ]
+  },
+  {
+    id: "buildyourai-creatives",
+    slug: "buildyourai-creatives",
+    title: "BuildYourAI Creatives",
+    category: "Brand Systems",
+    status: "CASE STUDY",
+    company: "BuildYourAI",
+    client: "BuildYourAI Media & Growth",
+    year: "2025 – 2026",
+    duration: "Ongoing",
+    scope: ["Social Design Systems", "LinkedIn Carousels", "Technical Information Design", "AI Security Content", "Brand Identity"],
+    summary: "Visual design, editorial layouts, and high-impact social content systems for BuildYourAI, translating complex federal cybersecurity frameworks and AI governance guides into digestible, high-engagement visual assets.",
+    coverImage: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Federal cybersecurity documents (NSA, CISA, FBI) are dense and impenetrable for mainstream technical leaders, reducing awareness of critical AI data risks.",
+      role: "Visual & Content Designer — transformed a multi-agency 30-page security guide into an engaging, structured LinkedIn carousel with custom matrices and plain-English checklists.",
+      method: "Distilled technical data poisoning, model drift, and cryptographic verification concepts into bold typographic hierarchy, structured tables, and cohesive brand systems."
+    },
+    problem: "Public sector agencies and AI practitioners frequently deploy models on untrusted data without understanding data poisoning, supply-chain vulnerabilities, or model drift.",
+    process: [
+      {
+        title: "Information Architecture & Deconstruction",
+        description: "Broke down the joint cybersecurity guidance from NSA, CISA, FBI, NCSC, and ASD into accessible themes: business risks, affected audiences, lifecycle threats, and actionable checklists.",
+        details: [
+          "Curated trusted agency seals and authority badges for high credibility",
+          "Engineered a simple 6-phase lifecycle threat matrix pairing phases with specific threats and counter-measures",
+          "Designed clean 4:5 vertical carousel slides optimized for LinkedIn mobile and desktop feed viewing"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Audience Reach", value: "Multi-Agency", subtext: "Covering NSA, CISA, FBI, UK NCSC, NZ NCSC, and Australian ASD ACSC standards" },
+      { label: "Format", value: "4:5 Carousel", subtext: "High-contrast editorial layouts optimized for executive feeds" }
+    ],
+    outcomeSummary: "Created a reusable visual framework for technical AI governance carousels that turns dense government security advisories into clean, viral executive briefings.",
+    gallerySections: [
+      {
+        sectionTitle: "NSA/CISA AI Data Security Guide — LinkedIn Carousel",
+        sectionDescription: "Editorial carousel translating the multi-agency AI data security guidance into executive takeaways, lifecycle threat matrices, and plain-English actionable checklists.",
+        images: [
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
+            caption: "Slide 01 — Cover: 10-Step NSA/CISA AI Data Security Checklist",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-02-why-agencies-need-it.webp",
+            caption: "Slide 02 — Why Government Agencies Need Data-Driven AI Security",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-03-big-risks-audience.webp",
+            caption: "Slide 03 — The Big Risks & Target Stakeholder Audience",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-04-lifecycle-threats.webp",
+            caption: "Slide 04 — AI Lifecycle & Threats Explained Simply",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-nsa-cisa-05-checklist-part1.webp",
+            caption: "Slide 05 — 10-Step NSA/CISA Data Security Checklist (Steps 1–4)",
+            type: "carousel",
+            aspectRatio: "4/5"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
+        caption: "Slide 01 — Cover: 10-Step NSA/CISA AI Data Security Checklist",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-02-why-agencies-need-it.webp",
+        caption: "Slide 02 — Why Government Agencies Need Data-Driven AI Security",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-03-big-risks-audience.webp",
+        caption: "Slide 03 — The Big Risks & Target Stakeholder Audience",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-04-lifecycle-threats.webp",
+        caption: "Slide 04 — AI Lifecycle & Threats Explained Simply",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-nsa-cisa-05-checklist-part1.webp",
+        caption: "Slide 05 — 10-Step NSA/CISA Data Security Checklist (Steps 1–4)",
+        type: "carousel",
+        aspectRatio: "4/5"
       }
     ]
   },
