@@ -29,6 +29,8 @@ export interface GalleryImage {
 export interface GallerySection {
   sectionTitle: string;
   sectionDescription?: string;
+  documentUrl?: string;
+  documentTitle?: string;
   images: GalleryImage[];
 }
 
@@ -215,36 +217,48 @@ export const PROJECTS: Project[] = [
     client: "BuildYourAI Media & Growth",
     year: "2025 – 2026",
     duration: "Ongoing",
-    scope: ["Social Design Systems", "LinkedIn Carousels", "Technical Information Design", "AI Security Content", "Brand Identity"],
-    summary: "Visual design, editorial layouts, and high-impact social content systems for BuildYourAI, translating complex federal cybersecurity frameworks and AI governance guides into digestible, high-engagement visual assets.",
+    scope: ["Social Design Systems", "Meta Ads", "Sales Enablement Collateral", "Executive Briefings", "LinkedIn Carousels", "YouTube Thumbnails", "Brand Identity"],
+    summary: "Visual design, editorial layouts, multi-format Meta ad campaigns, and high-impact social content systems for BuildYourAI. Translates dense federal cybersecurity frameworks and AI governance guides into digestible executive briefing documents and viral LinkedIn carousels in close coordination with the enterprise sales team.",
     coverImage: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Federal cybersecurity documents (NSA, CISA, FBI) are dense and impenetrable for mainstream technical leaders, reducing awareness of critical AI data risks.",
-      role: "Visual & Content Designer — transformed a multi-agency 30-page security guide into an engaging, structured LinkedIn carousel with custom matrices and plain-English checklists.",
-      method: "Distilled technical data poisoning, model drift, and cryptographic verification concepts into bold typographic hierarchy, structured tables, and cohesive brand systems."
+      challenge: "Federal cybersecurity frameworks (NSA, CISA, FBI) are dense and impenetrable for mainstream technical buyers, while B2B AI products require high-trust marketing creatives across paid social and video channels.",
+      role: "Lead Visual & Content Designer — collaborated directly with the enterprise sales team to develop executive lead magnets and sales enablement assets; designed full-funnel Meta ad suites and YouTube video packaging.",
+      method: "Distilled multi-agency security guidance into plain-English checklists and 2-page briefing documents; engineered multi-format Meta ad creative suites (1:1 Feed, 9:16 Story/Reels, 16:9 Landscape) with clear benefit-driven messaging."
     },
     problem: "Public sector agencies and AI practitioners frequently deploy models on untrusted data without understanding data poisoning, supply-chain vulnerabilities, or model drift.",
     process: [
       {
-        title: "Information Architecture & Deconstruction",
-        description: "Broke down the joint cybersecurity guidance from NSA, CISA, FBI, NCSC, and ASD into accessible themes: business risks, affected audiences, lifecycle threats, and actionable checklists.",
+        title: "Sales Coordination & Technical Deconstruction",
+        description: "Coordinated directly with the enterprise sales team to address the top security objections from public sector buyers. Broke down joint cybersecurity guidance from NSA, CISA, FBI, NCSC, and ASD into accessible themes: business risks, affected audiences, lifecycle threats, and actionable checklists.",
         details: [
           "Curated trusted agency seals and authority badges for high credibility",
           "Engineered a simple 6-phase lifecycle threat matrix pairing phases with specific threats and counter-measures",
-          "Designed clean 4:5 vertical carousel slides optimized for LinkedIn mobile and desktop feed viewing"
+          "Designed clean 4:5 vertical carousel slides optimized for LinkedIn mobile and desktop feed viewing",
+          "Produced a companion 2-page executive briefing document used directly in enterprise sales meetings and follow-ups"
+        ]
+      },
+      {
+        title: "Multi-Format Meta Ads for NonProfit AI",
+        description: "Built responsive Meta advertising creative packages for BuildYourAI's NonProfit AI solution across 1:1, 9:16, and 16:9 aspect ratios, testing visual contrast and direct conversion CTAs.",
+        details: [
+          "Adapted headline typography and key benefits ('Automate Grant Writing', 'Enhance Donor Relations') for high mobile readability",
+          "Optimized layout compositions for feed cards, vertical Stories/Reels, and landscape display banners",
+          "Maintained consistent brand authority with the BuildYourAI gradient emblem and clean photographic art direction"
         ]
       }
     ],
     outcomes: [
-      { label: "Audience Reach", value: "Multi-Agency", subtext: "Covering NSA, CISA, FBI, UK NCSC, NZ NCSC, and Australian ASD ACSC standards" },
-      { label: "Format", value: "4:5 Carousel", subtext: "High-contrast editorial layouts optimized for executive feeds" }
+      { label: "Sales Enablement", value: "Joint Collateral", subtext: "Developed in direct coordination with sales team to accelerate government buyer discovery" },
+      { label: "Multi-Format Reach", value: "4:5, 1:1, 9:16, 16:9", subtext: "Full responsive coverage across LinkedIn, Meta Ads, and YouTube" }
     ],
-    outcomeSummary: "Created a reusable visual framework for technical AI governance carousels that turns dense government security advisories into clean, viral executive briefings.",
+    outcomeSummary: "Delivered an authoritative marketing and sales enablement design system that turns complex technical compliance and enterprise AI capabilities into compelling visual assets across LinkedIn, Meta paid media, and YouTube.",
     gallerySections: [
       {
-        sectionTitle: "NSA/CISA AI Data Security Guide — LinkedIn Carousel",
-        sectionDescription: "Editorial carousel translating the multi-agency AI data security guidance into executive takeaways, lifecycle threat matrices, and plain-English actionable checklists.",
+        sectionTitle: "NSA/CISA AI Data Security Guide — LinkedIn Carousel & Briefing Document",
+        sectionDescription: "Editorial carousel and executive 2-page briefing document translating the multi-agency AI data security guidance (NSA, CISA, FBI, NCSC, ASD) into executive takeaways, lifecycle threat matrices, and plain-English actionable checklists. Developed in close coordination with the enterprise sales team as an authoritative B2B lead generation asset.",
+        documentUrl: "/assets/projects/buildyourai/byai-nsa-cisa-security-guide.pdf",
+        documentTitle: "Why AI Security Starts with Data and Why NYC Agencies Should Care (2-Page Executive Security Guide)",
         images: [
           {
             url: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
@@ -287,6 +301,30 @@ export const PROJECTS: Project[] = [
             caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
             type: "carousel",
             aspectRatio: "4/5"
+          }
+        ]
+      },
+      {
+        sectionTitle: "NonProfit AI — Meta Ad Campaign Multi-Format Suite",
+        sectionDescription: "Responsive Meta advertising creative package designed for BuildYourAI's NonProfit AI fundraising automation solution. Formatted across 1:1 Feed, 9:16 Story/Reels, and 16:9 Landscape placements to drive automated grant writing and donor management signups.",
+        images: [
+          {
+            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
+            caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
+            caption: "Vertical Story & Reels Ad (9:16) — Full-screen mobile engagement with direct booking CTA",
+            type: "mobile",
+            aspectRatio: "9/16"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
+            caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
+            type: "desktop",
+            aspectRatio: "16/9"
           }
         ]
       },
@@ -397,6 +435,24 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/buildyourai/byai-yt-bill-splitter-app-ep02.webp",
         caption: "Bill-Splitter App (Episode 02) — Product walkthrough and mobile utility showcase",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
+        caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
+        type: "carousel",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
+        caption: "Vertical Story & Reels Ad (9:16) — Full-screen mobile engagement with direct booking CTA",
+        type: "mobile",
+        aspectRatio: "9/16"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
+        caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
         type: "desktop",
         aspectRatio: "16/9"
       }

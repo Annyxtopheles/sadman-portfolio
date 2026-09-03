@@ -103,25 +103,57 @@ export const CaseStudyDetail: React.FC = () => {
                   )}
                 </div>
 
+                {section.documentUrl && (
+                  <div className="p-4 sm:p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-[#333333] transition-colors">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-[2px] bg-[#141414] border border-[#262626] flex items-center justify-center text-xs text-[#FFFFFF] shrink-0 font-mono font-medium">
+                        PDF
+                      </div>
+                      <div className="space-y-0.5">
+                        <div className="text-sm text-[#FFFFFF] font-normal">
+                          {section.documentTitle || 'Executive Briefing Document'}
+                        </div>
+                        <div className="text-xs text-[#888888]">
+                          Full vector 2-page document developed in coordination with the enterprise sales team
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href={section.documentUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-colors font-normal shrink-0 self-start sm:self-auto cursor-pointer"
+                    >
+                      <span>View / Download PDF ↗</span>
+                    </a>
+                  </div>
+                )}
+
                 <div
                   className={`grid gap-6 lg:gap-8 ${
-                    section.images.some((img) => img.aspectRatio === '16/9')
+                    section.images.every((img) => img.aspectRatio === '16/9')
                       ? 'grid-cols-1 md:grid-cols-2'
+                      : section.images.some((img) => img.aspectRatio === '9/16' || img.aspectRatio === '1/1')
+                      ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                       : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                   }`}
                 >
                   {section.images.map((img, gIdx) => (
                     <figure
                       key={gIdx}
-                      className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors"
+                      className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
                     >
-                      <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A]">
+                      <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
                         <img
                           src={img.url}
                           alt={img.caption}
                           loading="lazy"
                           className={`w-full ${
-                            img.aspectRatio === '4/5' || img.type === 'carousel'
+                            img.aspectRatio === '9/16'
+                              ? 'aspect-[9/16] object-contain'
+                              : img.aspectRatio === '1/1'
+                              ? 'aspect-square object-contain'
+                              : img.aspectRatio === '4/5' || img.type === 'carousel'
                               ? 'aspect-[4/5] object-contain'
                               : img.aspectRatio === '16/9'
                               ? 'aspect-[16/9] object-cover'
