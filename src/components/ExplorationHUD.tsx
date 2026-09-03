@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useExploration } from '@/context/ExplorationContext';
 import { PROJECTS } from '@/data/projects';
-import { playClickSound } from '@/utils/sound';
 
 export const ExplorationHUD: React.FC = () => {
   const {
@@ -22,12 +21,10 @@ export const ExplorationHUD: React.FC = () => {
   } = useExploration();
 
   const handleToggle = () => {
-    playClickSound();
     setIsHUDOpen((prev) => !prev);
   };
 
   const handleOpenReward = () => {
-    playClickSound();
     setIsHUDOpen(false);
     setIsRewardOpen(true);
   };
@@ -193,7 +190,6 @@ export const ExplorationHUD: React.FC = () => {
                           key={project.id}
                           to={`/work/${project.slug}`}
                           onClick={() => {
-                            playClickSound();
                             setIsHUDOpen(false);
                           }}
                           className={`group flex items-center justify-between p-2.5 rounded-[4px] border transition-all ${

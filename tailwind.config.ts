@@ -18,6 +18,8 @@ export default {
         'sans': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'mono': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'heading': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
+        'fell': ['"IM Fell English"', 'Georgia', 'serif'],
+        'bengali': ['"Noto Serif Bengali"', 'Georgia', 'serif'],
       },
       fontSize: {
         'xs':   ['13px', { lineHeight: '18px', letterSpacing: '0.01em' }],

@@ -1,9 +1,14 @@
 // Tactile, subtle, satisfying UI micro-click synthesizer using Web Audio API
 let audioCtx: AudioContext | null = null;
+let lastClickTime = 0;
 
 export function playClickSound() {
   try {
     if (typeof window === 'undefined') return;
+
+    const now = performance.now();
+    if (now - lastClickTime < 60) return; // Guard against duplicate pointerdown + click events
+    lastClickTime = now;
 
     const AudioContextClass =
       window.AudioContext ||

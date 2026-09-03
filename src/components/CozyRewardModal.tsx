@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useExploration } from '@/context/ExplorationContext';
-import { playClickSound } from '@/utils/sound';
 
 interface CozyItem {
   image: string;
@@ -53,12 +52,10 @@ export const CozyRewardModal: React.FC = () => {
   const currentItem = COZY_ITEMS[currentIndex];
 
   const handleNext = () => {
-    playClickSound();
     setCurrentIndex((prev) => (prev + 1) % COZY_ITEMS.length);
   };
 
   const handleCopy = () => {
-    playClickSound();
     navigator.clipboard.writeText('mehedi@sadman.design');
     setCopied(true);
     recordContactCopied();

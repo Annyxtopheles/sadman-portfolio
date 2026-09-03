@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import GradualBlur from '@/components/GradualBlur';
 import profileIllustration from '@/assets/profile-illustration.svg';
 import { useExploration } from '@/context/ExplorationContext';
+import { BorderGlow } from '@/components/effects/BorderGlow';
 
 const About: React.FC = () => {
   const { recordPortalFound } = useExploration();
@@ -359,41 +360,82 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 5. Personal Digital Archive Transition with Gradual Blur */}
-        <section ref={portalRef} className="relative pt-6 pb-12 overflow-hidden">
-          <div className="relative rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] p-8 sm:p-12 md:p-16 text-center space-y-6 overflow-hidden group hover:border-[#333333] transition-colors">
-            {/* Gradual Blur layer spanning across the bottom */}
+        {/* 5. Personal Digital Archive Transition & Gateway to SZK */}
+        <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
+          {/* Atmospheric gradual blur transition */}
+          <div className="relative mb-6">
             <GradualBlur
-              position="bottom"
-              height="100%"
-              strength={3}
-              divCount={8}
-              opacity={0.85}
+              position="top"
+              height="6rem"
+              strength={2}
+              divCount={5}
+              opacity={0.65}
               curve="bezier"
               className="z-10 pointer-events-none"
             />
+          </div>
 
-            <div className="relative z-20 max-w-2xl mx-auto space-y-4">
-              <span className="text-xs uppercase tracking-widest text-[#888888] font-normal">
-                Beyond the Corporate Showcase
+          <div className="max-w-4xl mx-auto space-y-10 text-center">
+            {/* SZK Literary Header */}
+            <div className="space-y-3">
+              <span className="font-fell text-xs uppercase tracking-[0.25em] text-[#9E9484]">
+                beyond the corporate showcase
               </span>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-normal text-[#FFFFFF] tracking-tight">
-                Poems, pastime logs &amp; unfiltered musings.
-              </h3>
-              <p className="text-sm sm:text-base text-[#999999] font-normal leading-relaxed">
-                Step into my personal digital archive — featuring interactive 3D physics experiments, bilingual poetry readers, and raw creative engineering.
+              <h2 className="font-fell text-4xl sm:text-5xl md:text-6xl font-normal lowercase tracking-tight text-[#F7F2EB]">
+                gateway to personal archive
+              </h2>
+              <p className="font-fell text-base sm:text-lg text-[#B8AF9F] italic lowercase max-w-xl mx-auto leading-relaxed">
+                poems, pastime logs, physics experiments &amp; unfiltered musings.
               </p>
-              <div className="pt-4">
-                <a
-                  href="https://sadmanzamankhan.pages.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => recordPortalFound()}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-all font-normal shadow-lg cursor-pointer"
+            </div>
+
+            {/* The Gateway Card — Styled in SZK's signature warm, analog, BorderGlow aesthetic */}
+            <div className="relative w-full flex items-center justify-center">
+              <a
+                href="https://sadmanzamankhan.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => recordPortalFound()}
+                className="group block w-full cursor-pointer select-none no-underline"
+              >
+                <BorderGlow
+                  borderRadius={28}
+                  glowRadius={130}
+                  glowIntensity={1.4}
+                  coneSpread={28}
+                  edgeSensitivity={20}
+                  glowColor="38 75 55"
+                  backgroundColor="#141311"
+                  colors={['#D4A373', '#E9C46A', '#FAEDCD', '#C58F5E', '#8C6239']}
+                  fillOpacity={0.3}
+                  className="w-full aspect-[16/10] min-h-[360px] sm:min-h-[440px] shadow-2xl transition-transform duration-300 rounded-[28px]"
                 >
-                  <span>Explore Personal Archive ↗</span>
-                </a>
-              </div>
+                  <div className="relative w-full h-full overflow-hidden rounded-[26px]">
+                    {/* Real Screenshot Preview of SZK personal archive */}
+                    <img
+                      src="/assets/projects/szk-mockup.webp"
+                      alt="sadman zaman khan personal archive live preview"
+                      className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    />
+
+                    {/* Atmospheric warm vignette overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0E0D0B]/85 via-[#0E0D0B]/35 to-transparent group-hover:via-[#0E0D0B]/25 transition-colors duration-300" />
+
+                    {/* Centered Literary SZK-style Button */}
+                    <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
+                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F5F2EB] hover:bg-[#FFFFFF] text-[#1A1918] shadow-2xl border border-[#E5DFD3] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-fell text-base sm:text-lg lowercase tracking-wide cursor-pointer">
+                        <span>enter personal archive</span>
+                        <span
+                          aria-hidden="true"
+                          className="inline-block shrink-0 text-base leading-none transition-transform duration-300 ease-out group-hover:-rotate-45"
+                        >
+                          →
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </BorderGlow>
+              </a>
             </div>
           </div>
         </section>
