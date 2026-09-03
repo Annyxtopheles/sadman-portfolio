@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <footer className={`w-full bg-[#000000] border-t border-[#1F1F1F] py-12 mt-20 ${className}`}>
+    <footer className={`w-full bg-transparent border-t border-[#1F1F1F]/40 py-12 mt-20 ${className}`}>
       <div className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex flex-col lg:flex-row items-center justify-between gap-6 text-xs sm:text-sm text-[#888888]">
         {/* Left: Copyright note */}
         <div className="text-center lg:text-left">

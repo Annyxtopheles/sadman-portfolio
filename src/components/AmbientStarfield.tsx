@@ -28,18 +28,18 @@ export const AmbientStarfield: React.FC = () => {
 
     const createStars = () => {
       stars = [];
-      const numStars = Math.max(45, Math.min(Math.floor((width * height) / 16000), 100));
+      const numStars = Math.max(80, Math.min(Math.floor((width * height) / 9000), 160));
 
       for (let i = 0; i < numStars; i++) {
         stars.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          size: Math.random() * 0.6 + 0.4,
-          baseAlpha: Math.random() * 0.3 + 0.15,
+          size: Math.random() * 0.9 + 0.5,
+          baseAlpha: Math.random() * 0.35 + 0.2,
           twinkleSpeed: Math.random() * 0.002 + 0.0008,
           twinkleOffset: Math.random() * Math.PI * 2,
           vx: (Math.random() - 0.5) * 0.02,
-          vy: -(Math.random() * 0.03 + 0.01),
+          vy: -(Math.random() * 0.035 + 0.015),
         });
       }
     };
@@ -73,10 +73,10 @@ export const AmbientStarfield: React.FC = () => {
         if (star.y > height) star.y = 0;
 
         const alpha = Math.max(
-          0.06,
+          0.12,
           Math.min(
-            0.55,
-            star.baseAlpha + Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.2
+            0.9,
+            star.baseAlpha + Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.3
           )
         );
 
@@ -102,11 +102,15 @@ export const AmbientStarfield: React.FC = () => {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      className="fixed inset-0 pointer-events-none z-0 transition-opacity duration-1000"
+      className="fixed inset-0 pointer-events-none z-0"
       style={{
         width: '100vw',
         height: '100vh',
-        opacity: 0.9,
+        opacity: 1,
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: 0,
       }}
     />
   );

@@ -14,7 +14,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col justify-between">
+    <div className="min-h-screen bg-transparent flex flex-col justify-between">
       <SEOHead
         title="404 — Page Not Found"
         description="That page doesn't exist. Head back to the homepage to keep exploring Sadman Zaman Khan's portfolio, poetry, and writing."

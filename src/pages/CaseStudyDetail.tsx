@@ -38,7 +38,7 @@ export const CaseStudyDetail: React.FC = () => {
   const nextImages = getProjectTrailImages(next);
 
   return (
-    <div className="min-h-screen bg-[#000000] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
+    <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title={`${project.title} — Sadman Zaman Khan`}
         description={project.summary}
@@ -109,33 +109,35 @@ export const CaseStudyDetail: React.FC = () => {
         {/* 4. Next / Previous Project Navigation with Interactive Image Trails */}
         <section className="pt-12 pb-16 grid grid-cols-1 sm:grid-cols-2 gap-6 font-normal">
           {prev ? (
-            <Link
-              to={`/work/${prev.slug}`}
-              className="group relative p-8 rounded-[4px] bg-[#0A0A0A] hover:bg-[#141414] border border-[#1F1F1F] hover:border-[#333333] transition-all space-y-2 overflow-hidden block cursor-pointer"
-            >
-              <ImageTrail items={prevImages} variant={1} className="absolute inset-0 pointer-events-none" />
-              <div className="relative z-10 text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
-                ← Previous Project
-              </div>
-              <div className="relative z-10 text-lg font-normal text-[#FFFFFF] transition-colors">
-                {prev.title}
-              </div>
-            </Link>
+            <ImageTrail items={prevImages} className="w-full">
+              <Link
+                to={`/work/${prev.slug}`}
+                className="group relative p-8 rounded-[4px] bg-[#0A0A0A] hover:bg-[#141414] border border-[#1F1F1F] hover:border-[#333333] transition-all space-y-2 overflow-hidden block cursor-pointer"
+              >
+                <div className="relative z-10 text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
+                  ← Previous Project
+                </div>
+                <div className="relative z-10 text-lg font-normal text-[#FFFFFF] transition-colors">
+                  {prev.title}
+                </div>
+              </Link>
+            </ImageTrail>
           ) : <div />}
 
           {next ? (
-            <Link
-              to={`/work/${next.slug}`}
-              className="group relative p-8 rounded-[4px] bg-[#0A0A0A] hover:bg-[#141414] border border-[#1F1F1F] hover:border-[#333333] transition-all space-y-2 text-left sm:text-right overflow-hidden block cursor-pointer"
-            >
-              <ImageTrail items={nextImages} variant={1} className="absolute inset-0 pointer-events-none" />
-              <div className="relative z-10 text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
-                Next Project →
-              </div>
-              <div className="relative z-10 text-lg font-normal text-[#FFFFFF] transition-colors">
-                {next.title}
-              </div>
-            </Link>
+            <ImageTrail items={nextImages} className="w-full">
+              <Link
+                to={`/work/${next.slug}`}
+                className="group relative p-8 rounded-[4px] bg-[#0A0A0A] hover:bg-[#141414] border border-[#1F1F1F] hover:border-[#333333] transition-all space-y-2 text-left sm:text-right overflow-hidden block cursor-pointer"
+              >
+                <div className="relative z-10 text-xs text-[#888888] uppercase tracking-wider group-hover:text-[#FFFFFF] transition-colors">
+                  Next Project →
+                </div>
+                <div className="relative z-10 text-lg font-normal text-[#FFFFFF] transition-colors">
+                  {next.title}
+                </div>
+              </Link>
+            </ImageTrail>
           ) : <div />}
         </section>
       </main>

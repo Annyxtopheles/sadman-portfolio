@@ -121,7 +121,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#000000] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
+    <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title="About — Sadman Zaman Khan"
         description="Experience timeline, competencies, and background of Sadman Zaman Khan."

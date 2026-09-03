@@ -5,7 +5,7 @@ import { WorkGrid } from '@/components/WorkGrid';
 
 const Work: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#000000] text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
+    <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title="Work — Sadman Zaman Khan"
         description="Selected design work and case studies by Sadman Zaman Khan."

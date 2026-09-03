@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import LiquidGlassCard from './LiquidGlassCard';
 
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 15);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const isActive = (to: string) => {
     if (to === '/') return pathname === '/';
@@ -29,74 +19,62 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 transition-all duration-300">
-      <LiquidGlassCard
-        className={`w-full transition-all duration-300 border-b ${
-          scrolled ? 'border-[#FFFFFF]/10' : 'border-[#FFFFFF]/05'
-        }`}
-        translucentBg={scrolled ? 'bg-[#050505]/45' : 'bg-[#000000]/15'}
-        blurIntensity="xl"
-        glowIntensity="xs"
-        shadowIntensity="xs"
-        borderRadius="0px"
-        draggable={false}
-      >
-        <div className="w-full h-[72px] px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link
-            to="/"
-            className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
-          >
-            Sadman Zaman Khan
-          </Link>
+    <header className="fixed top-0 inset-x-0 z-50 transition-all duration-300 backdrop-blur-lg bg-transparent border-none">
+      <div className="w-full h-[72px] px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
+        >
+          Sadman Zaman Khan
+        </Link>
 
-          {/* Desktop Nav Items */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-normal">
-            {navLinks.map((item) => {
-              if (item.isExternal) {
-                return (
-                  <a
-                    key={item.path}
-                    href={item.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors font-normal"
-                  >
-                    {item.label} ↗
-                  </a>
-                );
-              }
-              const active = isActive(item.path);
+        {/* Desktop Nav Items */}
+        <nav className="hidden md:flex items-center gap-8 text-sm font-normal">
+          {navLinks.map((item) => {
+            if (item.isExternal) {
               return (
-                <Link
+                <a
                   key={item.path}
-                  to={item.path}
-                  aria-current={active ? 'page' : undefined}
-                  className={`relative py-1.5 transition-colors font-normal ${
-                    active
-                      ? 'text-[#FFFFFF] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
-                      : 'text-[#888888] hover:text-[#FFFFFF]'
-                  }`}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors font-normal"
                 >
-                  {item.label}
-                </Link>
+                  {item.label} ↗
+                </a>
               );
-            })}
-          </nav>
+            }
+            const active = isActive(item.path);
+            return (
+              <Link
+                key={item.path}
+                to={item.path}
+                aria-current={active ? 'page' : undefined}
+                className={`relative py-1.5 transition-colors font-normal ${
+                  active
+                    ? 'text-[#FFFFFF] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
+                    : 'text-[#888888] hover:text-[#FFFFFF]'
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex items-center">
-            <button
-              type="button"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-              className="px-3 py-1.5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] text-xs text-[#FFFFFF]"
-            >
-              {isMobileMenuOpen ? 'Close' : 'Menu'}
-            </button>
-          </div>
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden flex items-center">
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+            className="px-3 py-1.5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] text-xs text-[#FFFFFF]"
+          >
+            {isMobileMenuOpen ? 'Close' : 'Menu'}
+          </button>
         </div>
-      </LiquidGlassCard>
+      </div>
 
       {/* Mobile Drawer */}
       {isMobileMenuOpen && (
@@ -141,3 +119,5 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
+
+export default Navbar;
