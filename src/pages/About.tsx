@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import GradualBlur from '@/components/GradualBlur';
 import profileIllustration from '@/assets/profile-illustration.svg';
+import { useExploration } from '@/context/ExplorationContext';
 
 const About: React.FC = () => {
+  const { recordPortalFound } = useExploration();
+  const portalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = portalRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          recordPortalFound();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [recordPortalFound]);
+
   const experiences = [
     {
       role: 'UI/UX Designer',
@@ -261,7 +280,7 @@ const About: React.FC = () => {
         </section>
 
         {/* 5. Personal Digital Archive Transition with Gradual Blur */}
-        <section className="relative pt-6 pb-12 overflow-hidden">
+        <section ref={portalRef} className="relative pt-6 pb-12 overflow-hidden">
           <div className="relative rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] p-8 sm:p-12 md:p-16 text-center space-y-6 overflow-hidden group hover:border-[#333333] transition-colors">
             {/* Gradual Blur layer spanning across the bottom */}
             <GradualBlur
@@ -289,6 +308,7 @@ const About: React.FC = () => {
                   href="https://sadmanzamankhan.pages.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => recordPortalFound()}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-all font-normal shadow-lg cursor-pointer"
                 >
                   <span>Explore Personal Archive ↗</span>

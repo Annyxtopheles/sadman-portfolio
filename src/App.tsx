@@ -17,6 +17,9 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ClickSpark from "@/components/ClickSpark";
 import AmbientStarfield from "@/components/AmbientStarfield";
+import { ExplorationProvider } from "@/context/ExplorationContext";
+import { ExplorationHUD } from "@/components/ExplorationHUD";
+import { CozyRewardModal } from "@/components/CozyRewardModal";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -50,14 +53,18 @@ const App = () => (
       <Sonner />
       <HeroHoverProvider>
         <AudioProvider>
-          <ClickSpark sparkColor="#FFFFFF" sparkCount={8} sparkRadius={20} sparkSize={10}>
-            <SkipLink />
-            <AmbientStarfield />
-            <GrainOverlay />
-            <div id="main-content" tabIndex={-1} className="outline-none">
-              <AnimatedRoutes />
-            </div>
-          </ClickSpark>
+          <ExplorationProvider>
+            <ClickSpark sparkColor="#FFFFFF" sparkCount={8} sparkRadius={20} sparkSize={10}>
+              <SkipLink />
+              <AmbientStarfield />
+              <GrainOverlay />
+              <div id="main-content" tabIndex={-1} className="outline-none">
+                <AnimatedRoutes />
+              </div>
+              <ExplorationHUD />
+              <CozyRewardModal />
+            </ClickSpark>
+          </ExplorationProvider>
         </AudioProvider>
       </HeroHoverProvider>
     </TooltipProvider>

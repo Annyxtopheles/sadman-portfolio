@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { playClickSound } from '@/utils/sound';
+import { useExploration } from '@/context/ExplorationContext';
 
 interface Spark {
   x: number;
@@ -117,6 +118,8 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
     };
   }, [sparkColor, sparkSize, sparkRadius, sparkCount, duration, easeFunc, extraScale]);
 
+  const { recordClick } = useExploration();
+
   const createSparksAt = useCallback(
     (clientX: number, clientY: number) => {
       const now = performance.now();
@@ -129,8 +132,9 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
 
       sparksRef.current.push(...newSparks);
       playClickSound();
+      recordClick();
     },
-    [sparkCount]
+    [sparkCount, recordClick]
   );
 
   useEffect(() => {
