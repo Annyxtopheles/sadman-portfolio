@@ -15,6 +15,7 @@ export interface LiquidGlassCardProps {
   shadowIntensity?: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   borderRadius?: string;
   glowIntensity?: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  translucentBg?: string;
   [key: string]: unknown;
 }
 
@@ -31,6 +32,7 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
   borderRadius = '16px',
   glowIntensity = 'sm',
   shadowIntensity = 'md',
+  translucentBg = 'bg-[#0A0A0A]/30',
   ...props
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -60,11 +62,11 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
 
   const glowStyles: Record<string, string> = {
     none: '0 4px 4px rgba(0, 0, 0, 0.05), 0 0 12px rgba(0, 0, 0, 0.05)',
-    xs: '0 4px 12px rgba(0, 0, 0, 0.4), 0 0 16px rgba(255, 255, 255, 0.03)',
-    sm: '0 4px 20px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 255, 255, 0.05)',
-    md: '0 6px 24px rgba(0, 0, 0, 0.6), 0 0 32px rgba(255, 255, 255, 0.07)',
-    lg: '0 8px 32px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 255, 255, 0.1)',
-    xl: '0 12px 48px rgba(0, 0, 0, 0.8), 0 0 48px rgba(255, 255, 255, 0.12)',
+    xs: '0 4px 12px rgba(0, 0, 0, 0.25), 0 0 16px rgba(255, 255, 255, 0.03)',
+    sm: '0 4px 20px rgba(0, 0, 0, 0.35), 0 0 24px rgba(255, 255, 255, 0.05)',
+    md: '0 6px 24px rgba(0, 0, 0, 0.45), 0 0 32px rgba(255, 255, 255, 0.07)',
+    lg: '0 8px 32px rgba(0, 0, 0, 0.55), 0 0 40px rgba(255, 255, 255, 0.1)',
+    xl: '0 12px 48px rgba(0, 0, 0, 0.65), 0 0 48px rgba(255, 255, 255, 0.12)',
   };
 
   const containerVariants = expandable
@@ -106,34 +108,6 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
 
   return (
     <>
-      {/* Hidden SVG Filter for displacement effect */}
-      <svg className="hidden pointer-events-none absolute" aria-hidden="true">
-        <defs>
-          <filter
-            id="liquid-glass-blur"
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            filterUnits="objectBoundingBox"
-          >
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.003 0.007"
-              numOctaves="1"
-              result="turbulence"
-            />
-            <feDisplacementMap
-              in="SourceGraphic"
-              in2="turbulence"
-              scale="20"
-              xChannelSelector="R"
-              yChannelSelector="G"
-            />
-          </filter>
-        </defs>
-      </svg>
-
       <MotionComponent
         className={cn(
           `relative overflow-hidden ${draggable ? 'cursor-grab active:cursor-grabbing' : ''} ${expandable ? 'cursor-pointer' : ''}`,
@@ -147,15 +121,30 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
         {...motionProps}
         {...props}
       >
-        {/* Bend Layer (Backdrop blur with distortion) */}
+        {/* Bend Layer (Translucent backdrop blur) */}
         <div
-          className={`absolute inset-0 ${blurClasses[blurIntensity]} bg-[#000000]/60 z-0 pointer-events-none`}
+          className={`absolute inset-0 ${blurClasses[blurIntensity]} ${translucentBg} z-0 pointer-events-none`}
           style={{
             borderRadius,
           }}
         />
 
-        {/* Face Layer (Main shadow and glow) */}
+        {/* Grain Texture Overlay */}
+        <div
+          className="absolute inset-0 z-[5] pointer-events-none opacity-25 mix-blend-overlay"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'repeat',
+            borderRadius,
+          }}
+        />
+
+        {/* Top Edge Specular Sheen */}
+        <div
+          className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent z-10 pointer-events-none"
+        />
+
+        {/* Face Layer (Soft Shadow and Glow) */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
@@ -169,7 +158,7 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
           className="absolute inset-0 z-20 pointer-events-none border border-[#FFFFFF]/10"
           style={{
             borderRadius,
-            boxShadow: shadowStyles[shadowIntensity || 'md'],
+            boxShadow: shadowStyles[shadowIntensity || 'xs'],
           }}
         />
 

@@ -16,6 +16,7 @@ import CaseStudyDetail from "./pages/CaseStudyDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ClickSpark from "@/components/ClickSpark";
+import AmbientStarfield from "@/components/AmbientStarfield";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -51,6 +52,7 @@ const App = () => (
         <AudioProvider>
           <ClickSpark sparkColor="#FFFFFF" sparkCount={8} sparkRadius={20} sparkSize={10}>
             <SkipLink />
+            <AmbientStarfield />
             <GrainOverlay />
             <div id="main-content" tabIndex={-1} className="outline-none">
               <AnimatedRoutes />

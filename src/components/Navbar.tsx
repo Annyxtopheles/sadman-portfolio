@@ -32,11 +32,12 @@ export const Navbar: React.FC = () => {
     <header className="fixed top-0 inset-x-0 z-50 transition-all duration-300">
       <LiquidGlassCard
         className={`w-full transition-all duration-300 border-b ${
-          scrolled ? 'border-[#FFFFFF]/10' : 'border-transparent'
+          scrolled ? 'border-[#FFFFFF]/10' : 'border-[#FFFFFF]/05'
         }`}
+        translucentBg={scrolled ? 'bg-[#050505]/45' : 'bg-[#000000]/15'}
         blurIntensity="xl"
         glowIntensity="xs"
-        shadowIntensity="sm"
+        shadowIntensity="xs"
         borderRadius="0px"
         draggable={false}
       >
