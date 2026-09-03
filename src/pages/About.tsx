@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
-import GradualBlur from '@/components/GradualBlur';
 import profileIllustration from '@/assets/profile-illustration.svg';
 import { useExploration } from '@/context/ExplorationContext';
 import { BorderGlow } from '@/components/effects/BorderGlow';
@@ -25,6 +24,24 @@ const About: React.FC = () => {
     observer.observe(el);
     return () => observer.disconnect();
   }, [recordPortalFound]);
+
+  const personalImages = [
+    {
+      url: profileIllustration,
+      caption: 'Sadman Zaman Khan — Signature vector portrait & avatar',
+      tag: 'Portrait'
+    },
+    {
+      url: '/assets/profile/id-card-portrait.svg',
+      caption: 'SJ Innovation LLC — Designer badge & corporate identity',
+      tag: 'Identity'
+    },
+    {
+      url: '/assets/rewards/cozy-desk-04.webp',
+      caption: 'Studio workspace — Rapid prototyping, research & design systems',
+      tag: 'Studio'
+    }
+  ];
 
   const experiences = [
     {
@@ -190,10 +207,11 @@ const About: React.FC = () => {
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-16">
-        {/* 1. Profile Header & Bio with Illustration */}
+        {/* 1. Profile Header & Bio with Personal Artifacts Collage */}
         <section className="pt-6">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12">
-            <div className="max-w-3xl space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Left Column: Bio & Identity Details */}
+            <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FFFFFF]">
                   Sadman Zaman Khan
@@ -209,15 +227,9 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Illustration */}
-            <div className="lg:w-72 shrink-0 flex justify-center">
-              <div className="relative w-56 sm:w-64 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors">
-                <img
-                  src={profileIllustration}
-                  alt="Sadman Zaman Khan Illustration"
-                  className="w-full h-auto rounded-[2px] object-contain bg-white/95"
-                />
-              </div>
+            {/* Right Column: Personal Artifacts Collage */}
+            <div className="lg:col-span-5 pt-1">
+              <ArtifactCollage images={personalImages} title="Identity &amp; Individual" />
             </div>
           </div>
         </section>
@@ -334,31 +346,15 @@ const About: React.FC = () => {
 
         {/* 5. Personal Digital Archive Transition & Gateway to SZK */}
         <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
-          {/* Atmospheric gradual blur transition */}
-          <div className="relative mb-6">
-            <GradualBlur
-              position="top"
-              height="6rem"
-              strength={2}
-              divCount={5}
-              opacity={0.65}
-              curve="bezier"
-              className="z-10 pointer-events-none"
-            />
-          </div>
-
           <div className="max-w-4xl mx-auto space-y-10 text-center">
-            {/* SZK Literary Header */}
+            {/* SZK Header */}
             <div className="space-y-3">
-              <span className="font-fell text-xs uppercase tracking-[0.25em] text-[#9E9484]">
+              <span className="font-scanport text-xs lowercase tracking-wider text-[#9E9484]">
                 beyond the corporate showcase
               </span>
               <h2 className="font-fell text-4xl sm:text-5xl md:text-6xl font-normal lowercase tracking-tight text-[#F7F2EB]">
                 gateway to personal archive
               </h2>
-              <p className="font-fell text-base sm:text-lg text-[#B8AF9F] italic lowercase max-w-xl mx-auto leading-relaxed">
-                poems, pastime logs, physics experiments &amp; unfiltered musings.
-              </p>
             </div>
 
             {/* The Gateway Card — Styled in SZK's signature warm, analog, BorderGlow aesthetic */}
@@ -393,9 +389,9 @@ const About: React.FC = () => {
                     {/* Atmospheric warm vignette overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0E0D0B]/85 via-[#0E0D0B]/35 to-transparent group-hover:via-[#0E0D0B]/25 transition-colors duration-300" />
 
-                    {/* Centered Literary SZK-style Button */}
+                    {/* Centered Literary SZK-style Button with Scanport font */}
                     <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
-                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F5F2EB] hover:bg-[#FFFFFF] text-[#1A1918] shadow-2xl border border-[#E5DFD3] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-fell text-base sm:text-lg lowercase tracking-wide cursor-pointer">
+                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F5F2EB] hover:bg-[#FFFFFF] text-[#1A1918] shadow-2xl border border-[#E5DFD3] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-scanport text-base sm:text-lg lowercase tracking-normal cursor-pointer">
                         <span>enter personal archive</span>
                         <span
                           aria-hidden="true"

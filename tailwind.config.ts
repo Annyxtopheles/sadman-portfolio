@@ -20,6 +20,7 @@ export default {
         'heading': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'fell': ['"IM Fell English"', 'Georgia', 'serif'],
         'bengali': ['"Noto Serif Bengali"', 'Georgia', 'serif'],
+        'scanport': ['Scanport', 'sans-serif'],
       },
       fontSize: {
         'xs':   ['13px', { lineHeight: '18px', letterSpacing: '0.01em' }],
