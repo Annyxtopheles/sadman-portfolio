@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import LiquidGlassCard from './LiquidGlassCard';
 
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 15);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -28,68 +29,73 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 h-[72px] transition-all duration-300 ${
-        scrolled
-          ? 'bg-[#000000]/95 backdrop-blur-md border-b border-[#1F1F1F]'
-          : 'bg-transparent border-b border-transparent'
-      }`}
-    >
-      <div className="w-full h-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex items-center justify-between">
-        {/* Logo */}
-        <Link
-          to="/"
-          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
-        >
-          Sadman Zaman Khan
-        </Link>
-
-        {/* Desktop Nav Items */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-normal">
-          {navLinks.map((item) => {
-            if (item.isExternal) {
-              return (
-                <a
-                  key={item.path}
-                  href={item.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors font-normal"
-                >
-                  {item.label} ↗
-                </a>
-              );
-            }
-            const active = isActive(item.path);
-            return (
-              <Link
-                key={item.path}
-                to={item.path}
-                aria-current={active ? 'page' : undefined}
-                className={`relative py-1.5 transition-colors font-normal ${
-                  active
-                    ? 'text-[#FFFFFF] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
-                    : 'text-[#888888] hover:text-[#FFFFFF]'
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
-
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center">
-          <button
-            type="button"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-            className="px-3 py-1.5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] text-xs text-[#FFFFFF]"
+    <header className="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+      <LiquidGlassCard
+        className={`w-full transition-all duration-300 border-b ${
+          scrolled ? 'border-[#FFFFFF]/10' : 'border-transparent'
+        }`}
+        blurIntensity="xl"
+        glowIntensity="xs"
+        shadowIntensity="sm"
+        borderRadius="0px"
+        draggable={false}
+      >
+        <div className="w-full h-[72px] px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            to="/"
+            className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
           >
-            {isMobileMenuOpen ? 'Close' : 'Menu'}
-          </button>
+            Sadman Zaman Khan
+          </Link>
+
+          {/* Desktop Nav Items */}
+          <nav className="hidden md:flex items-center gap-8 text-sm font-normal">
+            {navLinks.map((item) => {
+              if (item.isExternal) {
+                return (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#888888] hover:text-[#FFFFFF] py-1.5 transition-colors font-normal"
+                  >
+                    {item.label} ↗
+                  </a>
+                );
+              }
+              const active = isActive(item.path);
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  aria-current={active ? 'page' : undefined}
+                  className={`relative py-1.5 transition-colors font-normal ${
+                    active
+                      ? 'text-[#FFFFFF] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#FFFFFF]'
+                      : 'text-[#888888] hover:text-[#FFFFFF]'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden flex items-center">
+            <button
+              type="button"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+              className="px-3 py-1.5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] text-xs text-[#FFFFFF]"
+            >
+              {isMobileMenuOpen ? 'Close' : 'Menu'}
+            </button>
+          </div>
         </div>
-      </div>
+      </LiquidGlassCard>
 
       {/* Mobile Drawer */}
       {isMobileMenuOpen && (
@@ -117,7 +123,7 @@ export const Navbar: React.FC = () => {
                   to={item.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-2xl font-display font-medium py-3 border-b border-[#1F1F1F] ${
-                    active ? 'text-[#FFFFFF] font-bold' : 'text-[#888888]'
+                    active ? 'text-[#FFFFFF]' : 'text-[#888888]'
                   }`}
                 >
                   {item.label}

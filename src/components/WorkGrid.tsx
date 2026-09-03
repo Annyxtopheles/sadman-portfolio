@@ -22,7 +22,7 @@ export const WorkGrid: React.FC<WorkGridProps> = ({
     <div className="w-full space-y-8 relative">
       {/* Subtle gentle backdrop overlay when hovering any card */}
       <div
-        className={`fixed inset-0 bg-[#000000]/25 pointer-events-none transition-opacity duration-300 z-10 ${
+        className={`fixed inset-0 bg-[#000000]/12 pointer-events-none transition-opacity duration-300 z-10 ${
           hoveredId ? 'opacity-100' : 'opacity-0'
         }`}
       />

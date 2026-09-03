@@ -6,18 +6,7 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
       <div className="w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex flex-col lg:flex-row items-center justify-between gap-6 text-xs sm:text-sm text-[#888888]">
         {/* Left: Copyright note */}
         <div className="text-center lg:text-left">
-          <span>
-            © {new Date().getFullYear()} Sadman Zaman Khan • Remade after my QA colleague called my{' '}
-            <a
-              href="https://sadmanzamankhan.pages.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#CCCCCC] underline hover:text-[#FFFFFF] transition-colors"
-            >
-              personally preferred portfolio
-            </a>{' '}
-            "মরা মার্কা"
-          </span>
+          <span>© {new Date().getFullYear()} Sadman Zaman Khan</span>
         </div>
 
         {/* Right: Direct links & Email */}
@@ -29,15 +18,6 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
             className="hover:text-[#FFFFFF] transition-colors"
           >
             LinkedIn ↗
-          </a>
-          <a
-            href="/Sadman_Zaman_Khan_Resume.pdf"
-            download="Sadman_Zaman_Khan_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-[#FFFFFF] transition-colors"
-          >
-            Resume ↗
           </a>
           <a
             href="mailto:sadmanz.khan@gmail.com"

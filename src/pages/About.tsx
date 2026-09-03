@@ -1,6 +1,7 @@
 import React from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
+import GradualBlur from '@/components/GradualBlur';
 import profileIllustration from '@/assets/profile-illustration.svg';
 
 const About: React.FC = () => {
@@ -18,7 +19,7 @@ const About: React.FC = () => {
         'Manually redesigned AI-generated visual output in Figma to remove generic template patterns, then rebuilt and deployed the site using Google Antigravity and hand-coded refinements via Git/GitHub Pages.',
         'WordPress: Hands-on content publishing, plugin administration, and technical troubleshooting; custom HTML.',
         'Built and executed Meta ad campaigns (ePhysician, NonProfit AI) from sales lead data: segmented leads into custom audiences, configured targeting across campaign, ad set, and ad level in Ads Manager, and designed ad creatives that generated 5 form submissions on day one (previous creatives ran 4 days with 0 clicks).',
-        'Built functional front-end prototypes using low-code platforms (Lovable) to validate design decisions with stakeholders before development, reducing revision cycles and accelerating time-to-market.',
+        'Built functional front-end prototypes using modern rapid prototyping platforms to validate design decisions with stakeholders before development, reducing revision cycles and accelerating time-to-market.',
         'Implemented a local AI workflow prototype (Ollama/Perplexica) for competitive UX analysis and set up ComfyUI workflows with safetensors models to generate images locally.',
         'Recognized by a senior business analyst for ownership mindset: proactively delivering work with integrated self-critique and recommended improvements, streamlining review cycles.',
         'Led a full UI/UX redesign of CollabAI\'s multi-agent platform, replacing a cluttered, neon-heavy interface with a clean, minimal design; implemented live AI chat with real model provider integrations (Groq, Gemini, OpenRouter) and user access controls, tested across desktop and mobile browsers.'
@@ -142,7 +143,7 @@ const About: React.FC = () => {
 
               {/* Bio */}
               <p className="text-base sm:text-lg text-[#999999] font-normal leading-relaxed">
-                Versatile UI/UX Designer with hands-on experience across enterprise dashboards, brand systems, and AI-augmented prototyping. Uses Figma AI and low-code tools (Lovable) to move from concept to testable prototype quickly, reducing client revision cycles. Sole designer at SJ Innovation since February 2026, independently owning all client and internal design work.
+                Versatile UI/UX Designer with hands-on experience across enterprise dashboards, brand systems, and AI-augmented prototyping. Uses Figma AI and rapid prototyping tools to move from concept to testable prototype quickly, reducing client revision cycles. Sole designer at SJ Innovation since February 2026, independently owning all client and internal design work.
               </p>
             </div>
 
@@ -230,7 +231,7 @@ const About: React.FC = () => {
         </section>
 
         {/* 4. Certifications */}
-        <section className="space-y-8 pb-12">
+        <section className="space-y-8 pb-4">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               Certifications
@@ -256,6 +257,44 @@ const About: React.FC = () => {
                 </div>
               </a>
             ))}
+          </div>
+        </section>
+
+        {/* 5. Personal Digital Archive Transition with Gradual Blur */}
+        <section className="relative pt-6 pb-12 overflow-hidden">
+          <div className="relative rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] p-8 sm:p-12 md:p-16 text-center space-y-6 overflow-hidden group hover:border-[#333333] transition-colors">
+            {/* Gradual Blur layer spanning across the bottom */}
+            <GradualBlur
+              position="bottom"
+              height="100%"
+              strength={3}
+              divCount={8}
+              opacity={0.85}
+              curve="bezier"
+              className="z-10 pointer-events-none"
+            />
+
+            <div className="relative z-20 max-w-2xl mx-auto space-y-4">
+              <span className="text-xs uppercase tracking-widest text-[#888888] font-normal">
+                Beyond the Corporate Showcase
+              </span>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-normal text-[#FFFFFF] tracking-tight">
+                Poems, pastime logs &amp; unfiltered musings.
+              </h3>
+              <p className="text-sm sm:text-base text-[#999999] font-normal leading-relaxed">
+                Step into my personal digital archive — featuring interactive 3D physics experiments, bilingual poetry readers, and raw creative engineering.
+              </p>
+              <div className="pt-4">
+                <a
+                  href="https://sadmanzamankhan.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-all font-normal shadow-lg cursor-pointer"
+                >
+                  <span>Explore Personal Archive ↗</span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

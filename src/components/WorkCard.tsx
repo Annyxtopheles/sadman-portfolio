@@ -27,7 +27,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({
       className={`h-full transition-all duration-300 ${
         isHovered ? 'relative z-20 scale-[1.015]' : ''
       } ${
-        isMuted ? 'opacity-25 blur-[3px] scale-[0.98]' : 'opacity-100 filter-none'
+        isMuted ? 'opacity-40 blur-[2px] scale-[0.99]' : 'opacity-100 filter-none'
       }`}
     >
       <TiltedCard rotateAmplitude={6} scaleOnHover={1.01} className="h-full">

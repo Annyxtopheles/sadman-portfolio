@@ -101,6 +101,101 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "szk-personal-archive",
+    slug: "szk-personal-archive",
+    title: "SZK Personal Digital Archive",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Independent / Personal",
+    client: "Sadman Zaman Khan",
+    year: "2025 – 2026",
+    duration: "3 Months",
+    scope: ["3D WebGL", "Physics Simulation", "Creative Direction", "Bilingual Poetry UI", "Full-Stack React"],
+    summary: "An expressive personal digital archive and initial portfolio combining 3D physics lanyard simulation, bilingual poetry reader, multimedia pastime tracking, and vintage editorial typography.",
+    coverImage: "/assets/projects/szk-mockup.webp",
+    liveUrl: "https://sadmanzamankhan.pages.dev/",
+    tldr: {
+      challenge: "Creating an intimate, unfiltered digital sanctuary that breaks away from cookie-cutter designer portfolios—blending technical 3D physics with poetry, cinema, and literary personal essays.",
+      role: "Creator, Designer & Engineer — conceived the editorial identity, engineered the Rapier3D interactive physics lanyard badge, and built custom reader modes.",
+      method: "Engineered with React Three Fiber, Rapier 3D rigid-body dynamics, custom audio synthesis, and Caslon Antique typography with ambient grain overlays."
+    },
+    problem: "Standard hiring portfolios sanitize personality in favor of safe corporate templates. This project was conceived as an authentic digital habitat celebrating personal prose, pastime logs, and deep creative engineering.",
+    process: [
+      {
+        title: "Interactive 3D Physics Lanyard Badge",
+        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D physics engines with dynamic lighting, collision detection, and tactile spring dynamics.",
+        details: [
+          "Real-time WebGL mesh rendering with ambient grain and scanline post-processing",
+          "Bilingual poetry interface with paper-textured reader toggle and custom Bengali typography",
+          "Integrated multimedia pastime tracker with live status chips for anime, cinema, and literature"
+        ]
+      }
+    ],
+    aiWorkflow: "Used generative design and procedural math scripting in GLSL shaders to tune realistic cloth physics and rope tension for the 3D lanyard strap.",
+    outcomes: [
+      { label: "3D Physics", value: "60 fps", subtext: "Silky smooth rigid-body simulation on both mobile and desktop browsers" },
+      { label: "Authenticity", value: "100%", subtext: "Direct uncompromised expression of design, poetry, and technical craft" }
+    ],
+    outcomeSummary: "An unapologetically personal, tactile web experience that proves depth of craft and technical mastery beyond conventional portfolio bounds.",
+    galleryImages: [
+      {
+        url: "/assets/projects/szk-mockup.webp",
+        caption: "SZK Archive — Minimalist editorial landing view with stark typography and poetry navigation",
+        type: "desktop"
+      }
+    ]
+  },
+  {
+    id: "clandest-agency",
+    slug: "clandest-agency",
+    title: "Clandest Agency Landing Page",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Clandest Agency",
+    client: "Clandest Studio",
+    year: "2026",
+    duration: "1 Month",
+    scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
+    summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
+    coverImage: "/assets/projects/clandest-mockup.webp",
+    liveUrl: "https://annyxtopheles.github.io/clandest-agency-site/",
+    tldr: {
+      challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
+      role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
+      method: "Engineered fluid clamp-based typography (Host Grotesk & Roboto Flex), custom animated SVG button states, and lightweight interactive service cards."
+    },
+    problem: "Most creative agency websites are bloated with heavy JavaScript bundles, slow load times, and vague positioning copy that hides who is actually doing the work.",
+    process: [
+      {
+        title: "Direct Visual Hierarchy & Fluid Typography",
+        description: "Developed a human, conversational headline structure paired with fluid typography scales that automatically adapt across mobile, tablet, and ultra-wide screens without jarring layout shifts.",
+        details: [
+          "Curated distinct brand palette: Base Canvas (#E6E6E6) paired with deep Brand Navy (#2E4F94)",
+          "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
+          "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
+        ]
+      }
+    ],
+    aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
+    outcomes: [
+      { label: "Performance Score", value: "100", subtext: "Zero-framework vanilla architecture scoring 100 on Google PageSpeed" },
+      { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
+    ],
+    outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
+    galleryImages: [
+      {
+        url: "/assets/projects/clandest-mockup.webp",
+        caption: "Clandest Agency — Studio homepage showcasing brand, web development, and marketing video services",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/clandest-services.webp",
+        caption: "Services visual architecture — responsive card grid with fluid micro-interactions",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "icr-debt-surveillance",
     slug: "icr-debt-surveillance",
     title: "ICR Debt Surveillance Terminal",
@@ -161,101 +256,6 @@ export const PROJECTS: Project[] = [
         url: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1400&auto=format&fit=crop",
         caption: "Issuer debt maturity ladder and liquidity distribution visualization",
         type: "mockup"
-      }
-    ]
-  },
-  {
-    id: "clandest-agency",
-    slug: "clandest-agency",
-    title: "Clandest Agency Landing Page",
-    category: "Mobile & Web",
-    status: "LIVE",
-    company: "Clandest Agency",
-    client: "Clandest Studio",
-    year: "2026",
-    duration: "1 Month",
-    scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
-    summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
-    coverImage: "/assets/projects/clandest-mockup.webp",
-    liveUrl: "https://annyxtopheles.github.io/clandest-agency-site/",
-    tldr: {
-      challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
-      role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
-      method: "Engineered fluid clamp-based typography (Host Grotesk & Roboto Flex), custom animated SVG button states, and lightweight interactive service cards."
-    },
-    problem: "Most creative agency websites are bloated with heavy JavaScript bundles, slow load times, and vague positioning copy that hides who is actually doing the work.",
-    process: [
-      {
-        title: "Direct Visual Hierarchy & Fluid Typography",
-        description: "Developed a human, conversational headline structure paired with fluid typography scales that automatically adapt across mobile, tablet, and ultra-wide screens without jarring layout shifts.",
-        details: [
-          "Curated distinct brand palette: Base Canvas (#E6E6E6) paired with deep Brand Navy (#2E4F94)",
-          "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
-          "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
-        ]
-      }
-    ],
-    aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
-    outcomes: [
-      { label: "Performance Score", value: "100", subtext: "Zero-framework vanilla architecture scoring 100 on Google PageSpeed" },
-      { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
-    ],
-    outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
-    galleryImages: [
-      {
-        url: "/assets/projects/clandest-mockup.webp",
-        caption: "Clandest Agency — Studio homepage showcasing brand, web development, and marketing video services",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/clandest-services.webp",
-        caption: "Services visual architecture — responsive card grid with fluid micro-interactions",
-        type: "desktop"
-      }
-    ]
-  },
-  {
-    id: "szk-personal-archive",
-    slug: "szk-personal-archive",
-    title: "SZK Personal Digital Archive",
-    category: "Mobile & Web",
-    status: "LIVE",
-    company: "Independent / Personal",
-    client: "Sadman Zaman Khan",
-    year: "2025 – 2026",
-    duration: "3 Months",
-    scope: ["3D WebGL", "Physics Simulation", "Creative Direction", "Bilingual Poetry UI", "Full-Stack React"],
-    summary: "An expressive personal digital archive and initial portfolio combining 3D physics lanyard simulation, bilingual poetry reader, multimedia pastime tracking, and vintage editorial typography.",
-    coverImage: "/assets/projects/szk-mockup.webp",
-    liveUrl: "https://sadmanzamankhan.pages.dev/",
-    tldr: {
-      challenge: "Creating an intimate, unfiltered digital sanctuary that breaks away from cookie-cutter designer portfolios—blending technical 3D physics with poetry, cinema, and literary personal essays.",
-      role: "Creator, Designer & Engineer — conceived the editorial identity, engineered the Rapier3D interactive physics lanyard badge, and built custom reader modes.",
-      method: "Engineered with React Three Fiber, Rapier 3D rigid-body dynamics, custom audio synthesis, and Caslon Antique typography with ambient grain overlays."
-    },
-    problem: "Standard hiring portfolios sanitize personality in favor of safe corporate templates. This project was conceived as an authentic digital habitat celebrating personal prose, pastime logs, and deep creative engineering.",
-    process: [
-      {
-        title: "Interactive 3D Physics Lanyard Badge",
-        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D physics engines with dynamic lighting, collision detection, and tactile spring dynamics.",
-        details: [
-          "Real-time WebGL mesh rendering with ambient grain and scanline post-processing",
-          "Bilingual poetry interface with paper-textured reader toggle and custom Bengali typography",
-          "Integrated multimedia pastime tracker with live status chips for anime, cinema, and literature"
-        ]
-      }
-    ],
-    aiWorkflow: "Used generative design and procedural math scripting in GLSL shaders to tune realistic cloth physics and rope tension for the 3D lanyard strap.",
-    outcomes: [
-      { label: "3D Physics", value: "60 fps", subtext: "Silky smooth rigid-body simulation on both mobile and desktop browsers" },
-      { label: "Authenticity", value: "100%", subtext: "Direct uncompromised expression of design, poetry, and technical craft" }
-    ],
-    outcomeSummary: "An unapologetically personal, tactile web experience that proves depth of craft and technical mastery beyond conventional portfolio bounds.",
-    galleryImages: [
-      {
-        url: "/assets/projects/szk-mockup.webp",
-        caption: "SZK Archive — Minimalist editorial landing view with stark typography and poetry navigation",
-        type: "desktop"
       }
     ]
   },
