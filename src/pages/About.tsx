@@ -5,6 +5,7 @@ import GradualBlur from '@/components/GradualBlur';
 import profileIllustration from '@/assets/profile-illustration.svg';
 import { useExploration } from '@/context/ExplorationContext';
 import { BorderGlow } from '@/components/effects/BorderGlow';
+import { ArtifactCollage } from '@/components/ArtifactCollage';
 
 const About: React.FC = () => {
   const { recordPortalFound } = useExploration();
@@ -263,39 +264,10 @@ const About: React.FC = () => {
                   </ul>
                 </div>
 
-                {/* Right Column: Contextual Visual Artifacts */}
+                {/* Right Column: Contextual Visual Artifacts Collage */}
                 {exp.images && exp.images.length > 0 && (
-                  <div className="lg:col-span-5 space-y-4">
-                    <div className="text-[11px] font-mono uppercase tracking-wider text-[#666666] px-1 flex items-center justify-between">
-                      <span>Artifacts &amp; Context</span>
-                      <span>{exp.images.length} {exp.images.length === 1 ? 'preview' : 'previews'}</span>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                      {exp.images.map((img, imgIdx) => (
-                        <figure
-                          key={imgIdx}
-                          className="rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-all group"
-                        >
-                          <div className="relative overflow-hidden rounded-[2px] bg-[#141414] aspect-[16/10] flex items-center justify-center">
-                            <img
-                              src={img.url}
-                              alt={img.caption}
-                              loading="lazy"
-                              className="w-full h-full object-cover object-top rounded-[2px] group-hover:scale-[1.02] transition-transform duration-300"
-                            />
-                            {img.tag && (
-                              <div className="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider uppercase bg-[#000000]/80 text-[#CCCCCC] backdrop-blur-sm border border-[#333333]">
-                                {img.tag}
-                              </div>
-                            )}
-                          </div>
-                          <figcaption className="px-1.5 pt-2 pb-0.5 text-xs text-[#888888] font-normal leading-normal">
-                            {img.caption}
-                          </figcaption>
-                        </figure>
-                      ))}
-                    </div>
+                  <div className="lg:col-span-5 pt-1">
+                    <ArtifactCollage images={exp.images} />
                   </div>
                 )}
               </div>
