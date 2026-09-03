@@ -82,13 +82,13 @@ export const CozyRewardModal: React.FC = () => {
           transition={{ type: 'spring', damping: 25, stiffness: 300 }}
           className="relative w-full max-w-lg rounded-[6px] border border-[#2A2A2A] bg-[#0A0A0A] p-6 sm:p-8 shadow-2xl text-[#FFFFFF] space-y-6 overflow-hidden my-auto"
         >
-          {/* Subtle warm ambient glow in top corner */}
-          <div className="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+          {/* Subtle ambient glow in top corner */}
+          <div className="absolute -top-24 -right-24 w-48 h-48 bg-white/5 rounded-full blur-3xl pointer-events-none" />
 
           {/* Header */}
           <div className="flex items-start justify-between gap-4 border-b border-[#1F1F1F] pb-4 relative z-10">
             <div className="space-y-1">
-              <div className="inline-flex items-center gap-2 px-2 py-0.5 rounded text-[11px] font-mono tracking-wide uppercase bg-amber-500/10 text-amber-300 border border-amber-500/20">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded text-[11px] font-mono tracking-wide uppercase bg-white/10 text-[#FFFFFF] border border-white/20">
                 <span>✦ Reward Unlocked</span>
                 <span>·</span>
                 <span>The Cozy Break Room</span>
@@ -150,7 +150,7 @@ export const CozyRewardModal: React.FC = () => {
           {/* Clever Perks Box */}
           <div className="p-4 rounded-[4px] bg-[#0E0E0E] border border-[#1F1F1F] space-y-2 text-xs text-[#999999] leading-relaxed">
             <div className="text-[#FFFFFF] font-normal flex items-center gap-2">
-              <span className="text-amber-400">☕</span>
+              <span className="text-white">☕</span>
               <span>The Completionist Perks:</span>
             </div>
             <p>

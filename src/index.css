@@ -60,6 +60,58 @@
     background-color: #FFFFFF;
     color: #000000;
   }
+
+  /* --- Branded Minimalist Scrollbar --- */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #2E2E2E #000000;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 4px;
+    border: 2px solid #000000;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #000000;
+  }
+}
+
+/* Custom scrollbar for inner scrollable containers */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2E2E2E #0A0A0A;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2E2E2E;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #444444;
 }
 
 @keyframes pageSlideUp {

@@ -78,7 +78,7 @@ export const ExplorationHUD: React.FC = () => {
           {/* Micro Progress Bar on bottom edge */}
           <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#1A1A1A] rounded-b-[4px] overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-neutral-400 via-cyan-400 to-cyan-200"
+              className="h-full bg-cyan-400"
               initial={{ width: 0 }}
               animate={{ width: `${progressPercent}%` }}
               transition={{ duration: 0.4 }}
@@ -141,7 +141,7 @@ export const ExplorationHUD: React.FC = () => {
               {/* Progress Line */}
               <div className="h-[2px] w-full bg-[#181818] overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-neutral-500 via-cyan-400 to-cyan-200"
+                  className="h-full bg-cyan-400"
                   initial={{ width: 0 }}
                   animate={{ width: `${progressPercent}%` }}
                 />
@@ -154,9 +154,9 @@ export const ExplorationHUD: React.FC = () => {
                   <motion.div
                     initial={{ opacity: 0, y: -5 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="p-4 rounded-[4px] bg-gradient-to-r from-amber-500/10 via-neutral-900 to-neutral-900 border border-amber-500/30 space-y-2"
+                    className="p-4 rounded-[4px] bg-[#121212] border border-[#2E2E2E] space-y-2.5"
                   >
-                    <div className="flex items-center gap-2 text-amber-300 font-medium">
+                    <div className="flex items-center gap-2 text-[#FFFFFF] font-medium">
                       <span>☕</span>
                       <span>The Cozy Break Room is Unlocked</span>
                     </div>
@@ -165,7 +165,7 @@ export const ExplorationHUD: React.FC = () => {
                     </p>
                     <button
                       onClick={handleOpenReward}
-                      className="w-full py-2 px-3 rounded-[3px] bg-amber-400 hover:bg-amber-300 text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                      className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <span>Claim Your Cozy Reward ☕</span>
                       <span>→</span>
@@ -202,7 +202,7 @@ export const ExplorationHUD: React.FC = () => {
                             <span
                               className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 ${
                                 isViewed
-                                  ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
+                                  ? 'bg-white/10 text-white border border-white/20'
                                   : 'border border-[#333333] text-[#555555]'
                               }`}
                             >
@@ -238,7 +238,7 @@ export const ExplorationHUD: React.FC = () => {
                   <div className="space-y-2">
                     {/* Milestone 1: Landed */}
                     <div className="flex items-start gap-2.5 p-2 rounded-[3px] bg-[#0E0E0E] border border-[#1A1A1A]">
-                      <span className="w-4 h-4 rounded-[2px] bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5">
+                      <span className="w-4 h-4 rounded-[2px] bg-white/10 text-white border border-white/20 flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5">
                         ✓
                       </span>
                       <div className="space-y-0.5">
@@ -252,7 +252,7 @@ export const ExplorationHUD: React.FC = () => {
                       <span
                         className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
                           state.visitedRoutes.includes('/about')
-                            ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
+                            ? 'bg-white/10 text-white border border-white/20'
                             : 'border border-[#333333] text-[#555555]'
                         }`}
                       >
@@ -271,7 +271,7 @@ export const ExplorationHUD: React.FC = () => {
                       <span
                         className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
                           state.clicksCount >= 5
-                            ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
+                            ? 'bg-white/10 text-white border border-white/20'
                             : 'border border-[#333333] text-[#555555]'
                         }`}
                       >
@@ -292,7 +292,7 @@ export const ExplorationHUD: React.FC = () => {
                       <span
                         className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
                           state.foundPortal
-                            ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
+                            ? 'bg-white/10 text-white border border-white/20'
                             : 'border border-[#333333] text-[#555555]'
                         }`}
                       >
@@ -320,9 +320,6 @@ export const ExplorationHUD: React.FC = () => {
                 >
                   Reset progress
                 </button>
-                <div className="text-[#666666] font-mono">
-                  Sadman Zaman Khan · Portfolio
-                </div>
               </div>
             </motion.div>
           </div>
