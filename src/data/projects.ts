@@ -289,6 +289,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "4/5"
           }
         ]
+      },
+      {
+        sectionTitle: "YouTube Video Thumbnails & Demo Showcases",
+        sectionDescription: "High-CTR 16:9 thumbnail design system crafted for BuildYourAI's YouTube tutorials, live agent walkthroughs, and executive feature demonstrations, combining bold headline typography, brand gradient accents, and real dashboard mockups.",
+        images: [
+          {
+            url: "/assets/projects/buildyourai/byai-yt-smart-shopper-insights.webp",
+            caption: "Smart Shopper Insights — E-Commerce Customer Purchase Analytics demo thumbnail",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-ai-booking-agent-demo.webp",
+            caption: "AI Booking Agent Demo — Voice agent and conversational scheduler walkthrough",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-ai-event-organizer.webp",
+            caption: "AI Event Organizer — Dual-display administrative CMS and email workflow demo",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp",
+            caption: "Automate Business Ops — Control Tower enterprise suite overview with 3D metallic crest",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-bill-splitter-app-ep02.webp",
+            caption: "Bill-Splitter App (Episode 02) — Product walkthrough and mobile utility showcase",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -333,6 +369,36 @@ export const PROJECTS: Project[] = [
         caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
         type: "carousel",
         aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-smart-shopper-insights.webp",
+        caption: "Smart Shopper Insights — E-Commerce Customer Purchase Analytics demo thumbnail",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-ai-booking-agent-demo.webp",
+        caption: "AI Booking Agent Demo — Voice agent and conversational scheduler walkthrough",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-ai-event-organizer.webp",
+        caption: "AI Event Organizer — Dual-display administrative CMS and email workflow demo",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp",
+        caption: "Automate Business Ops — Control Tower enterprise suite overview with 3D metallic crest",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-bill-splitter-app-ep02.webp",
+        caption: "Bill-Splitter App (Episode 02) — Product walkthrough and mobile utility showcase",
+        type: "desktop",
+        aspectRatio: "16/9"
       }
     ]
   },

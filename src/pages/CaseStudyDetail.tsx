@@ -103,7 +103,13 @@ export const CaseStudyDetail: React.FC = () => {
                   )}
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div
+                  className={`grid gap-6 lg:gap-8 ${
+                    section.images.some((img) => img.aspectRatio === '16/9')
+                      ? 'grid-cols-1 md:grid-cols-2'
+                      : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+                  }`}
+                >
                   {section.images.map((img, gIdx) => (
                     <figure
                       key={gIdx}
@@ -117,6 +123,8 @@ export const CaseStudyDetail: React.FC = () => {
                           className={`w-full ${
                             img.aspectRatio === '4/5' || img.type === 'carousel'
                               ? 'aspect-[4/5] object-contain'
+                              : img.aspectRatio === '16/9'
+                              ? 'aspect-[16/9] object-cover'
                               : 'aspect-[16/10] object-cover'
                           } object-center rounded-[2px]`}
                         />
