@@ -1888,7 +1888,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, birthday cards, & placards" },
-      { label: "Assets Delivered", value: "22 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 6 birthday cards, 3 sports placards" },
+      { label: "Assets Delivered", value: "23 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 6 birthday cards, 4 sports placards" },
       { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms, events & collaborative spaces" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -2026,7 +2026,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Annual Sports Day Team Crests & Printed Marching Placards",
-        sectionDescription: "High-octane mascot emblems and physical printed placards designed for the company's Annual Sports Day championship. Conceived for tournament teams to carry during opening march ceremonies and display across field pavilions. Features three competitive team identities: Transformers (mecha Optimus Prime crest with gears and circuit tracings), War Wolves (fierce wolf mascot with flaming eye on circular tribal steel), and The Warriors (armored minotaur charging with electric cyan lightning eyes and billowing nostril steam).",
+        sectionDescription: "High-octane mascot emblems and physical printed placards designed for the company's Annual Sports Day championship. Conceived for tournament teams to carry during opening march ceremonies and display across field pavilions. Features four competitive team identities: Transformers (mecha Optimus Prime crest with gears and circuit tracings), War Wolves (fierce wolf mascot with flaming eye on circular tribal steel), The Warriors (armored minotaur charging with electric cyan lightning eyes and billowing nostril steam), and Blazing Fury (fire-breathing horned dragon crest enveloped in crimson flame banners).",
         images: [
           {
             url: "/assets/projects/print-designs/sports-day-placard-01-transformers.webp",
@@ -2043,6 +2043,12 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/print-designs/sports-day-placard-03-the-warriors.webp",
             caption: "Sports Day Printed Placard & Crest — The Warriors: Multi-tiered armor shield with charging minotaur, electric cyan lightning eyes, and emerald smoke clouds.",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
+            caption: "Sports Day Printed Placard & Crest — Blazing Fury: Circular crimson crest featuring a ferocious horned black dragon breathing torrents of flame with bold ribbon typography on dark twilight red gradient.",
             aspectRatio: "16/9",
             type: "desktop"
           }
@@ -2158,6 +2164,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/sports-day-placard-03-the-warriors.webp",
         caption: "Sports Day Placard — The Warriors Team Crest",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
+        caption: "Sports Day Placard — Blazing Fury Team Crest",
         type: "desktop"
       }
     ]
