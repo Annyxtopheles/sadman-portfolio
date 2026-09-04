@@ -808,6 +808,48 @@ export const PROJECTS: Project[] = [
             caption: "Direction 02 — 3D Family Iftar Table: Whimsical, warm 3D animated Muslim family gathered around a circular dining table breaking fast with dates and fresh fruit on soft clouds.",
             type: "carousel",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/ramadan/ramadan-03-iftar-feast-archway.webp",
+            caption: "Direction 03 — Archway Iftar Feast & Henna: Atmospheric Iftar spread viewed through an Islamic arch with hanging lanterns, showing hands reaching for fresh dates, salads, and juices.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Republic Day of India — 26 January (गणतंत्र दिवस)",
+        sectionDescription: "Three majestic creative directions commemorating Republic Day of India for SJ Innovation. Features historic red sandstone vector silhouettes of the Red Fort (Lal Qila) in Delhi, golden hour architectural photography of Mughal ramparts, and monumental flowing Tiranga tricolor drapes framing the fort courtyard.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/india-republic-day/republic-day-01-red-fort-sunset-vector.webp",
+            caption: "Direction 01 — Red Fort Dusk Silhouette Vector: Architectural vector illustration of the iconic Red Fort (Lal Qila) in Delhi under a warm sunset sky.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/india-republic-day/republic-day-02-red-fort-sandstone-monolith.webp",
+            caption: "Direction 02 — Red Sandstone Ramparts & Golden Hour: Majestic low-angle photography of the Mughal red sandstone fort towers and domes basking in golden hour light.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/india-republic-day/republic-day-03-tricolor-drapes-red-fort.webp",
+            caption: "Direction 03 — Grand Tricolor Flag Drapes: Dramatic architectural vista of the Red Fort adorned with monumental flowing Indian Tiranga tricolor drapes and mandalas.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "US Memorial Day — In Memory of the Fallen",
+        sectionDescription: "A solemn and dignified commemorative visual honoring fallen service members for SJ Innovation. Features the waving American stars and stripes flag overlaid with thousands of micro-inscribed names of fallen heroes.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
+            caption: "Direction 01 — Roll of the Fallen & Stars and Stripes: Somber commemoration displaying the waving American flag texture overlaid with thousands of inscribed names of fallen service members.",
+            type: "carousel",
+            aspectRatio: "1/1"
           }
         ]
       }
@@ -1011,6 +1053,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/ramadan/ramadan-02-family-iftar-table-3d.webp",
         caption: "Ramadan — 3D Family Iftar Table",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/ramadan/ramadan-03-iftar-feast-archway.webp",
+        caption: "Ramadan — Archway Iftar Feast & Henna",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-republic-day/republic-day-01-red-fort-sunset-vector.webp",
+        caption: "Republic Day of India — Red Fort Dusk Silhouette",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-republic-day/republic-day-02-red-fort-sandstone-monolith.webp",
+        caption: "Republic Day of India — Red Sandstone Ramparts",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-republic-day/republic-day-03-tricolor-drapes-red-fort.webp",
+        caption: "Republic Day of India — Grand Tricolor Flag Drapes",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
+        caption: "US Memorial Day — Roll of the Fallen",
         type: "carousel"
       }
     ]
