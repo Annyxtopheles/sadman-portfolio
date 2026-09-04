@@ -768,6 +768,48 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "International May Day — 1 May (মহান মে দিবস)",
+        sectionDescription: "Three compelling creative directions commemorating International Workers' Day for SJ Innovation. Explores high-contrast architectural labor silhouettes, a 3D isometric toolkit bridging manual craftsmanship with modern computing, and a contemporary tech developer workstation against urban skyline scaffolding.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/may-day/mayday-01-construction-silhouettes.webp",
+            caption: "Direction 01 — Structural Labor Silhouettes: High-contrast blue vector illustration honoring building construction workers, jackhammers, and structural scaffolding.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/may-day/mayday-02-digital-physical-tools.webp",
+            caption: "Direction 02 — Digital & Physical Craft Toolkit: 3D floating composition bridging manual and digital labor—keyboard, mouse, wrench, hard hat, hammer, and blueprints.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/may-day/mayday-03-modern-engineer-scaffolding.webp",
+            caption: "Direction 03 — Tech Engineering & Infrastructure: Contemporary visual narrative showing a software engineer working across multi-screen telemetry dashboards with architectural cranes.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Ramadan Mubarak — Sacred Reflections (মাহে রমজান)",
+        sectionDescription: "Two warm and heartwarming creative directions celebrating the holy month of Ramadan for SJ Innovation. Highlights communal Iftar traditions of sharing fresh dates at golden sunset, and a joyful 3D animated Muslim family gathered around the Iftar dining table.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/ramadan/ramadan-01-iftar-sharing-dates.webp",
+            caption: "Direction 01 — Sharing Dates at Golden Hour Iftar: Warm, communal 3D render of hands reaching together to share fresh Medjool dates and water against a golden sunset and mosque dome.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/ramadan/ramadan-02-family-iftar-table-3d.webp",
+            caption: "Direction 02 — 3D Family Iftar Table: Whimsical, warm 3D animated Muslim family gathered around a circular dining table breaking fast with dates and fresh fruit on soft clouds.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -944,6 +986,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/mother-language-day/language-day-02-1952-movement-neon-placards.webp",
         caption: "Mother Language Day — 1952 Procession & Neon Placards",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/may-day/mayday-01-construction-silhouettes.webp",
+        caption: "May Day — Structural Labor Silhouettes",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/may-day/mayday-02-digital-physical-tools.webp",
+        caption: "May Day — Digital & Physical Craft Toolkit",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/may-day/mayday-03-modern-engineer-scaffolding.webp",
+        caption: "May Day — Tech Engineering & Infrastructure",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/ramadan/ramadan-01-iftar-sharing-dates.webp",
+        caption: "Ramadan — Sharing Dates at Golden Hour Iftar",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/ramadan/ramadan-02-family-iftar-table-3d.webp",
+        caption: "Ramadan — 3D Family Iftar Table",
         type: "carousel"
       }
     ]
