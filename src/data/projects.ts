@@ -612,6 +612,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Happy Easter — Spring Celebration Suites",
+        sectionDescription: "Five playful and refined creative directions celebrating Easter for SJ Innovation. Explores themes of minimalist bunny silhouettes, tactile close-up bunny ears, 3D branded glossy eggs, decorative porcelain flat-lays, and papercraft floral aperture cutouts.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/easter/easter-01-minimalist-bunny-silhouette.webp",
+            caption: "Direction 01 — Minimalist Archway Silhouette: Serene arch window silhouette of an Easter bunny surrounded by delicate foliage against a starry blue sky.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/easter/easter-02-fluffy-bunny-ears.webp",
+            caption: "Direction 02 — Tactile Bunny Ears & Sky: Playful macro close-up of soft white rabbit ears against a tranquil blue sky with flowing calligraphy.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/easter/easter-03-3d-patterned-eggs.webp",
+            caption: "Direction 03 — 3D Glossy Patterned Eggs: Three glossy porcelain eggs rendered in signature cobalt, vibrant orange, and white with polka dots and ribbons.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/easter/easter-04-ceramic-egg-flatlay.webp",
+            caption: "Direction 04 — Hand-Painted Ceramic Flat-Lay: High-angle flat-lay frame featuring patterned decorative porcelain eggs with floral and radial geometric motifs.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/easter/easter-05-spring-blooms-cutout.webp",
+            caption: "Direction 05 — Papercraft Spring Floral Cutout: Egg-shaped papercraft aperture revealing fresh daisies and a bright yellow daffodil blooming against an azure sky.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -688,6 +724,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/eid-al-fitr/eid-05-filigree-gold-crescent.webp",
         caption: "Eid al-Fitr — Laser-Cut Gold Filigree Crescent",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-01-minimalist-bunny-silhouette.webp",
+        caption: "Easter — Minimalist Archway Silhouette",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-02-fluffy-bunny-ears.webp",
+        caption: "Easter — Tactile Bunny Ears & Sky",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-03-3d-patterned-eggs.webp",
+        caption: "Easter — 3D Glossy Patterned Eggs",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-04-ceramic-egg-flatlay.webp",
+        caption: "Easter — Hand-Painted Ceramic Flat-Lay",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-05-spring-blooms-cutout.webp",
+        caption: "Easter — Papercraft Spring Floral Cutout",
         type: "carousel"
       }
     ]
