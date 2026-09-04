@@ -459,6 +459,118 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "social-media-greetings",
+    slug: "social-media-greetings",
+    title: "Social Media Greetings",
+    category: "Brand Systems",
+    status: "LIVE",
+    company: "SJ Innovation",
+    client: "SJ Innovation LLC",
+    year: "2025 – Present",
+    duration: "Ongoing Series",
+    scope: ["Social Media Creative", "Event Greetings", "Visual Identity", "Vector Illustration", "Digital Painting", "Photo Manipulation", "Brand Systems"],
+    summary: "Multi-format social media greeting creatives and commemorative visual campaigns designed for SJ Innovation. Features distinct thematic visual directions—from flat vector storytelling and expressive digital brushwork to archival photo composites—celebrating global holidays, cultural milestones, and company events with brand consistency.",
+    coverImage: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Corporate social greetings often fall into generic stock templates. The goal was to establish elevated, custom-crafted visual directions for SJ Innovation across global observances that reflect the company's creative identity and technological edge.",
+      role: "Sole Designer — conceptualized, illustrated, and produced creative suites across diverse artistic mediums (vector, painterly, photo composite, and high-contrast silhouette) under SJ Innovation's brand guidelines.",
+      method: "Developed modular thematic series starting with Martin Luther King Jr. Day, exploring five distinct aesthetic expressions while preserving brand recognition through consistent typography, logo lockups, and color harmony."
+    },
+    problem: "Most B2B tech companies treat commemorative holiday posts as an afterthought, relying on repetitive stock vectors that dilute brand presence. SJ Innovation required high-craft, original commemorative designs that honor each occasion's cultural significance while reinforcing the brand's design standards.",
+    process: [
+      {
+        title: "Multi-Disciplinary Artistic Explorations",
+        description: "Instead of settling on a single visual formula, explored multiple artistic languages—vector geometry, digital impasto brushwork, double-exposure photo compositing, and monochromatic silhouette—to give each commemorative greeting distinct emotion and visual weight.",
+        details: [
+          "Vector Narrative: Constructed flat geometry with crowd silhouetting to emphasize solidarity and unity",
+          "Expressive Brushwork: Layered digital oil strokes with cobalt and gold accents to evoke historical gravitas",
+          "Archival Photomontage: Blended authentic historic photographs with duotone gradients and subtle typographic watermarks",
+          "High-Contrast Silhouette: Stripped away extraneous detail for a stark, black-and-white visual focused purely on the iconic podium posture"
+        ]
+      },
+      {
+        title: "Brand Lockup & Scalable System Architecture",
+        description: "Integrated SJ Innovation's 'AI First Solutions' corporate identity and consistent typography across diverse illustrative styles, ensuring instant brand recall in social feeds.",
+        details: [
+          "Created flexible 1:1 square compositions optimized for LinkedIn, Twitter/X, and Instagram feeds",
+          "Designed extensible section architecture to accommodate upcoming international holidays, cultural observances, and internal milestones",
+          "Balanced prominent historical quote excerpts with clean title hierarchies for maximum readability on mobile displays"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Artistic Mediums", value: "5 Directions", subtext: "Vector, painterly, photo composite, color-blocked, & silhouette" },
+      { label: "Occasion Series", value: "Modular", subtext: "Scalable architecture designed for recurring international events" }
+    ],
+    outcomeSummary: "Created an elevated commemorative visual system for SJ Innovation that transforms holiday posts into bespoke artistic statements, elevating social feed engagement and reinforcing design excellence.",
+    gallerySections: [
+      {
+        sectionTitle: "Martin Luther King Jr. Day — Visual Explorations",
+        sectionDescription: "Five distinct creative interpretations honoring the legacy of Dr. Martin Luther King Jr. for SJ Innovation. Each direction explores a unique artistic medium—from flat vector community storytelling to expressive digital oil paint and dramatic silhouette lighting.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
+            caption: "Direction 01 — Vector Illustration & Community Solidarity: Flat vector composition capturing Dr. King at the podium surrounded by an engaged audience.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mlk-day/mlk-day-02-warm-photo-composite.webp",
+            caption: "Direction 02 — Archival Photo Composite: Warm amber & cobalt blue dual-tone photo manipulation with historic speech excerpt typography.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mlk-day/mlk-day-03-geometric-portrait.webp",
+            caption: "Direction 03 — Color-Blocked Pop-Art Portrait: Modernist faceted vector study with vibrant terracotta, azure, and deep obsidian blocks.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mlk-day/mlk-day-04-oil-paint-portrait.webp",
+            caption: "Direction 04 — Expressive Digital Brushwork: Impasto oil painting style featuring energetic cobalt and gold stroke texturing.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mlk-day/mlk-day-05-black-white-silhouette.webp",
+            caption: "Direction 05 — High-Contrast Monochrome Silhouette: Minimalist stark silhouette with atmospheric spotlighting and 'I Have A Dream' typography.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
+        caption: "Direction 01 — Vector Illustration & Community Solidarity",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mlk-day/mlk-day-02-warm-photo-composite.webp",
+        caption: "Direction 02 — Archival Photo Composite",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mlk-day/mlk-day-03-geometric-portrait.webp",
+        caption: "Direction 03 — Color-Blocked Pop-Art Portrait",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mlk-day/mlk-day-04-oil-paint-portrait.webp",
+        caption: "Direction 04 — Expressive Digital Brushwork",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mlk-day/mlk-day-05-black-white-silhouette.webp",
+        caption: "Direction 05 — High-Contrast Monochrome Silhouette",
+        type: "carousel"
+      }
+    ]
+  },
+  {
     id: "icr-debt-surveillance",
     slug: "icr-debt-surveillance",
     title: "ICR Debt Surveillance Terminal",

@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadman-portfolio.pages.dev/work/social-media-greetings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadman-portfolio.pages.dev/work/icr-debt-surveillance</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
