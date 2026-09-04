@@ -25,11 +25,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "case-study-2",
     type: "case-study",
-    slug: "control-tower-suite",
-    title: "AI-Native Control Tower Suite",
-    category: "Design System · AI Applications",
-    summary: "Visual identity and connected design token system for 10+ vertical AI enterprise products.",
-    src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+    slug: "control-tower-products",
+    title: "Control Tower Products",
+    category: "Brand Identity · AI Products",
+    summary: "Multi-product visual identity, custom logos, domain color systems, OpenGraph cards, and clinical UI architecture for 10+ vertical AI enterprise products.",
+    src: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
     year: "2025 – 2026",
   },
   {

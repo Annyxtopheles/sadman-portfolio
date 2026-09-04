@@ -1473,62 +1473,107 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "control-tower-suite",
-    slug: "control-tower-suite",
-    title: "AI-Native Control Tower Suite",
+    id: "control-tower-products",
+    slug: "control-tower-products",
+    title: "Control Tower Products",
     category: "AI Systems",
     status: "SHIPPED",
     company: "SJ Innovation",
     client: "Internal & Enterprise Clients",
     year: "2025 – 2026",
     duration: "Ongoing",
-    scope: ["Design System", "Multi-Product Architecture", "AI Workflows", "Design Tokens", "Performance Ad Creatives", "Medical UI"],
-    summary: "Visual identity, connected design token system, and performance marketing creative suite for 10+ vertical AI enterprise products including ePhysician, Nonprofit Control Tower, Marketing AI, and RealtorHelp.",
-    coverImage: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
+    scope: [
+      "Brand Identity & Logos",
+      "Color System Strategy",
+      "OpenGraph Systems",
+      "Design System & Tokens",
+      "ePhysician Medical UI",
+      "Performance Ad Creatives"
+    ],
+    summary: "Full brand identity, custom logo marks, domain-specific color palettes, OpenGraph card architecture, and clinical UI design for 10+ vertical AI enterprise products—featuring ePhysician, Mortgage AI, HR Control Tower, Marketing Control Tower, and RealtorHelp.",
+    coverImage: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Scaling 10+ vertical AI enterprise products (ePhysician, Nonprofit CT, MortgageAI, RealtorHelp, HR CT, Agency CT) with a single designer without fracturing UX consistency, slowing engineering sprints, or failing to communicate complex clinical and operational AI value to enterprise buyers.",
-      role: "Sole Product & Brand Designer — architected the global design token system, clinical dashboard interfaces, and high-conversion B2B ad creative campaigns for ePhysician Control Tower.",
-      method: "Created a connected Figma token architecture linked to front-end variables, designed domain-specific AI clinical workflows, and engineered high-impact paid social ad creatives demonstrating immediate operational ROI."
+      challenge: "Launching 10+ domain-specific vertical AI enterprise products under the Control Tower umbrella without fracturing brand cohesion, while giving each product its own distinct industry identity, custom logo, color psychology, and high-conversion social preview system.",
+      role: "Lead Product & Brand Designer — conceptualized and designed all logos from scratch, established the domain-specific color palettes, engineered the OpenGraph metadata visual systems, and designed the clinical dashboard UI and performance ad campaigns for ePhysician Control Tower.",
+      method: "Created a unified design token architecture paired with individualized vertical identities: crafted bespoke vector logos for each industry, engineered high-contrast 1.91:1 OpenGraph card templates for social sharing, and built clinical front-desk workflows with companion B2B acquisition ads."
     },
-    problem: "Each industry vertical required tailored workflows (e.g. clinical records and automated patient reminder queues for ePhysician, property comp tables for RealtorHelp, loan underwriting for MortgageAI), while marketing teams required authoritative, high-conversion visual creatives to explain autonomous front-desk capabilities to clinic executives.",
+    problem: "Each vertical required immediate credibility in its specific sector (e.g. medical compliance for ePhysician, financial security for Mortgage AI, corporate empathy for HR Control Tower, high growth for Marketing, and trusted real estate agility for RealtorHelp). A generic, one-size-fits-all corporate skin would fail to resonate with specialized industry buyers.",
     process: [
       {
-        title: "Multi-Brand Design Token Architecture",
-        description: "Built a token taxonomy in Figma supporting light/dark theme semantics, distinct brand accent overrides, and shared functional primitives.",
+        title: "Bespoke Logo Design & Domain Color Strategy",
+        description: "Conceptualized and crafted unique vector marks and tailored color schemes for every Control Tower product to evoke instant domain authority.",
         details: [
-          "Standardized conversational AI states: streaming, tool invocation, markdown code rendering, and error recovery",
-          "Component library covering data tables, KPI metrics cards, agent action trays, and filter rails",
-          "Comprehensive design documentation enabling engineers to build new vertical screens with minimal handoff friction"
+          "ePhysician Control Tower: Cyan & clinical white with an EKG pulse wave logo conveying medical telemetry and life-support reliability",
+          "Mortgage AI: Deep slate navy and emerald green with a geometric roofline mark symbolizing secure lending and rate lock vigilance",
+          "HR Control Tower: Electric network blue with interconnected human figures symbolizing organizational talent retention and burnout prevention",
+          "Marketing Control Tower: Deep royal violet with an upward momentum wave mark representing agency growth and multi-channel orchestration",
+          "RealtorHelp.software: Sky azure with topographic contour lines and clean residential geometry representing 24/7 client responsiveness"
         ]
       },
       {
-        title: "ePhysician Clinical Dashboard & Growth Creatives",
+        title: "High-Conversion OpenGraph (OG) Visual System",
+        description: "Standardized high-impact 1.91:1 (1200x630 standard) social preview cards for link sharing across LinkedIn, Twitter/X, and Slack, pairing benefit-led headlines with dual CTA buttons ('See It Live ->' / 'Book a Demo').",
+        details: [
+          "Micro-copy formulated around high-urgency pain points ('Never Miss Another Rate Lock', 'AI Spots the Burnout', '15 Leads. 2 Minutes. Done.')",
+          "Subtle domain-specific background graphics (neural nets, topographic contours, medical hex grids, particle fields) ensuring visual depth",
+          "Prominent product logo lockups with 'Powered by Collab AI' endorsement badges"
+        ]
+      },
+      {
+        title: "ePhysician Clinical Dashboard & Performance Ad Campaigns",
         description: "Engineered responsive dark and light mode clinical dashboards for ePhysician Control Tower, pairing automated reminder telemetry with persuasive paid social ad campaigns.",
         details: [
-          "Highlighted operational pain points ('Stop Starting Your Day 40 Voicemails Deep') with live UI metrics: 86.3% response rates, insurance verification, and zero staff intervention",
-          "Created 3D architectural metaphors of multi-facility hospital campuses to communicate enterprise scalability and centralized oversight",
-          "Designed 24/7 round-the-clock reception visuals symbolizing continuous autonomous booking and HIPAA-ready reliability"
-        ]
-      },
-      {
-        title: "AI-Augmented Prototyping Workflow",
-        description: "Prototyped multi-turn agent interactions and dynamic responses using Lovable and low-code React wrappers, compressing stakeholder alignment from weeks to days.",
-        details: [
-          "Simulated live LLM stream states and latency fallbacks in high-fidelity prototypes",
-          "Tested cognitive load during agent multi-step reasoning displays"
+          "Addressed operational bottlenecks with high-impact headline copy: 'Stop Starting Your Day 40 Voicemails Deep'",
+          "Showcased live clinical metrics: 86.3% response rates, automated insurance verification, and zero staff intervention",
+          "Designed 3D hospital campus renders and 24/7 reception desk visuals communicating enterprise scalability"
         ]
       }
     ],
-    aiWorkflow: "Integrated Figma AI agents and prompt-driven wireframing tools to accelerate initial variant generation by 40%, allowing rapid testing of domain-specific layouts.",
+    aiWorkflow: "Integrated Figma AI agents and prompt-driven scene composition to rapidly explore lighting moods and architectural 3D metaphors, finalizing vector logos and typography natively in Figma.",
     outcomes: [
-      { label: "Sprint Velocity", value: "+40%", subtext: "Acceleration in wireframe-to-functional prototype delivery" },
-      { label: "Vertical Products", value: "10+", subtext: "AI enterprise products powered by the unified design system" },
-      { label: "Ad Campaigns", value: "5 Creatives", subtext: "Light & dark multi-channel acquisition suites for ePhysician" },
-      { label: "Design Consistency", value: "100%", subtext: "Zero UI drift across parallel cross-functional engineering teams" }
+      { label: "Products Branded", value: "5+ Verticals", subtext: "ePhysician, Mortgage AI, HR, Marketing, & RealtorHelp" },
+      { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
+      { label: "Assets Delivered", value: "10 Production Designs", subtext: "5 OpenGraph social previews & 5 ePhysician clinical ad creatives" }
     ],
-    outcomeSummary: "Established a scalable design engine that enabled a single designer to power 10+ enterprise AI products with visual cohesion, speed, and market-ready acquisition creatives.",
+    outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
+      {
+        sectionTitle: "Control Tower Products — OpenGraph & Brand Identity Systems",
+        sectionDescription: "High-impact 1.91:1 OpenGraph metadata and social preview cards designed for each Control Tower product. All logos, branding colors, typography, and thematic backgrounds were designed from scratch by Sadman to establish sector-specific authority across healthcare, mortgage lending, human resources, marketing agencies, and real estate.",
+        images: [
+          {
+            url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
+            caption: "ePhysician Control Tower (OG Card) — Custom EKG pulse wave logo, clinical cyan palette, and 'Phone. Reminders. Check-in. Billing. All on autopilot.' headline.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-mortgage-ai.webp",
+            caption: "Mortgage AI (OG Card) — Custom geometric house mark, emerald/slate color scheme, and 'Never Miss Another Rate Lock' benefit lockup.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-hr-control-tower.webp",
+            caption: "HR Control Tower (OG Card) — Connected human figure logo, neural network blue gradient, and 'AI Spots the Burnout. You Keep the Talent.' copy.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-marketing-control-tower.webp",
+            caption: "Marketing Control Tower (OG Card) — Ascending growth wave mark, royal violet ambient particles, and 'The AI Control Tower for Marketing Agencies' headline.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-realtorhelp-control-tower.webp",
+            caption: "RealtorHelp.software (OG Card) — Residential icon, azure topographic contours, and 'AI writes every message. You decide what to send. 15 leads. 2 minutes. Done.' message.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
       {
         sectionTitle: "ePhysician Control Tower — Acquisition & Performance Ad Creatives",
         sectionDescription: "Multi-format paid social and executive marketing ad creatives designed for ePhysician Control Tower (Powered by Collab AI). Strategically targets healthcare operators and clinic administrators by translating complex automated front-desk capabilities into immediate operational ROI across dark and light thematic executions.",
@@ -1567,6 +1612,36 @@ export const PROJECTS: Project[] = [
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
+        caption: "ePhysician Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-mortgage-ai.webp",
+        caption: "Mortgage AI — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-hr-control-tower.webp",
+        caption: "HR Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-marketing-control-tower.webp",
+        caption: "Marketing Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-realtorhelp-control-tower.webp",
+        caption: "RealtorHelp.software — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
       {
         url: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
         caption: "ePhysician Control Tower — Dark Mode Reminder System Ad Creative",
