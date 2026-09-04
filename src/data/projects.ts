@@ -843,11 +843,47 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "US Memorial Day — In Memory of the Fallen",
-        sectionDescription: "A solemn and dignified commemorative visual honoring fallen service members for SJ Innovation. Features the waving American stars and stripes flag overlaid with thousands of micro-inscribed names of fallen heroes.",
+        sectionDescription: "Three solemn and dignified commemorative visual directions honoring fallen service members for SJ Innovation. Explores a textural American flag honor roll of names, a poignant white marble cemetery cross adorned with fresh tulips and a miniature flag, and military buglers playing Taps against a silent field of inscribed heroes.",
         images: [
           {
             url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
             caption: "Direction 01 — Roll of the Fallen & Stars and Stripes: Somber commemoration displaying the waving American flag texture overlaid with thousands of inscribed names of fallen service members.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-02-cross-headstone-tulips.webp",
+            caption: "Direction 02 — Honored Glory Memorial Cross: Low-angle perspective of a pristine white marble cemetery cross inscribed 'Here rests in honored glory a comrade in arms known but to God', accompanied by vibrant tulips and an American flag under summer skies.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-03-taps-bugler-names.webp",
+            caption: "Direction 03 — Taps Bugler Silhouette & Honor Roll: Poignant silhouette of military buglers playing Taps against a deep navy field filled with thousands of names of fallen heroes, framed by a waving American flag.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Independence Day of India — 15 August (स्वतंत्रता दिवस)",
+        sectionDescription: "Three stirring creative directions celebrating India's Independence Day for SJ Innovation. Spans majestic air force flypasts trailing saffron, white, and green tricolor plumes over India Gate, an impressionist watercolor architectural wash, and a heroic bronze monument of soldiers raising the Tiranga.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/india-independence-day/india-independence-01-india-gate-flypast.webp",
+            caption: "Direction 01 — India Gate Air Force Flypast: Iconic low-angle view of the sandstone India Gate with three fighter jets streaking across the sky leaving vivid saffron, white, and green smoke plumes.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/india-independence-day/india-independence-02-watercolor-india-gate.webp",
+            caption: "Direction 02 — Watercolor India Gate & Sun Disc: Artistic watercolor wash of the India Gate framed by a radiant golden solar disc, birds in flight, and trees rendered in tricolor saffron and blue pigment blooms.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/india-independence-day/india-independence-03-soldier-monument-tricolor.webp",
+            caption: "Direction 03 — Patriotic Soldier Memorial & Jet Formation: Heroic bronze statues of soldiers raising the Indian national flag atop a stone plinth, echoed by a V-formation of fighter jets releasing tricolor trails.",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -1078,6 +1114,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
         caption: "US Memorial Day — Roll of the Fallen",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-02-cross-headstone-tulips.webp",
+        caption: "US Memorial Day — Honored Glory Memorial Cross",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-03-taps-bugler-names.webp",
+        caption: "US Memorial Day — Taps Bugler Silhouette & Honor Roll",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-independence-day/india-independence-01-india-gate-flypast.webp",
+        caption: "Independence Day of India — India Gate Air Force Flypast",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-independence-day/india-independence-02-watercolor-india-gate.webp",
+        caption: "Independence Day of India — Watercolor India Gate & Sun Disc",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/india-independence-day/india-independence-03-soldier-monument-tricolor.webp",
+        caption: "Independence Day of India — Patriotic Soldier Memorial",
         type: "carousel"
       }
     ]
