@@ -1081,6 +1081,12 @@ export const PROJECTS: Project[] = [
             caption: "2025 Series: Direction 02 — Minimalist Ice Blue Keyhole Archway: Pristine white mosque silhouette framed by an ornate Moroccan keyhole arch with crescent moon and hanging star pendants.",
             type: "carousel",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-03-twilight-gradient-minarets.webp",
+            caption: "2025 Series: Direction 03 — Twilight Minaret Skyline & Illuminated Crescent: Multi-layered architectural mosque silhouette against a vivid sunset-to-indigo gradient with illuminated portals and delicate hanging stars.",
+            type: "carousel",
+            aspectRatio: "1/1"
           }
         ]
       },
@@ -1477,6 +1483,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-02-ice-blue-mosque-silhouette.webp",
         caption: "Eid al-Adha (2025) — Minimalist Ice Blue Keyhole Archway",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-03-twilight-gradient-minarets.webp",
+        caption: "Eid al-Adha (2025) — Twilight Minaret Skyline & Illuminated Crescent",
         type: "carousel"
       },
       {
@@ -2661,15 +2672,15 @@ export const PROJECTS: Project[] = [
       }
     ],
     outcomes: [
-      { label: "Format", value: "9:16 Vertical", subtext: "Full HD vertical motion optimized for Facebook & Instagram Reels" },
-      { label: "Engagement", value: "High Retention", subtext: "Paced for maximum watch time & social sharing" },
-      { label: "Brand Equity", value: "Global Campus", subtext: "Dhaka, Goa, & NY culture showcased to prospective talent" }
+      { label: "Motion Formats", value: "9:16 Vertical", subtext: "Full HD vertical motion optimized for Facebook & Instagram Reels" },
+      { label: "Assets Delivered", value: "9 Video Reels", subtext: "Across milestones, member culture, festivals & self-directed initiatives" },
+      { label: "Creative Ownership", value: "100% End-to-End", subtext: "Storyboarding, asset sourcing, caricature art, editing & sound" }
     ],
-    outcomeSummary: "Transformed milestone corporate events into viral, high-production short-form video content that bridges genuine team culture with polished brand authority.",
+    outcomeSummary: "Transformed company celebrations, bi-weekly team rituals, and member milestones into captivating, high-retention video reels that turned private office moments into inspiring public employer brand equity.",
     gallerySections: [
       {
-        sectionTitle: "SJ Innovation Dhaka — 22 Years of Growth & Innovation Celebration Reel",
-        sectionDescription: "Official high-energy anniversary reel commemorating 22 years of growth, strategic milestones, and team culture for SJ Innovation Dhaka. Combines tactile scrapbook photo collages, handwritten employee notes, and kinetic motion pacing.",
+        sectionTitle: "Corporate Milestones & Global Observances",
+        sectionDescription: "High-energy anniversary and cultural celebration reels engineered with kinetic pacing, rich photo collages, and custom character illustration.",
         images: [
           {
             url: "/assets/projects/reels/reel-01-sji-dhaka-22-years.webp",
@@ -2678,6 +2689,82 @@ export const PROJECTS: Project[] = [
             type: "portrait",
             embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2352896815516246%2F&show_text=false&t=0",
             externalUrl: "https://www.facebook.com/reel/2352896815516246"
+          },
+          {
+            url: "/assets/projects/reels/reel-04-womens-day-celebration.webp",
+            caption: "International Women's Day Celebration Reel — Soothing, elegant floral motion storytelling honoring female innovators across global offices.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F916672407779495%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/916672407779495"
+          },
+          {
+            url: "/assets/projects/reels/reel-06-mens-day-caricature-celebration.webp",
+            caption: "International Men's Day Caricature Reel — High-energy motion celebration featuring custom illustrated caricatures for every male team member.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1504548987315950%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/1504548987315950"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Autonomous Creative & Workplace Culture Initiatives",
+        sectionDescription: "Self-directed creative projects and event activations conceived, pitched, and operationalized from the ground up by Sadman without prior prompting.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-03-member-birthday-carousel-initiative.webp",
+            caption: "Member Birthday Carousel Motion Initiative — Ground-up transformation: reimagined static circular cake graphics into dynamic, member-first video spotlights.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/1492889088963334"
+          },
+          {
+            url: "/assets/projects/reels/reel-07-friday-fun-activity-initiative.webp",
+            caption: "Friday Fun Activity (FFA) — Ground-Up Initiative: Conceived, organized, hosted, and edited bi-weekly team bonding sessions from inception to recap.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F774387224946413%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/774387224946413"
+          },
+          {
+            url: "/assets/projects/reels/reel-05-team-bonding-activity.webp",
+            caption: "Team Bonding & Camaraderie Culture Reel — High-tempo event recap capturing unscripted laughter, competitive challenges, and cross-team unity.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2058453101574944%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/2058453101574944"
+          },
+          {
+            url: "/assets/projects/reels/reel-08-biweekly-wellness-session.webp",
+            caption: "Bi-Weekly Employee Wellness Session Reel — Calming, mindful video recap capturing desk ergonomics, meditation, and team wellbeing rituals.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2208437409618587%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/2208437409618587"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Annual Fruit Festival Celebrations (2025 & 2026)",
+        sectionDescription: "Vibrant tropical summer event motion recaps capturing multi-campus fruit feasts, seasonal colors, and lively team celebrations across two consecutive years.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-02-fruit-festival-2026.webp",
+            caption: "Fruit Festival 2026 Celebration Reel — Vivid tropical feast motion recap highlighting exotic seasonal harvests, office games, and campus energy.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973645452155282%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/973645452155282"
+          },
+          {
+            url: "/assets/projects/reels/reel-09-fruit-festival-2025.webp",
+            caption: "Fruit Festival 2025 Celebration Reel — Warm nostalgic summer festival recap featuring colorful fruit tables, communal gatherings, and joyful smiles.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F706056789010508%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/706056789010508"
           }
         ]
       }
@@ -2690,6 +2777,70 @@ export const PROJECTS: Project[] = [
         aspectRatio: "9/16",
         embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2352896815516246%2F&show_text=false&t=0",
         externalUrl: "https://www.facebook.com/reel/2352896815516246"
+      },
+      {
+        url: "/assets/projects/reels/reel-02-fruit-festival-2026.webp",
+        caption: "Fruit Festival 2026 Celebration Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F973645452155282%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/973645452155282"
+      },
+      {
+        url: "/assets/projects/reels/reel-03-member-birthday-carousel-initiative.webp",
+        caption: "Member Birthday Carousel Motion Initiative",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/1492889088963334"
+      },
+      {
+        url: "/assets/projects/reels/reel-04-womens-day-celebration.webp",
+        caption: "International Women's Day Celebration Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F916672407779495%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/916672407779495"
+      },
+      {
+        url: "/assets/projects/reels/reel-05-team-bonding-activity.webp",
+        caption: "Team Bonding Activity & Culture Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2058453101574944%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/2058453101574944"
+      },
+      {
+        url: "/assets/projects/reels/reel-06-mens-day-caricature-celebration.webp",
+        caption: "International Men's Day Caricature Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1504548987315950%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/1504548987315950"
+      },
+      {
+        url: "/assets/projects/reels/reel-07-friday-fun-activity-initiative.webp",
+        caption: "Friday Fun Activity (FFA) — Ground-Up Initiative",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F774387224946413%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/774387224946413"
+      },
+      {
+        url: "/assets/projects/reels/reel-08-biweekly-wellness-session.webp",
+        caption: "Bi-Weekly Employee Wellness Session Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2208437409618587%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/2208437409618587"
+      },
+      {
+        url: "/assets/projects/reels/reel-09-fruit-festival-2025.webp",
+        caption: "Fruit Festival 2025 Celebration Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F706056789010508%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/706056789010508"
       }
     ]
   }
