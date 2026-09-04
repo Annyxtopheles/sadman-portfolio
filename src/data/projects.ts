@@ -1618,6 +1618,16 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/certificate-04-client-hero.webp",
             caption: "Client Hero — Blueprint Technical Grid & Flame Badge (Awarded to Yeasin Ramin)",
             aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-05-quality-crusader.webp",
+            caption: "Quality Crusader — Mint Constellation Grid & Flame Badge (Awarded to Yeasin Ramin)",
+            aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-06-urgent-attention.webp",
+            caption: "Urgent Attention — Policy Non-Compliance Novelty Citation (Issued to Yeasin Ramin)",
+            aspectRatio: "1024/724"
           }
         ]
       }
@@ -1666,6 +1676,103 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/certificate-04-client-hero.webp",
         caption: "SJ Control Tower Certificate — Client Hero",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-05-quality-crusader.webp",
+        caption: "SJ Control Tower Certificate — Quality Crusader",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-06-urgent-attention.webp",
+        caption: "SJ Control Tower Citation — Urgent Attention",
+        type: "desktop"
+      }
+    ]
+  },
+  {
+    id: "creative-initiatives",
+    slug: "creative-initiatives",
+    title: "Proactive Creative Initiatives & Campaigns",
+    category: "Brand Systems",
+    status: "LIVE",
+    company: "SJ Innovation",
+    client: "Internal Initiatives & People Operations",
+    year: "2025 – Present",
+    duration: "Ongoing",
+    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Media Creatives", "3D Glassmorphic Graphics", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, and pitched autonomously for SJ Innovation's People Operations and internal teams. From modern 3D recruitment campaigns to strategic brand touchpoints, turning proactive ideas into officially approved and deployed company standards.",
+    coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Most corporate recruitment and internal communication assets rely on standard text blocks or generic corporate templates, resulting in low social feed engagement during critical hiring drives.",
+      role: "Self-Directed Designer — identified the visual gap, autonomously ideated and crafted high-end 3D glassmorphic social campaign systems for HR, and pitched them directly to leadership.",
+      method: "Engineered high-craft 3D glassmorphic visual assets tailored to distinct talent tracks (UI/UX Design, Business Analysis, Software Engineering), paired with high-impact typography and clean brand hierarchy."
+    },
+    problem: "Without dedicated creative requests from HR, talent acquisition posts often remained functional but visually uninspired. Recognizing that first impressions dictate talent inbound quality, Sadman took the initiative to build a polished, production-ready social recruitment campaign without being prompted, securing immediate leadership buy-in.",
+    process: [
+      {
+        title: "Identifying Unmet Opportunities & Autonomous Inception",
+        description: "Audited ongoing talent acquisition workflows and spotted an opportunity to elevate SJ Innovation's employer branding with bespoke 3D glassmorphism.",
+        details: [
+          "Conceived the entire campaign autonomously, bypassing bureaucratic backlog to present working high-fidelity prototypes",
+          "Tailored domain-specific 3D iconography: design palettes & artboards for UI/UX, enterprise briefs & metrics for BA, and interactive code terminals & AI chips for developers",
+          "Integrated brand-consistent orange CTA badges ('Apply Now') and official website domain lockups"
+        ]
+      },
+      {
+        title: "Executive Alignment & Operational Deployment",
+        description: "Presented the ready-to-publish campaign directly to HR and leadership, achieving instant approval and live social feed deployment.",
+        details: [
+          "Delivered turnkey social assets optimized for LinkedIn and tech recruitment channels",
+          "Established a new benchmark for proactive internal initiatives, demonstrating how individual designer initiative drives organizational impact",
+          "Created extensible template structures for future hiring cycles across new departments"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Initiative Origin", value: "100% Proactive", subtext: "Self-directed from conception to executive approval" },
+      { label: "Leadership Buy-In", value: "Immediate", subtext: "Adopted directly into active HR social recruitment pipelines" },
+      { label: "Employer Brand", value: "Elevated", subtext: "Bespoke 3D glassmorphism replacing stock templates" }
+    ],
+    outcomeSummary: "Demonstrated the power of unsolicited design leadership—transforming standard HR communications into captivating visual showcases that strengthened employer brand perception.",
+    gallerySections: [
+      {
+        sectionTitle: "People Operations — 3D Glassmorphic Talent Acquisition Campaigns",
+        sectionDescription: "Autonomous recruitment campaign suite designed for SJ Innovation's HR team. Features customized 3D floating glassmorphic iconography tailored to specific career disciplines, clean typographic hierarchies, and prominent call-to-actions.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
+            caption: "Paid Internship Opportunity — UI/UX & Graphic Design (Floating 3D Vector Tools & Color Swatches)",
+            aspectRatio: "1024/682"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/hiring-02-business-analyst.webp",
+            caption: "We're Hiring — Business Analyst (Glassmorphic Enterprise Strategy & Analytics Cubes)",
+            aspectRatio: "1024/682"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
+            caption: "We're Hiring — Jr. Software Developer (Glowing Glass Terminal, Code Blocks & AI Processor)",
+            aspectRatio: "1024/682"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
+        caption: "HR Creative — UI/UX & Graphic Design Paid Internship",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/hiring-02-business-analyst.webp",
+        caption: "HR Creative — Business Analyst Hiring Campaign",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
+        caption: "HR Creative — Jr. Software Developer Hiring Campaign",
         type: "desktop"
       }
     ]
