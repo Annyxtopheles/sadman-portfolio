@@ -711,7 +711,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "International Day of Happiness — 20 March (আন্তর্জাতিক সুখ দিবস)",
-        sectionDescription: "Two uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership and tactile 3D crafted smiley characters surrounded by floating emoji gems.",
+        sectionDescription: "Three uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership, tactile 3D crafted smiley characters surrounded by floating emoji gems, and a whimsical cinematic street-food hamster celebrating unpretentious everyday joy.",
         images: [
           {
             url: "/assets/projects/social-greetings/day-of-happiness/happiness-01-executive-quote-card.webp",
@@ -722,6 +722,12 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
             caption: "Direction 02 — Tactile Knitted Smiley Sphere: Cozy macro still of a handcrafted yellow knitted smiley character with fuzzy pom-pom cheeks and floating emoji gems.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/day-of-happiness/happiness-03-hamster-street-snack.webp",
+            caption: "Direction 03 — Whimsical Hamster Street Joy: Playful and heartwarming cinematic capture of a cheerful hamster wearing a yellow bucket hat holding a street-food skewer, celebrating pure everyday happiness.",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -1117,6 +1123,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
         caption: "Day of Happiness — Tactile Knitted Smiley Sphere",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/day-of-happiness/happiness-03-hamster-street-snack.webp",
+        caption: "Day of Happiness — Whimsical Hamster Street Joy",
         type: "carousel"
       },
       {
@@ -1630,6 +1641,22 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1024/724"
           }
         ]
+      },
+      {
+        sectionTitle: "Women's Day Global Campus Print Collateral",
+        sectionDescription: "Environmental office branding and personalized print collateral designed for International Women's Day across all SJ Innovation global campuses. Features an expansive multi-office print banner celebrating unity, and custom floral appreciation cards individually personalized for every female team member.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
+            caption: "Global Office Print Banner — Diverse Hands Holding Spring Daisies (Displayed across all SJ Innovation campuses)",
+            aspectRatio: "1024/512"
+          },
+          {
+            url: "/assets/projects/print-designs/womens-day-member-gift-card.webp",
+            caption: "Individual Keepsake Gift Card — Personalized Floral Appreciation Card for Every Female Team Member",
+            aspectRatio: "723/1024"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1687,6 +1714,16 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/certificate-06-urgent-attention.webp",
         caption: "SJ Control Tower Citation — Urgent Attention",
         type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
+        caption: "Women's Day Multi-Office Print Banner",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/womens-day-member-gift-card.webp",
+        caption: "Women's Day Personalized Keepsake Card",
+        type: "portrait"
       }
     ]
   },
@@ -1700,16 +1737,16 @@ export const PROJECTS: Project[] = [
     client: "Internal Initiatives & People Operations",
     year: "2025 – Present",
     duration: "Ongoing",
-    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Media Creatives", "3D Glassmorphic Graphics", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, and pitched autonomously for SJ Innovation's People Operations and internal teams. From modern 3D recruitment campaigns to strategic brand touchpoints, turning proactive ideas into officially approved and deployed company standards.",
+    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Recognition Systems", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns and a ground-up recognition initiative that transformed private Keka HRMS honors into public social media showcases with senior, managerial, and COO approval.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Most corporate recruitment and internal communication assets rely on standard text blocks or generic corporate templates, resulting in low social feed engagement during critical hiring drives.",
-      role: "Self-Directed Designer — identified the visual gap, autonomously ideated and crafted high-end 3D glassmorphic social campaign systems for HR, and pitched them directly to leadership.",
-      method: "Engineered high-craft 3D glassmorphic visual assets tailored to distinct talent tracks (UI/UX Design, Business Analysis, Software Engineering), paired with high-impact typography and clean brand hierarchy."
+      challenge: "Internal employee recognition and talent hiring were historically locked inside silent internal HR tools (Keka certificates and plain text notices), missing opportunities to celebrate talent and build public employer brand equity.",
+      role: "Self-Directed Designer — identified organizational opportunities, built end-to-end design systems without prompting, and systematically navigated multi-tier executive approvals (Senior Designer → Engineering Manager → Chief Operating Officer) to launch company-wide initiatives.",
+      method: "Conceived high-craft 3D glassmorphic social frameworks for monthly performer honors, new hire welcomes, and department hiring, turning private internal milestones into public-facing company pride."
     },
-    problem: "Without dedicated creative requests from HR, talent acquisition posts often remained functional but visually uninspired. Recognizing that first impressions dictate talent inbound quality, Sadman took the initiative to build a polished, production-ready social recruitment campaign without being prompted, securing immediate leadership buy-in.",
+    problem: "Without dedicated creative requests from HR, talent acquisition posts and monthly performer honors remained functional but visually uninspired. Recognizing that first impressions dictate talent inbound quality and employee morale, Sadman took the initiative to build polished, production-ready social campaign systems without being prompted, securing multi-tier executive buy-in.",
     process: [
       {
         title: "Identifying Unmet Opportunities & Autonomous Inception",
@@ -1721,21 +1758,21 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        title: "Executive Alignment & Operational Deployment",
-        description: "Presented the ready-to-publish campaign directly to HR and leadership, achieving instant approval and live social feed deployment.",
+        title: "Ground-Up Recognition Transformation: From Keka to Social Media",
+        description: "Historically, Performer of the Month honors were only distributed as private PDF certificates inside the internal HR portal (Keka). Sadman recognized an opportunity to publicly celebrate talent on social channels.",
         details: [
-          "Delivered turnkey social assets optimized for LinkedIn and tech recruitment channels",
-          "Established a new benchmark for proactive internal initiatives, demonstrating how individual designer initiative drives organizational impact",
-          "Created extensible template structures for future hiring cycles across new departments"
+          "Independently conceptualized and designed the 'Performer of the Month' social template featuring a sculpted 3D glass trophy, tech coordinate grids, and brand gradients",
+          "Presented the initiative through a 3-tier approval hierarchy: pitched to Senior Designer (approved), escalated to Manager (approved), and presented to Chief Operating Officer (COO, approved)",
+          "Extended the framework to create standardized 'Welcome Aboard' employee onboarding announcements across global offices (e.g., Goa, Dhaka, New York)"
         ]
       }
     ],
     outcomes: [
-      { label: "Initiative Origin", value: "100% Proactive", subtext: "Self-directed from conception to executive approval" },
-      { label: "Leadership Buy-In", value: "Immediate", subtext: "Adopted directly into active HR social recruitment pipelines" },
-      { label: "Employer Brand", value: "Elevated", subtext: "Bespoke 3D glassmorphism replacing stock templates" }
+      { label: "Initiative Origin", value: "100% Proactive", subtext: "Self-directed from conception to executive sign-off" },
+      { label: "Approval Ladder", value: "3-Tier Signoff", subtext: "Pitched & approved by Senior, Manager, & COO" },
+      { label: "HR Impact", value: "Company-Wide", subtext: "Keka honors elevated to public employer brand equity" }
     ],
-    outcomeSummary: "Demonstrated the power of unsolicited design leadership—transforming standard HR communications into captivating visual showcases that strengthened employer brand perception.",
+    outcomeSummary: "Demonstrated the power of unsolicited design leadership—transforming standard HR communications and internal certificates into captivating social showcases that strengthened employee pride and employer brand perception.",
     gallerySections: [
       {
         sectionTitle: "People Operations — 3D Glassmorphic Talent Acquisition Campaigns",
@@ -1757,6 +1794,22 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1024/682"
           }
         ]
+      },
+      {
+        sectionTitle: "Internal Recognition & Talent Onboarding — Keka to Public Social Showcases",
+        sectionDescription: "Proactive cultural initiative conceived from the ground up: previously, monthly employee honors were locked inside internal HR software (Keka) as simple PDF certificates. Sadman conceptualized transforming these into public-facing, high-craft social showcases—pitching the concept upwards from Senior Designer to Engineering Manager and the Chief Operating Officer (COO) to secure complete executive approval. Accompanied by standardized 'Welcome Aboard' talent arrival showcases.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
+            caption: "Performer of the Month — Ground-Up Initiative Pitching & Launching Social Recognition (Sadman Zaman Khan, November 2025)",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
+            caption: "Welcome Aboard Social Showcase — Standardized Talent Onboarding System (Leandra Sol, Digital Marketing Executive, Goa)",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1773,6 +1826,16 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
         caption: "HR Creative — Jr. Software Developer Hiring Campaign",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
+        caption: "Performer of the Month — Ground-Up Social Recognition Initiative",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
+        caption: "Welcome Aboard — Talent Onboarding Social Showcase",
         type: "desktop"
       }
     ]
