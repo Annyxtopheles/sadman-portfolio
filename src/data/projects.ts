@@ -576,6 +576,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Eid al-Fitr Mubarak — Festive Visual Suites",
+        sectionDescription: "Five distinct creative directions celebrating Eid al-Fitr for SJ Innovation. Explores themes of fraternal unity, sacred architectural watercolor washes, photorealistic 3D marble minarets, atmospheric dusk lantern photography, and ornate laser-cut Islamic geometric filigree.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/eid-al-fitr/eid-01-fraternal-embrace.webp",
+            caption: "Direction 01 — Fraternal Unity & Kolakuli: Stylized vector illustration of traditional fraternal embrace framed by archways and hanging glass lanterns.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-fitr/eid-02-watercolor-mosque-skyline.webp",
+            caption: "Direction 02 — Watercolor Mosque Architecture: Expressive saffron and cobalt watercolor wash capturing domes and minarets under the crescent moon.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-fitr/eid-03-3d-marble-minaret-twilight.webp",
+            caption: "Direction 03 — 3D Sculpted White Marble Mosque: Photorealistic architectural rendering of a grand marble dome and minaret at golden dusk.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-fitr/eid-04-lantern-in-hand-nightfall.webp",
+            caption: "Direction 04 — Hand-Held Fanous at Dusk: Cinematic photographic study of a glowing vintage brass lantern against a starry twilight indigo sky.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-fitr/eid-05-filigree-gold-crescent.webp",
+            caption: "Direction 05 — Laser-Cut Gold Filigree Crescent (Hilal): Intricate geometric Islamic star lattice crescent moon glowing against a dusk horizon.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -627,6 +663,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/bangla-new-year/boishakh-05-heritage-musical-ensemble.webp",
         caption: "Pohela Boishakh — Classical Folk Instruments & Peacock",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-fitr/eid-01-fraternal-embrace.webp",
+        caption: "Eid al-Fitr — Fraternal Unity & Kolakuli",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-fitr/eid-02-watercolor-mosque-skyline.webp",
+        caption: "Eid al-Fitr — Watercolor Mosque Architecture",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-fitr/eid-03-3d-marble-minaret-twilight.webp",
+        caption: "Eid al-Fitr — 3D Sculpted White Marble Mosque",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-fitr/eid-04-lantern-in-hand-nightfall.webp",
+        caption: "Eid al-Fitr — Hand-Held Fanous at Dusk",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-fitr/eid-05-filigree-gold-crescent.webp",
+        caption: "Eid al-Fitr — Laser-Cut Gold Filigree Crescent",
         type: "carousel"
       }
     ]
