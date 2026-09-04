@@ -1513,23 +1513,23 @@ export const PROJECTS: Project[] = [
     client: "SJ Innovation LLC",
     year: "2025 – Present",
     duration: "Ongoing Series",
-    scope: ["Print Design", "Infographics", "Workplace Culture", "Typography", "Editorial Layout", "Poster Design"],
-    summary: "Physical print collateral, workplace infographics, and large-format motivational office posters designed for SJ Innovation. Features structured corporate best-practice infographics and energetic culture-building wall art crafted for internal alignment and employee engagement.",
+    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Typography", "Editorial Layout", "Poster Design"],
+    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, and appreciation certificate systems designed for SJ Innovation and the SJ Control Tower team. Features structured corporate best-practice guides, energetic culture-building wall art, and official honors honoring team excellence.",
     coverImage: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Workplace guidelines and cultural values often get lost in digital documentation. The goal was to design high-impact, beautifully typeset physical print collateral and office wall posters that communicate operational excellence and team energy at a glance.",
-      role: "Lead Visual & Brand Designer — conceptualized, illustrated, and typeset all physical print collateral, workplace infographics, and environmental wall posters for SJ Innovation's global offices.",
-      method: "Applied modular information hierarchy, clean iconography, high-contrast brand colors (SJ cobalt, vibrant orange, and crisp white), and large-format editorial typography engineered for physical viewing distances."
+      challenge: "Workplace guidelines, cultural values, and employee recognition often get lost in digital noise. The goal was to design high-impact physical print collateral, office wall posters, and official certificate systems that celebrate achievement and communicate operational clarity.",
+      role: "Lead Visual & Brand Designer — conceptualized, illustrated, and typeset all physical print collateral, workplace infographics, environmental posters, and recognition certificates for SJ Innovation and SJ Control Tower.",
+      method: "Applied modular information hierarchy, clean iconography, high-contrast brand colors (SJ cobalt, vibrant orange, and crisp white), subtle background textures (grids, topological contours, geometric mesh), and large-format editorial typography."
     },
-    problem: "Ineffective meetings and passive office environments drain creative momentum. SJ Innovation needed tangible, engaging print assets to hang across team breakout spaces and conference rooms—reminding teams to run intentional meetings and fostering an inspiring, playful office culture.",
+    problem: "Ineffective meetings, passive office environments, and unrecognized milestone achievements drain creative momentum. SJ Innovation needed tangible, engaging print assets—reminding teams to run intentional meetings, fostering an inspiring culture, and officially honoring outstanding team contributions.",
     process: [
       {
         title: "Information Architecture for Rapid Scanning",
-        description: "Deconstructed multi-step operational meeting frameworks into scannable three-step and five-step modular cards with distinct visual anchors.",
+        description: "Deconstructed operational meeting frameworks and employee wellness research into scannable infographics with distinct visual anchors.",
         details: [
           "Crafted custom vector iconography representing Intent (target), Decisions (checklist), and Insights (lightbulb)",
-          "Established clear typographic scale prioritizing takeaway headings over dense body text for readability across meeting rooms",
+          "Structured the 7 Dimensions of Employee Happiness into a circular radial infographic mapping compensation, growth, and work-life harmony",
           "Balanced brand-consistent warm orange gradients with clean white backgrounds for optimal print reproduction"
         ]
       },
@@ -1540,18 +1540,27 @@ export const PROJECTS: Project[] = [
           "Mohammad Ali Champion Tribute: Bold athletic vector illustration paired with high-impact uppercase quote typography on an energetic saffron-orange background",
           "Team Culture Banner: Whimsical spherical character illustrations climbing and swinging from typography blocks to celebrate laughter as essential team bonding"
         ]
+      },
+      {
+        title: "SJ Control Tower Recognition Certificate System",
+        description: "Engineered an official horizontal A4 certificate suite for the SJ Control Tower recognition program honoring high-impact individual performers.",
+        details: [
+          "Developed specialized category insignia: Innovation Instigator (Lightbulb), Above & Beyond (Rocket), Agile Advocate (Sprint Cycle), and Client Hero (Flame)",
+          "Paired each recognition tier with customized procedural background patterns: technical grids, topographic contours, blueprint coordinates, and faceted polygon meshes",
+          "Maintained official corporate metadata hierarchy with Module Lead sign-offs, issue dates, and recipient typography"
+        ]
       }
     ],
     outcomes: [
-      { label: "Mediums", value: "Print & Wall Art", subtext: "Infographics, wall posters, & vertical banners" },
-      { label: "Design Consistency", value: "100%", subtext: "Strict alignment with SJ Innovation's brand palette" },
+      { label: "Mediums", value: "Print & Certificates", subtext: "Infographics, wall posters, & award certificates" },
+      { label: "Assets Delivered", value: "9 Designs", subtext: "3 infographics, 2 wall posters, 4 award certificates" },
       { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms & collaborative spaces" }
     ],
-    outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into engaging functional frameworks and energetic cultural anchors.",
+    outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
     gallerySections: [
       {
-        sectionTitle: "Workplace Productivity Infographics — Meeting Frameworks",
-        sectionDescription: "Structured corporate infographics designed to be printed and mounted in conference rooms and collaborative hubs. Distills core organizational habits into intuitive, scannable steps.",
+        sectionTitle: "Workplace Productivity & Culture Infographics",
+        sectionDescription: "Structured corporate infographics designed to be printed and mounted in conference rooms, collaborative hubs, and common areas. Distills core organizational habits and employee wellbeing into intuitive, scannable steps.",
         images: [
           {
             url: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
@@ -1562,6 +1571,11 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/effective-meetings-5-tips-infographic.webp",
             caption: "5 Essential Tips for Running Effective Meetings — Actionable Meeting Hygiene",
             aspectRatio: "723/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+            caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Framework",
+            aspectRatio: "461/1024"
           }
         ]
       },
@@ -1580,6 +1594,32 @@ export const PROJECTS: Project[] = [
             aspectRatio: "512/1024"
           }
         ]
+      },
+      {
+        sectionTitle: "Recognition Systems — SJ Control Tower Appreciation Certificates",
+        sectionDescription: "Modular certificate design system created for the SJ Control Tower internal recognition program. Designed in horizontal A4 landscape format with distinct domain badge iconography, subtle geometric grid and topological linework textures, and brand-aligned pastel gradients honoring exceptional team contributions.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/certificate-01-innovation-instigator.webp",
+            caption: "Innovation Instigator — Golden Grid Motif & Lightbulb Badge (Awarded to Sadman Zaman Khan)",
+            aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-02-above-and-beyond.webp",
+            caption: "Above & Beyond — Topographic Aqua Contours & Rocket Badge (Awarded to Yeasin Ramin)",
+            aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-03-agile-advocate.webp",
+            caption: "Agile Advocate — Purple Geometric Mesh & Sprint Loop Badge (Awarded to Yeasin Ramin)",
+            aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-04-client-hero.webp",
+            caption: "Client Hero — Blueprint Technical Grid & Flame Badge (Awarded to Yeasin Ramin)",
+            aspectRatio: "1024/724"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1594,6 +1634,11 @@ export const PROJECTS: Project[] = [
         type: "portrait"
       },
       {
+        url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+        caption: "Workplace Infographic — 7 Dimensions of Employee Happiness",
+        type: "portrait"
+      },
+      {
         url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
         caption: "Office Wall Poster — Mohammad Ali Champion Mindset",
         type: "portrait"
@@ -1602,6 +1647,26 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
         caption: "Team Culture Poster — Laughter Team-Building Exercise",
         type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-01-innovation-instigator.webp",
+        caption: "SJ Control Tower Certificate — Innovation Instigator",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-02-above-and-beyond.webp",
+        caption: "SJ Control Tower Certificate — Above & Beyond",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-03-agile-advocate.webp",
+        caption: "SJ Control Tower Certificate — Agile Advocate",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-04-client-hero.webp",
+        caption: "SJ Control Tower Certificate — Client Hero",
+        type: "desktop"
       }
     ]
   }
