@@ -753,7 +753,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "International Mother Language Day — 21 February (আন্তর্জাতিক মাতৃভাষা দিবস)",
-        sectionDescription: "Two poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, and archival historical photography of the 1952 protest procession with illuminated neon placards.",
+        sectionDescription: "Three poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, archival historical photography of the 1952 protest procession with illuminated neon placards, and a minimalist modern tribute with ethereal vertical light pillars, glowing sun disc, and subtle floating Bengali script.",
         images: [
           {
             url: "/assets/projects/social-greetings/mother-language-day/language-day-01-shaheed-minar-sunrise.webp",
@@ -764,6 +764,12 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/social-greetings/mother-language-day/language-day-02-1952-movement-neon-placards.webp",
             caption: "Direction 02 — Historic 1952 Procession & Neon Placards: Gritty archival photography of the historic Language Movement procession with glowing neon typography on protest placards.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mother-language-day/language-day-03-light-pillars-sun-disc.webp",
+            caption: "Direction 03 — Luminous Shaheed Minar Light Beams & Sun Disc: Minimalist modern composition of vertical pillars of light evoking the Shaheed Minar surrounding a warm orange sun disc, crowned by subtle floating Bengali alphabets.",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -1139,6 +1145,11 @@ export const PROJECTS: Project[] = [
         type: "carousel"
       },
       {
+        url: "/assets/projects/social-greetings/mother-language-day/language-day-03-light-pillars-sun-disc.webp",
+        caption: "Mother Language Day — Luminous Light Beams & Sun Disc",
+        type: "carousel"
+      },
+      {
         url: "/assets/projects/social-greetings/may-day/mayday-01-construction-silhouettes.webp",
         caption: "May Day — Structural Labor Silhouettes",
         type: "carousel"
@@ -1489,6 +1500,108 @@ export const PROJECTS: Project[] = [
         url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1400&auto=format&fit=crop",
         caption: "NEXURA brand guidelines manual and typographic grid architecture",
         type: "system"
+      }
+    ]
+  },
+  {
+    id: "print-designs",
+    slug: "print-designs",
+    title: "Print & Workplace Visual Systems",
+    category: "Brand Systems",
+    status: "LIVE",
+    company: "SJ Innovation",
+    client: "SJ Innovation LLC",
+    year: "2025 – Present",
+    duration: "Ongoing Series",
+    scope: ["Print Design", "Infographics", "Workplace Culture", "Typography", "Editorial Layout", "Poster Design"],
+    summary: "Physical print collateral, workplace infographics, and large-format motivational office posters designed for SJ Innovation. Features structured corporate best-practice infographics and energetic culture-building wall art crafted for internal alignment and employee engagement.",
+    coverImage: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Workplace guidelines and cultural values often get lost in digital documentation. The goal was to design high-impact, beautifully typeset physical print collateral and office wall posters that communicate operational excellence and team energy at a glance.",
+      role: "Lead Visual & Brand Designer — conceptualized, illustrated, and typeset all physical print collateral, workplace infographics, and environmental wall posters for SJ Innovation's global offices.",
+      method: "Applied modular information hierarchy, clean iconography, high-contrast brand colors (SJ cobalt, vibrant orange, and crisp white), and large-format editorial typography engineered for physical viewing distances."
+    },
+    problem: "Ineffective meetings and passive office environments drain creative momentum. SJ Innovation needed tangible, engaging print assets to hang across team breakout spaces and conference rooms—reminding teams to run intentional meetings and fostering an inspiring, playful office culture.",
+    process: [
+      {
+        title: "Information Architecture for Rapid Scanning",
+        description: "Deconstructed multi-step operational meeting frameworks into scannable three-step and five-step modular cards with distinct visual anchors.",
+        details: [
+          "Crafted custom vector iconography representing Intent (target), Decisions (checklist), and Insights (lightbulb)",
+          "Established clear typographic scale prioritizing takeaway headings over dense body text for readability across meeting rooms",
+          "Balanced brand-consistent warm orange gradients with clean white backgrounds for optimal print reproduction"
+        ]
+      },
+      {
+        title: "Environmental Impact & Cultural Wall Art",
+        description: "Created high-energy, motivational posters designed to be printed and hung across office communal spaces and engineering pods.",
+        details: [
+          "Mohammad Ali Champion Tribute: Bold athletic vector illustration paired with high-impact uppercase quote typography on an energetic saffron-orange background",
+          "Team Culture Banner: Whimsical spherical character illustrations climbing and swinging from typography blocks to celebrate laughter as essential team bonding"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Mediums", value: "Print & Wall Art", subtext: "Infographics, wall posters, & vertical banners" },
+      { label: "Design Consistency", value: "100%", subtext: "Strict alignment with SJ Innovation's brand palette" },
+      { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms & collaborative spaces" }
+    ],
+    outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into engaging functional frameworks and energetic cultural anchors.",
+    gallerySections: [
+      {
+        sectionTitle: "Workplace Productivity Infographics — Meeting Frameworks",
+        sectionDescription: "Structured corporate infographics designed to be printed and mounted in conference rooms and collaborative hubs. Distills core organizational habits into intuitive, scannable steps.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
+            caption: "3 Steps to More Effective Meetings — Intent, Decisions, Insights",
+            aspectRatio: "723/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/effective-meetings-5-tips-infographic.webp",
+            caption: "5 Essential Tips for Running Effective Meetings — Actionable Meeting Hygiene",
+            aspectRatio: "723/1024"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Office Culture & Motivational Wall Posters",
+        sectionDescription: "Large-format environmental posters designed to energize engineering pods and communal break areas, celebrating grit, championship mindset, and everyday team camaraderie.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
+            caption: "Mohammad Ali Champion Mindset Poster — 'Live the Rest of Your Life as a Champion'",
+            aspectRatio: "682/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
+            caption: "Culture Banner — 'Laughter is the Best Team-Building Exercise'",
+            aspectRatio: "512/1024"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
+        caption: "Workplace Infographic — 3 Steps to More Effective Meetings",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/effective-meetings-5-tips-infographic.webp",
+        caption: "Workplace Infographic — 5 Essential Tips for Running Effective Meetings",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
+        caption: "Office Wall Poster — Mohammad Ali Champion Mindset",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
+        caption: "Team Culture Poster — Laughter Team-Building Exercise",
+        type: "portrait"
       }
     ]
   }
