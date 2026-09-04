@@ -1900,6 +1900,204 @@ export const PROJECTS: Project[] = [
         type: "desktop"
       }
     ]
+  },
+  {
+    id: "youtube-webinar-thumbnails",
+    slug: "youtube-webinar-thumbnails",
+    title: "YouTube & Webinar Thumbnails",
+    category: "Brand Systems",
+    status: "LIVE",
+    company: "SJ Innovation & Client Ventures",
+    client: "SJ Innovation LLC & Autonomous AI Channels",
+    year: "2025 – Present",
+    duration: "Ongoing Production",
+    scope: ["YouTube Packaging", "Webinar Visual Identity", "High-CTR Cover Design", "3D Scene Composition", "Typography & Hierarchy", "Brand Systems"],
+    summary: "High-impact 16:9 thumbnail design system engineered for maximum click-through rate (CTR), micro-scale mobile legibility, and brand recall across YouTube videos, tech masterclasses, and executive AI webinars for SJ Innovation and autonomous AI media channels.",
+    coverImage: "/assets/projects/thumbnails/thumb-sji-claude-ai-2026.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Technical webinars and AI YouTube content compete in crowded feeds where viewers make click decisions in sub-second glances. Generic stock covers or text-heavy slides result in abysmal click-through rates and diluted brand authority.",
+      role: "Lead Visual Designer — conceptualized visual concepts, directed 3D metaphor staging, and engineered modular 16:9 thumbnail cover systems with high typographic contrast and mobile readability.",
+      method: "Engineered a three-pillar thumbnail framework: 1) High-salience focal point (3D character, tactile metaphor, or cinematic hero), 2) 3-second legible title lockup with high contrast, and 3) Cohesive brand identity anchors across recurring series."
+    },
+    problem: "Video and webinar packaging faces extreme constraints: thumbnails render as small as 120px wide on mobile feeds, yet must instantly communicate value, provoke curiosity, and maintain corporate authority without looking cluttered or clickbaity.",
+    process: [
+      {
+        title: "Micro-Scale Legibility & Typographic Hierarchy",
+        description: "Designed concise 2-to-3 line title lockups utilizing bold sans-serif fonts, high-contrast color fills (vibrant amber, electric blue, and crisp white), and clean badges ('Free Webinar') positioned safely away from platform time-stamp overlays.",
+        details: [
+          "Tested visual hierarchy at 15% zoom to ensure immediate readability on mobile screens",
+          "Reserved right-hand 60% of frame for visual storytelling while keeping left 40% clean for primary typography",
+          "Avoided bottom-right clutter to prevent obstruction by YouTube and LinkedIn timestamp badges"
+        ]
+      },
+      {
+        title: "Conceptual 3D Metaphors & AI Visual Storytelling",
+        description: "Instead of generic software screenshots, developed bespoke 3D conceptual scenes that encapsulate abstract tech subjects—from miniature holographic developer pods for Claude AI to chameleon agility for Git version control and futuristic humanoid agent conference tables.",
+        details: [
+          "Modeled tactile 3D elements: metallic Sora cloud icons, robotic arms, dual-monitor workstations, and multi-agent workstations",
+          "Applied cinematic lighting and directional color gradients (warm amber vs cool indigo) to create depth and visual pop",
+          "Maintained strict brand lockup consistency with company logos ('AI First Solutions') across episodic releases"
+        ]
+      },
+      {
+        title: "Cross-Platform Responsive Deployment",
+        description: "Formatted all visual assets in native 16:9 (1280x720 / 1920x1080 standard) optimized for YouTube watch pages, LinkedIn event banners, newsletter embeds, and landing page hero cards.",
+        details: [
+          "Standardized color grading for high contrast across both OLED mobile displays and desktop monitors",
+          "Created reusable Figma master components with smart auto-layout guides for rapid turnaround under tight webinar marketing schedules"
+        ]
+      }
+    ],
+    aiWorkflow: "Leveraged AI-augmented 3D scene rendering and lighting exploration in Midjourney and Photoshop generative workflows to rapidly prototype character poses, metallic textures, and lighting moods, finalizing vectors and type in Figma.",
+    outcomes: [
+      { label: "Design System", value: "High CTR", subtext: "Optimized for mobile feed glanceability and high initial engagement" },
+      { label: "Assets Delivered", value: "10 Thumbnails", subtext: "Across SJ Innovation webinars, AI channel features, & product demos" },
+      { label: "Visual Consistency", value: "100%", subtext: "Strict brand lockup and typographic system across all episodic releases" }
+    ],
+    outcomeSummary: "Delivered an elevated video and webinar packaging system that transforms complex enterprise AI topics and technical developer tools into captivating, high-converting visual invitations.",
+    gallerySections: [
+      {
+        sectionTitle: "SJ Innovation — AI First Webinar & Masterclass Series",
+        sectionDescription: "16:9 webinar promotional thumbnails and video packaging designed for SJ Innovation's official tech webinar series. Blends corporate brand identity with striking 3D visual metaphors highlighting Claude AI, Git & Cody developer workflows, and OpenAI Sora video editing.",
+        images: [
+          {
+            url: "/assets/projects/thumbnails/thumb-sji-claude-ai-2026.webp",
+            caption: "Claude AI 2026: Everything You Need to Know for Maximum Productivity — 3D holographic developer workstation and coding assistant setup.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/thumbnails/thumb-sji-coding-success-git-cody.webp",
+            caption: "Coding Success: Master Git & Cody Workflows for Effective Version Control — 3D chameleon metaphor representing developer adaptability and version control agility.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/thumbnails/thumb-sji-empower-edits-sora-ai.webp",
+            caption: "Empower Your Edits: Sora's AI-Powered Video Editing — Sleek 3D brushed-metal cloud icon with glowing AI sparkles and dual-tone lighting.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Autonomous AI & Agentic Media Channel Series",
+        sectionDescription: "Cinematic, high-concept thumbnail designs for autonomous AI media channels and deep-dive technical explorations. Emphasizes futuristic robotics, multi-agent systems, and digital intelligence.",
+        images: [
+          {
+            url: "/assets/projects/thumbnails/thumb-ai-social-media-manager.webp",
+            caption: "Social Media Manager: Your All-in-One Autonomous AI Operator — Hyper-realistic humanoid female AI robot with floating social ecosystem icons.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/thumbnails/thumb-ai-agents-workforce.webp",
+            caption: "AGENTS: The Autonomous Multi-Agent Workforce — Cinematic dark studio composition featuring four specialized humanoid robotic agents collaborating across development, hardware, design, and analytics.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "BuildYourAI — YouTube Product Demos & Feature Walkthroughs",
+        sectionDescription: "High-CTR 16:9 thumbnail design system crafted for BuildYourAI's YouTube tutorials, live agent walkthroughs, and executive feature demonstrations, combining bold headline typography, brand gradient accents, and real dashboard mockups.",
+        images: [
+          {
+            url: "/assets/projects/buildyourai/byai-yt-smart-shopper-insights.webp",
+            caption: "Smart Shopper Insights — E-Commerce Customer Purchase Analytics demo thumbnail",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-ai-booking-agent-demo.webp",
+            caption: "AI Booking Agent Demo — Voice agent and conversational scheduler walkthrough",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-ai-event-organizer.webp",
+            caption: "AI Event Organizer — Dual-display administrative CMS and email workflow demo",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp",
+            caption: "Automate Business Ops — Control Tower enterprise suite overview with 3D metallic crest",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-yt-bill-splitter-app-ep02.webp",
+            caption: "Bill-Splitter App (Episode 02) — Product walkthrough and mobile utility showcase",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/thumbnails/thumb-sji-claude-ai-2026.webp",
+        caption: "Claude AI 2026 — Webinar Thumbnail Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/thumbnails/thumb-sji-coding-success-git-cody.webp",
+        caption: "Coding Success: Git & Cody — Webinar Thumbnail Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/thumbnails/thumb-sji-empower-edits-sora-ai.webp",
+        caption: "Empower Your Edits: Sora AI — Webinar Thumbnail Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/thumbnails/thumb-ai-social-media-manager.webp",
+        caption: "Social Media Manager — Autonomous AI Agent Thumbnail",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/thumbnails/thumb-ai-agents-workforce.webp",
+        caption: "AGENTS — Multi-Agent Autonomous Workforce Feature Thumbnail",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-smart-shopper-insights.webp",
+        caption: "Smart Shopper Insights — YouTube Demo Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-ai-booking-agent-demo.webp",
+        caption: "AI Booking Agent — YouTube Demo Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-ai-event-organizer.webp",
+        caption: "AI Event Organizer — YouTube Demo Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp",
+        caption: "Automate Business Ops — YouTube Demo Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-yt-bill-splitter-app-ep02.webp",
+        caption: "Bill-Splitter App — YouTube Demo Packaging",
+        type: "desktop",
+        aspectRatio: "16/9"
+      }
+    ]
   }
 ];
 
