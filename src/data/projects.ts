@@ -1069,6 +1069,18 @@ export const PROJECTS: Project[] = [
             caption: "Direction 05 — Ornate Keyhole Arch & Golden Sunset: Intricate arabesque stone archway framing a glowing golden dusk over an ancient domed city.",
             type: "carousel",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-01-warm-amber-archway.webp",
+            caption: "2025 Series: Direction 01 — Warm Amber Archway & Hanging Lanterns: Multi-domed mosque silhouette in warm amber glowing through an arched window with starry blue skies.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-02-ice-blue-mosque-silhouette.webp",
+            caption: "2025 Series: Direction 02 — Minimalist Ice Blue Keyhole Archway: Pristine white mosque silhouette framed by an ornate Moroccan keyhole arch with crescent moon and hanging star pendants.",
+            type: "carousel",
+            aspectRatio: "1/1"
           }
         ]
       },
@@ -1086,11 +1098,35 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "US Veteran's Day — Honoring All Who Served (11 November)",
-        sectionDescription: "Solemn and patriotic commemorative visual honoring US military veterans. Combines a rippling American flag canopy, illuminated sunburst rays, and silhouetted soldiers rendering honors in full combat gear.",
+        sectionDescription: "Solemn and patriotic commemorative visual suite honoring US military veterans. Explores three powerful visual directions: a waving American flag over an illuminated sunburst sky, a double-exposure officer silhouette with circular flag shield, and a high-contrast tactical squad rendering honors on a dawn ridge.",
         images: [
           {
             url: "/assets/projects/social-greetings/veterans-day-social.webp",
-            caption: "US Veteran's Day Social Creative — Waving American flag over a sunburst deep navy sky with five-star insignia and saluting soldier silhouettes.",
+            caption: "Direction 01 — Waving American Flag & Saluting Soldiers: Majestic rippling flag canopy over a sunburst deep navy sky with five-star insignia and tactical soldier silhouettes.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/veterans-day-02-saluting-officer-shield.webp",
+            caption: "Direction 02 — Saluting Officer & Circular Flag Shield: Double-exposure cutout of a saluting officer framing an infantry soldier on an American flag shield.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/veterans-day-03-squad-salute-ridge.webp",
+            caption: "Direction 03 — Tactical Squad on Morning Ridge: High-contrast silhouette of five soldiers rendering honors and holding perimeter watch against radiating morning sunbeams.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Executive Thought Leadership & Op-Ed Campaigns (NYC AI Policy)",
+        sectionDescription: "High-impact social media campaign creative promoting an executive op-ed co-authored by Shahed Islam (CEO, SJ Innovation) and Tom Grech (CEO, Queens Chamber of Commerce). Highlights AI's transformative impact on New York City and advocates for forward-thinking, inclusive municipal AI policymaking.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
+            caption: "Executive Op-Ed Creative — 'AI is Shaping the Future of New York City, But Policy Must Evolve With It' featuring glowing Empire State Building neural net and executive portraits.",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -1434,13 +1470,38 @@ export const PROJECTS: Project[] = [
         type: "carousel"
       },
       {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-01-warm-amber-archway.webp",
+        caption: "Eid al-Adha (2025) — Warm Amber Archway & Hanging Lanterns",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-02-ice-blue-mosque-silhouette.webp",
+        caption: "Eid al-Adha (2025) — Minimalist Ice Blue Keyhole Archway",
+        type: "carousel"
+      },
+      {
         url: "/assets/projects/social-greetings/international-mens-day-social.webp",
         caption: "International Men's Day — Sartorial Silhouette Social Greeting",
         type: "carousel"
       },
       {
         url: "/assets/projects/social-greetings/veterans-day-social.webp",
-        caption: "US Veteran's Day — Honoring All Who Served",
+        caption: "US Veteran's Day — Honoring All Who Served (Flag & Saluting Soldiers)",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/veterans-day-02-saluting-officer-shield.webp",
+        caption: "US Veteran's Day — Saluting Officer & Circular Flag Shield",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/veterans-day-03-squad-salute-ridge.webp",
+        caption: "US Veteran's Day — Tactical Squad on Dawn Ridge",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
+        caption: "Thought Leadership Event — NYC AI Policy Op-Ed (Shahed Islam & Tom Grech)",
         type: "carousel"
       }
     ]
