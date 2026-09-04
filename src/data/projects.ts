@@ -891,7 +891,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Father's Day — Celebrating Guidance & Love (বাবা দিবস)",
-        sectionDescription: "Five heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, and shared milestones—from minimalist hand-in-hand silhouettes and piggyback joy to sunset mountain summit reflections.",
+        sectionDescription: "Seven heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, playful building, and shared outdoor moments—from minimalist hand-in-hand silhouettes and piggyback joy to building block collaboration and watercolor tree swing reflections.",
         images: [
           {
             url: "/assets/projects/social-greetings/fathers-day/fathers-day-01-holding-hands-minimalist.webp",
@@ -920,6 +920,42 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/social-greetings/fathers-day/fathers-day-05-mountain-sunrise-summit.webp",
             caption: "Direction 05 — Mountain Summit Sunrise: Inspiring landscape illustration of father and daughter silhouetted on a mountain peak at dawn, looking toward endless horizons.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-06-building-blocks-overhead.webp",
+            caption: "Direction 06 — Building Together with Blocks: Top-down composition capturing father and child assembling vibrant blue, orange, and white interlocking bricks on a pristine white work surface.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-07-watercolor-tree-swing.webp",
+            caption: "Direction 07 — Watercolor Sunset Tree Swing: Nostalgic blue watercolor silhouette of a father pushing his laughing child on a rope swing beneath a grand tree during a golden orange sunset.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "International Programmer's Day — Code, Innovation & Craft (প্রোগ্রামার দিবস)",
+        sectionDescription: "Three electrifying creative directions celebrating International Programmer's Day for SJ Innovation. Spans floating glowing glassmorphic tech stack icons, a cinematic dual-screen late-night development setup with AI aura, and a futuristic Creation of Adam motif symbolizing the synergy between human developers and AI.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/programmers-day/programmers-day-01-floating-tech-icons.webp",
+            caption: "Direction 01 — Floating Glassmorphic Tech Stack: Cinematic dark frame featuring a developer's hand surrounded by orbiting neon-accented glass icons representing HTML, CSS, JavaScript, terminal, Git, and database architectures.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/programmers-day/programmers-day-02-night-coder-dual-monitors.webp",
+            caption: "Direction 02 — Late-Night Flow & AI Energy Aura: Atmospheric nocturnal perspective of a software engineer at a dual-monitor workstation radiating electric blue and amber illumination while architecting custom AI software.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/programmers-day/programmers-day-03-cyborg-human-code-touch.webp",
+            caption: "Direction 03 — Human-AI Synergy & Creation Touch: Futuristic 'Creation of Adam' homage showing a sleek robotic hand and human fingertip converging upon glowing 3D code brackets.",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -1200,6 +1236,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/fathers-day/fathers-day-05-mountain-sunrise-summit.webp",
         caption: "Father's Day — Mountain Summit Sunrise",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-06-building-blocks-overhead.webp",
+        caption: "Father's Day — Building Together with Blocks",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-07-watercolor-tree-swing.webp",
+        caption: "Father's Day — Watercolor Sunset Tree Swing",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/programmers-day/programmers-day-01-floating-tech-icons.webp",
+        caption: "Programmer's Day — Floating Glassmorphic Tech Stack",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/programmers-day/programmers-day-02-night-coder-dual-monitors.webp",
+        caption: "Programmer's Day — Late-Night Flow & AI Energy Aura",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/programmers-day/programmers-day-03-cyborg-human-code-touch.webp",
+        caption: "Programmer's Day — Human-AI Synergy & Creation Touch",
         type: "carousel"
       }
     ]
