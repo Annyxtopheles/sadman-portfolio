@@ -340,48 +340,59 @@ export const CaseStudyDetail: React.FC = () => {
               </h2>
             </div>
 
-            {/* View Mode Switcher: Pure Lined Icons (No Boxes or Button Backgrounds) */}
+            {/* View Mode Switcher: Literal Maximize & Minimize Lined Icons */}
             <div className="flex items-center gap-3">
               <button
                 type="button"
                 onClick={() => setViewMode('expanded')}
-                aria-label="Expanded view"
+                aria-label="Maximize view"
                 className={`transition-colors cursor-pointer p-0.5 ${
                   viewMode === 'expanded'
                     ? 'text-[#FFFFFF]'
                     : 'text-[#666666] hover:text-[#FFFFFF]'
                 }`}
-                title="Expanded view"
+                title="Maximize view"
               >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
-                  <rect x="3" y="3" width="7.5" height="7.5" rx="1" />
-                  <rect x="13.5" y="3" width="7.5" height="7.5" rx="1" />
-                  <rect x="3" y="13.5" width="7.5" height="7.5" rx="1" />
-                  <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="15 3 21 3 21 9" />
+                  <polyline points="9 21 3 21 3 15" />
+                  <line x1="21" y1="3" x2="14" y2="10" />
+                  <line x1="3" y1="21" x2="10" y2="14" />
                 </svg>
               </button>
 
               <button
                 type="button"
                 onClick={() => setViewMode('compact')}
-                aria-label="Minimized view"
+                aria-label="Minimize view"
                 className={`transition-colors cursor-pointer p-0.5 ${
                   viewMode === 'compact'
                     ? 'text-[#FFFFFF]'
                     : 'text-[#666666] hover:text-[#FFFFFF]'
                 }`}
-                title="Minimized view"
+                title="Minimize view"
               >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                  <rect x="3" y="3" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="9.9" y="3" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="16.8" y="3" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="3" y="9.9" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="9.9" y="9.9" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="16.8" y="9.9" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="3" y="16.8" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="9.9" y="16.8" width="4.2" height="4.2" rx="0.5" />
-                  <rect x="16.8" y="16.8" width="4.2" height="4.2" rx="0.5" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="4 14 10 14 10 20" />
+                  <polyline points="20 10 14 10 14 4" />
+                  <line x1="14" y1="10" x2="21" y2="3" />
+                  <line x1="10" y1="14" x2="3" y2="21" />
                 </svg>
               </button>
             </div>

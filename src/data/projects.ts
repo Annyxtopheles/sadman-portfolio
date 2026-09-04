@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
   {
     id: "collabai-platform",
     slug: "collabai-platform",
-    title: "Collab RT Multi-Agent Workspace",
+    title: "CollabAI Redesign — Multi-Agent Workspace",
     category: "AI Systems",
     status: "LIVE",
     company: "CollabAI",
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: "/assets/projects/collabai-mockup.webp",
-        caption: "Collab RT Overview — Global quick composer with @agent routing, real-time automation metrics, and active agent streams",
+        caption: "CollabAI Redesign Overview — Global quick composer with @agent routing, real-time automation metrics, and active agent streams",
         type: "desktop"
       }
     ],
@@ -134,7 +134,7 @@ export const PROJECTS: Project[] = [
   {
     id: "szk-personal-archive",
     slug: "szk-personal-archive",
-    title: "SZK Personal Digital Archive",
+    title: "My Personal Digital Archive",
     category: "Mobile & Web",
     status: "LIVE",
     company: "Independent / Personal",
@@ -171,7 +171,7 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: "/assets/projects/szk-mockup.webp",
-        caption: "SZK Archive — Minimalist editorial landing view with stark typography and poetry navigation",
+        caption: "My Personal Digital Archive — Minimalist editorial landing view with stark typography and poetry navigation",
         type: "desktop"
       }
     ]
