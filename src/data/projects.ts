@@ -637,7 +637,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Pohela Boishakh — Bangla New Year 1433 (শুভ নববর্ষ)",
+        sectionTitle: "Pohela Boishakh — Bangla New Year 1433",
         sectionDescription: "Five vibrant creative interpretations celebrating Pohela Boishakh (Bangla New Year 1433) for SJ Innovation. Explores traditional Bengali folk art motifs—from earthen pottery, marigolds, and pinwheels to the iconic Mangal Shobhajatra owl mask and sculpted heritage musical instruments—rendered in modern 3D and graphic compositions with bespoke Bengali typography.",
         images: [
           {
@@ -648,7 +648,7 @@ export const PROJECTS: Project[] = [
           },
           {
             url: "/assets/projects/social-greetings/bangla-new-year/boishakh-02-pinwheels-chorki.webp",
-            caption: "Direction 02 — Boishakhi Fair Pinwheels: Nostalgic paper wind spinners (চরকি) against clear azure skies, evoking rural festival childhood memories.",
+            caption: "Direction 02 — Boishakhi Fair Pinwheels: Nostalgic paper wind spinners against clear azure skies, evoking rural festival childhood memories.",
             type: "carousel",
             aspectRatio: "1/1"
           },
@@ -751,7 +751,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Happy Holi — Festival of Colors (রঙের উৎসব)",
+        sectionTitle: "Happy Holi — Festival of Colors",
         sectionDescription: "Four dynamic and festive creative directions celebrating Holi for SJ Innovation. Highlights organic herbal gulal powder bowls, outdoor action captures of hands pouring saffron powder, large-scale campus courtyard floor rangoli mandalas, and high-energy dual-tone explosive powder collisions.",
         images: [
           {
@@ -781,7 +781,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Independence Day of Bangladesh — 26 March (মহান স্বাধীনতা দিবস)",
+        sectionTitle: "Independence Day of Bangladesh — 26 March",
         sectionDescription: "Three solemn and monumental creative directions commemorating Bangladesh's Independence Day for SJ Innovation. Features geometric vector representations of the National Martyrs' Memorial (Jatiyo Smriti Soudho), monumental freedom fighter silhouettes with soaring peace doves, and dramatic low-angle perspective photography.",
         images: [
           {
@@ -805,7 +805,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "International Day of Happiness — 20 March (আন্তর্জাতিক সুখ দিবস)",
+        sectionTitle: "International Day of Happiness — 20 March",
         sectionDescription: "Three uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership, tactile 3D crafted smiley characters surrounded by floating emoji gems, and a whimsical cinematic street-food hamster celebrating unpretentious everyday joy.",
         images: [
           {
@@ -829,7 +829,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "International Women's Day — 8 March (আন্তর্জাতিক নারী দিবস)",
+        sectionTitle: "International Women's Day — 8 March",
         sectionDescription: "Three vibrant and empowering creative directions celebrating International Women's Day for SJ Innovation. Explores 3D sculpted floral bouquets cradled in hands, overhead circles of solidarity celebrating teamwork, and an energetic multicultural group portrait of diverse women.",
         images: [
           {
@@ -853,7 +853,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "International Mother Language Day — 21 February (আন্তর্জাতিক মাতৃভাষা দিবস)",
+        sectionTitle: "International Mother Language Day — 21 February",
         sectionDescription: "Three poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, archival historical photography of the 1952 protest procession with illuminated neon placards, and a minimalist modern tribute with ethereal vertical light pillars, glowing sun disc, and subtle floating Bengali script.",
         images: [
           {
@@ -877,7 +877,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "International May Day — 1 May (মহান মে দিবস)",
+        sectionTitle: "International May Day — 1 May",
         sectionDescription: "Three compelling creative directions commemorating International Workers' Day for SJ Innovation. Explores high-contrast architectural labor silhouettes, a 3D isometric toolkit bridging manual craftsmanship with modern computing, and a contemporary tech developer workstation against urban skyline scaffolding.",
         images: [
           {
@@ -901,7 +901,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Ramadan Mubarak — Sacred Reflections (মাহে রমজান)",
+        sectionTitle: "Ramadan Mubarak — Sacred Reflections",
         sectionDescription: "Two warm and heartwarming creative directions celebrating the holy month of Ramadan for SJ Innovation. Highlights communal Iftar traditions of sharing fresh dates at golden sunset, and a joyful 3D animated Muslim family gathered around the Iftar dining table.",
         images: [
           {
@@ -997,7 +997,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Father's Day — Celebrating Guidance & Love (বাবা দিবস)",
+        sectionTitle: "Father's Day — Celebrating Guidance & Love",
         sectionDescription: "Seven heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, playful building, and shared outdoor moments—from minimalist hand-in-hand silhouettes and piggyback joy to building block collaboration and watercolor tree swing reflections.",
         images: [
           {
@@ -1045,7 +1045,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "International Programmer's Day — Code, Innovation & Craft (প্রোগ্রামার দিবস)",
+        sectionTitle: "International Programmer's Day — Code, Innovation & Craft",
         sectionDescription: "Three electrifying creative directions celebrating International Programmer's Day for SJ Innovation. Spans floating glowing glassmorphic tech stack icons, a cinematic dual-screen late-night development setup with AI aura, and a futuristic Creation of Adam motif symbolizing the synergy between human developers and AI.",
         images: [
           {
@@ -1069,7 +1069,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Eid al-Adha Mubarak — Sacred Traditions & Devotion (ঈদুল আজহা)",
+        sectionTitle: "Eid al-Adha Mubarak — Sacred Traditions & Devotion",
         sectionDescription: "Five elevated creative directions celebrating Eid al-Adha (1447 H) for SJ Innovation. Explores architectural grand mosques under vivid saffron skies, the sacred low-poly summit of Mount Arafat with celestial mandala linework, dual-tone watercolor minaret silhouettes, twilight coastal cityscapes, and historic Islamic keyhole archways overlooking golden sunset horizons.",
         images: [
           {

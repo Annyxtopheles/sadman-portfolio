@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
@@ -11,19 +11,67 @@ import NotFound from '@/pages/NotFound';
 
 /**
  * Minimized View: Small preview card (same size as About page),
- * upon hover expands into a significantly larger floating preview card.
+ * upon hover expands into a significantly larger floating preview card with full natural dimensions.
  */
-const CompactThumbnailCard: React.FC<{
+interface CompactThumbnailCardProps {
   img: GalleryImage;
   onOpenLightbox: (src: string, alt: string) => void;
-}> = ({ img, onOpenLightbox }) => {
+  onPlayVideo?: (embedUrl: string, caption: string, externalUrl?: string) => void;
+}
+
+const CompactThumbnailCard: React.FC<CompactThumbnailCardProps> = ({
+  img,
+  onOpenLightbox,
+  onPlayVideo,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  // Derive aspect ratio container and width for full-dimension natural popup
+  const getPopupStyles = () => {
+    switch (img.aspectRatio) {
+      case '9/16':
+        return {
+          wrapperWidth: 'w-[230px] sm:w-[280px]',
+          aspectClass: 'aspect-[9/16]',
+        };
+      case '1/1':
+        return {
+          wrapperWidth: 'w-[280px] sm:w-[380px]',
+          aspectClass: 'aspect-square',
+        };
+      case '4/5':
+        return {
+          wrapperWidth: 'w-[260px] sm:w-[340px]',
+          aspectClass: 'aspect-[4/5]',
+        };
+      case '16/9':
+        return {
+          wrapperWidth: 'w-[320px] sm:w-[500px]',
+          aspectClass: 'aspect-[16/9]',
+        };
+      default:
+        return {
+          wrapperWidth: 'w-[320px] sm:w-[480px]',
+          aspectClass: 'aspect-[16/10]',
+        };
+    }
+  };
+
+  const { wrapperWidth, aspectClass } = getPopupStyles();
+
+  const handleClick = () => {
+    if (img.embedUrl && onPlayVideo) {
+      onPlayVideo(img.embedUrl, img.caption, img.externalUrl);
+    } else {
+      onOpenLightbox(img.url, img.caption);
+    }
+  };
 
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={() => onOpenLightbox(img.url, img.caption)}
+      onClick={handleClick}
       className={`group relative rounded-[4px] border p-1.5 transition-all duration-200 cursor-pointer ${
         isHovered
           ? 'border-[#555555] bg-[#141414] shadow-md z-40'
@@ -38,9 +86,26 @@ const CompactThumbnailCard: React.FC<{
           loading="lazy"
           className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
         />
-        {img.type && (
+
+        {/* Video Reel Play Indicator Badge on Thumbnail */}
+        {img.embedUrl && (
+          <div className="absolute inset-0 bg-black/35 group-hover:bg-black/15 flex items-center justify-center transition-colors">
+            <div className="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center pl-0.5 shadow-lg group-hover:scale-110 transition-transform">
+              <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {img.type && !img.embedUrl && (
           <div className="absolute top-1 left-1 px-1.5 py-0.5 rounded text-[9px] font-mono tracking-wider uppercase bg-[#000000]/80 text-[#CCCCCC] backdrop-blur-xs border border-[#2E2E2E] leading-none">
             {img.type}
+          </div>
+        )}
+        {img.embedUrl && (
+          <div className="absolute top-1 left-1 px-1.5 py-0.5 rounded text-[9px] font-mono tracking-wider uppercase bg-[#000000]/85 text-[#FFFFFF] backdrop-blur-xs border border-[#333333] leading-none">
+            Reel
           </div>
         )}
       </div>
@@ -51,13 +116,13 @@ const CompactThumbnailCard: React.FC<{
           {img.caption.split('—')[0]?.trim() || img.caption}
         </span>
         <span className="text-[10px] text-[#555555] group-hover:text-[#AAAAAA] shrink-0 font-mono transition-colors">
-          ↗
+          {img.embedUrl ? '▶' : '↗'}
         </span>
       </div>
 
-      {/* Floating Pop-Up Preview: Substantially larger than the small preview */}
+      {/* Floating Pop-Up Preview: Displays full natural dimension & aspect ratio */}
       <AnimatePresence>
-        {isHovered && !img.embedUrl && (
+        {isHovered && (
           <motion.div
             initial={{
               opacity: 0,
@@ -78,19 +143,33 @@ const CompactThumbnailCard: React.FC<{
               y: 6,
             }}
             transition={{
-              duration: 0.32,
+              duration: 0.3,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[320px] sm:w-[480px] md:w-[540px] max-w-[90vw] z-50 pointer-events-none rounded-[6px] border border-[#333333] bg-[#0A0A0A]/95 p-3 shadow-[0_30px_70px_rgba(0,0,0,0.95)] backdrop-blur-md space-y-2.5"
+            className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 ${wrapperWidth} max-w-[90vw] z-50 pointer-events-none rounded-[6px] border border-[#333333] bg-[#0A0A0A]/95 p-3 shadow-[0_30px_70px_rgba(0,0,0,0.95)] backdrop-blur-md space-y-2.5`}
           >
-            {/* High-res Image Preview */}
-            <div className="relative aspect-[16/10] w-full rounded-[4px] overflow-hidden bg-[#141414] border border-[#262626]">
+            {/* Full Natural Aspect Ratio Preview */}
+            <div className={`relative ${aspectClass} w-full rounded-[4px] overflow-hidden bg-[#141414] border border-[#262626] flex items-center justify-center`}>
               <img
                 src={img.url}
                 alt={img.caption}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain object-center"
               />
-              {img.type && (
+
+              {img.embedUrl && (
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center gap-2">
+                  <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center pl-0.5 shadow-2xl">
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <span className="text-[11px] tracking-wider uppercase font-medium text-white bg-black/80 px-3 py-1 rounded-full border border-white/20">
+                    Play Reel
+                  </span>
+                </div>
+              )}
+
+              {img.type && !img.embedUrl && (
                 <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider uppercase bg-[#000000]/85 text-[#FFFFFF] backdrop-blur-sm border border-[#333333]">
                   {img.type}
                 </div>
@@ -117,6 +196,25 @@ export const CaseStudyDetail: React.FC = () => {
   const [viewMode, setViewMode] = useState<'expanded' | 'compact'>('expanded');
   const [selectedLightboxImg, setSelectedLightboxImg] = useState<string | null>(null);
   const [selectedLightboxAlt, setSelectedLightboxAlt] = useState<string>('');
+  const [activeVideoModal, setActiveVideoModal] = useState<{
+    embedUrl: string;
+    caption: string;
+    externalUrl?: string;
+  } | null>(null);
+
+  useEffect(() => {
+    if (!activeVideoModal) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setActiveVideoModal(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [activeVideoModal]);
 
   if (!project) {
     return <NotFound />;
@@ -215,59 +313,57 @@ export const CaseStudyDetail: React.FC = () => {
 
         {/* 3. Media Sections & View Switcher */}
         <section className="space-y-6 pt-2">
-          {/* Gallery Control Bar: View Switcher (Expanded vs Minimized) */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#1F1F1F] pb-4">
-            <div className="space-y-1">
-              <span className="text-xs uppercase tracking-wider font-mono text-[#888888]">
+          {/* Gallery Control Bar: View Switcher (Icon-only) */}
+          <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4">
+            <div>
+              <h2 className="text-xs uppercase tracking-wider font-mono text-[#888888]">
                 Visual Artifacts &amp; Case Studies
-              </span>
-              <div className="text-sm text-[#777777] font-normal">
-                {viewMode === 'expanded'
-                  ? 'Expanded View · Uniform 3-column rows'
-                  : 'Minimized View · Hover previews to expand (About page style)'}
-              </div>
+              </h2>
             </div>
 
-            {/* View Mode Switcher Buttons */}
-            <div className="flex items-center gap-1.5 p-1 rounded-[4px] bg-[#0E0E0E] border border-[#222222] self-start sm:self-auto">
+            {/* View Mode Switcher: Minimalist Icons Only */}
+            <div className="flex items-center gap-1 p-1 rounded-[4px] bg-[#0E0E0E] border border-[#222222]">
               <button
                 type="button"
                 onClick={() => setViewMode('expanded')}
-                className={`px-3 py-1.5 rounded-[3px] text-xs font-normal transition-colors flex items-center gap-1.5 cursor-pointer ${
+                aria-label="Expanded view"
+                className={`w-7 h-7 rounded-[3px] flex items-center justify-center transition-colors cursor-pointer ${
                   viewMode === 'expanded'
-                    ? 'bg-[#FFFFFF] text-[#000000] shadow-sm font-medium'
-                    : 'text-[#888888] hover:text-[#FFFFFF]'
+                    ? 'bg-[#FFFFFF] text-[#000000] shadow-sm'
+                    : 'text-[#777777] hover:text-[#FFFFFF] hover:bg-[#1A1A1A]'
                 }`}
-                title="Expanded View: 3 images per row"
+                title="Expanded view"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <rect x="3" y="3" width="7" height="7" strokeWidth="1.5" />
-                  <rect x="14" y="3" width="7" height="7" strokeWidth="1.5" />
-                  <rect x="3" y="14" width="7" height="7" strokeWidth="1.5" />
-                  <rect x="14" y="14" width="7" height="7" strokeWidth="1.5" />
+                  <rect x="3" y="3" width="7.5" height="7.5" strokeWidth="1.75" rx="1" />
+                  <rect x="13.5" y="3" width="7.5" height="7.5" strokeWidth="1.75" rx="1" />
+                  <rect x="3" y="13.5" width="7.5" height="7.5" strokeWidth="1.75" rx="1" />
+                  <rect x="13.5" y="13.5" width="7.5" height="7.5" strokeWidth="1.75" rx="1" />
                 </svg>
-                <span>Expanded (3-Col)</span>
               </button>
 
               <button
                 type="button"
                 onClick={() => setViewMode('compact')}
-                className={`px-3 py-1.5 rounded-[3px] text-xs font-normal transition-colors flex items-center gap-1.5 cursor-pointer ${
+                aria-label="Minimized view"
+                className={`w-7 h-7 rounded-[3px] flex items-center justify-center transition-colors cursor-pointer ${
                   viewMode === 'compact'
-                    ? 'bg-[#FFFFFF] text-[#000000] shadow-sm font-medium'
-                    : 'text-[#888888] hover:text-[#FFFFFF]'
+                    ? 'bg-[#FFFFFF] text-[#000000] shadow-sm'
+                    : 'text-[#777777] hover:text-[#FFFFFF] hover:bg-[#1A1A1A]'
                 }`}
-                title="Minimized View: Small previews, hover to expand"
+                title="Minimized view"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <rect x="3" y="4" width="4" height="4" strokeWidth="1.5" />
-                  <rect x="10" y="4" width="4" height="4" strokeWidth="1.5" />
-                  <rect x="17" y="4" width="4" height="4" strokeWidth="1.5" />
-                  <rect x="3" y="11" width="4" height="4" strokeWidth="1.5" />
-                  <rect x="10" y="11" width="4" height="4" strokeWidth="1.5" />
-                  <rect x="17" y="11" width="4" height="4" strokeWidth="1.5" />
+                  <rect x="3" y="3" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="9.9" y="3" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="16.8" y="3" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="3" y="9.9" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="9.9" y="9.9" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="16.8" y="9.9" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="3" y="16.8" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="9.9" y="16.8" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
+                  <rect x="16.8" y="16.8" width="4.2" height="4.2" strokeWidth="1.5" rx="0.5" />
                 </svg>
-                <span>Minimized (Hover)</span>
               </button>
             </div>
           </div>
@@ -439,6 +535,9 @@ export const CaseStudyDetail: React.FC = () => {
                             key={gIdx}
                             img={img}
                             onOpenLightbox={handleOpenLightbox}
+                            onPlayVideo={(embedUrl, caption, externalUrl) =>
+                              setActiveVideoModal({ embedUrl, caption, externalUrl })
+                            }
                           />
                         ))}
                       </div>
@@ -478,6 +577,9 @@ export const CaseStudyDetail: React.FC = () => {
                         key={gIdx}
                         img={img}
                         onOpenLightbox={handleOpenLightbox}
+                        onPlayVideo={(embedUrl, caption, externalUrl) =>
+                          setActiveVideoModal({ embedUrl, caption, externalUrl })
+                        }
                       />
                     ))}
                   </div>
@@ -522,6 +624,58 @@ export const CaseStudyDetail: React.FC = () => {
           ) : <div />}
         </section>
       </main>
+
+      {/* Video Reel Player Modal (for Minimized View) */}
+      {activeVideoModal && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Video reel player"
+          onClick={() => setActiveVideoModal(null)}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 sm:p-6 animate-in fade-in duration-200 cursor-pointer"
+        >
+          <button
+            type="button"
+            onClick={() => setActiveVideoModal(null)}
+            aria-label="Close video player"
+            className="absolute top-6 right-6 text-sm text-[#AAAAAA] hover:text-[#FFFFFF] transition-colors p-2 cursor-pointer z-10 font-mono"
+          >
+            close (esc)
+          </button>
+
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[9/16] max-h-[85vh] bg-[#0A0A0A] rounded-[6px] border border-[#2E2E2E] shadow-2xl flex flex-col overflow-hidden cursor-default"
+          >
+            <div className="flex-1 w-full h-full bg-black">
+              <iframe
+                src={activeVideoModal.embedUrl}
+                className="w-full h-full border-0"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen
+                title={activeVideoModal.caption}
+              />
+            </div>
+
+            <div className="p-3 bg-[#111111] border-t border-[#222222] flex items-center justify-between gap-3 shrink-0">
+              <p className="text-xs text-[#E5E5E5] truncate font-normal">
+                {activeVideoModal.caption}
+              </p>
+              {activeVideoModal.externalUrl && (
+                <a
+                  href={activeVideoModal.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#1A1A1A] hover:bg-[#2A2A2A] text-[#FFFFFF] border border-[#333333] transition-colors shrink-0 font-medium cursor-pointer"
+                >
+                  <span>Facebook</span>
+                  <span>↗</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Full-Screen Image Lightbox */}
       <ImageLightbox
