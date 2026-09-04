@@ -726,6 +726,48 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "International Women's Day — 8 March (আন্তর্জাতিক নারী দিবস)",
+        sectionDescription: "Three vibrant and empowering creative directions celebrating International Women's Day for SJ Innovation. Explores 3D sculpted floral bouquets cradled in hands, overhead circles of solidarity celebrating teamwork, and an energetic multicultural group portrait of diverse women.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/womens-day/womens-day-01-cradled-blossoms-3d.webp",
+            caption: "Direction 01 — Cradled Spring Flora: 3D sculpted hands gently cradling a blooming bouquet of daisies and vibrant blossoms against a pastel gradient.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/womens-day/womens-day-02-hands-together-solidarity.webp",
+            caption: "Direction 02 — Circle of Diverse Hands: Overhead circle of women's hands joining together in solidarity, empowerment, and collaborative strength.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/womens-day/womens-day-03-diverse-women-portrait.webp",
+            caption: "Direction 03 — Multicultural Women Portrait: Celebratory ensemble portrait of diverse women across different cultures and walks of life against a vibrant fuchsia backdrop.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "International Mother Language Day — 21 February (আন্তর্জাতিক মাতৃভাষা দিবস)",
+        sectionDescription: "Two poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, and archival historical photography of the 1952 protest procession with illuminated neon placards.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/mother-language-day/language-day-01-shaheed-minar-sunrise.webp",
+            caption: "Direction 01 — Central Shaheed Minar at Golden Dawn: Monumental architectural view of the Central Shaheed Minar against a glowing sunrise with floating Bengali alphabets.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/mother-language-day/language-day-02-1952-movement-neon-placards.webp",
+            caption: "Direction 02 — Historic 1952 Procession & Neon Placards: Gritty archival photography of the historic Language Movement procession with glowing neon typography on protest placards.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -877,6 +919,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
         caption: "Day of Happiness — Tactile Knitted Smiley Sphere",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/womens-day/womens-day-01-cradled-blossoms-3d.webp",
+        caption: "Women's Day — Cradled Spring Flora",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/womens-day/womens-day-02-hands-together-solidarity.webp",
+        caption: "Women's Day — Circle of Diverse Hands",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/womens-day/womens-day-03-diverse-women-portrait.webp",
+        caption: "Women's Day — Multicultural Women Portrait",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mother-language-day/language-day-01-shaheed-minar-sunrise.webp",
+        caption: "Mother Language Day — Central Shaheed Minar at Dawn",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/mother-language-day/language-day-02-1952-movement-neon-placards.webp",
+        caption: "Mother Language Day — 1952 Procession & Neon Placards",
         type: "carousel"
       }
     ]
