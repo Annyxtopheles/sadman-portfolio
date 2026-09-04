@@ -888,6 +888,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Father's Day — Celebrating Guidance & Love (বাবা দিবস)",
+        sectionDescription: "Five heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, and shared milestones—from minimalist hand-in-hand silhouettes and piggyback joy to sunset mountain summit reflections.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-01-holding-hands-minimalist.webp",
+            caption: "Direction 01 — Gentle Guiding Hands: Minimalist high-contrast vector silhouette of a parent's blue hand tenderly holding a toddler's orange hands in trust and safety.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-02-piggyback-silhouette.webp",
+            caption: "Direction 02 — Piggyback Silhouette & Pure Joy: Dynamic blue silhouette of a joyful father carrying his cheering son on his shoulders against a soft gradient sky.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-03-superhero-capes.webp",
+            caption: "Direction 03 — Everyday Superheroes: Stylized vector illustration of a father and young daughter wearing superhero capes, holding hands as they gaze forward together.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-04-baby-holding-finger.webp",
+            caption: "Direction 04 — Tiny Grip, Lifelong Bond: Intimate illustrated close-up of a newborn infant's tiny hand holding firmly onto a father's finger against soft azure stripes.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/fathers-day/fathers-day-05-mountain-sunrise-summit.webp",
+            caption: "Direction 05 — Mountain Summit Sunrise: Inspiring landscape illustration of father and daughter silhouetted on a mountain peak at dawn, looking toward endless horizons.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1139,6 +1175,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/india-independence-day/india-independence-03-soldier-monument-tricolor.webp",
         caption: "Independence Day of India — Patriotic Soldier Memorial",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-01-holding-hands-minimalist.webp",
+        caption: "Father's Day — Gentle Guiding Hands",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-02-piggyback-silhouette.webp",
+        caption: "Father's Day — Piggyback Silhouette & Pure Joy",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-03-superhero-capes.webp",
+        caption: "Father's Day — Everyday Superheroes",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-04-baby-holding-finger.webp",
+        caption: "Father's Day — Tiny Grip, Lifelong Bond",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/fathers-day/fathers-day-05-mountain-sunrise-summit.webp",
+        caption: "Father's Day — Mountain Summit Sunrise",
         type: "carousel"
       }
     ]
