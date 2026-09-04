@@ -37,6 +37,14 @@ export interface GallerySection {
   images: GalleryImage[];
 }
 
+export interface BeforeAfterComparison {
+  beforeImage: string;
+  afterImage: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  caption?: string;
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -59,6 +67,7 @@ export interface Project {
   outcomeSummary?: string;
   galleryImages: GalleryImage[];
   gallerySections?: GallerySection[];
+  beforeAfter?: BeforeAfterComparison;
 }
 
 export const CATEGORIES: ('All' | ProjectCategory)[] = [
@@ -113,7 +122,14 @@ export const PROJECTS: Project[] = [
         caption: "Collab RT Overview — Global quick composer with @agent routing, real-time automation metrics, and active agent streams",
         type: "desktop"
       }
-    ]
+    ],
+    beforeAfter: {
+      beforeImage: "/assets/projects/collabai-original.webp",
+      afterImage: "/assets/projects/collabai-mockup.webp",
+      beforeLabel: "Original CollabAI Design",
+      afterLabel: "Sadman Redesign",
+      caption: "Interactive comparison: CollabAI original interface vs. redesigned minimal workspace with integrated model switching."
+    }
   },
   {
     id: "szk-personal-archive",

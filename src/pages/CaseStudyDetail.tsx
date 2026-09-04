@@ -2,9 +2,112 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
-import { getProjectBySlug, getAdjacentProjects, Project } from '@/data/projects';
+import { motion, AnimatePresence } from 'framer-motion';
+import { getProjectBySlug, getAdjacentProjects, Project, GalleryImage } from '@/data/projects';
 import ImageTrail from '@/components/ImageTrail';
+import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import NotFound from '@/pages/NotFound';
+
+interface HoverableImageFigureProps {
+  img: GalleryImage;
+}
+
+const HoverableImageFigure: React.FC<HoverableImageFigureProps> = ({ img }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  return (
+    <figure
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative space-y-2 rounded-[4px] border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#383838] transition-colors flex flex-col justify-between"
+    >
+      <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
+        <img
+          src={img.url}
+          alt={img.caption}
+          loading="lazy"
+          style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
+          className={`w-full ${
+            img.aspectRatio === '9/16'
+              ? 'aspect-[9/16] object-contain'
+              : img.aspectRatio === '1/1'
+              ? 'aspect-square object-contain'
+              : img.aspectRatio === '4/5' || img.type === 'carousel'
+              ? 'aspect-[4/5] object-contain'
+              : img.aspectRatio === '16/9'
+              ? 'aspect-[16/9] object-cover'
+              : img.aspectRatio
+              ? 'object-contain'
+              : 'aspect-[16/10] object-cover'
+          } object-center rounded-[2px] transition-transform duration-300 group-hover:scale-[1.01]`}
+        />
+      </div>
+      <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between gap-2">
+        <span className="truncate">{img.caption}</span>
+        {img.externalUrl && (
+          <a
+            href={img.externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+          >
+            <span>Watch on Facebook</span>
+            <span className="text-[10px]">↗</span>
+          </a>
+        )}
+      </figcaption>
+
+      {/* Floating Pop-Up Preview (matching About page physics) */}
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            initial={{
+              opacity: 0,
+              scale: 0.85,
+              rotate: -1,
+              y: 10,
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1.05,
+              rotate: 0,
+              y: 0,
+            }}
+            exit={{
+              opacity: 0,
+              scale: 0.9,
+              rotate: 0.5,
+              y: 6,
+            }}
+            transition={{
+              duration: 0.3,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="absolute -inset-2 sm:-inset-4 z-50 pointer-events-none rounded-[6px] border border-[#383838] bg-[#0A0A0A]/98 p-3 shadow-[0_30px_70px_rgba(0,0,0,0.95)] backdrop-blur-md flex flex-col justify-between space-y-2.5"
+          >
+            <div className="relative w-full flex-1 rounded-[3px] overflow-hidden bg-[#121212] border border-[#262626] flex items-center justify-center min-h-0">
+              <img
+                src={img.url}
+                alt={img.caption}
+                className="w-full h-full object-contain object-center"
+              />
+              {img.type && (
+                <div className="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider uppercase bg-[#000000]/85 text-[#FFFFFF] backdrop-blur-sm border border-[#333333]">
+                  {img.type}
+                </div>
+              )}
+            </div>
+            <div className="px-1 space-y-0.5 shrink-0">
+              <div className="text-xs text-[#FFFFFF] font-normal leading-relaxed">
+                {img.caption}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </figure>
+  );
+};
 
 export const CaseStudyDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -88,6 +191,19 @@ export const CaseStudyDetail: React.FC = () => {
           </div>
         </section>
 
+        {/* 2. Before & After Evolution Comparison (e.g. CollabAI) */}
+        {project.beforeAfter && (
+          <section className="pt-2">
+            <BeforeAfterSlider
+              beforeImage={project.beforeAfter.beforeImage}
+              afterImage={project.beforeAfter.afterImage}
+              beforeLabel={project.beforeAfter.beforeLabel}
+              afterLabel={project.beforeAfter.afterLabel}
+              caption={project.beforeAfter.caption}
+            />
+          </section>
+        )}
+
         {/* 3. Media Sections / Gallery */}
         {project.gallerySections && project.gallerySections.length > 0 ? (
           <div className="space-y-16 pt-4">
@@ -147,89 +263,71 @@ export const CaseStudyDetail: React.FC = () => {
                     const embedKey = `${sIdx}-${gIdx}`;
                     const isEmbedActive = activeEmbeds[embedKey];
 
-                    return (
-                      <figure
-                        key={gIdx}
-                        className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
-                      >
-                        {img.embedUrl && isEmbedActive ? (
-                          <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[2px] bg-[#000000]">
-                            <iframe
-                              src={img.embedUrl}
-                              className="w-full h-full border-0 rounded-[2px]"
-                              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                              allowFullScreen
-                              title={img.caption}
-                            />
-                          </div>
-                        ) : img.embedUrl ? (
-                          <button
-                            type="button"
-                            onClick={() => setActiveEmbeds((prev) => ({ ...prev, [embedKey]: true }))}
-                            className="group relative w-full overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center cursor-pointer text-left focus:outline-none"
-                            title="Click to play video reel"
-                          >
-                            <img
-                              src={img.url}
-                              alt={img.caption}
-                              loading="lazy"
-                              style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
-                              className={`w-full ${
-                                img.aspectRatio === '9/16'
-                                  ? 'aspect-[9/16] object-cover'
-                                  : 'aspect-[16/10] object-cover'
-                              } object-center rounded-[2px] group-hover:scale-[1.02] transition-transform duration-300`}
-                            />
-                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex flex-col items-center justify-center gap-3">
-                              <div className="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center pl-1 shadow-2xl group-hover:scale-110 transition-all duration-200">
-                                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                  <path d="M8 5v14l11-7z" />
-                                </svg>
-                              </div>
-                              <span className="text-xs tracking-wider uppercase font-medium text-white bg-black/70 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">
-                                Play Reel
-                              </span>
+                    if (img.embedUrl) {
+                      return (
+                        <figure
+                          key={gIdx}
+                          className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
+                        >
+                          {isEmbedActive ? (
+                            <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[2px] bg-[#000000]">
+                              <iframe
+                                src={img.embedUrl}
+                                className="w-full h-full border-0 rounded-[2px]"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen
+                                title={img.caption}
+                              />
                             </div>
-                          </button>
-                        ) : (
-                          <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
-                            <img
-                              src={img.url}
-                              alt={img.caption}
-                              loading="lazy"
-                              style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
-                              className={`w-full ${
-                                img.aspectRatio === '9/16'
-                                  ? 'aspect-[9/16] object-contain'
-                                  : img.aspectRatio === '1/1'
-                                  ? 'aspect-square object-contain'
-                                  : img.aspectRatio === '4/5' || img.type === 'carousel'
-                                  ? 'aspect-[4/5] object-contain'
-                                  : img.aspectRatio === '16/9'
-                                  ? 'aspect-[16/9] object-cover'
-                                  : img.aspectRatio
-                                  ? 'object-contain'
-                                  : 'aspect-[16/10] object-cover'
-                              } object-center rounded-[2px]`}
-                            />
-                          </div>
-                        )}
-                        <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between gap-2">
-                          <span className="truncate">{img.caption}</span>
-                          {img.externalUrl && (
-                            <a
-                              href={img.externalUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => setActiveEmbeds((prev) => ({ ...prev, [embedKey]: true }))}
+                              className="group relative w-full overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center cursor-pointer text-left focus:outline-none"
+                              title="Click to play video reel"
                             >
-                              <span>Watch on Facebook</span>
-                              <span className="text-[10px]">↗</span>
-                            </a>
+                              <img
+                                src={img.url}
+                                alt={img.caption}
+                                loading="lazy"
+                                style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
+                                className={`w-full ${
+                                  img.aspectRatio === '9/16'
+                                    ? 'aspect-[9/16] object-cover'
+                                    : 'aspect-[16/10] object-cover'
+                                } object-center rounded-[2px] group-hover:scale-[1.02] transition-transform duration-300`}
+                              />
+                              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex flex-col items-center justify-center gap-3">
+                                <div className="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center pl-1 shadow-2xl group-hover:scale-110 transition-all duration-200">
+                                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                  </svg>
+                                </div>
+                                <span className="text-xs tracking-wider uppercase font-medium text-white bg-black/70 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">
+                                  Play Reel
+                                </span>
+                              </div>
+                            </button>
                           )}
-                        </figcaption>
-                      </figure>
-                    );
+                          <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between gap-2">
+                            <span className="truncate">{img.caption}</span>
+                            {img.externalUrl && (
+                              <a
+                                href={img.externalUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+                              >
+                                <span>Watch on Facebook</span>
+                                <span className="text-[10px]">↗</span>
+                              </a>
+                            )}
+                          </figcaption>
+                        </figure>
+                      );
+                    }
+
+                    return <HoverableImageFigure key={gIdx} img={img} />;
                   })}
                 </div>
               </section>
@@ -239,20 +337,7 @@ export const CaseStudyDetail: React.FC = () => {
           <section className="pt-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {allImages.map((img, gIdx) => (
-                <figure
-                  key={gIdx}
-                  className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors"
-                >
-                  <img
-                    src={img.url}
-                    alt={img.caption}
-                    loading="lazy"
-                    className="w-full aspect-[16/10] object-cover object-center rounded-[2px]"
-                  />
-                  <figcaption className="px-2 py-1 text-xs text-[#888888] font-normal flex items-center justify-between">
-                    <span>{img.caption}</span>
-                  </figcaption>
-                </figure>
+                <HoverableImageFigure key={gIdx} img={img} />
               ))}
             </div>
           </section>

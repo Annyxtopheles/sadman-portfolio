@@ -31,60 +31,45 @@ export const ExplorationHUD: React.FC = () => {
 
   return (
     <>
-      {/* 1. Ambient Floating Milestone Notification Toast */}
+      {/* 1. Ambient Floating Milestone Notification Toast (Strictly Centered & Unobtrusive) */}
       <AnimatePresence>
         {activeToast && (
-          <motion.aside
-            aria-label="Field Guide Notification"
-            initial={{ opacity: 0, y: 15, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -10, scale: 0.96 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-            className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none w-auto max-w-[90vw]"
-          >
-            <div className="px-4 py-2.5 rounded-[4px] bg-[#0A0A0A]/95 border border-[#2E2E2E] shadow-2xl backdrop-blur-md flex items-center gap-3 text-xs text-[#FFFFFF]">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-              <span className="font-normal font-sans tracking-wide">{activeToast}</span>
-            </div>
-          </motion.aside>
+          <div className="fixed bottom-14 inset-x-0 flex justify-center items-center z-50 pointer-events-none px-4">
+            <motion.aside
+              aria-label="Field Guide Notification"
+              initial={{ opacity: 0, y: 12, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -8, scale: 0.96 }}
+              transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+              className="px-3.5 py-2 rounded-[4px] bg-[#0E0E0E]/95 border border-[#262626] shadow-[0_12px_30px_rgba(0,0,0,0.8)] backdrop-blur-md flex items-center gap-2.5 text-xs text-[#E5E5E5] max-w-[90vw]"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]/80 shrink-0" />
+              <span className="font-normal tracking-normal">{activeToast}</span>
+            </motion.aside>
+          </div>
         )}
       </AnimatePresence>
 
-      {/* 2. Floating Minimalist HUD Pill (Centered Bottom) */}
-      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40">
-        <motion.button
+      {/* 2. Floating Minimalist White Progress Line (Centered Bottom) */}
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40">
+        <button
+          type="button"
           onClick={handleToggle}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="group relative flex flex-col items-start rounded-[4px] border border-[#222222] bg-[#0A0A0A]/90 hover:border-[#383838] hover:bg-[#121212] backdrop-blur-md px-3.5 py-2 shadow-xl transition-all cursor-pointer text-left whitespace-nowrap"
-          aria-label="Open exploration quest checklist"
+          className="group relative flex items-center justify-center py-2.5 px-3 cursor-pointer focus:outline-none"
+          aria-label="Open exploration progress and quest checklist"
+          title={`Exploration progress: ${progressPercent}% — click to view checklist`}
         >
-          <div className="flex items-center gap-2 text-xs font-normal">
-            <span className="text-[#888888] group-hover:text-[#FFFFFF] transition-colors">
-              ✦
-            </span>
-            <span className="text-[#CCCCCC] group-hover:text-[#FFFFFF] transition-colors font-mono">
-              {viewedCount}/{totalProjects}
-            </span>
-            <span className="text-[#555555]">·</span>
-            <span className="text-[#888888] group-hover:text-[#CCCCCC] transition-colors hidden sm:inline">
-              {currentLevel.title}
-            </span>
-            <span className="text-cyan-400 font-mono text-[11px]">
-              {progressPercent}%
-            </span>
-          </div>
-
-          {/* Micro Progress Bar on bottom edge */}
-          <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#1A1A1A] rounded-b-[4px] overflow-hidden">
+          {/* Subtle track background */}
+          <div className="w-28 sm:w-36 h-[2px] bg-[#222222] group-hover:bg-[#2E2E2E] rounded-full overflow-hidden transition-colors">
+            {/* White progress line */}
             <motion.div
-              className="h-full bg-cyan-400"
+              className="h-full bg-[#FFFFFF] group-hover:shadow-[0_0_8px_rgba(255,255,255,0.8)] transition-shadow"
               initial={{ width: 0 }}
               animate={{ width: `${progressPercent}%` }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             />
           </div>
-        </motion.button>
+        </button>
       </div>
 
       {/* 3. Interactive Checklist Drawer / Modal */}
@@ -116,7 +101,7 @@ export const ExplorationHUD: React.FC = () => {
                       Level {currentLevel.level}
                     </span>
                     <span className="text-[#444444]">·</span>
-                    <span className="text-xs text-cyan-400 font-mono">
+                    <span className="text-xs text-[#FFFFFF] font-mono font-medium">
                       {progressPercent}% Explored
                     </span>
                   </div>
@@ -141,7 +126,7 @@ export const ExplorationHUD: React.FC = () => {
               {/* Progress Line */}
               <div className="h-[2px] w-full bg-[#181818] overflow-hidden">
                 <motion.div
-                  className="h-full bg-cyan-400"
+                  className="h-full bg-[#FFFFFF]"
                   initial={{ width: 0 }}
                   animate={{ width: `${progressPercent}%` }}
                 />
@@ -157,17 +142,17 @@ export const ExplorationHUD: React.FC = () => {
                     className="p-4 rounded-[4px] bg-[#121212] border border-[#262626] space-y-2.5"
                   >
                     <div className="flex items-center gap-2 text-[#FFFFFF] font-normal text-xs">
-                      <span className="text-cyan-400">✦</span>
-                      <span>Process Archive Unlocked</span>
+                      <span className="text-[#FFFFFF]">✦</span>
+                      <span>Exploration Reward Unlocked</span>
                     </div>
                     <p className="text-[#888888] text-[11px] leading-relaxed">
-                      You have explored all projects. Inspect behind-the-scenes field notes and direct line.
+                      You have explored all projects! Inspect secret curated web discoveries and random websites.
                     </p>
                     <button
                       onClick={handleOpenReward}
                       className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                     >
-                      <span>Open Process Archive</span>
+                      <span>Claim Web Reward</span>
                       <span>→</span>
                     </button>
                   </motion.div>
