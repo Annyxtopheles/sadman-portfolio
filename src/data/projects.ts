@@ -305,9 +305,39 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "NonProfit AI — Meta Ad Campaign Multi-Format Suite",
-        sectionDescription: "Responsive Meta advertising creative package designed for BuildYourAI's NonProfit AI fundraising automation solution. Formatted across 1:1 Feed, 9:16 Story/Reels, and 16:9 Landscape placements to drive automated grant writing and donor management signups.",
+        sectionTitle: "NonProfit AI — Performance Ad Campaign & Value Drivers",
+        sectionDescription: "High-converting paid social ad creatives engineered for NonProfit AI (Powered by Collab AI). Targets nonprofit executives, development directors, and board chairs by translating complex AI automation into immediate operational wins: recovering 18 hours weekly, eliminating duplicate donor records with real UI reporting, price teardowns against enterprise LLMs, deadline tracking, and community impact.",
         images: [
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
+            caption: "Your Team Just Got 18 Hours Back This Week — 3D ticking clock visual emphasizing automated reporting, fundraising insights, and compliance tracking.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
+            caption: "Enterprise AI for Nonprofits, Without the Enterprise Price — Transparent pricing comparison contrasting ChatGPT Enterprise ($108k/yr) against Nonprofit Control Tower ($4k/yr).",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
+            caption: "Never Miss a Grant Deadline Again — Desk flat lay featuring an August calendar deadline and real-time mobile push notifications for grant renewal drafts.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
+            caption: "Stop Chasing Duplicate Donor Records — 3D tablet mockup showcasing the live Fund Development Report, donor pyramids, and real-time board giving progress.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
+            caption: "Spend More Time on Your Mission, Less Time on Board Reports — Inspiring community volunteer food drive visual highlighting one-click automated board reporting.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
           {
             url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
             caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
@@ -455,6 +485,36 @@ export const PROJECTS: Project[] = [
         caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
         type: "desktop",
         aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
+        caption: "NonProfit AI — 18 Hours Back This Week Ad Creative",
+        type: "carousel",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
+        caption: "NonProfit AI — Pricing Comparison vs ChatGPT Enterprise",
+        type: "carousel",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
+        caption: "NonProfit AI — Grant Deadline Alerts Ad Creative",
+        type: "carousel",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
+        caption: "NonProfit AI — Stop Chasing Duplicate Donor Records UI Ad",
+        type: "carousel",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
+        caption: "NonProfit AI — Mission Focus Over Board Reports Ad Creative",
+        type: "carousel",
+        aspectRatio: "1/1"
       }
     ]
   },
@@ -1423,11 +1483,11 @@ export const PROJECTS: Project[] = [
     year: "2025 – 2026",
     duration: "Ongoing",
     scope: ["Design System", "Multi-Product Architecture", "AI Workflows", "Design Tokens", "Performance Ad Creatives", "Medical UI"],
-    summary: "Visual identity, connected design token system, and performance marketing creative suite for 10+ vertical AI enterprise products including ePhysician, Marketing AI, and RealtorHelp.",
+    summary: "Visual identity, connected design token system, and performance marketing creative suite for 10+ vertical AI enterprise products including ePhysician, Nonprofit Control Tower, Marketing AI, and RealtorHelp.",
     coverImage: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Scaling 10+ vertical AI enterprise products (ePhysician, MortgageAI, RealtorHelp, HR CT, Agency CT) with a single designer without fracturing UX consistency, slowing engineering sprints, or failing to communicate complex clinical AI value to healthcare operators.",
+      challenge: "Scaling 10+ vertical AI enterprise products (ePhysician, Nonprofit CT, MortgageAI, RealtorHelp, HR CT, Agency CT) with a single designer without fracturing UX consistency, slowing engineering sprints, or failing to communicate complex clinical and operational AI value to enterprise buyers.",
       role: "Sole Product & Brand Designer — architected the global design token system, clinical dashboard interfaces, and high-conversion B2B ad creative campaigns for ePhysician Control Tower.",
       method: "Created a connected Figma token architecture linked to front-end variables, designed domain-specific AI clinical workflows, and engineered high-impact paid social ad creatives demonstrating immediate operational ROI."
     },
