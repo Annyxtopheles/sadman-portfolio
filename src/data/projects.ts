@@ -684,6 +684,48 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Independence Day of Bangladesh — 26 March (মহান স্বাধীনতা দিবস)",
+        sectionDescription: "Three solemn and monumental creative directions commemorating Bangladesh's Independence Day for SJ Innovation. Features geometric vector representations of the National Martyrs' Memorial (Jatiyo Smriti Soudho), monumental freedom fighter silhouettes with soaring peace doves, and dramatic low-angle perspective photography.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-01-smriti-soudho-vector.webp",
+            caption: "Direction 01 — National Martyrs' Memorial Vector: Geometric flat vector illustration of the Jatiyo Smriti Soudho at Savar with brick concourses, green foliage, and the fluttering flag.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-02-freedom-fighters-silhouette.webp",
+            caption: "Direction 02 — Freedom Fighters & Fluttering Flag: Monumental silhouette of three heroic freedom fighters holding the national flag aloft with soaring white peace doves.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-03-monument-perspective-sky.webp",
+            caption: "Direction 03 — Low-Angle Concrete Monolith Perspective: Dramatic low-angle perspective photography of the Smriti Soudho concrete pylons piercing the clouds.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "International Day of Happiness — 20 March (আন্তর্জাতিক সুখ দিবস)",
+        sectionDescription: "Two uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership and tactile 3D crafted smiley characters surrounded by floating emoji gems.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/day-of-happiness/happiness-01-executive-quote-card.webp",
+            caption: "Direction 01 — Executive Thought-Leadership Card: Minimalist social card featuring Shahed Islam (@shahednyc, CEO of SJ Innovation) on choosing happiness as a mindset.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
+            caption: "Direction 02 — Tactile Knitted Smiley Sphere: Cozy macro still of a handcrafted yellow knitted smiley character with fuzzy pom-pom cheeks and floating emoji gems.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -810,6 +852,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/holi/holi-04-explosive-powder-splash.webp",
         caption: "Holi — Dual-Tone Explosive Powder Collision",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-01-smriti-soudho-vector.webp",
+        caption: "Independence Day — National Martyrs' Memorial Vector",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-02-freedom-fighters-silhouette.webp",
+        caption: "Independence Day — Freedom Fighters & Fluttering Flag",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-03-monument-perspective-sky.webp",
+        caption: "Independence Day — Low-Angle Concrete Monolith Perspective",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/day-of-happiness/happiness-01-executive-quote-card.webp",
+        caption: "Day of Happiness — Executive Thought-Leadership Card",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
+        caption: "Day of Happiness — Tactile Knitted Smiley Sphere",
         type: "carousel"
       }
     ]
