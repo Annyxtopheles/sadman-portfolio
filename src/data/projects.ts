@@ -358,6 +358,14 @@ export const PROJECTS: Project[] = [
             caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
             type: "desktop",
             aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+            caption: "CollabAI Nonprofit AI Video Reel (9:16) — Dynamic vertical product walkthrough highlighting free open-source AI workflow automation, board reporting, and grant tracking.",
+            type: "mobile",
+            aspectRatio: "9/16",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/791352226744510"
           }
         ]
       },
@@ -518,6 +526,14 @@ export const PROJECTS: Project[] = [
         caption: "NonProfit AI — Mission Focus Over Board Reports Ad Creative",
         type: "carousel",
         aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+        caption: "CollabAI Nonprofit AI Video Reel (9:16)",
+        type: "mobile",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/791352226744510"
       }
     ]
   },
@@ -2673,7 +2689,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Motion Formats", value: "9:16 Vertical", subtext: "Full HD vertical motion optimized for Facebook & Instagram Reels" },
-      { label: "Assets Delivered", value: "9 Video Reels", subtext: "Across milestones, member culture, festivals & self-directed initiatives" },
+      { label: "Assets Delivered", value: "11 Video Reels", subtext: "Across milestones, culture, festivals & CollabAI SaaS product marketing" },
       { label: "Creative Ownership", value: "100% End-to-End", subtext: "Storyboarding, asset sourcing, caricature art, editing & sound" }
     ],
     outcomeSummary: "Transformed company celebrations, bi-weekly team rituals, and member milestones into captivating, high-retention video reels that turned private office moments into inspiring public employer brand equity.",
@@ -2767,6 +2783,28 @@ export const PROJECTS: Project[] = [
             externalUrl: "https://www.facebook.com/reel/706056789010508"
           }
         ]
+      },
+      {
+        sectionTitle: "CollabAI Product Marketing & SaaS Campaigns",
+        sectionDescription: "High-impact vertical motion graphics and promotional video campaigns designed for CollabAI, driving product awareness, workflow automation benefits, and holiday sales conversion across Meta channels.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+            caption: "CollabAI Nonprofit AI Reel — High-converting motion walkthrough demonstrating 100% free open-source AI dashboard automation, board meeting summaries, and knowledge retrieval.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/791352226744510"
+          },
+          {
+            url: "/assets/projects/reels/reel-11-collabai-black-friday-sale.webp",
+            caption: "CollabAI Black Friday Extended Offer Reel — Urgency-driven SaaS promotional motion ad promoting $300 off Starter and 20% off Pro plans with dynamic typography and brand motion.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1836781190301543%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/1836781190301543"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -2841,6 +2879,22 @@ export const PROJECTS: Project[] = [
         aspectRatio: "9/16",
         embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F706056789010508%2F&show_text=false&t=0",
         externalUrl: "https://www.facebook.com/reel/706056789010508"
+      },
+      {
+        url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+        caption: "CollabAI Nonprofit AI Product Automation Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/791352226744510"
+      },
+      {
+        url: "/assets/projects/reels/reel-11-collabai-black-friday-sale.webp",
+        caption: "CollabAI Black Friday Extended Offer Campaign Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1836781190301543%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/1836781190301543"
       }
     ]
   }
