@@ -56,11 +56,6 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
                     loading="lazy"
                     className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   />
-                  {img.tag && (
-                    <div className="absolute top-1 left-1 px-1.5 py-0.5 rounded text-[9px] font-mono tracking-wider uppercase bg-[#000000]/80 text-[#CCCCCC] backdrop-blur-xs border border-[#2E2E2E] leading-none">
-                      {img.tag}
-                    </div>
-                  )}
                 </div>
 
                 {/* Tiny Label */}
@@ -112,11 +107,6 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
                   alt={activeItem.caption}
                   className="w-full h-full object-cover object-top"
                 />
-                {activeItem.tag && (
-                  <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider uppercase bg-[#000000]/85 text-[#FFFFFF] backdrop-blur-sm border border-[#333333]">
-                    {activeItem.tag}
-                  </div>
-                )}
               </div>
 
               {/* Caption & Context Details */}
