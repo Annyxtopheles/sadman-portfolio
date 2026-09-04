@@ -646,6 +646,42 @@ export const PROJECTS: Project[] = [
             caption: "Direction 05 — Papercraft Spring Floral Cutout: Egg-shaped papercraft aperture revealing fresh daisies and a bright yellow daffodil blooming against an azure sky.",
             type: "carousel",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/easter/easter-06-bunny-flower-egg-silhouette.webp",
+            caption: "Direction 06 — Easter Egg Floral Silhouette: Minimalist egg silhouette framed with spring daisies and a rabbit silhouette holding an orange blossom.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Happy Holi — Festival of Colors (রঙের উৎসব)",
+        sectionDescription: "Four dynamic and festive creative directions celebrating Holi for SJ Innovation. Highlights organic herbal gulal powder bowls, outdoor action captures of hands pouring saffron powder, large-scale campus courtyard floor rangoli mandalas, and high-energy dual-tone explosive powder collisions.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/holi/holi-01-powder-bowls-trio.webp",
+            caption: "Direction 01 — Trio of Organic Gulal Bowls: High-contrast studio still featuring rustic bowls heaped with vibrant orange, royal cobalt blue, and pure white gulal powder.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/holi/holi-02-hands-pouring-gulal.webp",
+            caption: "Direction 02 — Hands Pouring Saffron Gulal: Dynamic outdoor action photography capturing colored hands pouring saffron powder against a joyful festival crowd.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/holi/holi-03-campus-rangoli-mandala.webp",
+            caption: "Direction 03 — Campus Courtyard Rangoli & Gulal: Intricate white floor rangoli mandala on campus grounds in front of SJ Innovation's building, framed by colorful powders.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/holi/holi-04-explosive-powder-splash.webp",
+            caption: "Direction 04 — Dual-Tone Explosive Powder Collision: High-energy kinetic splash of blazing orange and electric cobalt blue powder dust with textured chalk lettering.",
+            type: "carousel",
+            aspectRatio: "1/1"
           }
         ]
       }
@@ -749,6 +785,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/easter/easter-05-spring-blooms-cutout.webp",
         caption: "Easter — Papercraft Spring Floral Cutout",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/easter/easter-06-bunny-flower-egg-silhouette.webp",
+        caption: "Easter — Easter Egg Floral Silhouette",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/holi/holi-01-powder-bowls-trio.webp",
+        caption: "Holi — Trio of Organic Gulal Bowls",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/holi/holi-02-hands-pouring-gulal.webp",
+        caption: "Holi — Hands Pouring Saffron Gulal",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/holi/holi-03-campus-rangoli-mandala.webp",
+        caption: "Holi — Campus Courtyard Rangoli & Gulal",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/holi/holi-04-explosive-powder-splash.webp",
+        caption: "Holi — Dual-Tone Explosive Powder Collision",
         type: "carousel"
       }
     ]
