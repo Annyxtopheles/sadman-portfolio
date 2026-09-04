@@ -972,6 +972,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Eid al-Adha Mubarak — Sacred Traditions & Devotion (ঈদুল আজহা)",
+        sectionDescription: "Five elevated creative directions celebrating Eid al-Adha (1447 H) for SJ Innovation. Explores architectural grand mosques under vivid saffron skies, the sacred low-poly summit of Mount Arafat with celestial mandala linework, dual-tone watercolor minaret silhouettes, twilight coastal cityscapes, and historic Islamic keyhole archways overlooking golden sunset horizons.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-01-blue-mosque-orange-sky.webp",
+            caption: "Direction 01 — Architectural Grandeur & Twilight Horizon: Dramatic Sultanahmet / Blue Mosque minarets set against a fiery sunset and crescent moon.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-02-mount-arafat-mandala-twilight.webp",
+            caption: "Direction 02 — Sacred Mount Arafat & Celestial Mandala: Geometric low-poly summit of Jabal al-Rahmah bathed in twilight violet, framed by a starry sky and subtle sacred geometry.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-03-watercolor-mosque-silhouette.webp",
+            caption: "Direction 03 — Expressive Watercolor Silhouette: Dual-tone saffron and cobalt blue watercolor wash forming an ethereal mosque skyline on textured off-white paper.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-04-modern-coastal-skyline-mosque.webp",
+            caption: "Direction 04 — Modern Coastal Metascape: Contemporary mosque and illuminated crescent moon against a panoramic waterfront skyline and palm-lined promenade.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-05-archway-sunset-crescent.webp",
+            caption: "Direction 05 — Ornate Keyhole Arch & Golden Sunset: Intricate arabesque stone archway framing a glowing golden dusk over an ancient domed city.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1283,6 +1319,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/programmers-day/programmers-day-03-cyborg-human-code-touch.webp",
         caption: "Programmer's Day — Human-AI Synergy & Creation Touch",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-01-blue-mosque-orange-sky.webp",
+        caption: "Eid al-Adha — Architectural Grandeur & Twilight Horizon",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-02-mount-arafat-mandala-twilight.webp",
+        caption: "Eid al-Adha — Sacred Mount Arafat & Celestial Mandala",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-03-watercolor-mosque-silhouette.webp",
+        caption: "Eid al-Adha — Expressive Watercolor Silhouette",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-04-modern-coastal-skyline-mosque.webp",
+        caption: "Eid al-Adha — Modern Coastal Metascape",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-05-archway-sunset-crescent.webp",
+        caption: "Eid al-Adha — Ornate Keyhole Arch & Golden Sunset",
         type: "carousel"
       }
     ]
