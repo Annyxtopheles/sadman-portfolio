@@ -1532,15 +1532,15 @@ export const PROJECTS: Project[] = [
     ],
     aiWorkflow: "Integrated Figma AI agents and prompt-driven scene composition to rapidly explore lighting moods and architectural 3D metaphors, finalizing vector logos and typography natively in Figma.",
     outcomes: [
-      { label: "Products Branded", value: "9+ Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, & Agency" },
+      { label: "Products Branded", value: "10 Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, Agency, & Restaurant" },
       { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
-      { label: "Assets Delivered", value: "14 Production Designs", subtext: "9 OpenGraph social cards & 5 ePhysician clinical ad creatives" }
+      { label: "Assets Delivered", value: "15 Production Designs", subtext: "10 OpenGraph social cards & 5 ePhysician clinical ad creatives" }
     ],
     outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
       {
         sectionTitle: "Control Tower Products — OpenGraph & Brand Identity Systems",
-        sectionDescription: "High-impact 1.91:1 OpenGraph metadata and social preview cards designed for each Control Tower product. All logos, branding colors, typography, and thematic backgrounds were designed from scratch by Sadman to establish sector-specific authority across healthcare, mortgage lending, human resources, marketing agencies, real estate, nonprofits, developer platforms, and client success.",
+        sectionDescription: "High-impact 1.91:1 OpenGraph metadata and social preview cards designed for each Control Tower product. All logos, branding colors, typography, and thematic backgrounds were designed from scratch by Sadman to establish sector-specific authority across healthcare, mortgage lending, human resources, marketing agencies, real estate, nonprofits, developer platforms, client success, and restaurant management.",
         images: [
           {
             url: "/assets/projects/control-tower/og-agency-control-tower.webp",
@@ -1593,6 +1593,12 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/control-tower/og-client-success-control-tower.webp",
             caption: "Client Success AI Control Tower (OG Card) — Circular target gauge emblem, warm amber gold theme, and 'Your Team's Day Planned before Coffee' value hook.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-restaurant-ai-control-tower.webp",
+            caption: "Restaurant AI Control Tower (OG Card) — Crossed cutlery gold mark, warm amber smoke & charcoal palette, and 'Monday 8AM. Your AI Brief is Ready.' headline.",
             type: "desktop",
             aspectRatio: "16/9"
           }
@@ -1687,6 +1693,12 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/control-tower/og-client-success-control-tower.webp",
         caption: "Client Success AI Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-restaurant-ai-control-tower.webp",
+        caption: "Restaurant AI Control Tower — Social OpenGraph Card",
         type: "desktop",
         aspectRatio: "16/9"
       },
@@ -1875,8 +1887,8 @@ export const PROJECTS: Project[] = [
       }
     ],
     outcomes: [
-      { label: "Mediums", value: "Print & Certificates", subtext: "Infographics, wall posters, & award certificates" },
-      { label: "Assets Delivered", value: "9 Designs", subtext: "3 infographics, 2 wall posters, 4 award certificates" },
+      { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, & birthday cards" },
+      { label: "Assets Delivered", value: "17 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 4 birthday cards" },
       { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms & collaborative spaces" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -1969,6 +1981,36 @@ export const PROJECTS: Project[] = [
             aspectRatio: "723/1024"
           }
         ]
+      },
+      {
+        sectionTitle: "Personalized Member Birthday Keepsake Cards",
+        sectionDescription: "Bespoke print greeting cards designed for team members across SJ Innovation global campuses. Spans a playful corporate color-blocked cake illustration, festive confetti ribbon typography for Shahera, a high-contrast editorial silhouette card for Sadman Zaman Khan, and frosted translucent glassmorphism typography for Manju Ayali.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/birthday-card-01-minimalist-cake-vector.webp",
+            caption: "Minimalist Birthday Cake Print Card — Geometric 3-tier cake illustration in corporate blue, white, and orange on deep slate navy.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-02-shahera-confetti-ribbon.webp",
+            caption: "Festive Birthday Card for Shahera — Playful gift box silhouette typography with floating confetti and orange ribbon banner.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-03-sadman-silhouette-editorial.webp",
+            caption: "Editorial Silhouette Birthday Card for Sadman Zaman Khan — Minimalist high-contrast pure-white profile silhouette with celestial starburst and serif typography on cobalt blue.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-04-manju-frost-gradient.webp",
+            caption: "Frosted Glassmorphic Birthday Card for Manju Ayali — Subtle sky-to-cerulean gradient background with frosted translucent typography and birthday candle flame.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -2035,6 +2077,26 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/womens-day-member-gift-card.webp",
         caption: "Women's Day Personalized Keepsake Card",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-01-minimalist-cake-vector.webp",
+        caption: "Member Birthday Card — Minimalist Geometric Cake Illustration",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-02-shahera-confetti-ribbon.webp",
+        caption: "Member Birthday Card — Shahera (Festive Confetti & Gift Box)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-03-sadman-silhouette-editorial.webp",
+        caption: "Member Birthday Card — Sadman Zaman Khan (Editorial Silhouette)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-04-manju-frost-gradient.webp",
+        caption: "Member Birthday Card — Manju Ayali (Frosted Glassmorphism)",
         type: "portrait"
       }
     ]
