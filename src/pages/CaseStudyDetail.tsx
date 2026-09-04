@@ -9,6 +9,7 @@ import NotFound from '@/pages/NotFound';
 export const CaseStudyDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? getProjectBySlug(slug) : undefined;
+  const [activeEmbeds, setActiveEmbeds] = React.useState<Record<string, boolean>>({});
 
   if (!project) {
     return <NotFound />;
@@ -142,37 +143,94 @@ export const CaseStudyDetail: React.FC = () => {
                       : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                   }`}
                 >
-                  {section.images.map((img, gIdx) => (
-                    <figure
-                      key={gIdx}
-                      className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
-                    >
-                      <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
-                        <img
-                          src={img.url}
-                          alt={img.caption}
-                          loading="lazy"
-                          style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
-                          className={`w-full ${
-                            img.aspectRatio === '9/16'
-                              ? 'aspect-[9/16] object-contain'
-                              : img.aspectRatio === '1/1'
-                              ? 'aspect-square object-contain'
-                              : img.aspectRatio === '4/5' || img.type === 'carousel'
-                              ? 'aspect-[4/5] object-contain'
-                              : img.aspectRatio === '16/9'
-                              ? 'aspect-[16/9] object-cover'
-                              : img.aspectRatio
-                              ? 'object-contain'
-                              : 'aspect-[16/10] object-cover'
-                          } object-center rounded-[2px]`}
-                        />
-                      </div>
-                      <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between">
-                        <span>{img.caption}</span>
-                      </figcaption>
-                    </figure>
-                  ))}
+                  {section.images.map((img, gIdx) => {
+                    const embedKey = `${sIdx}-${gIdx}`;
+                    const isEmbedActive = activeEmbeds[embedKey];
+
+                    return (
+                      <figure
+                        key={gIdx}
+                        className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
+                      >
+                        {img.embedUrl && isEmbedActive ? (
+                          <div className="relative w-full aspect-[9/16] overflow-hidden rounded-[2px] bg-[#000000]">
+                            <iframe
+                              src={img.embedUrl}
+                              className="w-full h-full border-0 rounded-[2px]"
+                              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                              allowFullScreen
+                              title={img.caption}
+                            />
+                          </div>
+                        ) : img.embedUrl ? (
+                          <button
+                            type="button"
+                            onClick={() => setActiveEmbeds((prev) => ({ ...prev, [embedKey]: true }))}
+                            className="group relative w-full overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center cursor-pointer text-left focus:outline-none"
+                            title="Click to play video reel"
+                          >
+                            <img
+                              src={img.url}
+                              alt={img.caption}
+                              loading="lazy"
+                              style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
+                              className={`w-full ${
+                                img.aspectRatio === '9/16'
+                                  ? 'aspect-[9/16] object-cover'
+                                  : 'aspect-[16/10] object-cover'
+                              } object-center rounded-[2px] group-hover:scale-[1.02] transition-transform duration-300`}
+                            />
+                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex flex-col items-center justify-center gap-3">
+                              <div className="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center pl-1 shadow-2xl group-hover:scale-110 transition-all duration-200">
+                                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                  <path d="M8 5v14l11-7z" />
+                                </svg>
+                              </div>
+                              <span className="text-xs tracking-wider uppercase font-medium text-white bg-black/70 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">
+                                Play Reel
+                              </span>
+                            </div>
+                          </button>
+                        ) : (
+                          <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
+                            <img
+                              src={img.url}
+                              alt={img.caption}
+                              loading="lazy"
+                              style={img.aspectRatio ? { aspectRatio: img.aspectRatio } : undefined}
+                              className={`w-full ${
+                                img.aspectRatio === '9/16'
+                                  ? 'aspect-[9/16] object-contain'
+                                  : img.aspectRatio === '1/1'
+                                  ? 'aspect-square object-contain'
+                                  : img.aspectRatio === '4/5' || img.type === 'carousel'
+                                  ? 'aspect-[4/5] object-contain'
+                                  : img.aspectRatio === '16/9'
+                                  ? 'aspect-[16/9] object-cover'
+                                  : img.aspectRatio
+                                  ? 'object-contain'
+                                  : 'aspect-[16/10] object-cover'
+                              } object-center rounded-[2px]`}
+                            />
+                          </div>
+                        )}
+                        <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between gap-2">
+                          <span className="truncate">{img.caption}</span>
+                          {img.externalUrl && (
+                            <a
+                              href={img.externalUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+                            >
+                              <span>Watch on Facebook</span>
+                              <span className="text-[10px]">↗</span>
+                            </a>
+                          )}
+                        </figcaption>
+                      </figure>
+                    );
+                  })}
                 </div>
               </section>
             ))}

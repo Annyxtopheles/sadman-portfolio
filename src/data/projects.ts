@@ -24,6 +24,9 @@ export interface GalleryImage {
   caption: string;
   type?: 'desktop' | 'mobile' | 'system' | 'mockup' | 'carousel' | 'portrait';
   aspectRatio?: string;
+  embedUrl?: string;
+  videoUrl?: string;
+  externalUrl?: string;
 }
 
 export interface GallerySection {
@@ -2481,6 +2484,79 @@ export const PROJECTS: Project[] = [
         caption: "Bill-Splitter App — YouTube Demo Packaging",
         type: "desktop",
         aspectRatio: "16/9"
+      }
+    ]
+  },
+  {
+    id: "motion-graphics-social-reels",
+    slug: "motion-graphics-social-reels",
+    title: "Motion Graphics & Social Reels",
+    category: "Brand Systems",
+    status: "LIVE",
+    company: "SJ Innovation",
+    client: "SJ Innovation Global Social Media",
+    year: "2025 – Present",
+    duration: "Ongoing Series",
+    scope: ["Motion Graphics", "Social Reels & TikTok", "Video Storytelling", "Kinetic Typography", "Corporate Milestone Branding", "3D Motion Design"],
+    summary: "High-energy vertical short-form video reels, corporate anniversary motion graphics, and cultural storytelling campaigns designed for SJ Innovation's global social channels. Engineered with kinetic typography, 3D badge animations, team archive collages, and dynamic pacing to celebrate milestones, boost audience retention, and drive authentic employer branding.",
+    coverImage: "/assets/projects/reels/reel-01-sji-dhaka-22-years.webp",
+    liveUrl: "https://www.facebook.com/reel/2352896815516246",
+    tldr: {
+      challenge: "Corporate celebrations and cultural milestones often translate into static, text-heavy photo galleries that fail to capture real workplace vitality or hook fast-scrolling mobile viewers on Instagram, Facebook Reels, and LinkedIn.",
+      role: "Motion Designer & Video Editor — conceived narrative storyboards, curated archival photo and video assets, engineered kinetic typography, integrated sound design, and delivered optimized 9:16 vertical motion formats.",
+      method: "Combined layered scrapbook collage aesthetics, 3D anniversary badge lockups, rhythmic beat-matched cuts, and floating handwriting notes to build emotional resonance and high audience watch-through rates."
+    },
+    problem: "Traditional corporate recap videos feel slow and sterile. Social media audiences demand immediate visual hooks in the first 2 seconds, punchy kinetic transitions, and authentic human emotion that communicates company culture without corporate clichés.",
+    process: [
+      {
+        title: "Scrapbook Collage Aesthetic & 3D Milestone Lockup",
+        description: "Conceived a tactile memory-board visual direction that bridges historic milestones with modern agency pride.",
+        details: [
+          "Designed the central 3D '22 Years Anniversary' emblem featuring multi-line retro-modern geometry with gold and silver foil accents",
+          "Layered handwritten sticky notes from actual team members alongside archival event photography and team outings",
+          "Structured a dynamic camera fly-through giving physical depth and tactile warmth to corporate memories"
+        ]
+      },
+      {
+        title: "Kinetic Rhythm, Beat Matching & Micro-Hooks",
+        description: "Engineered high-retention video editing principles to maximize view-through rates on vertical video algorithms.",
+        details: [
+          "Synchronized fast-paced cuts to an energetic acoustic and percussion soundtrack",
+          "Engineered visual anchors in the opening 1.5 seconds to maximize 3-second view-through rates on Facebook and Instagram Reels",
+          "Preserved clear visual safe zones for platform UI overlays (likes, comments, profile badges, and sound tickers)"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Format", value: "9:16 Vertical", subtext: "Full HD vertical motion optimized for Facebook & Instagram Reels" },
+      { label: "Engagement", value: "High Retention", subtext: "Paced for maximum watch time & social sharing" },
+      { label: "Brand Equity", value: "Global Campus", subtext: "Dhaka, Goa, & NY culture showcased to prospective talent" }
+    ],
+    outcomeSummary: "Transformed milestone corporate events into viral, high-production short-form video content that bridges genuine team culture with polished brand authority.",
+    gallerySections: [
+      {
+        sectionTitle: "SJ Innovation Dhaka — 22 Years of Growth & Innovation Celebration Reel",
+        sectionDescription: "Official high-energy anniversary reel commemorating 22 years of growth, strategic milestones, and team culture for SJ Innovation Dhaka. Combines tactile scrapbook photo collages, handwritten employee notes, and kinetic motion pacing.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-01-sji-dhaka-22-years.webp",
+            caption: "SJ Innovation Dhaka 22nd Anniversary Reel — Tactile scrapbook motion collage with 3D milestone badge and team archive memories.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2352896815516246%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/2352896815516246"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/reels/reel-01-sji-dhaka-22-years.webp",
+        caption: "SJ Innovation Dhaka 22nd Anniversary Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2352896815516246%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/2352896815516246"
       }
     ]
   }
