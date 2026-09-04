@@ -1071,6 +1071,30 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "International Men's Day — Celebrating Guidance & Quiet Strength (19 November)",
+        sectionDescription: "Sleek social media commemorative graphic designed for International Men's Day honoring dedication, mentorship, and quiet strength. Features a tailored suit silhouette, bold orange polka-dot necktie, subtle gender symbol watermark, and playful mustache emblem integrated into high-contrast typography.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/international-mens-day-social.webp",
+            caption: "International Men's Day Social Greeting — Modern sartorial styling with tailored suit lapel, polka-dot necktie, and custom mustache typography on deep cobalt blue.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "US Veteran's Day — Honoring All Who Served (11 November)",
+        sectionDescription: "Solemn and patriotic commemorative visual honoring US military veterans. Combines a rippling American flag canopy, illuminated sunburst rays, and silhouetted soldiers rendering honors in full combat gear.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/veterans-day-social.webp",
+            caption: "US Veteran's Day Social Creative — Waving American flag over a sunburst deep navy sky with five-star insignia and saluting soldier silhouettes.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1407,6 +1431,16 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-05-archway-sunset-crescent.webp",
         caption: "Eid al-Adha — Ornate Keyhole Arch & Golden Sunset",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/international-mens-day-social.webp",
+        caption: "International Men's Day — Sartorial Silhouette Social Greeting",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/veterans-day-social.webp",
+        caption: "US Veteran's Day — Honoring All Who Served",
         type: "carousel"
       }
     ]
@@ -1891,7 +1925,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, birthday cards, & placards" },
-      { label: "Assets Delivered", value: "23 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 6 birthday cards, 4 sports placards" },
+      { label: "Assets Delivered", value: "26 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 3 Women's Day, 6 birthday cards, 4 sports placards, 2 Men's Day" },
       { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms, events & collaborative spaces" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -1982,6 +2016,11 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/womens-day-member-gift-card.webp",
             caption: "Individual Keepsake Gift Card — Personalized Floral Appreciation Card for Every Female Team Member",
             aspectRatio: "723/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/womens-day-2025-dhaka-cake-card.webp",
+            caption: "Celebration Cake Topper Card (Dhaka Office Edition) — 3D stylized hands presenting vibrant spring blooms around the central Dhaka campus emblem for International Women's Day.",
+            aspectRatio: "1/1"
           }
         ]
       },
@@ -2053,6 +2092,24 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
             caption: "Sports Day Printed Placard & Crest — Blazing Fury: Circular crimson crest featuring a ferocious horned black dragon breathing torrents of flame with bold ribbon typography on dark twilight red gradient.",
             aspectRatio: "16/9",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "International Men's Day Campus Print Collateral & Keepsakes",
+        sectionDescription: "Printed celebratory touchpoints designed for International Men's Day celebrations across SJ Innovation offices. Spans personalized member keepsakes honoring personal strength and character, paired with display cake topper cards featuring corporate lifestyle illustrations.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/mens-day-2025-member-keepsake-card.webp",
+            caption: "Personalized Member Appreciation Keepsake Card — Dedicated commemorative tribute for Nurul Huda celebrating quiet courage, resilience, and daily dedication.",
+            aspectRatio: "721/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/mens-day-2025-cake-card.webp",
+            caption: "Celebration Cake Card — 'Happy International Men's Day' display print featuring desk lifestyle illustrations (ping pong, coffee, briefcase, fedora, Rubik's cube, laptop).",
+            aspectRatio: "1024/819",
             type: "desktop"
           }
         ]
@@ -2172,6 +2229,21 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
         caption: "Sports Day Placard — Blazing Fury Team Crest",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/womens-day-2025-dhaka-cake-card.webp",
+        caption: "Women's Day 2025 — Dhaka Campus Cake Card",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/mens-day-2025-member-keepsake-card.webp",
+        caption: "Men's Day 2025 — Member Keepsake Card (Nurul Huda)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/mens-day-2025-cake-card.webp",
+        caption: "Men's Day 2025 — Campus Cake Card",
         type: "desktop"
       }
     ]
