@@ -1848,8 +1848,8 @@ export const PROJECTS: Project[] = [
     client: "SJ Innovation LLC",
     year: "2025 – Present",
     duration: "Ongoing Series",
-    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Typography", "Editorial Layout", "Poster Design"],
-    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, and appreciation certificate systems designed for SJ Innovation and the SJ Control Tower team. Features structured corporate best-practice guides, energetic culture-building wall art, and official honors honoring team excellence.",
+    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards"],
+    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and the SJ Control Tower team. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and high-octane competitive team emblems.",
     coverImage: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
     liveUrl: null,
     tldr: {
@@ -1887,9 +1887,9 @@ export const PROJECTS: Project[] = [
       }
     ],
     outcomes: [
-      { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, & birthday cards" },
-      { label: "Assets Delivered", value: "17 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 4 birthday cards" },
-      { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms & collaborative spaces" }
+      { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, birthday cards, & placards" },
+      { label: "Assets Delivered", value: "22 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 2 Women's Day, 6 birthday cards, 3 sports placards" },
+      { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms, events & collaborative spaces" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
     gallerySections: [
@@ -1984,7 +1984,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Personalized Member Birthday Keepsake Cards",
-        sectionDescription: "Bespoke print greeting cards designed for team members across SJ Innovation global campuses. Spans a playful corporate color-blocked cake illustration, festive confetti ribbon typography for Shahera, a high-contrast editorial silhouette card for Sadman Zaman Khan, and frosted translucent glassmorphism typography for Manju Ayali.",
+        sectionDescription: "Bespoke print greeting cards designed for team members across SJ Innovation global campuses. Spans a playful corporate color-blocked cake illustration, festive confetti ribbon typography for Shahera, a high-contrast editorial silhouette card for Sadman Zaman Khan, frosted translucent glassmorphism typography for Manju Ayali, an ink illustration of Rajib Chowdhury at his dual-monitor workstation, and an expressive fine art watercolor portrait keepsake.",
         images: [
           {
             url: "/assets/projects/print-designs/birthday-card-01-minimalist-cake-vector.webp",
@@ -2009,6 +2009,42 @@ export const PROJECTS: Project[] = [
             caption: "Frosted Glassmorphic Birthday Card for Manju Ayali — Subtle sky-to-cerulean gradient background with frosted translucent typography and birthday candle flame.",
             aspectRatio: "727/1024",
             type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-05-rajib-desk-ink-sketch.webp",
+            caption: "Bespoke Birthday Card for Rajib Chowdhury — Handcrafted ink illustration of Rajib at his dual-monitor development workstation with custom typography.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-06-rajib-watercolor-portrait.webp",
+            caption: "Fine Art Watercolor Birthday Card for Rajib Chowdhury — Expressive hand-painted watercolor portrait keepsake with azure and amber atmospheric splashes.",
+            aspectRatio: "727/1024",
+            type: "portrait"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Annual Sports Day Team Crests & Printed Marching Placards",
+        sectionDescription: "High-octane mascot emblems and physical printed placards designed for the company's Annual Sports Day championship. Conceived for tournament teams to carry during opening march ceremonies and display across field pavilions. Features three competitive team identities: Transformers (mecha Optimus Prime crest with gears and circuit tracings), War Wolves (fierce wolf mascot with flaming eye on circular tribal steel), and The Warriors (armored minotaur charging with electric cyan lightning eyes and billowing nostril steam).",
+        images: [
+          {
+            url: "/assets/projects/print-designs/sports-day-placard-01-transformers.webp",
+            caption: "Sports Day Printed Placard & Crest — Transformers: Diamond steel crest with mecha Optimus Prime helmet, mechanical gears, and circuit traces on twilight gradient.",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/sports-day-placard-02-war-wolves.webp",
+            caption: "Sports Day Printed Placard & Crest — War Wolves: Textured circular steel emblem featuring a fierce wolf with flame-eye effect and arched banner on slate-to-gold gradient.",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/sports-day-placard-03-the-warriors.webp",
+            caption: "Sports Day Printed Placard & Crest — The Warriors: Multi-tiered armor shield with charging minotaur, electric cyan lightning eyes, and emerald smoke clouds.",
+            aspectRatio: "16/9",
+            type: "desktop"
           }
         ]
       }
@@ -2098,6 +2134,31 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/birthday-card-04-manju-frost-gradient.webp",
         caption: "Member Birthday Card — Manju Ayali (Frosted Glassmorphism)",
         type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-05-rajib-desk-ink-sketch.webp",
+        caption: "Member Birthday Card — Rajib Chowdhury (Workstation Ink Sketch)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-06-rajib-watercolor-portrait.webp",
+        caption: "Member Birthday Card — Rajib Chowdhury (Watercolor Fine Art)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/sports-day-placard-01-transformers.webp",
+        caption: "Sports Day Placard — Transformers Team Crest",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/sports-day-placard-02-war-wolves.webp",
+        caption: "Sports Day Placard — War Wolves Team Crest",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/sports-day-placard-03-the-warriors.webp",
+        caption: "Sports Day Placard — The Warriors Team Crest",
+        type: "desktop"
       }
     ]
   },
