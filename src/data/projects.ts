@@ -1422,16 +1422,16 @@ export const PROJECTS: Project[] = [
     client: "Internal & Enterprise Clients",
     year: "2025 – 2026",
     duration: "Ongoing",
-    scope: ["Design System", "Multi-Product Architecture", "AI Workflows", "Design Tokens"],
-    summary: "Visual identity and connected design token system for 10+ vertical AI enterprise products including ePhysician, Marketing AI, and RealtorHelp.",
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400&auto=format&fit=crop",
+    scope: ["Design System", "Multi-Product Architecture", "AI Workflows", "Design Tokens", "Performance Ad Creatives", "Medical UI"],
+    summary: "Visual identity, connected design token system, and performance marketing creative suite for 10+ vertical AI enterprise products including ePhysician, Marketing AI, and RealtorHelp.",
+    coverImage: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Scaling 10+ vertical AI enterprise products (ePhysician, MortgageAI, RealtorHelp, HR CT, Agency CT) with a single designer without fracturing UX consistency or slowing engineering sprints.",
-      role: "Sole Product & Brand Designer — architected the global design token system, generative UI primitives, and cross-vertical component library.",
-      method: "Created a connected Figma token architecture linked to front-end variables, using AI-augmented workflows to rapidly prototype domain-specific AI chat and dashboard states."
+      challenge: "Scaling 10+ vertical AI enterprise products (ePhysician, MortgageAI, RealtorHelp, HR CT, Agency CT) with a single designer without fracturing UX consistency, slowing engineering sprints, or failing to communicate complex clinical AI value to healthcare operators.",
+      role: "Sole Product & Brand Designer — architected the global design token system, clinical dashboard interfaces, and high-conversion B2B ad creative campaigns for ePhysician Control Tower.",
+      method: "Created a connected Figma token architecture linked to front-end variables, designed domain-specific AI clinical workflows, and engineered high-impact paid social ad creatives demonstrating immediate operational ROI."
     },
-    problem: "Each industry vertical required tailored workflows (e.g. clinical records for ePhysician, property comp tables for RealtorHelp, loan underwriting for MortgageAI), yet development velocity required a shared design token foundation to eliminate design drift.",
+    problem: "Each industry vertical required tailored workflows (e.g. clinical records and automated patient reminder queues for ePhysician, property comp tables for RealtorHelp, loan underwriting for MortgageAI), while marketing teams required authoritative, high-conversion visual creatives to explain autonomous front-desk capabilities to clinic executives.",
     process: [
       {
         title: "Multi-Brand Design Token Architecture",
@@ -1440,6 +1440,15 @@ export const PROJECTS: Project[] = [
           "Standardized conversational AI states: streaming, tool invocation, markdown code rendering, and error recovery",
           "Component library covering data tables, KPI metrics cards, agent action trays, and filter rails",
           "Comprehensive design documentation enabling engineers to build new vertical screens with minimal handoff friction"
+        ]
+      },
+      {
+        title: "ePhysician Clinical Dashboard & Growth Creatives",
+        description: "Engineered responsive dark and light mode clinical dashboards for ePhysician Control Tower, pairing automated reminder telemetry with persuasive paid social ad campaigns.",
+        details: [
+          "Highlighted operational pain points ('Stop Starting Your Day 40 Voicemails Deep') with live UI metrics: 86.3% response rates, insurance verification, and zero staff intervention",
+          "Created 3D architectural metaphors of multi-facility hospital campuses to communicate enterprise scalability and centralized oversight",
+          "Designed 24/7 round-the-clock reception visuals symbolizing continuous autonomous booking and HIPAA-ready reliability"
         ]
       },
       {
@@ -1455,19 +1464,78 @@ export const PROJECTS: Project[] = [
     outcomes: [
       { label: "Sprint Velocity", value: "+40%", subtext: "Acceleration in wireframe-to-functional prototype delivery" },
       { label: "Vertical Products", value: "10+", subtext: "AI enterprise products powered by the unified design system" },
+      { label: "Ad Campaigns", value: "5 Creatives", subtext: "Light & dark multi-channel acquisition suites for ePhysician" },
       { label: "Design Consistency", value: "100%", subtext: "Zero UI drift across parallel cross-functional engineering teams" }
     ],
-    outcomeSummary: "Established a scalable design engine that enabled a single designer to power 10+ enterprise AI products with visual cohesion and speed.",
+    outcomeSummary: "Established a scalable design engine that enabled a single designer to power 10+ enterprise AI products with visual cohesion, speed, and market-ready acquisition creatives.",
+    gallerySections: [
+      {
+        sectionTitle: "ePhysician Control Tower — Acquisition & Performance Ad Creatives",
+        sectionDescription: "Multi-format paid social and executive marketing ad creatives designed for ePhysician Control Tower (Powered by Collab AI). Strategically targets healthcare operators and clinic administrators by translating complex automated front-desk capabilities into immediate operational ROI across dark and light thematic executions.",
+        images: [
+          {
+            url: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
+            caption: "Stop Starting Your Day 40 Voicemails Deep (Dark Mode UI) — High-contrast dark dashboard perspective featuring automated SMS/Voice reminders, response rates, and real-time patient queue.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-ad-01-voicemails-light-ui.webp",
+            caption: "Stop Starting Your Day 40 Voicemails Deep (Light Mode UI) — Clean medical tablet perspective showcasing zero-staff appointment confirmations and insurance verification.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-ad-02-multi-site-daylight.webp",
+            caption: "One AI Front Desk. Every Location. Your Brand. (Daylight) — 3D multi-facility healthcare campus representing scalable multi-site deployment with centralized oversight.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-ad-03-multi-site-night.webp",
+            caption: "One AI Front Desk. Every Location. Your Brand. (Nocturnal) — Atmospheric 3D nocturnal medical center highlighting 24/7 brand continuity and automated clinic coverage.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-ad-05-front-desk-never-sleeps.webp",
+            caption: "Your Front Desk Never Sleeps. Neither Do Your Bookings. — Conceptual 3D illuminated clinic reception desk framed by celestial day/night elements, illustrating continuous patient intake.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
-        url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400&auto=format&fit=crop",
-        caption: "Control Tower global design token system and vertical AI interface suite",
-        type: "desktop"
+        url: "/assets/projects/control-tower/ephysician-ad-04-voicemails-dark-ui.webp",
+        caption: "ePhysician Control Tower — Dark Mode Reminder System Ad Creative",
+        type: "desktop",
+        aspectRatio: "1/1"
       },
       {
-        url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1400&auto=format&fit=crop",
-        caption: "Conversational agent interaction patterns and streaming status indicators",
-        type: "system"
+        url: "/assets/projects/control-tower/ephysician-ad-01-voicemails-light-ui.webp",
+        caption: "ePhysician Control Tower — Light Mode Clinical UI Ad Creative",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-ad-02-multi-site-daylight.webp",
+        caption: "ePhysician Control Tower — Multi-Site Healthcare Deployment (Day)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-ad-03-multi-site-night.webp",
+        caption: "ePhysician Control Tower — 24/7 Multi-Site Facility Coverage (Night)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-ad-05-front-desk-never-sleeps.webp",
+        caption: "ePhysician Control Tower — 24/7 AI Receptionist & Booking Desk",
+        type: "desktop",
+        aspectRatio: "1/1"
       }
     ]
   },
