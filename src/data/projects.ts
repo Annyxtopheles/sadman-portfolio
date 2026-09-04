@@ -540,6 +540,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Pohela Boishakh — Bangla New Year 1433 (শুভ নববর্ষ)",
+        sectionDescription: "Five vibrant creative interpretations celebrating Pohela Boishakh (Bangla New Year 1433) for SJ Innovation. Explores traditional Bengali folk art motifs—from earthen pottery, marigolds, and pinwheels to the iconic Mangal Shobhajatra owl mask and sculpted heritage musical instruments—rendered in modern 3D and graphic compositions with bespoke Bengali typography.",
+        images: [
+          {
+            url: "/assets/projects/social-greetings/bangla-new-year/boishakh-01-clay-pot-alpana.webp",
+            caption: "Direction 01 — Earthen Pot & Winnowing Fan: Traditional painted clay pitcher with marigolds, lit terracotta diya, woven bamboo kula, and floor alpana.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangla-new-year/boishakh-02-pinwheels-chorki.webp",
+            caption: "Direction 02 — Boishakhi Fair Pinwheels: Nostalgic paper wind spinners (চরকি) against clear azure skies, evoking rural festival childhood memories.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangla-new-year/boishakh-03-mangal-owl-mask.webp",
+            caption: "Direction 03 — Mangal Shobhajatra Owl Motif: Stylized UNESCO-recognized folk owl mask framed by delicate white border alpana on an amber-blue gradient.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangla-new-year/boishakh-04-3d-cultural-motifs.webp",
+            caption: "Direction 04 — Floating Folk Celebration: 3D dynamic festival composition with folk dholak drums, ektara, traditional masks, clay pots, and sweets.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/bangla-new-year/boishakh-05-heritage-musical-ensemble.webp",
+            caption: "Direction 05 — Classical Folk Instruments & Peacock: Sculpted 3D floral medallion framed by harmonium, bansuri flutes, dhol, dotara, and peacock.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -566,6 +602,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/mlk-day/mlk-day-05-black-white-silhouette.webp",
         caption: "Direction 05 — High-Contrast Monochrome Silhouette",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangla-new-year/boishakh-01-clay-pot-alpana.webp",
+        caption: "Pohela Boishakh — Earthen Pot & Winnowing Fan",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangla-new-year/boishakh-02-pinwheels-chorki.webp",
+        caption: "Pohela Boishakh — Boishakhi Fair Pinwheels",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangla-new-year/boishakh-03-mangal-owl-mask.webp",
+        caption: "Pohela Boishakh — Mangal Shobhajatra Owl Motif",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangla-new-year/boishakh-04-3d-cultural-motifs.webp",
+        caption: "Pohela Boishakh — Floating Folk Celebration",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/bangla-new-year/boishakh-05-heritage-musical-ensemble.webp",
+        caption: "Pohela Boishakh — Classical Folk Instruments & Peacock",
         type: "carousel"
       }
     ]
