@@ -1532,16 +1532,22 @@ export const PROJECTS: Project[] = [
     ],
     aiWorkflow: "Integrated Figma AI agents and prompt-driven scene composition to rapidly explore lighting moods and architectural 3D metaphors, finalizing vector logos and typography natively in Figma.",
     outcomes: [
-      { label: "Products Branded", value: "5+ Verticals", subtext: "ePhysician, Mortgage AI, HR, Marketing, & RealtorHelp" },
+      { label: "Products Branded", value: "9+ Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, & Agency" },
       { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
-      { label: "Assets Delivered", value: "10 Production Designs", subtext: "5 OpenGraph social previews & 5 ePhysician clinical ad creatives" }
+      { label: "Assets Delivered", value: "14 Production Designs", subtext: "9 OpenGraph social cards & 5 ePhysician clinical ad creatives" }
     ],
     outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
       {
         sectionTitle: "Control Tower Products — OpenGraph & Brand Identity Systems",
-        sectionDescription: "High-impact 1.91:1 OpenGraph metadata and social preview cards designed for each Control Tower product. All logos, branding colors, typography, and thematic backgrounds were designed from scratch by Sadman to establish sector-specific authority across healthcare, mortgage lending, human resources, marketing agencies, and real estate.",
+        sectionDescription: "High-impact 1.91:1 OpenGraph metadata and social preview cards designed for each Control Tower product. All logos, branding colors, typography, and thematic backgrounds were designed from scratch by Sadman to establish sector-specific authority across healthcare, mortgage lending, human resources, marketing agencies, real estate, nonprofits, developer platforms, and client success.",
         images: [
+          {
+            url: "/assets/projects/control-tower/og-agency-control-tower.webp",
+            caption: "Agency Control Tower (OG Card) — Faceted crown tower emblem, midnight cobalt theme, and 'Run Your Entire Agency from One Command Center' master lockup.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
           {
             url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
             caption: "ePhysician Control Tower (OG Card) — Custom EKG pulse wave logo, clinical cyan palette, and 'Phone. Reminders. Check-in. Billing. All on autopilot.' headline.",
@@ -1569,6 +1575,24 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/control-tower/og-realtorhelp-control-tower.webp",
             caption: "RealtorHelp.software (OG Card) — Residential icon, azure topographic contours, and 'AI writes every message. You decide what to send. 15 leads. 2 minutes. Done.' message.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-nonprofit-control-tower.webp",
+            caption: "NonProfit AI Control Tower (OG Card) — Botanical spring green palette, brain-in-hand emblem, and 'One Intelligence Layer. Every System Connected. 16 AI Agents Working 24/7.' lockup.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-ghl-developer-control-tower.webp",
+            caption: "GHL Developer Control Tower (OG Card) — Faceted gradient ribbon mark, neon cyan & purple constellation nodes, and 'Your Agency Command Center. All Clients. One Login.' headline.",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/og-client-success-control-tower.webp",
+            caption: "Client Success AI Control Tower (OG Card) — Circular target gauge emblem, warm amber gold theme, and 'Your Team's Day Planned before Coffee' value hook.",
             type: "desktop",
             aspectRatio: "16/9"
           }
@@ -1613,6 +1637,12 @@ export const PROJECTS: Project[] = [
     ],
     galleryImages: [
       {
+        url: "/assets/projects/control-tower/og-agency-control-tower.webp",
+        caption: "Agency Control Tower — Core Command Center OG Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
         url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
         caption: "ePhysician Control Tower — Social OpenGraph Card",
         type: "desktop",
@@ -1639,6 +1669,24 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/control-tower/og-realtorhelp-control-tower.webp",
         caption: "RealtorHelp.software — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-nonprofit-control-tower.webp",
+        caption: "NonProfit AI Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-ghl-developer-control-tower.webp",
+        caption: "GHL Developer Control Tower — Social OpenGraph Card",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/control-tower/og-client-success-control-tower.webp",
+        caption: "Client Success AI Control Tower — Social OpenGraph Card",
         type: "desktop",
         aspectRatio: "16/9"
       },
