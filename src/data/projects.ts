@@ -1941,41 +1941,275 @@ export const PROJECTS: Project[] = [
     category: "Brand Systems",
     status: "CASE STUDY",
     company: "Capstone / Independent",
-    client: "NEXURA Technologies",
+    client: "NEXURA Consulting & Tech Solutions Ltd.",
     year: "2025",
     duration: "2 Months",
-    scope: ["Brand Identity", "Design System", "Typography Manual", "3D Collateral"],
-    summary: "End-to-end brand system featuring responsive logo marks, custom typographic hierarchy, and 20+ real-world application mockups.",
-    coverImage: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1400&auto=format&fit=crop",
+    scope: [
+      "Brand Identity",
+      "Design System",
+      "Vector Geometry",
+      "Brand Guidelines",
+      "Stationery Collateral",
+      "Marketing & Editorial",
+      "Architectural Signage",
+      "Apparel & Merchandise"
+    ],
+    summary: "Comprehensive corporate brand identity and visual design system engineered for NEXURA Consulting & Tech Solutions Ltd. Includes geometric logo construction, clearspace and alignment grids, complete corporate stationery, marketing and editorial publications, 3D environmental architectural signage, and branded merchandise.",
+    coverImage: "/assets/projects/nexura/nexura-cover.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Creating an enterprise-grade brand system capable of scaling across high-density software UIs, print marketing assets, and physical hardware touchpoints.",
-      role: "Sole Brand Designer — engineered the complete visual identity, vector geometry rules, and 40-page brand guidelines manual.",
-      method: "Combined mathematical grid systems with high-contrast monochrome palettes, validating legibility across 20+ digital and physical application formats."
+      challenge: "Creating an enterprise-grade corporate brand system for a modern tech consulting firm capable of scaling seamlessly across digital interfaces, print collateral, architectural signage, and corporate merchandise.",
+      role: "Sole Brand & Visual Designer — engineered the complete visual identity, vector geometry rules, brand guidelines manual, stationery suite, marketing publications, and realistic 3D mockups.",
+      method: "Constructed a mathematical mark utilizing an ellipse and concentric hexagons forming a cube and labyrinth metaphor. Paired deep charcoal, aquatic cyan, and vibrant turquoise with clean Swiss typography (Helvetica) across 25+ digital and physical application touchpoints."
     },
-    problem: "Modern tech brands frequently suffer from generic minimalism that fails to convey engineering depth. The identity needed to feel authoritative, precise, and immediately recognizable at any scale.",
+    problem: "Modern tech and consulting brands frequently suffer from generic minimalism or fragmented visual touchpoints. NEXURA needed an authoritative, mathematically precise identity that radiates technological competence, clarity, and trust while remaining versatile across small mobile app icons, business cards, large architectural facade installations, and company apparel.",
     process: [
       {
-        title: "Mathematical Vector Geometry & Responsive Marks",
-        description: "Constructed the core mark using optical geometry with dedicated micro-sizes engineered for high-DPI favicons and UI taskbar icons.",
+        title: "Mathematical Vector Geometry & Symbolism",
+        description: "Engineered the core mark using strict optical geometry with concentric hexagons enclosing a central sphere (The Nexus), conveying harmony, structure, and forward-looking clarity.",
         details: [
-          "40-page comprehensive brand manual covering clear space, typography pairing, and improper usage rules",
-          "Full digital design token specification exported directly for Tailwind and CSS custom properties",
-          "20+ production mockups including software packaging, mobile app icons, and corporate signage"
+          "Symbolic Architecture: The central sphere represents harmony and the focal point; concentric hexagons represent structured utility, stability, and multifaceted protection; the labyrinth metaphor guides clients toward optimal technical solutions.",
+          "Grid & Spacing Architecture: Defined precise clearspace margins and optical alignment guidelines for horizontal and vertical brandmark lockups.",
+          "Color Token Hierarchy: Anchored in Bluish Gray (#2D353D) for corporate authority, Aqua Cyan (#60E7FF) for serenity and innovation, and Greenish Turquoise (#00FFAE) for dynamic digital accents."
+        ]
+      },
+      {
+        title: "Corporate Stationery & Editorial Systems",
+        description: "Developed high-contrast corporate correspondence systems including official letterheads, A5 debossed notebooks, executive CTO business cards, invoices, presentation decks, and trifold brochures.",
+        details: [
+          "Stationery Collateral: Letterheads, invoice templates, corporate envelopes, document folders, spiral notebooks, and dual-sided identification cards.",
+          "Editorial & Marketing: Multi-page statistical magazine layouts, promotional event flyers, and introductory webinar banners with hexagonal photo mask frames."
+        ]
+      },
+      {
+        title: "Environmental Signage & Lifestyle Merchandise",
+        description: "Validated the identity across 3D physical environments and corporate merchandise to guarantee brand consistency in tactile reality.",
+        details: [
+          "Architectural Signage: Rendered 3D illuminated exterior building facade signage, frosted and chromed glass boardroom wall logos, and entrance door graphics.",
+          "Merchandise Ecosystem: Designed branded ceramic desk mugs, matte coffee cups, twill embroidered caps, cotton crewnecks, athletic football kits, and mobile app icons."
         ]
       }
     ],
-    aiWorkflow: "Leveraged automated asset generation pipelines to batch-export 50+ vector variations across multiple colorways and aspect ratios in seconds.",
+    aiWorkflow: "Automated batch export and responsive vector token scaling across multiple aspect ratios and high-DPI display resolutions.",
     outcomes: [
-      { label: "Academic Evaluation", value: "4.0 / 4.0", subtext: "Top capstone rating for brand architecture rigor and execution" },
-      { label: "Touchpoints Documented", value: "20+", subtext: "Digital and physical assets rendered with complete specifications" }
+      { label: "Capstone Evaluation", value: "Top Tier", subtext: "Recognized as benchmark brand standards capstone project" },
+      { label: "Brand Manual", value: "11 Plates", subtext: "Comprehensive construction, color, and usage guidelines" },
+      { label: "Touchpoints Delivered", value: "25+ Formats", subtext: "Digital, print, stationery, 3D signage, and apparel" }
     ],
-    outcomeSummary: "Established a comprehensive visual identity system that was selected as a benchmark model for internal design guidelines at SJ Innovation.",
+    outcomeSummary: "Established an authoritative visual identity system and cohesive application suite demonstrating how mathematical vector principles create a memorable, future-ready corporate brand.",
+    gallerySections: [
+      {
+        sectionTitle: "Brand Guidelines & Visual Identity Standards",
+        sectionDescription: "Comprehensive brand standards manual defining mathematical vector logo geometry, clearspace boundaries, conceptual symbolism, and color token systems.",
+        images: [
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-01-cover.webp",
+            caption: "NEXURA Brand Guidelines Manual — Official Cover",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-02-construction.webp",
+            caption: "Logo Construction, Clearspace & Optical Alignment Rules",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-03-symbolism.webp",
+            caption: "Logo Symbolism & Philosophy — Nexus, Cube, Hexagon & Labyrinth",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-04-palette-typography.webp",
+            caption: "Color Palette & Typographic Hierarchy (Aqua Cyan, Bluish Gray, Helvetica)",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-05-closing.webp",
+            caption: "Brand Standards Concluding Plate",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Corporate Stationery & Executive Identity",
+        sectionDescription: "Physical corporate correspondence suite designed for daily administrative workflows, executive meetings, and institutional client communication.",
+        images: [
+          {
+            url: "/assets/projects/nexura/nexura-stationery-suite.webp",
+            caption: "Executive Stationery Suite — Letterhead, A5 Notebook, Business Cards, Invoice & Collateral",
+            aspectRatio: "2200/1512"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-business-card-hand.webp",
+            caption: "CTO Business Card in Hand — Sadman Zaman Khan, Chief Technical Officer",
+            aspectRatio: "1500/2000"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-letterhead-envelope.webp",
+            caption: "Official Corporate Letterhead in Custom Kraft Mailing Envelope",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-notebook-pressed.webp",
+            caption: "Debossed Leather Executive A5 Notebook Cover",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-stationery-specs.webp",
+            caption: "Office Stationery Brand Guidelines Specification Plate",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-id-calendar-specs.webp",
+            caption: "Corporate Identification Cards & Calendar Design Guidelines",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Marketing Publications & Editorial Systems",
+        sectionDescription: "High-impact editorial layouts, tri-fold marketing brochures, introductory event flyers, and annual promotional calendars.",
+        images: [
+          {
+            url: "/assets/projects/nexura/nexura-magazine-reading.webp",
+            caption: "NEXURA Statistical Magazine — Editorial Cover in Reader's Hands",
+            aspectRatio: "1333/2000"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-flyer-poster-grid.webp",
+            caption: "Introductory Webinar Promotional Flyers — Hexagonal Framing Matrix",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-flyer-mockup.webp",
+            caption: "Single Print Flyer Mockup — Navigating Your Path to Success",
+            aspectRatio: "2200/1474"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-calendar-mockup.webp",
+            caption: "2025 Architectural Hanging Wall Calendar Mockup",
+            aspectRatio: "2200/1649"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-marketing-specs.webp",
+            caption: "Marketing Collateral & Editorial Guidelines Specification Plate",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Architectural Signage & Environmental Branding",
+        sectionDescription: "Three-dimensional dimensional architectural signage and corporate office interior installations designed for environmental presence.",
+        images: [
+          {
+            url: "/assets/projects/nexura/nexura-building-3d-logo.webp",
+            caption: "3D Illuminated Architectural Signage on Corporate Building Exterior",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-office-window-logo.webp",
+            caption: "Frosted Chromed Dimensional Logo on Architectural Glass Facade",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-glass-entrance-gate.webp",
+            caption: "Translucent Hexagonal Identity Mark on Corporate Glass Entrance Doors",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-office-boardroom.webp",
+            caption: "Executive Boardroom Wall Logo Installation & Office Interior",
+            aspectRatio: "2200/1770"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Brand Merchandise & Sportswear Collateral",
+        sectionDescription: "Branded lifestyle merchandise, employee onboarding gear, sports uniforms, and digital app icon touchpoints.",
+        images: [
+          {
+            url: "/assets/projects/nexura/nexura-matte-coffee-cup.webp",
+            caption: "Matte Black Ceramic Coffee Mug on Wood Executive Workspace",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-sun-coffee-cup.webp",
+            caption: "Gloss White Ceramic Coffee Mug in Natural Morning Sunlight",
+            aspectRatio: "2200/1466"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-tshirt-tag.webp",
+            caption: "Premium White Crewneck T-Shirt with Branded Woven Neck Tag",
+            aspectRatio: "2200/1468"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-sports-jersey-kit.webp",
+            caption: "Official Corporate Athletic Football Jersey & Match Kit",
+            aspectRatio: "2200/1767"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-white-cap.webp",
+            caption: "Two-Tone Aqua Cyan & White Embroidered Athletic Cap",
+            aspectRatio: "2200/1642"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-dark-cap.webp",
+            caption: "Matte Charcoal Embroidered Cap with Geometric Identity Mark",
+            aspectRatio: "2200/1642"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-app-icon-preview.webp",
+            caption: "iOS Mobile Home Screen App Icon Presentation",
+            aspectRatio: "2000/1332"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-products-specs.webp",
+            caption: "Corporate Product Ecosystem Brand Guidelines Plate",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-apparel-specs.webp",
+            caption: "Athletic & Lifestyle Apparel Guidelines Specification Plate",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
-        url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1400&auto=format&fit=crop",
-        caption: "NEXURA brand guidelines manual and typographic grid architecture",
-        type: "system"
+        url: "/assets/projects/nexura/nexura-cover.webp",
+        caption: "NEXURA 3D Building Facade Signage",
+        type: "system",
+        aspectRatio: "2200/1466"
+      },
+      {
+        url: "/assets/projects/nexura/nexura-guidelines-01-cover.webp",
+        caption: "NEXURA Brand Guidelines Manual",
+        type: "system",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nexura/nexura-stationery-suite.webp",
+        caption: "Executive Stationery Suite",
+        type: "system",
+        aspectRatio: "2200/1512"
+      },
+      {
+        url: "/assets/projects/nexura/nexura-magazine-reading.webp",
+        caption: "NEXURA Statistical Magazine Editorial",
+        type: "system",
+        aspectRatio: "1333/2000"
+      },
+      {
+        url: "/assets/projects/nexura/nexura-office-window-logo.webp",
+        caption: "Dimensional Glass Wall Installation",
+        type: "system",
+        aspectRatio: "2200/1466"
+      },
+      {
+        url: "/assets/projects/nexura/nexura-matte-coffee-cup.webp",
+        caption: "Corporate Desk Merchandise",
+        type: "system",
+        aspectRatio: "2200/1466"
       }
     ]
   },

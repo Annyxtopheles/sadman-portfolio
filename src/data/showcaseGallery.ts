@@ -49,9 +49,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "shot-3",
     type: "shot",
-    title: "Type Specimens & Grid Cadence",
-    category: "Typography",
-    src: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop",
+    title: "Vector Geometry & Construction Grid",
+    category: "Brand Systems",
+    src: "/assets/projects/nexura/nexura-guidelines-02-construction.webp",
   },
   {
     id: "shot-4",
