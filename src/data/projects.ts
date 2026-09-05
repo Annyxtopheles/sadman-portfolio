@@ -2467,27 +2467,29 @@ export const PROJECTS: Project[] = [
     title: "European IT Industrial Training & Freelance Endeavors",
     category: "Brand Systems",
     status: "CASE STUDY",
-    company: "European IT Solutions / Freelancer.com",
-    client: "Freelance Clients & European IT Institute",
+    company: "European IT Solutions / Freelancer.com / MPI Rover Scouts",
+    client: "Freelance Clients, European IT Institute & Munshiganj Polytechnic Institute",
     year: "2024 – 2025",
     duration: "Selected Endeavors",
     scope: [
       "Brand Identity",
+      "Corporate Stationery",
       "Visual Design",
       "Photo Manipulation",
+      "Certificate Redesign",
       "Print Collateral",
-      "Digital Banners",
+      "Event Banners",
       "Creative Direction"
     ],
-    summary: "A curated collection bridging institutional industrial training at European IT Solutions with real-world freelance client commissions and competitive design contests executed on Freelancer.com. Features conceptual medical-tech and e-commerce identity systems, commercial healthcare print collateral, large-format digital community banners, and surreal narrative photo manipulation.",
+    summary: "A curated collection bridging institutional industrial training at European IT Solutions with real-world freelance client commissions on Freelancer.com, an unsolicited modern redesign of the BRAC certificate of completion, and visual identity and event collateral for the Munshiganj Polytechnic Institute Rover Scout Group.",
     coverImage: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Balancing rigorous institutional training in graphic design and advanced digital compositing at European IT with high-stakes international freelance contests and client commissions demanding rapid turnaround, strict identity briefs, and production-ready print standards.",
-      role: "Lead Visual Designer & Compositor — conceptualized and executed all vector brand identities, digital hero banners, commercial marketing flyers, and surreal photo manipulation composites.",
-      method: "Applied modular vector geometry, high-impact typography pairing, multi-layer luminosity blending, frequency separation, perspective warping, and commercial print prepress standards."
+      challenge: "Synthesizing rigorous classroom training at European IT Solutions, competitive fast-paced international freelance design contests, unsolicited personal redesign explorations, and real-world institutional event banners for Munshiganj Polytechnic Institute Rover Scout Group.",
+      role: "Lead Visual Designer & Compositor — conceptualized and executed vector brand marks, corporate stationery systems, event roll-up displays, social media campaigns, certificate redesigns, and surreal photo compositing.",
+      method: "Applied modular vector geometry, high-impact typography pairing, multi-layer luminosity blending, perspective mockups, and commercial print prepress standards."
     },
-    problem: "Transitioning from classroom theoretical design into real commercial delivery requires navigating diverse international client aesthetics, fast-paced contest requirements, and mastering both vector precision for brand marks and pixel-perfect photographic compositing for digital storytelling.",
+    problem: "Transitioning between institutional assignments, international client briefs, unsolicited public-good redesigns, and civic/scouting event collateral requires adapting across radically different aesthetics, print constraints, and communication goals.",
     process: [
       {
         title: "Freelance Client Contests & Identity Systems",
@@ -2500,20 +2502,45 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        title: "European IT Industrial Training & Creative Compositing",
-        description: "Authored complex composite visual artworks during industrial training at European IT Solutions, exploring optical storytelling, scale distortion, and cinematic atmosphere.",
+        title: "European IT Industrial Training & Corporate Identity",
+        description: "Authored advanced corporate stationery collateral and composite artworks during industrial training at European IT Solutions, exploring tactile mockups and cinematic atmosphere.",
         details: [
-          "Lens to Horizon: Seamlessly composited a solitary traveler traversing railway tracks emerging through a camera lens aperture into an autumn alpine expanse.",
-          "Atmospheric Depth & Light Integration: Matched vanishing points between macro optical hardware and telephoto landscape plates, harmonizing focal falloff and warm sunset rim lighting."
+          "Ascent Corporations Ltd. Stationery Suite: Designed a complete corporate stationery system including official letterhead, branded correspondence envelopes, and dual-sided business cards displayed on marble and textured granite substrates.",
+          "Lens to Horizon: Seamlessly composited a solitary traveler traversing railway tracks emerging through a camera lens aperture into an autumn alpine expanse, harmonizing optical depth and warm rim lighting."
+        ]
+      },
+      {
+        title: "BRAC Certificate of Completion — Unsolicited Redesign",
+        description: "Undertook an unsolicited personal redesign of the BRAC Institute of Educational Development certificate, transforming dated corporate styling into an elegant, modern academic credential.",
+        details: [
+          "Geometric Watermark & Crest: Created a subtle, elegant circular petal motif watermark providing depth and forgery deterrence without hindering readability.",
+          "Refined Typographic Hierarchy: Replaced heavy generic fonts with clean modern serif headline typography, balanced letter-spacing, and clear credential metadata.",
+          "Print Balance: Maintained standard international landscape A4 proportions, formal border margins, and dual signature authentication zones."
+        ]
+      },
+      {
+        title: "Munshiganj Polytechnic Institute — Rover Scout Collateral",
+        description: "Designed official institutional event collateral, commemorative social media campaigns, and large-format roll-up banners for the Munshiganj Polytechnic Institute Rover Scout Group.",
+        details: [
+          "7th National COMDECA Banner: Designed the official event display banner and exhibition stand mockup for the delegation attending the 7th National Community Development Camp (COMDECA).",
+          "Baden-Powell Day Social Post: Designed an official commemorative social media post honoring Lord Baden-Powell's 164th birth anniversary, featuring portrait illustration, scouting emblems, and balanced Bengali typography.",
+          "Natore District Rover Mate Banner: Crafted high-resolution event stage and presentation banner for the Rover Mate leadership training course."
         ]
       }
     ],
     outcomes: [
       { label: "Contests & Clients", value: "International", subtext: "Delivered on Freelancer.com across US & European clients" },
-      { label: "Industrial Training", value: "European IT", subtext: "Completed advanced graphic design & compositing curriculum" },
-      { label: "Disciplines", value: "5 Formats", subtext: "Logomarks, print flyers, hero banners, and surreal composite art" }
+      { label: "Institutional Works", value: "European IT & MPI", subtext: "Industrial training coursework and official Rover Scout collateral" },
+      { label: "Design Disciplines", value: "6 Formats", subtext: "Brand identity, corporate stationery, event banners, and certificate design" }
     ],
-    outcomeSummary: "Demonstrates the bridge between disciplined technical training and competitive international freelancing, proving versatile creative execution across corporate brand marks, print marketing, and imaginative photo compositing.",
+    outcomeSummary: "Demonstrates creative agility and technical precision across international freelancing, industrial institutional training, civic scouting collateral, and unsolicited brand redesigns.",
+    beforeAfter: {
+      beforeImage: "/assets/projects/industrial-training-freelance/brac-certificate-before.webp",
+      afterImage: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
+      beforeLabel: "Original BRAC Certificate",
+      afterLabel: "Sadman's Unsolicited Redesign",
+      caption: "Interactive Comparison — Original BRAC Certificate vs. Sadman's modern unsolicited redesign featuring refined typography and geometric watermark security detailing."
+    },
     gallerySections: [
       {
         sectionTitle: "Freelancer.com Client Projects & Design Contests",
@@ -2547,11 +2574,65 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "European IT Institute — Industrial Training",
-        sectionDescription: "Advanced creative composite design and visual storytelling developed during industrial training at European IT Solutions & Institute, exploring depth, scale, and narrative photo manipulation.",
+        sectionDescription: "Advanced creative composite design and corporate stationery systems developed during industrial training at European IT Solutions & Institute.",
         images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/ascent-corporations-stationery.webp",
+            caption: "Ascent Corporations Ltd. — Corporate Stationery Suite Mockup (Letterhead, Business Cards & Envelopes)",
+            aspectRatio: "3/2",
+            type: "desktop"
+          },
           {
             url: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
             caption: "Lens to Horizon — Camera Aperture Portal Photo Manipulation (European IT Training)",
+            aspectRatio: "16/9",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "BRAC Certificate of Completion — Unsolicited Redesign Study",
+        sectionDescription: "Personal concept redesign of the BRAC certificate of completion, initiated independently to explore modern academic typography, balanced hierarchy, and security watermark aesthetics.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign.webp",
+            caption: "BRAC Certificate of Completion — Unsolicited Modern Redesign (Clean Vector Layout)",
+            aspectRatio: "3841/2718",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign-mockup.webp",
+            caption: "BRAC Certificate Redesign — Perspective Presentation Mockup",
+            aspectRatio: "1796/1404",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-original.webp",
+            caption: "BRAC Certificate — Original Reference Design",
+            aspectRatio: "800/565",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Munshiganj Polytechnic Institute — Rover Scout Visuals",
+        sectionDescription: "Official event collateral, roll-up exhibition banner mockups, and commemorative social media graphics created for the Munshiganj Polytechnic Institute Rover Scout Group and regional scouting events.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-comdeca-banner.webp",
+            caption: "7th National COMDECA — Event Roll-Up Display Banner Mockup (Munshiganj Polytechnic Institute Rover Scout Group)",
+            aspectRatio: "2400/1877",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-bp-day.webp",
+            caption: "Baden-Powell Day — 164th Birth Anniversary Commemorative Social Media Post (Munshiganj Polytechnic Institute Rover Scout Group)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/natore-district-rover-mate-banner.webp",
+            caption: "Rover Mate Leadership Course — Event Stage Presentation Banner (Bangladesh Scouts)",
             aspectRatio: "16/9",
             type: "desktop"
           }
@@ -2562,6 +2643,36 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
         caption: "Lens to Horizon — Camera Aperture Portal Photo Manipulation",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/ascent-corporations-stationery.webp",
+        caption: "Ascent Corporations Ltd. — Corporate Stationery Suite Mockup",
+        type: "desktop",
+        aspectRatio: "3/2"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign.webp",
+        caption: "BRAC Certificate of Completion — Unsolicited Redesign",
+        type: "desktop",
+        aspectRatio: "3841/2718"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-comdeca-banner.webp",
+        caption: "7th National COMDECA — Display Banner Mockup",
+        type: "desktop",
+        aspectRatio: "2400/1877"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-bp-day.webp",
+        caption: "Baden-Powell Day — Commemorative Social Post",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/natore-district-rover-mate-banner.webp",
+        caption: "Rover Mate Leadership Course — Event Stage Banner",
         type: "desktop",
         aspectRatio: "16/9"
       },
