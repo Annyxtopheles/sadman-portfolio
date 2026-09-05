@@ -2547,6 +2547,18 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Commercial client social media graphics, advertising banners, and promotional marketing collateral executed for international and regional clients, including top-performing engagement campaigns on Freelancer.com.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/power-gym-social-ad.webp",
+            caption: "Power Gym — Social Media Fitness Ad ('Transform Your Body, Rebuild Yourself — Take Your First Step Now')",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/nafiur-dates-ramadan-promo.webp",
+            caption: "Nafiur Rahman Dates — Ramadan Special Promotional Ad for Saudi imported dates ('রমজান উপলক্ষে সৌদি আরব থেকে আমদানি করা খেজুর সুলভ মূল্যে পাওয়া যাচ্ছে')",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/manage-tutor-social-ad-post.webp",
             caption: "Manage Tutor — Facebook Ad & Social Post Design ('Connect with us to find a tutor in one click'). Sourced via Freelancer.com; became one of their highest-engaged posts.",
             aspectRatio: "1/1",
@@ -2660,11 +2672,41 @@ export const PROJECTS: Project[] = [
             caption: "10th Course for Rover Mate — Event Stage Presentation Banner (Bangladesh Scouts, Natore District Rover)",
             aspectRatio: "16/9",
             type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/scouts-technical-region-square.webp",
+            caption: "Bangladesh Scouts Movement Advocacy — Technical Education Region Demand (1:1 Feed Post)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/scouts-technical-region-portrait.webp",
+            caption: "Bangladesh Scouts Movement Advocacy — Technical Education Region Demand (9:16 Story / Mobile Format)",
+            aspectRatio: "576/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/scouts-technical-region-landscape.webp",
+            caption: "Bangladesh Scouts Movement Advocacy — Technical Education Region Demand (Landscape Display Banner)",
+            aspectRatio: "1024/426",
+            type: "desktop"
           }
         ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/power-gym-social-ad.webp",
+        caption: "Power Gym — Social Media Fitness Ad",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/nafiur-dates-ramadan-promo.webp",
+        caption: "Nafiur Rahman Dates — Ramadan Promotional Ad",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/manage-tutor-social-ad-post.webp",
         caption: "Manage Tutor — Facebook Social Ad Post",
@@ -2713,6 +2755,24 @@ export const PROJECTS: Project[] = [
         caption: "Rajshahi District Rover — DSRM Representative Post",
         type: "desktop",
         aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/scouts-technical-region-square.webp",
+        caption: "Bangladesh Scouts Movement — Technical Education Region Post",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/scouts-technical-region-portrait.webp",
+        caption: "Bangladesh Scouts Movement — Technical Education Region Story",
+        type: "portrait",
+        aspectRatio: "576/1024"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/scouts-technical-region-landscape.webp",
+        caption: "Bangladesh Scouts Movement — Technical Education Region Banner",
+        type: "desktop",
+        aspectRatio: "1024/426"
       },
       {
         url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-bp-day.webp",
