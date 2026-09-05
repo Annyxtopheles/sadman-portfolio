@@ -1999,8 +1999,8 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Established an authoritative visual identity system and cohesive application suite demonstrating how mathematical vector principles create a memorable, future-ready corporate brand.",
     gallerySections: [
       {
-        sectionTitle: "Brand Guidelines & Visual Identity Standards",
-        sectionDescription: "Comprehensive brand standards manual defining mathematical vector logo geometry, clearspace boundaries, conceptual symbolism, and color token systems.",
+        sectionTitle: "Brand Guidelines Presentation & Identity Standards",
+        sectionDescription: "The complete 10-plate brand identity manual defining vector geometry construction, clearspace boundaries, conceptual symbolism, color token architecture, and application standards.",
         images: [
           {
             url: "/assets/projects/nexura/nexura-guidelines-01-cover.webp",
@@ -2023,15 +2023,40 @@ export const PROJECTS: Project[] = [
             aspectRatio: "16/9"
           },
           {
+            url: "/assets/projects/nexura/nexura-guidelines-stationery-specs.webp",
+            caption: "Office Stationery Brand Standards (Letterhead, Notebook, Invoice, Envelope)",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-marketing-specs.webp",
+            caption: "Marketing & Editorial Collateral Standards (Flyer, Magazine, Brochure, Web Banner)",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-id-calendar-specs.webp",
+            caption: "Corporate ID Cards, Business Cards & Calendar Standards",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-products-specs.webp",
+            caption: "Corporate Product Ecosystem Standards (Mug, Pens, Cap, Backpack, Notebook)",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nexura/nexura-guidelines-apparel-specs.webp",
+            caption: "Athletic & Lifestyle Apparel Standards (Jacket, Jersey, Polo, Sweatshirt, Watch)",
+            aspectRatio: "16/9"
+          },
+          {
             url: "/assets/projects/nexura/nexura-guidelines-05-closing.webp",
-            caption: "Brand Standards Concluding Plate",
+            caption: "Brand Standards Concluding Plate — The End",
             aspectRatio: "16/9"
           }
         ]
       },
       {
-        sectionTitle: "Corporate Stationery & Executive Identity",
-        sectionDescription: "Physical corporate correspondence suite designed for daily administrative workflows, executive meetings, and institutional client communication.",
+        sectionTitle: "Corporate Stationery & Editorial Collateral",
+        sectionDescription: "Physical corporate correspondence suite, large-format marketing collateral, and publication layouts designed for executive communication.",
         images: [
           {
             url: "/assets/projects/nexura/nexura-stationery-suite.webp",
@@ -2039,36 +2064,15 @@ export const PROJECTS: Project[] = [
             aspectRatio: "2200/1512"
           },
           {
-            url: "/assets/projects/nexura/nexura-business-card-hand.webp",
-            caption: "CTO Business Card in Hand — Sadman Zaman Khan, Chief Technical Officer",
-            aspectRatio: "1500/2000"
+            url: "/assets/projects/nexura/nexura-notebook-pressed.webp",
+            caption: "Debossed Leather Executive A5 Notebook Cover Mockup",
+            aspectRatio: "2200/1466"
           },
           {
             url: "/assets/projects/nexura/nexura-letterhead-envelope.webp",
             caption: "Official Corporate Letterhead in Custom Kraft Mailing Envelope",
             aspectRatio: "2200/1466"
           },
-          {
-            url: "/assets/projects/nexura/nexura-notebook-pressed.webp",
-            caption: "Debossed Leather Executive A5 Notebook Cover",
-            aspectRatio: "2200/1466"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-guidelines-stationery-specs.webp",
-            caption: "Office Stationery Brand Guidelines Specification Plate",
-            aspectRatio: "16/9"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-guidelines-id-calendar-specs.webp",
-            caption: "Corporate Identification Cards & Calendar Design Guidelines",
-            aspectRatio: "16/9"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Marketing Publications & Editorial Systems",
-        sectionDescription: "High-impact editorial layouts, tri-fold marketing brochures, introductory event flyers, and annual promotional calendars.",
-        images: [
           {
             url: "/assets/projects/nexura/nexura-magazine-reading.webp",
             caption: "NEXURA Statistical Magazine — Editorial Cover in Reader's Hands",
@@ -2088,17 +2092,12 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/nexura/nexura-calendar-mockup.webp",
             caption: "2025 Architectural Hanging Wall Calendar Mockup",
             aspectRatio: "2200/1649"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-guidelines-marketing-specs.webp",
-            caption: "Marketing Collateral & Editorial Guidelines Specification Plate",
-            aspectRatio: "16/9"
           }
         ]
       },
       {
-        sectionTitle: "Architectural Signage & Environmental Branding",
-        sectionDescription: "Three-dimensional dimensional architectural signage and corporate office interior installations designed for environmental presence.",
+        sectionTitle: "Architectural Environments & Branded Merchandise",
+        sectionDescription: "Three-dimensional dimensional signage installations, executive office interiors, and branded lifestyle merchandise.",
         images: [
           {
             url: "/assets/projects/nexura/nexura-building-3d-logo.webp",
@@ -2106,26 +2105,10 @@ export const PROJECTS: Project[] = [
             aspectRatio: "2200/1466"
           },
           {
-            url: "/assets/projects/nexura/nexura-office-window-logo.webp",
-            caption: "Frosted Chromed Dimensional Logo on Architectural Glass Facade",
-            aspectRatio: "2200/1466"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-glass-entrance-gate.webp",
-            caption: "Translucent Hexagonal Identity Mark on Corporate Glass Entrance Doors",
-            aspectRatio: "2200/1466"
-          },
-          {
             url: "/assets/projects/nexura/nexura-office-boardroom.webp",
             caption: "Executive Boardroom Wall Logo Installation & Office Interior",
             aspectRatio: "2200/1770"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Brand Merchandise & Sportswear Collateral",
-        sectionDescription: "Branded lifestyle merchandise, employee onboarding gear, sports uniforms, and digital app icon touchpoints.",
-        images: [
+          },
           {
             url: "/assets/projects/nexura/nexura-matte-coffee-cup.webp",
             caption: "Matte Black Ceramic Coffee Mug on Wood Executive Workspace",
@@ -2147,29 +2130,9 @@ export const PROJECTS: Project[] = [
             aspectRatio: "2200/1767"
           },
           {
-            url: "/assets/projects/nexura/nexura-white-cap.webp",
-            caption: "Two-Tone Aqua Cyan & White Embroidered Athletic Cap",
-            aspectRatio: "2200/1642"
-          },
-          {
             url: "/assets/projects/nexura/nexura-dark-cap.webp",
             caption: "Matte Charcoal Embroidered Cap with Geometric Identity Mark",
             aspectRatio: "2200/1642"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-app-icon-preview.webp",
-            caption: "iOS Mobile Home Screen App Icon Presentation",
-            aspectRatio: "2000/1332"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-guidelines-products-specs.webp",
-            caption: "Corporate Product Ecosystem Brand Guidelines Plate",
-            aspectRatio: "16/9"
-          },
-          {
-            url: "/assets/projects/nexura/nexura-guidelines-apparel-specs.webp",
-            caption: "Athletic & Lifestyle Apparel Guidelines Specification Plate",
-            aspectRatio: "16/9"
           }
         ]
       }
@@ -2188,6 +2151,12 @@ export const PROJECTS: Project[] = [
         aspectRatio: "16/9"
       },
       {
+        url: "/assets/projects/nexura/nexura-guidelines-02-construction.webp",
+        caption: "Logo Construction & Alignment Rules",
+        type: "system",
+        aspectRatio: "16/9"
+      },
+      {
         url: "/assets/projects/nexura/nexura-stationery-suite.webp",
         caption: "Executive Stationery Suite",
         type: "system",
@@ -2198,12 +2167,6 @@ export const PROJECTS: Project[] = [
         caption: "NEXURA Statistical Magazine Editorial",
         type: "system",
         aspectRatio: "1333/2000"
-      },
-      {
-        url: "/assets/projects/nexura/nexura-office-window-logo.webp",
-        caption: "Dimensional Glass Wall Installation",
-        type: "system",
-        aspectRatio: "2200/1466"
       },
       {
         url: "/assets/projects/nexura/nexura-matte-coffee-cup.webp",
