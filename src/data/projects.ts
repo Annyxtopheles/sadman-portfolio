@@ -2462,6 +2462,136 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "industrial-training-freelance",
+    slug: "industrial-training-freelance",
+    title: "European IT Industrial Training & Freelance Endeavors",
+    category: "Brand Systems",
+    status: "CASE STUDY",
+    company: "European IT Solutions / Freelancer.com",
+    client: "Freelance Clients & European IT Institute",
+    year: "2024 – 2025",
+    duration: "Selected Endeavors",
+    scope: [
+      "Brand Identity",
+      "Visual Design",
+      "Photo Manipulation",
+      "Print Collateral",
+      "Digital Banners",
+      "Creative Direction"
+    ],
+    summary: "A curated collection bridging institutional industrial training at European IT Solutions with real-world freelance client commissions and competitive design contests executed on Freelancer.com. Features conceptual medical-tech and e-commerce identity systems, commercial healthcare print collateral, large-format digital community banners, and surreal narrative photo manipulation.",
+    coverImage: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Balancing rigorous institutional training in graphic design and advanced digital compositing at European IT with high-stakes international freelance contests and client commissions demanding rapid turnaround, strict identity briefs, and production-ready print standards.",
+      role: "Lead Visual Designer & Compositor — conceptualized and executed all vector brand identities, digital hero banners, commercial marketing flyers, and surreal photo manipulation composites.",
+      method: "Applied modular vector geometry, high-impact typography pairing, multi-layer luminosity blending, frequency separation, perspective warping, and commercial print prepress standards."
+    },
+    problem: "Transitioning from classroom theoretical design into real commercial delivery requires navigating diverse international client aesthetics, fast-paced contest requirements, and mastering both vector precision for brand marks and pixel-perfect photographic compositing for digital storytelling.",
+    process: [
+      {
+        title: "Freelance Client Contests & Identity Systems",
+        description: "Delivered targeted visual identities and commercial collateral across varied industries on Freelancer.com under strict competitive briefs.",
+        details: [
+          "Mercurio Informatica: Synthesized ancient medical-scientific symbolism (Caduceus) with software engineering syntax (< />) into a balanced vector emblem for an IT systems consultancy.",
+          "Direct BuyBack: Engineered high-contrast retail brand mark with vibrant electric green and clean sans-serif geometry conveying quick liquidity and modern re-commerce.",
+          "WellMed Pharmacy: Designed promotional patient onboarding flyer and print campaign balancing professional clinical credibility with clear incentive value propositions.",
+          "Elevate Lifestyle: Designed widescreen 16:9 digital community and YouTube hero banner combining alpine photography, textured angled typography, and user engagement prompts."
+        ]
+      },
+      {
+        title: "European IT Industrial Training & Creative Compositing",
+        description: "Authored complex composite visual artworks during industrial training at European IT Solutions, exploring optical storytelling, scale distortion, and cinematic atmosphere.",
+        details: [
+          "Lens to Horizon: Seamlessly composited a solitary traveler traversing railway tracks emerging through a camera lens aperture into an autumn alpine expanse.",
+          "Atmospheric Depth & Light Integration: Matched vanishing points between macro optical hardware and telephoto landscape plates, harmonizing focal falloff and warm sunset rim lighting."
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Contests & Clients", value: "International", subtext: "Delivered on Freelancer.com across US & European clients" },
+      { label: "Industrial Training", value: "European IT", subtext: "Completed advanced graphic design & compositing curriculum" },
+      { label: "Disciplines", value: "5 Formats", subtext: "Logomarks, print flyers, hero banners, and surreal composite art" }
+    ],
+    outcomeSummary: "Demonstrates the bridge between disciplined technical training and competitive international freelancing, proving versatile creative execution across corporate brand marks, print marketing, and imaginative photo compositing.",
+    gallerySections: [
+      {
+        sectionTitle: "Freelancer.com Client Projects & Design Contests",
+        sectionDescription: "Real-world commercial client deliverables and competitive design contest entries created for international clients on Freelancer.com, spanning tech brand marks, community pharmacy print campaigns, and digital lifestyle headers.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/freelance-mercurio-informatica-logo.webp",
+            caption: "Mercurio Informatica — Medical-Tech Identity Combining Caduceus & Code Syntax (< />)",
+            aspectRatio: "1/1",
+            type: "system"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/freelance-direct-buyback-logo.webp",
+            caption: "Direct BuyBack — Re-Commerce & Electronics Brand Identity",
+            aspectRatio: "1/1",
+            type: "system"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/freelance-wellmed-pharmacy-flyer.webp",
+            caption: "WellMed Pharmacy — Patient Onboarding & Prescription Transfer Promotional Flyer (Burbank, CA)",
+            aspectRatio: "768/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/freelance-elevate-lifestyle-banner.webp",
+            caption: "ELEVATE Lifestyle — Digital Community & YouTube Hero Banner ('Live Life. Elevated.')",
+            aspectRatio: "16/9",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "European IT Institute — Industrial Training",
+        sectionDescription: "Advanced creative composite design and visual storytelling developed during industrial training at European IT Solutions & Institute, exploring depth, scale, and narrative photo manipulation.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
+            caption: "Lens to Horizon — Camera Aperture Portal Photo Manipulation (European IT Training)",
+            aspectRatio: "16/9",
+            type: "desktop"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
+        caption: "Lens to Horizon — Camera Aperture Portal Photo Manipulation",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/freelance-mercurio-informatica-logo.webp",
+        caption: "Mercurio Informatica — Brand Identity",
+        type: "system",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/freelance-direct-buyback-logo.webp",
+        caption: "Direct BuyBack — Electronics Brand Identity",
+        type: "system",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/freelance-wellmed-pharmacy-flyer.webp",
+        caption: "WellMed Pharmacy — Promotional Flyer",
+        type: "portrait",
+        aspectRatio: "768/1024"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/freelance-elevate-lifestyle-banner.webp",
+        caption: "ELEVATE Lifestyle — Digital Hero Banner",
+        type: "desktop",
+        aspectRatio: "16/9"
+      }
+    ]
+  },
+  {
     id: "creative-initiatives",
     slug: "creative-initiatives",
     title: "Proactive Creative Initiatives & Campaigns",
