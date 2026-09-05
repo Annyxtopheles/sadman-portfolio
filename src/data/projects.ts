@@ -2543,9 +2543,22 @@ export const PROJECTS: Project[] = [
     },
     gallerySections: [
       {
-        sectionTitle: "Freelancer.com Client Projects & Design Contests",
-        sectionDescription: "Real-world commercial client deliverables and competitive design contest entries created for international clients on Freelancer.com, spanning tech brand marks, community pharmacy print campaigns, and digital lifestyle headers.",
+        sectionTitle: "Freelancer.com & Client Social Media Marketing",
+        sectionDescription: "Commercial client social media graphics, advertising banners, and promotional marketing collateral executed for international and regional clients, including top-performing engagement campaigns on Freelancer.com.",
         images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/manage-tutor-social-ad-post.webp",
+            caption: "Manage Tutor — Facebook Ad & Social Post Design ('Connect with us to find a tutor in one click'). Sourced via Freelancer.com; became one of their highest-engaged posts.",
+            aspectRatio: "1/1",
+            type: "desktop",
+            externalUrl: "https://www.facebook.com/share/p/1FnD487b4B/"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/teacher-nibo-social-ad-post.webp",
+            caption: "Teacher Nibo — Social Media Recruitment Ad Post ('Studying at a top public university? Get attractive tuitions with us'). Created for company design assessment.",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
           {
             url: "/assets/projects/industrial-training-freelance/freelance-mercurio-informatica-logo.webp",
             caption: "Mercurio Informatica — Medical-Tech Identity Combining Caduceus & Code Syntax (< />)",
@@ -2615,8 +2628,8 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Munshiganj Polytechnic Institute — Rover Scout Visuals",
-        sectionDescription: "Official event collateral, roll-up exhibition banner mockups, and commemorative social media graphics created for the Munshiganj Polytechnic Institute Rover Scout Group and regional scouting events.",
+        sectionTitle: "Munshiganj & Regional Scouts — Event Banners & Recognition Graphics",
+        sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
             url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-comdeca-banner.webp",
@@ -2631,8 +2644,20 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           },
           {
+            url: "/assets/projects/industrial-training-freelance/rajshahi-dsrm-social-post-landscape.webp",
+            caption: "District Senior Rover Mate (DSRM) Representatives 2025–2026 — Congratulations Landscape Banner (Bangladesh Scouts, Rajshahi District Rover)",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/rajshahi-dsrm-social-post-dina.webp",
+            caption: "DSRM Representative Recognition Post — Nushrat Jerin Dina, Rajshahi Mohila Polytechnic Girl in Rover Unit (Bangladesh Scouts, Rajshahi District Rover)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/natore-district-rover-mate-banner.webp",
-            caption: "Rover Mate Leadership Course — Event Stage Presentation Banner (Bangladesh Scouts)",
+            caption: "10th Course for Rover Mate — Event Stage Presentation Banner (Bangladesh Scouts, Natore District Rover)",
             aspectRatio: "16/9",
             type: "desktop"
           }
@@ -2640,6 +2665,19 @@ export const PROJECTS: Project[] = [
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/manage-tutor-social-ad-post.webp",
+        caption: "Manage Tutor — Facebook Social Ad Post",
+        type: "desktop",
+        aspectRatio: "1/1",
+        externalUrl: "https://www.facebook.com/share/p/1FnD487b4B/"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/teacher-nibo-social-ad-post.webp",
+        caption: "Teacher Nibo — Social Media Ad Post Design",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/european-it-camera-photo-manipulation.webp",
         caption: "Lens to Horizon — Camera Aperture Portal Photo Manipulation",
@@ -2663,6 +2701,18 @@ export const PROJECTS: Project[] = [
         caption: "7th National COMDECA — Display Banner Mockup",
         type: "desktop",
         aspectRatio: "2400/1877"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/rajshahi-dsrm-social-post-landscape.webp",
+        caption: "Rajshahi District Rover — DSRM Representatives Banner",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/rajshahi-dsrm-social-post-dina.webp",
+        caption: "Rajshahi District Rover — DSRM Representative Post",
+        type: "desktop",
+        aspectRatio: "1/1"
       },
       {
         url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-bp-day.webp",
