@@ -447,6 +447,29 @@ export const CaseStudyDetail: React.FC = () => {
                         const embedKey = `${sIdx}-${gIdx}`;
                         const isEmbedActive = activeEmbeds[embedKey];
 
+                        if (img.type === 'comparison' && img.comparison) {
+                          return (
+                            <figure
+                              key={gIdx}
+                              className="space-y-2 rounded-[4px] overflow-hidden border border-[#1F1F1F] bg-[#0A0A0A] p-2 hover:border-[#333333] transition-colors flex flex-col justify-between"
+                            >
+                              <div className="relative overflow-hidden rounded-[2px] bg-[#0A0A0A] flex items-center justify-center">
+                                <BeforeAfterSlider
+                                  beforeImage={img.comparison.beforeImage}
+                                  afterImage={img.comparison.afterImage}
+                                  beforeLabel={img.comparison.beforeLabel}
+                                  afterLabel={img.comparison.afterLabel}
+                                  aspectRatio={img.aspectRatio}
+                                  isInline={true}
+                                />
+                              </div>
+                              <figcaption className="px-2 py-1.5 text-xs text-[#888888] font-normal flex items-center justify-between gap-2">
+                                <span className="truncate">{img.caption}</span>
+                              </figcaption>
+                            </figure>
+                          );
+                        }
+
                         if (img.embedUrl) {
                           return (
                             <figure

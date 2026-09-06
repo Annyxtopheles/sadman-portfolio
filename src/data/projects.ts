@@ -22,11 +22,17 @@ export interface CaseStudyProcessStep {
 export interface GalleryImage {
   url: string;
   caption: string;
-  type?: 'desktop' | 'mobile' | 'system' | 'mockup' | 'carousel' | 'portrait';
+  type?: 'desktop' | 'mobile' | 'system' | 'mockup' | 'carousel' | 'portrait' | 'comparison';
   aspectRatio?: string;
   embedUrl?: string;
   videoUrl?: string;
   externalUrl?: string;
+  comparison?: {
+    beforeImage: string;
+    afterImage: string;
+    beforeLabel?: string;
+    afterLabel?: string;
+  };
 }
 
 export interface GallerySection {
@@ -1893,23 +1899,23 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "alyssa-kristin-bridal",
-    slug: "alyssa-kristin-bridal",
-    title: "Alyssa Kristin Luxury Bridal Ecosystem",
+    id: "nagae-studio",
+    slug: "nagae-studio",
+    title: "NAGAE Studio — Retailer Platform & Luxury Bridal Ecosystem",
     category: "Mobile & Web",
     status: "SHIPPED",
     company: "SJ Innovation",
-    client: "Alyssa Kristin Bridal (US)",
+    client: "NAGAE Studio (Replica of Production Client Platform)",
     year: "2025 – 2026",
     duration: "4 Months",
-    scope: ["Mobile iOS App", "Admin CMS", "Client CRM", "Design System"],
-    summary: "Three interconnected luxury bridal experiences (Stylist Mobile App, Admin CMS, Client CRM) powered by a single unified design foundation.",
-    coverImage: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop",
+    scope: ["Mobile iOS App", "Admin CMS", "Client CRM", "Design System", "Retailer Platform"],
+    summary: "Four interconnected luxury retailer surfaces (Stylist Mobile App, Admin Portal, Sales Intelligence CRM, and Unified Technical Architecture) engineered with high-contrast Japanese minimalist aesthetics. Conceived and presented as an authentic replica of a successful production US client project.",
+    coverImage: "/assets/projects/nagae-studio/nagae-studio-cover-banner.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Showroom bridal stylists were navigating fragmented desktop portals to record bride preferences, check gown inventory, and follow up with custom quotes.",
-      role: "Lead UI/UX Designer — mapped the entire in-showroom bridal journey and designed the multi-platform ecosystem.",
-      method: "Designed an ergonomic one-handed iOS stylist app, connected back-office admin CMS, and customer relationship portal using rapid low-code functional prototyping."
+      challenge: "Replica of a high-impact US client engagement: Showroom bridal stylists were navigating fragmented desktop portals to record bride preferences, check gown inventory, and follow up with custom quotes.",
+      role: "Lead UI/UX Designer — mapped the entire in-showroom bridal journey and engineered the multi-platform retailer ecosystem (Stylist App, Admin Portal, CRM, and System Architecture).",
+      method: "Designed an ergonomic one-handed iOS stylist app, connected back-office admin CMS, and sales intelligence CRM using high-contrast Japanese minimalist architecture."
     },
     problem: "Bridal appointments require uninterrupted personal connection. Stylists needed to pull up dress catalogs, note custom alterations, and capture bride feedback on a mobile device without breaking eye contact or fumbling through nested menus.",
     process: [
@@ -1935,10 +1941,16 @@ export const PROJECTS: Project[] = [
     outcomes: [
       { label: "Stylist Adoption", value: "100%", subtext: "Full showroom adoption across US bridal studio teams" },
       { label: "Quote Turnaround", value: "< 5 min", subtext: "From appointment completion to automated bride quote delivery" },
-      { label: "Platforms Connected", value: "3-in-1", subtext: "Stylist App, Admin CMS, and Client CRM sharing one unified database" }
+      { label: "Platforms Connected", value: "4 Surfaces", subtext: "Stylist App, Admin Portal, CRM, & System Architecture sharing one unified database" }
     ],
-    outcomeSummary: "Delivered a high-elegance, high-speed ecosystem that elevated the luxury showroom experience while eliminating administrative back-office bottlenecks.",
+    outcomeSummary: "Delivered a high-elegance, high-speed ecosystem that elevated the luxury showroom experience while eliminating administrative back-office bottlenecks. Presented here as a replica showcase of successful client production work.",
     galleryImages: [
+      {
+        url: "/assets/projects/nagae-studio/nagae-studio-cover-banner.webp",
+        caption: "NAGAE Studio — Retailer Platform Architecture (Stylist App, Admin Portal, CRM System & System Architecture)",
+        type: "desktop",
+        aspectRatio: "16/10"
+      },
       {
         url: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop",
         caption: "Stylist mobile interface and showroom gown inventory lookup",
@@ -1971,7 +1983,7 @@ export const PROJECTS: Project[] = [
       "Merchandise Standards"
     ],
     summary: "Comprehensive corporate brand guidelines manual engineered for NEXURA Consulting & Tech Solutions Ltd. Details geometric logo construction, clearspace and alignment grids, color architecture, typography standards, and brand application standards across print collateral and corporate merchandise.",
-    coverImage: "/assets/projects/nexura/nexura-guidelines-01-cover.webp",
+    coverImage: "/assets/projects/nexura/nexura-cover-thumbnail.webp",
     liveUrl: null,
     tldr: {
       challenge: "Creating an enterprise-grade corporate brand system for a modern tech consulting firm capable of scaling seamlessly across digital interfaces, print collateral, architectural signage, and corporate merchandise.",
@@ -2551,14 +2563,6 @@ export const PROJECTS: Project[] = [
       { label: "Design Disciplines", value: "6 Formats", subtext: "Brand identity, corporate stationery, event banners, and certificate design" }
     ],
     outcomeSummary: "Demonstrates creative agility and technical precision across international freelancing, industrial institutional training, civic scouting collateral, and unsolicited brand redesigns.",
-    beforeAfter: {
-      beforeImage: "/assets/projects/industrial-training-freelance/brac-certificate-before.webp",
-      afterImage: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
-      beforeLabel: "Original BRAC Certificate",
-      afterLabel: "Sadman's Unsolicited Redesign",
-      caption: "Interactive Comparison — Original BRAC Certificate vs. Sadman's modern unsolicited redesign featuring refined typography and geometric watermark security detailing.",
-      aspectRatio: "2000/1412"
-    },
     gallerySections: [
       {
         sectionTitle: "Freelancer.com & Client Social Media Marketing",
@@ -2638,22 +2642,28 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Personal concept redesign of the BRAC certificate of completion, initiated independently to explore modern academic typography, balanced hierarchy, and security watermark aesthetics.",
         images: [
           {
-            url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign.webp",
-            caption: "BRAC Certificate of Completion — Unsolicited Modern Redesign (Clean Vector Layout)",
-            aspectRatio: "3841/2718",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign-mockup.webp",
-            caption: "BRAC Certificate Redesign — Perspective Presentation Mockup",
-            aspectRatio: "1796/1404",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/industrial-training-freelance/brac-certificate-original.webp",
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-before.webp",
             caption: "BRAC Certificate — Original Reference Design",
-            aspectRatio: "800/565",
+            aspectRatio: "2000/1412",
             type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
+            caption: "BRAC Certificate of Completion — Unsolicited Modern Redesign",
+            aspectRatio: "2000/1412",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
+            caption: "Interactive Evolution — Slide to compare Original vs. Unsolicited Redesign",
+            aspectRatio: "2000/1412",
+            type: "comparison",
+            comparison: {
+              beforeImage: "/assets/projects/industrial-training-freelance/brac-certificate-before.webp",
+              afterImage: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
+              beforeLabel: "Original BRAC Certificate",
+              afterLabel: "Unsolicited Redesign"
+            }
           }
         ]
       },
@@ -3159,10 +3169,16 @@ export const PROJECTS: Project[] = [
         aspectRatio: "3/2"
       },
       {
-        url: "/assets/projects/industrial-training-freelance/brac-certificate-redesign.webp",
+        url: "/assets/projects/industrial-training-freelance/brac-certificate-before.webp",
+        caption: "BRAC Certificate of Completion — Original Reference Design",
+        type: "desktop",
+        aspectRatio: "2000/1412"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
         caption: "BRAC Certificate of Completion — Unsolicited Redesign",
         type: "desktop",
-        aspectRatio: "3841/2718"
+        aspectRatio: "2000/1412"
       },
       {
         url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-comdeca-banner.webp",
@@ -3394,7 +3410,7 @@ export const PROJECTS: Project[] = [
     duration: "Ongoing Production",
     scope: ["YouTube Packaging", "Webinar Visual Identity", "High-CTR Cover Design", "3D Scene Composition", "Typography & Hierarchy", "Brand Systems"],
     summary: "High-impact 16:9 thumbnail design system engineered for maximum click-through rate (CTR), micro-scale mobile legibility, and brand recall across YouTube videos, tech masterclasses, and executive AI webinars for SJ Innovation and autonomous AI media channels.",
-    coverImage: "/assets/projects/thumbnails/thumb-sji-claude-ai-2026.webp",
+    coverImage: "/assets/projects/thumbnails/thumb-ai-agents-workforce.webp",
     liveUrl: null,
     tldr: {
       challenge: "Technical webinars and AI YouTube content compete in crowded feeds where viewers make click decisions in sub-second glances. Generic stock covers or text-heavy slides result in abysmal click-through rates and diluted brand authority.",

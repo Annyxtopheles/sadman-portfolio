@@ -8,6 +8,7 @@ export interface BeforeAfterSliderProps {
   caption?: string;
   className?: string;
   aspectRatio?: string;
+  isInline?: boolean;
 }
 
 export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
@@ -18,6 +19,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   caption,
   className = '',
   aspectRatio,
+  isInline = false,
 }) => {
   const [sliderPosition, setSliderPosition] = useState<number>(50);
   const [isDragging, setIsDragging] = useState<boolean>(false);
@@ -95,6 +97,82 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
     }
   };
 
+  const sliderStage = (
+    <div
+      ref={containerRef}
+      onMouseDown={handleMouseDown}
+      onTouchStart={handleTouchStart}
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="slider"
+      aria-valuenow={Math.round(sliderPosition)}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-label="Before and after comparison slider"
+      style={{ aspectRatio: aspectRatio || detectedRatio || '16 / 10' }}
+      className={`relative w-full overflow-hidden rounded-[2px] bg-[#000000] select-none cursor-ew-resize focus:outline-none focus:ring-1 focus:ring-white/40 ${
+        isInline ? 'h-full' : 'max-h-[85vh] mx-auto'
+      }`}
+    >
+      {/* Base Layer: Redesign (After) Image */}
+      <img
+        src={afterImage}
+        alt={afterLabel}
+        draggable={false}
+        className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
+      />
+
+      {/* Clipped Top Layer: Original Design (Before) Image */}
+      <div
+        className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none select-none"
+        style={{
+          clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
+        }}
+      >
+        <img
+          src={beforeImage}
+          alt={beforeLabel}
+          draggable={false}
+          className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
+        />
+      </div>
+
+      {/* Floating Badges */}
+      <div className={`absolute ${isInline ? 'top-2 left-2' : 'top-3 left-3'} pointer-events-none z-20`}>
+        <span className={`${isInline ? 'px-2 py-0.5 text-[9px]' : 'px-2.5 py-1 text-[10px]'} rounded-[3px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#CCCCCC] border border-[#2E2E2E] backdrop-blur-sm shadow-md`}>
+          {beforeLabel}
+        </span>
+      </div>
+      <div className={`absolute ${isInline ? 'top-2 right-2' : 'top-3 right-3'} pointer-events-none z-20`}>
+        <span className={`${isInline ? 'px-2 py-0.5 text-[9px]' : 'px-2.5 py-1 text-[10px]'} rounded-[3px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#FFFFFF] border border-[#3E3E3E] backdrop-blur-sm shadow-md`}>
+          {afterLabel}
+        </span>
+      </div>
+
+      {/* Interactive Divider Line & Handle */}
+      <div
+        className="absolute top-0 bottom-0 pointer-events-none z-30 flex items-center justify-center -translate-x-1/2"
+        style={{ left: `${sliderPosition}%` }}
+      >
+        {/* Vertical White Line */}
+        <div className="w-[2px] h-full bg-[#FFFFFF] shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
+
+        {/* Handle Thumb */}
+        <div className={`absolute ${isInline ? 'w-7 h-7 text-[9px]' : 'w-8 h-8 text-[10px]'} rounded-full bg-[#000000] border-2 border-[#FFFFFF] shadow-[0_4px_16px_rgba(0,0,0,0.8)] flex items-center justify-center text-[#FFFFFF] font-mono select-none`}>
+          <span>⟨|⟩</span>
+        </div>
+      </div>
+    </div>
+  );
+
+  if (isInline) {
+    return (
+      <div className={`relative w-full ${className}`}>
+        {sliderStage}
+      </div>
+    );
+  }
+
   return (
     <section className={`space-y-4 ${className}`}>
       {/* Section Header */}
@@ -154,69 +232,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
 
       {/* Main Interactive Comparison Stage */}
       <div className="rounded-[4px] border border-[#1F1F1F] bg-[#0A0A0A] p-2 sm:p-3 hover:border-[#333333] transition-colors">
-        <div
-          ref={containerRef}
-          onMouseDown={handleMouseDown}
-          onTouchStart={handleTouchStart}
-          onKeyDown={handleKeyDown}
-          tabIndex={0}
-          role="slider"
-          aria-valuenow={Math.round(sliderPosition)}
-          aria-valuemin={0}
-          aria-valuemax={100}
-          aria-label="Before and after comparison slider"
-          style={{ aspectRatio: aspectRatio || detectedRatio || '16 / 10' }}
-          className="relative w-full overflow-hidden rounded-[2px] bg-[#000000] select-none cursor-ew-resize focus:outline-none focus:ring-1 focus:ring-white/40 max-h-[85vh] mx-auto"
-        >
-          {/* Base Layer: Redesign (After) Image */}
-          <img
-            src={afterImage}
-            alt={afterLabel}
-            draggable={false}
-            className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
-          />
-
-          {/* Clipped Top Layer: Original Design (Before) Image */}
-          <div
-            className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none select-none"
-            style={{
-              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
-            }}
-          >
-            <img
-              src={beforeImage}
-              alt={beforeLabel}
-              draggable={false}
-              className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
-            />
-          </div>
-
-          {/* Floating Badges */}
-          <div className="absolute top-3 left-3 pointer-events-none z-20">
-            <span className="px-2.5 py-1 rounded-[3px] text-[10px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#CCCCCC] border border-[#2E2E2E] backdrop-blur-sm shadow-md">
-              {beforeLabel}
-            </span>
-          </div>
-          <div className="absolute top-3 right-3 pointer-events-none z-20">
-            <span className="px-2.5 py-1 rounded-[3px] text-[10px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#FFFFFF] border border-[#3E3E3E] backdrop-blur-sm shadow-md">
-              {afterLabel}
-            </span>
-          </div>
-
-          {/* Interactive Divider Line & Handle */}
-          <div
-            className="absolute top-0 bottom-0 pointer-events-none z-30 flex items-center justify-center -translate-x-1/2"
-            style={{ left: `${sliderPosition}%` }}
-          >
-            {/* Vertical White Line */}
-            <div className="w-[2px] h-full bg-[#FFFFFF] shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
-
-            {/* Handle Thumb */}
-            <div className="absolute w-8 h-8 rounded-full bg-[#000000] border-2 border-[#FFFFFF] shadow-[0_4px_16px_rgba(0,0,0,0.8)] flex items-center justify-center text-[#FFFFFF] text-[10px] font-mono select-none">
-              <span>⟨|⟩</span>
-            </div>
-          </div>
-        </div>
+        {sliderStage}
 
         {/* Caption & Instruction Row */}
         <div className="px-2 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs text-[#888888] font-normal">
