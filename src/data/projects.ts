@@ -123,21 +123,94 @@ export const PROJECTS: Project[] = [
       { label: "Execution Speed", value: "120 fps", subtext: "Integrated low-latency Groq model routing for instantaneous chat responses" }
     ],
     outcomeSummary: "Transformed a cluttered technical proof-of-concept into a clean, modern AI workspace praised by users for its speed, clarity, and ergonomic multi-agent orchestration.",
-    galleryImages: [
+    gallerySections: [
       {
-        url: "/assets/projects/collabai-mockup.webp",
-        caption: "CollabAI Redesign Overview — Global quick composer with @agent routing, real-time automation metrics, and active agent streams",
-        type: "desktop"
+        sectionTitle: "Workspace Dashboard & Global Composer Evolution",
+        sectionDescription: "Replacing the cluttered, high-saturation legacy interface with an ergonomic, distraction-free command center featuring a unified global composer, rapid model provider switching, and clean workspace telemetry.",
+        images: [
+          {
+            url: "/assets/projects/collabai/collabai-dashboard-before.webp",
+            caption: "CollabAI Original Dashboard — Cluttered layout with high-contrast neon accents and fragmented navigation",
+            aspectRatio: "1024/532",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/collabai/collabai-dashboard-after.webp",
+            caption: "CollabAI Redesigned Dashboard — Minimal dark architecture, unified @agent composer, and focused metric telemetry",
+            aspectRatio: "1024/532",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/collabai/collabai-dashboard-after.webp",
+            caption: "Interactive Evolution — Slide to compare legacy dashboard vs. redesigned minimal workspace",
+            aspectRatio: "1024/532",
+            type: "comparison",
+            comparison: {
+              beforeImage: "/assets/projects/collabai/collabai-dashboard-before.webp",
+              afterImage: "/assets/projects/collabai/collabai-dashboard-after.webp",
+              beforeLabel: "Original Interface",
+              afterLabel: "Redesigned Workspace"
+            }
+          }
+        ]
+      },
+      {
+        sectionTitle: "Conversational UI & Multi-Model Streaming Canvas",
+        sectionDescription: "Overhauling the live chat environment from heavy bordered bubbles to a fluid, token-streamed conversational canvas with deep reasoning feedback, multi-provider model selection (Groq, Gemini, OpenRouter), and proactive suggestion chips.",
+        images: [
+          {
+            url: "/assets/projects/collabai/collabai-chat-before.webp",
+            caption: "CollabAI Original Chat — Rigid speech bubbles, high-contrast buttons, and heavy borders",
+            aspectRatio: "1024/532",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/collabai/collabai-chat-after.webp",
+            caption: "CollabAI Redesigned Chat — Fluid multi-model conversational canvas with reasoning stream, action pills, and floating composer",
+            aspectRatio: "1024/532",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/collabai/collabai-chat-after.webp",
+            caption: "Interactive Evolution — Slide to compare original chat flow vs. redesigned multi-model conversation",
+            aspectRatio: "1024/532",
+            type: "comparison",
+            comparison: {
+              beforeImage: "/assets/projects/collabai/collabai-chat-before.webp",
+              afterImage: "/assets/projects/collabai/collabai-chat-after.webp",
+              beforeLabel: "Original Chat UI",
+              afterLabel: "Redesigned Canvas"
+            }
+          }
+        ]
       }
     ],
-    beforeAfter: {
-      beforeImage: "/assets/projects/collabai-original.webp",
-      afterImage: "/assets/projects/collabai-mockup.webp",
-      beforeLabel: "Original CollabAI Design",
-      afterLabel: "Sadman Redesign",
-      caption: "Interactive comparison: CollabAI original interface vs. redesigned minimal workspace with integrated model switching.",
-      aspectRatio: "16/10"
-    }
+    galleryImages: [
+      {
+        url: "/assets/projects/collabai/collabai-dashboard-before.webp",
+        caption: "CollabAI Original Dashboard — Cluttered layout with high-contrast neon accents",
+        aspectRatio: "1024/532",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/collabai-dashboard-after.webp",
+        caption: "CollabAI Redesigned Dashboard — Minimal dark architecture and unified @agent composer",
+        aspectRatio: "1024/532",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/collabai-chat-before.webp",
+        caption: "CollabAI Original Chat — Rigid speech bubbles and heavy borders",
+        aspectRatio: "1024/532",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/collabai-chat-after.webp",
+        caption: "CollabAI Redesigned Chat — Fluid conversational canvas with reasoning stream",
+        aspectRatio: "1024/532",
+        type: "desktop"
+      }
+    ]
   },
   {
     id: "szk-personal-archive",
