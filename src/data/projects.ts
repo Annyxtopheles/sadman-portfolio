@@ -129,18 +129,6 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Replacing the cluttered, high-saturation legacy interface with an ergonomic, distraction-free command center featuring a unified global composer, rapid model provider switching, and clean workspace telemetry.",
         images: [
           {
-            url: "/assets/projects/collabai/collabai-dashboard-before.webp",
-            caption: "CollabAI Original Dashboard — Cluttered layout with high-contrast neon accents and fragmented navigation",
-            aspectRatio: "1024/532",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/collabai/collabai-dashboard-after.webp",
-            caption: "CollabAI Redesigned Dashboard — Minimal dark architecture, unified @agent composer, and focused metric telemetry",
-            aspectRatio: "1024/532",
-            type: "desktop"
-          },
-          {
             url: "/assets/projects/collabai/collabai-dashboard-after.webp",
             caption: "Interactive Evolution — Slide to compare legacy dashboard vs. redesigned minimal workspace",
             aspectRatio: "1024/532",
@@ -159,18 +147,6 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Overhauling the live chat environment from heavy bordered bubbles to a fluid, token-streamed conversational canvas with deep reasoning feedback, multi-provider model selection (Groq, Gemini, OpenRouter), and proactive suggestion chips.",
         images: [
           {
-            url: "/assets/projects/collabai/collabai-chat-before.webp",
-            caption: "CollabAI Original Chat — Rigid speech bubbles, high-contrast buttons, and heavy borders",
-            aspectRatio: "1024/532",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/collabai/collabai-chat-after.webp",
-            caption: "CollabAI Redesigned Chat — Fluid multi-model conversational canvas with reasoning stream, action pills, and floating composer",
-            aspectRatio: "1024/532",
-            type: "desktop"
-          },
-          {
             url: "/assets/projects/collabai/collabai-chat-after.webp",
             caption: "Interactive Evolution — Slide to compare original chat flow vs. redesigned multi-model conversation",
             aspectRatio: "1024/532",
@@ -187,20 +163,8 @@ export const PROJECTS: Project[] = [
     ],
     galleryImages: [
       {
-        url: "/assets/projects/collabai/collabai-dashboard-before.webp",
-        caption: "CollabAI Original Dashboard — Cluttered layout with high-contrast neon accents",
-        aspectRatio: "1024/532",
-        type: "desktop"
-      },
-      {
         url: "/assets/projects/collabai/collabai-dashboard-after.webp",
         caption: "CollabAI Redesigned Dashboard — Minimal dark architecture and unified @agent composer",
-        aspectRatio: "1024/532",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/collabai/collabai-chat-before.webp",
-        caption: "CollabAI Original Chat — Rigid speech bubbles and heavy borders",
         aspectRatio: "1024/532",
         type: "desktop"
       },

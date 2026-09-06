@@ -440,9 +440,15 @@ export const CaseStudyDetail: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Mode 1: Expanded View (3 images per row) */}
+                  {/* Mode 1: Expanded View */}
                   {viewMode === 'expanded' ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <div
+                      className={`grid gap-6 lg:gap-8 ${
+                        section.images.length === 1
+                          ? 'grid-cols-1 max-w-4xl'
+                          : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+                      }`}
+                    >
                       {section.images.map((img, gIdx) => {
                         const embedKey = `${sIdx}-${gIdx}`;
                         const isEmbedActive = activeEmbeds[embedKey];
