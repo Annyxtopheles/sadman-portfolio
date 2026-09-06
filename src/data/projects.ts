@@ -2644,6 +2644,36 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/mpirsg-squire-recruitment-banner.webp",
+            caption: "Munshiganj Polytechnic Institute Rover Scout Group — Squire & Fresher Admission / Recruitment Notice Banner ('ভর্তি চলছে — নবীন ভাই ও বোনেরা যারা স্কাউটিং কার্যক্রমে অংশগ্রহণ করতে ইচ্ছুক, রোভার ডেনে এসে ভর্তি ফর্ম নিন')",
+            aspectRatio: "1024/438",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mpirsg-cleanup-certificate.webp",
+            caption: "Munshiganj Polytechnic Institute Rover Scout Group — Clean-up Operations Activity Certificate ('পরিস্কার-পরিচ্ছন্নতা অভিযানে সাফল্যের সাথে অংশগ্রহণ')",
+            aspectRatio: "1024/724",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mpirsg-crew-meeting-notice.webp",
+            caption: "Munshiganj Polytechnic Institute Rover Scout Group — Weekly Crew-Meeting Notice ('All the Rovers are instructed to attend the special crew-meeting in full uniform')",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mosg-admission-banner-info.webp",
+            caption: "Munshiganj Open Scout Group — Social Media Admission Banner Part 1 ('মূল্যবোধ চর্চার জন্য স্কাউটিং — ভর্তি চলছে — কাব, স্কাউট ও রোভার শাখা')",
+            aspectRatio: "512/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mosg-admission-banner-gallery.webp",
+            caption: "Munshiganj Open Scout Group — Social Media Admission Banner Part 2 ('আমাদের কার্যক্রমের কিছু স্থিরচিত্র বিদ্যমান')",
+            aspectRatio: "512/1024",
+            type: "portrait"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/mpi-rover-scout-comdeca-banner.webp",
             caption: "7th National COMDECA — Event Roll-Up Display Banner Mockup (Munshiganj Polytechnic Institute Rover Scout Group)",
             aspectRatio: "2400/1877",
@@ -2695,6 +2725,36 @@ export const PROJECTS: Project[] = [
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/mpirsg-squire-recruitment-banner.webp",
+        caption: "Munshiganj Polytechnic Institute Rover Scout Group — Squire Admission Banner",
+        type: "desktop",
+        aspectRatio: "1024/438"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mpirsg-cleanup-certificate.webp",
+        caption: "Munshiganj Polytechnic Institute Rover Scout Group — Clean-up Operations Certificate",
+        type: "desktop",
+        aspectRatio: "1024/724"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mpirsg-crew-meeting-notice.webp",
+        caption: "Munshiganj Polytechnic Institute Rover Scout Group — Weekly Crew-Meeting Notice",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mosg-admission-banner-info.webp",
+        caption: "Munshiganj Open Scout Group — Admission Banner Overview",
+        type: "portrait",
+        aspectRatio: "512/1024"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mosg-admission-banner-gallery.webp",
+        caption: "Munshiganj Open Scout Group — Activities Gallery Banner",
+        type: "portrait",
+        aspectRatio: "512/1024"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/power-gym-social-ad.webp",
         caption: "Power Gym — Social Media Fitness Ad",
