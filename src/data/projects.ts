@@ -2880,8 +2880,8 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Emblem & Insignia Design — School & Scout Unit Identity Systems",
-        sectionDescription: "High-precision vector logo recreation and heraldic emblem design. Features the authentic circular seal recreation for Meherpur Government High School (Est. 1854) and the official unit emblem design for Meherpur Govt. High School Scout Group integrating the flame of learning, Bangladesh Scouts fleur-de-lis, and the three-finger scout salute sign.",
+        sectionTitle: "Emblem & Insignia Design — School, Institutional & Community Identity Systems",
+        sectionDescription: "High-precision vector logo recreation, institutional monograms, and heraldic emblem design. Features circular seal recreations, academic identity marks, and official unit insignias across schools, scouting groups, and humanitarian community initiatives.",
         images: [
           {
             url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-vector-logo.webp",
@@ -2894,11 +2894,35 @@ export const PROJECTS: Project[] = [
             caption: "Meherpur Government High School Scout Group — Official Unit Insignia & Crest Design ('মেহেরপুর সরকারী উচ্চ বিদ্যালয় স্কাউট গ্রুপ — সদা প্রস্তুত')",
             aspectRatio: "1/1",
             type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/origin-school-monogram-logo.webp",
+            caption: "Origin School (Est. 1995, Fatullah, Narayanganj) — Official Circular Monogram & Institutional Seal Design ('অরিজিন স্কুল — ভূঁইঘর, কুতুবপুর, ফতুল্লা, নারায়ণগঞ্জ')",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/scout-blood-donation-logo.webp",
+            caption: "Scout Blood Donation — Community Identity & WhatsApp Group Avatar Emblem (Bangladesh Scouts fleur-de-lis, blood drop, and pulse rhythm line)",
+            aspectRatio: "1/1",
+            type: "desktop"
           }
         ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/origin-school-monogram-logo.webp",
+        caption: "Origin School — Monogram & Seal Design",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/scout-blood-donation-logo.webp",
+        caption: "Scout Blood Donation — Community Logo Design",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-vector-logo.webp",
         caption: "Meherpur Govt. High School — Vector Logo Recreation",
