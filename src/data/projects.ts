@@ -2644,6 +2644,12 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/dhaka-regional-rover-workshop-banner.webp",
+            caption: "Dhaka Regional Rover Scout Workshop — Event Stage Banner ('ঢাকা বিভাগীয় সিনিয়র রোভার মেট সমাজ উন্নয়ন অ্যাওয়ার্ড ওয়ার্কশপ — বাংলাদেশ স্কাউটস, রোভার অঞ্চল')",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/mpirsg-squire-recruitment-banner.webp",
             caption: "Munshiganj Polytechnic Institute Rover Scout Group — Squire & Fresher Admission / Recruitment Notice Banner ('ভর্তি চলছে — নবীন ভাই ও বোনেরা যারা স্কাউটিং কার্যক্রমে অংশগ্রহণ করতে ইচ্ছুক, রোভার ডেনে এসে ভর্তি ফর্ম নিন')",
             aspectRatio: "1024/438",
@@ -2722,9 +2728,69 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Munshiganj Polytechnic Institute — Campus & Club Event Collateral",
+        sectionDescription: "Large-format print banners, outdoor billboards, and digital event screens designed for Munshiganj Polytechnic Institute campus events, the MUPI Computer Club, inter-district cricket tournaments, and annual sports festivals.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-computer-club-print-banner.webp",
+            caption: "MUPI Computer Club — Official Campus Recruitment Print Banner ('Learn, Share and Grow Together! — Benefits, Registration & Member Overview')",
+            aspectRatio: "2/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-computer-club-orientation-quiz-screen.webp",
+            caption: "MUPI Computer Club — Orientation & Quiz Event Meeting Room Digital Display Screen",
+            aspectRatio: "1024/585",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-cricket-tournament-banner.webp",
+            caption: "Inter-District T10 Cricket Tournament — Large Print Banner: Munshiganj Polytechnic Institute vs. Faridpur Polytechnic Institute ('নতুন বাংলাদেশে তরুণের উৎসব')",
+            aspectRatio: "2/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-annual-sports-week-banner-mockup.webp",
+            caption: "MUPI Annual Sports & Cultural Week — Outdoor Billboard Exhibition Mockup ('বার্ষিক ক্রীড়া ও সাংস্কৃতিক সপ্তাহ')",
+            aspectRatio: "3/2",
+            type: "desktop"
+          }
+        ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-computer-club-print-banner.webp",
+        caption: "MUPI Computer Club — Campus Print Banner",
+        type: "desktop",
+        aspectRatio: "2/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-computer-club-orientation-quiz-screen.webp",
+        caption: "MUPI Computer Club — Orientation & Quiz Screen",
+        type: "desktop",
+        aspectRatio: "1024/585"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-cricket-tournament-banner.webp",
+        caption: "Inter-District Cricket Tournament Banner — MUPI vs. FPI",
+        type: "desktop",
+        aspectRatio: "2/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-annual-sports-week-banner-mockup.webp",
+        caption: "MUPI Annual Sports Week — Billboard Mockup",
+        type: "desktop",
+        aspectRatio: "3/2"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/dhaka-regional-rover-workshop-banner.webp",
+        caption: "Dhaka Regional Rover Scout Workshop — Stage Banner",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/mpirsg-squire-recruitment-banner.webp",
         caption: "Munshiganj Polytechnic Institute Rover Scout Group — Squire Admission Banner",
