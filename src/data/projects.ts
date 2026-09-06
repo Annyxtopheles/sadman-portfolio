@@ -2644,6 +2644,12 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/mpirsg-badge-giving-event-banner.webp",
+            caption: "Munshiganj Polytechnic Institute Rover Scout Group — In-House Badge Giving & Rank Elevation Ceremony Banner ('ব্যাজ বিতরণ ও স্তর পরিবর্তন অনুষ্ঠান')",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/dhaka-regional-rover-workshop-banner.webp",
             caption: "Dhaka Regional Rover Scout Workshop — Event Stage Banner ('ঢাকা বিভাগীয় সিনিয়র রোভার মেট সমাজ উন্নয়ন অ্যাওয়ার্ড ওয়ার্কশপ — বাংলাদেশ স্কাউটস, রোভার অঞ্চল')",
             aspectRatio: "16/9",
@@ -2734,6 +2740,30 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Large-format print banners, outdoor billboards, and digital event screens designed for Munshiganj Polytechnic Institute campus events, the MUPI Computer Club, inter-district cricket tournaments, and annual sports festivals.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-2023-banner.webp",
+            caption: "MUPI Computer Department — Fresher Orientation, Senior Farewell & Cultural Festival 2023 Digital Master Banner ('নবীন বরণ, বিদায় সংবর্ধনা ও সাংস্কৃতিক অনুষ্ঠান ২০২৩')",
+            aspectRatio: "1024/455",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-banner-stage-print.webp",
+            caption: "Fresher Orientation & Farewell 2023 — Stage Backdrop Print Installation & Digital Proof Comparison",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-crest-award.webp",
+            caption: "Fresher Orientation & Farewell 2023 — Official Guest Table Crest Awards & Student Recipient Showcase (CST Department)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-management-badge.webp",
+            caption: "Fresher Orientation & Farewell 2023 — Management Committee Official Pin Badge Design & Physical Print Photo",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/mupi-computer-club-print-banner.webp",
             caption: "MUPI Computer Club — Official Campus Recruitment Print Banner ('Learn, Share and Grow Together! — Benefits, Registration & Member Overview')",
             aspectRatio: "2/1",
@@ -2761,6 +2791,36 @@ export const PROJECTS: Project[] = [
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-2023-banner.webp",
+        caption: "MUPI Computer Dept — Fresher Orientation & Farewell 2023 Banner",
+        type: "desktop",
+        aspectRatio: "1024/455"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-crest-award.webp",
+        caption: "MUPI Farewell 2023 — Official Crest Award & Recipient",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-management-badge.webp",
+        caption: "MUPI Farewell 2023 — Management Committee Pin Badge",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-banner-stage-print.webp",
+        caption: "MUPI Farewell 2023 — Stage Backdrop Print Installation",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mpirsg-badge-giving-event-banner.webp",
+        caption: "MPIRSG — In-House Badge Giving Ceremony Banner",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/mupi-computer-club-print-banner.webp",
         caption: "MUPI Computer Club — Campus Print Banner",
