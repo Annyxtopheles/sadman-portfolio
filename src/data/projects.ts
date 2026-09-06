@@ -2644,6 +2644,12 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/scouts-library-facebook-cover.webp",
+            caption: "Scouts Library — Official Facebook Page Cover Banner (Abu Sayed Md. Akramuzzaman, Asst. Leader Trainer, Bangladesh Scouts)",
+            aspectRatio: "1024/534",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/mpirsg-badge-giving-event-banner.webp",
             caption: "Munshiganj Polytechnic Institute Rover Scout Group — In-House Badge Giving & Rank Elevation Ceremony Banner ('ব্যাজ বিতরণ ও স্তর পরিবর্তন অনুষ্ঠান')",
             aspectRatio: "16/9",
@@ -2788,9 +2794,69 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Personal Creative Studies & Visual Experiments",
+        sectionDescription: "Self-initiated design explorations, typography studies, and visual artworks created out of personal interest, covering musical playlist covers, motivational editorial banners, philosophical dark compositions, and abstract geometric landscapes.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/personal-workout-playlist-cover.webp",
+            caption: "A Workout Playlist — Personal Spotify Workout Album / Playlist Cover (High-intensity monochrome bodybuilding painting with distressed red typography)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/broader-shoulders-facebook-cover.webp",
+            caption: "Broader Shoulders — Personal Editorial Facebook Cover ('I ask not for a lighter burden but broader shoulders' — Classical Atlas statue with modern contrasted typography)",
+            aspectRatio: "1024/449",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/prophets-born-today-conceptual-art.webp",
+            caption: "Philosophical Inquiry Artwork — 'If the prophets were born today, they would be ostracized or worse, slaughtered.' (Dark starry sky, burning martyr silhouette, and framed typographic box)",
+            aspectRatio: "16/9",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/geometric-mountain-landscape-composition.webp",
+            caption: "Geometric Alpine Landscape Composition — Diamond-tiled mountain peaks with intersecting linear guides and atmospheric sunrise gradient",
+            aspectRatio: "3/2",
+            type: "desktop"
+          }
+        ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/personal-workout-playlist-cover.webp",
+        caption: "A Workout Playlist — Spotify Playlist Cover",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/broader-shoulders-facebook-cover.webp",
+        caption: "Broader Shoulders — Personal Editorial Cover",
+        type: "desktop",
+        aspectRatio: "1024/449"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/prophets-born-today-conceptual-art.webp",
+        caption: "Philosophical Inquiry — Conceptual Visual Art",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/geometric-mountain-landscape-composition.webp",
+        caption: "Geometric Alpine Landscape — Visual Experiment",
+        type: "desktop",
+        aspectRatio: "3/2"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/scouts-library-facebook-cover.webp",
+        caption: "Scouts Library — Facebook Page Cover Banner",
+        type: "desktop",
+        aspectRatio: "1024/534"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/mupi-fresher-farewell-2023-banner.webp",
         caption: "MUPI Computer Dept — Fresher Orientation & Farewell 2023 Banner",
