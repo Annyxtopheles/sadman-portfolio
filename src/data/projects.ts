@@ -2824,9 +2824,75 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Vector Illustration & Character Design Studies",
+        sectionDescription: "Original vector artworks and digital illustrations exploring perspective, geometric portraiture, Japanese woodblock aesthetics, flat-art character rendering, and campus architectural line-work.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-mupi-campus-architecture.webp",
+            caption: "Munshiganj Polytechnic Institute — Vector Campus Architectural Illustration (Clean perspective courtyard, arcade corridors, and main academic building facade)",
+            aspectRatio: "1024/724",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-portrait-japanese-kabuki-samurai.webp",
+            caption: "Traditional Japanese Kabuki Actor / Samurai — Geometric Vector Portrait (Bold angular shading, crest accents, and stylized rising sun background)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-portrait-hijab-dua-prayer.webp",
+            caption: "Devotion in Dua — Vector Character Portrait (Clean lines, elegant draping hijab, and peaceful prayer posture)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-portrait-glasses-serene-girl.webp",
+            caption: "Serenity — Minimalist Vector Portrait with Round Wireframe Glasses, Bob Haircut, and Soft Pastel Palette",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-portrait-flowing-hair-pink-dress.webp",
+            caption: "Breeze & Contemplation — Flat Vector Fashion Portrait with Flowing Windblown Hair and Warm Ambient Shadows",
+            aspectRatio: "1/1",
+            type: "desktop"
+          }
+        ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-mupi-campus-architecture.webp",
+        caption: "MUPI Campus Architecture — Vector Illustration",
+        type: "desktop",
+        aspectRatio: "1024/724"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-portrait-japanese-kabuki-samurai.webp",
+        caption: "Kabuki Samurai — Geometric Vector Portrait",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-portrait-hijab-dua-prayer.webp",
+        caption: "Devotion in Dua — Vector Portrait",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-portrait-glasses-serene-girl.webp",
+        caption: "Serenity — Vector Character Portrait",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-portrait-flowing-hair-pink-dress.webp",
+        caption: "Windblown — Flat Vector Fashion Portrait",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/personal-workout-playlist-cover.webp",
         caption: "A Workout Playlist — Spotify Playlist Cover",
