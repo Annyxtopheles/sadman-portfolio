@@ -255,6 +255,27 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
     };
   }
 
+  // Level-up celebration and reward unlock upon level completion
+  const prevLevelRef = useRef<number>(currentLevel.level);
+  useEffect(() => {
+    if (currentLevel.level > prevLevelRef.current) {
+      if (currentLevel.level === 2) {
+        setTimeout(() => triggerToast('🎁 Level 2 Reached: Unlocked fun web gifts in your reward vault!', true), 500);
+      } else if (currentLevel.level === 3) {
+        setTimeout(() => triggerToast('🎁 Level 3 Reached: New interactive discoveries unlocked in vault!', true), 500);
+      } else if (currentLevel.level === 4) {
+        setTimeout(() => triggerToast('🌟 Level 4 Reached: Full web vault & surprise generator unlocked!', true), 500);
+      }
+      prevLevelRef.current = currentLevel.level;
+    }
+  }, [currentLevel.level, triggerToast]);
+
+  useEffect(() => {
+    if (progressPercent >= 20 && !state.rewardUnlocked) {
+      setState((prev) => ({ ...prev, rewardUnlocked: true }));
+    }
+  }, [progressPercent, state.rewardUnlocked]);
+
   return (
     <ExplorationContext.Provider
       value={{

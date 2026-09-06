@@ -101,6 +101,43 @@ export const CozyRewardModal: React.FC = () => {
             </button>
           </div>
 
+          {/* Featured Web Gems Quick Selection */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[#888888]">
+              <span>Featured Web Gems</span>
+              <span className="text-[10px] text-[#555555]">Click to preview</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              {REWARD_WEBSITES.slice(0, 4).map((site, sIdx) => {
+                const isSelected = currentSite.id === site.id;
+                return (
+                  <button
+                    key={site.id}
+                    type="button"
+                    onClick={() => setCurrentIndex(sIdx)}
+                    className={`p-2 rounded-[4px] border text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+                      isSelected
+                        ? 'bg-[#1A1A1A] border-[#444444] text-[#FFFFFF] shadow-sm'
+                        : 'bg-[#0E0E0E] border-[#1E1E1E] text-[#888888] hover:text-[#CCCCCC] hover:border-[#333333]'
+                    }`}
+                  >
+                    <div className="truncate">
+                      <div className="text-xs font-normal truncate text-[#FFFFFF]">
+                        {site.title.split('—')[0].trim()}
+                      </div>
+                      <div className="text-[10px] font-mono text-[#666666] truncate">
+                        {site.tag}
+                      </div>
+                    </div>
+                    <span className="text-[10px] text-[#555555] shrink-0 font-mono">
+                      {isSelected ? '●' : '○'}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Curated Website Showcase Card */}
           <div className="relative rounded-[4px] border border-[#1F1F1F] bg-[#0E0E0E] p-4 space-y-3.5 overflow-hidden">
             {/* Top Row: Tag & Index */}

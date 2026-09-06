@@ -24,10 +24,31 @@ export interface RewardWebsite {
 
 export const REWARD_WEBSITES: RewardWebsite[] = [
   {
+    id: 'zoomquilt',
+    title: 'Zoomquilt — Infinitely Zooming Painting',
+    url: 'https://zoomquilt.org/',
+    description: 'The legendary, hypnotically infinite zooming canvas that seamlessly transitions through surreal fantasy landscapes and psychedelic worlds.',
+    tag: 'Infinite Zoom',
+  },
+  {
+    id: 'doodlelab',
+    title: 'DoodleLab — Creative Drawing Games',
+    url: 'https://doodlelab.fun/',
+    description: 'Free daily drawing challenges, creative prompts, and multiplayer sketching games designed to spark imagination and spontaneous play.',
+    tag: 'Creative Games',
+  },
+  {
+    id: 'geofs',
+    title: 'GeoFS — Free Online Flight Simulator',
+    url: 'https://www.geo-fs.com/',
+    description: 'A free, community-driven online flight simulator with global satellite terrain and realistic flight physics running directly in your browser.',
+    tag: 'Flight Simulator',
+  },
+  {
     id: 'neal-fun',
-    title: 'Neal.fun',
+    title: 'Neal.fun — Interactive Web Wonders',
     url: 'https://neal.fun/',
-    description: 'A legendary collection of brilliant interactive web wonders, deep sea explorations, and creative internet toys.',
+    description: 'A brilliant collection of interactive web wonders, deep sea explorations, the password game, and delightful internet toys.',
     tag: 'Interactive Toys',
   },
   {

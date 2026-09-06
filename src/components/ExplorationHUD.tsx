@@ -134,28 +134,48 @@ export const ExplorationHUD: React.FC = () => {
 
               {/* Scrollable Content */}
               <div className="p-5 overflow-y-auto space-y-6 text-xs flex-1 custom-scrollbar">
-                {/* 100% / Reward Banner */}
-                {(isCompleted || state.rewardUnlocked) && (
+                {/* Progress Milestone Reward Banner */}
+                {state.rewardUnlocked || isCompleted || progressPercent >= 20 ? (
                   <motion.div
                     initial={{ opacity: 0, y: -5 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="p-4 rounded-[4px] bg-[#121212] border border-[#262626] space-y-2.5"
                   >
-                    <div className="flex items-center gap-2 text-[#FFFFFF] font-normal text-xs">
-                      <span className="text-[#FFFFFF]">✦</span>
-                      <span>Exploration Reward Unlocked</span>
+                    <div className="flex items-center justify-between text-[#FFFFFF] font-normal text-xs">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[#FFFFFF]">🎁</span>
+                        <span>Level {currentLevel.level} Reward Unlocked</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-[#888888]">
+                        Web Vault
+                      </span>
                     </div>
                     <p className="text-[#888888] text-[11px] leading-relaxed">
-                      You have explored all projects! Inspect secret curated web discoveries and random websites.
+                      You&apos;ve unlocked access to the Awesome Web Vault! Enjoy curated web discoveries like Zoomquilt, DoodleLab, GeoFS, and Neal.fun.
                     </p>
                     <button
                       onClick={handleOpenReward}
                       className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                     >
-                      <span>Claim Web Reward</span>
+                      <span>Explore Fun Web Gifts</span>
                       <span>→</span>
                     </button>
                   </motion.div>
+                ) : (
+                  <div className="p-3.5 rounded-[4px] bg-[#0E0E0E] border border-[#1C1C1C] space-y-1.5">
+                    <div className="flex items-center justify-between text-xs text-[#888888]">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[11px]">🔒</span>
+                        <span>Web Gifts Vault</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-[#666666]">
+                        Unlocks at Level 2 (20%)
+                      </span>
+                    </div>
+                    <p className="text-[#666666] text-[11px] leading-relaxed">
+                      Explore projects, backstories, and interactive features to reach Level 2 and unlock fun, awesome corners of the web.
+                    </p>
+                  </div>
                 )}
 
                 {/* Section 1: Projects Explored */}
