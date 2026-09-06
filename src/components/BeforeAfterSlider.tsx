@@ -7,6 +7,7 @@ export interface BeforeAfterSliderProps {
   afterLabel?: string;
   caption?: string;
   className?: string;
+  aspectRatio?: string;
 }
 
 export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
@@ -16,10 +17,23 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   afterLabel = 'Redesign',
   caption,
   className = '',
+  aspectRatio,
 }) => {
   const [sliderPosition, setSliderPosition] = useState<number>(50);
   const [isDragging, setIsDragging] = useState<boolean>(false);
+  const [detectedRatio, setDetectedRatio] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const img = new Image();
+    img.src = afterImage || beforeImage;
+    img.onload = () => {
+      if (img.naturalWidth && img.naturalHeight) {
+        setDetectedRatio(`${img.naturalWidth} / ${img.naturalHeight}`);
+      }
+    };
+  }, [afterImage, beforeImage]);
 
   const calculatePosition = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -151,14 +165,15 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           aria-valuemin={0}
           aria-valuemax={100}
           aria-label="Before and after comparison slider"
-          className="relative w-full aspect-[16/10] overflow-hidden rounded-[2px] bg-[#000000] select-none cursor-ew-resize focus:outline-none focus:ring-1 focus:ring-white/40"
+          style={{ aspectRatio: aspectRatio || detectedRatio || '16 / 10' }}
+          className="relative w-full overflow-hidden rounded-[2px] bg-[#000000] select-none cursor-ew-resize focus:outline-none focus:ring-1 focus:ring-white/40 max-h-[85vh] mx-auto"
         >
           {/* Base Layer: Redesign (After) Image */}
           <img
             src={afterImage}
             alt={afterLabel}
             draggable={false}
-            className="absolute inset-0 w-full h-full object-cover object-top select-none pointer-events-none"
+            className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
           />
 
           {/* Clipped Top Layer: Original Design (Before) Image */}
@@ -172,7 +187,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
               src={beforeImage}
               alt={beforeLabel}
               draggable={false}
-              className="absolute inset-0 w-full h-full object-cover object-top select-none pointer-events-none"
+              className="absolute inset-0 w-full h-full object-contain object-center select-none pointer-events-none"
             />
           </div>
 

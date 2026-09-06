@@ -326,6 +326,7 @@ export const CaseStudyDetail: React.FC = () => {
               beforeLabel={project.beforeAfter.beforeLabel}
               afterLabel={project.beforeAfter.afterLabel}
               caption={project.beforeAfter.caption}
+              aspectRatio={project.beforeAfter.aspectRatio}
             />
           </section>
         )}

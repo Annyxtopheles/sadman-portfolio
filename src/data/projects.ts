@@ -43,6 +43,7 @@ export interface BeforeAfterComparison {
   beforeLabel?: string;
   afterLabel?: string;
   caption?: string;
+  aspectRatio?: string;
 }
 
 export interface Project {
@@ -128,7 +129,8 @@ export const PROJECTS: Project[] = [
       afterImage: "/assets/projects/collabai-mockup.webp",
       beforeLabel: "Original CollabAI Design",
       afterLabel: "Sadman Redesign",
-      caption: "Interactive comparison: CollabAI original interface vs. redesigned minimal workspace with integrated model switching."
+      caption: "Interactive comparison: CollabAI original interface vs. redesigned minimal workspace with integrated model switching.",
+      aspectRatio: "16/10"
     }
   },
   {
@@ -238,7 +240,7 @@ export const PROJECTS: Project[] = [
     duration: "Ongoing",
     scope: ["Social Design Systems", "Meta Ads", "Sales Enablement Collateral", "Executive Briefings", "LinkedIn Carousels", "YouTube Thumbnails", "Brand Identity"],
     summary: "Visual design, editorial layouts, multi-format Meta ad campaigns, and high-impact social content systems for BuildYourAI. Translates dense federal cybersecurity frameworks and AI governance guides into digestible executive briefing documents and viral LinkedIn carousels in close coordination with the enterprise sales team.",
-    coverImage: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
+    coverImage: "/assets/projects/buildyourai/buildyourai-creatives-cover.webp",
     liveUrl: null,
     tldr: {
       challenge: "Federal cybersecurity frameworks (NSA, CISA, FBI) are dense and impenetrable for mainstream technical buyers, while B2B AI products require high-trust marketing creatives across paid social and video channels.",
@@ -258,10 +260,10 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        title: "Multi-Format Meta Ads for NonProfit AI",
-        description: "Built responsive Meta advertising creative packages for BuildYourAI's NonProfit AI solution across 1:1, 9:16, and 16:9 aspect ratios, testing visual contrast and direct conversion CTAs.",
+        title: "Multi-Format Meta Ads for BuildYourAI",
+        description: "Built responsive Meta advertising creative packages for BuildYourAI across 1:1, 9:16, and 16:9 aspect ratios, testing visual contrast and direct conversion CTAs.",
         details: [
-          "Adapted headline typography and key benefits ('Automate Grant Writing', 'Enhance Donor Relations') for high mobile readability",
+          "Adapted headline typography and key benefits ('Let AI Manage Your Fundraising Backend Work') for high mobile readability",
           "Optimized layout compositions for feed cards, vertical Stories/Reels, and landscape display banners",
           "Maintained consistent brand authority with the BuildYourAI gradient emblem and clean photographic art direction"
         ]
@@ -324,39 +326,9 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "NonProfit AI — Performance Ad Campaign & Value Drivers",
-        sectionDescription: "High-converting paid social ad creatives engineered for NonProfit AI (Powered by Collab AI). Targets nonprofit executives, development directors, and board chairs by translating complex AI automation into immediate operational wins: recovering 18 hours weekly, eliminating duplicate donor records with real UI reporting, price teardowns against enterprise LLMs, deadline tracking, and community impact.",
+        sectionTitle: "BuildYourAI — Multi-Format Meta Ad Campaigns",
+        sectionDescription: "Responsive Meta advertising creative packages designed for BuildYourAI across 1:1 Feed, 9:16 Story/Reels, and 16:9 Landscape aspect ratios, pairing clear benefit-led value propositions with high-contrast conversion CTAs.",
         images: [
-          {
-            url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
-            caption: "Your Team Just Got 18 Hours Back This Week — 3D ticking clock visual emphasizing automated reporting, fundraising insights, and compliance tracking.",
-            type: "carousel",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
-            caption: "Enterprise AI for Nonprofits, Without the Enterprise Price — Transparent pricing comparison contrasting ChatGPT Enterprise ($108k/yr) against Nonprofit Control Tower ($4k/yr).",
-            type: "carousel",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
-            caption: "Never Miss a Grant Deadline Again — Desk flat lay featuring an August calendar deadline and real-time mobile push notifications for grant renewal drafts.",
-            type: "carousel",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
-            caption: "Stop Chasing Duplicate Donor Records — 3D tablet mockup showcasing the live Fund Development Report, donor pyramids, and real-time board giving progress.",
-            type: "carousel",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
-            caption: "Spend More Time on Your Mission, Less Time on Board Reports — Inspiring community volunteer food drive visual highlighting one-click automated board reporting.",
-            type: "carousel",
-            aspectRatio: "1/1"
-          },
           {
             url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
             caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
@@ -374,14 +346,6 @@ export const PROJECTS: Project[] = [
             caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
             type: "desktop",
             aspectRatio: "16/9"
-          },
-          {
-            url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
-            caption: "CollabAI Nonprofit AI Video Reel (9:16) — Dynamic vertical product walkthrough highlighting free open-source AI workflow automation, board reporting, and grant tracking.",
-            type: "mobile",
-            aspectRatio: "9/16",
-            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
-            externalUrl: "https://www.facebook.com/reel/791352226744510"
           }
         ]
       },
@@ -512,44 +476,6 @@ export const PROJECTS: Project[] = [
         caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
         type: "desktop",
         aspectRatio: "16/9"
-      },
-      {
-        url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
-        caption: "NonProfit AI — 18 Hours Back This Week Ad Creative",
-        type: "carousel",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
-        caption: "NonProfit AI — Pricing Comparison vs ChatGPT Enterprise",
-        type: "carousel",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
-        caption: "NonProfit AI — Grant Deadline Alerts Ad Creative",
-        type: "carousel",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
-        caption: "NonProfit AI — Stop Chasing Duplicate Donor Records UI Ad",
-        type: "carousel",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
-        caption: "NonProfit AI — Mission Focus Over Board Reports Ad Creative",
-        type: "carousel",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
-        caption: "CollabAI Nonprofit AI Video Reel (9:16)",
-        type: "mobile",
-        aspectRatio: "9/16",
-        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
-        externalUrl: "https://www.facebook.com/reel/791352226744510"
       }
     ]
   },
@@ -565,7 +491,7 @@ export const PROJECTS: Project[] = [
     duration: "Ongoing Series",
     scope: ["Social Media Creative", "Event Greetings", "Visual Identity", "Vector Illustration", "Digital Painting", "Photo Manipulation", "Brand Systems"],
     summary: "Multi-format social media greeting creatives and commemorative visual campaigns designed for SJ Innovation. Features distinct thematic visual directions—from flat vector storytelling and expressive digital brushwork to archival photo composites—celebrating global holidays, cultural milestones, and company events with brand consistency.",
-    coverImage: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
+    coverImage: "/assets/projects/social-greetings/social-media-greetings-cover.webp",
     liveUrl: null,
     tldr: {
       challenge: "Corporate social greetings often fall into generic stock templates. The goal was to establish elevated, custom-crafted visual directions for SJ Innovation across global observances that reflect the company's creative identity and technological edge.",
@@ -1669,13 +1595,22 @@ export const PROJECTS: Project[] = [
           "Showcased live clinical metrics: 86.3% response rates, automated insurance verification, and zero staff intervention",
           "Designed 3D hospital campus renders and 24/7 reception desk visuals communicating enterprise scalability"
         ]
+      },
+      {
+        title: "NonProfit AI Campaign & Motion Product Reel",
+        description: "Engineered multi-format paid social ad creatives and an interactive motion reel for NonProfit Control Tower (Powered by Collab AI), addressing operational pain points like donor record duplication, board reporting, and grant deadlines.",
+        details: [
+          "Developed persuasive visual hooks: 'Your Team Just Got 18 Hours Back This Week' and transparent price comparisons vs ChatGPT Enterprise",
+          "Simulated live dashboard interfaces displaying donor pyramids, giving telemetry, and automated calendar alerts",
+          "Produced a high-converting 9:16 motion walkthrough reel showcasing free open-source AI automation"
+        ]
       }
     ],
     aiWorkflow: "Integrated Figma AI agents and prompt-driven scene composition to rapidly explore lighting moods and architectural 3D metaphors, finalizing vector logos and typography natively in Figma.",
     outcomes: [
       { label: "Products Branded", value: "10 Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, Agency, & Restaurant" },
       { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
-      { label: "Assets Delivered", value: "15 Production Designs", subtext: "10 OpenGraph social cards & 5 ePhysician clinical ad creatives" }
+      { label: "Assets Delivered", value: "21 Production Assets", subtext: "10 OpenGraph cards, 5 ePhysician ads, 5 NonProfit AI ads, & 1 video reel" }
     ],
     outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
@@ -1780,6 +1715,50 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "NonProfit AI Control Tower — Performance Ad Campaign & Product Reel",
+        sectionDescription: "High-converting paid social ad creatives and motion reel engineered for NonProfit Control Tower (Powered by Collab AI). Targets nonprofit executives, development directors, and board chairs by translating complex AI automation into immediate operational wins: recovering 18 hours weekly, eliminating duplicate donor records with real UI reporting, price teardowns against enterprise LLMs, deadline tracking, and community impact.",
+        images: [
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
+            caption: "Your Team Just Got 18 Hours Back This Week — 3D ticking clock visual emphasizing automated reporting, fundraising insights, and compliance tracking.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
+            caption: "Enterprise AI for Nonprofits, Without the Enterprise Price — Transparent pricing comparison contrasting ChatGPT Enterprise ($108k/yr) against Nonprofit Control Tower ($4k/yr).",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
+            caption: "Never Miss a Grant Deadline Again — Desk flat lay featuring an August calendar deadline and real-time mobile push notifications for grant renewal drafts.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
+            caption: "Stop Chasing Duplicate Donor Records — 3D tablet mockup showcasing the live Fund Development Report, donor pyramids, and real-time board giving progress.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
+            caption: "Spend More Time on Your Mission, Less Time on Board Reports — Inspiring community volunteer food drive visual highlighting one-click automated board reporting.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+            caption: "CollabAI Nonprofit AI Video Reel (9:16) — Dynamic vertical product walkthrough highlighting free open-source AI workflow automation, board reporting, and grant tracking.",
+            type: "mobile",
+            aspectRatio: "9/16",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/791352226744510"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -1872,6 +1851,44 @@ export const PROJECTS: Project[] = [
         caption: "ePhysician Control Tower — 24/7 AI Receptionist & Booking Desk",
         type: "desktop",
         aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-01-18-hours-clock.webp",
+        caption: "NonProfit AI — 18 Hours Back This Week Ad Creative",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-02-pricing-comparison.webp",
+        caption: "NonProfit AI — Pricing Comparison vs ChatGPT Enterprise",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-03-grant-deadline-calendar.webp",
+        caption: "NonProfit AI — Grant Deadline Alerts Ad Creative",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-04-duplicate-donor-ui.webp",
+        caption: "NonProfit AI — Stop Chasing Duplicate Donor Records UI Ad",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/nonprofit-ai-ad-05-mission-over-board-reports.webp",
+        caption: "NonProfit AI — Mission Focus Over Board Reports Ad Creative",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+        caption: "CollabAI Nonprofit AI Video Reel (9:16)",
+        type: "mobile",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/791352226744510"
       }
     ]
   },
@@ -2539,7 +2556,8 @@ export const PROJECTS: Project[] = [
       afterImage: "/assets/projects/industrial-training-freelance/brac-certificate-after.webp",
       beforeLabel: "Original BRAC Certificate",
       afterLabel: "Sadman's Unsolicited Redesign",
-      caption: "Interactive Comparison — Original BRAC Certificate vs. Sadman's modern unsolicited redesign featuring refined typography and geometric watermark security detailing."
+      caption: "Interactive Comparison — Original BRAC Certificate vs. Sadman's modern unsolicited redesign featuring refined typography and geometric watermark security detailing.",
+      aspectRatio: "2000/1412"
     },
     gallerySections: [
       {
@@ -3231,15 +3249,15 @@ export const PROJECTS: Project[] = [
     year: "2025 – Present",
     duration: "Ongoing",
     scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Recognition Systems", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns and a ground-up recognition initiative that transformed private Keka HRMS honors into public social media showcases with senior, managerial, and COO approval.",
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, and the Member Birthday Carousel motion initiative that replaced static circular cake graphics with dynamic member-first video spotlights.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Internal employee recognition and talent hiring were historically locked inside silent internal HR tools (Keka certificates and plain text notices), missing opportunities to celebrate talent and build public employer brand equity.",
+      challenge: "Internal employee recognition was historically locked inside silent HR tools (Keka certificates and plain text notices), while employee birthdays relied on generic static circular cake images, missing opportunities to celebrate talent and build community pride.",
       role: "Self-Directed Designer — identified organizational opportunities, built end-to-end design systems without prompting, and systematically navigated multi-tier executive approvals (Senior Designer → Engineering Manager → Chief Operating Officer) to launch company-wide initiatives.",
-      method: "Conceived high-craft 3D glassmorphic social frameworks for monthly performer honors, new hire welcomes, and department hiring, turning private internal milestones into public-facing company pride."
+      method: "Conceived high-craft 3D glassmorphic social frameworks for monthly performer honors, dynamic member-first birthday video reels, and multi-discipline hiring campaigns, turning routine milestones into public-facing company pride."
     },
-    problem: "Without dedicated creative requests from HR, talent acquisition posts and monthly performer honors remained functional but visually uninspired. Recognizing that first impressions dictate talent inbound quality and employee morale, Sadman took the initiative to build polished, production-ready social campaign systems without being prompted, securing multi-tier executive buy-in.",
+    problem: "Without dedicated creative requests from HR, talent acquisition posts and monthly performer honors remained functional but visually uninspired, and team birthday celebrations relied on repetitive static cake graphics. Recognizing that first impressions and internal morale dictate company culture, Sadman took the initiative to build polished social campaign systems and dynamic motion carousels without being prompted, securing multi-tier executive buy-in.",
     process: [
       {
         title: "Identifying Unmet Opportunities & Autonomous Inception",
@@ -3256,16 +3274,25 @@ export const PROJECTS: Project[] = [
         details: [
           "Independently conceptualized and designed the 'Performer of the Month' social template featuring a sculpted 3D glass trophy, tech coordinate grids, and brand gradients",
           "Presented the initiative through a 3-tier approval hierarchy: pitched to Senior Designer (approved), escalated to Manager (approved), and presented to Chief Operating Officer (COO, approved)",
-          "Extended the framework to create standardized 'Welcome Aboard' employee onboarding announcements across global offices (e.g., Goa, Dhaka, New York)"
+          "Established an enduring corporate tradition celebrating team excellence on public LinkedIn and social media channels"
+        ]
+      },
+      {
+        title: "Member Birthday Carousel Motion Initiative: Reimagining Static Posts",
+        description: "Reconceived corporate employee birthday celebrations: previously, birthdays were recognized with generic static circular cake images. Sadman took the initiative to transform them into dynamic, member-first video reels and multi-slide carousel spotlights.",
+        details: [
+          "Replaced impersonal static graphics with personalized motion spotlights celebrating team members across global offices (Dhaka, Goa, New York)",
+          "Crafted high-retention video compositions pairing upbeat background rhythms with energetic motion typography",
+          "Dramatically increased cross-office engagement, comments, and internal camaraderie on social channels"
         ]
       }
     ],
     outcomes: [
       { label: "Initiative Origin", value: "100% Proactive", subtext: "Self-directed from conception to executive sign-off" },
       { label: "Approval Ladder", value: "3-Tier Signoff", subtext: "Pitched & approved by Senior, Manager, & COO" },
-      { label: "HR Impact", value: "Company-Wide", subtext: "Keka honors elevated to public employer brand equity" }
+      { label: "Culture Impact", value: "Company-Wide", subtext: "Keka honors & member birthdays elevated to engaging social media traditions" }
     ],
-    outcomeSummary: "Demonstrated the power of unsolicited design leadership—transforming standard HR communications and internal certificates into captivating social showcases that strengthened employee pride and employer brand perception.",
+    outcomeSummary: "Demonstrated the power of unsolicited design leadership—transforming standard HR communications and internal certificates into captivating social showcases and dynamic motion carousels that strengthened employee pride and employer brand perception.",
     gallerySections: [
       {
         sectionTitle: "People Operations — 3D Glassmorphic Talent Acquisition Campaigns",
@@ -3285,17 +3312,6 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
             caption: "We're Hiring — Jr. Software Developer (Glowing Glass Terminal, Code Blocks & AI Processor)",
             aspectRatio: "1024/682"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Internal Recognition & Talent Onboarding — Keka to Public Social Showcases",
-        sectionDescription: "Proactive cultural initiative conceived from the ground up: previously, monthly employee honors were locked inside internal HR software (Keka) as simple PDF certificates. Sadman conceptualized transforming these into public-facing, high-craft social showcases—pitching the concept upwards from Senior Designer to Engineering Manager and the Chief Operating Officer (COO) to secure complete executive approval. Accompanied by standardized 'Welcome Aboard' talent arrival showcases.",
-        images: [
-          {
-            url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
-            caption: "Performer of the Month — Ground-Up Initiative Pitching & Launching Social Recognition (Sadman Zaman Khan, November 2025)",
-            aspectRatio: "1/1"
           },
           {
             url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
@@ -3303,9 +3319,42 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "Employee Recognition — Ground-Up Social Transformation from Keka HRMS",
+        sectionDescription: "Proactive cultural initiative conceived from the ground up: previously, monthly employee honors were locked inside internal HR software (Keka) as simple PDF certificates. Sadman conceptualized transforming these into public-facing, high-craft social showcases—pitching the concept upwards from Senior Designer to Engineering Manager and the Chief Operating Officer (COO) to secure complete executive approval.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
+            caption: "Performer of the Month — Ground-Up Initiative Pitching & Launching Social Recognition (Sadman Zaman Khan, November 2025)",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Proactive Culture Initiatives — Dynamic Member Birthday Carousel Reel",
+        sectionDescription: "Autonomous culture initiative conceived and executed by Sadman to transform repetitive static birthday cake graphics into energetic, member-first motion carousel reels celebrating colleagues across global offices.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-03-member-birthday-carousel-initiative.webp",
+            caption: "Member Birthday Carousel Motion Initiative — Ground-up transformation: reimagined static circular cake graphics into dynamic, member-first video spotlights celebrating individual colleagues across global offices.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/1492889088963334"
+          }
+        ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/reels/reel-03-member-birthday-carousel-initiative.webp",
+        caption: "Member Birthday Carousel Motion Initiative",
+        type: "mobile",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/1492889088963334"
+      },
       {
         url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
         caption: "HR Creative — UI/UX & Graphic Design Paid Internship",
