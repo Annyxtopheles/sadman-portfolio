@@ -2644,6 +2644,18 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Official event collateral, roll-up exhibition banner mockups, leadership congratulations posts, and commemorative social media graphics created for Munshiganj Polytechnic Institute Rover Scout Group and Bangladesh Scouts regional districts.",
         images: [
           {
+            url: "/assets/projects/industrial-training-freelance/munshiganj-district-rover-congratulations-selim-chowdhury.webp",
+            caption: "Bangladesh Scouts, Munshiganj District Rover — Congratulatory Social Media Banner for Prof. A.K.M. Selim Chowdhury (Elected Treasurer at the 49th Triennial Council, Rover Region)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/mupirsg-birthday-nafiur-rahman.webp",
+            caption: "Munshiganj Polytechnic Institute Rover Scout Group — Birthday Post for Md. Nafiur Rahman (Assistant Patrol Leader, Bondhu Patrol)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
             url: "/assets/projects/industrial-training-freelance/scouts-library-facebook-cover.webp",
             caption: "Scouts Library — Official Facebook Page Cover Banner (Abu Sayed Md. Akramuzzaman, Asst. Leader Trainer, Bangladesh Scouts)",
             aspectRatio: "1024/534",
@@ -2858,11 +2870,65 @@ export const PROJECTS: Project[] = [
             caption: "Breeze & Contemplation — Flat Vector Fashion Portrait with Flowing Windblown Hair and Warm Ambient Shadows",
             aspectRatio: "1/1",
             type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/vector-low-poly-rover-scout-leader.webp",
+            caption: "Rover Scout Leader — Low Polygon Geometric Vector Portrait (Faceted low-poly modeling, glasses, Bangladesh Scouts neckerchief, and woggle)",
+            aspectRatio: "1/1",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Emblem & Insignia Design — School & Scout Unit Identity Systems",
+        sectionDescription: "High-precision vector logo recreation and heraldic emblem design. Features the authentic circular seal recreation for Meherpur Government High School (Est. 1854) and the official unit emblem design for Meherpur Govt. High School Scout Group integrating the flame of learning, Bangladesh Scouts fleur-de-lis, and the three-finger scout salute sign.",
+        images: [
+          {
+            url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-vector-logo.webp",
+            caption: "Meherpur Government High School (Est. 1854) — Official School Emblem Vector Recreation ('মেহেরপুর সরকারী উচ্চ বিদ্যালয়, মেহেরপুর — এসো সুন্দর হই')",
+            aspectRatio: "1/1",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-scout-group-logo.webp",
+            caption: "Meherpur Government High School Scout Group — Official Unit Insignia & Crest Design ('মেহেরপুর সরকারী উচ্চ বিদ্যালয় স্কাউট গ্রুপ — সদা প্রস্তুত')",
+            aspectRatio: "1/1",
+            type: "desktop"
           }
         ]
       }
     ],
     galleryImages: [
+      {
+        url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-vector-logo.webp",
+        caption: "Meherpur Govt. High School — Vector Logo Recreation",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/meherpur-govt-high-school-scout-group-logo.webp",
+        caption: "Meherpur Govt. High School Scout Group — Unit Logo Design",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/vector-low-poly-rover-scout-leader.webp",
+        caption: "Rover Scout Leader — Low Poly Vector Illustration",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/munshiganj-district-rover-congratulations-selim-chowdhury.webp",
+        caption: "Munshiganj District Rover — Congratulatory Post",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/industrial-training-freelance/mupirsg-birthday-nafiur-rahman.webp",
+        caption: "MUPIRSG — Birthday Post for Md. Nafiur Rahman",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
       {
         url: "/assets/projects/industrial-training-freelance/vector-mupi-campus-architecture.webp",
         caption: "MUPI Campus Architecture — Vector Illustration",
