@@ -137,17 +137,6 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         />
       </div>
 
-      {/* Floating Badges */}
-      <div className={`absolute ${isInline ? 'top-2 left-2' : 'top-3 left-3'} pointer-events-none z-20`}>
-        <span className={`${isInline ? 'px-2 py-0.5 text-[9px]' : 'px-2.5 py-1 text-[10px]'} rounded-[3px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#CCCCCC] border border-[#2E2E2E] backdrop-blur-sm shadow-md`}>
-          {beforeLabel}
-        </span>
-      </div>
-      <div className={`absolute ${isInline ? 'top-2 right-2' : 'top-3 right-3'} pointer-events-none z-20`}>
-        <span className={`${isInline ? 'px-2 py-0.5 text-[9px]' : 'px-2.5 py-1 text-[10px]'} rounded-[3px] font-mono uppercase tracking-wider bg-[#000000]/85 text-[#FFFFFF] border border-[#3E3E3E] backdrop-blur-sm shadow-md`}>
-          {afterLabel}
-        </span>
-      </div>
 
       {/* Interactive Divider Line & Handle */}
       <div
