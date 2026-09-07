@@ -2155,6 +2155,222 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "noborangi",
+    slug: "noborangi",
+    title: "Noborangi Brand Identity",
+    category: "Brand Systems",
+    status: "CASE STUDY",
+    company: "SJ Innovation (Internship)",
+    client: "Noborangi (Practice Work)",
+    year: "2024",
+    duration: "Practice Project",
+    scope: [
+      "Brand Identity",
+      "Logotype Design",
+      "Editorial Typography",
+      "Storefront Architecture Mockup",
+      "Stationery & Print Collateral",
+      "Retail Packaging Design",
+      "Merchandise & Apparel",
+      "Mobile App Icon & UI"
+    ],
+    summary: "Complete fashion and cultural lifestyle brand identity developed as an intensive design practice project during my internship at SJ Innovation. Conceived a high-contrast editorial serif logotype with starry diacritical accents, a rich crimson and cream color architecture, luxury retail packaging, boutique architectural facade signage, split-tone merchandise, corporate stationery, and mobile application iconography under the core philosophy 'Celebrate tradition with Style'.",
+    coverImage: "/assets/projects/noborangi/noborangi-banner-cover.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Synthesizing traditional Bengali and South Asian cultural heritage with contemporary minimalist luxury fashion aesthetics, avoiding outdated ethnic clichés while preserving genuine craft authenticity.",
+      role: "Brand Identity Designer (Internship Practice) — conceived the comprehensive visual identity from the ground up: primary logotype, monogram, color system, retail packaging, boutique exterior mockups, apparel, executive stationery, and mobile touchpoints.",
+      method: "Engineered a high-contrast editorial serif wordmark accented with a refined four-pointed sparkle star. Established a rich heritage crimson palette paired with crisp white and blush tones, extending across physical boutique collateral and digital screens."
+    },
+    problem: "Ethnic fashion brands frequently face a polarizing dilemma: either they rely on overly ornate, visually busy traditional motifs that alienate modern consumers, or they strip away their cultural identity entirely in pursuit of generic Western minimalism. Noborangi required an aesthetic identity that honors deep cultural roots while radiating high-fashion editorial sophistication.",
+    process: [
+      {
+        title: "Logotype Architecture & Cultural Geometry",
+        description: "Engineered a custom condensed serif wordmark designed to project haute couture elegance with cultural resonance.",
+        details: [
+          "Crafted high-contrast Didone-inspired letterforms featuring ultra-fine hairlines, razor serifs, and tall vertical proportions",
+          "Embedded a four-pointed diamond star between syllables, symbolizing the dual meaning of 'Nobo' (New) and 'Rangi' (Colors / Vibrancy)",
+          "Paired with a fluid cursive script tagline: 'Celebrate tradition with Style'",
+          "Constructed a compact 'NR' monogram lockup optimized for small-scale debossing, wax seals, and mobile app icons"
+        ]
+      },
+      {
+        title: "Regal Crimson Palette & Material Architecture",
+        description: "Built a sensory color and substrate system rooted in celebratory heritage and contemporary retail luxury.",
+        details: [
+          "Selected a regal festive crimson red as the primary anchor hue, evoking bridal warmth, celebration, and festive tradition",
+          "Balanced against crisp architectural white, blush watercolor gradients, and unbleached kraft paper textures for sustainable packaging",
+          "Integrated dark charcoal and black slate substrates for executive stationery and drafting tools to establish corporate gravitas"
+        ]
+      },
+      {
+        title: "Omnichannel Touchpoint Extension",
+        description: "Applied the visual identity across the complete physical and digital customer journey.",
+        details: [
+          "Storefront Architecture: Classical wood-paneled boutique facade in signature crimson with frosted window vinyl and an exterior illuminated blade sign",
+          "Packaging Suite: Rigid luxury retail shopping bags with crimson braided cord handles and subtle watermark typography",
+          "Apparel & Merch: Split-tone colorblock hoodies, canvas totes, dual-tone ceramic mugs, and branded metal pens",
+          "Executive Stationery: Official corporate letterhead, crimson presentation envelopes, and embossed business cards for marketing executives",
+          "Digital Touchpoint: iOS app icon featuring the illuminated white 'NR' monogram centered on a crimson squircle"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Brand Touchpoints", value: "10+ Collateral Systems", subtext: "Storefront, signage, packaging, apparel, stationery & mobile app" },
+      { label: "Typography System", value: "Custom Editorial Serif", subtext: "High-contrast Didone letterforms + flowing script tagline" },
+      { label: "Color Architecture", value: "Regal Crimson & Cream", subtext: "Heritage-inspired festive crimson with modern blush accents" }
+    ],
+    outcomeSummary: "Created a versatile, cohesive fashion brand identity during my SJ Innovation internship that demonstrates the capacity to conceptualize, style, and scale a luxury retail brand across architectural, print, merchandise, and digital touchpoints.",
+    gallerySections: [
+      {
+        sectionTitle: "Brand Identity Overview & Moodboard",
+        sectionDescription: "High-level brand presentation showcasing the unified design system, editorial art direction, and core aesthetic anchors.",
+        images: [
+          {
+            url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
+            caption: "Noborangi Editorial Banner — Signature crimson duotone fashion portrait featuring intricate floral embroidery and the bold white NOBO RANGI logotype.",
+            type: "portrait",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-brand-identity-grid.webp",
+            caption: "3×3 Brand Identity Grid — Complete design overview uniting logotype, business stationery, blade signage, apparel, boutique facade, packaging, and mobile icon.",
+            type: "desktop",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Touchpoint Applications & Collateral System",
+        sectionDescription: "Detailed breakdown of each physical and digital touchpoint engineered for the Noborangi retail experience.",
+        images: [
+          {
+            url: "/assets/projects/noborangi/noborangi-01-logo-tagline.webp",
+            caption: "Primary Logotype & Tagline — High-contrast serif wordmark with star diacritic and 'Celebrate tradition with Style' script.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-02-business-cards.webp",
+            caption: "Executive Business Cards — Dual-sided crimson and watercolor blush card design featuring the custom 'NR' monogram.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-03-blade-signage.webp",
+            caption: "Architectural Blade Signage — Illuminated square exterior lightbox mounted on textured commercial building tile.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-04-apparel-merchandise.webp",
+            caption: "Apparel & Lifestyle Merch — Split-tone colorblock hoodie, canvas tote bag, stacked ceramic mugs, and branded pens.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-05-storefront-facade.webp",
+            caption: "Flagship Boutique Storefront — Parisian-inspired crimson wood-molded facade with large-scale window vinyl branding.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-06-luxury-shopping-bag.webp",
+            caption: "Luxury Retail Shopping Bag — Perspective view of high-gsm paper carrier bag with vertical wordmark treatment.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-07-stationery-suite.webp",
+            caption: "Official Corporate Stationery — Watermarked letterhead, crimson envelope, business cards, and drafting tools on slate.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-08-retail-packaging-bags.webp",
+            caption: "Retail Gift Packaging — Pair of branded shopping bags featuring crimson braided rope handles and subtle script watermark.",
+            type: "mockup",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/noborangi/noborangi-09-mobile-app-icon.webp",
+            caption: "Digital Experience & Mobile App Icon — iOS home screen placement highlighting the white 'NR' monogram on crimson.",
+            type: "mobile",
+            aspectRatio: "1/1"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
+        caption: "Noborangi Editorial Cover Banner",
+        type: "portrait",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-brand-identity-grid.webp",
+        caption: "Noborangi 3×3 Brand Identity Grid",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-01-logo-tagline.webp",
+        caption: "Primary Logotype & Tagline Lockup",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-02-business-cards.webp",
+        caption: "Executive Business Cards & Monogram",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-03-blade-signage.webp",
+        caption: "Illuminated Blade Signage Mockup",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-04-apparel-merchandise.webp",
+        caption: "Split-Tone Merchandise & Apparel",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-05-storefront-facade.webp",
+        caption: "Flagship Boutique Retail Facade",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-06-luxury-shopping-bag.webp",
+        caption: "Luxury Retail Shopping Bag Mockup",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-07-stationery-suite.webp",
+        caption: "Corporate Stationery & Letterhead Suite",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-08-retail-packaging-bags.webp",
+        caption: "Retail Packaging & Gift Shopping Bags",
+        type: "mockup",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/noborangi/noborangi-09-mobile-app-icon.webp",
+        caption: "iOS Mobile Application Icon",
+        type: "mobile",
+        aspectRatio: "1/1"
+      }
+    ]
+  },
+  {
     id: "print-designs",
     slug: "print-designs",
     title: "Print & Workplace Visual Systems",
