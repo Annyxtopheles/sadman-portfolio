@@ -8,6 +8,7 @@ import { getProjectBySlug, getAdjacentProjects, Project, GalleryImage } from '@/
 import ImageTrail from '@/components/ImageTrail';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { ImageLightbox } from '@/components/ImageLightbox';
+import { CarouselViewer } from '@/components/CarouselViewer';
 import NotFound from '@/pages/NotFound';
 
 /**
@@ -213,6 +214,7 @@ export const CaseStudyDetail: React.FC = () => {
   const project = slug ? getProjectBySlug(slug) : undefined;
   const [activeEmbeds, setActiveEmbeds] = useState<Record<string, boolean>>({});
   const [viewMode, setViewMode] = useState<'expanded' | 'compact'>('expanded');
+  const [sectionViewModes, setSectionViewModes] = useState<Record<number, 'carousel' | 'grid'>>({});
   const [selectedLightboxImg, setSelectedLightboxImg] = useState<string | null>(null);
   const [selectedLightboxAlt, setSelectedLightboxAlt] = useState<string>('');
   const [activeVideoModal, setActiveVideoModal] = useState<{
@@ -401,54 +403,111 @@ export const CaseStudyDetail: React.FC = () => {
 
           {project.gallerySections && project.gallerySections.length > 0 ? (
             <div className="space-y-16 pt-2">
-              {project.gallerySections.map((section, sIdx) => (
-                <section key={sIdx} className="space-y-6">
-                  <div className="space-y-2 border-b border-[#1F1F1F] pb-4">
-                    <h2 className="text-xl sm:text-2xl font-normal text-[#FFFFFF] tracking-tight">
-                      {section.sectionTitle}
-                    </h2>
-                    {section.sectionDescription && (
-                      <p className="text-sm sm:text-base text-[#999999] font-normal max-w-3xl leading-relaxed">
-                        {section.sectionDescription}
-                      </p>
-                    )}
-                  </div>
+              {project.gallerySections.map((section, sIdx) => {
+                const isCarouselSection =
+                  section.images.length > 1 && section.images.every((img) => img.type === 'carousel');
+                const currentSectionMode = sectionViewModes[sIdx] ?? (isCarouselSection ? 'carousel' : 'grid');
 
-                  {section.documentUrl && (
-                    <div className="p-4 sm:p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-[#333333] transition-colors">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-[2px] bg-[#141414] border border-[#262626] flex items-center justify-center text-xs text-[#FFFFFF] shrink-0 font-mono font-medium">
-                          PDF
+                return (
+                  <section key={sIdx} className="space-y-6">
+                    <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#1F1F1F] pb-4">
+                      <div className="space-y-2 max-w-3xl">
+                        <div className="flex items-center gap-3">
+                          <h2 className="text-xl sm:text-2xl font-normal text-[#FFFFFF] tracking-tight">
+                            {section.sectionTitle}
+                          </h2>
+                          {isCarouselSection && (
+                            <span className="hidden sm:inline-flex px-2 py-0.5 rounded-[3px] bg-[#171717] border border-[#262626] text-[10px] font-mono uppercase tracking-wider text-[#A0A0A0]">
+                              Carousel ({section.images.length} Slides)
+                            </span>
+                          )}
                         </div>
-                        <div className="space-y-0.5">
-                          <div className="text-sm text-[#FFFFFF] font-normal">
-                            {section.documentTitle || 'Executive Briefing Document'}
-                          </div>
-                          <div className="text-xs text-[#888888]">
-                            Full vector 2-page document developed in coordination with the enterprise sales team
-                          </div>
-                        </div>
+                        {section.sectionDescription && (
+                          <p className="text-sm sm:text-base text-[#999999] font-normal leading-relaxed">
+                            {section.sectionDescription}
+                          </p>
+                        )}
                       </div>
-                      <a
-                        href={section.documentUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-colors font-normal shrink-0 self-start sm:self-auto cursor-pointer"
-                      >
-                        <span>View / Download PDF ↗</span>
-                      </a>
-                    </div>
-                  )}
 
-                  {/* Mode 1: Expanded View */}
-                  {viewMode === 'expanded' ? (
-                    <div
-                      className={`grid gap-6 lg:gap-8 ${
-                        section.images.length === 1
-                          ? 'grid-cols-1 max-w-4xl'
-                          : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
-                      }`}
-                    >
+                      {/* Section-level toggle: Interactive Carousel Reader vs Grid View */}
+                      {isCarouselSection && viewMode === 'expanded' && (
+                        <div className="flex items-center gap-1.5 p-1 rounded-[4px] bg-[#111111] border border-[#222222] self-start sm:self-auto shrink-0">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setSectionViewModes((prev) => ({ ...prev, [sIdx]: 'carousel' }))
+                            }
+                            className={`px-3 py-1 text-xs rounded-[3px] transition-all font-mono uppercase tracking-wider cursor-pointer ${
+                              currentSectionMode === 'carousel'
+                                ? 'bg-[#262626] text-[#FFFFFF] shadow-sm'
+                                : 'text-[#777777] hover:text-[#DDDDDD]'
+                            }`}
+                          >
+                            Carousel Reader
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setSectionViewModes((prev) => ({ ...prev, [sIdx]: 'grid' }))
+                            }
+                            className={`px-3 py-1 text-xs rounded-[3px] transition-all font-mono uppercase tracking-wider cursor-pointer ${
+                              currentSectionMode === 'grid'
+                                ? 'bg-[#262626] text-[#FFFFFF] shadow-sm'
+                                : 'text-[#777777] hover:text-[#DDDDDD]'
+                            }`}
+                          >
+                            Grid ({section.images.length})
+                          </button>
+                        </div>
+                      )}
+                    </div>
+
+                    {section.documentUrl && (!isCarouselSection || currentSectionMode === 'grid') && (
+                      <div className="p-4 sm:p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-[#333333] transition-colors">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-[2px] bg-[#141414] border border-[#262626] flex items-center justify-center text-xs text-[#FFFFFF] shrink-0 font-mono font-medium">
+                            PDF
+                          </div>
+                          <div className="space-y-0.5">
+                            <div className="text-sm text-[#FFFFFF] font-normal">
+                              {section.documentTitle || 'Executive Briefing Document'}
+                            </div>
+                            <div className="text-xs text-[#888888]">
+                              Full vector 2-page document developed in coordination with the enterprise sales team
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          href={section.documentUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-[4px] text-xs uppercase tracking-wider bg-[#FFFFFF] text-[#000000] hover:bg-[#E5E5E5] transition-colors font-normal shrink-0 self-start sm:self-auto cursor-pointer"
+                        >
+                          <span>View / Download PDF ↗</span>
+                        </a>
+                      </div>
+                    )}
+
+                    {/* Mode 1: Expanded View */}
+                    {viewMode === 'expanded' ? (
+                      isCarouselSection && currentSectionMode === 'carousel' ? (
+                        <div className="max-w-xl mx-auto w-full">
+                          <CarouselViewer
+                            slides={section.images}
+                            title={section.sectionTitle}
+                            documentUrl={section.documentUrl}
+                            documentTitle={section.documentTitle}
+                            onOpenLightbox={handleOpenLightbox}
+                          />
+                        </div>
+                      ) : (
+                        <div
+                          className={`grid gap-6 lg:gap-8 ${
+                            section.images.length === 1
+                              ? 'grid-cols-1 max-w-4xl'
+                              : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+                          }`}
+                        >
                       {section.images.map((img, gIdx) => {
                         const embedKey = `${sIdx}-${gIdx}`;
                         const isEmbedActive = activeEmbeds[embedKey];
@@ -586,9 +645,10 @@ export const CaseStudyDetail: React.FC = () => {
                         );
                       })}
                     </div>
-                  ) : (
-                    /* Mode 2: Minimized View (Small Previews with Large Hover Pop-Up, exactly like About page) */
-                    <div className="relative">
+                  )
+                ) : (
+                  /* Mode 2: Minimized View (Small Previews with Large Hover Pop-Up, exactly like About page) */
+                  <div className="relative">
                       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                         {section.images.map((img, gIdx) => (
                           <CompactThumbnailCard
@@ -602,9 +662,10 @@ export const CaseStudyDetail: React.FC = () => {
                         ))}
                       </div>
                     </div>
-                  )}
-                </section>
-              ))}
+                    )}
+                  </section>
+                );
+              })}
             </div>
           ) : (
             /* Fallback when project has no sections */
