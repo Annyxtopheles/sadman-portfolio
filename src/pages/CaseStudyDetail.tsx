@@ -526,6 +526,8 @@ export const CaseStudyDetail: React.FC = () => {
                               ? section.images[0]?.aspectRatio === '1/1'
                                 ? 'grid-cols-1 max-w-md'
                                 : 'grid-cols-1 max-w-4xl'
+                              : section.images.length === 2 || section.images.every((img) => img.type === 'comparison')
+                              ? 'grid-cols-1 lg:grid-cols-2'
                               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                           }`}
                         >

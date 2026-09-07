@@ -135,12 +135,12 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Transformed a cluttered technical proof-of-concept into a clean, modern AI workspace praised by users for its speed, clarity, and ergonomic multi-agent orchestration.",
     gallerySections: [
       {
-        sectionTitle: "Workspace Dashboard & Global Composer Evolution",
-        sectionDescription: "Replacing the cluttered, high-saturation legacy interface with an ergonomic, distraction-free command center featuring a unified global composer, rapid model provider switching, and clean workspace telemetry.",
+        sectionTitle: "Interface Evolutions & Before/After Comparisons",
+        sectionDescription: "Interactive before-and-after comparisons contrasting the legacy interface against the redesigned minimal workspace across core workflows. Slide horizontally to inspect the architectural and visual overhaul.",
         images: [
           {
             url: "/assets/projects/collabai/collabai-dashboard-after.webp",
-            caption: "Interactive Evolution — Slide to compare legacy dashboard vs. redesigned minimal workspace",
+            caption: "Workspace Dashboard & Composer — Slide to compare legacy interface vs. redesigned workspace",
             aspectRatio: "1024/532",
             type: "comparison",
             comparison: {
@@ -149,16 +149,10 @@ export const PROJECTS: Project[] = [
               beforeLabel: "Original Interface",
               afterLabel: "Redesigned Workspace"
             }
-          }
-        ]
-      },
-      {
-        sectionTitle: "Conversational UI & Multi-Model Streaming Canvas",
-        sectionDescription: "Overhauling the live chat environment from heavy bordered bubbles to a fluid, token-streamed conversational canvas with deep reasoning feedback, multi-provider model selection (Groq, Gemini, OpenRouter), and proactive suggestion chips.",
-        images: [
+          },
           {
             url: "/assets/projects/collabai/collabai-chat-after.webp",
-            caption: "Interactive Evolution — Slide to compare original chat flow vs. redesigned multi-model conversation",
+            caption: "Conversational UI & Canvas — Slide to compare original chat flow vs. fluid streaming canvas",
             aspectRatio: "1024/532",
             type: "comparison",
             comparison: {
