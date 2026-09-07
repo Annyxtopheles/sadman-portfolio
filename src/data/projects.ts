@@ -234,7 +234,7 @@ export const PROJECTS: Project[] = [
     scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
     summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
     coverImage: "/assets/projects/clandest-mockup.webp",
-    liveUrl: "https://annyxtopheles.github.io/clandest-agency-site/",
+    liveUrl: "https://clandestagency.pages.dev/",
     tldr: {
       challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
       role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
