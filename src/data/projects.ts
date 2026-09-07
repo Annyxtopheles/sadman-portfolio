@@ -2432,7 +2432,7 @@ export const PROJECTS: Project[] = [
     scope: ["Financial UI", "Admin Console", "Role-Based Access Control", "Credit Intelligence", "Design Systems", "Figma Prototyping"],
     summary: "Comprehensive enterprise design system and administrative console for the Aegis Credit Terminal—an institutional debt intelligence and risk monitoring platform. Powers corporate credit onboarding, tiered role-based user management, live analyst debt pricing commentary, and macroeconomic sector news curation.",
     coverImage: "/assets/projects/aegis-terminal/aegis-credit-terminal-cover.webp",
-    liveUrl: null,
+    liveUrl: "https://annyxtopheles.github.io/aegis-credit-terminal/",
     tldr: {
       challenge: "Institutional credit operators and terminal administrators required a robust, distraction-free control console to manage multi-company onboarding, role-based analyst permissions, and real-time debt pricing and macroeconomic sector intelligence without operational latency.",
       role: "Lead Product Designer — conceptualized and engineered the complete dark-mode design system, administrative workflows, entity onboarding architecture, and editorial publishing console.",
@@ -2888,56 +2888,56 @@ export const PROJECTS: Project[] = [
     client: "NAGAE Studio (Redesign Showcase of Production Client Platform)",
     year: "2025 – 2026",
     duration: "4 Months",
-    scope: ["Retailer Platform", "Admin Management", "Product Catalog CMS", "AI Knowledge Base", "Performance Analytics", "Luxury Bridal UX"],
-    summary: "Enterprise administrative management portal and retailer intelligence ecosystem designed for NAGAE Studio—a modern luxury bridal brand. Features comprehensive gown catalog administration with fabric and silhouette tagging, real-time showroom performance analytics, and a custom NAGAE AI Knowledge Base empowering bridal stylists with instant fit and modification intelligence.",
+    scope: ["Retailer Platform", "Admin Management", "Sales Intelligence CRM", "Stylist Mobile App", "AI Knowledge Base", "Performance Analytics", "Luxury Bridal UX"],
+    summary: "Comprehensive multi-surface retailer ecosystem and administrative intelligence platform designed for NAGAE Studio—a modern luxury bridal brand. Unites gown catalog CMS management, B2B wholesale boutique CRM pipeline tracking, real-time showroom performance analytics, and an in-suite Stylist Mobile App with interactive AI fitting guidance.",
     coverImage: "/assets/projects/nagae-studio/nagae-studio-cover-banner.webp",
-    liveUrl: null,
+    liveUrl: "https://annyxtopheles.github.io/nagae-studio/",
     tldr: {
-      challenge: "Luxury bridal retail requires rapid coordination between showroom stylists and studio management. The client needed a unified administrative management platform to oversee global retailer networks, manage high-value gown catalogs with nuanced customization options, and deliver instant technical answers on gown alterations and lead times.",
-      role: "Lead UI/UX Designer — conceptualized and designed the complete NAGAE Studio administrative management console, product catalog architecture, analytics dashboards, and AI knowledge base.",
-      method: "Engineered high-elegance editorial dashboard layouts with warm blush accents (#E58A9F), serif typography hierarchies, multi-attribute tagging systems, and real-time stylist query telemetry."
+      challenge: "Luxury bridal retail demands rapid coordination across studio leadership, wholesale sales reps, and showroom stylists. The client needed a unified multi-platform solution to manage gown collections, track boutique wholesale accounts, and deliver instant answers on gown alterations and lead times directly inside fitting suites.",
+      role: "Lead UI/UX Designer — conceptualized and engineered the full multi-surface ecosystem across Admin Management, Sales Intelligence CRM, and the one-handed Stylist Mobile Application with AI fitting support.",
+      method: "Designed an editorial luxury design system with warm blush accents (#E58A9F), high-contrast tabular CRM pipelines, multi-attribute gown categorization, and a conversational AI fitting knowledge base."
     },
-    problem: "Bridal stylists assisting brides in fitting suites need instant answers on complex gown modifications, split sizing, fabric care, and delivery lead times. Studio administrators previously lacked centralized telemetry to track which gown styles were trending in showrooms, while managing catalog additions across intricate combinations of fabrics (Mikado, Crepe, Tulle, Silk Charmeuse) and silhouettes (A-Line, Trumpet, Ball Gown) was manual and error-prone.",
+    problem: "Bridal appointments require personal connection without administrative distraction. Stylists assisting brides in fitting suites need instant answers on custom gown modifications, split sizing, fabric care, and delivery lead times. Concurrently, studio management lacked unified pipeline tracking for authorized wholesale boutique stockists, while catalog administration across complex fabric and silhouette combinations was fragmented.",
     process: [
       {
-        title: "Platform Performance & Showroom Analytics",
-        description: "Architected an executive performance overview tracking showroom health metrics and gown demand curves across authorized retail partners.",
+        title: "Admin Management & Product Catalog CMS",
+        description: "Architected an executive performance overview and product catalog CMS tracking showroom health metrics, gown demand curves, and inventory attributes.",
         details: [
           "Monitored active stylist engagement (104 active stylists), monthly logins, and catalog view volume across 7D/30D/90D/1Y timeframes",
           "Visualized showroom popularity ranking bestsellers (Sloan Mikado, Ophelia Tulle, Sloan Fitted) against newer collection releases",
-          "Integrated stylist quiz and training completion metrics to guarantee consistent brand representation across global retail locations"
+          "Engineered multi-select attribute tagging for luxury fabrics (Mikado, Silk Charmeuse, Organza) and silhouettes (A-Line, Trumpet, Bias Cut)"
         ]
       },
       {
-        title: "NAGAE AI Stylist Knowledge Base",
-        description: "Designed a specialized AI assistance dashboard providing showroom stylists with immediate answers to technical bridal styling questions.",
+        title: "B2B Sales Intelligence CRM & Boutique Pipeline",
+        description: "Designed a dedicated wholesale CRM pipeline for studio sales directors to manage boutique retail accounts and automate operational connectors.",
         details: [
-          "Tracked resolution confidence (98.2%) and stylist satisfaction scores (4.9/5) across monthly query volumes",
-          "Identified top stylist query themes: custom gown modifications, rush production lead times, fabric care, and veil pairings",
-          "Reduced showroom escalations to studio production teams by delivering instant, verified sizing and alteration guidance"
+          "Visual Kanban deal pipeline tracking stockist progression: Prospecting, Initial Contact, Sample Sent, Negotiating, and Won",
+          "External connector hub integrating Google Sheets order sync, Front email threads, Google Calendar trunk shows, and AI meeting notes",
+          "Automated stockist communication timelines to accelerate wholesale sample turnarounds and trunk show agreements"
         ]
       },
       {
-        title: "Product Catalog & Multi-Attribute Gown Management",
-        description: "Engineered a high-speed catalog management matrix and new product authoring workflow tailored for luxury bridal collections.",
+        title: "Stylist Mobile Application & In-Suite AI Assistant",
+        description: "Engineered an ergonomic one-handed mobile application for showroom stylists in bridal fitting suites with live AI product support.",
         details: [
-          "Structured multi-select attribute tagging for luxury fabrics (Mikado, Silk Charmeuse, Organza) and silhouettes (A-Line, Trumpet, Bias Cut)",
-          "Quick-filter search and CSV export functionality for rapid wholesale price list distribution and inventory audits",
-          "Automated product imagery preview linking and status badging (Bestseller, New, Customizable) for showroom consistency"
+          "Ask NAGAE AI: Instant mobile assistant delivering accurate answers for alterations ('Can Peyton be made with an A-line skirt?'), veil pairings, and silhouette advice",
+          "Resolution confidence tracking (98.2%) with 4.9/5 stylist satisfaction ratings across showroom appointments",
+          "Gamified stylist profiles with certification tiers (Expert Level 3), point accruals, and monthly retail leaderboard rankings"
         ]
       }
     ],
-    aiWorkflow: "Integrated the NAGAE AI Knowledge Base telemetry into the administrative interface, enabling studio leads to monitor common stylist queries and continuously refine bridal fitting guides.",
+    aiWorkflow: "Integrated the NAGAE AI Knowledge Base across both the mobile stylist app and admin console, allowing stylists to receive instant fitting recommendations while studio directors monitor common query trends.",
     outcomes: [
       { label: "Resolution Confidence", value: "98.2%", subtext: "Accuracy on stylist alteration and sizing queries via NAGAE AI" },
-      { label: "Catalog View Velocity", value: "2,450+", subtext: "Monthly style lookbook views across authorized bridal retail showrooms" },
+      { label: "Active Stylists", value: "104+", subtext: "Active showroom stylists across authorized bridal retail partners" },
       { label: "Stylist Satisfaction", value: "4.9 / 5", subtext: "Helpfulness rating from retail stylists using the platform" }
     ],
-    outcomeSummary: "Delivered an elevated luxury bridal management platform combining editorial sophistication with operational rigor—bridging the gap between studio administration, authorized retail showrooms, and intelligent stylist support.",
+    outcomeSummary: "Delivered a cohesive luxury bridal retail ecosystem bridging the gap between studio administration, wholesale boutique management, and intelligent fitting suite stylist support.",
     gallerySections: [
       {
-        sectionTitle: "Admin Management & Retailer Platform",
-        sectionDescription: "Comprehensive administrative management surfaces engineered for NAGAE Studio, uniting real-time showroom performance analytics, AI-assisted stylist intelligence, and luxury gown catalog publishing.",
+        sectionTitle: "Admin Management & Product Catalog CMS",
+        sectionDescription: "Centralized administrative management console for studio leadership, featuring comprehensive gown catalog management, multi-attribute fabric/silhouette tagging, and real-time showroom performance analytics.",
         images: [
           {
             url: "/assets/projects/nagae-studio/nagae-admin-01-performance-analytics.webp",
@@ -2960,6 +2960,42 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/nagae-studio/nagae-admin-04-add-product.webp",
             caption: "Admin Management — New Gown Product Creator & Fabric/Silhouette Attribute Tagger",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Sales Intelligence CRM & Wholesale Pipeline",
+        sectionDescription: "B2B wholesale relationship management portal designed for studio sales directors, featuring live stockist deal pipeline tracking and multi-channel system integrations.",
+        images: [
+          {
+            url: "/assets/projects/nagae-studio/nagae-crm-01-system-integrations.webp",
+            caption: "Sales Intelligence CRM — External Connectors & System Integrations (Google Sheets, Front, Calendar & AI Notes)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nagae-studio/nagae-crm-02-boutique-pipeline.webp",
+            caption: "Sales Intelligence CRM — Boutique Deal Pipeline & Wholesale Account Kanban",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Stylist Mobile Application & In-Suite AI Assistant",
+        sectionDescription: "Mobile-first fitting suite companion engineered for bridal stylists, integrating immediate conversational AI assistance for gown customizations and stylist leaderboard gamification.",
+        images: [
+          {
+            url: "/assets/projects/nagae-studio/nagae-stylist-01-ask-ai-mobile.webp",
+            caption: "Stylist Mobile App — Ask NAGAE AI Interactive Fitting & Gown Modification Assistant",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nagae-studio/nagae-stylist-02-profile-leaderboard.webp",
+            caption: "Stylist Mobile App — Stylist Profile, Certification Badges & Performance Leaderboard",
             type: "desktop",
             aspectRatio: "16/9"
           }
@@ -2988,6 +3024,30 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/nagae-studio/nagae-admin-04-add-product.webp",
         caption: "Admin Management — New Gown Product Creator & Fabric/Silhouette Attribute Tagger",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nagae-studio/nagae-crm-01-system-integrations.webp",
+        caption: "Sales Intelligence CRM — External Connectors & System Integrations (Google Sheets, Front, Calendar & AI Notes)",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nagae-studio/nagae-crm-02-boutique-pipeline.webp",
+        caption: "Sales Intelligence CRM — Boutique Deal Pipeline & Wholesale Account Kanban",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nagae-studio/nagae-stylist-01-ask-ai-mobile.webp",
+        caption: "Stylist Mobile App — Ask NAGAE AI Interactive Fitting & Gown Modification Assistant",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nagae-studio/nagae-stylist-02-profile-leaderboard.webp",
+        caption: "Stylist Mobile App — Stylist Profile, Certification Badges & Performance Leaderboard",
         type: "desktop",
         aspectRatio: "16/9"
       }
