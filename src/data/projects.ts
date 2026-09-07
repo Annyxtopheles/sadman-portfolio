@@ -35,12 +35,22 @@ export interface GalleryImage {
   };
 }
 
+export interface CarouselItem {
+  id?: string;
+  title: string;
+  description?: string;
+  documentUrl?: string;
+  documentTitle?: string;
+  slides: GalleryImage[];
+}
+
 export interface GallerySection {
   sectionTitle: string;
   sectionDescription?: string;
   documentUrl?: string;
   documentTitle?: string;
   images: GalleryImage[];
+  carousels?: CarouselItem[];
 }
 
 export interface BeforeAfterComparison {
@@ -590,114 +600,212 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
     gallerySections: [
       {
-        sectionTitle: "Campaign 01: The Real Cost of AI — B2B Social Carousel (LinkedIn & Instagram)",
-        sectionDescription: "High-converting 4:5 vertical carousel breaking down the real annual cost of AI per seat vs CollabAI Control Tower direct API access for mid-market agencies.",
+        sectionTitle: "Social Media Carousel Campaigns (LinkedIn & Instagram)",
+        sectionDescription: "High-retention 4:5 vertical carousels deconstructing SaaS per-seat pricing math, data sovereignty, agency workflows, and white-glove onboarding for mobile feeds.",
+        carousels: [
+          {
+            title: "Campaign 01: The Real Cost of AI",
+            description: "B2B per-seat pricing teardown vs direct API costs (4 slides)",
+            slides: [
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-01-real-cost-of-ai.webp",
+                caption: "Slide 01 — Hook: The Real Cost of AI for a 30-Person Agency ($25/seat = $9,000/year for generic chatbots).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-02-per-seat-model-dilemma.webp",
+                caption: "Slide 02 — Problem: The Per-Seat Model Charges for Presence, Not Usage (Dual-gauge speedometers).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-03-control-tower-advantage.webp",
+                caption: "Slide 03 — Solution: CollabAI Control Tower Direct API Access ($3k–$4k/yr, 50–60% less, custom departmental AI).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
+                caption: "Slide 04 — CTA & Product Demo: Visit controltower.collabai.software with live dashboard mockup.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              }
+            ]
+          },
+          {
+            title: "Campaign 02: Paying Rent on AI vs Owning It",
+            description: "Data sovereignty & behind-your-firewall infrastructure (4 slides)",
+            slides: [
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b2-01-paying-rent-on-ai.webp",
+                caption: "Slide 01 — Hook: Your Agency Is Paying Rent on AI. Here's How to Own It Instead (Holographic OpenAI, Jasper, Copy.ai logos).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b2-02-hidden-costs-data-leakage.webp",
+                caption: "Slide 02 — The Reality: $7,500/year on seats, unencrypted prompt routing through third-party servers, and generic tools.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b2-03-own-your-ai-control-tower.webp",
+                caption: "Slide 03 — The Alternative: Custom AI employees running on your server, using your API keys, behind your firewall.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
+                caption: "Slide 04 — Instant Setup CTA: 'We Install It. You Build AI Employees in Minutes' directing to controltower.collabai.software.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              }
+            ]
+          },
+          {
+            title: "Campaign 03: 15-Minute Zero-Pitch Walkthrough",
+            description: "Friction-free calendar booking & high-trust inbound proof (4 slides)",
+            slides: [
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b3-01-15min-walkthrough-hook.webp",
+                caption: "Slide 01 — Target Audience Hook: '15-min walkthroughs for Digital Marketing & Software Agencies' with multi-monitor developer setup.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b3-02-agency-pain-points-qualification.webp",
+                caption: "Slide 02 — Qualification Checklist: 4 core agency criteria (tool costs, server security, custom workforce, per-seat elimination).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b3-03-no-pitch-decks-live-demo.webp",
+                caption: "Slide 03 — Friction Elimination: 'No Pitch Decks. No Long Intros. Just a live 15-min walkthrough' with desktop monitor mockup.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
+                caption: "Slide 04 — Radically Honest Trust CTA: 'If It's Not the Right Fit, We'll Tell You' directing to controltower.collabai.software.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              }
+            ]
+          },
+          {
+            title: "Campaign 04: 'We\'re Marketers, Not Engineers'",
+            description: "Objection handling, white-glove setup & edge support (3 slides)",
+            slides: [
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b4-01-marketers-not-engineers-hook.webp",
+                caption: "Slide 01 — Objection Hook: 'We're Marketers, Not Engineers...' — The #1 objection agencies have to self-hosted AI.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b4-02-full-service-onboarding-steps.webp",
+                caption: "Slide 02 — Process: 'Here's What We Do for You' (Server selection, installation, workflow setup, multi-LLM API keys).",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/collabai/creatives/collabai-carousel-b4-03-self-hosted-without-headaches-cta.webp",
+                caption: "Slide 03 — Division of Labor & CTA: 'Self-Hosted AI Without the Self-Hosting Headaches' + Ongoing Edge-Support Included.",
+                type: "carousel",
+                aspectRatio: "4/5"
+              }
+            ]
+          }
+        ],
         images: [
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-01-real-cost-of-ai.webp",
-            caption: "Slide 01 — Hook: The Real Cost of AI for a 30-Person Agency ($25/seat = $9,000/year for generic chatbots).",
+            caption: "Campaign 01: Slide 01 — The Real Cost of AI for a 30-Person Agency ($25/seat = $9,000/year for generic chatbots).",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-02-per-seat-model-dilemma.webp",
-            caption: "Slide 02 — Problem: The Per-Seat Model Charges for Presence, Not Usage (Dual-gauge speedometers).",
+            caption: "Campaign 01: Slide 02 — Problem: The Per-Seat Model Charges for Presence, Not Usage (Dual-gauge speedometers).",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-03-control-tower-advantage.webp",
-            caption: "Slide 03 — Solution: CollabAI Control Tower Direct API Access ($3k–$4k/yr, 50–60% less, custom departmental AI).",
+            caption: "Campaign 01: Slide 03 — Solution: CollabAI Control Tower Direct API Access ($3k–$4k/yr, 50–60% less, custom departmental AI).",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
-            caption: "Slide 04 — CTA & Product Demo: Visit controltower.collabai.software with live dashboard mockup.",
+            caption: "Campaign 01: Slide 04 — CTA & Product Demo: Visit controltower.collabai.software with live dashboard mockup.",
             type: "carousel",
             aspectRatio: "4/5"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Campaign 02: Paying Rent on AI vs Owning It — Data Sovereignty Carousel",
-        sectionDescription: "Viral 4:5 vertical narrative exposing the risks of third-party cloud prompt routing and per-seat vendor lock-in, contrasted against CollabAI's self-hosted, behind-your-firewall infrastructure.",
-        images: [
+          },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b2-01-paying-rent-on-ai.webp",
-            caption: "Slide 01 — Hook: Your Agency Is Paying Rent on AI. Here's How to Own It Instead (Holographic OpenAI, Jasper, Copy.ai logos).",
+            caption: "Campaign 02: Slide 01 — Hook: Your Agency Is Paying Rent on AI. Here's How to Own It Instead.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b2-02-hidden-costs-data-leakage.webp",
-            caption: "Slide 02 — The Reality: $7,500/year on seats, unencrypted prompt routing through third-party servers, and generic tools.",
+            caption: "Campaign 02: Slide 02 — The Reality: $7,500/year on seats, unencrypted prompt routing through third-party servers.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b2-03-own-your-ai-control-tower.webp",
-            caption: "Slide 03 — The Alternative: Custom AI employees running on your server, using your API keys, behind your firewall.",
+            caption: "Campaign 02: Slide 03 — The Alternative: Custom AI employees running on your server, behind your firewall.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
-            caption: "Slide 04 — Instant Setup CTA: 'We Install It. You Build AI Employees in Minutes' directing to controltower.collabai.software.",
+            caption: "Campaign 02: Slide 04 — Instant Setup CTA: 'We Install It. You Build AI Employees in Minutes'.",
             type: "carousel",
             aspectRatio: "4/5"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Campaign 03: 15-Minute Zero-Pitch Walkthrough — Inbound Qualification Carousel",
-        sectionDescription: "High-trust agency inbound qualification carousel engineered to remove sales friction by eliminating pitch decks and guaranteeing a focused, customized live walkthrough with a radically honest fit commitment.",
-        images: [
+          },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b3-01-15min-walkthrough-hook.webp",
-            caption: "Slide 01 — Target Audience Hook: '15-min walkthroughs for Digital Marketing & Software Agencies' with multi-monitor developer setup.",
+            caption: "Campaign 03: Slide 01 — Target Audience Hook: '15-min walkthroughs for Digital Marketing & Software Agencies'.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b3-02-agency-pain-points-qualification.webp",
-            caption: "Slide 02 — Qualification Checklist: 4 core agency criteria (tool costs, server security, custom workforce, per-seat elimination).",
+            caption: "Campaign 03: Slide 02 — Qualification Checklist: 4 core agency criteria.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b3-03-no-pitch-decks-live-demo.webp",
-            caption: "Slide 03 — Friction Elimination: 'No Pitch Decks. No Long Intros. Just a live 15-min walkthrough' with desktop monitor mockup.",
+            caption: "Campaign 03: Slide 03 — Friction Elimination: 'No Pitch Decks. No Long Intros. Just a live 15-min walkthrough'.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
-            caption: "Slide 04 — Radically Honest Trust CTA: 'If It's Not the Right Fit, We'll Tell You' directing to controltower.collabai.software.",
+            caption: "Campaign 03: Slide 04 — Radically Honest Trust CTA: 'If It's Not the Right Fit, We'll Tell You'.",
             type: "carousel",
             aspectRatio: "4/5"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Campaign 04: 'We're Marketers, Not Engineers' — Full-Service Onboarding Carousel",
-        sectionDescription: "Direct objection-handling carousel addressing agency technical hesitancy by showcasing CollabAI's white-glove server installation, automated workflow configuration, and ongoing edge support.",
-        images: [
+          },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b4-01-marketers-not-engineers-hook.webp",
-            caption: "Slide 01 — Objection Hook: 'We're Marketers, Not Engineers...' — The #1 objection agencies have to self-hosted AI.",
+            caption: "Campaign 04: Slide 01 — Objection Hook: 'We're Marketers, Not Engineers...' — The #1 objection agencies have to self-hosted AI.",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b4-02-full-service-onboarding-steps.webp",
-            caption: "Slide 02 — Process: 'Here's What We Do for You' (Server selection, installation, workflow setup, multi-LLM API keys).",
+            caption: "Campaign 04: Slide 02 — Process: 'Here's What We Do for You' (Server selection, installation, workflow setup).",
             type: "carousel",
             aspectRatio: "4/5"
           },
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b4-03-self-hosted-without-headaches-cta.webp",
-            caption: "Slide 03 — Division of Labor & CTA: 'Self-Hosted AI Without the Self-Hosting Headaches' + Ongoing Edge-Support Included.",
+            caption: "Campaign 04: Slide 03 — Division of Labor & CTA: 'Self-Hosted AI Without the Self-Hosting Headaches'.",
             type: "carousel",
             aspectRatio: "4/5"
           }

@@ -412,16 +412,9 @@ export const CaseStudyDetail: React.FC = () => {
                   <section key={sIdx} className="space-y-6">
                     <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#1F1F1F] pb-4">
                       <div className="space-y-2 max-w-3xl">
-                        <div className="flex items-center gap-3">
-                          <h2 className="text-xl sm:text-2xl font-normal text-[#FFFFFF] tracking-tight">
-                            {section.sectionTitle}
-                          </h2>
-                          {isCarouselSection && (
-                            <span className="hidden sm:inline-flex px-2 py-0.5 rounded-[3px] bg-[#171717] border border-[#262626] text-[10px] font-mono uppercase tracking-wider text-[#A0A0A0]">
-                              Carousel ({section.images.length} Slides)
-                            </span>
-                          )}
-                        </div>
+                        <h2 className="text-xl sm:text-2xl font-normal text-[#FFFFFF] tracking-tight">
+                          {section.sectionTitle}
+                        </h2>
                         {section.sectionDescription && (
                           <p className="text-sm sm:text-base text-[#999999] font-normal leading-relaxed">
                             {section.sectionDescription}
@@ -429,8 +422,8 @@ export const CaseStudyDetail: React.FC = () => {
                         )}
                       </div>
 
-                      {/* Section-level toggle: Interactive Carousel Reader vs Grid View */}
-                      {isCarouselSection && viewMode === 'expanded' && (
+                      {/* Section-level toggle: Only for single-carousel sections */}
+                      {!section.carousels && isCarouselSection && viewMode === 'expanded' && (
                         <div className="flex items-center gap-1.5 p-1 rounded-[4px] bg-[#111111] border border-[#222222] self-start sm:self-auto shrink-0">
                           <button
                             type="button"
@@ -490,7 +483,21 @@ export const CaseStudyDetail: React.FC = () => {
 
                     {/* Mode 1: Expanded View */}
                     {viewMode === 'expanded' ? (
-                      isCarouselSection && currentSectionMode === 'carousel' ? (
+                      section.carousels && section.carousels.length > 0 ? (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                          {section.carousels.map((carousel, cIdx) => (
+                            <div key={cIdx} className="flex flex-col">
+                              <CarouselViewer
+                                slides={carousel.slides}
+                                title={carousel.title}
+                                documentUrl={carousel.documentUrl}
+                                documentTitle={carousel.documentTitle}
+                                onOpenLightbox={handleOpenLightbox}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      ) : isCarouselSection && currentSectionMode === 'carousel' ? (
                         <div className="max-w-xl mx-auto w-full">
                           <CarouselViewer
                             slides={section.images}

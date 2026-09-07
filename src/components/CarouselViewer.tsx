@@ -23,7 +23,8 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
   const [direction, setDirection] = useState<number>(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const touchStartXRef = useRef<number | null>(null);
+  const isDraggingRef = useRef(false);
+  const dragDistanceRef = useRef(0);
 
   const total = slides.length;
   const currentSlide = slides[currentIndex];
@@ -72,22 +73,6 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
     };
   }, [isFullscreen]);
 
-  // Touch Swipe Support
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartXRef.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartXRef.current === null) return;
-    const deltaX = e.changedTouches[0].clientX - touchStartXRef.current;
-    if (deltaX > 45) {
-      handlePrev();
-    } else if (deltaX < -45) {
-      handleNext();
-    }
-    touchStartXRef.current = null;
-  };
-
   if (!slides || slides.length === 0) return null;
 
   const slideVariants = {
@@ -122,8 +107,6 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
       tabIndex={0}
       role="region"
       aria-label={title || 'Social Media Carousel'}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
       className={`relative w-full rounded-[6px] border border-[#222222] bg-[#0A0A0A] overflow-hidden flex flex-col shadow-2xl select-none focus:outline-none focus:border-[#444444] transition-colors ${
         isFullscreen ? 'fixed inset-0 z-[9999] rounded-none border-none max-w-none h-screen p-4 sm:p-6 bg-black/98' : ''
       }`}
@@ -194,13 +177,45 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
             initial="enter"
             animate="center"
             exit="exit"
-            className="w-full h-full flex items-center justify-center p-2 sm:p-4"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.25}
+            onDragStart={() => {
+              isDraggingRef.current = true;
+              dragDistanceRef.current = 0;
+            }}
+            onDrag={(_, info) => {
+              dragDistanceRef.current = Math.abs(info.offset.x);
+            }}
+            onDragEnd={(_, info) => {
+              setTimeout(() => {
+                isDraggingRef.current = false;
+                dragDistanceRef.current = 0;
+              }, 120);
+
+              const swipeThreshold = 35;
+              const velocityThreshold = 200;
+
+              if (info.offset.x < -swipeThreshold || info.velocity.x < -velocityThreshold) {
+                handleNext();
+              } else if (info.offset.x > swipeThreshold || info.velocity.x > velocityThreshold) {
+                handlePrev();
+              }
+            }}
+            className="w-full h-full flex items-center justify-center p-2 sm:p-4 cursor-grab active:cursor-grabbing touch-pan-y select-none"
           >
             <img
               src={currentSlide.url}
               alt={currentSlide.caption || `Slide ${currentIndex + 1}`}
-              onClick={() => onOpenLightbox && onOpenLightbox(currentSlide.url, currentSlide.caption)}
-              className="max-h-full max-w-full object-contain rounded-[4px] shadow-2xl cursor-zoom-in hover:brightness-105 transition-all"
+              draggable={false}
+              onClick={(e) => {
+                if (isDraggingRef.current || dragDistanceRef.current > 10) {
+                  e.preventDefault();
+                  return;
+                }
+                onOpenLightbox && onOpenLightbox(currentSlide.url, currentSlide.caption);
+              }}
+              className="max-h-full max-w-full object-contain rounded-[4px] shadow-2xl cursor-zoom-in hover:brightness-105 transition-all select-none pointer-events-auto"
             />
           </motion.div>
         </AnimatePresence>
