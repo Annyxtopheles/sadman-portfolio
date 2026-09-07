@@ -21,7 +21,6 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<number>(0);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const isDraggingRef = useRef(false);
   const dragDistanceRef = useRef(0);
@@ -47,31 +46,19 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
     }
   }, [currentIndex, total, goToSlide]);
 
-  // Keyboard navigation when focused or fullscreen
+  // Keyboard navigation when focused
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
         handlePrev();
       } else if (e.key === 'ArrowRight' || e.key === ' ') {
         handleNext();
-      } else if (e.key === 'Escape' && isFullscreen) {
-        setIsFullscreen(false);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [handlePrev, handleNext, isFullscreen]);
-
-  // Lock body scroll when fullscreen is active
-  useEffect(() => {
-    if (!isFullscreen) return;
-    const originalOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = originalOverflow;
-    };
-  }, [isFullscreen]);
+  }, [handlePrev, handleNext]);
 
   if (!slides || slides.length === 0) return null;
 
@@ -107,16 +94,11 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
       tabIndex={0}
       role="region"
       aria-label={title || 'Social Media Carousel'}
-      className={`relative w-full rounded-[6px] border border-[#222222] bg-[#0A0A0A] overflow-hidden flex flex-col shadow-2xl select-none focus:outline-none focus:border-[#444444] transition-colors ${
-        isFullscreen ? 'fixed inset-0 z-[9999] rounded-none border-none max-w-none h-screen p-4 sm:p-6 bg-black/98' : ''
-      }`}
+      className="relative w-full rounded-[6px] border border-[#222222] bg-[#0A0A0A] overflow-hidden flex flex-col shadow-2xl select-none focus:outline-none focus:border-[#444444] transition-colors"
     >
       {/* LinkedIn Document Top Bar */}
       <div className="px-3.5 sm:px-4 py-2.5 border-b border-[#1A1A1A] bg-[#0E0E0E] flex items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-2.5 min-w-0">
-          <span className="px-1.5 py-0.5 rounded-[3px] bg-[#1F1F1F] text-[#AAAAAA] text-[10px] font-mono tracking-wider uppercase border border-[#2A2A2A] shrink-0">
-            {documentUrl ? 'PDF / Carousel' : 'Carousel'}
-          </span>
           <span className="text-[#DDDDDD] font-medium truncate text-xs sm:text-sm">
             {title || documentTitle || 'Interactive Carousel'}
           </span>
@@ -143,33 +125,12 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
               <span className="hidden sm:inline">PDF</span>
             </a>
           )}
-
-          {/* Fullscreen toggle button */}
-          <button
-            type="button"
-            onClick={() => setIsFullscreen((prev) => !prev)}
-            aria-label={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
-            title={isFullscreen ? 'Exit Fullscreen (esc)' : 'Fullscreen'}
-            className="p-1 sm:p-1.5 rounded-[3px] text-[#888888] hover:text-[#FFFFFF] hover:bg-[#1A1A1A] transition-colors cursor-pointer"
-          >
-            {isFullscreen ? (
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-              </svg>
-            )}
-          </button>
         </div>
       </div>
 
       {/* Main Slide Viewer Canvas */}
       <div className={`relative w-full flex-1 bg-[#050505] flex items-center justify-center overflow-hidden ${
-        isFullscreen
-          ? 'h-[calc(100vh-140px)]'
-          : slides[0]?.aspectRatio === '1/1'
+        slides[0]?.aspectRatio === '1/1'
           ? 'aspect-square'
           : 'aspect-[4/5] sm:max-h-[720px]'
       }`}>
