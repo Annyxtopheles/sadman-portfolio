@@ -2819,7 +2819,7 @@ export const PROJECTS: Project[] = [
     duration: "Ongoing Series",
     scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards"],
     summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and the SJ Control Tower team. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and high-octane competitive team emblems.",
-    coverImage: "/assets/projects/print-designs/effective-meetings-3-steps-infographic.webp",
+    coverImage: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
     liveUrl: null,
     tldr: {
       challenge: "Workplace guidelines, cultural values, and employee recognition often get lost in digital noise. The goal was to design high-impact physical print collateral, office wall posters, and official certificate systems that celebrate achievement and communicate operational clarity.",
@@ -2875,11 +2875,6 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/effective-meetings-5-tips-infographic.webp",
             caption: "5 Essential Tips for Running Effective Meetings — Actionable Meeting Hygiene",
             aspectRatio: "723/1024"
-          },
-          {
-            url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
-            caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Framework",
-            aspectRatio: "461/1024"
           }
         ]
       },
@@ -2896,6 +2891,11 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
             caption: "Culture Banner — 'Laughter is the Best Team-Building Exercise'",
             aspectRatio: "512/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+            caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Wall Poster",
+            aspectRatio: "461/1024"
           }
         ]
       },
@@ -3059,11 +3059,6 @@ export const PROJECTS: Project[] = [
         type: "portrait"
       },
       {
-        url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
-        caption: "Workplace Infographic — 7 Dimensions of Employee Happiness",
-        type: "portrait"
-      },
-      {
         url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
         caption: "Office Wall Poster — Mohammad Ali Champion Mindset",
         type: "portrait"
@@ -3071,6 +3066,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
         caption: "Team Culture Poster — Laughter Team-Building Exercise",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+        caption: "Office Wall Poster — 7 Dimensions of Employee Happiness",
         type: "portrait"
       },
       {
