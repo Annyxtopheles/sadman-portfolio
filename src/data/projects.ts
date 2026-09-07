@@ -584,7 +584,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Cost Transparency", value: "50–60% Savings", subtext: "Clear financial contrast of $9k/yr per-seat vs $3k–$4k direct API costs" },
-      { label: "Carousel Formats", value: "2 Full Campaigns (4:5)", subtext: "8 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
+      { label: "Carousel Formats", value: "3 Full Campaigns (4:5)", subtext: "12 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
       { label: "Campaign Ecosystem", value: "Carousels + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
     ],
     outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
@@ -644,6 +644,36 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
             caption: "Slide 04 — Instant Setup CTA: 'We Install It. You Build AI Employees in Minutes' directing to controltower.collabai.software.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Campaign 03: 15-Minute Zero-Pitch Walkthrough — Inbound Qualification Carousel",
+        sectionDescription: "High-trust agency inbound qualification carousel engineered to remove sales friction by eliminating pitch decks and guaranteeing a focused, customized live walkthrough with a radically honest fit commitment.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b3-01-15min-walkthrough-hook.webp",
+            caption: "Slide 01 — Target Audience Hook: '15-min walkthroughs for Digital Marketing & Software Agencies' with multi-monitor developer setup.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b3-02-agency-pain-points-qualification.webp",
+            caption: "Slide 02 — Qualification Checklist: 4 core agency criteria (tool costs, server security, custom workforce, per-seat elimination).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b3-03-no-pitch-decks-live-demo.webp",
+            caption: "Slide 03 — Friction Elimination: 'No Pitch Decks. No Long Intros. Just a live 15-min walkthrough' with desktop monitor mockup.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
+            caption: "Slide 04 — Radically Honest Trust CTA: 'If It's Not the Right Fit, We'll Tell You' directing to controltower.collabai.software.",
             type: "carousel",
             aspectRatio: "4/5"
           }
@@ -718,6 +748,30 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
         caption: "Slide 04 — We Install It. You Build AI Employees in Minutes",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b3-01-15min-walkthrough-hook.webp",
+        caption: "Slide 01 — 15-Min Walkthroughs of CollabAI Control Tower",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b3-02-agency-pain-points-qualification.webp",
+        caption: "Slide 02 — Are You Thinking About... (Agency Qualification)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b3-03-no-pitch-decks-live-demo.webp",
+        caption: "Slide 03 — No Pitch Decks. No Long Intros. Just Live Demo",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
+        caption: "Slide 04 — If It's Not the Right Fit, We'll Tell You (CTA)",
         type: "carousel",
         aspectRatio: "4/5"
       },
