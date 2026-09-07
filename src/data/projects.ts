@@ -523,6 +523,169 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "collabai-creatives",
+    slug: "collabai-creatives",
+    title: "CollabAI Creatives",
+    category: "Brand Systems",
+    status: "CASE STUDY",
+    company: "CollabAI",
+    client: "CollabAI Growth & Marketing",
+    year: "2025 – 2026",
+    duration: "Ongoing Series",
+    scope: [
+      "Social Design Systems",
+      "LinkedIn Carousels",
+      "Instagram Creatives",
+      "B2B SaaS Pricing Teardowns",
+      "Motion Video Reels",
+      "Direct-Response Copywriting",
+      "Product Marketing Strategy"
+    ],
+    summary: "B2B growth design system, viral LinkedIn and Instagram pricing teardown carousels, and high-converting vertical video reels created for CollabAI. Deconstructs enterprise SaaS per-seat pricing models against CollabAI's direct-API Control Tower, illustrating real cost savings, departmental custom AI agents, and self-hosted data ownership for agencies and growing teams.",
+    coverImage: "/assets/projects/collabai/creatives/collabai-creatives-cover.webp",
+    liveUrl: "https://controltower.collabai.software",
+    tldr: {
+      challenge: "Enterprise agencies are burdened by bloated $25/seat monthly chatbot subscriptions that charge for employee presence rather than actual token utilization. CollabAI needed high-contrast visual storytelling to prove 50–60% software cost savings while showcasing its multi-agent Control Tower capabilities.",
+      role: "Lead Creative & Growth Designer — conceptualized the B2B pricing deconstruction narrative, designed custom 4:5 visual infographics (dual-gauge usage comparison, pricing pyramids), edited vertical video reels, and created direct conversion landing mockups.",
+      method: "Engineered high-retention 4:5 vertical carousel slides combining stark cobalt-to-navy gradient backdrops, 3D metallic currency lockups, data-driven usage gauges, and product interface mockups, paired with high-tempo Meta video reels."
+    },
+    problem: "Most AI software marketing relies on vague buzzwords like 'unlock productivity' that fail to convince CFOs and agency founders. Agency leaders need transparent economic math: contrasting a 30-person team paying $9,000/year for generic chatbots against direct API access costing only $3,000–$4,000/year for custom departmental agents.",
+    process: [
+      {
+        title: "Economic Deconstruction & Visual Metaphors",
+        description: "Broke down the hidden financial trap of per-seat SaaS billing into immediate visual proof points.",
+        details: [
+          "Calculated real-world cost comparisons for a 30-person agency ($25/seat x 30 = $9,000/year vs $3,000–$4,000 API costs)",
+          "Conceived the dual speedometer gauge metaphor to visually expose the unfairness of per-seat billing: a finance manager using AI twice a month pays the exact same fee as a content writer prompting 50 times a day",
+          "Highlighted CollabAI's core architectural advantages: departmental custom AI employees, self-hosted data security, and full API control",
+          "Crafted punchy takeaway badges: 'That's 50-60% less. And infinitely more capable.'"
+        ]
+      },
+      {
+        title: "4:5 Carousel Architecture for LinkedIn & Instagram",
+        description: "Optimized aspect ratio, contrast hierarchy, and micro-hooks for maximum mobile feed scroll-stopping power.",
+        details: [
+          "Engineered 4:5 vertical canvas (819×1024) to occupy maximum screen real estate in mobile feeds",
+          "Slide 01 Hook: Immediate pattern-interrupt headline with 3D currency stack and metallic executive avatar clusters",
+          "Slide 02 Problem: Speedometer gauges visually demonstrating the presence-vs-usage economic disparity",
+          "Slide 03 Solution: Side-by-side checklist demonstrating departmental custom AI agents and direct API savings",
+          "Slide 04 Conversion: High-fidelity web and dashboard mockup driving qualified traffic directly to controltower.collabai.software"
+        ]
+      },
+      {
+        title: "Multi-Format Video & Paid Campaign Extension",
+        description: "Extended the core value proposition into vertical 9:16 motion video reels for Instagram and Facebook.",
+        details: [
+          "Produced the Nonprofit AI Workflow Automation Reel, spotlighting free open-source dashboard automation and grant retrieval",
+          "Produced the Black Friday Extended Offer Campaign Reel, driving urgency around $300 starter discounts and 20% pro tier savings",
+          "Maintained consistent brand typography, neon cyan and deep cobalt color grading, and high-tempo beat synchronization"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Cost Transparency", value: "50–60% Savings", subtext: "Clear financial contrast of $9k/yr per-seat vs $3k–$4k direct API costs" },
+      { label: "Carousel Format", value: "4:5 Multi-Slide", subtext: "Optimized for maximum mobile scroll-stopping viewport on LinkedIn & IG" },
+      { label: "Campaign Ecosystem", value: "Carousel + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
+    ],
+    outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
+    gallerySections: [
+      {
+        sectionTitle: "AI Pricing Teardown — B2B Social Carousel (LinkedIn & Instagram)",
+        sectionDescription: "High-converting 4:5 vertical carousel breaking down the real annual cost of AI per seat vs CollabAI Control Tower direct API access for mid-market agencies.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-01-real-cost-of-ai.webp",
+            caption: "Slide 01 — Hook: The Real Cost of AI for a 30-Person Agency ($25/seat = $9,000/year for generic chatbots).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-02-per-seat-model-dilemma.webp",
+            caption: "Slide 02 — Problem: The Per-Seat Model Charges for Presence, Not Usage (Dual-gauge speedometers).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-03-control-tower-advantage.webp",
+            caption: "Slide 03 — Solution: CollabAI Control Tower Direct API Access ($3k–$4k/yr, 50–60% less, custom departmental AI).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
+            caption: "Slide 04 — CTA & Product Demo: Visit controltower.collabai.software with live dashboard mockup.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          }
+        ]
+      },
+      {
+        sectionTitle: "High-Impact Video Reels & Paid Social Campaigns",
+        sectionDescription: "Vertical 9:16 motion video reels driving product education, feature adoption, and promotional conversions across Meta channels.",
+        images: [
+          {
+            url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+            caption: "CollabAI Nonprofit AI Video Reel (9:16) — Dynamic vertical product walkthrough highlighting free open-source AI workflow automation, board reporting, and grant tracking.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/791352226744510"
+          },
+          {
+            url: "/assets/projects/reels/reel-11-collabai-black-friday-sale.webp",
+            caption: "CollabAI Black Friday Extended Offer Reel (9:16) — Urgency-driven SaaS promotional motion ad promoting $300 off Starter and 20% off Pro plans with dynamic typography and brand motion.",
+            aspectRatio: "9/16",
+            type: "portrait",
+            embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1836781190301543%2F&show_text=false&t=0",
+            externalUrl: "https://www.facebook.com/reel/1836781190301543"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-01-real-cost-of-ai.webp",
+        caption: "Slide 01 — The Real Cost of AI for a 30-Person Agency",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-02-per-seat-model-dilemma.webp",
+        caption: "Slide 02 — Per-Seat Model Charges for Presence, Not Usage",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-03-control-tower-advantage.webp",
+        caption: "Slide 03 — CollabAI Control Tower Direct API Access",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
+        caption: "Slide 04 — Visit controltower.collabai.software",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
+        caption: "CollabAI Nonprofit AI Product Automation Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/791352226744510"
+      },
+      {
+        url: "/assets/projects/reels/reel-11-collabai-black-friday-sale.webp",
+        caption: "CollabAI Black Friday Extended Offer Campaign Reel",
+        type: "portrait",
+        aspectRatio: "9/16",
+        embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1836781190301543%2F&show_text=false&t=0",
+        externalUrl: "https://www.facebook.com/reel/1836781190301543"
+      }
+    ]
+  },
+  {
     id: "social-media-greetings",
     slug: "social-media-greetings",
     title: "Social Media Greetings",
