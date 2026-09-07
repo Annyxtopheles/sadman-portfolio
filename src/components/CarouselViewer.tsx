@@ -167,7 +167,11 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
 
       {/* Main Slide Viewer Canvas */}
       <div className={`relative w-full flex-1 bg-[#050505] flex items-center justify-center overflow-hidden ${
-        isFullscreen ? 'h-[calc(100vh-140px)]' : 'aspect-[4/5] sm:max-h-[720px]'
+        isFullscreen
+          ? 'h-[calc(100vh-140px)]'
+          : slides[0]?.aspectRatio === '1/1'
+          ? 'aspect-square'
+          : 'aspect-[4/5] sm:max-h-[720px]'
       }`}>
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div

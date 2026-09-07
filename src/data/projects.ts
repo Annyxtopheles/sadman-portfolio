@@ -1019,8 +1019,580 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Created an elevated commemorative visual system for SJ Innovation that transforms holiday posts into bespoke artistic statements, elevating social feed engagement and reinforcing design excellence.",
     gallerySections: [
       {
-        sectionTitle: "Martin Luther King Jr. Day — Visual Explorations",
-        sectionDescription: "Five distinct creative interpretations honoring the legacy of Dr. Martin Luther King Jr. for SJ Innovation. Each direction explores a unique artistic medium—from flat vector community storytelling to expressive digital oil paint and dramatic silhouette lighting.",
+        sectionTitle: "Social Media Greetings & Commemorative Visuals",
+        sectionDescription: "Multi-direction commemorative visual suites and creative explorations designed for SJ Innovation across global holidays, cultural milestones, and company events. Explore each event's curated visual directions in interactive carousels.",
+        carousels: [
+          {
+            title: "Martin Luther King Jr. Day — Visual Explorations",
+            description: "Five distinct creative interpretations honoring the legacy of Dr. Martin Luther King Jr. for SJ Innovation. Each direction explores a unique artistic medium—from flat vector community storytelling to expressive digital oil paint and dramatic silhouette lighting.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
+                caption: "Direction 01 — Vector Illustration & Community Solidarity: Flat vector composition capturing Dr. King at the podium surrounded by an engaged audience.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mlk-day/mlk-day-02-warm-photo-composite.webp",
+                caption: "Direction 02 — Archival Photo Composite: Warm amber & cobalt blue dual-tone photo manipulation with historic speech excerpt typography.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mlk-day/mlk-day-03-geometric-portrait.webp",
+                caption: "Direction 03 — Color-Blocked Pop-Art Portrait: Modernist faceted vector study with vibrant terracotta, azure, and deep obsidian blocks.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mlk-day/mlk-day-04-oil-paint-portrait.webp",
+                caption: "Direction 04 — Expressive Digital Brushwork: Impasto oil painting style featuring energetic cobalt and gold stroke texturing.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mlk-day/mlk-day-05-black-white-silhouette.webp",
+                caption: "Direction 05 — High-Contrast Monochrome Silhouette: Minimalist stark silhouette with atmospheric spotlighting and 'I Have A Dream' typography.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Pohela Boishakh — Bangla New Year 1433",
+            description: "Five vibrant creative interpretations celebrating Pohela Boishakh (Bangla New Year 1433) for SJ Innovation. Explores traditional Bengali folk art motifs—from earthen pottery, marigolds, and pinwheels to the iconic Mangal Shobhajatra owl mask and sculpted heritage musical instruments—rendered in modern 3D and graphic compositions with bespoke Bengali typography.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/bangla-new-year/boishakh-01-clay-pot-alpana.webp",
+                caption: "Direction 01 — Earthen Pot & Winnowing Fan: Traditional painted clay pitcher with marigolds, lit terracotta diya, woven bamboo kula, and floor alpana.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangla-new-year/boishakh-02-pinwheels-chorki.webp",
+                caption: "Direction 02 — Boishakhi Fair Pinwheels: Nostalgic paper wind spinners against clear azure skies, evoking rural festival childhood memories.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangla-new-year/boishakh-03-mangal-owl-mask.webp",
+                caption: "Direction 03 — Mangal Shobhajatra Owl Motif: Stylized UNESCO-recognized folk owl mask framed by delicate white border alpana on an amber-blue gradient.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangla-new-year/boishakh-04-3d-cultural-motifs.webp",
+                caption: "Direction 04 — Floating Folk Celebration: 3D dynamic festival composition with folk dholak drums, ektara, traditional masks, clay pots, and sweets.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangla-new-year/boishakh-05-heritage-musical-ensemble.webp",
+                caption: "Direction 05 — Classical Folk Instruments & Peacock: Sculpted 3D floral medallion framed by harmonium, bansuri flutes, dhol, dotara, and peacock.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Eid al-Fitr Mubarak — Festive Visual Suites",
+            description: "Five distinct creative directions celebrating Eid al-Fitr for SJ Innovation. Explores themes of fraternal unity, sacred architectural watercolor washes, photorealistic 3D marble minarets, atmospheric dusk lantern photography, and ornate laser-cut Islamic geometric filigree.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/eid-al-fitr/eid-01-fraternal-embrace.webp",
+                caption: "Direction 01 — Fraternal Unity & Kolakuli: Stylized vector illustration of traditional fraternal embrace framed by archways and hanging glass lanterns.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-fitr/eid-02-watercolor-mosque-skyline.webp",
+                caption: "Direction 02 — Watercolor Mosque Architecture: Expressive saffron and cobalt watercolor wash capturing domes and minarets under the crescent moon.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-fitr/eid-03-3d-marble-minaret-twilight.webp",
+                caption: "Direction 03 — 3D Sculpted White Marble Mosque: Photorealistic architectural rendering of a grand marble dome and minaret at golden dusk.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-fitr/eid-04-lantern-in-hand-nightfall.webp",
+                caption: "Direction 04 — Hand-Held Fanous at Dusk: Cinematic photographic study of a glowing vintage brass lantern against a starry twilight indigo sky.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-fitr/eid-05-filigree-gold-crescent.webp",
+                caption: "Direction 05 — Laser-Cut Gold Filigree Crescent (Hilal): Intricate geometric Islamic star lattice crescent moon glowing against a dusk horizon.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Happy Easter — Spring Celebration Suites",
+            description: "Five playful and refined creative directions celebrating Easter for SJ Innovation. Explores themes of minimalist bunny silhouettes, tactile close-up bunny ears, 3D branded glossy eggs, decorative porcelain flat-lays, and papercraft floral aperture cutouts.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/easter/easter-01-minimalist-bunny-silhouette.webp",
+                caption: "Direction 01 — Minimalist Archway Silhouette: Serene arch window silhouette of an Easter bunny surrounded by delicate foliage against a starry blue sky.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/easter/easter-02-fluffy-bunny-ears.webp",
+                caption: "Direction 02 — Tactile Bunny Ears & Sky: Playful macro close-up of soft white rabbit ears against a tranquil blue sky with flowing calligraphy.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/easter/easter-03-3d-patterned-eggs.webp",
+                caption: "Direction 03 — 3D Glossy Patterned Eggs: Three glossy porcelain eggs rendered in signature cobalt, vibrant orange, and white with polka dots and ribbons.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/easter/easter-04-ceramic-egg-flatlay.webp",
+                caption: "Direction 04 — Hand-Painted Ceramic Flat-Lay: High-angle flat-lay frame featuring patterned decorative porcelain eggs with floral and radial geometric motifs.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/easter/easter-05-spring-blooms-cutout.webp",
+                caption: "Direction 05 — Papercraft Spring Floral Cutout: Egg-shaped papercraft aperture revealing fresh daisies and a bright yellow daffodil blooming against an azure sky.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/easter/easter-06-bunny-flower-egg-silhouette.webp",
+                caption: "Direction 06 — Easter Egg Floral Silhouette: Minimalist egg silhouette framed with spring daisies and a rabbit silhouette holding an orange blossom.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Happy Holi — Festival of Colors",
+            description: "Four dynamic and festive creative directions celebrating Holi for SJ Innovation. Highlights organic herbal gulal powder bowls, outdoor action captures of hands pouring saffron powder, large-scale campus courtyard floor rangoli mandalas, and high-energy dual-tone explosive powder collisions.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/holi/holi-01-powder-bowls-trio.webp",
+                caption: "Direction 01 — Trio of Organic Gulal Bowls: High-contrast studio still featuring rustic bowls heaped with vibrant orange, royal cobalt blue, and pure white gulal powder.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/holi/holi-02-hands-pouring-gulal.webp",
+                caption: "Direction 02 — Hands Pouring Saffron Gulal: Dynamic outdoor action photography capturing colored hands pouring saffron powder against a joyful festival crowd.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/holi/holi-03-campus-rangoli-mandala.webp",
+                caption: "Direction 03 — Campus Courtyard Rangoli & Gulal: Intricate white floor rangoli mandala on campus grounds in front of SJ Innovation's building, framed by colorful powders.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/holi/holi-04-explosive-powder-splash.webp",
+                caption: "Direction 04 — Dual-Tone Explosive Powder Collision: High-energy kinetic splash of blazing orange and electric cobalt blue powder dust with textured chalk lettering.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Independence Day of Bangladesh — 26 March",
+            description: "Three solemn and monumental creative directions commemorating Bangladesh's Independence Day for SJ Innovation. Features geometric vector representations of the National Martyrs' Memorial (Jatiyo Smriti Soudho), monumental freedom fighter silhouettes with soaring peace doves, and dramatic low-angle perspective photography.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-01-smriti-soudho-vector.webp",
+                caption: "Direction 01 — National Martyrs' Memorial Vector: Geometric flat vector illustration of the Jatiyo Smriti Soudho at Savar with brick concourses, green foliage, and the fluttering flag.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-02-freedom-fighters-silhouette.webp",
+                caption: "Direction 02 — Freedom Fighters & Fluttering Flag: Monumental silhouette of three heroic freedom fighters holding the national flag aloft with soaring white peace doves.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-03-monument-perspective-sky.webp",
+                caption: "Direction 03 — Low-Angle Concrete Monolith Perspective: Dramatic low-angle perspective photography of the Smriti Soudho concrete pylons piercing the clouds.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International Day of Happiness — 20 March",
+            description: "Three uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership, tactile 3D crafted smiley characters surrounded by floating emoji gems, and a whimsical cinematic street-food hamster celebrating unpretentious everyday joy.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/day-of-happiness/happiness-01-executive-quote-card.webp",
+                caption: "Direction 01 — Executive Thought-Leadership Card: Minimalist social card featuring Shahed Islam (@shahednyc, CEO of SJ Innovation) on choosing happiness as a mindset.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/day-of-happiness/happiness-02-knitted-smiley-tactile.webp",
+                caption: "Direction 02 — Tactile Knitted Smiley Sphere: Cozy macro still of a handcrafted yellow knitted smiley character with fuzzy pom-pom cheeks and floating emoji gems.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/day-of-happiness/happiness-03-hamster-street-snack.webp",
+                caption: "Direction 03 — Whimsical Hamster Street Joy: Playful and heartwarming cinematic capture of a cheerful hamster wearing a yellow bucket hat holding a street-food skewer, celebrating pure everyday happiness.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International Women's Day — 8 March",
+            description: "Three vibrant and empowering creative directions celebrating International Women's Day for SJ Innovation. Explores 3D sculpted floral bouquets cradled in hands, overhead circles of solidarity celebrating teamwork, and an energetic multicultural group portrait of diverse women.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/womens-day/womens-day-01-cradled-blossoms-3d.webp",
+                caption: "Direction 01 — Cradled Spring Flora: 3D sculpted hands gently cradling a blooming bouquet of daisies and vibrant blossoms against a pastel gradient.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/womens-day/womens-day-02-hands-together-solidarity.webp",
+                caption: "Direction 02 — Circle of Diverse Hands: Overhead circle of women's hands joining together in solidarity, empowerment, and collaborative strength.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/womens-day/womens-day-03-diverse-women-portrait.webp",
+                caption: "Direction 03 — Multicultural Women Portrait: Celebratory ensemble portrait of diverse women across different cultures and walks of life against a vibrant fuchsia backdrop.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International Mother Language Day — 21 February",
+            description: "Three poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, archival historical photography of the 1952 protest procession with illuminated neon placards, and a minimalist modern tribute with ethereal vertical light pillars, glowing sun disc, and subtle floating Bengali script.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/mother-language-day/language-day-01-shaheed-minar-sunrise.webp",
+                caption: "Direction 01 — Central Shaheed Minar at Golden Dawn: Monumental architectural view of the Central Shaheed Minar against a glowing sunrise with floating Bengali alphabets.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mother-language-day/language-day-02-1952-movement-neon-placards.webp",
+                caption: "Direction 02 — Historic 1952 Procession & Neon Placards: Gritty archival photography of the historic Language Movement procession with glowing neon typography on protest placards.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/mother-language-day/language-day-03-light-pillars-sun-disc.webp",
+                caption: "Direction 03 — Luminous Shaheed Minar Light Beams & Sun Disc: Minimalist modern composition of vertical pillars of light evoking the Shaheed Minar surrounding a warm orange sun disc, crowned by subtle floating Bengali alphabets.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International May Day — 1 May",
+            description: "Three compelling creative directions commemorating International Workers' Day for SJ Innovation. Explores high-contrast architectural labor silhouettes, a 3D isometric toolkit bridging manual craftsmanship with modern computing, and a contemporary tech developer workstation against urban skyline scaffolding.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/may-day/mayday-01-construction-silhouettes.webp",
+                caption: "Direction 01 — Structural Labor Silhouettes: High-contrast blue vector illustration honoring building construction workers, jackhammers, and structural scaffolding.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/may-day/mayday-02-digital-physical-tools.webp",
+                caption: "Direction 02 — Digital & Physical Craft Toolkit: 3D floating composition bridging manual and digital labor—keyboard, mouse, wrench, hard hat, hammer, and blueprints.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/may-day/mayday-03-modern-engineer-scaffolding.webp",
+                caption: "Direction 03 — Tech Engineering & Infrastructure: Contemporary visual narrative showing a software engineer working across multi-screen telemetry dashboards with architectural cranes.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Ramadan Mubarak — Sacred Reflections",
+            description: "Two warm and heartwarming creative directions celebrating the holy month of Ramadan for SJ Innovation. Highlights communal Iftar traditions of sharing fresh dates at golden sunset, and a joyful 3D animated Muslim family gathered around the Iftar dining table.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/ramadan/ramadan-01-iftar-sharing-dates.webp",
+                caption: "Direction 01 — Sharing Dates at Golden Hour Iftar: Warm, communal 3D render of hands reaching together to share fresh Medjool dates and water against a golden sunset and mosque dome.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/ramadan/ramadan-02-family-iftar-table-3d.webp",
+                caption: "Direction 02 — 3D Family Iftar Table: Whimsical, warm 3D animated Muslim family gathered around a circular dining table breaking fast with dates and fresh fruit on soft clouds.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/ramadan/ramadan-03-iftar-feast-archway.webp",
+                caption: "Direction 03 — Archway Iftar Feast & Henna: Atmospheric Iftar spread viewed through an Islamic arch with hanging lanterns, showing hands reaching for fresh dates, salads, and juices.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Republic Day of India — 26 January (गणतंत्र दिवस)",
+            description: "Three majestic creative directions commemorating Republic Day of India for SJ Innovation. Features historic red sandstone vector silhouettes of the Red Fort (Lal Qila) in Delhi, golden hour architectural photography of Mughal ramparts, and monumental flowing Tiranga tricolor drapes framing the fort courtyard.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/india-republic-day/republic-day-01-red-fort-sunset-vector.webp",
+                caption: "Direction 01 — Red Fort Dusk Silhouette Vector: Architectural vector illustration of the iconic Red Fort (Lal Qila) in Delhi under a warm sunset sky.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/india-republic-day/republic-day-02-red-fort-sandstone-monolith.webp",
+                caption: "Direction 02 — Red Sandstone Ramparts & Golden Hour: Majestic low-angle photography of the Mughal red sandstone fort towers and domes basking in golden hour light.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/india-republic-day/republic-day-03-tricolor-drapes-red-fort.webp",
+                caption: "Direction 03 — Grand Tricolor Flag Drapes: Dramatic architectural vista of the Red Fort adorned with monumental flowing Indian Tiranga tricolor drapes and mandalas.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "US Memorial Day — In Memory of the Fallen",
+            description: "Three solemn and dignified commemorative visual directions honoring fallen service members for SJ Innovation. Explores a textural American flag honor roll of names, a poignant white marble cemetery cross adorned with fresh tulips and a miniature flag, and military buglers playing Taps against a silent field of inscribed heroes.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
+                caption: "Direction 01 — Roll of the Fallen & Stars and Stripes: Somber commemoration displaying the waving American flag texture overlaid with thousands of inscribed names of fallen service members.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-02-cross-headstone-tulips.webp",
+                caption: "Direction 02 — Honored Glory Memorial Cross: Low-angle perspective of a pristine white marble cemetery cross inscribed 'Here rests in honored glory a comrade in arms known but to God', accompanied by vibrant tulips and an American flag under summer skies.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-03-taps-bugler-names.webp",
+                caption: "Direction 03 — Taps Bugler Silhouette & Honor Roll: Poignant silhouette of military buglers playing Taps against a deep navy field filled with thousands of names of fallen heroes, framed by a waving American flag.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Independence Day of India — 15 August (स्वतंत्रता दिवस)",
+            description: "Three stirring creative directions celebrating India's Independence Day for SJ Innovation. Spans majestic air force flypasts trailing saffron, white, and green tricolor plumes over India Gate, an impressionist watercolor architectural wash, and a heroic bronze monument of soldiers raising the Tiranga.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/india-independence-day/india-independence-01-india-gate-flypast.webp",
+                caption: "Direction 01 — India Gate Air Force Flypast: Iconic low-angle view of the sandstone India Gate with three fighter jets streaking across the sky leaving vivid saffron, white, and green smoke plumes.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/india-independence-day/india-independence-02-watercolor-india-gate.webp",
+                caption: "Direction 02 — Watercolor India Gate & Sun Disc: Artistic watercolor wash of the India Gate framed by a radiant golden solar disc, birds in flight, and trees rendered in tricolor saffron and blue pigment blooms.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/india-independence-day/india-independence-03-soldier-monument-tricolor.webp",
+                caption: "Direction 03 — Patriotic Soldier Memorial & Jet Formation: Heroic bronze statues of soldiers raising the Indian national flag atop a stone plinth, echoed by a V-formation of fighter jets releasing tricolor trails.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Father's Day — Celebrating Guidance & Love",
+            description: "Seven heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, playful building, and shared outdoor moments—from minimalist hand-in-hand silhouettes and piggyback joy to building block collaboration and watercolor tree swing reflections.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-01-holding-hands-minimalist.webp",
+                caption: "Direction 01 — Gentle Guiding Hands: Minimalist high-contrast vector silhouette of a parent's blue hand tenderly holding a toddler's orange hands in trust and safety.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-02-piggyback-silhouette.webp",
+                caption: "Direction 02 — Piggyback Silhouette & Pure Joy: Dynamic blue silhouette of a joyful father carrying his cheering son on his shoulders against a soft gradient sky.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-03-superhero-capes.webp",
+                caption: "Direction 03 — Everyday Superheroes: Stylized vector illustration of a father and young daughter wearing superhero capes, holding hands as they gaze forward together.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-04-baby-holding-finger.webp",
+                caption: "Direction 04 — Tiny Grip, Lifelong Bond: Intimate illustrated close-up of a newborn infant's tiny hand holding firmly onto a father's finger against soft azure stripes.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-05-mountain-sunrise-summit.webp",
+                caption: "Direction 05 — Mountain Summit Sunrise: Inspiring landscape illustration of father and daughter silhouetted on a mountain peak at dawn, looking toward endless horizons.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-06-building-blocks-overhead.webp",
+                caption: "Direction 06 — Building Together with Blocks: Top-down composition capturing father and child assembling vibrant blue, orange, and white interlocking bricks on a pristine white work surface.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/fathers-day/fathers-day-07-watercolor-tree-swing.webp",
+                caption: "Direction 07 — Watercolor Sunset Tree Swing: Nostalgic blue watercolor silhouette of a father pushing his laughing child on a rope swing beneath a grand tree during a golden orange sunset.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International Programmer's Day — Code, Innovation & Craft",
+            description: "Three electrifying creative directions celebrating International Programmer's Day for SJ Innovation. Spans floating glowing glassmorphic tech stack icons, a cinematic dual-screen late-night development setup with AI aura, and a futuristic Creation of Adam motif symbolizing the synergy between human developers and AI.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/programmers-day/programmers-day-01-floating-tech-icons.webp",
+                caption: "Direction 01 — Floating Glassmorphic Tech Stack: Cinematic dark frame featuring a developer's hand surrounded by orbiting neon-accented glass icons representing HTML, CSS, JavaScript, terminal, Git, and database architectures.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/programmers-day/programmers-day-02-night-coder-dual-monitors.webp",
+                caption: "Direction 02 — Late-Night Flow & AI Energy Aura: Atmospheric nocturnal perspective of a software engineer at a dual-monitor workstation radiating electric blue and amber illumination while architecting custom AI software.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/programmers-day/programmers-day-03-cyborg-human-code-touch.webp",
+                caption: "Direction 03 — Human-AI Synergy & Creation Touch: Futuristic 'Creation of Adam' homage showing a sleek robotic hand and human fingertip converging upon glowing 3D code brackets.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Eid al-Adha Mubarak — Sacred Traditions & Devotion",
+            description: "Five elevated creative directions celebrating Eid al-Adha (1447 H) for SJ Innovation. Explores architectural grand mosques under vivid saffron skies, the sacred low-poly summit of Mount Arafat with celestial mandala linework, dual-tone watercolor minaret silhouettes, twilight coastal cityscapes, and historic Islamic keyhole archways overlooking golden sunset horizons.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-01-blue-mosque-orange-sky.webp",
+                caption: "Direction 01 — Architectural Grandeur & Twilight Horizon: Dramatic Sultanahmet / Blue Mosque minarets set against a fiery sunset and crescent moon.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-02-mount-arafat-mandala-twilight.webp",
+                caption: "Direction 02 — Sacred Mount Arafat & Celestial Mandala: Geometric low-poly summit of Jabal al-Rahmah bathed in twilight violet, framed by a starry sky and subtle sacred geometry.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-03-watercolor-mosque-silhouette.webp",
+                caption: "Direction 03 — Expressive Watercolor Silhouette: Dual-tone saffron and cobalt blue watercolor wash forming an ethereal mosque skyline on textured off-white paper.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-04-modern-coastal-skyline-mosque.webp",
+                caption: "Direction 04 — Modern Coastal Metascape: Contemporary mosque and illuminated crescent moon against a panoramic waterfront skyline and palm-lined promenade.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-05-archway-sunset-crescent.webp",
+                caption: "Direction 05 — Ornate Keyhole Arch & Golden Sunset: Intricate arabesque stone archway framing a glowing golden dusk over an ancient domed city.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-01-warm-amber-archway.webp",
+                caption: "2025 Series: Direction 01 — Warm Amber Archway & Hanging Lanterns: Multi-domed mosque silhouette in warm amber glowing through an arched window with starry blue skies.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-02-ice-blue-mosque-silhouette.webp",
+                caption: "2025 Series: Direction 02 — Minimalist Ice Blue Keyhole Archway: Pristine white mosque silhouette framed by an ornate Moroccan keyhole arch with crescent moon and hanging star pendants.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-2025-03-twilight-gradient-minarets.webp",
+                caption: "2025 Series: Direction 03 — Twilight Minaret Skyline & Illuminated Crescent: Multi-layered architectural mosque silhouette against a vivid sunset-to-indigo gradient with illuminated portals and delicate hanging stars.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "International Men's Day — Celebrating Guidance & Quiet Strength (19 November)",
+            description: "Sleek social media commemorative graphic designed for International Men's Day honoring dedication, mentorship, and quiet strength. Features a tailored suit silhouette, bold orange polka-dot necktie, subtle gender symbol watermark, and playful mustache emblem integrated into high-contrast typography.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/international-mens-day-social.webp",
+                caption: "International Men's Day Social Greeting — Modern sartorial styling with tailored suit lapel, polka-dot necktie, and custom mustache typography on deep cobalt blue.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "US Veteran's Day — Honoring All Who Served (11 November)",
+            description: "Solemn and patriotic commemorative visual suite honoring US military veterans. Explores three powerful visual directions: a waving American flag over an illuminated sunburst sky, a double-exposure officer silhouette with circular flag shield, and a high-contrast tactical squad rendering honors on a dawn ridge.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/veterans-day-social.webp",
+                caption: "Direction 01 — Waving American Flag & Saluting Soldiers: Majestic rippling flag canopy over a sunburst deep navy sky with five-star insignia and tactical soldier silhouettes.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/veterans-day-02-saluting-officer-shield.webp",
+                caption: "Direction 02 — Saluting Officer & Circular Flag Shield: Double-exposure cutout of a saluting officer framing an infantry soldier on an American flag shield.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/veterans-day-03-squad-salute-ridge.webp",
+                caption: "Direction 03 — Tactical Squad on Morning Ridge: High-contrast silhouette of five soldiers rendering honors and holding perimeter watch against radiating morning sunbeams.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
+            title: "Executive Thought Leadership & Op-Ed Campaigns (NYC AI Policy)",
+            description: "High-impact social media campaign creative promoting an executive op-ed co-authored by Shahed Islam (CEO, SJ Innovation) and Tom Grech (CEO, Queens Chamber of Commerce). Highlights AI's transformative impact on New York City and advocates for forward-thinking, inclusive municipal AI policymaking.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
+                caption: "Executive Op-Ed Creative — 'AI is Shaping the Future of New York City, But Policy Must Evolve With It' featuring glowing Empire State Building neural net and executive portraits.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          }
+        ],
         images: [
           {
             url: "/assets/projects/social-greetings/mlk-day/mlk-day-01-vector-podium.webp",
@@ -1051,13 +1623,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 05 — High-Contrast Monochrome Silhouette: Minimalist stark silhouette with atmospheric spotlighting and 'I Have A Dream' typography.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Pohela Boishakh — Bangla New Year 1433",
-        sectionDescription: "Five vibrant creative interpretations celebrating Pohela Boishakh (Bangla New Year 1433) for SJ Innovation. Explores traditional Bengali folk art motifs—from earthen pottery, marigolds, and pinwheels to the iconic Mangal Shobhajatra owl mask and sculpted heritage musical instruments—rendered in modern 3D and graphic compositions with bespoke Bengali typography.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/bangla-new-year/boishakh-01-clay-pot-alpana.webp",
             caption: "Direction 01 — Earthen Pot & Winnowing Fan: Traditional painted clay pitcher with marigolds, lit terracotta diya, woven bamboo kula, and floor alpana.",
@@ -1087,13 +1653,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 05 — Classical Folk Instruments & Peacock: Sculpted 3D floral medallion framed by harmonium, bansuri flutes, dhol, dotara, and peacock.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Eid al-Fitr Mubarak — Festive Visual Suites",
-        sectionDescription: "Five distinct creative directions celebrating Eid al-Fitr for SJ Innovation. Explores themes of fraternal unity, sacred architectural watercolor washes, photorealistic 3D marble minarets, atmospheric dusk lantern photography, and ornate laser-cut Islamic geometric filigree.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/eid-al-fitr/eid-01-fraternal-embrace.webp",
             caption: "Direction 01 — Fraternal Unity & Kolakuli: Stylized vector illustration of traditional fraternal embrace framed by archways and hanging glass lanterns.",
@@ -1123,13 +1683,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 05 — Laser-Cut Gold Filigree Crescent (Hilal): Intricate geometric Islamic star lattice crescent moon glowing against a dusk horizon.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Happy Easter — Spring Celebration Suites",
-        sectionDescription: "Five playful and refined creative directions celebrating Easter for SJ Innovation. Explores themes of minimalist bunny silhouettes, tactile close-up bunny ears, 3D branded glossy eggs, decorative porcelain flat-lays, and papercraft floral aperture cutouts.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/easter/easter-01-minimalist-bunny-silhouette.webp",
             caption: "Direction 01 — Minimalist Archway Silhouette: Serene arch window silhouette of an Easter bunny surrounded by delicate foliage against a starry blue sky.",
@@ -1165,13 +1719,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 06 — Easter Egg Floral Silhouette: Minimalist egg silhouette framed with spring daisies and a rabbit silhouette holding an orange blossom.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Happy Holi — Festival of Colors",
-        sectionDescription: "Four dynamic and festive creative directions celebrating Holi for SJ Innovation. Highlights organic herbal gulal powder bowls, outdoor action captures of hands pouring saffron powder, large-scale campus courtyard floor rangoli mandalas, and high-energy dual-tone explosive powder collisions.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/holi/holi-01-powder-bowls-trio.webp",
             caption: "Direction 01 — Trio of Organic Gulal Bowls: High-contrast studio still featuring rustic bowls heaped with vibrant orange, royal cobalt blue, and pure white gulal powder.",
@@ -1195,13 +1743,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 04 — Dual-Tone Explosive Powder Collision: High-energy kinetic splash of blazing orange and electric cobalt blue powder dust with textured chalk lettering.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Independence Day of Bangladesh — 26 March",
-        sectionDescription: "Three solemn and monumental creative directions commemorating Bangladesh's Independence Day for SJ Innovation. Features geometric vector representations of the National Martyrs' Memorial (Jatiyo Smriti Soudho), monumental freedom fighter silhouettes with soaring peace doves, and dramatic low-angle perspective photography.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/bangladesh-independence-day/independence-01-smriti-soudho-vector.webp",
             caption: "Direction 01 — National Martyrs' Memorial Vector: Geometric flat vector illustration of the Jatiyo Smriti Soudho at Savar with brick concourses, green foliage, and the fluttering flag.",
@@ -1219,13 +1761,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Low-Angle Concrete Monolith Perspective: Dramatic low-angle perspective photography of the Smriti Soudho concrete pylons piercing the clouds.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International Day of Happiness — 20 March",
-        sectionDescription: "Three uplifting creative directions celebrating International Day of Happiness for SJ Innovation. Explores executive thought-leadership quote cards from leadership, tactile 3D crafted smiley characters surrounded by floating emoji gems, and a whimsical cinematic street-food hamster celebrating unpretentious everyday joy.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/day-of-happiness/happiness-01-executive-quote-card.webp",
             caption: "Direction 01 — Executive Thought-Leadership Card: Minimalist social card featuring Shahed Islam (@shahednyc, CEO of SJ Innovation) on choosing happiness as a mindset.",
@@ -1243,13 +1779,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Whimsical Hamster Street Joy: Playful and heartwarming cinematic capture of a cheerful hamster wearing a yellow bucket hat holding a street-food skewer, celebrating pure everyday happiness.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International Women's Day — 8 March",
-        sectionDescription: "Three vibrant and empowering creative directions celebrating International Women's Day for SJ Innovation. Explores 3D sculpted floral bouquets cradled in hands, overhead circles of solidarity celebrating teamwork, and an energetic multicultural group portrait of diverse women.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/womens-day/womens-day-01-cradled-blossoms-3d.webp",
             caption: "Direction 01 — Cradled Spring Flora: 3D sculpted hands gently cradling a blooming bouquet of daisies and vibrant blossoms against a pastel gradient.",
@@ -1267,13 +1797,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Multicultural Women Portrait: Celebratory ensemble portrait of diverse women across different cultures and walks of life against a vibrant fuchsia backdrop.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International Mother Language Day — 21 February",
-        sectionDescription: "Three poignant creative directions honoring the 1952 Language Movement and International Mother Language Day for SJ Innovation. Features a majestic sunrise over the Central Shaheed Minar with floating Bengali typography, archival historical photography of the 1952 protest procession with illuminated neon placards, and a minimalist modern tribute with ethereal vertical light pillars, glowing sun disc, and subtle floating Bengali script.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/mother-language-day/language-day-01-shaheed-minar-sunrise.webp",
             caption: "Direction 01 — Central Shaheed Minar at Golden Dawn: Monumental architectural view of the Central Shaheed Minar against a glowing sunrise with floating Bengali alphabets.",
@@ -1291,13 +1815,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Luminous Shaheed Minar Light Beams & Sun Disc: Minimalist modern composition of vertical pillars of light evoking the Shaheed Minar surrounding a warm orange sun disc, crowned by subtle floating Bengali alphabets.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International May Day — 1 May",
-        sectionDescription: "Three compelling creative directions commemorating International Workers' Day for SJ Innovation. Explores high-contrast architectural labor silhouettes, a 3D isometric toolkit bridging manual craftsmanship with modern computing, and a contemporary tech developer workstation against urban skyline scaffolding.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/may-day/mayday-01-construction-silhouettes.webp",
             caption: "Direction 01 — Structural Labor Silhouettes: High-contrast blue vector illustration honoring building construction workers, jackhammers, and structural scaffolding.",
@@ -1315,13 +1833,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Tech Engineering & Infrastructure: Contemporary visual narrative showing a software engineer working across multi-screen telemetry dashboards with architectural cranes.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Ramadan Mubarak — Sacred Reflections",
-        sectionDescription: "Two warm and heartwarming creative directions celebrating the holy month of Ramadan for SJ Innovation. Highlights communal Iftar traditions of sharing fresh dates at golden sunset, and a joyful 3D animated Muslim family gathered around the Iftar dining table.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/ramadan/ramadan-01-iftar-sharing-dates.webp",
             caption: "Direction 01 — Sharing Dates at Golden Hour Iftar: Warm, communal 3D render of hands reaching together to share fresh Medjool dates and water against a golden sunset and mosque dome.",
@@ -1339,13 +1851,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Archway Iftar Feast & Henna: Atmospheric Iftar spread viewed through an Islamic arch with hanging lanterns, showing hands reaching for fresh dates, salads, and juices.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Republic Day of India — 26 January (गणतंत्र दिवस)",
-        sectionDescription: "Three majestic creative directions commemorating Republic Day of India for SJ Innovation. Features historic red sandstone vector silhouettes of the Red Fort (Lal Qila) in Delhi, golden hour architectural photography of Mughal ramparts, and monumental flowing Tiranga tricolor drapes framing the fort courtyard.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/india-republic-day/republic-day-01-red-fort-sunset-vector.webp",
             caption: "Direction 01 — Red Fort Dusk Silhouette Vector: Architectural vector illustration of the iconic Red Fort (Lal Qila) in Delhi under a warm sunset sky.",
@@ -1363,13 +1869,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Grand Tricolor Flag Drapes: Dramatic architectural vista of the Red Fort adorned with monumental flowing Indian Tiranga tricolor drapes and mandalas.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "US Memorial Day — In Memory of the Fallen",
-        sectionDescription: "Three solemn and dignified commemorative visual directions honoring fallen service members for SJ Innovation. Explores a textural American flag honor roll of names, a poignant white marble cemetery cross adorned with fresh tulips and a miniature flag, and military buglers playing Taps against a silent field of inscribed heroes.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/us-memorial-day/memorial-day-01-stars-stripes-fallen-roll.webp",
             caption: "Direction 01 — Roll of the Fallen & Stars and Stripes: Somber commemoration displaying the waving American flag texture overlaid with thousands of inscribed names of fallen service members.",
@@ -1387,13 +1887,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Taps Bugler Silhouette & Honor Roll: Poignant silhouette of military buglers playing Taps against a deep navy field filled with thousands of names of fallen heroes, framed by a waving American flag.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Independence Day of India — 15 August (स्वतंत्रता दिवस)",
-        sectionDescription: "Three stirring creative directions celebrating India's Independence Day for SJ Innovation. Spans majestic air force flypasts trailing saffron, white, and green tricolor plumes over India Gate, an impressionist watercolor architectural wash, and a heroic bronze monument of soldiers raising the Tiranga.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/india-independence-day/india-independence-01-india-gate-flypast.webp",
             caption: "Direction 01 — India Gate Air Force Flypast: Iconic low-angle view of the sandstone India Gate with three fighter jets streaking across the sky leaving vivid saffron, white, and green smoke plumes.",
@@ -1411,13 +1905,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Patriotic Soldier Memorial & Jet Formation: Heroic bronze statues of soldiers raising the Indian national flag atop a stone plinth, echoed by a V-formation of fighter jets releasing tricolor trails.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Father's Day — Celebrating Guidance & Love",
-        sectionDescription: "Seven heartwarming and modern creative directions honoring Father's Day for SJ Innovation. Explores themes of gentle guidance, superhero mentorship, playful building, and shared outdoor moments—from minimalist hand-in-hand silhouettes and piggyback joy to building block collaboration and watercolor tree swing reflections.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/fathers-day/fathers-day-01-holding-hands-minimalist.webp",
             caption: "Direction 01 — Gentle Guiding Hands: Minimalist high-contrast vector silhouette of a parent's blue hand tenderly holding a toddler's orange hands in trust and safety.",
@@ -1459,13 +1947,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 07 — Watercolor Sunset Tree Swing: Nostalgic blue watercolor silhouette of a father pushing his laughing child on a rope swing beneath a grand tree during a golden orange sunset.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International Programmer's Day — Code, Innovation & Craft",
-        sectionDescription: "Three electrifying creative directions celebrating International Programmer's Day for SJ Innovation. Spans floating glowing glassmorphic tech stack icons, a cinematic dual-screen late-night development setup with AI aura, and a futuristic Creation of Adam motif symbolizing the synergy between human developers and AI.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/programmers-day/programmers-day-01-floating-tech-icons.webp",
             caption: "Direction 01 — Floating Glassmorphic Tech Stack: Cinematic dark frame featuring a developer's hand surrounded by orbiting neon-accented glass icons representing HTML, CSS, JavaScript, terminal, Git, and database architectures.",
@@ -1483,13 +1965,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Human-AI Synergy & Creation Touch: Futuristic 'Creation of Adam' homage showing a sleek robotic hand and human fingertip converging upon glowing 3D code brackets.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Eid al-Adha Mubarak — Sacred Traditions & Devotion",
-        sectionDescription: "Five elevated creative directions celebrating Eid al-Adha (1447 H) for SJ Innovation. Explores architectural grand mosques under vivid saffron skies, the sacred low-poly summit of Mount Arafat with celestial mandala linework, dual-tone watercolor minaret silhouettes, twilight coastal cityscapes, and historic Islamic keyhole archways overlooking golden sunset horizons.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/eid-al-adha/eid-adha-01-blue-mosque-orange-sky.webp",
             caption: "Direction 01 — Architectural Grandeur & Twilight Horizon: Dramatic Sultanahmet / Blue Mosque minarets set against a fiery sunset and crescent moon.",
@@ -1537,25 +2013,13 @@ export const PROJECTS: Project[] = [
             caption: "2025 Series: Direction 03 — Twilight Minaret Skyline & Illuminated Crescent: Multi-layered architectural mosque silhouette against a vivid sunset-to-indigo gradient with illuminated portals and delicate hanging stars.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "International Men's Day — Celebrating Guidance & Quiet Strength (19 November)",
-        sectionDescription: "Sleek social media commemorative graphic designed for International Men's Day honoring dedication, mentorship, and quiet strength. Features a tailored suit silhouette, bold orange polka-dot necktie, subtle gender symbol watermark, and playful mustache emblem integrated into high-contrast typography.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/international-mens-day-social.webp",
             caption: "International Men's Day Social Greeting — Modern sartorial styling with tailored suit lapel, polka-dot necktie, and custom mustache typography on deep cobalt blue.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "US Veteran's Day — Honoring All Who Served (11 November)",
-        sectionDescription: "Solemn and patriotic commemorative visual suite honoring US military veterans. Explores three powerful visual directions: a waving American flag over an illuminated sunburst sky, a double-exposure officer silhouette with circular flag shield, and a high-contrast tactical squad rendering honors on a dawn ridge.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/veterans-day-social.webp",
             caption: "Direction 01 — Waving American Flag & Saluting Soldiers: Majestic rippling flag canopy over a sunburst deep navy sky with five-star insignia and tactical soldier silhouettes.",
@@ -1573,13 +2037,7 @@ export const PROJECTS: Project[] = [
             caption: "Direction 03 — Tactical Squad on Morning Ridge: High-contrast silhouette of five soldiers rendering honors and holding perimeter watch against radiating morning sunbeams.",
             type: "carousel",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Executive Thought Leadership & Op-Ed Campaigns (NYC AI Policy)",
-        sectionDescription: "High-impact social media campaign creative promoting an executive op-ed co-authored by Shahed Islam (CEO, SJ Innovation) and Tom Grech (CEO, Queens Chamber of Commerce). Highlights AI's transformative impact on New York City and advocates for forward-thinking, inclusive municipal AI policymaking.",
-        images: [
+          },
           {
             url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
             caption: "Executive Op-Ed Creative — 'AI is Shaping the Future of New York City, But Policy Must Evolve With It' featuring glowing Empire State Building neural net and executive portraits.",
