@@ -2881,65 +2881,115 @@ export const PROJECTS: Project[] = [
   {
     id: "nagae-studio",
     slug: "nagae-studio",
-    title: "NAGAE Studio — Retailer Platform & Luxury Bridal Ecosystem",
+    title: "NAGAE Studio — Luxury Bridal Retailer Ecosystem",
     category: "Mobile & Web",
     status: "SHIPPED",
-    company: "SJ Innovation",
-    client: "NAGAE Studio (Replica of Production Client Platform)",
+    company: "NAGAE Studio / SJ Innovation",
+    client: "NAGAE Studio (Redesign Showcase of Production Client Platform)",
     year: "2025 – 2026",
     duration: "4 Months",
-    scope: ["Mobile iOS App", "Admin CMS", "Client CRM", "Design System", "Retailer Platform"],
-    summary: "Four interconnected luxury retailer surfaces (Stylist Mobile App, Admin Portal, Sales Intelligence CRM, and Unified Technical Architecture) engineered with high-contrast Japanese minimalist aesthetics. Conceived and presented as an authentic replica of a successful production US client project.",
+    scope: ["Retailer Platform", "Admin Management", "Product Catalog CMS", "AI Knowledge Base", "Performance Analytics", "Luxury Bridal UX"],
+    summary: "Enterprise administrative management portal and retailer intelligence ecosystem designed for NAGAE Studio—a modern luxury bridal brand. Features comprehensive gown catalog administration with fabric and silhouette tagging, real-time showroom performance analytics, and a custom NAGAE AI Knowledge Base empowering bridal stylists with instant fit and modification intelligence.",
     coverImage: "/assets/projects/nagae-studio/nagae-studio-cover-banner.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Replica of a high-impact US client engagement: Showroom bridal stylists were navigating fragmented desktop portals to record bride preferences, check gown inventory, and follow up with custom quotes.",
-      role: "Lead UI/UX Designer — mapped the entire in-showroom bridal journey and engineered the multi-platform retailer ecosystem (Stylist App, Admin Portal, CRM, and System Architecture).",
-      method: "Designed an ergonomic one-handed iOS stylist app, connected back-office admin CMS, and sales intelligence CRM using high-contrast Japanese minimalist architecture."
+      challenge: "Luxury bridal retail requires rapid coordination between showroom stylists and studio management. The client needed a unified administrative management platform to oversee global retailer networks, manage high-value gown catalogs with nuanced customization options, and deliver instant technical answers on gown alterations and lead times.",
+      role: "Lead UI/UX Designer — conceptualized and designed the complete NAGAE Studio administrative management console, product catalog architecture, analytics dashboards, and AI knowledge base.",
+      method: "Engineered high-elegance editorial dashboard layouts with warm blush accents (#E58A9F), serif typography hierarchies, multi-attribute tagging systems, and real-time stylist query telemetry."
     },
-    problem: "Bridal appointments require uninterrupted personal connection. Stylists needed to pull up dress catalogs, note custom alterations, and capture bride feedback on a mobile device without breaking eye contact or fumbling through nested menus.",
+    problem: "Bridal stylists assisting brides in fitting suites need instant answers on complex gown modifications, split sizing, fabric care, and delivery lead times. Studio administrators previously lacked centralized telemetry to track which gown styles were trending in showrooms, while managing catalog additions across intricate combinations of fabrics (Mikado, Crepe, Tulle, Silk Charmeuse) and silhouettes (A-Line, Trumpet, Ball Gown) was manual and error-prone.",
     process: [
       {
-        title: "Ergonomic One-Handed Stylist Mobile UI",
-        description: "Tailored bottom-sheet navigation and quick-tagging filters so stylists can effortlessly document gown selections while assisting brides in fitting suites.",
+        title: "Platform Performance & Showroom Analytics",
+        description: "Architected an executive performance overview tracking showroom health metrics and gown demand curves across authorized retail partners.",
         details: [
-          "Fast gown lookbook with instant size and showroom sample availability",
-          "Visual moodboard tagging directly linked to bride profile records",
-          "Automated post-appointment summary generation for instant client follow-up"
+          "Monitored active stylist engagement (104 active stylists), monthly logins, and catalog view volume across 7D/30D/90D/1Y timeframes",
+          "Visualized showroom popularity ranking bestsellers (Sloan Mikado, Ophelia Tulle, Sloan Fitted) against newer collection releases",
+          "Integrated stylist quiz and training completion metrics to guarantee consistent brand representation across global retail locations"
         ]
       },
       {
-        title: "Connected Admin CMS & CRM Architecture",
-        description: "Built the centralized dashboard for studio managers to manage trunk shows, track gown production timelines, and analyze sales conversion data.",
+        title: "NAGAE AI Stylist Knowledge Base",
+        description: "Designed a specialized AI assistance dashboard providing showroom stylists with immediate answers to technical bridal styling questions.",
         details: [
-          "Seamless data synchronization across mobile app, web CMS, and client email workflows",
-          "Refined luxury brand aesthetic with generous whitespace and high-fashion editorial typography"
+          "Tracked resolution confidence (98.2%) and stylist satisfaction scores (4.9/5) across monthly query volumes",
+          "Identified top stylist query themes: custom gown modifications, rush production lead times, fabric care, and veil pairings",
+          "Reduced showroom escalations to studio production teams by delivering instant, verified sizing and alteration guidance"
+        ]
+      },
+      {
+        title: "Product Catalog & Multi-Attribute Gown Management",
+        description: "Engineered a high-speed catalog management matrix and new product authoring workflow tailored for luxury bridal collections.",
+        details: [
+          "Structured multi-select attribute tagging for luxury fabrics (Mikado, Silk Charmeuse, Organza) and silhouettes (A-Line, Trumpet, Bias Cut)",
+          "Quick-filter search and CSV export functionality for rapid wholesale price list distribution and inventory audits",
+          "Automated product imagery preview linking and status badging (Bestseller, New, Customizable) for showroom consistency"
         ]
       }
     ],
-    aiWorkflow: "Utilized rapid low-code deployment tools to test live stylist workflows on real iPhone devices during fitting simulations prior to production handoff.",
+    aiWorkflow: "Integrated the NAGAE AI Knowledge Base telemetry into the administrative interface, enabling studio leads to monitor common stylist queries and continuously refine bridal fitting guides.",
     outcomes: [
-      { label: "Stylist Adoption", value: "100%", subtext: "Full showroom adoption across US bridal studio teams" },
-      { label: "Quote Turnaround", value: "< 5 min", subtext: "From appointment completion to automated bride quote delivery" },
-      { label: "Platforms Connected", value: "4 Surfaces", subtext: "Stylist App, Admin Portal, CRM, & System Architecture sharing one unified database" }
+      { label: "Resolution Confidence", value: "98.2%", subtext: "Accuracy on stylist alteration and sizing queries via NAGAE AI" },
+      { label: "Catalog View Velocity", value: "2,450+", subtext: "Monthly style lookbook views across authorized bridal retail showrooms" },
+      { label: "Stylist Satisfaction", value: "4.9 / 5", subtext: "Helpfulness rating from retail stylists using the platform" }
     ],
-    outcomeSummary: "Delivered a high-elegance, high-speed ecosystem that elevated the luxury showroom experience while eliminating administrative back-office bottlenecks. Presented here as a replica showcase of successful client production work.",
+    outcomeSummary: "Delivered an elevated luxury bridal management platform combining editorial sophistication with operational rigor—bridging the gap between studio administration, authorized retail showrooms, and intelligent stylist support.",
+    gallerySections: [
+      {
+        sectionTitle: "Admin Management & Retailer Platform",
+        sectionDescription: "Comprehensive administrative management surfaces engineered for NAGAE Studio, uniting real-time showroom performance analytics, AI-assisted stylist intelligence, and luxury gown catalog publishing.",
+        images: [
+          {
+            url: "/assets/projects/nagae-studio/nagae-admin-01-performance-analytics.webp",
+            caption: "Admin Management — Platform Performance & Stylist Activity Analytics Dashboard",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nagae-studio/nagae-admin-02-ai-knowledge-base.webp",
+            caption: "Admin Management — NAGAE AI Knowledge Base & Stylist Resolution Telemetry",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nagae-studio/nagae-admin-03-product-catalog.webp",
+            caption: "Admin Management — Luxury Bridal Gown Product Catalog & Inventory Matrix",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/nagae-studio/nagae-admin-04-add-product.webp",
+            caption: "Admin Management — New Gown Product Creator & Fabric/Silhouette Attribute Tagger",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
-        url: "/assets/projects/nagae-studio/nagae-studio-cover-banner.webp",
-        caption: "NAGAE Studio — Retailer Platform Architecture (Stylist App, Admin Portal, CRM System & System Architecture)",
+        url: "/assets/projects/nagae-studio/nagae-admin-01-performance-analytics.webp",
+        caption: "Admin Management — Platform Performance & Stylist Activity Analytics Dashboard",
         type: "desktop",
-        aspectRatio: "16/10"
+        aspectRatio: "16/9"
       },
       {
-        url: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop",
-        caption: "Stylist mobile interface and showroom gown inventory lookup",
-        type: "mobile"
+        url: "/assets/projects/nagae-studio/nagae-admin-02-ai-knowledge-base.webp",
+        caption: "Admin Management — NAGAE AI Knowledge Base & Stylist Resolution Telemetry",
+        type: "desktop",
+        aspectRatio: "16/9"
       },
       {
-        url: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=1400&auto=format&fit=crop",
-        caption: "Back-office inventory management and appointment CRM workflow",
-        type: "desktop"
+        url: "/assets/projects/nagae-studio/nagae-admin-03-product-catalog.webp",
+        caption: "Admin Management — Luxury Bridal Gown Product Catalog & Inventory Matrix",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/nagae-studio/nagae-admin-04-add-product.webp",
+        caption: "Admin Management — New Gown Product Creator & Fabric/Silhouette Attribute Tagger",
+        type: "desktop",
+        aspectRatio: "16/9"
       }
     ]
   },
