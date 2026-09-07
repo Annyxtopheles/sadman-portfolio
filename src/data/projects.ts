@@ -333,6 +333,58 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Editorial carousel and executive 2-page briefing document translating the multi-agency AI data security guidance (NSA, CISA, FBI, NCSC, ASD) into executive takeaways, lifecycle threat matrices, and plain-English actionable checklists. Developed in close coordination with the enterprise sales team as an authoritative B2B lead generation asset.",
         documentUrl: "/assets/projects/buildyourai/byai-nsa-cisa-security-guide.pdf",
         documentTitle: "Why AI Security Starts with Data and Why NYC Agencies Should Care (2-Page Executive Security Guide)",
+        carousels: [
+          {
+            title: "NSA/CISA AI Data Security Guide",
+            description: "10-Step AI Data Security Checklist for Agencies & Enterprise Teams (7 slides)",
+            documentUrl: "/assets/projects/buildyourai/byai-nsa-cisa-security-guide.pdf",
+            documentTitle: "Why AI Security Starts with Data and Why NYC Agencies Should Care (2-Page Executive Security Guide)",
+            slides: [
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
+                caption: "Slide 01 — Cover: 10-Step NSA/CISA AI Data Security Checklist",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-02-why-agencies-need-it.webp",
+                caption: "Slide 02 — Why Government Agencies Need Data-Driven AI Security",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-03-big-risks-audience.webp",
+                caption: "Slide 03 — The Big Risks & Target Stakeholder Audience",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-04-lifecycle-threats.webp",
+                caption: "Slide 04 — AI Lifecycle & Threats Explained Simply",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-05-checklist-part1.webp",
+                caption: "Slide 05 — 10-Step NSA/CISA Data Security Checklist (Steps 1–4)",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-06-checklist-part2.webp",
+                caption: "Slide 06 — 10-Step NSA/CISA Data Security Checklist (Steps 5–10)",
+                type: "carousel",
+                aspectRatio: "4/5"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-nsa-cisa-07-consultation-cta.webp",
+                caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
+                type: "carousel",
+                aspectRatio: "4/5"
+              }
+            ]
+          }
+        ],
         images: [
           {
             url: "/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp",
@@ -379,26 +431,14 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "BuildYourAI — Multi-Format Meta Ad Campaigns",
-        sectionDescription: "Responsive Meta advertising creative packages designed for BuildYourAI across 1:1 Feed, 9:16 Story/Reels, and 16:9 Landscape aspect ratios, pairing clear benefit-led value propositions with high-contrast conversion CTAs.",
+        sectionTitle: "BuildYourAI — Paid Meta Social Ad Creative",
+        sectionDescription: "High-contrast square social ad creative for BuildYourAI, pairing clear benefit-led value propositions with high-conversion CTAs for social feeds.",
         images: [
           {
             url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
             caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
-            type: "carousel",
+            type: "mockup",
             aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
-            caption: "Vertical Story & Reels Ad (9:16) — Full-screen mobile engagement with direct booking CTA",
-            type: "mobile",
-            aspectRatio: "9/16"
-          },
-          {
-            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
-            caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
-            type: "desktop",
-            aspectRatio: "16/9"
           }
         ]
       },
@@ -515,20 +555,8 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
         caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
-        type: "carousel",
+        type: "mockup",
         aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
-        caption: "Vertical Story & Reels Ad (9:16) — Full-screen mobile engagement with direct booking CTA",
-        type: "mobile",
-        aspectRatio: "9/16"
-      },
-      {
-        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
-        caption: "Landscape Display Ad (16:9) — Desktop and Audience Network placement",
-        type: "desktop",
-        aspectRatio: "16/9"
       }
     ]
   },

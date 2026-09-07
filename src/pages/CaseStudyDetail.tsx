@@ -455,7 +455,7 @@ export const CaseStudyDetail: React.FC = () => {
                       )}
                     </div>
 
-                    {section.documentUrl && (!isCarouselSection || currentSectionMode === 'grid') && (
+                    {section.documentUrl && !section.carousels && (!isCarouselSection || currentSectionMode === 'grid') && (
                       <div className="p-4 sm:p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-[#333333] transition-colors">
                         <div className="flex items-center gap-3">
                           <div className="w-10 h-10 rounded-[2px] bg-[#141414] border border-[#262626] flex items-center justify-center text-xs text-[#FFFFFF] shrink-0 font-mono font-medium">
@@ -484,19 +484,31 @@ export const CaseStudyDetail: React.FC = () => {
                     {/* Mode 1: Expanded View */}
                     {viewMode === 'expanded' ? (
                       section.carousels && section.carousels.length > 0 ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                          {section.carousels.map((carousel, cIdx) => (
-                            <div key={cIdx} className="flex flex-col">
-                              <CarouselViewer
-                                slides={carousel.slides}
-                                title={carousel.title}
-                                documentUrl={carousel.documentUrl}
-                                documentTitle={carousel.documentTitle}
-                                onOpenLightbox={handleOpenLightbox}
-                              />
-                            </div>
-                          ))}
-                        </div>
+                        section.carousels.length === 1 ? (
+                          <div className="max-w-xl mx-auto w-full">
+                            <CarouselViewer
+                              slides={section.carousels[0].slides}
+                              title={section.carousels[0].title}
+                              documentUrl={section.carousels[0].documentUrl || section.documentUrl}
+                              documentTitle={section.carousels[0].documentTitle || section.documentTitle}
+                              onOpenLightbox={handleOpenLightbox}
+                            />
+                          </div>
+                        ) : (
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                            {section.carousels.map((carousel, cIdx) => (
+                              <div key={cIdx} className="flex flex-col">
+                                <CarouselViewer
+                                  slides={carousel.slides}
+                                  title={carousel.title}
+                                  documentUrl={carousel.documentUrl}
+                                  documentTitle={carousel.documentTitle}
+                                  onOpenLightbox={handleOpenLightbox}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )
                       ) : isCarouselSection && currentSectionMode === 'carousel' ? (
                         <div className="max-w-xl mx-auto w-full">
                           <CarouselViewer
@@ -511,7 +523,9 @@ export const CaseStudyDetail: React.FC = () => {
                         <div
                           className={`grid gap-6 lg:gap-8 ${
                             section.images.length === 1
-                              ? 'grid-cols-1 max-w-4xl'
+                              ? section.images[0]?.aspectRatio === '1/1'
+                                ? 'grid-cols-1 max-w-md'
+                                : 'grid-cols-1 max-w-4xl'
                               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                           }`}
                         >
