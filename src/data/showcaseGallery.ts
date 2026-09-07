@@ -15,11 +15,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "case-study-1",
     type: "case-study",
-    slug: "icr-debt-surveillance",
-    title: "ICR Debt Surveillance Terminal",
-    category: "Financial Dashboard · Enterprise UX",
-    summary: "A Bloomberg Terminal–style debt intelligence and risk monitoring dashboard for institutional credit investors.",
-    src: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
+    slug: "aegis-credit-terminal",
+    title: "Aegis Credit Terminal Dashboard",
+    category: "Financial Terminal · Enterprise UX",
+    summary: "An institutional credit terminal administration platform enabling entity onboarding, role-based user management, and real-time market commentary.",
+    src: "/assets/projects/aegis-terminal/aegis-credit-terminal-cover.webp",
     year: "2025 – 2026",
   },
   {

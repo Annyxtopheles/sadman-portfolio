@@ -2420,66 +2420,108 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "icr-debt-surveillance",
-    slug: "icr-debt-surveillance",
-    title: "ICR Debt Surveillance Terminal",
+    id: "aegis-credit-terminal",
+    slug: "aegis-credit-terminal",
+    title: "Aegis Credit Terminal Dashboard",
     category: "Enterprise Dashboards",
     status: "CASE STUDY",
-    company: "SJ Innovation",
-    client: "Institutional Credit Investors",
+    company: "Aegis Financial",
+    client: "Aegis Credit Terminal Platform",
     year: "2025 – 2026",
     duration: "3 Months",
-    scope: ["Financial UI", "Tabular Architecture", "Design Systems", "Figma Prototyping"],
-    summary: "A Bloomberg Terminal–style debt intelligence and risk monitoring dashboard for institutional credit investors.",
-    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop",
+    scope: ["Financial UI", "Admin Console", "Role-Based Access Control", "Credit Intelligence", "Design Systems", "Figma Prototyping"],
+    summary: "Comprehensive enterprise design system and administrative console for the Aegis Credit Terminal—an institutional debt intelligence and risk monitoring platform. Powers corporate credit onboarding, tiered role-based user management, live analyst debt pricing commentary, and macroeconomic sector news curation.",
+    coverImage: "/assets/projects/aegis-terminal/aegis-credit-terminal-cover.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Institutional credit analysts were losing hours cross-referencing covenant triggers, liquidity ratios, and debt maturities across 100+ corporate issuers in fragmented spreadsheets.",
-      role: "Lead Product Designer — designed the entire 15-module configurable dashboard and tabular typographic system.",
-      method: "Engineered strict typographic micro-grids and stress-tested interactive prototypes in Figma and low-code React wrappers to validate zero-latency interaction models."
+      challenge: "Institutional credit operators and terminal administrators required a robust, distraction-free control console to manage multi-company onboarding, role-based analyst permissions, and real-time debt pricing and macroeconomic sector intelligence without operational latency.",
+      role: "Lead Product Designer — conceptualized and engineered the complete dark-mode design system, administrative workflows, entity onboarding architecture, and editorial publishing console.",
+      method: "Engineered high-density tabular user management layouts, collapsible accordion commentary workflows with draft-to-publish states, and structured metadata forms adhering to strict dark-mode contrast standards."
     },
-    problem: "Financial analysts operate in high-stakes environments where covenant breaches must be identified within seconds. The interface needed to present dense financial metrics—including maturity curves, debt tranches, and liquidity runway—without sacrificing legibility across multi-monitor terminal setups.",
+    problem: "Credit surveillance platforms demand precision and rapid administrative turnaround. Institutional administrators juggle multi-entity corporate structures (e.g., Apex Brands Group, Chefs' Warehouse, Horizon Global), assigning granular roles (Company Admin, User) while simultaneously publishing market-moving debt pricing commentary, covenant compliance updates, and geopolitical risk assessments across tight reporting cycles.",
     process: [
       {
-        title: "15-Module Configurable Grid Architecture",
-        description: "Developed a modular card structure allowing analysts to arrange surveillance modules (issuer summary, covenant compliance matrix, debt maturity schedule, alert feeds) to fit their workflow.",
+        title: "Enterprise Admin Console & Multi-Entity Management",
+        description: "Architected the core administrative console allowing platform operators to manage company profiles, provision corporate administrators, and audit user access status.",
         details: [
-          "Monospace tabular baseline alignment for rapid numerical scanning across columns",
-          "Color-coded risk status badges with WCAG AA compliance against dark charcoal backgrounds",
-          "Custom multi-issuer comparison drawers for rapid debt structure analysis"
+          "Streamlined multi-company onboarding workflows with instant contact delegation and entity tagging",
+          "High-clarity user administration table featuring status badges (Active, Pending) and role hierarchy tokens",
+          "Persistent dark-theme UI with teal primary accents and slate secondary tones for sustained analyst focus"
         ]
       },
       {
-        title: "Zero-Latency Micro-Interactions & Prototyping",
-        description: "Built interactive stress-test models in Figma and low-code sandboxes to simulate real-time rate shock scenarios, ensuring data filtering felt instantaneous.",
+        title: "Structured Commentary & Sector Intelligence Publishing",
+        description: "Designed a modular editorial environment for credit analysts to author, stage, and publish real-time debt commentary and macroeconomic risk alerts.",
         details: [
-          "Contextual hover tooltips with complete tranche breakdown details",
-          "One-click export formatting for investor committee memorandums"
+          "Collapsible category drawers for Debt Pricing, Capital Structure, and Covenant Compliance with live publication timestamps",
+          "Draft-to-Publish state toggles ensuring thorough review before pushing market intelligence to terminal subscribers",
+          "Categorized sector news curation modules spanning Regulatory, Geopolitical, and Monetary Policy feeds"
         ]
       }
     ],
     aiWorkflow: "Leveraged Figma AI scripting and automated data populators to generate realistic multi-tranche financial datasets across 100+ simulated corporate issuers, cutting component stress-testing time in half.",
     outcomes: [
-      { label: "Portfolio Audit Time", value: "-65%", subtext: "Reduction in manual data lookup across sample investor portfolios" },
-      { label: "Design System Modules", value: "15+", subtext: "Modular dashboard components adopted as enterprise analytics standards" },
-      { label: "Covenant Breach Discovery", value: "Instant", subtext: "Visual alert threshold system replaced manual spreadsheet auditing" }
+      { label: "Admin Workflow Efficiency", value: "+70%", subtext: "Faster company onboarding and user provisioning across institutional accounts" },
+      { label: "Editorial Turnaround", value: "Instant", subtext: "Streamlined live commentary and sector risk publishing without developer intervention" },
+      { label: "Design System", value: "100% Dark", subtext: "Ergonomic, high-contrast dark theme optimized for intensive financial terminal environments" }
     ],
-    outcomeSummary: "The resulting interface compressed high-density institutional risk tracking into an intuitive, zero-latency dashboard that reduced investor review cycles from hours to minutes.",
+    outcomeSummary: "Transformed institutional credit administration into a streamlined, high-efficiency command center, uniting multi-company user management with rapid market commentary and sector intelligence distribution.",
+    gallerySections: [
+      {
+        sectionTitle: "Admin Console & Credit Intelligence Management",
+        sectionDescription: "High-density administrative interfaces engineered for the Aegis Credit Terminal, enabling rapid company onboarding, granular user access control, analyst debt commentary, and macroeconomic risk curation.",
+        images: [
+          {
+            url: "/assets/projects/aegis-terminal/aegis-admin-01-onboarding.webp",
+            caption: "Admin Console — Add New Company & Corporate Entity Onboarding Workflow",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/aegis-terminal/aegis-admin-02-manage-users.webp",
+            caption: "Admin Console — Role-Based User Management & Access Status Matrix",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/aegis-terminal/aegis-admin-03-credit-commentary.webp",
+            caption: "Admin Console — Analyst Commentary Sections (Debt Pricing, Capital Structure & Covenant Compliance)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/aegis-terminal/aegis-admin-04-sector-news.webp",
+            caption: "Admin Console — Sector News & Commentary Publishing (Regulatory, Geopolitical & Policy Subsections)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
-        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop",
-        caption: "Main ICR Surveillance Terminal — 15-module configurable risk monitoring layout",
-        type: "desktop"
+        url: "/assets/projects/aegis-terminal/aegis-admin-01-onboarding.webp",
+        caption: "Admin Console — Add New Company & Corporate Entity Onboarding Workflow",
+        type: "desktop",
+        aspectRatio: "16/9"
       },
       {
-        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop",
-        caption: "Tabular data hierarchy & covenant stress-testing interaction state",
-        type: "system"
+        url: "/assets/projects/aegis-terminal/aegis-admin-02-manage-users.webp",
+        caption: "Admin Console — Role-Based User Management & Access Status Matrix",
+        type: "desktop",
+        aspectRatio: "16/9"
       },
       {
-        url: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1400&auto=format&fit=crop",
-        caption: "Issuer debt maturity ladder and liquidity distribution visualization",
-        type: "mockup"
+        url: "/assets/projects/aegis-terminal/aegis-admin-03-credit-commentary.webp",
+        caption: "Admin Console — Analyst Commentary Sections (Debt Pricing, Capital Structure & Covenant Compliance)",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/aegis-terminal/aegis-admin-04-sector-news.webp",
+        caption: "Admin Console — Sector News & Commentary Publishing (Regulatory, Geopolitical & Policy Subsections)",
+        type: "desktop",
+        aspectRatio: "16/9"
       }
     ]
   },
