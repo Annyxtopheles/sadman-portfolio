@@ -7,8 +7,8 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
-        title="Sadman Zaman Khan — Designer & Poet"
-        description="Designer and poet crafting meticulous designs for brands and digital products."
+        title="Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper"
+        description="Personal portfolio of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper designing enterprise dashboards, AI-native product interfaces, motion graphics, and brand systems."
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[96px] md:pt-[110px]">

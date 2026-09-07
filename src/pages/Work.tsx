@@ -8,7 +8,7 @@ const Work: React.FC = () => {
     <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title="Work — Sadman Zaman Khan"
-        description="Selected design work and case studies by Sadman Zaman Khan."
+        description="Selected UI/UX design case studies, enterprise dashboards, AI systems, motion reels, and brand systems by Sadman Zaman Khan."
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px]">

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://sadmanzamankhan.pages.dev';
+const SITE_URL = 'https://sadman-portfolio.pages.dev';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.webp`;
 
 interface SEOHeadProps {
