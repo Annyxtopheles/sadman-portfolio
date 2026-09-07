@@ -584,7 +584,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Cost Transparency", value: "50–60% Savings", subtext: "Clear financial contrast of $9k/yr per-seat vs $3k–$4k direct API costs" },
-      { label: "Carousel Formats", value: "3 Full Campaigns (4:5)", subtext: "12 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
+      { label: "Carousel Formats", value: "4 Full Campaigns (4:5)", subtext: "15 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
       { label: "Campaign Ecosystem", value: "Carousels + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
     ],
     outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
@@ -674,6 +674,30 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
             caption: "Slide 04 — Radically Honest Trust CTA: 'If It's Not the Right Fit, We'll Tell You' directing to controltower.collabai.software.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Campaign 04: 'We're Marketers, Not Engineers' — Full-Service Onboarding Carousel",
+        sectionDescription: "Direct objection-handling carousel addressing agency technical hesitancy by showcasing CollabAI's white-glove server installation, automated workflow configuration, and ongoing edge support.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b4-01-marketers-not-engineers-hook.webp",
+            caption: "Slide 01 — Objection Hook: 'We're Marketers, Not Engineers...' — The #1 objection agencies have to self-hosted AI.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b4-02-full-service-onboarding-steps.webp",
+            caption: "Slide 02 — Process: 'Here's What We Do for You' (Server selection, installation, workflow setup, multi-LLM API keys).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b4-03-self-hosted-without-headaches-cta.webp",
+            caption: "Slide 03 — Division of Labor & CTA: 'Self-Hosted AI Without the Self-Hosting Headaches' + Ongoing Edge-Support Included.",
             type: "carousel",
             aspectRatio: "4/5"
           }
@@ -772,6 +796,24 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/collabai/creatives/collabai-carousel-b3-04-right-fit-trust-cta.webp",
         caption: "Slide 04 — If It's Not the Right Fit, We'll Tell You (CTA)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b4-01-marketers-not-engineers-hook.webp",
+        caption: "Slide 01 — We're Marketers, Not Engineers (Objection Hook)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b4-02-full-service-onboarding-steps.webp",
+        caption: "Slide 02 — Here's What We Do for You (Full-Service Setup)",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b4-03-self-hosted-without-headaches-cta.webp",
+        caption: "Slide 03 — Self-Hosted AI Without the Self-Hosting Headaches",
         type: "carousel",
         aspectRatio: "4/5"
       },
