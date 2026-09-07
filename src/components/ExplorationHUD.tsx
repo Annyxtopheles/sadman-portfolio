@@ -44,7 +44,7 @@ export const ExplorationHUD: React.FC = () => {
               className="px-3.5 py-2 rounded-[4px] bg-[#0E0E0E]/95 border border-[#262626] shadow-[0_12px_30px_rgba(0,0,0,0.8)] backdrop-blur-md flex items-center gap-2.5 text-xs text-[#E5E5E5] max-w-[90vw]"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]/80 shrink-0" />
-              <span className="font-normal tracking-normal">{activeToast}</span>
+              <span className="font-normal tracking-normal">{activeToast.replace(/^[✦★*•\s]+/, '')}</span>
             </motion.aside>
           </div>
         )}

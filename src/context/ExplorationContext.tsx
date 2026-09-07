@@ -62,7 +62,12 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        return { ...defaultState, ...JSON.parse(saved) };
+        const parsed = JSON.parse(saved);
+        const validSlugs = new Set(PROJECTS.map((p) => p.slug));
+        const cleanViewed = Array.isArray(parsed.viewedProjects)
+          ? parsed.viewedProjects.filter((s: string) => validSlugs.has(s))
+          : [];
+        return { ...defaultState, ...parsed, viewedProjects: cleanViewed };
       }
     } catch {
       // Ignore local storage parse error
@@ -85,7 +90,9 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
   }, [state]);
 
   const triggerToast = useCallback((msg: string, isBigReward = false) => {
-    setActiveToast(msg);
+    // Strip any leading symbols/stars to ensure clean text following the bullet dot
+    const cleanMsg = msg.replace(/^[✦★*•\s]+/, '');
+    setActiveToast(cleanMsg);
     if (isBigReward) {
       playCompletionRewardSound();
     } else {
@@ -106,9 +113,9 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
       if (!prev.visitedRoutes.includes(path)) {
         const nextRoutes = [...prev.visitedRoutes, path];
         if (path === '/' && prev.visitedRoutes.length === 0) {
-          setTimeout(() => triggerToast('✦ Field Guide: Touched base on the portfolio'), 800);
+          setTimeout(() => triggerToast('Field Guide: Touched base on the portfolio'), 800);
         } else if (path === '/about' && !prev.visitedRoutes.includes('/about')) {
-          setTimeout(() => triggerToast('✦ Field Guide: Explored the backstory (/about)'), 500);
+          setTimeout(() => triggerToast('Field Guide: Explored the backstory (/about)'), 500);
         }
         return { ...prev, visitedRoutes: nextRoutes };
       }
@@ -122,12 +129,14 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
         const project = PROJECTS.find((p) => p.slug === slug || p.id === slug);
         if (project) {
           setState((prev) => {
-            if (!prev.viewedProjects.includes(project.slug)) {
-              const nextViewed = [...prev.viewedProjects, project.slug];
+            const validSlugs = new Set(PROJECTS.map((p) => p.slug));
+            const cleanPrev = prev.viewedProjects.filter((s) => validSlugs.has(s));
+            if (!cleanPrev.includes(project.slug)) {
+              const nextViewed = [...cleanPrev, project.slug];
               const isAllViewed = nextViewed.length >= PROJECTS.length;
               setTimeout(() => {
                 triggerToast(
-                  `✦ Project Explored: ${project.title} (${nextViewed.length}/${PROJECTS.length})`,
+                  `Project Explored: ${project.title} (${nextViewed.length}/${PROJECTS.length})`,
                   isAllViewed
                 );
               }, 400);
@@ -137,7 +146,9 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
                 rewardUnlocked: prev.rewardUnlocked || isAllViewed,
               };
             }
-            return prev;
+            return prev.viewedProjects.length !== cleanPrev.length
+              ? { ...prev, viewedProjects: cleanPrev }
+              : prev;
           });
         }
       }
@@ -149,11 +160,13 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
       const project = PROJECTS.find((p) => p.slug === slug || p.id === slug);
       if (!project) return;
       setState((prev) => {
-        if (!prev.viewedProjects.includes(project.slug)) {
-          const nextViewed = [...prev.viewedProjects, project.slug];
+        const validSlugs = new Set(PROJECTS.map((p) => p.slug));
+        const cleanPrev = prev.viewedProjects.filter((s) => validSlugs.has(s));
+        if (!cleanPrev.includes(project.slug)) {
+          const nextViewed = [...cleanPrev, project.slug];
           const isAllViewed = nextViewed.length >= PROJECTS.length;
           triggerToast(
-            `✦ Project Explored: ${project.title} (${nextViewed.length}/${PROJECTS.length})`,
+            `Project Explored: ${project.title} (${nextViewed.length}/${PROJECTS.length})`,
             isAllViewed
           );
           return {
@@ -162,7 +175,9 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
             rewardUnlocked: prev.rewardUnlocked || isAllViewed,
           };
         }
-        return prev;
+        return prev.viewedProjects.length !== cleanPrev.length
+          ? { ...prev, viewedProjects: cleanPrev }
+          : prev;
       });
     },
     [triggerToast]
@@ -172,7 +187,7 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
     setState((prev) => {
       const nextCount = prev.clicksCount + 1;
       if (nextCount === 5) {
-        triggerToast('✦ Milestone: Discovered tactile click sparks & mechanical audio');
+        triggerToast('Milestone: Discovered tactile click sparks & mechanical audio');
       }
       return { ...prev, clicksCount: nextCount };
     });
@@ -181,7 +196,7 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
   const recordPortalFound = useCallback(() => {
     setState((prev) => {
       if (!prev.foundPortal) {
-        triggerToast('✦ Discovery: Uncovered the raw personal archive portal');
+        triggerToast('Discovery: Uncovered the raw personal archive portal');
         return { ...prev, foundPortal: true };
       }
       return prev;
@@ -191,7 +206,7 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
   const recordContactCopied = useCallback(() => {
     setState((prev) => {
       if (!prev.copiedContact) {
-        triggerToast('✦ Milestone: Copied direct contact line');
+        triggerToast('Milestone: Copied direct contact line');
         return { ...prev, copiedContact: true };
       }
       return prev;
@@ -205,7 +220,7 @@ export const ExplorationProvider: React.FC<{ children: React.ReactNode }> = ({ c
     } catch {
       // ignore
     }
-    setActiveToast('✦ Exploration progress reset');
+    setActiveToast('Exploration progress reset');
   }, []);
 
   const totalProjects = PROJECTS.length;
