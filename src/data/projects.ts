@@ -584,13 +584,13 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Cost Transparency", value: "50–60% Savings", subtext: "Clear financial contrast of $9k/yr per-seat vs $3k–$4k direct API costs" },
-      { label: "Carousel Format", value: "4:5 Multi-Slide", subtext: "Optimized for maximum mobile scroll-stopping viewport on LinkedIn & IG" },
-      { label: "Campaign Ecosystem", value: "Carousel + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
+      { label: "Carousel Formats", value: "2 Full Campaigns (4:5)", subtext: "8 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
+      { label: "Campaign Ecosystem", value: "Carousels + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
     ],
     outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
     gallerySections: [
       {
-        sectionTitle: "AI Pricing Teardown — B2B Social Carousel (LinkedIn & Instagram)",
+        sectionTitle: "Campaign 01: The Real Cost of AI — B2B Social Carousel (LinkedIn & Instagram)",
         sectionDescription: "High-converting 4:5 vertical carousel breaking down the real annual cost of AI per seat vs CollabAI Control Tower direct API access for mid-market agencies.",
         images: [
           {
@@ -614,6 +614,36 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
             caption: "Slide 04 — CTA & Product Demo: Visit controltower.collabai.software with live dashboard mockup.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Campaign 02: Paying Rent on AI vs Owning It — Data Sovereignty Carousel",
+        sectionDescription: "Viral 4:5 vertical narrative exposing the risks of third-party cloud prompt routing and per-seat vendor lock-in, contrasted against CollabAI's self-hosted, behind-your-firewall infrastructure.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b2-01-paying-rent-on-ai.webp",
+            caption: "Slide 01 — Hook: Your Agency Is Paying Rent on AI. Here's How to Own It Instead (Holographic OpenAI, Jasper, Copy.ai logos).",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b2-02-hidden-costs-data-leakage.webp",
+            caption: "Slide 02 — The Reality: $7,500/year on seats, unencrypted prompt routing through third-party servers, and generic tools.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b2-03-own-your-ai-control-tower.webp",
+            caption: "Slide 03 — The Alternative: Custom AI employees running on your server, using your API keys, behind your firewall.",
+            type: "carousel",
+            aspectRatio: "4/5"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
+            caption: "Slide 04 — Instant Setup CTA: 'We Install It. You Build AI Employees in Minutes' directing to controltower.collabai.software.",
             type: "carousel",
             aspectRatio: "4/5"
           }
@@ -664,6 +694,30 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/collabai/creatives/collabai-carousel-04-control-tower-cta.webp",
         caption: "Slide 04 — Visit controltower.collabai.software",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b2-01-paying-rent-on-ai.webp",
+        caption: "Slide 01 — Your Agency Is Paying Rent on AI",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b2-02-hidden-costs-data-leakage.webp",
+        caption: "Slide 02 — Here's What That Actually Looks Like",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b2-03-own-your-ai-control-tower.webp",
+        caption: "Slide 03 — CollabAI Control Tower: Build Custom AI Employees",
+        type: "carousel",
+        aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-carousel-b2-04-we-install-it-cta.webp",
+        caption: "Slide 04 — We Install It. You Build AI Employees in Minutes",
         type: "carousel",
         aspectRatio: "4/5"
       },
