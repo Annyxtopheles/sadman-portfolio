@@ -2223,19 +2223,13 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Created a versatile, cohesive fashion brand identity during my SJ Innovation internship that demonstrates the capacity to conceptualize, style, and scale a luxury retail brand across architectural, print, merchandise, and digital touchpoints.",
     gallerySections: [
       {
-        sectionTitle: "Brand Identity Overview & Moodboard",
-        sectionDescription: "High-level brand presentation showcasing the unified design system, editorial art direction, and core aesthetic anchors.",
+        sectionTitle: "Editorial Identity & Art Direction",
+        sectionDescription: "The signature visual anchor for Noborangi: a high-contrast editorial serif wordmark set against regal floral crimson photography, establishing the core brand ethos 'Celebrate tradition with Style'.",
         images: [
           {
             url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
             caption: "Noborangi Editorial Banner — Signature crimson duotone fashion portrait featuring intricate floral embroidery and the bold white NOBO RANGI logotype.",
             type: "portrait",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/noborangi/noborangi-brand-identity-grid.webp",
-            caption: "3×3 Brand Identity Grid — Complete design overview uniting logotype, business stationery, blade signage, apparel, boutique facade, packaging, and mobile icon.",
-            type: "desktop",
             aspectRatio: "1/1"
           }
         ]
@@ -2306,12 +2300,6 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
         caption: "Noborangi Editorial Cover Banner",
         type: "portrait",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/noborangi/noborangi-brand-identity-grid.webp",
-        caption: "Noborangi 3×3 Brand Identity Grid",
-        type: "desktop",
         aspectRatio: "1/1"
       },
       {
