@@ -3578,27 +3578,6 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Office Culture & Motivational Wall Posters",
-        sectionDescription: "Large-format environmental posters designed to energize engineering pods and communal break areas, celebrating grit, championship mindset, and everyday team camaraderie.",
-        images: [
-          {
-            url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
-            caption: "Mohammad Ali Champion Mindset Poster — 'Live the Rest of Your Life as a Champion'",
-            aspectRatio: "682/1024"
-          },
-          {
-            url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
-            caption: "Culture Banner — 'Laughter is the Best Team-Building Exercise'",
-            aspectRatio: "512/1024"
-          },
-          {
-            url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
-            caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Wall Poster",
-            aspectRatio: "461/1024"
-          }
-        ]
-      },
-      {
         sectionTitle: "Recognition Systems — SJ Control Tower Appreciation Certificates",
         sectionDescription: "Modular certificate design system created for the SJ Control Tower internal recognition program. Designed in horizontal A4 landscape format with distinct domain badge iconography, subtle geometric grid and topological linework textures, and brand-aligned pastel gradients honoring exceptional team contributions.",
         images: [
@@ -3846,6 +3825,27 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Office Culture & Motivational Wall Posters",
+        sectionDescription: "Large-format environmental posters designed to energize engineering pods and communal break areas, celebrating grit, championship mindset, and everyday team camaraderie.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
+            caption: "Mohammad Ali Champion Mindset Poster — 'Live the Rest of Your Life as a Champion'",
+            aspectRatio: "512/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
+            caption: "Culture Banner — 'Laughter is the Best Team-Building Exercise'",
+            aspectRatio: "512/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+            caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Wall Poster",
+            aspectRatio: "512/1024"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -3857,21 +3857,6 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/effective-meetings-5-tips-infographic.webp",
         caption: "Workplace Infographic — 5 Essential Tips for Running Effective Meetings",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
-        caption: "Office Wall Poster — Mohammad Ali Champion Mindset",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
-        caption: "Team Culture Poster — Laughter Team-Building Exercise",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
-        caption: "Office Wall Poster — 7 Dimensions of Employee Happiness",
         type: "portrait"
       },
       {
@@ -4048,6 +4033,21 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/holiday-postcard-09-collabai-family-gifts-front-door.webp",
         caption: "Holiday Client Postcard — CollabAI (Family Opening Holiday Gifts)",
         type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
+        caption: "Office Wall Poster — Mohammad Ali Champion Mindset",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/laughter-team-building-vertical-poster.webp",
+        caption: "Team Culture Poster — Laughter Team-Building Exercise",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
+        caption: "Office Wall Poster — 7 Dimensions of Employee Happiness",
+        type: "portrait"
       }
     ]
   },
