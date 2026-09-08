@@ -13,7 +13,10 @@ export const PageTransition: React.FC<Props> = ({ routeKey, children }) => {
 
   useEffect(() => {
     isInitialMount.current = false;
-  }, []);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [routeKey]);
 
   return (
     <motion.div

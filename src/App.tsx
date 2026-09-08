@@ -20,12 +20,14 @@ import AmbientStarfield from "@/components/AmbientStarfield";
 import { ExplorationProvider } from "@/context/ExplorationContext";
 import { ExplorationHUD } from "@/components/ExplorationHUD";
 import { CozyRewardModal } from "@/components/CozyRewardModal";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <AnimatePresence mode="wait" initial={false}>
         <PageTransition routeKey={location.pathname}>
