@@ -7417,8 +7417,8 @@ export const PROJECTS: Project[] = [
     client: "SJ Innovation LLC",
     year: "2025 – Present",
     duration: "Ongoing Series",
-    scope: ["Print Design", "Event Collateral", "Large-Format Banners", "X-Banners", "Flyers", "Infographics", "Workplace Culture", "Recognition Certificates", "Client Postcards", "Holiday Event Cards", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards", "Picnic Banners"],
-    summary: "Physical print collateral, large-format exhibition banners and event suites (Buildfest 8ft×5ft fused stage banner, retractable X-banners, and marketplace flyers), workplace infographics, motivational office posters, appreciation certificate systems, personalized member keepsake cards, holiday campus event cards (Thanksgiving, Women's Day, Men's Day), Annual Office Picnic banners (Dhaka & Sylhet campuses), US client outreach postcards, and Annual Sports Day team marching placards designed for SJ Innovation and CollabAI. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and client appreciation collateral.",
+    scope: ["Print Design", "Event Collateral", "Large-Format Banners", "X-Banners", "Trifold Brochures", "Flyers", "Infographics", "Workplace Culture", "Recognition Certificates", "Client Postcards", "Holiday Event Cards", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards", "Picnic Banners"],
+    summary: "Physical print collateral, large-format exhibition banners and event suites (Buildfest 8ft×5ft fused stage banner, retractable X-banners, 3-panel trifold brochures, and marketplace flyers), workplace infographics, motivational office posters, appreciation certificate systems, personalized member keepsake cards, holiday campus event cards (Thanksgiving, Women's Day, Men's Day), Annual Office Picnic banners (Dhaka & Sylhet campuses), US client outreach postcards, and Annual Sports Day team marching placards designed for SJ Innovation and CollabAI. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and client appreciation collateral.",
     coverImage: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
     liveUrl: null,
     tldr: {
@@ -7460,6 +7460,7 @@ export const PROJECTS: Project[] = [
         details: [
           "8ft × 5ft Fused Print Banner: Balanced dual-brand stage backdrop pairing SJI's AI-First solutions and client trust badges with CollabAI's 'Build Your First AI Agent' value proposition",
           "Retractable X-Banners (2ft × 5ft): Designed high-contrast vertical standees optimized for attendee eye-level legibility, clear 3-step builder pipelines, and prominent quick-scan QR codes",
+          "3-Panel Trifold Brochures: Structured comprehensive event handouts featuring SJI's end-to-end service matrix (AI, Web, Cloud, Marketing) and CollabAI's developer monetization roadmap with permanent 70% builder revenue shares",
           "Distribution Flyers (A4): Formatted double-sided marketing handouts featuring client partner logos (OpenAI, Claude, Supabase, Replit) and builder revenue monetization tiers"
         ]
       }
@@ -7472,8 +7473,8 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
     gallerySections: [
       {
-        sectionTitle: "Buildfest Event Collateral — Fused Stage Banner, Retractable X-Banners & Handout Flyers",
-        sectionDescription: "Complete physical exhibition and conference print suite designed for Buildfest, fusing SJ Innovation's AI-First enterprise solutions with the CollabAI Agent Marketplace builder ecosystem. Includes an 8ft × 5ft dual-branded stage backdrop banner, matching 2ft × 5ft retractable X-banners with quick-scan onboarding telemetry, and double-sided A4 distribution flyers.",
+        sectionTitle: "Buildfest Event Collateral — Stage Backdrop, X-Banners, Trifold Brochures & Handout Flyers",
+        sectionDescription: "Complete physical exhibition and conference print suite designed for Buildfest, fusing SJ Innovation's AI-First enterprise solutions with the CollabAI Agent Marketplace builder ecosystem. Includes an 8ft × 5ft dual-branded stage backdrop banner, matching 2ft × 5ft retractable X-banners, 3-panel corporate & builder trifold brochures, and double-sided A4 distribution flyers with live QR onboarding telemetry.",
         images: [
           {
             url: "/assets/projects/print-designs/buildfest-banner-8x5-sji-collabai.webp",
@@ -7492,6 +7493,18 @@ export const PROJECTS: Project[] = [
             caption: "CollabAI Builder Recruitment Retractable X-Banner (2ft × 5ft) — 'Build Your First AI Agent', 3-step submission pipeline, 70% builder revenue share model, and builder portal QR code",
             aspectRatio: "390/1024",
             type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/buildfest-trifold-sji-enterprise.webp",
+            caption: "SJ Innovation AI-First Solutions Trifold Brochure (3-Panel Spread) — 'AI-First. Built to Last.' cover, enterprise capabilities matrix, 500+ client trust wall, and direct consultation QR link",
+            aspectRatio: "1024/723",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/buildfest-trifold-collabai-marketplace.webp",
+            caption: "CollabAI Builder Marketplace Trifold Brochure (3-Panel Spread) — 'Build Agents Get Paid' cover, 3-step submission mechanics, 70% recurring revenue share model, and instant builder registration QR code",
+            aspectRatio: "1024/724",
+            type: "desktop"
           },
           {
             url: "/assets/projects/print-designs/buildfest-flyer-sji-enterprise.webp",
@@ -7870,6 +7883,16 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/buildfest-xbanner-collabai-builder.webp",
         caption: "Buildfest Retractable X-Banner — CollabAI Builder Marketplace",
         type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/buildfest-trifold-sji-enterprise.webp",
+        caption: "Buildfest Trifold Brochure Spread — SJ Innovation AI-First Solutions",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/buildfest-trifold-collabai-marketplace.webp",
+        caption: "Buildfest Trifold Brochure Spread — CollabAI Marketplace",
+        type: "desktop"
       },
       {
         url: "/assets/projects/print-designs/buildfest-flyer-sji-enterprise.webp",
