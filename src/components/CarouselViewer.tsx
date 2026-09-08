@@ -129,21 +129,31 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
       </div>
 
       {/* Main Slide Viewer Canvas */}
-      <div
-        className={`relative w-full flex-1 bg-[#050505] flex items-center justify-center overflow-hidden ${
-          slides[0]?.aspectRatio === '1/1'
-            ? 'aspect-square'
-            : slides[0]?.aspectRatio === '4/5' || !slides[0]?.aspectRatio
-            ? 'aspect-[4/5] sm:max-h-[720px]'
-            : ''
-        }`}
-        style={
-          slides[0]?.aspectRatio && slides[0]?.aspectRatio !== '1/1' && slides[0]?.aspectRatio !== '4/5'
-            ? { aspectRatio: slides[0].aspectRatio }
-            : undefined
-        }
-      >
-        <AnimatePresence initial={false} custom={direction} mode="popLayout">
+      {(() => {
+        const firstRatio = slides[0]?.aspectRatio;
+        const isLandscape = (() => {
+          if (!firstRatio) return false;
+          const parts = firstRatio.split('/');
+          if (parts.length === 2) {
+            const w = parseFloat(parts[0]);
+            const h = parseFloat(parts[1]);
+            return w > h;
+          }
+          return false;
+        })();
+
+        return (
+          <div
+            className={`relative w-full flex-1 bg-[#050505] flex items-center justify-center overflow-hidden ${
+              isLandscape
+                ? ''
+                : firstRatio === '1/1'
+                ? 'aspect-square max-w-2xl mx-auto'
+                : 'aspect-[4/5] sm:max-h-[720px] max-w-xl mx-auto'
+            }`}
+            style={isLandscape ? { aspectRatio: firstRatio } : undefined}
+          >
+            <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={currentIndex}
             custom={direction}
@@ -221,7 +231,9 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
             </svg>
           </button>
         )}
-      </div>
+            </div>
+          );
+        })()}
 
       {/* Progress Dots / Bar & Slide Caption */}
       <div className="px-4 py-3 bg-[#0B0B0B] border-t border-[#181818] flex flex-col gap-2.5">

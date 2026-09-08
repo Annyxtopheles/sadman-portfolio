@@ -5017,6 +5017,48 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1024/379"
           }
         ]
+      },
+      {
+        sectionTitle: "SJ Innovation 21st Anniversary — Interactive Photobooth Frames",
+        sectionDescription: "Custom-designed event selfie and photobooth cutout frames created for campus-wide 21st Anniversary celebrations (August 18th, 2025). Features dual design directions: a dot-matrix light minimalist edition with corporate confetti dots, and a vibrant sunset-orange to deep indigo gradient edition.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
+            caption: "Photobooth Frame 01 — Dot-Matrix Minimalist Edition (Pristine White & Multicolored Confetti Dots)",
+            type: "carousel",
+            aspectRatio: "585/1024"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
+            caption: "Photobooth Frame 02 — Sunset Gradient Edition (Bold Tangerine & Indigo Halftone Matrix)",
+            type: "carousel",
+            aspectRatio: "585/1024"
+          }
+        ]
+      },
+      {
+        sectionTitle: "SJ Innovation 21st Anniversary — Core Value Motto Signage",
+        sectionDescription: "Environmental culture signage and wall placards celebrating SJ Innovation's defining core values during the 21st Anniversary milestone. Designed with large-format numeral typography, domain icons, and high-contrast brand color blocking.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
+            caption: "Motto Signage 01 — 'Client First Mind-Set: We prioritize our client needs and strive to exceed their expectations.'",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
+            caption: "Motto Signage 02 — 'Solution Oriented: We focus on solutions, not problems.'",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
+            caption: "Motto Signage 03 — 'On-Time Delivery: We are committed to delivering on time, every time.'",
+            type: "desktop",
+            aspectRatio: "1/1"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -5072,6 +5114,31 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
         caption: "21st Anniversary Social Banner — Awards & Nasdaq Times Square",
         type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
+        caption: "21st Anniversary Photobooth Frame — Dot-Matrix Edition",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
+        caption: "21st Anniversary Photobooth Frame — Sunset Gradient Edition",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
+        caption: "21st Anniversary Motto Signage — 01 Client First Mind-Set",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
+        caption: "21st Anniversary Motto Signage — 02 Solution Oriented",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
+        caption: "21st Anniversary Motto Signage — 03 On-Time Delivery",
+        type: "desktop"
       }
     ]
   },
