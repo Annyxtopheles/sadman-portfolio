@@ -3573,7 +3573,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
-      { label: "Assets Delivered", value: "44 Designs", subtext: "3 infographics, 6 posters, 7 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Assets Delivered", value: "45 Designs", subtext: "3 infographics, 7 posters, 7 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
       { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -3873,6 +3873,11 @@ export const PROJECTS: Project[] = [
             aspectRatio: "512/1024"
           },
           {
+            url: "/assets/projects/print-designs/culture-we-live-by-wall-poster.webp",
+            caption: "Culture We Live By — Workplace Core Values Infographic Poster (Empowered Teams, Thriving Clients)",
+            aspectRatio: "512/1024"
+          },
+          {
             url: "/assets/projects/print-designs/crafting-tomorrows-solutions-ai-poster.webp",
             caption: "Future Solutions Wall Poster — 'Crafting Tomorrow's Solutions with Today's AI'",
             aspectRatio: "1024/682"
@@ -4094,6 +4099,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/ai-workplace-innovation-catalyst-poster.webp",
         caption: "Office Wall Poster — AI Workplace Innovation Catalyst",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/culture-we-live-by-wall-poster.webp",
+        caption: "Office Wall Poster — Culture We Live By Core Values",
         type: "portrait"
       },
       {
@@ -4951,6 +4961,11 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
             caption: "Welcome Aboard Social Showcase — Standardized Talent Onboarding System (Leandra Sol, Digital Marketing Executive, Goa)",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/onboarding-welcome-akshata-alornekar.webp",
+            caption: "Welcome Aboard Social Showcase — Standardized Talent Onboarding System (Akshata Alornekar, HR Admin Executive, Sylhet)",
+            aspectRatio: "1/1"
           }
         ]
       },
@@ -4976,6 +4991,30 @@ export const PROJECTS: Project[] = [
             type: "portrait",
             embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
             externalUrl: "https://www.facebook.com/reel/1492889088963334"
+          }
+        ]
+      },
+      {
+        sectionTitle: "SJ Innovation 21st Anniversary — Social Media Banners",
+        sectionDescription: "Panoramic commemorative social media banner suite celebrating 21 years of engineering excellence, AI-first innovation, and team culture across global campuses. Features the central anniversary insignia, subsidiary brand ecosystem (BuildYourAI, CollabAI, LeadsLift, Plate Presence), enterprise accreditation credentials, and curated photo collages of team members, retreats, and milestones.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
+            caption: "21st Anniversary Social Banner — Direction 01 (Asymmetrical Photo Clusters & Team Retreats)",
+            type: "carousel",
+            aspectRatio: "1024/373"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
+            caption: "21st Anniversary Social Banner — Direction 02 (Polaroids, Outdoor Sports & Company Celebrations)",
+            type: "carousel",
+            aspectRatio: "1024/373"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
+            caption: "21st Anniversary Social Banner — Direction 03 (Awards Dinners, Nasdaq Times Square & Team Milestones)",
+            type: "carousel",
+            aspectRatio: "1024/379"
           }
         ]
       }
@@ -5011,8 +5050,28 @@ export const PROJECTS: Project[] = [
       },
       {
         url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
-        caption: "Welcome Aboard — Talent Onboarding Social Showcase",
+        caption: "Welcome Aboard — Talent Onboarding Social Showcase (Leandra Sol)",
         type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/onboarding-welcome-akshata-alornekar.webp",
+        caption: "Welcome Aboard — Talent Onboarding Social Showcase (Akshata Alornekar)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
+        caption: "21st Anniversary Social Banner — Asymmetrical Photo Clusters",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
+        caption: "21st Anniversary Social Banner — Polaroids & Outdoor Retreats",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
+        caption: "21st Anniversary Social Banner — Awards & Nasdaq Times Square",
+        type: "carousel"
       }
     ]
   },
