@@ -879,6 +879,12 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Digital brand amplification assets and LinkedIn profile banners created for team members and brand advocates to drive seasonal conversion during high-impact promotions.",
         images: [
           {
+            url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
+            caption: "CollabAI Black Friday Sales Ad — 'Supercharge Your Team with Collab AI': 20% Off Limited Time Offer (Up to $400 Off)",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
             url: "/assets/projects/collabai/creatives/collabai-banner-black-friday-linkedin-profile.webp",
             caption: "CollabAI Black Friday Sale — Member LinkedIn Profile Banner (20% Off Limited Time Offer)",
             type: "desktop",
@@ -1021,6 +1027,12 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/collabai/creatives/collabai-ad-04-chatgpt-privacy-research-library.webp",
         caption: "Privacy Positioning Ad — Like Ch*tGPT, But We Can't See Your Chats (Academic & Research)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
+        caption: "CollabAI Black Friday Sales Ad — Supercharge Your Team (Up to $400 Off)",
         type: "desktop",
         aspectRatio: "1/1"
       },
@@ -3504,8 +3516,8 @@ export const PROJECTS: Project[] = [
     client: "SJ Innovation LLC",
     year: "2025 – Present",
     duration: "Ongoing Series",
-    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards"],
-    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and the SJ Control Tower team. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and high-octane competitive team emblems.",
+    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Client Postcards", "Holiday Event Cards", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards"],
+    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, holiday campus event cards (Thanksgiving, Women's Day, Men's Day), US client outreach postcards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and partner teams. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and client appreciation collateral.",
     coverImage: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
     liveUrl: null,
     tldr: {
@@ -3543,9 +3555,9 @@ export const PROJECTS: Project[] = [
       }
     ],
     outcomes: [
-      { label: "Mediums", value: "Print & Stationery", subtext: "Infographics, posters, awards, birthday cards, & placards" },
-      { label: "Assets Delivered", value: "26 Designs", subtext: "3 infographics, 2 wall posters, 6 award certificates, 3 Women's Day, 6 birthday cards, 4 sports placards, 2 Men's Day" },
-      { label: "Office Deployment", value: "Multi-Campus", subtext: "Displayed across meeting rooms, events & collaborative spaces" }
+      { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
+      { label: "Assets Delivered", value: "30 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 4 Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
     gallerySections: [
@@ -3732,6 +3744,42 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Thanksgiving Global Campus Office Event Print Card",
+        sectionDescription: "Physical print appreciation card designed for the SJ Innovation Thanksgiving campus event, distributed to team members to celebrate gratitude, dedication, and everyday camaraderie alongside International Women's Day and Men's Day traditions.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/thanksgiving-office-event-team-card.webp",
+            caption: "Global Campus Event Print Card — 'We Are Thankful for Your Commitment & Dedication': Autumn harvest card with pumpkins, maize, and golden wheat border.",
+            aspectRatio: "1024/723",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Thanksgiving Client Appreciation Postcards (US Client Outreach)",
+        sectionDescription: "Standard physical print postcards mailed and hand-delivered to enterprise clients across the United States. Custom-crafted for partner ecosystems—LeadsLift, Plate Presence, and SJ Innovation—combining warm holiday gratitude with cohesive brand endorsement.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/thanksgiving-client-postcard-01-leadslift.webp",
+            caption: "LeadsLift Client Thanksgiving Postcard — 'Grateful for the Relationships Built Along the Way': Cool-toned cornucopia with gradient pumpkins and stylized turkey.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/thanksgiving-client-postcard-02-platepresence.webp",
+            caption: "Plate Presence Client Thanksgiving Postcard — 'Thankful for Your Trust to Help Tell Your Unique Story': Warm watercolor harvest feast table and autumn village scene with PlatePresence AI announcement.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/thanksgiving-client-postcard-03-sji.webp",
+            caption: "SJ Innovation Client Thanksgiving Postcard — 'Deep Appreciation for Your Partnership & Vision': Artistic watercolor turkeys, cornucopia, and harvest pumpkins with expressive autumn splashes.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -3863,6 +3911,26 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/mens-day-2025-cake-card.webp",
         caption: "Men's Day 2025 — Campus Cake Card",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/thanksgiving-office-event-team-card.webp",
+        caption: "Thanksgiving Campus Event Card — Team Commitment & Gratitude",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/thanksgiving-client-postcard-01-leadslift.webp",
+        caption: "Thanksgiving Client Postcard — LeadsLift (US Outreach)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/thanksgiving-client-postcard-02-platepresence.webp",
+        caption: "Thanksgiving Client Postcard — Plate Presence (US Outreach)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/thanksgiving-client-postcard-03-sji.webp",
+        caption: "Thanksgiving Client Postcard — SJ Innovation (US Outreach)",
         type: "desktop"
       }
     ]
