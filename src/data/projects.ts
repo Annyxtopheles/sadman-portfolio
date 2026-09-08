@@ -3556,7 +3556,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
-      { label: "Assets Delivered", value: "30 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 4 Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Assets Delivered", value: "35 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 9 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
       { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -3780,6 +3780,42 @@ export const PROJECTS: Project[] = [
             type: "desktop"
           }
         ]
+      },
+      {
+        sectionTitle: "Happy Holidays & Year-End Client Appreciation Postcards",
+        sectionDescription: "Seasonal 6×4-inch physical print postcards distributed to clients across the United States for SJ Innovation and LeadsLift, featuring custom watercolor winter landscapes, cozy holiday storytelling, and forward-looking 2026 innovation partnerships.",
+        images: [
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-01-sji-winter-deer.webp",
+            caption: "SJ Innovation Holiday Postcard — 'Cozy Season of Rest & Loved Ones': Alpine winter chalets, snowman, and peaceful deer in snow-covered mountain valley.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-02-sji-sleigh-reindeer.webp",
+            caption: "SJ Innovation Holiday Postcard — 'May Relaxation Be Your Only Plan': Enchanting winter village with Santa's sleigh, flying reindeer, and children ice skating.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-03-sji-christmas-tree-gifts.webp",
+            caption: "SJ Innovation Holiday Postcard — 'Peace, Warm Moments & Pure Joy': Decorated Christmas tree with wrapped gifts, snowman, and sunset alpenglow.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-04-leadslift-family-snowman.webp",
+            caption: "LeadsLift Holiday Postcard — 'Days Glow with Kindness & Effortless Joy': Warm family scene building a snowman outside a glowing cottage.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-05-leadslift-christmas-tree-cottage.webp",
+            caption: "LeadsLift Holiday Postcard — 'Warmth to Your Heart & Happiness to Your Home': Majestic snow-dusted Christmas tree, gift boxes, and cozy holiday cottage.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -3931,6 +3967,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/thanksgiving-client-postcard-03-sji.webp",
         caption: "Thanksgiving Client Postcard — SJ Innovation (US Outreach)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-01-sji-winter-deer.webp",
+        caption: "Holiday Client Postcard — SJI (Alpine Chalets & Winter Deer)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-02-sji-sleigh-reindeer.webp",
+        caption: "Holiday Client Postcard — SJI (Santa's Sleigh & Village Skaters)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-03-sji-christmas-tree-gifts.webp",
+        caption: "Holiday Client Postcard — SJI (Decorated Tree & Sunset Peaks)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-04-leadslift-family-snowman.webp",
+        caption: "Holiday Client Postcard — LeadsLift (Family Snowman & Cottage)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-05-leadslift-christmas-tree-cottage.webp",
+        caption: "Holiday Client Postcard — LeadsLift (Star-Topped Tree & Village)",
         type: "desktop"
       }
     ]
