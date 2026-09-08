@@ -565,6 +565,8 @@ export const PROJECTS: Project[] = [
     year: "2025 – 2026",
     duration: "Ongoing Series",
     scope: [
+      "Enterprise Pitch Decks",
+      "Sales Enablement Collateral",
       "Social Design Systems",
       "LinkedIn Carousels",
       "Instagram Creatives",
@@ -575,7 +577,7 @@ export const PROJECTS: Project[] = [
       "Direct-Response Copywriting",
       "Product Marketing Strategy"
     ],
-    summary: "B2B growth design system, viral LinkedIn and Instagram pricing teardown carousels, and high-converting vertical video reels created for CollabAI. Deconstructs enterprise SaaS per-seat pricing models against CollabAI's direct-API Control Tower, illustrating real cost savings, departmental custom AI agents, and self-hosted data ownership for agencies and growing teams.",
+    summary: "B2B growth design system, comprehensive 27-slide enterprise sales enablement deck, viral LinkedIn pricing teardown carousels, and high-converting vertical video reels created for CollabAI. Deconstructs enterprise SaaS per-seat pricing models against CollabAI's direct-API Control Tower, illustrating real cost savings, departmental custom AI agents, and self-hosted data ownership for agencies and growing teams.",
     coverImage: "/assets/projects/collabai/creatives/collabai-creatives-cover.webp",
     liveUrl: "https://controltower.collabai.software",
     tldr: {
@@ -845,6 +847,349 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
+        sectionTitle: "Enterprise Pitch & Platform Deck — Secure AI Adoption & Governance",
+        sectionDescription: "Comprehensive 27-slide executive pitch and sales enablement deck designed for CollabAI. Articulates the platform's core value proposition: bridging AI tech and team productivity through centralized governance, multi-model independence (OpenAI, Anthropic, Gemini, DeepSeek), tool interoperability (ERP, CRM, Teams, Slack, n8n), 10 sector-specific Control Towers, transparent usage economics, and a 30–45 day phased deployment roadmap.",
+        documentUrl: "/assets/projects/collabai/deck/collabai-presentation-deck.pdf",
+        documentTitle: "CollabAI Presentation — Review and Update (PDF)",
+        images: [
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Secure AI Adoption Platform for Teams (CollabAI Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: The AI Adoption Problem is No Longer Awareness (Governance & ROI)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: What CollabAI Does — Data, Governance, Role-Based Assistants & Insights",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-04.webp",
+            caption: "Slide 04 — Strategy: Integrating AI Safely Across Leadership, Teams, IT & Customers",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-05.webp",
+            caption: "Slide 05 — Roadmap: Practical 5-Step Roadmap for Enterprise AI Adoption",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-06.webp",
+            caption: "Slide 06 — Architecture: Bridging AI Tech & Team Productivity (Knowledge Base, Agent Builder, SSO, MCP)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-07.webp",
+            caption: "Slide 07 — Departmental Agents: Expert Custom AI Agents for Sales, HR, Finance, Operations & Execs",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-08.webp",
+            caption: "Slide 08 — Model Independence: Unified Multi-Model Access (OpenAI, Anthropic, Gemini, DeepSeek)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-09.webp",
+            caption: "Slide 09 — Interoperability: Bridge the Gap Between Data & Decision (ERP, CRM, Teams, Slack, n8n)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-10.webp",
+            caption: "Slide 10 — Security: Security-First by Design (Data Ownership, RBAC, TLS, Guardrails & Audit Logs)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-11.webp",
+            caption: "Slide 11 — Deployment: Flexible Hosting Models (Client Cloud, Dedicated, SJI Managed, BYO Keys)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-12.webp",
+            caption: "Slide 12 — Economics: Commercial Model Scaling with Real Usage vs Seat-Based Inefficiencies",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-13.webp",
+            caption: "Slide 13 — Timeline: 30–45 Day Implementation Roadmap from Discovery to Production Scale",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-14.webp",
+            caption: "Slide 14 — Cost Breakdown: Comprehensive Cost Comparison (CollabAI vs Microsoft Copilot & Direct LLMs)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-15.webp",
+            caption: "Slide 15 — Sector Solutions: Built-In Industry Workflows & Domain Control Towers Overview",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-16.webp",
+            caption: "Slide 16 — Mortgage Control Tower: Automated Rate Lock Alerts & Underwriting Workflows",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-17.webp",
+            caption: "Slide 17 — Healthcare & Clinics Control Tower: ePhysician 4 24/7 AI Agents for Scheduling & Billing",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-18.webp",
+            caption: "Slide 18 — Nonprofits Control Tower: NonProfit AI 16 24/7 AI Agents for Grant & Donor Operations",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-19.webp",
+            caption: "Slide 19 — Marketing Control Tower: Automated Campaign Execution, Client Reporting & Lead Routing",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-20.webp",
+            caption: "Slide 20 — Restaurant Control Tower: Plate Presence Operations Layer (POS, Voice & Social)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-21.webp",
+            caption: "Slide 21 — Real Estate Control Tower: RealtorHelp Virtual Office (15 Leads Qualified in 2 Minutes)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-22.webp",
+            caption: "Slide 22 — Client Success Control Tower: Churn Prevention, Account Health & Executive Briefings",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-23.webp",
+            caption: "Slide 23 — Agency Command Center: Unified Agency Management (CRM, Projects, EOS & AI)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-24.webp",
+            caption: "Slide 24 — GHL Dev Control Tower: Multi-Client Agency Dashboard with Single Sign-On",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-25.webp",
+            caption: "Slide 25 — Travel Agency Control Tower: TourDesk Operator-First Platform (GDPR-Ready)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-26.webp",
+            caption: "Slide 26 — Enterprise Credibility: Why SJ Innovation is the Right Implementation Partner",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/collabai/deck/collabai-deck-slide-27.webp",
+            caption: "Slide 27 — Closing: Executive Contact & Partnership Briefing (Vishwanathan Shankar)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "collabai-platform-deck",
+            title: "CollabAI Platform & Sales Enablement Deck (27 Slides)",
+            description: "27-slide comprehensive enterprise deck deconstructing AI governance, unified work surface, multi-model routing, and sector-specific Control Towers.",
+            documentUrl: "/assets/projects/collabai/deck/collabai-presentation-deck.pdf",
+            documentTitle: "Download Full CollabAI Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Secure AI Adoption Platform for Teams (CollabAI Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: The AI Adoption Problem is No Longer Awareness (Governance & ROI)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: What CollabAI Does — Data, Governance, Role-Based Assistants & Insights",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-04.webp",
+                caption: "Slide 04 — Strategy: Integrating AI Safely Across Leadership, Teams, IT & Customers",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-05.webp",
+                caption: "Slide 05 — Roadmap: Practical 5-Step Roadmap for Enterprise AI Adoption",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-06.webp",
+                caption: "Slide 06 — Architecture: Bridging AI Tech & Team Productivity (Knowledge Base, Agent Builder, SSO, MCP)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-07.webp",
+                caption: "Slide 07 — Departmental Agents: Expert Custom AI Agents for Sales, HR, Finance, Operations & Execs",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-08.webp",
+                caption: "Slide 08 — Model Independence: Unified Multi-Model Access (OpenAI, Anthropic, Gemini, DeepSeek)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-09.webp",
+                caption: "Slide 09 — Interoperability: Bridge the Gap Between Data & Decision (ERP, CRM, Teams, Slack, n8n)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-10.webp",
+                caption: "Slide 10 — Security: Security-First by Design (Data Ownership, RBAC, TLS, Guardrails & Audit Logs)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-11.webp",
+                caption: "Slide 11 — Deployment: Flexible Hosting Models (Client Cloud, Dedicated, SJI Managed, BYO Keys)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-12.webp",
+                caption: "Slide 12 — Economics: Commercial Model Scaling with Real Usage vs Seat-Based Inefficiencies",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-13.webp",
+                caption: "Slide 13 — Timeline: 30–45 Day Implementation Roadmap from Discovery to Production Scale",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-14.webp",
+                caption: "Slide 14 — Cost Breakdown: Comprehensive Cost Comparison (CollabAI vs Microsoft Copilot & Direct LLMs)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-15.webp",
+                caption: "Slide 15 — Sector Solutions: Built-In Industry Workflows & Domain Control Towers Overview",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-16.webp",
+                caption: "Slide 16 — Mortgage Control Tower: Automated Rate Lock Alerts & Underwriting Workflows",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-17.webp",
+                caption: "Slide 17 — Healthcare & Clinics Control Tower: ePhysician 4 24/7 AI Agents for Scheduling & Billing",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-18.webp",
+                caption: "Slide 18 — Nonprofits Control Tower: NonProfit AI 16 24/7 AI Agents for Grant & Donor Operations",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-19.webp",
+                caption: "Slide 19 — Marketing Control Tower: Automated Campaign Execution, Client Reporting & Lead Routing",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-20.webp",
+                caption: "Slide 20 — Restaurant Control Tower: Plate Presence Operations Layer (POS, Voice & Social)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-21.webp",
+                caption: "Slide 21 — Real Estate Control Tower: RealtorHelp Virtual Office (15 Leads Qualified in 2 Minutes)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-22.webp",
+                caption: "Slide 22 — Client Success Control Tower: Churn Prevention, Account Health & Executive Briefings",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-23.webp",
+                caption: "Slide 23 — Agency Command Center: Unified Agency Management (CRM, Projects, EOS & AI)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-24.webp",
+                caption: "Slide 24 — GHL Dev Control Tower: Multi-Client Agency Dashboard with Single Sign-On",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-25.webp",
+                caption: "Slide 25 — Travel Agency Control Tower: TourDesk Operator-First Platform (GDPR-Ready)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-26.webp",
+                caption: "Slide 26 — Enterprise Credibility: Why SJ Innovation is the Right Implementation Partner",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/collabai/deck/collabai-deck-slide-27.webp",
+                caption: "Slide 27 — Closing: Executive Contact & Partnership Briefing (Vishwanathan Shankar)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
         sectionTitle: "Direct-Response Paid Ads & Privacy Creatives",
         sectionDescription: "High-conversion 1:1 feed advertisements targeting enterprise founders and operators, focusing on behind-your-firewall data infrastructure and absolute privacy guarantees.",
         images: [
@@ -1057,6 +1402,141 @@ export const PROJECTS: Project[] = [
         aspectRatio: "9/16",
         embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1836781190301543%2F&show_text=false&t=0",
         externalUrl: "https://www.facebook.com/reel/1836781190301543"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Secure AI Adoption Platform for Teams (CollabAI Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: The AI Adoption Problem is No Longer Awareness (Governance & ROI)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: What CollabAI Does — Data, Governance, Role-Based Assistants & Insights",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-04.webp",
+        caption: "Slide 04 — Strategy: Integrating AI Safely Across Leadership, Teams, IT & Customers",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-05.webp",
+        caption: "Slide 05 — Roadmap: Practical 5-Step Roadmap for Enterprise AI Adoption",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-06.webp",
+        caption: "Slide 06 — Architecture: Bridging AI Tech & Team Productivity (Knowledge Base, Agent Builder, SSO, MCP)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-07.webp",
+        caption: "Slide 07 — Departmental Agents: Expert Custom AI Agents for Sales, HR, Finance, Operations & Execs",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-08.webp",
+        caption: "Slide 08 — Model Independence: Unified Multi-Model Access (OpenAI, Anthropic, Gemini, DeepSeek)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-09.webp",
+        caption: "Slide 09 — Interoperability: Bridge the Gap Between Data & Decision (ERP, CRM, Teams, Slack, n8n)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-10.webp",
+        caption: "Slide 10 — Security: Security-First by Design (Data Ownership, RBAC, TLS, Guardrails & Audit Logs)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-11.webp",
+        caption: "Slide 11 — Deployment: Flexible Hosting Models (Client Cloud, Dedicated, SJI Managed, BYO Keys)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-12.webp",
+        caption: "Slide 12 — Economics: Commercial Model Scaling with Real Usage vs Seat-Based Inefficiencies",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-13.webp",
+        caption: "Slide 13 — Timeline: 30–45 Day Implementation Roadmap from Discovery to Production Scale",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-14.webp",
+        caption: "Slide 14 — Cost Breakdown: Comprehensive Cost Comparison (CollabAI vs Microsoft Copilot & Direct LLMs)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-15.webp",
+        caption: "Slide 15 — Sector Solutions: Built-In Industry Workflows & Domain Control Towers Overview",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-16.webp",
+        caption: "Slide 16 — Mortgage Control Tower: Automated Rate Lock Alerts & Underwriting Workflows",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-17.webp",
+        caption: "Slide 17 — Healthcare & Clinics Control Tower: ePhysician 4 24/7 AI Agents for Scheduling & Billing",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-18.webp",
+        caption: "Slide 18 — Nonprofits Control Tower: NonProfit AI 16 24/7 AI Agents for Grant & Donor Operations",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-19.webp",
+        caption: "Slide 19 — Marketing Control Tower: Automated Campaign Execution, Client Reporting & Lead Routing",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-20.webp",
+        caption: "Slide 20 — Restaurant Control Tower: Plate Presence Operations Layer (POS, Voice & Social)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-21.webp",
+        caption: "Slide 21 — Real Estate Control Tower: RealtorHelp Virtual Office (15 Leads Qualified in 2 Minutes)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-22.webp",
+        caption: "Slide 22 — Client Success Control Tower: Churn Prevention, Account Health & Executive Briefings",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-23.webp",
+        caption: "Slide 23 — Agency Command Center: Unified Agency Management (CRM, Projects, EOS & AI)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-24.webp",
+        caption: "Slide 24 — GHL Dev Control Tower: Multi-Client Agency Dashboard with Single Sign-On",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-25.webp",
+        caption: "Slide 25 — Travel Agency Control Tower: TourDesk Operator-First Platform (GDPR-Ready)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-26.webp",
+        caption: "Slide 26 — Enterprise Credibility: Why SJ Innovation is the Right Implementation Partner",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/deck/collabai-deck-slide-27.webp",
+        caption: "Slide 27 — Closing: Executive Contact & Partnership Briefing (Vishwanathan Shankar)",
+        type: "desktop"
       }
     ]
   },
@@ -4953,8 +5433,8 @@ export const PROJECTS: Project[] = [
     client: "Internal Initiatives & People Operations",
     year: "2025 – Present",
     duration: "Ongoing",
-    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and the Member Birthday Carousel motion initiative that replaced static circular cake graphics with dynamic member-first video spotlights.",
+    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Company All-Hands Slide Systems", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a standardized 25-slide All-Hands meeting presentation design system, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and dynamic member-first video spotlights.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
@@ -5052,12 +5532,6 @@ export const PROJECTS: Project[] = [
             type: "portrait",
             embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
             externalUrl: "https://www.facebook.com/reel/1492889088963334"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/birthday-carousel-spotlight-akshata.webp",
-            caption: "Member Birthday Spotlight Carousel Slide — High-vibrancy portrait motion spotlight for Akshata Alornekar (January Edition), featuring branded sunset-to-cerulean lighting, festive script typography, and corporate AI-First identity.",
-            aspectRatio: "576/1024",
-            type: "portrait"
           }
         ]
       },
@@ -5066,9 +5540,328 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Bespoke animated motion graphic countdown conceived for SJ Innovation ringing in 2026. Features a futuristic speedometer-style gauge dial transitioning from 2025 to 2026 against a corporate sunset-to-cerulean atmospheric gradient, crowned with the official SJ Innovation AI First Solutions lockup.",
         images: [
           {
-            url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
+            url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
             caption: "New Year 2026 Animated Motion Countdown — Futuristic gauge meter transitioning from 2025 into 2026 with corporate gradient glow and AI-First branding.",
             aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "SJI All Hands Meeting Slide Template Redesign",
+        sectionDescription: "Comprehensive 25-slide corporate presentation design system created for SJ Innovation's quarterly All-Hands meetings across 4 global campuses (New York, Goa, Sylhet, Dhaka). Features bespoke 3D sculpted section title graphics (Icebreaker, Birthdays, Work Anniversaries, Performer of the Month, Welcome, Farewell), illustrated city skyline dividers, celebratory event photo grids, executive founder directives from Shahed & Shahera, Q4 webinar recaps, and 2026 company goal milestones.",
+        documentUrl: "/assets/projects/creative-initiatives/all-hands-deck/sji-all-hands-meeting-slides-template-2026.pdf",
+        documentTitle: "SJI All Hands Meeting Slides Template for 2026 (PDF)",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
+            caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-02.webp",
+            caption: "Slide 02 — Section Header: Icebreaker (3D Sculpted Typography with Celebration Metaphors)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-03.webp",
+            caption: "Slide 03 — Campus Divider: New York Office (Empire State & Manhattan Skyline Silhouette)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-04.webp",
+            caption: "Slide 04 — Campus Divider: Goa Office (Lighthouse, Palm Canopies & Coastal Architecture)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-05.webp",
+            caption: "Slide 05 — Campus Divider: Sylhet Office (Keane Bridge, Tea Hills & Dargah Heritage)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-06.webp",
+            caption: "Slide 06 — Campus Divider: Dhaka Office (National Parliament Architecture & Urban Skyline)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-07.webp",
+            caption: "Slide 07 — Event Gallery: New York Office Christmas Celebration Photo Collage",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-08.webp",
+            caption: "Slide 08 — Event Gallery: Sylhet Office Ramadan Kareem Celebration Photo Collage",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-09.webp",
+            caption: "Slide 09 — Section Header: Birthdays (3D Celebratory Lettering, Cake, Balloons & Bunting)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-10.webp",
+            caption: "Slide 10 — Member Spotlight: New York Office Birthday Celebrations Grid",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-11.webp",
+            caption: "Slide 11 — Section Header: Work Anniversaries (3D Typography, Calendar Icon, Medal & Confetti)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-12.webp",
+            caption: "Slide 12 — Milestone Spotlight: New York Office Work Anniversary Celebrations (1st–4th Years)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-13.webp",
+            caption: "Slide 13 — Knowledge Sharing: Outreach — Webinars Conducted in Q4 (Vibe Code Series)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-14.webp",
+            caption: "Slide 14 — Section Header: Performer of the Month (3D Golden Trophy, Rosette & Metrics)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-15.webp",
+            caption: "Slide 15 — Global Honors: Performer of the Month — January 2026 Awardees",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-16.webp",
+            caption: "Slide 16 — Performance Review: Analytics & Marketing Report (Executive Presentation Canvas)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-17.webp",
+            caption: "Slide 17 — Leadership Keynote: Updates from Shahed & Shahera (Executive Founder Avatars)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-18.webp",
+            caption: "Slide 18 — Leadership Directives: Update from Shahed & Shahera (Strategic Agenda Cards)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-19.webp",
+            caption: "Slide 19 — Section Header: Welcome (3D Shaking Hands, Open Door & Paper Airplane)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-20.webp",
+            caption: "Slide 20 — Team Growth: Welcome — New Joinees Talent Showcase",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-21.webp",
+            caption: "Slide 21 — Cohort Growth: Welcome — New Interns Academic Cohort",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-22.webp",
+            caption: "Slide 22 — Section Header: Farewell (3D Luggage, Waving Hand & Keepsake Memories)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-23.webp",
+            caption: "Slide 23 — Alumni Tribute: Farewell Honors & Appreciation",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-24.webp",
+            caption: "Slide 24 — Strategic Horizons: Goal Overview — Company Goal 2026",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
+            caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "sji-all-hands-deck",
+            title: "SJI All Hands Meeting Slide Template Redesign (25 Slides)",
+            description: "Standardized 25-slide presentation framework featuring 3D extruded event typography, campus skyline dividers, employee milestones, and founder keynotes.",
+            documentUrl: "/assets/projects/creative-initiatives/all-hands-deck/sji-all-hands-meeting-slides-template-2026.pdf",
+            documentTitle: "Download SJI All Hands Slides Template (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
+                caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-02.webp",
+                caption: "Slide 02 — Section Header: Icebreaker (3D Sculpted Typography with Celebration Metaphors)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-03.webp",
+                caption: "Slide 03 — Campus Divider: New York Office (Empire State & Manhattan Skyline Silhouette)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-04.webp",
+                caption: "Slide 04 — Campus Divider: Goa Office (Lighthouse, Palm Canopies & Coastal Architecture)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-05.webp",
+                caption: "Slide 05 — Campus Divider: Sylhet Office (Keane Bridge, Tea Hills & Dargah Heritage)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-06.webp",
+                caption: "Slide 06 — Campus Divider: Dhaka Office (National Parliament Architecture & Urban Skyline)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-07.webp",
+                caption: "Slide 07 — Event Gallery: New York Office Christmas Celebration Photo Collage",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-08.webp",
+                caption: "Slide 08 — Event Gallery: Sylhet Office Ramadan Kareem Celebration Photo Collage",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-09.webp",
+                caption: "Slide 09 — Section Header: Birthdays (3D Celebratory Lettering, Cake, Balloons & Bunting)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-10.webp",
+                caption: "Slide 10 — Member Spotlight: New York Office Birthday Celebrations Grid",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-11.webp",
+                caption: "Slide 11 — Section Header: Work Anniversaries (3D Typography, Calendar Icon, Medal & Confetti)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-12.webp",
+                caption: "Slide 12 — Milestone Spotlight: New York Office Work Anniversary Celebrations (1st–4th Years)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-13.webp",
+                caption: "Slide 13 — Knowledge Sharing: Outreach — Webinars Conducted in Q4 (Vibe Code Series)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-14.webp",
+                caption: "Slide 14 — Section Header: Performer of the Month (3D Golden Trophy, Rosette & Metrics)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-15.webp",
+                caption: "Slide 15 — Global Honors: Performer of the Month — January 2026 Awardees",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-16.webp",
+                caption: "Slide 16 — Performance Review: Analytics & Marketing Report (Executive Presentation Canvas)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-17.webp",
+                caption: "Slide 17 — Leadership Keynote: Updates from Shahed & Shahera (Executive Founder Avatars)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-18.webp",
+                caption: "Slide 18 — Leadership Directives: Update from Shahed & Shahera (Strategic Agenda Cards)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-19.webp",
+                caption: "Slide 19 — Section Header: Welcome (3D Shaking Hands, Open Door & Paper Airplane)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-20.webp",
+                caption: "Slide 20 — Team Growth: Welcome — New Joinees Talent Showcase",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-21.webp",
+                caption: "Slide 21 — Cohort Growth: Welcome — New Interns Academic Cohort",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-22.webp",
+                caption: "Slide 22 — Section Header: Farewell (3D Luggage, Waving Hand & Keepsake Memories)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-23.webp",
+                caption: "Slide 23 — Alumni Tribute: Farewell Honors & Appreciation",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-24.webp",
+                caption: "Slide 24 — Strategic Horizons: Goal Overview — Company Goal 2026",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
+                caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
           }
         ]
       },
@@ -5202,12 +5995,7 @@ export const PROJECTS: Project[] = [
         type: "portrait"
       },
       {
-        url: "/assets/projects/creative-initiatives/birthday-carousel-spotlight-akshata.webp",
-        caption: "Member Birthday Spotlight Carousel Slide — Akshata Alornekar (January)",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
+        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
         caption: "New Year 2026 Animated Motion Countdown — High-Tech Gauge Meter",
         type: "desktop"
       },
@@ -5264,6 +6052,131 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
         caption: "21st Anniversary Motto Signage — 06 Team Commitment",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
+        caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-02.webp",
+        caption: "Slide 02 — Section Header: Icebreaker (3D Sculpted Typography with Celebration Metaphors)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-03.webp",
+        caption: "Slide 03 — Campus Divider: New York Office (Empire State & Manhattan Skyline Silhouette)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-04.webp",
+        caption: "Slide 04 — Campus Divider: Goa Office (Lighthouse, Palm Canopies & Coastal Architecture)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-05.webp",
+        caption: "Slide 05 — Campus Divider: Sylhet Office (Keane Bridge, Tea Hills & Dargah Heritage)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-06.webp",
+        caption: "Slide 06 — Campus Divider: Dhaka Office (National Parliament Architecture & Urban Skyline)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-07.webp",
+        caption: "Slide 07 — Event Gallery: New York Office Christmas Celebration Photo Collage",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-08.webp",
+        caption: "Slide 08 — Event Gallery: Sylhet Office Ramadan Kareem Celebration Photo Collage",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-09.webp",
+        caption: "Slide 09 — Section Header: Birthdays (3D Celebratory Lettering, Cake, Balloons & Bunting)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-10.webp",
+        caption: "Slide 10 — Member Spotlight: New York Office Birthday Celebrations Grid",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-11.webp",
+        caption: "Slide 11 — Section Header: Work Anniversaries (3D Typography, Calendar Icon, Medal & Confetti)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-12.webp",
+        caption: "Slide 12 — Milestone Spotlight: New York Office Work Anniversary Celebrations (1st–4th Years)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-13.webp",
+        caption: "Slide 13 — Knowledge Sharing: Outreach — Webinars Conducted in Q4 (Vibe Code Series)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-14.webp",
+        caption: "Slide 14 — Section Header: Performer of the Month (3D Golden Trophy, Rosette & Metrics)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-15.webp",
+        caption: "Slide 15 — Global Honors: Performer of the Month — January 2026 Awardees",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-16.webp",
+        caption: "Slide 16 — Performance Review: Analytics & Marketing Report (Executive Presentation Canvas)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-17.webp",
+        caption: "Slide 17 — Leadership Keynote: Updates from Shahed & Shahera (Executive Founder Avatars)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-18.webp",
+        caption: "Slide 18 — Leadership Directives: Update from Shahed & Shahera (Strategic Agenda Cards)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-19.webp",
+        caption: "Slide 19 — Section Header: Welcome (3D Shaking Hands, Open Door & Paper Airplane)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-20.webp",
+        caption: "Slide 20 — Team Growth: Welcome — New Joinees Talent Showcase",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-21.webp",
+        caption: "Slide 21 — Cohort Growth: Welcome — New Interns Academic Cohort",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-22.webp",
+        caption: "Slide 22 — Section Header: Farewell (3D Luggage, Waving Hand & Keepsake Memories)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-23.webp",
+        caption: "Slide 23 — Alumni Tribute: Farewell Honors & Appreciation",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-24.webp",
+        caption: "Slide 24 — Strategic Horizons: Goal Overview — Company Goal 2026",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
+        caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
         type: "desktop"
       }
     ]
