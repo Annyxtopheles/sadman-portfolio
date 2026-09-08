@@ -3201,6 +3201,234 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "kaldwin-co-pr-deck",
+    slug: "kaldwin-co-pr-deck",
+    title: "Kaldwin & Co. — Private Wealth Advisory PR Deck",
+    category: "Brand Systems",
+    status: "CASE STUDY",
+    company: "Kaldwin & Co.",
+    client: "Kaldwin & Co. (Family Office Advisory)",
+    year: "2025",
+    duration: "3 Weeks",
+    scope: ["Executive PR Deck", "Visual Identity", "Editorial Layout", "Family Office Advisory", "Information Architecture"],
+    summary: "Comprehensive corporate PR presentation deck designed for Kaldwin & Co., an ultra-high-net-worth private wealth advisory and family office bookkeeping practice. Blends classical financial prestige typography with minimalist layouts to communicate discretionary management, multi-entity auditing, and generational estate preservation.",
+    coverImage: "/assets/projects/kaldwin-co/kaldwin-co-cover.webp",
+    liveUrl: null,
+    tldr: {
+      challenge: "Translate complex multi-entity wealth management, household payroll, and discretionary bookkeeping into an elegant, high-trust PR presentation for family offices and private estates without corporate visual clutter.",
+      role: "Lead Presentation & Brand Designer — conceptualized the editorial layout, bespoke typography hierarchy, iconography, and structured the narrative arc from mission to core service pillars and social proof.",
+      method: "Employed a restrained luxury editorial aesthetic featuring high-contrast serif headlines, airy whitespace, structured tabular service matrices, and seamless slide transitions tailored for private executive briefings."
+    },
+    problem: "Ultra-high-net-worth families and estate offices manage intricate webs of LLCs, trusts, domestic staff, and real estate holdings. Traditional corporate pitch decks felt too transactional or overly technical, failing to evoke the discretion, reliability, and calm required when managing multi-generational private fortunes.",
+    process: [
+      {
+        title: "Narrative Architecture & Discretionary Positioning",
+        description: "Structured an 8-slide high-impact narrative opening with core ethos ('Simplifying Private Wealth, Amplifying Peace of Mind') before establishing 18 years of pedigree and founder credibility.",
+        details: [
+          "Distilled founder Naomi Drexel Kaldwin's two-decade institutional pedigree into an authoritative founder statement",
+          "Defined the core value proposition around estate preservation and peace of mind"
+        ]
+      },
+      {
+        title: "Editorial Typography & Visual Hierarchy",
+        description: "Paired elegant modern serif typography for prestige titles with crisp, high-legibility sans-serif bodies and refined architectural numbering.",
+        details: [
+          "Bespoke slide numbering (01–08) establishing executive pacing",
+          "Balanced negative space allowing high-density multi-entity services to breathe"
+        ]
+      },
+      {
+        title: "Multi-Entity Service Matrix & Differentiators",
+        description: "Designed modular information cards categorizing Accounts Payable/Receivable, Multi-Entity Audits, Consolidated Tax Preparation, and Household Staff Payroll into intuitive visual clusters.",
+        details: [
+          "Categorized 6 core offerings into clean, scannable service blocks",
+          "Highlighted consolidated single-vendor accountability to eliminate operational friction"
+        ]
+      },
+      {
+        title: "Social Proof & Discretionary Closing",
+        description: "Crafted a private estate testimonial treatment and understated executive closing emphasizing trust among distinguished family offices.",
+        details: [
+          "Minimalist testimonial card for The Extrella Estate focusing on financial clarity",
+          "Clean closing lockup optimized for both digital delivery and large-format projection"
+        ]
+      }
+    ],
+    outcomes: [
+      { label: "Slide Count", value: "8 Slides", subtext: "Tight, high-impact executive presentation architecture" },
+      { label: "Entity Coverage", value: "Multi-Entity", subtext: "LLCs, trusts, private estates, and domestic staff payroll" },
+      { label: "Format Delivery", value: "16:9 Vector", subtext: "High-resolution master slides with downloadable vector PDF" }
+    ],
+    outcomeSummary: "Delivered an authoritative, luxury-grade PR deck that positions Kaldwin & Co. as the premier single-source financial partner for distinguished family offices, achieving instant executive trust through understated typography and meticulous operational clarity.",
+    gallerySections: [
+      {
+        sectionTitle: "Kaldwin & Co. — Executive PR Presentation Deck",
+        sectionDescription: "Complete 8-slide luxury financial presentation deck designed for family offices, estate trustees, and private wealth managers. Features bespoke editorial typography, structured service matrices, and estate client testimonials.",
+        documentUrl: "/assets/projects/kaldwin-co/kaldwin-co-pr-deck.pdf",
+        documentTitle: "Kaldwin & Co. PR Deck (PDF)",
+        carousels: [
+          {
+            id: "kaldwin-co-pr-deck-carousel",
+            title: "Kaldwin & Co. PR Deck (8 Slides)",
+            description: "Full interactive presentation deck for private wealth management & family office bookkeeping.",
+            documentUrl: "/assets/projects/kaldwin-co/kaldwin-co-pr-deck.pdf",
+            documentTitle: "Download Full Kaldwin & Co. PR Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-01.webp",
+                caption: "Slide 01 — Cover: Private Wealth Bookkeeping — Personalized Financial Management for Family Offices & Private Estates",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-02.webp",
+                caption: "Slide 02 — Mission Statement: Simplifying Private Wealth, Amplifying Peace of Mind",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-03.webp",
+                caption: "Slide 03 — Founder Pedigree: 18 Years of Financial Excellence (Naomi Drexel Kaldwin)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-04.webp",
+                caption: "Slide 04 — Value Proposition: Empowering Families to Protect What They've Built",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-05.webp",
+                caption: "Slide 05 — Core Services: AP/AR, Bank Reconciliation, Multi-Entity Audits, Tax Compliance & Household Staff Payroll",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-06.webp",
+                caption: "Slide 06 — Strategic Pillars: Private Wealth Specialists, Consolidated Services & Secure Software",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-07.webp",
+                caption: "Slide 07 — Client Endorsement: The Extrella Estate Case Study & Testimonial",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-08.webp",
+                caption: "Slide 08 — Closing: Private Wealth Bookkeeping — Trusted by Distinguished Family Offices",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ],
+        images: [
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-01.webp",
+            caption: "Slide 01 — Cover: Private Wealth Bookkeeping",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-02.webp",
+            caption: "Slide 02 — Mission Statement: Simplifying Private Wealth",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-03.webp",
+            caption: "Slide 03 — Founder Pedigree: 18 Years of Financial Excellence",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-04.webp",
+            caption: "Slide 04 — Value Proposition: Empowering Families to Protect What They've Built",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-05.webp",
+            caption: "Slide 05 — Core Services Matrix: Multi-Entity Accounting",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-06.webp",
+            caption: "Slide 06 — Strategic Pillars: Private Wealth Specialists",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-07.webp",
+            caption: "Slide 07 — Client Endorsement: The Extrella Estate",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-08.webp",
+            caption: "Slide 08 — Closing: Trusted by Distinguished Family Offices",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-01.webp",
+        caption: "Kaldwin & Co. PR Deck — Cover",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-02.webp",
+        caption: "Kaldwin & Co. PR Deck — Mission Statement",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-03.webp",
+        caption: "Kaldwin & Co. PR Deck — Founder Naomi Drexel Kaldwin",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-04.webp",
+        caption: "Kaldwin & Co. PR Deck — What We Do",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-05.webp",
+        caption: "Kaldwin & Co. PR Deck — Core Services Matrix",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-06.webp",
+        caption: "Kaldwin & Co. PR Deck — Strategic Value Pillars",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-07.webp",
+        caption: "Kaldwin & Co. PR Deck — The Extrella Estate Testimonial",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/kaldwin-co/kaldwin-pr-deck-slide-08.webp",
+        caption: "Kaldwin & Co. PR Deck — Closing & Executive Endorsement",
+        type: "desktop",
+        aspectRatio: "16/9"
+      }
+    ]
+  },
+  {
     id: "aegis-credit-terminal",
     slug: "aegis-credit-terminal",
     title: "Aegis Credit Terminal Dashboard",
