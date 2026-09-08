@@ -3190,7 +3190,7 @@ export const PROJECTS: Project[] = [
     outcomes: [
       { label: "Products Branded", value: "10 Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, Agency, & Restaurant" },
       { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
-      { label: "Assets Delivered", value: "56 Production Assets", subtext: "10 OG cards, 10 ads, 1 reel, and 3 full sales decks (35 slides)" }
+      { label: "Assets Delivered", value: "139 Production Assets", subtext: "10 OG cards, 10 ads, 1 reel, and 10 full sales decks (118 slides)" }
     ],
     outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
@@ -3825,6 +3825,1136 @@ export const PROJECTS: Project[] = [
           }
         ]
       },
+      {
+        sectionTitle: "Client Success AI Control Tower — Enterprise Sales Deck",
+        sectionDescription: "Comprehensive 12-slide client retention and health intelligence sales deck. Explains real-time 0-100 relationship health scores, automated 7 AM executive briefings, meeting amnesia prevention, and 22% to 9% churn reduction.",
+        documentUrl: "/assets/projects/control-tower/client-success-deck/client-success-control-tower-sales-deck.pdf",
+        documentTitle: "Client Success AI Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Client Success Control Tower — Prevent Churn Before It's Too Late (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Too Many Clients, Too Few Hours, Context Disappears When People Leave",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: 6 Core Capabilities — Health Scores, Daily Briefings, Meeting Intelligence",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-04.webp",
+            caption: "Slide 04 — Health Scores: 0-100 Real-Time Relationship Health & Client Tier Auto-Classification",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-05.webp",
+            caption: "Slide 05 — AI Daily Briefings: Prioritized Client List & Specific Data-Backed Risk Alerts",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-06.webp",
+            caption: "Slide 06 — Meeting Intelligence: Zoom to Summary to Action Items Automatically in 12 Seconds",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-07.webp",
+            caption: "Slide 07 — Semantic Search: Unified Repository Across Docs, Emails & Meetings with Client-Level Isolation",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-08.webp",
+            caption: "Slide 08 — Revenue Forecasting: Board-Ready, Always Current Projections from MRR + Pipeline Trends",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-09.webp",
+            caption: "Slide 09 — 10 Integrations: HubSpot, ActiveCollab, Google Drive, SendGrid, OpenAI, n8n",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-10.webp",
+            caption: "Slide 10 — Real Results: Average Churn Reduced 22% to 9%, $180k+ Saved, Onboarding 6 Wks to 10 Days",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-11.webp",
+            caption: "Slide 11 — Next Steps: Book a 30-Minute Platform Walkthrough or Start a 30-Day Pilot",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-12.webp",
+            caption: "Slide 12 — Closing: Try Demo & Contact Akramol Hoque (Sr. Client Relationship Manager)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "client-success-sales-deck",
+            title: "Client Success AI Control Tower — Enterprise Sales Deck (12 Slides)",
+            description: "Comprehensive 12-slide client retention and health intelligence sales deck. Explains real-time 0-100 relationship health scores, automated 7 AM executive briefings, meeting amnesia prevention, and 22% to 9% churn reduction.",
+            documentUrl: "/assets/projects/control-tower/client-success-deck/client-success-control-tower-sales-deck.pdf",
+            documentTitle: "Client Success AI Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Client Success Control Tower — Prevent Churn Before It's Too Late (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Too Many Clients, Too Few Hours, Context Disappears When People Leave",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: 6 Core Capabilities — Health Scores, Daily Briefings, Meeting Intelligence",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-04.webp",
+                caption: "Slide 04 — Health Scores: 0-100 Real-Time Relationship Health & Client Tier Auto-Classification",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-05.webp",
+                caption: "Slide 05 — AI Daily Briefings: Prioritized Client List & Specific Data-Backed Risk Alerts",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-06.webp",
+                caption: "Slide 06 — Meeting Intelligence: Zoom to Summary to Action Items Automatically in 12 Seconds",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-07.webp",
+                caption: "Slide 07 — Semantic Search: Unified Repository Across Docs, Emails & Meetings with Client-Level Isolation",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-08.webp",
+                caption: "Slide 08 — Revenue Forecasting: Board-Ready, Always Current Projections from MRR + Pipeline Trends",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-09.webp",
+                caption: "Slide 09 — 10 Integrations: HubSpot, ActiveCollab, Google Drive, SendGrid, OpenAI, n8n",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-10.webp",
+                caption: "Slide 10 — Real Results: Average Churn Reduced 22% to 9%, $180k+ Saved, Onboarding 6 Wks to 10 Days",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-11.webp",
+                caption: "Slide 11 — Next Steps: Book a 30-Minute Platform Walkthrough or Start a 30-Day Pilot",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-12.webp",
+                caption: "Slide 12 — Closing: Try Demo & Contact Akramol Hoque (Sr. Client Relationship Manager)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "TourDesk Control Tower — Operator-First Tourism Platform Deck",
+        sectionDescription: "Authoritative 12-slide commercial deck created for tour operators and activity providers. Deconstructs 6 fragmented booking systems (Bokun, Viator, GetYourGuide, Stripe), presenting 14 specialized 24/7 AI agents and a 14-day rollout roadmap.",
+        documentUrl: "/assets/projects/control-tower/tourdesk-deck/tourdesk-control-tower-sales-deck.pdf",
+        documentTitle: "TourDesk Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-01.webp",
+            caption: "Slide 01 — Title: TourDesk Control Tower — One Operator-First Platform to Run a Tour Business (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Tour Operators Run Their Business Across 6 Tabs & a WhatsApp Group",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-03.webp",
+            caption: "Slide 03 — The Vision: One Dashboard, 21+ Integrations, 14 Specialized AI Agents",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-04.webp",
+            caption: "Slide 04 — Integration Hub: Bokun, Viator, GetYourGuide, TourPlan, Stripe, Twilio, WhatsApp",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-05.webp",
+            caption: "Slide 05 — AI Agents: Operations Briefing, Review Reply, Guest Concierge, Channel Reconciler",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-06.webp",
+            caption: "Slide 06 — Operator Dashboard: Tourism-First Screens with Live Departure Status & Conflict Flags",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-07.webp",
+            caption: "Slide 07 — The Numbers: <5 Min Inquiry Response, 24/7 Coverage, 60% Less Ops Time, 3x Higher Conversion",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-08.webp",
+            caption: "Slide 08 — Architecture: SJ Framework (RLS, Multi-Tenant Auth, RAG Edge Functions) & Tourism Layer",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-09.webp",
+            caption: "Slide 09 — Technology Stack: Multi-Product Core, 21+ Extensible Providers, GDPR/SOC 2 Ready",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-10.webp",
+            caption: "Slide 10 — 14-Day Rollout: Days 1-4 Connect, Days 5-9 Calibrate, Days 10-12 Pilot, Days 13-14 Go Live",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-11.webp",
+            caption: "Slide 11 — Next Steps: Open the Live Interactive Demo or Book a Demo with Sales",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-12.webp",
+            caption: "Slide 12 — Closing: Try Demo & Contact Shahed Islam (CEO @ SJ Innovation LLC)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "tourdesk-sales-deck",
+            title: "TourDesk Control Tower — Operator-First Tourism Platform Deck (12 Slides)",
+            description: "Authoritative 12-slide commercial deck created for tour operators and activity providers. Deconstructs 6 fragmented booking systems (Bokun, Viator, GetYourGuide, Stripe), presenting 14 specialized 24/7 AI agents and a 14-day rollout roadmap.",
+            documentUrl: "/assets/projects/control-tower/tourdesk-deck/tourdesk-control-tower-sales-deck.pdf",
+            documentTitle: "TourDesk Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-01.webp",
+                caption: "Slide 01 — Title: TourDesk Control Tower — One Operator-First Platform to Run a Tour Business (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Tour Operators Run Their Business Across 6 Tabs & a WhatsApp Group",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-03.webp",
+                caption: "Slide 03 — The Vision: One Dashboard, 21+ Integrations, 14 Specialized AI Agents",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-04.webp",
+                caption: "Slide 04 — Integration Hub: Bokun, Viator, GetYourGuide, TourPlan, Stripe, Twilio, WhatsApp",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-05.webp",
+                caption: "Slide 05 — AI Agents: Operations Briefing, Review Reply, Guest Concierge, Channel Reconciler",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-06.webp",
+                caption: "Slide 06 — Operator Dashboard: Tourism-First Screens with Live Departure Status & Conflict Flags",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-07.webp",
+                caption: "Slide 07 — The Numbers: <5 Min Inquiry Response, 24/7 Coverage, 60% Less Ops Time, 3x Higher Conversion",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-08.webp",
+                caption: "Slide 08 — Architecture: SJ Framework (RLS, Multi-Tenant Auth, RAG Edge Functions) & Tourism Layer",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-09.webp",
+                caption: "Slide 09 — Technology Stack: Multi-Product Core, 21+ Extensible Providers, GDPR/SOC 2 Ready",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-10.webp",
+                caption: "Slide 10 — 14-Day Rollout: Days 1-4 Connect, Days 5-9 Calibrate, Days 10-12 Pilot, Days 13-14 Go Live",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-11.webp",
+                caption: "Slide 11 — Next Steps: Open the Live Interactive Demo or Book a Demo with Sales",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-12.webp",
+                caption: "Slide 12 — Closing: Try Demo & Contact Shahed Islam (CEO @ SJ Innovation LLC)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "GHL Developer Control Tower — Agency Command Center Deck",
+        sectionDescription: "High-impact 11-slide sales enablement deck built for GoHighLevel marketing agencies. Demonstrates single-dashboard management across 20+ client sub-accounts, real-time MRR aggregation, automation health monitoring, and Voice AI configuration testing.",
+        documentUrl: "/assets/projects/control-tower/ghl-deck/ghl-developer-control-tower-sales-deck.pdf",
+        documentTitle: "GHL Developer Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-01.webp",
+            caption: "Slide 01 — Title: GHL Developer Control Tower — Command Center for GoHighLevel Agencies (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Managing 20 Sub-Accounts = 20 Logins, Zero Clarity, Constant Firefighting",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: One Login, Every Sub-Account — Revenue, Automations, Voice AI, Support",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-04.webp",
+            caption: "Slide 04 — Revenue Command Center: Aggregated MRR Across All Sub-Accounts & Monthly-Normalized Formula",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-05.webp",
+            caption: "Slide 05 — Automation Health Monitor: See Which Workflows Are Broken Across Every Sub-Account",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-06.webp",
+            caption: "Slide 06 — Voice AI Station: Manage Every GHL Voice AI Agent in One Place with Misconfiguration Alerts",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-07.webp",
+            caption: "Slide 07 — Meetings & Intelligence: Zoom Ingestion with Gemini 2.5 Flash Auto-Action Items",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-08.webp",
+            caption: "Slide 08 — Real Results: Marcus Chen (20-Client Agency: Weekly MRR Check 90 Min to 30 Sec, +6 Hrs Saved)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-09.webp",
+            caption: "Slide 09 — Security & Pricing: Server-Side API Keys, AES-GCM Encryption, Hosted SaaS from $49/mo",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-10.webp",
+            caption: "Slide 10 — Next Steps: Start Free Trial (Connect in 5 Min) or Book a 20-Min Guided Demo",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-11.webp",
+            caption: "Slide 11 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "ghl-developer-sales-deck",
+            title: "GHL Developer Control Tower — Agency Command Center Deck (11 Slides)",
+            description: "High-impact 11-slide sales enablement deck built for GoHighLevel marketing agencies. Demonstrates single-dashboard management across 20+ client sub-accounts, real-time MRR aggregation, automation health monitoring, and Voice AI configuration testing.",
+            documentUrl: "/assets/projects/control-tower/ghl-deck/ghl-developer-control-tower-sales-deck.pdf",
+            documentTitle: "GHL Developer Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-01.webp",
+                caption: "Slide 01 — Title: GHL Developer Control Tower — Command Center for GoHighLevel Agencies (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Managing 20 Sub-Accounts = 20 Logins, Zero Clarity, Constant Firefighting",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: One Login, Every Sub-Account — Revenue, Automations, Voice AI, Support",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-04.webp",
+                caption: "Slide 04 — Revenue Command Center: Aggregated MRR Across All Sub-Accounts & Monthly-Normalized Formula",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-05.webp",
+                caption: "Slide 05 — Automation Health Monitor: See Which Workflows Are Broken Across Every Sub-Account",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-06.webp",
+                caption: "Slide 06 — Voice AI Station: Manage Every GHL Voice AI Agent in One Place with Misconfiguration Alerts",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-07.webp",
+                caption: "Slide 07 — Meetings & Intelligence: Zoom Ingestion with Gemini 2.5 Flash Auto-Action Items",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-08.webp",
+                caption: "Slide 08 — Real Results: Marcus Chen (20-Client Agency: Weekly MRR Check 90 Min to 30 Sec, +6 Hrs Saved)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-09.webp",
+                caption: "Slide 09 — Security & Pricing: Server-Side API Keys, AES-GCM Encryption, Hosted SaaS from $49/mo",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-10.webp",
+                caption: "Slide 10 — Next Steps: Start Free Trial (Connect in 5 Min) or Book a 20-Min Guided Demo",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-11.webp",
+                caption: "Slide 11 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "Restaurant AI Control Tower — Multi-Location Operations Deck",
+        sectionDescription: "High-converting 11-slide operations deck built for multi-unit restaurant chains. Details the $80,000+ inefficiency per 5-location brand, automatic Toast POS sync, AI-generated weekly manager briefs, and P&L margin dashboards.",
+        documentUrl: "/assets/projects/control-tower/restaurant-deck/restaurant-ai-control-tower-sales-deck.pdf",
+        documentTitle: "Restaurant AI Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Restaurant AI Control Tower — Operations Platform for Restaurant Chains (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: $80,000+ Inefficiency per 5-Location Brand from Disconnected POS, Yelp & Financials",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: Real-Time Sales Analytics, Review Management, Menu Sync, Financial P&L",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-04.webp",
+            caption: "Slide 04 — Multi-Location Command Center: Daily Sales, Orders Today, Active AI Suggestions",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-05.webp",
+            caption: "Slide 05 — Toast POS Integration: Automatic Daily Sales Sync, Menu Data, Customer Records",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-06.webp",
+            caption: "Slide 06 — AI Intelligence: Automated Weekly Briefs & Per-Page Analyzers (Reviews, Orders, Finance)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-07.webp",
+            caption: "Slide 07 — Full Financial Picture: P&L in the Platform with Channel Breakdowns & Expense Trends",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-08.webp",
+            caption: "Slide 08 — Real Results: Carlos Rivera (6-Location Brand: Weekly Reporting 8 Hrs to 45 Min, ~$15k Saved)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-09.webp",
+            caption: "Slide 09 — Security & Setup: Multi-Tenant DB Isolation, 32 Tables with RLS, Live in <48 Hours",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-10.webp",
+            caption: "Slide 10 — Next Steps: Try Interactive Demo (17 Simulated Locations) or Book a Guided Demo",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-11.webp",
+            caption: "Slide 11 — Closing: Try Demo & Contact Sayeed Ahmed (Manager @ SJ Innovation LLC)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "restaurant-ai-sales-deck",
+            title: "Restaurant AI Control Tower — Multi-Location Operations Deck (11 Slides)",
+            description: "High-converting 11-slide operations deck built for multi-unit restaurant chains. Details the $80,000+ inefficiency per 5-location brand, automatic Toast POS sync, AI-generated weekly manager briefs, and P&L margin dashboards.",
+            documentUrl: "/assets/projects/control-tower/restaurant-deck/restaurant-ai-control-tower-sales-deck.pdf",
+            documentTitle: "Restaurant AI Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Restaurant AI Control Tower — Operations Platform for Restaurant Chains (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: $80,000+ Inefficiency per 5-Location Brand from Disconnected POS, Yelp & Financials",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: Real-Time Sales Analytics, Review Management, Menu Sync, Financial P&L",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-04.webp",
+                caption: "Slide 04 — Multi-Location Command Center: Daily Sales, Orders Today, Active AI Suggestions",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-05.webp",
+                caption: "Slide 05 — Toast POS Integration: Automatic Daily Sales Sync, Menu Data, Customer Records",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-06.webp",
+                caption: "Slide 06 — AI Intelligence: Automated Weekly Briefs & Per-Page Analyzers (Reviews, Orders, Finance)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-07.webp",
+                caption: "Slide 07 — Full Financial Picture: P&L in the Platform with Channel Breakdowns & Expense Trends",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-08.webp",
+                caption: "Slide 08 — Real Results: Carlos Rivera (6-Location Brand: Weekly Reporting 8 Hrs to 45 Min, ~$15k Saved)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-09.webp",
+                caption: "Slide 09 — Security & Setup: Multi-Tenant DB Isolation, 32 Tables with RLS, Live in <48 Hours",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-10.webp",
+                caption: "Slide 10 — Next Steps: Try Interactive Demo (17 Simulated Locations) or Book a Guided Demo",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-11.webp",
+                caption: "Slide 11 — Closing: Try Demo & Contact Sayeed Ahmed (Manager @ SJ Innovation LLC)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "RealtorHelp Software — 24/7 AI Follow-Up Assistant Deck",
+        sectionDescription: "Persuasive 13-slide sales deck tailored for residential real estate brokerages and agents. Illustrates how 15-20 lost deals ($150k+ commission) are recovered via 60-second AI draft replies, 40-60% cold lead re-engagement, and WhatsApp hotline commands.",
+        documentUrl: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-software-sales-deck.pdf",
+        documentTitle: "RealtorHelp Software Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-01.webp",
+            caption: "Slide 01 — Title: RealtorHelp Software — AI-Powered Follow-Up Assistant for Real Estate Agents (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: 15-20 Lost Deals = $150,000+ in Missed Commissions from Slow Follow-Up",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: Every Message Drafted by AI, Approved by You (SMS, Inbound, Cold Leads)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-04.webp",
+            caption: "Slide 04 — How It Works: Drafts Ready in 60 Seconds, Matches Agent Tone with Confidence Scoring",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-05.webp",
+            caption: "Slide 05 — Approval Inbox + Lead Memory: Response Time 12+ Hrs to <2 Min, 95%+ Consistency",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-06.webp",
+            caption: "Slide 06 — Cold Lead Re-Engagement: Inactivity Agent Yielding 40-60% Re-Engagement Rate",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-07.webp",
+            caption: "Slide 07 — Real Results: Jake Martinez (Phoenix Agent: 127 Drafts, 78 Hrs Saved, ~$40k New Pipeline)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-08.webp",
+            caption: "Slide 08 — Daily Brief + Mobile Control: 7 AM Briefings & WhatsApp Hotline Commands",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-09.webp",
+            caption: "Slide 09 — My Vendors: Trusted Trades Roster Built Once and Auto-Drafted to Clients on Every Deal",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-10.webp",
+            caption: "Slide 10 — Pricing: Starter ($0/mo), Growth ($19.99/mo), Premium ($97.99/mo) vs ChatGPT Comparison",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-11.webp",
+            caption: "Slide 11 — Security & Integration: GoHighLevel, Follow Up Boss, Gmail, Google Calendar & WhatsApp",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-12.webp",
+            caption: "Slide 12 — Next Steps: Book a 30-Minute Walkthrough or Start a 30-Day Pilot",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-13.webp",
+            caption: "Slide 13 — Closing: Try Demo & Contact Paresh Bagi (Technical Manager @ SJ Innovation LLC)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "realtorhelp-sales-deck",
+            title: "RealtorHelp Software — 24/7 AI Follow-Up Assistant Deck (13 Slides)",
+            description: "Persuasive 13-slide sales deck tailored for residential real estate brokerages and agents. Illustrates how 15-20 lost deals ($150k+ commission) are recovered via 60-second AI draft replies, 40-60% cold lead re-engagement, and WhatsApp hotline commands.",
+            documentUrl: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-software-sales-deck.pdf",
+            documentTitle: "RealtorHelp Software Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-01.webp",
+                caption: "Slide 01 — Title: RealtorHelp Software — AI-Powered Follow-Up Assistant for Real Estate Agents (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: 15-20 Lost Deals = $150,000+ in Missed Commissions from Slow Follow-Up",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: Every Message Drafted by AI, Approved by You (SMS, Inbound, Cold Leads)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-04.webp",
+                caption: "Slide 04 — How It Works: Drafts Ready in 60 Seconds, Matches Agent Tone with Confidence Scoring",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-05.webp",
+                caption: "Slide 05 — Approval Inbox + Lead Memory: Response Time 12+ Hrs to <2 Min, 95%+ Consistency",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-06.webp",
+                caption: "Slide 06 — Cold Lead Re-Engagement: Inactivity Agent Yielding 40-60% Re-Engagement Rate",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-07.webp",
+                caption: "Slide 07 — Real Results: Jake Martinez (Phoenix Agent: 127 Drafts, 78 Hrs Saved, ~$40k New Pipeline)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-08.webp",
+                caption: "Slide 08 — Daily Brief + Mobile Control: 7 AM Briefings & WhatsApp Hotline Commands",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-09.webp",
+                caption: "Slide 09 — My Vendors: Trusted Trades Roster Built Once and Auto-Drafted to Clients on Every Deal",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-10.webp",
+                caption: "Slide 10 — Pricing: Starter ($0/mo), Growth ($19.99/mo), Premium ($97.99/mo) vs ChatGPT Comparison",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-11.webp",
+                caption: "Slide 11 — Security & Integration: GoHighLevel, Follow Up Boss, Gmail, Google Calendar & WhatsApp",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-12.webp",
+                caption: "Slide 12 — Next Steps: Book a 30-Minute Walkthrough or Start a 30-Day Pilot",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-13.webp",
+                caption: "Slide 13 — Closing: Try Demo & Contact Paresh Bagi (Technical Manager @ SJ Innovation LLC)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "Marketing AI Control Tower — Agency Operating System Deck",
+        sectionDescription: "Authoritative 13-slide pitch deck for digital marketing agencies. Focuses on multi-client attribution, automated creative copy variations, predictive account churn scores, and one-click white-label client performance reporting.",
+        documentUrl: "/assets/projects/control-tower/marketing-deck/marketing-ai-control-tower-sales-deck.pdf",
+        documentTitle: "Marketing AI Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Marketing AI Control Tower — The Agency Operating System (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Client Health Buried in Inboxes, Disconnected Campaigns & Manual Reporting",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: One Unified OS for Lead Attribution, Client Health & Campaign Execution",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-04.webp",
+            caption: "Slide 04 — Multi-Client Dashboard: Real-Time Campaign ROAS, Churn Risk & Spend Telemetry",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-05.webp",
+            caption: "Slide 05 — AI Campaign Copilot: Automated Creative Briefs, Ad Copy Variants & Audience Suggestions",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-06.webp",
+            caption: "Slide 06 — Meeting & Call Intelligence: Client Strategy Transcription & Automatic Follow-Up Tasks",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-07.webp",
+            caption: "Slide 07 — Client Health & Churn Detection: AI Predictive Scoring Flagging At-Risk Accounts Early",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-08.webp",
+            caption: "Slide 08 — Automated Client Reporting: One-Click White-Label Executive Performance Summaries",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-09.webp",
+            caption: "Slide 09 — Agency Integrations: Meta Ads, Google Ads, HubSpot, Slack, ActiveCollab, n8n",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-10.webp",
+            caption: "Slide 10 — Real Results: 15-Client Agency (+14 Hrs Saved/Week, 35% Faster Client Reporting)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-11.webp",
+            caption: "Slide 11 — Security & Deployment: SOC 2 Compliant, RLS Data Isolation, Live in <72 Hours",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-12.webp",
+            caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 30-Day Guided Pilot",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-13.webp",
+            caption: "Slide 13 — Closing: Try Demo & Contact SJ Innovation Marketing Solutions Team",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "marketing-ai-sales-deck",
+            title: "Marketing AI Control Tower — Agency Operating System Deck (13 Slides)",
+            description: "Authoritative 13-slide pitch deck for digital marketing agencies. Focuses on multi-client attribution, automated creative copy variations, predictive account churn scores, and one-click white-label client performance reporting.",
+            documentUrl: "/assets/projects/control-tower/marketing-deck/marketing-ai-control-tower-sales-deck.pdf",
+            documentTitle: "Marketing AI Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Marketing AI Control Tower — The Agency Operating System (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Client Health Buried in Inboxes, Disconnected Campaigns & Manual Reporting",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: One Unified OS for Lead Attribution, Client Health & Campaign Execution",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-04.webp",
+                caption: "Slide 04 — Multi-Client Dashboard: Real-Time Campaign ROAS, Churn Risk & Spend Telemetry",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-05.webp",
+                caption: "Slide 05 — AI Campaign Copilot: Automated Creative Briefs, Ad Copy Variants & Audience Suggestions",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-06.webp",
+                caption: "Slide 06 — Meeting & Call Intelligence: Client Strategy Transcription & Automatic Follow-Up Tasks",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-07.webp",
+                caption: "Slide 07 — Client Health & Churn Detection: AI Predictive Scoring Flagging At-Risk Accounts Early",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-08.webp",
+                caption: "Slide 08 — Automated Client Reporting: One-Click White-Label Executive Performance Summaries",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-09.webp",
+                caption: "Slide 09 — Agency Integrations: Meta Ads, Google Ads, HubSpot, Slack, ActiveCollab, n8n",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-10.webp",
+                caption: "Slide 10 — Real Results: 15-Client Agency (+14 Hrs Saved/Week, 35% Faster Client Reporting)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-11.webp",
+                caption: "Slide 11 — Security & Deployment: SOC 2 Compliant, RLS Data Isolation, Live in <72 Hours",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-12.webp",
+                caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 30-Day Guided Pilot",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-13.webp",
+                caption: "Slide 13 — Closing: Try Demo & Contact SJ Innovation Marketing Solutions Team",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "NonProfit AI Control Tower — Grant & Donor Operations Deck",
+        sectionDescription: "Mission-driven 11-slide presentation deck designed for non-profit foundations, charities, and NGO leadership. Details 16 specialized 24/7 AI agents coordinating automated grant RFP matching, donor stewardship pyramids, and board reporting.",
+        documentUrl: "/assets/projects/control-tower/nonprofit-deck/nonprofit-ai-control-tower-sales-deck.pdf",
+        documentTitle: "NonProfit AI Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-01.webp",
+            caption: "Slide 01 — Title: NonProfit AI Control Tower — One Intelligence Layer, 16 AI Agents (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Programs, Donors, Grants & Board Tasks Stranded in Separate Systems",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: Unified NonProfit Operations Layer Powered by 16 Specialized AI Agents",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-04.webp",
+            caption: "Slide 04 — Grant Intelligence: Automated RFP Matching, Compliance Checks & Proposal Drafting",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-05.webp",
+            caption: "Slide 05 — Donor Pyramid & Stewardship: Personalized Donor Thank-Yous & Giving Trajectory Alerts",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-06.webp",
+            caption: "Slide 06 — Board & Executive Briefings: Automated Monthly KPI Summaries & Impact Metrics",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-07.webp",
+            caption: "Slide 07 — Event & Volunteer Coordination: Automated Roster Management & Schedule Reminders",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-08.webp",
+            caption: "Slide 08 — Integrations: Salesforce NPSP, DonorPerfect, Google Workspace, Stripe",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-09.webp",
+            caption: "Slide 09 — Real Results: Regional Foundation (18 Hours Saved Weekly, 40% Faster Grant Submissions)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-10.webp",
+            caption: "Slide 10 — Next Steps: Schedule a 30-Minute Demonstration or Start Beta Access",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-11.webp",
+            caption: "Slide 11 — Closing: Try Demo & Contact SJ Innovation NonProfit AI Team",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "nonprofit-ai-sales-deck",
+            title: "NonProfit AI Control Tower — Grant & Donor Operations Deck (11 Slides)",
+            description: "Mission-driven 11-slide presentation deck designed for non-profit foundations, charities, and NGO leadership. Details 16 specialized 24/7 AI agents coordinating automated grant RFP matching, donor stewardship pyramids, and board reporting.",
+            documentUrl: "/assets/projects/control-tower/nonprofit-deck/nonprofit-ai-control-tower-sales-deck.pdf",
+            documentTitle: "NonProfit AI Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-01.webp",
+                caption: "Slide 01 — Title: NonProfit AI Control Tower — One Intelligence Layer, 16 AI Agents (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Programs, Donors, Grants & Board Tasks Stranded in Separate Systems",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: Unified NonProfit Operations Layer Powered by 16 Specialized AI Agents",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-04.webp",
+                caption: "Slide 04 — Grant Intelligence: Automated RFP Matching, Compliance Checks & Proposal Drafting",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-05.webp",
+                caption: "Slide 05 — Donor Pyramid & Stewardship: Personalized Donor Thank-Yous & Giving Trajectory Alerts",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-06.webp",
+                caption: "Slide 06 — Board & Executive Briefings: Automated Monthly KPI Summaries & Impact Metrics",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-07.webp",
+                caption: "Slide 07 — Event & Volunteer Coordination: Automated Roster Management & Schedule Reminders",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-08.webp",
+                caption: "Slide 08 — Integrations: Salesforce NPSP, DonorPerfect, Google Workspace, Stripe",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-09.webp",
+                caption: "Slide 09 — Real Results: Regional Foundation (18 Hours Saved Weekly, 40% Faster Grant Submissions)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-10.webp",
+                caption: "Slide 10 — Next Steps: Schedule a 30-Minute Demonstration or Start Beta Access",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-11.webp",
+                caption: "Slide 11 — Closing: Try Demo & Contact SJ Innovation NonProfit AI Team",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+
 
       {
         url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
@@ -4121,6 +5251,421 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-10.webp",
         caption: "Slide 10 — Closing: Try Demo & Contact Amol Bhandari (Technical Manager)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Client Success Control Tower — Prevent Churn Before It's Too Late (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Too Many Clients, Too Few Hours, Context Disappears When People Leave",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: 6 Core Capabilities — Health Scores, Daily Briefings, Meeting Intelligence",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-04.webp",
+        caption: "Slide 04 — Health Scores: 0-100 Real-Time Relationship Health & Client Tier Auto-Classification",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-05.webp",
+        caption: "Slide 05 — AI Daily Briefings: Prioritized Client List & Specific Data-Backed Risk Alerts",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-06.webp",
+        caption: "Slide 06 — Meeting Intelligence: Zoom to Summary to Action Items Automatically in 12 Seconds",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-07.webp",
+        caption: "Slide 07 — Semantic Search: Unified Repository Across Docs, Emails & Meetings with Client-Level Isolation",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-08.webp",
+        caption: "Slide 08 — Revenue Forecasting: Board-Ready, Always Current Projections from MRR + Pipeline Trends",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-09.webp",
+        caption: "Slide 09 — 10 Integrations: HubSpot, ActiveCollab, Google Drive, SendGrid, OpenAI, n8n",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-10.webp",
+        caption: "Slide 10 — Real Results: Average Churn Reduced 22% to 9%, $180k+ Saved, Onboarding 6 Wks to 10 Days",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-11.webp",
+        caption: "Slide 11 — Next Steps: Book a 30-Minute Platform Walkthrough or Start a 30-Day Pilot",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/client-success-deck/client-success-deck-slide-12.webp",
+        caption: "Slide 12 — Closing: Try Demo & Contact Akramol Hoque (Sr. Client Relationship Manager)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-01.webp",
+        caption: "Slide 01 — Title: TourDesk Control Tower — One Operator-First Platform to Run a Tour Business (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Tour Operators Run Their Business Across 6 Tabs & a WhatsApp Group",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-03.webp",
+        caption: "Slide 03 — The Vision: One Dashboard, 21+ Integrations, 14 Specialized AI Agents",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-04.webp",
+        caption: "Slide 04 — Integration Hub: Bokun, Viator, GetYourGuide, TourPlan, Stripe, Twilio, WhatsApp",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-05.webp",
+        caption: "Slide 05 — AI Agents: Operations Briefing, Review Reply, Guest Concierge, Channel Reconciler",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-06.webp",
+        caption: "Slide 06 — Operator Dashboard: Tourism-First Screens with Live Departure Status & Conflict Flags",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-07.webp",
+        caption: "Slide 07 — The Numbers: <5 Min Inquiry Response, 24/7 Coverage, 60% Less Ops Time, 3x Higher Conversion",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-08.webp",
+        caption: "Slide 08 — Architecture: SJ Framework (RLS, Multi-Tenant Auth, RAG Edge Functions) & Tourism Layer",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-09.webp",
+        caption: "Slide 09 — Technology Stack: Multi-Product Core, 21+ Extensible Providers, GDPR/SOC 2 Ready",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-10.webp",
+        caption: "Slide 10 — 14-Day Rollout: Days 1-4 Connect, Days 5-9 Calibrate, Days 10-12 Pilot, Days 13-14 Go Live",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-11.webp",
+        caption: "Slide 11 — Next Steps: Open the Live Interactive Demo or Book a Demo with Sales",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/tourdesk-deck/tourdesk-deck-slide-12.webp",
+        caption: "Slide 12 — Closing: Try Demo & Contact Shahed Islam (CEO @ SJ Innovation LLC)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-01.webp",
+        caption: "Slide 01 — Title: GHL Developer Control Tower — Command Center for GoHighLevel Agencies (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Managing 20 Sub-Accounts = 20 Logins, Zero Clarity, Constant Firefighting",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: One Login, Every Sub-Account — Revenue, Automations, Voice AI, Support",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-04.webp",
+        caption: "Slide 04 — Revenue Command Center: Aggregated MRR Across All Sub-Accounts & Monthly-Normalized Formula",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-05.webp",
+        caption: "Slide 05 — Automation Health Monitor: See Which Workflows Are Broken Across Every Sub-Account",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-06.webp",
+        caption: "Slide 06 — Voice AI Station: Manage Every GHL Voice AI Agent in One Place with Misconfiguration Alerts",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-07.webp",
+        caption: "Slide 07 — Meetings & Intelligence: Zoom Ingestion with Gemini 2.5 Flash Auto-Action Items",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-08.webp",
+        caption: "Slide 08 — Real Results: Marcus Chen (20-Client Agency: Weekly MRR Check 90 Min to 30 Sec, +6 Hrs Saved)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-09.webp",
+        caption: "Slide 09 — Security & Pricing: Server-Side API Keys, AES-GCM Encryption, Hosted SaaS from $49/mo",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-10.webp",
+        caption: "Slide 10 — Next Steps: Start Free Trial (Connect in 5 Min) or Book a 20-Min Guided Demo",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ghl-deck/ghl-deck-slide-11.webp",
+        caption: "Slide 11 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Restaurant AI Control Tower — Operations Platform for Restaurant Chains (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: $80,000+ Inefficiency per 5-Location Brand from Disconnected POS, Yelp & Financials",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: Real-Time Sales Analytics, Review Management, Menu Sync, Financial P&L",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-04.webp",
+        caption: "Slide 04 — Multi-Location Command Center: Daily Sales, Orders Today, Active AI Suggestions",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-05.webp",
+        caption: "Slide 05 — Toast POS Integration: Automatic Daily Sales Sync, Menu Data, Customer Records",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-06.webp",
+        caption: "Slide 06 — AI Intelligence: Automated Weekly Briefs & Per-Page Analyzers (Reviews, Orders, Finance)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-07.webp",
+        caption: "Slide 07 — Full Financial Picture: P&L in the Platform with Channel Breakdowns & Expense Trends",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-08.webp",
+        caption: "Slide 08 — Real Results: Carlos Rivera (6-Location Brand: Weekly Reporting 8 Hrs to 45 Min, ~$15k Saved)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-09.webp",
+        caption: "Slide 09 — Security & Setup: Multi-Tenant DB Isolation, 32 Tables with RLS, Live in <48 Hours",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-10.webp",
+        caption: "Slide 10 — Next Steps: Try Interactive Demo (17 Simulated Locations) or Book a Guided Demo",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/restaurant-deck/restaurant-deck-slide-11.webp",
+        caption: "Slide 11 — Closing: Try Demo & Contact Sayeed Ahmed (Manager @ SJ Innovation LLC)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-01.webp",
+        caption: "Slide 01 — Title: RealtorHelp Software — AI-Powered Follow-Up Assistant for Real Estate Agents (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: 15-20 Lost Deals = $150,000+ in Missed Commissions from Slow Follow-Up",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: Every Message Drafted by AI, Approved by You (SMS, Inbound, Cold Leads)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-04.webp",
+        caption: "Slide 04 — How It Works: Drafts Ready in 60 Seconds, Matches Agent Tone with Confidence Scoring",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-05.webp",
+        caption: "Slide 05 — Approval Inbox + Lead Memory: Response Time 12+ Hrs to <2 Min, 95%+ Consistency",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-06.webp",
+        caption: "Slide 06 — Cold Lead Re-Engagement: Inactivity Agent Yielding 40-60% Re-Engagement Rate",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-07.webp",
+        caption: "Slide 07 — Real Results: Jake Martinez (Phoenix Agent: 127 Drafts, 78 Hrs Saved, ~$40k New Pipeline)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-08.webp",
+        caption: "Slide 08 — Daily Brief + Mobile Control: 7 AM Briefings & WhatsApp Hotline Commands",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-09.webp",
+        caption: "Slide 09 — My Vendors: Trusted Trades Roster Built Once and Auto-Drafted to Clients on Every Deal",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-10.webp",
+        caption: "Slide 10 — Pricing: Starter ($0/mo), Growth ($19.99/mo), Premium ($97.99/mo) vs ChatGPT Comparison",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-11.webp",
+        caption: "Slide 11 — Security & Integration: GoHighLevel, Follow Up Boss, Gmail, Google Calendar & WhatsApp",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-12.webp",
+        caption: "Slide 12 — Next Steps: Book a 30-Minute Walkthrough or Start a 30-Day Pilot",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/realtorhelp-deck/realtorhelp-deck-slide-13.webp",
+        caption: "Slide 13 — Closing: Try Demo & Contact Paresh Bagi (Technical Manager @ SJ Innovation LLC)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Marketing AI Control Tower — The Agency Operating System (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Client Health Buried in Inboxes, Disconnected Campaigns & Manual Reporting",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: One Unified OS for Lead Attribution, Client Health & Campaign Execution",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-04.webp",
+        caption: "Slide 04 — Multi-Client Dashboard: Real-Time Campaign ROAS, Churn Risk & Spend Telemetry",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-05.webp",
+        caption: "Slide 05 — AI Campaign Copilot: Automated Creative Briefs, Ad Copy Variants & Audience Suggestions",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-06.webp",
+        caption: "Slide 06 — Meeting & Call Intelligence: Client Strategy Transcription & Automatic Follow-Up Tasks",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-07.webp",
+        caption: "Slide 07 — Client Health & Churn Detection: AI Predictive Scoring Flagging At-Risk Accounts Early",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-08.webp",
+        caption: "Slide 08 — Automated Client Reporting: One-Click White-Label Executive Performance Summaries",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-09.webp",
+        caption: "Slide 09 — Agency Integrations: Meta Ads, Google Ads, HubSpot, Slack, ActiveCollab, n8n",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-10.webp",
+        caption: "Slide 10 — Real Results: 15-Client Agency (+14 Hrs Saved/Week, 35% Faster Client Reporting)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-11.webp",
+        caption: "Slide 11 — Security & Deployment: SOC 2 Compliant, RLS Data Isolation, Live in <72 Hours",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-12.webp",
+        caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 30-Day Guided Pilot",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/marketing-deck/marketing-deck-slide-13.webp",
+        caption: "Slide 13 — Closing: Try Demo & Contact SJ Innovation Marketing Solutions Team",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-01.webp",
+        caption: "Slide 01 — Title: NonProfit AI Control Tower — One Intelligence Layer, 16 AI Agents (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Programs, Donors, Grants & Board Tasks Stranded in Separate Systems",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: Unified NonProfit Operations Layer Powered by 16 Specialized AI Agents",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-04.webp",
+        caption: "Slide 04 — Grant Intelligence: Automated RFP Matching, Compliance Checks & Proposal Drafting",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-05.webp",
+        caption: "Slide 05 — Donor Pyramid & Stewardship: Personalized Donor Thank-Yous & Giving Trajectory Alerts",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-06.webp",
+        caption: "Slide 06 — Board & Executive Briefings: Automated Monthly KPI Summaries & Impact Metrics",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-07.webp",
+        caption: "Slide 07 — Event & Volunteer Coordination: Automated Roster Management & Schedule Reminders",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-08.webp",
+        caption: "Slide 08 — Integrations: Salesforce NPSP, DonorPerfect, Google Workspace, Stripe",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-09.webp",
+        caption: "Slide 09 — Real Results: Regional Foundation (18 Hours Saved Weekly, 40% Faster Grant Submissions)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-10.webp",
+        caption: "Slide 10 — Next Steps: Schedule a 30-Minute Demonstration or Start Beta Access",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/nonprofit-deck/nonprofit-deck-slide-11.webp",
+        caption: "Slide 11 — Closing: Try Demo & Contact SJ Innovation NonProfit AI Team",
         type: "desktop"
       }
     ]
