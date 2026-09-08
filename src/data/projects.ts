@@ -3556,7 +3556,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
-      { label: "Assets Delivered", value: "35 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 9 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Assets Delivered", value: "40 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
       { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -3783,7 +3783,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Happy Holidays & Year-End Client Appreciation Postcards",
-        sectionDescription: "Seasonal 6×4-inch physical print postcards distributed to clients across the United States for SJ Innovation and LeadsLift, featuring custom watercolor winter landscapes, cozy holiday storytelling, and forward-looking 2026 innovation partnerships.",
+        sectionDescription: "Seasonal 6×4-inch physical print postcards distributed to clients across the United States for SJ Innovation, LeadsLift, Plate Presence, and CollabAI, featuring custom watercolor winter landscapes, cozy holiday storytelling, and forward-looking 2026 innovation partnerships.",
         images: [
           {
             url: "/assets/projects/print-designs/holiday-postcard-01-sji-winter-deer.webp",
@@ -3812,6 +3812,36 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/print-designs/holiday-postcard-05-leadslift-christmas-tree-cottage.webp",
             caption: "LeadsLift Holiday Postcard — 'Warmth to Your Heart & Happiness to Your Home': Majestic snow-dusted Christmas tree, gift boxes, and cozy holiday cottage.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-08-platepresence-snowy-restaurant-chef.webp",
+            caption: "Plate Presence Holiday Postcard — 'Overflow with Warmth & Cherished Memories': Cozy winter restaurant with snowman chef and glowing dining tables in the snow.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-10-platepresence-aurora-fireplace-family.webp",
+            caption: "Plate Presence Holiday Postcard — 'Joyful Season of Good Food & Heartfelt Connection': Outdoor stone fireplace and decorated tree under emerald aurora borealis.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-06-collabai-ladder-decorating-tree.webp",
+            caption: "CollabAI Holiday Postcard — 'Restful Days Surrounded by Love & Simple Joys': Children decorating a grand outdoor pine tree with silver bells and blue star topper.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-07-collabai-minimalist-blue-tree.webp",
+            caption: "CollabAI Holiday Postcard — 'No Rush, Just Peace': Pure watercolor snow scene with illuminated Christmas tree and glowing celestial star.",
+            aspectRatio: "1024/682",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/holiday-postcard-09-collabai-family-gifts-front-door.webp",
+            caption: "CollabAI Holiday Postcard — 'Cozy Moments, Family Closeness & Sweet Relaxation': Family opening holiday gift boxes outside a modern warmly lit winter home.",
             aspectRatio: "1024/682",
             type: "desktop"
           }
@@ -3992,6 +4022,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/holiday-postcard-05-leadslift-christmas-tree-cottage.webp",
         caption: "Holiday Client Postcard — LeadsLift (Star-Topped Tree & Village)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-08-platepresence-snowy-restaurant-chef.webp",
+        caption: "Holiday Client Postcard — Plate Presence (Snowy Restaurant & Chef)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-10-platepresence-aurora-fireplace-family.webp",
+        caption: "Holiday Client Postcard — Plate Presence (Aurora & Fireplace)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-06-collabai-ladder-decorating-tree.webp",
+        caption: "Holiday Client Postcard — CollabAI (Children Decorating Tree)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-07-collabai-minimalist-blue-tree.webp",
+        caption: "Holiday Client Postcard — CollabAI (Minimalist Star Tree)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/holiday-postcard-09-collabai-family-gifts-front-door.webp",
+        caption: "Holiday Client Postcard — CollabAI (Family Opening Holiday Gifts)",
         type: "desktop"
       }
     ]
