@@ -3533,8 +3533,8 @@ export const PROJECTS: Project[] = [
     client: "SJ Innovation LLC",
     year: "2025 – Present",
     duration: "Ongoing Series",
-    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Client Postcards", "Holiday Event Cards", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards"],
-    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, holiday campus event cards (Thanksgiving, Women's Day, Men's Day), US client outreach postcards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and partner teams. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and client appreciation collateral.",
+    scope: ["Print Design", "Infographics", "Workplace Culture", "Recognition Certificates", "Client Postcards", "Holiday Event Cards", "Typography", "Editorial Layout", "Poster Design", "Sports Day Placards", "Picnic Banners"],
+    summary: "Physical print collateral, workplace infographics, large-format motivational office posters, appreciation certificate systems, personalized member keepsake cards, holiday campus event cards (Thanksgiving, Women's Day, Men's Day), Annual Office Picnic banners (Dhaka & Sylhet campuses), US client outreach postcards, and Annual Sports Day team logos and marching placards designed for SJ Innovation and partner teams. Features structured corporate best-practice guides, energetic culture-building wall art, official honors honoring team excellence, and client appreciation collateral.",
     coverImage: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
     liveUrl: null,
     tldr: {
@@ -3573,7 +3573,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
-      { label: "Assets Delivered", value: "45 Designs", subtext: "3 infographics, 7 posters, 7 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Assets Delivered", value: "47 Designs", subtext: "3 infographics, 7 posters, 7 certificates, 2 picnic banners, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
       { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -3724,6 +3724,24 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
             caption: "Sports Day Printed Placard & Crest — Blazing Fury: Circular crimson crest featuring a ferocious horned black dragon breathing torrents of flame with bold ribbon typography on dark twilight red gradient.",
             aspectRatio: "16/9",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Annual Office Picnic Large-Format Print Banners (Dhaka & Sylhet Campuses)",
+        sectionDescription: "Expansive physical print banners designed for SJ Innovation's 2026 Annual Office Picnics across Bangladesh campuses. Features expressive hand-brushed title typography, panoramic landscape scenery, resort photo gallery collages, and official logistical details for the Sylhet team (Rangauti Resort, Maulvi Bazar) and Dhaka team (Dera Resort, Manikganj).",
+        images: [
+          {
+            url: "/assets/projects/print-designs/picnic-banner-2026-sylhet-rangauti-resort.webp",
+            caption: "Sylhet Campus Annual Picnic Print Banner — Rangauti Resort, Maulvi Bazar (24 April 2026)",
+            aspectRatio: "1024/512",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/print-designs/picnic-banner-2026-dhaka-dera-resort.webp",
+            caption: "Dhaka Campus Annual Picnic Print Banner — Dera Resort, Manikganj (24 April 2026)",
+            aspectRatio: "1024/512",
             type: "desktop"
           }
         ]
@@ -3994,6 +4012,16 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/sports-day-placard-04-blazing-fury.webp",
         caption: "Sports Day Placard — Blazing Fury Team Crest",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/picnic-banner-2026-sylhet-rangauti-resort.webp",
+        caption: "Annual Picnic Print Banner — Sylhet Campus (Rangauti Resort)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/picnic-banner-2026-dhaka-dera-resort.webp",
+        caption: "Annual Picnic Print Banner — Dhaka Campus (Dera Resort)",
         type: "desktop"
       },
       {
@@ -5057,6 +5085,24 @@ export const PROJECTS: Project[] = [
             caption: "Motto Signage 03 — 'On-Time Delivery: We are committed to delivering on time, every time.'",
             type: "desktop",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
+            caption: "Motto Signage 04 — 'Personal Accountability: We take responsibility for our actions and outcomes.'",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
+            caption: "Motto Signage 05 — 'Continuous Self-Improvement: We are dedicated to learning and growing every day.'",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
+            caption: "Motto Signage 06 — 'Team Commitment: We support and uplift each other to achieve common goals.'",
+            type: "desktop",
+            aspectRatio: "1/1"
           }
         ]
       }
@@ -5138,6 +5184,21 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
         caption: "21st Anniversary Motto Signage — 03 On-Time Delivery",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
+        caption: "21st Anniversary Motto Signage — 04 Personal Accountability",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
+        caption: "21st Anniversary Motto Signage — 05 Continuous Self-Improvement",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
+        caption: "21st Anniversary Motto Signage — 06 Team Commitment",
         type: "desktop"
       }
     ]
