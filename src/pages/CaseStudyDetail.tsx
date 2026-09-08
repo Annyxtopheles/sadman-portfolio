@@ -533,7 +533,9 @@ export const CaseStudyDetail: React.FC = () => {
                                 : section.images[0]?.aspectRatio === '9/16' || section.images[0]?.aspectRatio === '4/5'
                                 ? 'grid-cols-1 max-w-[340px] sm:max-w-[380px]'
                                 : 'grid-cols-1 max-w-4xl'
-                              : section.images.length === 2 || section.images.every((img) => img.type === 'comparison')
+                              : section.images.every((img) => img.type === 'comparison')
+                              ? 'grid-cols-1 lg:grid-cols-2'
+                              : section.images.length === 2 && !section.images.some((img) => img.aspectRatio === '9/16' || img.aspectRatio === '4/5' || img.type === 'portrait' || img.type === 'mobile')
                               ? 'grid-cols-1 lg:grid-cols-2'
                               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                           }`}

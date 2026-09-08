@@ -1194,8 +1194,8 @@ export const PROJECTS: Project[] = [
         sectionDescription: "High-conversion 1:1 feed advertisements targeting enterprise founders and operators, focusing on behind-your-firewall data infrastructure and absolute privacy guarantees.",
         images: [
           {
-            url: "/assets/projects/collabai/creatives/collabai-ad-01-your-data-servers-control-shield.webp",
-            caption: "Paid Social Ad — 'Your Data, Your Servers, Your Control': Self-Hosted AI Agents That Never Leave Your Infrastructure",
+            url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
+            caption: "CollabAI Black Friday Sales Ad — 'Supercharge Your Team with Collab AI': 20% Off Limited Time Offer (Up to $400 Off)",
             type: "desktop",
             aspectRatio: "1/1"
           },
@@ -1216,24 +1216,6 @@ export const PROJECTS: Project[] = [
             caption: "Privacy Positioning Ad — 'Like Ch*tGPT, But We Can't See Your Chats': Secure Academic & Deep Corporate Research",
             type: "desktop",
             aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Promotional Campaigns & Member Profile Banners",
-        sectionDescription: "Digital brand amplification assets and LinkedIn profile banners created for team members and brand advocates to drive seasonal conversion during high-impact promotions.",
-        images: [
-          {
-            url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
-            caption: "CollabAI Black Friday Sales Ad — 'Supercharge Your Team with Collab AI': 20% Off Limited Time Offer (Up to $400 Off)",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/collabai/creatives/collabai-banner-black-friday-linkedin-profile.webp",
-            caption: "CollabAI Black Friday Sale — Member LinkedIn Profile Banner (20% Off Limited Time Offer)",
-            type: "desktop",
-            aspectRatio: "4/1"
           }
         ]
       },
@@ -1352,8 +1334,8 @@ export const PROJECTS: Project[] = [
         aspectRatio: "4/5"
       },
       {
-        url: "/assets/projects/collabai/creatives/collabai-ad-01-your-data-servers-control-shield.webp",
-        caption: "Paid Social Ad — Your Data, Your Servers, Your Control (Self-Hosted Infrastructure)",
+        url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
+        caption: "CollabAI Black Friday Sales Ad — Supercharge Your Team (Up to $400 Off)",
         type: "desktop",
         aspectRatio: "1/1"
       },
@@ -1374,18 +1356,6 @@ export const PROJECTS: Project[] = [
         caption: "Privacy Positioning Ad — Like Ch*tGPT, But We Can't See Your Chats (Academic & Research)",
         type: "desktop",
         aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/collabai/creatives/collabai-ad-05-black-friday-sales-offer.webp",
-        caption: "CollabAI Black Friday Sales Ad — Supercharge Your Team (Up to $400 Off)",
-        type: "desktop",
-        aspectRatio: "1/1"
-      },
-      {
-        url: "/assets/projects/collabai/creatives/collabai-banner-black-friday-linkedin-profile.webp",
-        caption: "CollabAI Black Friday Sale — Member LinkedIn Profile Banner",
-        type: "desktop",
-        aspectRatio: "4/1"
       },
       {
         url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",
