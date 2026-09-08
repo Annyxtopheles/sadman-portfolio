@@ -3129,19 +3129,21 @@ export const PROJECTS: Project[] = [
     duration: "Ongoing",
     scope: [
       "Brand Identity & Logos",
+      "Sales Decks & GTM Collateral",
+      "Executive Pitch Decks",
       "Color System Strategy",
       "OpenGraph Systems",
       "Design System & Tokens",
       "ePhysician Medical UI",
       "Performance Ad Creatives"
     ],
-    summary: "Full brand identity, custom logo marks, domain-specific color palettes, OpenGraph card architecture, and clinical UI design for 10+ vertical AI enterprise products—featuring ePhysician, Mortgage AI, HR Control Tower, Marketing Control Tower, and RealtorHelp.",
+    summary: "Full brand identity, custom logo marks, domain-specific color palettes, OpenGraph card architecture, clinical UI design, and commercial sales enablement decks for 10+ vertical AI enterprise products—featuring Agency Control Tower, ePhysician Control Tower, Mortgage AI, HR Control Tower, Marketing Control Tower, and RealtorHelp.",
     coverImage: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
     liveUrl: null,
     tldr: {
       challenge: "Launching 10+ domain-specific vertical AI enterprise products under the Control Tower umbrella without fracturing brand cohesion, while giving each product its own distinct industry identity, custom logo, color psychology, and high-conversion social preview system.",
-      role: "Lead Product & Brand Designer — conceptualized and designed all logos from scratch, established the domain-specific color palettes, engineered the OpenGraph metadata visual systems, and designed the clinical dashboard UI and performance ad campaigns for ePhysician Control Tower.",
-      method: "Created a unified design token architecture paired with individualized vertical identities: crafted bespoke vector logos for each industry, engineered high-contrast 1.91:1 OpenGraph card templates for social sharing, and built clinical front-desk workflows with companion B2B acquisition ads."
+      role: "Lead Product & Brand Designer — conceptualized and designed all logos from scratch, established the domain-specific color palettes, engineered the OpenGraph metadata visual systems, and designed the clinical dashboard UI, sales enablement presentation decks, and performance ad campaigns.",
+      method: "Created a unified design token architecture paired with individualized vertical identities: crafted bespoke vector logos for each industry, engineered high-contrast 1.91:1 OpenGraph card templates, and structured commercial sales enablement decks tailored to specialized industry buyers."
     },
     problem: "Each vertical required immediate credibility in its specific sector (e.g. medical compliance for ePhysician, financial security for Mortgage AI, corporate empathy for HR Control Tower, high growth for Marketing, and trusted real estate agility for RealtorHelp). A generic, one-size-fits-all corporate skin would fail to resonate with specialized industry buyers.",
     process: [
@@ -3188,7 +3190,7 @@ export const PROJECTS: Project[] = [
     outcomes: [
       { label: "Products Branded", value: "10 Verticals", subtext: "ePhysician, Mortgage, HR, Marketing, Realtor, NonProfit, GHL, Client Success, Agency, & Restaurant" },
       { label: "Logos & Identities", value: "100% Custom", subtext: "Original brand marks and domain color palettes designed from scratch" },
-      { label: "Assets Delivered", value: "21 Production Assets", subtext: "10 OpenGraph cards, 5 ePhysician ads, 5 NonProfit AI ads, & 1 video reel" }
+      { label: "Assets Delivered", value: "56 Production Assets", subtext: "10 OG cards, 10 ads, 1 reel, and 3 full sales decks (35 slides)" }
     ],
     outcomeSummary: "Established a cohesive multi-product design ecosystem that empowered each Control Tower product to launch with bespoke brand identity, sector-specific authority, and high-converting marketing collateral.",
     gallerySections: [
@@ -3347,6 +3349,484 @@ export const PROJECTS: Project[] = [
         aspectRatio: "16/9"
       },
       {
+        sectionTitle: "Agency Control Tower — Enterprise Sales & GTM Presentation Deck",
+        sectionDescription: "Comprehensive 14-slide commercial sales enablement deck created for Agency Control Tower (Powered by CollabAI). Deconstructs the operational drag of running marketing and development agencies on fragmented tools, presenting a unified operating layer with AI mood/momentum lead scoring, automated Zoom meeting intelligence, passwordless client portals, and EOS/OKR traction frameworks.",
+        documentUrl: "/assets/projects/control-tower/agency-deck/agency-control-tower-sales-deck.pdf",
+        documentTitle: "Agency Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Agency Control Tower — The AI-Powered Command Center (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: 12+ Hours/Week Lost Per Team to Disconnected CRMs, Tasks & Inboxes",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: Six Unified Modules (Sales, Delivery, Leadership, Meetings, Knowledge, Portal)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-04.webp",
+            caption: "Slide 04 — Sales Features: Never Lose a Lead Again — AI Mood & Momentum Scoring, Automated Cadence",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-05.webp",
+            caption: "Slide 05 — Sales Results: Systematic Cadence, Real-Time Pipeline, AI-Scored Urgency & Full Context",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-06.webp",
+            caption: "Slide 06 — Meeting Intelligence: Zoom Auto-Sync, AI Transcripts, Action Items & Searchable Memory",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-07.webp",
+            caption: "Slide 07 — AI Knowledge Base: Semantic Search Across Docs, Emails & Meetings with Grounded Chat",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-08.webp",
+            caption: "Slide 08 — Knowledge Queries: Example Semantic Queries for Past Client Conversations & OKRs",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-09.webp",
+            caption: "Slide 09 — Client Portal: Passwordless Magic-Link Access to Proposals, SOWs & Weekly Progress",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-10.webp",
+            caption: "Slide 10 — Portal Experience: One-Click Instant Updates & Client View Tracking",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-11.webp",
+            caption: "Slide 11 — Strategy Execution: EOS Toolkit, OKR Progress Bars, Scorecards & Issue Prioritization",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-12.webp",
+            caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 2-Week Pilot",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-13.webp",
+            caption: "Slide 13 — Enterprise Architecture: Role-Based RBAC, Row-Level Isolation, OAuth2 & $12k/yr Pricing",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-14.webp",
+            caption: "Slide 14 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "agency-control-tower-sales-deck",
+            title: "Agency Control Tower — Enterprise Sales & GTM Presentation Deck (14 Slides)",
+            description: "Comprehensive 14-slide commercial sales enablement deck created for Agency Control Tower (Powered by CollabAI). Deconstructs the operational drag of running marketing and development agencies on fragmented tools, presenting a unified operating layer with AI mood/momentum lead scoring, automated Zoom meeting intelligence, passwordless client portals, and EOS/OKR traction frameworks.",
+            documentUrl: "/assets/projects/control-tower/agency-deck/agency-control-tower-sales-deck.pdf",
+            documentTitle: "Agency Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Agency Control Tower — The AI-Powered Command Center (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: 12+ Hours/Week Lost Per Team to Disconnected CRMs, Tasks & Inboxes",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: Six Unified Modules (Sales, Delivery, Leadership, Meetings, Knowledge, Portal)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-04.webp",
+                caption: "Slide 04 — Sales Features: Never Lose a Lead Again — AI Mood & Momentum Scoring, Automated Cadence",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-05.webp",
+                caption: "Slide 05 — Sales Results: Systematic Cadence, Real-Time Pipeline, AI-Scored Urgency & Full Context",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-06.webp",
+                caption: "Slide 06 — Meeting Intelligence: Zoom Auto-Sync, AI Transcripts, Action Items & Searchable Memory",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-07.webp",
+                caption: "Slide 07 — AI Knowledge Base: Semantic Search Across Docs, Emails & Meetings with Grounded Chat",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-08.webp",
+                caption: "Slide 08 — Knowledge Queries: Example Semantic Queries for Past Client Conversations & OKRs",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-09.webp",
+                caption: "Slide 09 — Client Portal: Passwordless Magic-Link Access to Proposals, SOWs & Weekly Progress",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-10.webp",
+                caption: "Slide 10 — Portal Experience: One-Click Instant Updates & Client View Tracking",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-11.webp",
+                caption: "Slide 11 — Strategy Execution: EOS Toolkit, OKR Progress Bars, Scorecards & Issue Prioritization",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-12.webp",
+                caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 2-Week Pilot",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-13.webp",
+                caption: "Slide 13 — Enterprise Architecture: Role-Based RBAC, Row-Level Isolation, OAuth2 & $12k/yr Pricing",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-14.webp",
+                caption: "Slide 14 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "ePhysician Control Tower — Clinical Automation Sales Deck",
+        sectionDescription: "High-converting 11-slide healthcare sales deck demonstrating how private clinics and medical practices lose $252,000+ annually to administrative drag. Illustrates 'Sarah'—the 24/7 AI conversational voice receptionist, automated reminder and copay kiosk telemetry, and instant AI claims preparation delivering 2-3x faster insurance reimbursement.",
+        documentUrl: "/assets/projects/control-tower/ephysician-deck/ephysician-control-tower-sales-deck.pdf",
+        documentTitle: "ePhysician Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-01.webp",
+            caption: "Slide 01 — Title: ePhysician Control Tower — Clinic Phone, Reminders, Check-In & Billing on Autopilot (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: Clinics Lose $252,000+ Annually to No-Shows, Phone Overload & Claims Delays",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: AI Phone Agent, Smart Reminders, Kiosk Check-In & AI Claims Prep (Zero Staff)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-04.webp",
+            caption: "Slide 04 — AI Voice Agent: Meet Sarah — AI Receptionist Answering 24/7/365 in 1 Ring with Natural Voice",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-05.webp",
+            caption: "Slide 05 — Automated Reminders & Kiosk: 82% Confirmation Rate, 95%+ Copay Collection, <2 Min Check-In",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-06.webp",
+            caption: "Slide 06 — AI Claims Preparation: Claims Paid in 30 Days (Not 90) with Instant Auto-Prep",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-07.webp",
+            caption: "Slide 07 — Case Study: Martinez Family Practice (60 Days: +$214,200 Net Annual Gain, 67% Fewer No-Shows)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-08.webp",
+            caption: "Slide 08 — Dashboard Highlights: Live Telemetry, EHR Sync, Claims Tracking & Staff AI Controls",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-09.webp",
+            caption: "Slide 09 — Compliance & Setup: HIPAA + BAA Included, NexHealth/OpenDental/ECW Integration, Live in 24 Hrs",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-10.webp",
+            caption: "Slide 10 — Next Steps: Book a 30-Minute Live Walkthrough or Start a 30-Day Pilot",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-11.webp",
+            caption: "Slide 11 — Closing: Try Demo & Contact Mujammal Haque (Program Manager)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "ephysician-control-tower-sales-deck",
+            title: "ePhysician Control Tower — Clinical Automation Sales Deck (11 Slides)",
+            description: "High-converting 11-slide healthcare sales deck demonstrating how private clinics and medical practices lose $252,000+ annually to administrative drag. Illustrates 'Sarah'—the 24/7 AI conversational voice receptionist, automated reminder and copay kiosk telemetry, and instant AI claims preparation delivering 2-3x faster insurance reimbursement.",
+            documentUrl: "/assets/projects/control-tower/ephysician-deck/ephysician-control-tower-sales-deck.pdf",
+            documentTitle: "ePhysician Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-01.webp",
+                caption: "Slide 01 — Title: ePhysician Control Tower — Clinic Phone, Reminders, Check-In & Billing on Autopilot (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: Clinics Lose $252,000+ Annually to No-Shows, Phone Overload & Claims Delays",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: AI Phone Agent, Smart Reminders, Kiosk Check-In & AI Claims Prep (Zero Staff)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-04.webp",
+                caption: "Slide 04 — AI Voice Agent: Meet Sarah — AI Receptionist Answering 24/7/365 in 1 Ring with Natural Voice",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-05.webp",
+                caption: "Slide 05 — Automated Reminders & Kiosk: 82% Confirmation Rate, 95%+ Copay Collection, <2 Min Check-In",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-06.webp",
+                caption: "Slide 06 — AI Claims Preparation: Claims Paid in 30 Days (Not 90) with Instant Auto-Prep",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-07.webp",
+                caption: "Slide 07 — Case Study: Martinez Family Practice (60 Days: +$214,200 Net Annual Gain, 67% Fewer No-Shows)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-08.webp",
+                caption: "Slide 08 — Dashboard Highlights: Live Telemetry, EHR Sync, Claims Tracking & Staff AI Controls",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-09.webp",
+                caption: "Slide 09 — Compliance & Setup: HIPAA + BAA Included, NexHealth/OpenDental/ECW Integration, Live in 24 Hrs",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-10.webp",
+                caption: "Slide 10 — Next Steps: Book a 30-Minute Live Walkthrough or Start a 30-Day Pilot",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-11.webp",
+                caption: "Slide 11 — Closing: Try Demo & Contact Mujammal Haque (Program Manager)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "Mortgage AI Control Tower — Lender & Broker Sales Deck",
+        sectionDescription: "Authoritative 10-slide sales enablement deck built for US mortgage brokerages and lending institutions. Outlines the 10 specialized 24/7 AI risk scanning agents, one-click portfolio health briefings, automated 7/3/1-day rate lock expiration alerts saving $14k/month in penalty fees, and LendingPad LOS integrations.",
+        documentUrl: "/assets/projects/control-tower/mortgage-deck/mortgage-ai-control-tower-sales-deck.pdf",
+        documentTitle: "Mortgage AI Control Tower Sales Deck (PDF)",
+        images: [
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-01.webp",
+            caption: "Slide 01 — Title: Mortgage Control Tower — AI-Powered Command Center for US Lenders & Brokers (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-02.webp",
+            caption: "Slide 02 — Problem: 2+ Hours Daily Hunting Loan Status, Rate Locks Expire Unnoticed ($2k–$5k Fees)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-03.webp",
+            caption: "Slide 03 — Solution: Live Pipeline Dashboard, 10 AI Risk Detection Agents & Rate Lock Tracking",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-04.webp",
+            caption: "Slide 04 — Pipeline Command Center: Live Stage Bar Charts, At-Risk Loan Badges & One-Click Summaries",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-05.webp",
+            caption: "Slide 05 — 10 Specialized AI Agents: File Risk, Loan Coaching, Underwriter Precheck & Compliance",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-06.webp",
+            caption: "Slide 06 — Email Intelligence: Gmail One-Click Sync Extracting Loan Actions & Drafting Contextual Replies",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-07.webp",
+            caption: "Slide 07 — Rate Lock Management: Automated 7, 3, 1-Day Alerts Saving $14,000/Month in Relock Fees",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-08.webp",
+            caption: "Slide 08 — Platform Tiers: Starter ($3k/yr), Professional ($7k/yr), Enterprise + LendingPad/DocuSign Sync",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-09.webp",
+            caption: "Slide 09 — Next Steps: Book 30-Minute Walkthrough or Request Beta Access",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-10.webp",
+            caption: "Slide 10 — Closing: Try Demo & Contact Amol Bhandari (Technical Manager)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "mortgage-ai-control-tower-sales-deck",
+            title: "Mortgage AI Control Tower — Lender & Broker Sales Deck (10 Slides)",
+            description: "Authoritative 10-slide sales enablement deck built for US mortgage brokerages and lending institutions. Outlines the 10 specialized 24/7 AI risk scanning agents, one-click portfolio health briefings, automated 7/3/1-day rate lock expiration alerts saving $14k/month in penalty fees, and LendingPad LOS integrations.",
+            documentUrl: "/assets/projects/control-tower/mortgage-deck/mortgage-ai-control-tower-sales-deck.pdf",
+            documentTitle: "Mortgage AI Control Tower Sales Deck (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-01.webp",
+                caption: "Slide 01 — Title: Mortgage Control Tower — AI-Powered Command Center for US Lenders & Brokers (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-02.webp",
+                caption: "Slide 02 — Problem: 2+ Hours Daily Hunting Loan Status, Rate Locks Expire Unnoticed ($2k–$5k Fees)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-03.webp",
+                caption: "Slide 03 — Solution: Live Pipeline Dashboard, 10 AI Risk Detection Agents & Rate Lock Tracking",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-04.webp",
+                caption: "Slide 04 — Pipeline Command Center: Live Stage Bar Charts, At-Risk Loan Badges & One-Click Summaries",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-05.webp",
+                caption: "Slide 05 — 10 Specialized AI Agents: File Risk, Loan Coaching, Underwriter Precheck & Compliance",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-06.webp",
+                caption: "Slide 06 — Email Intelligence: Gmail One-Click Sync Extracting Loan Actions & Drafting Contextual Replies",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-07.webp",
+                caption: "Slide 07 — Rate Lock Management: Automated 7, 3, 1-Day Alerts Saving $14,000/Month in Relock Fees",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-08.webp",
+                caption: "Slide 08 — Platform Tiers: Starter ($3k/yr), Professional ($7k/yr), Enterprise + LendingPad/DocuSign Sync",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-09.webp",
+                caption: "Slide 09 — Next Steps: Book 30-Minute Walkthrough or Request Beta Access",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-10.webp",
+                caption: "Slide 10 — Closing: Try Demo & Contact Amol Bhandari (Technical Manager)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+
+      {
         url: "/assets/projects/control-tower/og-ephysician-control-tower.webp",
         caption: "ePhysician Control Tower — Social OpenGraph Card",
         type: "desktop",
@@ -3467,6 +3947,181 @@ export const PROJECTS: Project[] = [
         aspectRatio: "9/16",
         embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F791352226744510%2F&show_text=false&t=0",
         externalUrl: "https://www.facebook.com/reel/791352226744510"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Agency Control Tower — The AI-Powered Command Center (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: 12+ Hours/Week Lost Per Team to Disconnected CRMs, Tasks & Inboxes",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: Six Unified Modules (Sales, Delivery, Leadership, Meetings, Knowledge, Portal)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-04.webp",
+        caption: "Slide 04 — Sales Features: Never Lose a Lead Again — AI Mood & Momentum Scoring, Automated Cadence",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-05.webp",
+        caption: "Slide 05 — Sales Results: Systematic Cadence, Real-Time Pipeline, AI-Scored Urgency & Full Context",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-06.webp",
+        caption: "Slide 06 — Meeting Intelligence: Zoom Auto-Sync, AI Transcripts, Action Items & Searchable Memory",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-07.webp",
+        caption: "Slide 07 — AI Knowledge Base: Semantic Search Across Docs, Emails & Meetings with Grounded Chat",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-08.webp",
+        caption: "Slide 08 — Knowledge Queries: Example Semantic Queries for Past Client Conversations & OKRs",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-09.webp",
+        caption: "Slide 09 — Client Portal: Passwordless Magic-Link Access to Proposals, SOWs & Weekly Progress",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-10.webp",
+        caption: "Slide 10 — Portal Experience: One-Click Instant Updates & Client View Tracking",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-11.webp",
+        caption: "Slide 11 — Strategy Execution: EOS Toolkit, OKR Progress Bars, Scorecards & Issue Prioritization",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-12.webp",
+        caption: "Slide 12 — Next Steps: Book a 30-Minute Live Demo or Start a 2-Week Pilot",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-13.webp",
+        caption: "Slide 13 — Enterprise Architecture: Role-Based RBAC, Row-Level Isolation, OAuth2 & $12k/yr Pricing",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/agency-deck/agency-deck-slide-14.webp",
+        caption: "Slide 14 — Closing: Try Demo & Contact Rehan Sayed (Business Development Analyst)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-01.webp",
+        caption: "Slide 01 — Title: ePhysician Control Tower — Clinic Phone, Reminders, Check-In & Billing on Autopilot (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: Clinics Lose $252,000+ Annually to No-Shows, Phone Overload & Claims Delays",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: AI Phone Agent, Smart Reminders, Kiosk Check-In & AI Claims Prep (Zero Staff)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-04.webp",
+        caption: "Slide 04 — AI Voice Agent: Meet Sarah — AI Receptionist Answering 24/7/365 in 1 Ring with Natural Voice",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-05.webp",
+        caption: "Slide 05 — Automated Reminders & Kiosk: 82% Confirmation Rate, 95%+ Copay Collection, <2 Min Check-In",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-06.webp",
+        caption: "Slide 06 — AI Claims Preparation: Claims Paid in 30 Days (Not 90) with Instant Auto-Prep",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-07.webp",
+        caption: "Slide 07 — Case Study: Martinez Family Practice (60 Days: +$214,200 Net Annual Gain, 67% Fewer No-Shows)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-08.webp",
+        caption: "Slide 08 — Dashboard Highlights: Live Telemetry, EHR Sync, Claims Tracking & Staff AI Controls",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-09.webp",
+        caption: "Slide 09 — Compliance & Setup: HIPAA + BAA Included, NexHealth/OpenDental/ECW Integration, Live in 24 Hrs",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-10.webp",
+        caption: "Slide 10 — Next Steps: Book a 30-Minute Live Walkthrough or Start a 30-Day Pilot",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/ephysician-deck/ephysician-deck-slide-11.webp",
+        caption: "Slide 11 — Closing: Try Demo & Contact Mujammal Haque (Program Manager)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-01.webp",
+        caption: "Slide 01 — Title: Mortgage Control Tower — AI-Powered Command Center for US Lenders & Brokers (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-02.webp",
+        caption: "Slide 02 — Problem: 2+ Hours Daily Hunting Loan Status, Rate Locks Expire Unnoticed ($2k–$5k Fees)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-03.webp",
+        caption: "Slide 03 — Solution: Live Pipeline Dashboard, 10 AI Risk Detection Agents & Rate Lock Tracking",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-04.webp",
+        caption: "Slide 04 — Pipeline Command Center: Live Stage Bar Charts, At-Risk Loan Badges & One-Click Summaries",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-05.webp",
+        caption: "Slide 05 — 10 Specialized AI Agents: File Risk, Loan Coaching, Underwriter Precheck & Compliance",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-06.webp",
+        caption: "Slide 06 — Email Intelligence: Gmail One-Click Sync Extracting Loan Actions & Drafting Contextual Replies",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-07.webp",
+        caption: "Slide 07 — Rate Lock Management: Automated 7, 3, 1-Day Alerts Saving $14,000/Month in Relock Fees",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-08.webp",
+        caption: "Slide 08 — Platform Tiers: Starter ($3k/yr), Professional ($7k/yr), Enterprise + LendingPad/DocuSign Sync",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-09.webp",
+        caption: "Slide 09 — Next Steps: Book 30-Minute Walkthrough or Request Beta Access",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/control-tower/mortgage-deck/mortgage-deck-slide-10.webp",
+        caption: "Slide 10 — Closing: Try Demo & Contact Amol Bhandari (Technical Manager)",
+        type: "desktop"
       }
     ]
   },
@@ -5866,6 +6521,440 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
+        sectionTitle: "SJ Innovation Medical & Pharma Client Showcase Presentation",
+        sectionDescription: "High-stakes enterprise capability deck created for SJ Innovation's life sciences, pharmaceutical, and healthcare agency prospects. Highlights 10 years of technical partnership with Janssen Pharmaceuticals (Erleada, Stelara, Balversa, Tremfya, Darzalex), consumer health platforms for Kenvue (Listerine, Tylenol, Neutrogena, SmartCheck otoscope app), and digital campaign infrastructure for Propel Health Communications, underpinned by ISO 9001:2015 and HIPAA compliance.",
+        documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-presentation-medical-pharma-2026.pdf",
+        documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-01.webp",
+            caption: "Slide 01 — Title: Empowered Teams, Thriving Clients — Delivering Solutions with Accountability (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-02.webp",
+            caption: "Slide 02 — At a Glance: 1,200+ Projects Delivered, 500+ Clients, 4 Global Campuses (NYC, Goa, Sylhet, Dhaka)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-03.webp",
+            caption: "Slide 03 — Motto & Culture: Client-First Mindset, On-Time Delivery, Solution Oriented, Continuous Improvement",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-04.webp",
+            caption: "Slide 04 — Industries We Serve: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Restaurants",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-05.webp",
+            caption: "Slide 05 — Capabilities: AI Automation & Agentic AI, Web/Mobile/CMS, Cloud & DevOps, Marketing Solutions",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-06.webp",
+            caption: "Slide 06 — Proprietary Products: CollabAI, PlatePresence, LeadsLift, and BuildYourAI Ecosystem",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-07.webp",
+            caption: "Slide 07 — Enterprise Client Showcase: Healthcare & Pharma Brand Logos (Janssen, Neutrogena, Kenvue, etc.)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-08.webp",
+            caption: "Slide 08 — Client Deep-Dive: Janssen Pharmaceuticals — 10 Years Partnership Across Erleada, Stelara, Balversa, Tremfya",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-09.webp",
+            caption: "Slide 09 — Client Deep-Dive: Kenvue — Listerine, Benadryl, Zyrtec, Tylenol SmartCheck Mobile Otoscope App",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-10.webp",
+            caption: "Slide 10 — Client Deep-Dive: Propel Health Communications — Patient Portals & Clinical Disease Awareness Sites",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-11.webp",
+            caption: "Slide 11 — Industry Honors: Inc. 5000 (#4,332), Clutch Top 100 NYC B2B, Top Rated Upwork, ISO 9001:2015",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-12.webp",
+            caption: "Slide 12 — Enterprise Certifications: AWS Certified Solutions Architect, Acquia Drupal, Contentful, Salesforce, ISTQB",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-13.webp",
+            caption: "Slide 13 — Global Culture: Collaborative Photos Across Times Square Nasdaq, Goa Retreats, and Global Offices",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-14.webp",
+            caption: "Slide 14 — Community Outreach: Seminars, Webinars, Youth STEM Classes, Hackathons, and Charity Initiatives",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-15.webp",
+            caption: "Slide 15 — Closing: Thank You & Executive Partnership Contact (sjinnovation.com)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "sji-medical-pharma-deck",
+            title: "SJ Innovation Medical & Pharma Client Showcase Presentation (15 Slides)",
+            description: "High-stakes enterprise capability deck created for SJ Innovation's life sciences, pharmaceutical, and healthcare agency prospects. Highlights 10 years of technical partnership with Janssen Pharmaceuticals (Erleada, Stelara, Balversa, Tremfya, Darzalex), consumer health platforms for Kenvue (Listerine, Tylenol, Neutrogena, SmartCheck otoscope app), and digital campaign infrastructure for Propel Health Communications, underpinned by ISO 9001:2015 and HIPAA compliance.",
+            documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-presentation-medical-pharma-2026.pdf",
+            documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-01.webp",
+                caption: "Slide 01 — Title: Empowered Teams, Thriving Clients — Delivering Solutions with Accountability (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-02.webp",
+                caption: "Slide 02 — At a Glance: 1,200+ Projects Delivered, 500+ Clients, 4 Global Campuses (NYC, Goa, Sylhet, Dhaka)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-03.webp",
+                caption: "Slide 03 — Motto & Culture: Client-First Mindset, On-Time Delivery, Solution Oriented, Continuous Improvement",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-04.webp",
+                caption: "Slide 04 — Industries We Serve: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Restaurants",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-05.webp",
+                caption: "Slide 05 — Capabilities: AI Automation & Agentic AI, Web/Mobile/CMS, Cloud & DevOps, Marketing Solutions",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-06.webp",
+                caption: "Slide 06 — Proprietary Products: CollabAI, PlatePresence, LeadsLift, and BuildYourAI Ecosystem",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-07.webp",
+                caption: "Slide 07 — Enterprise Client Showcase: Healthcare & Pharma Brand Logos (Janssen, Neutrogena, Kenvue, etc.)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-08.webp",
+                caption: "Slide 08 — Client Deep-Dive: Janssen Pharmaceuticals — 10 Years Partnership Across Erleada, Stelara, Balversa, Tremfya",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-09.webp",
+                caption: "Slide 09 — Client Deep-Dive: Kenvue — Listerine, Benadryl, Zyrtec, Tylenol SmartCheck Mobile Otoscope App",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-10.webp",
+                caption: "Slide 10 — Client Deep-Dive: Propel Health Communications — Patient Portals & Clinical Disease Awareness Sites",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-11.webp",
+                caption: "Slide 11 — Industry Honors: Inc. 5000 (#4,332), Clutch Top 100 NYC B2B, Top Rated Upwork, ISO 9001:2015",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-12.webp",
+                caption: "Slide 12 — Enterprise Certifications: AWS Certified Solutions Architect, Acquia Drupal, Contentful, Salesforce, ISTQB",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-13.webp",
+                caption: "Slide 13 — Global Culture: Collaborative Photos Across Times Square Nasdaq, Goa Retreats, and Global Offices",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-14.webp",
+                caption: "Slide 14 — Community Outreach: Seminars, Webinars, Youth STEM Classes, Hackathons, and Charity Initiatives",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-15.webp",
+                caption: "Slide 15 — Closing: Thank You & Executive Partnership Contact (sjinnovation.com)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "SJ Innovation Corporate Company Deck (2026)",
+        sectionDescription: "Flagship 18-slide corporate credential deck articulating SJ Innovation's 21-year evolution from a 2004 New York startup into an international AI-First engineering firm. Features founder leadership (Shahed Islam & Shahera Choudhury), core cultural mottos, 1,200+ projects delivered, 4 global campuses, accredited certifications (ISO 9001, Veeva, AWS, Inc. 5000), client reviews, and proprietary product spinouts.",
+        documentUrl: "/assets/projects/creative-initiatives/company-deck/sji-company-deck-2026.pdf",
+        documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-01.webp",
+            caption: "Slide 01 — Title: SJ Innovation LLC Company Deck 2026 (Cover)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-02.webp",
+            caption: "Slide 02 — Story: Founded in 2004, NYC Headquarters, 21 Years of Excellence, MBE & Inc. 5000 Accredited",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-03.webp",
+            caption: "Slide 03 — Executive Leadership: Co-Founders Shahed Islam (CEO) & Shahera Choudhury (COO)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-04.webp",
+            caption: "Slide 04 — Global Footprint: 100+ Team Members Across 4 Offices (New York, Goa, Sylhet, Dhaka)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-05.webp",
+            caption: "Slide 05 — Offerings: Agentic AI, Headless CMS, Cloud Architecture, and Performance Marketing",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-06.webp",
+            caption: "Slide 06 — Core Values: Client-First, Solution Oriented, On-Time Delivery, Personal Accountability",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-07.webp",
+            caption: "Slide 07 — Culture & Retreats: Annual Milestones, Team Banquets, and Times Square Celebrations",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-08.webp",
+            caption: "Slide 08 — Certifications: ISO 9001:2015, Veeva Vault, Contentful, AWS, Clutch Global Leader",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-09.webp",
+            caption: "Slide 09 — Client Ecosystem: Janssen, Council on Foreign Relations, Neutrogena, Listerine, SDSU",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-10.webp",
+            caption: "Slide 10 — Vertical Sectors: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Food Service",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-11.webp",
+            caption: "Slide 11 — Client Testimonials: Johnson & Johnson, IVolunteer, Tour Patron, PowerLean (4.9 Clutch, 4.8 Google)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-12.webp",
+            caption: "Slide 12 — Portfolio Highlights: Multi-Screen Responsive Web, Mobile Apps, and Enterprise Platforms",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-13.webp",
+            caption: "Slide 13 — Philanthropy: Community Outreach, Tech Education, Youth Hackathons, and Seminars",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-14.webp",
+            caption: "Slide 14 — Proprietary Product Ventures: CollabAI, PlatePresence, LeadsLift, BuildYourAI",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-15.webp",
+            caption: "Slide 15 — Closing: Thank You — Connect with SJ Innovation (www.sjinnovation.com)",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-16.webp",
+            caption: "Slide 16 — Appendix: Extended Client Testimonials & Endorsements",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-17.webp",
+            caption: "Slide 17 — Appendix: Global Campus Capabilities & Follow-the-Sun Delivery",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
+            caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ],
+        carousels: [
+          {
+            id: "sji-company-deck-2026",
+            title: "SJ Innovation Corporate Company Deck (2026) (18 Slides)",
+            description: "Flagship 18-slide corporate credential deck articulating SJ Innovation's 21-year evolution from a 2004 New York startup into an international AI-First engineering firm. Features founder leadership (Shahed Islam & Shahera Choudhury), core cultural mottos, 1,200+ projects delivered, 4 global campuses, accredited certifications (ISO 9001, Veeva, AWS, Inc. 5000), client reviews, and proprietary product spinouts.",
+            documentUrl: "/assets/projects/creative-initiatives/company-deck/sji-company-deck-2026.pdf",
+            documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
+            slides: [
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-01.webp",
+                caption: "Slide 01 — Title: SJ Innovation LLC Company Deck 2026 (Cover)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-02.webp",
+                caption: "Slide 02 — Story: Founded in 2004, NYC Headquarters, 21 Years of Excellence, MBE & Inc. 5000 Accredited",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-03.webp",
+                caption: "Slide 03 — Executive Leadership: Co-Founders Shahed Islam (CEO) & Shahera Choudhury (COO)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-04.webp",
+                caption: "Slide 04 — Global Footprint: 100+ Team Members Across 4 Offices (New York, Goa, Sylhet, Dhaka)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-05.webp",
+                caption: "Slide 05 — Offerings: Agentic AI, Headless CMS, Cloud Architecture, and Performance Marketing",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-06.webp",
+                caption: "Slide 06 — Core Values: Client-First, Solution Oriented, On-Time Delivery, Personal Accountability",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-07.webp",
+                caption: "Slide 07 — Culture & Retreats: Annual Milestones, Team Banquets, and Times Square Celebrations",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-08.webp",
+                caption: "Slide 08 — Certifications: ISO 9001:2015, Veeva Vault, Contentful, AWS, Clutch Global Leader",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-09.webp",
+                caption: "Slide 09 — Client Ecosystem: Janssen, Council on Foreign Relations, Neutrogena, Listerine, SDSU",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-10.webp",
+                caption: "Slide 10 — Vertical Sectors: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Food Service",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-11.webp",
+                caption: "Slide 11 — Client Testimonials: Johnson & Johnson, IVolunteer, Tour Patron, PowerLean (4.9 Clutch, 4.8 Google)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-12.webp",
+                caption: "Slide 12 — Portfolio Highlights: Multi-Screen Responsive Web, Mobile Apps, and Enterprise Platforms",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-13.webp",
+                caption: "Slide 13 — Philanthropy: Community Outreach, Tech Education, Youth Hackathons, and Seminars",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-14.webp",
+                caption: "Slide 14 — Proprietary Product Ventures: CollabAI, PlatePresence, LeadsLift, BuildYourAI",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-15.webp",
+                caption: "Slide 15 — Closing: Thank You — Connect with SJ Innovation (www.sjinnovation.com)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-16.webp",
+                caption: "Slide 16 — Appendix: Extended Client Testimonials & Endorsements",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-17.webp",
+                caption: "Slide 17 — Appendix: Global Campus Capabilities & Follow-the-Sun Delivery",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
+                caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
         sectionTitle: "SJ Innovation 21st Anniversary — Social Media Banners",
         sectionDescription: "Panoramic commemorative social media banner suite celebrating 21 years of engineering excellence, AI-first innovation, and team culture across global campuses. Features the central anniversary insignia, subsidiary brand ecosystem (BuildYourAI, CollabAI, LeadsLift, Plate Presence), enterprise accreditation credentials, and curated photo collages of team members, retreats, and milestones.",
         images: [
@@ -6177,6 +7266,171 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
         caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-01.webp",
+        caption: "Slide 01 — Title: Empowered Teams, Thriving Clients — Delivering Solutions with Accountability (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-02.webp",
+        caption: "Slide 02 — At a Glance: 1,200+ Projects Delivered, 500+ Clients, 4 Global Campuses (NYC, Goa, Sylhet, Dhaka)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-03.webp",
+        caption: "Slide 03 — Motto & Culture: Client-First Mindset, On-Time Delivery, Solution Oriented, Continuous Improvement",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-04.webp",
+        caption: "Slide 04 — Industries We Serve: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Restaurants",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-05.webp",
+        caption: "Slide 05 — Capabilities: AI Automation & Agentic AI, Web/Mobile/CMS, Cloud & DevOps, Marketing Solutions",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-06.webp",
+        caption: "Slide 06 — Proprietary Products: CollabAI, PlatePresence, LeadsLift, and BuildYourAI Ecosystem",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-07.webp",
+        caption: "Slide 07 — Enterprise Client Showcase: Healthcare & Pharma Brand Logos (Janssen, Neutrogena, Kenvue, etc.)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-08.webp",
+        caption: "Slide 08 — Client Deep-Dive: Janssen Pharmaceuticals — 10 Years Partnership Across Erleada, Stelara, Balversa, Tremfya",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-09.webp",
+        caption: "Slide 09 — Client Deep-Dive: Kenvue — Listerine, Benadryl, Zyrtec, Tylenol SmartCheck Mobile Otoscope App",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-10.webp",
+        caption: "Slide 10 — Client Deep-Dive: Propel Health Communications — Patient Portals & Clinical Disease Awareness Sites",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-11.webp",
+        caption: "Slide 11 — Industry Honors: Inc. 5000 (#4,332), Clutch Top 100 NYC B2B, Top Rated Upwork, ISO 9001:2015",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-12.webp",
+        caption: "Slide 12 — Enterprise Certifications: AWS Certified Solutions Architect, Acquia Drupal, Contentful, Salesforce, ISTQB",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-13.webp",
+        caption: "Slide 13 — Global Culture: Collaborative Photos Across Times Square Nasdaq, Goa Retreats, and Global Offices",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-14.webp",
+        caption: "Slide 14 — Community Outreach: Seminars, Webinars, Youth STEM Classes, Hackathons, and Charity Initiatives",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-15.webp",
+        caption: "Slide 15 — Closing: Thank You & Executive Partnership Contact (sjinnovation.com)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-01.webp",
+        caption: "Slide 01 — Title: SJ Innovation LLC Company Deck 2026 (Cover)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-02.webp",
+        caption: "Slide 02 — Story: Founded in 2004, NYC Headquarters, 21 Years of Excellence, MBE & Inc. 5000 Accredited",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-03.webp",
+        caption: "Slide 03 — Executive Leadership: Co-Founders Shahed Islam (CEO) & Shahera Choudhury (COO)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-04.webp",
+        caption: "Slide 04 — Global Footprint: 100+ Team Members Across 4 Offices (New York, Goa, Sylhet, Dhaka)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-05.webp",
+        caption: "Slide 05 — Offerings: Agentic AI, Headless CMS, Cloud Architecture, and Performance Marketing",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-06.webp",
+        caption: "Slide 06 — Core Values: Client-First, Solution Oriented, On-Time Delivery, Personal Accountability",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-07.webp",
+        caption: "Slide 07 — Culture & Retreats: Annual Milestones, Team Banquets, and Times Square Celebrations",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-08.webp",
+        caption: "Slide 08 — Certifications: ISO 9001:2015, Veeva Vault, Contentful, AWS, Clutch Global Leader",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-09.webp",
+        caption: "Slide 09 — Client Ecosystem: Janssen, Council on Foreign Relations, Neutrogena, Listerine, SDSU",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-10.webp",
+        caption: "Slide 10 — Vertical Sectors: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Food Service",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-11.webp",
+        caption: "Slide 11 — Client Testimonials: Johnson & Johnson, IVolunteer, Tour Patron, PowerLean (4.9 Clutch, 4.8 Google)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-12.webp",
+        caption: "Slide 12 — Portfolio Highlights: Multi-Screen Responsive Web, Mobile Apps, and Enterprise Platforms",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-13.webp",
+        caption: "Slide 13 — Philanthropy: Community Outreach, Tech Education, Youth Hackathons, and Seminars",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-14.webp",
+        caption: "Slide 14 — Proprietary Product Ventures: CollabAI, PlatePresence, LeadsLift, BuildYourAI",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-15.webp",
+        caption: "Slide 15 — Closing: Thank You — Connect with SJ Innovation (www.sjinnovation.com)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-16.webp",
+        caption: "Slide 16 — Appendix: Extended Client Testimonials & Endorsements",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-17.webp",
+        caption: "Slide 17 — Appendix: Global Campus Capabilities & Follow-the-Sun Delivery",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
+        caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
         type: "desktop"
       }
     ]
