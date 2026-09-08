@@ -276,6 +276,178 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "archivest",
+    slug: "archivest",
+    title: "Archivest — Thought Cabinet & Authorship Station",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Archivest",
+    client: "Independent Authorship Syndicate",
+    year: "2026",
+    duration: "2 Months",
+    scope: [
+      "Product Design",
+      "UI/UX Architecture",
+      "Narrative Direction",
+      "Disco Elysium Aesthetics",
+      "Frontend Engineering",
+      "Art Direction",
+      "Fluid Typography"
+    ],
+    summary: "A private Thought Cabinet & Authorship Station for novelists and narrative designers. Originally commissioned as a client landing page for novel writing software, the platform was completely redesigned into an evocative narrative workspace inspired by the world, atmospheric grit, and cognitive psychology of Disco Elysium — eliminating client policy issues while forging a deeply original brand identity.",
+    coverImage: "/assets/projects/archivest/archivest-cover.webp",
+    liveUrl: "https://annyxtopheles.github.io/archivest/",
+    tldr: {
+      challenge: "A client landing page for novel writing software required complete conceptual and aesthetic reinvention to resolve policy concerns and transcend generic, sterile SaaS tropes with zero synthetic slop.",
+      role: "Lead Product Designer & Creative Director — spearheaded the ideological re-theming, UI/UX architecture, visual asset generation, and frontend art direction from the ground up.",
+      method: "Reimagined the writing companion into a Revacholian Thought Cabinet anchored by three dialectical faculties (Logic, Encyclopedia & Drama, Visual Calculus), incorporating tactile CRT teletypes, detective dossier case files, and atmospheric Martinaise environmental storytelling."
+    },
+    problem: "Most modern writing tools and author landing pages feel like sanitized corporate spreadsheet software or generic AI generative wrappers that alienate serious novelists. When client policy constraints necessitated an overhaul, the opportunity arose to discard generic SaaS clichés in favor of a visceral, psychologically resonant creative environment.",
+    process: [
+      {
+        title: "Ideological & Aesthetic Reimagining (The Revachol Shift)",
+        description: "Transformed a sterile SaaS utility into an atmospheric literary workspace inspired by the psychological faculties, political grit, and dialectical tension of Disco Elysium. By framing writing as detective case-cracking, every interface element became a narrative artifact.",
+        details: [
+          "Replaced generic AI chat prompts with an introspective Thought Cabinet interface",
+          "Employed CRT phosphor green glows, weathered ledger paper tones, and teletype dispatch typography",
+          "Created an immersive Martinaise rain-slicked metro and workstation setting that immediately anchors the author in a literary atmosphere"
+        ]
+      },
+      {
+        title: "The Three Dialectical Faculties & Cognitive Engine",
+        description: "Structured the core product workflow around three distinct psychological investigative faculties that interrogate, construct, and autopsy manuscripts without overwriting the author's voice.",
+        details: [
+          "Faculty 01: Premise Interrogator (Shivers & Logic) — interrogates raw dramatic instincts against cognitive dissonance",
+          "Faculty 02: Story Architect (Encyclopedia & Drama) — orchestrates scene sequencing, historical timelines, and dramatic pacing",
+          "Faculty 03: Developmental Coroner (Visual Calculus & Volition) — audits manuscript structure, narrative cohesion, and prose endurance"
+        ]
+      },
+      {
+        title: "Jurisdictional Clearance & Commercial Architecture",
+        description: "Redesigned the monetization model from standard monthly SaaS tiers to immersive jurisdictional clearance levels: Preliminary Interrogation ($7 dossier audit), the Full Martinaise Precinct, and the permanent Authorship Syndicate atelier.",
+        details: [
+          "Low-friction $7 entry audit to test premise viability without requiring long-term precinct commitments",
+          "Clear membership vs. monthly atelier coaching separation with instant pause controls",
+          "Zero synthetic slop pledge — highlighting human dialectical friction over generic LLM generation"
+        ]
+      }
+    ],
+    aiWorkflow: "Synthesized moodboards, custom character portrait sketches, and vintage teletype terminal references into cohesive WebP textures and SVG insignia, blending bespoke hand-tuned typography with retro-futuristic audio-visual cues.",
+    outcomes: [
+      { label: "Aesthetic Direction", value: "Disco Elysium", subtext: "Complete narrative overhaul resolving all previous client policy friction" },
+      { label: "Dialectical Faculties", value: "3 Modules", subtext: "Logic, Story Architecture, and Manuscript Coroner cognitive engine" },
+      { label: "Live Station", value: "Production", subtext: "Deployed and fully responsive with interactive sound and telegraphic mechanics" }
+    ],
+    outcomeSummary: "Archivest stands as an exemplary fusion of interactive storytelling, specialized software UX, and uncompromising visual worldbuilding — transforming a routine writing software landing page into a cult literary atelier.",
+    gallerySections: [
+      {
+        sectionTitle: "The Cognitive Engine & Dialectical Faculties",
+        sectionDescription: "Three specialized cognitive faculties working in concert within the author's Thought Cabinet to challenge assumptions, organize scene geometry, and stress-test prose.",
+        images: [
+          {
+            url: "/assets/projects/archivest/archivest-workflow-logic.webp",
+            caption: "Faculty 01: Logic & Shivers — Dialectical premise interrogation and psychological verification",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-workflow-kitsuragi.webp",
+            caption: "Faculty 02: Lt. Kitsuragi & Encyclopedia — Methodical co-investigator margin commentary and dramatic pacing",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-workflow-volition.webp",
+            caption: "Faculty 03: Volition & Visual Calculus — Full manuscript autopsy, scene tension analysis, and psychological stamina tracking",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Martinaise Atmosphere & Authorship Station",
+        sectionDescription: "Immersive visual storytelling blending cold coastal rain, teletype terminals, and atmospheric detective dossiers that make writing feel like solving a precinct homicide.",
+        images: [
+          {
+            url: "/assets/projects/archivest/archivest-cover.webp",
+            caption: "Archivest Official Insignia & Terminal Badge — Emerald labyrinth seal over blurred CRT console",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-hero-bg.webp",
+            caption: "The Revacholian Authorship Workstation — Teletype station, amber glow, and rain-streaked atelier windows",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-novelist-metro.webp",
+            caption: "The Novelist at the Martinaise Rail Depot — Narrative atmosphere evoking solitude, gritty intrigue, and literary momentum",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-banner-desk-01.webp",
+            caption: "Teletype Terminal & Dispatch Desk — High-detail panoramic hardware setup",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-banner-desk-02.webp",
+            caption: "Precinct Dossier Archive & Ledger — Case files, typewriter rolls, and narrative evidence",
+            type: "desktop"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Psychological Faculty Dossiers & Insignia",
+        sectionDescription: "Distinct character archetypes representing the split psyche of the author during deep composition.",
+        images: [
+          {
+            url: "/assets/projects/archivest/archivest-avatar-logic.webp",
+            caption: "Intellectual Faculty: Pure Logic — Cold geometric calculation and syllogistic verification",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-avatar-kitsuragi.webp",
+            caption: "Tactical Faculty: Lt. Kitsuragi — Unwavering professional composure and grounded narrative discipline",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/archivest/archivest-avatar-volition.webp",
+            caption: "Psychic Faculty: Volition — Crowning inner sentinel guarding emotional fortitude against writer's paralysis",
+            type: "desktop"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/archivest/archivest-cover.webp",
+        caption: "Archivest — Thought Cabinet & Authorship Station",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/archivest/archivest-hero-bg.webp",
+        caption: "Authorship Workstation in Martinaise",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/archivest/archivest-workflow-logic.webp",
+        caption: "Dialectical Premise Interrogator — Logic faculty",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/archivest/archivest-workflow-kitsuragi.webp",
+        caption: "Story Architect & Case Dossier — Lt. Kitsuragi faculty",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/archivest/archivest-workflow-volition.webp",
+        caption: "Manuscript Coroner & Autopsy — Volition faculty",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/archivest/archivest-novelist-metro.webp",
+        caption: "Martinaise Rail Depot Scene",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "buildyourai-creatives",
     slug: "buildyourai-creatives",
     title: "BuildYourAI Creatives",
