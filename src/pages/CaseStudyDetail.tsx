@@ -529,7 +529,9 @@ export const CaseStudyDetail: React.FC = () => {
                           className={`grid gap-6 lg:gap-8 ${
                             section.images.length === 1
                               ? section.images[0]?.aspectRatio === '1/1'
-                                ? 'grid-cols-1 max-w-md'
+                                ? 'grid-cols-1 max-w-[360px] sm:max-w-[380px]'
+                                : section.images[0]?.aspectRatio === '9/16' || section.images[0]?.aspectRatio === '4/5'
+                                ? 'grid-cols-1 max-w-[340px] sm:max-w-[380px]'
                                 : 'grid-cols-1 max-w-4xl'
                               : section.images.length === 2 || section.images.every((img) => img.type === 'comparison')
                               ? 'grid-cols-1 lg:grid-cols-2'

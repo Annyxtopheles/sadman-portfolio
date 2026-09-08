@@ -2626,6 +2626,102 @@ export const PROJECTS: Project[] = [
             aspectRatio: "1/1"
           }
         ]
+      },
+      {
+        sectionTitle: "SJ Innovation 21st Anniversary  Celebratory Brand Suite",
+        sectionDescription: "Comprehensive brand identity and event creative suite celebrating 21 years of engineering excellence and team culture across global campuses (August 18th, 2025). Includes wide commemorative social banners, interactive photobooth frames, and environmental core value motto signages.",
+        carousels: [
+          {
+            id: "anniversary-21st-banners",
+            title: "Social Media Banners (3 Directions)",
+            description: "Panoramic commemorative banners across corporate channels",
+            slides: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
+            caption: "21st Anniversary Social Banner — Direction 01 (Asymmetrical Photo Clusters & Team Retreats)",
+            type: "carousel",
+            aspectRatio: "1024/373"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
+            caption: "21st Anniversary Social Banner — Direction 02 (Polaroids, Outdoor Sports & Company Celebrations)",
+            type: "carousel",
+            aspectRatio: "1024/373"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
+            caption: "21st Anniversary Social Banner — Direction 03 (Awards Dinners, Nasdaq Times Square & Team Milestones)",
+            type: "carousel",
+            aspectRatio: "1024/379"
+          }
+        
+            ]
+          },
+          {
+            id: "anniversary-21st-photobooths",
+            title: "Interactive Photobooth Frames",
+            description: "Campus-wide selfie and photobooth cutout frames (2 design editions)",
+            slides: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
+            caption: "Photobooth Frame 01 — Dot-Matrix Minimalist Edition (Pristine White & Multicolored Confetti Dots)",
+            type: "carousel",
+            aspectRatio: "585/1024"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
+            caption: "Photobooth Frame 02 — Sunset Gradient Edition (Bold Tangerine & Indigo Halftone Matrix)",
+            type: "carousel",
+            aspectRatio: "585/1024"
+          }
+        
+            ]
+          },
+          {
+            id: "anniversary-21st-mottos",
+            title: "Core Value Motto Signage (6 Signages)",
+            description: "Environmental culture placards celebrating SJI's 6 defining core value principles",
+            slides: [
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
+            caption: "Motto Signage 01 — 'Client First Mind-Set: We prioritize our client needs and strive to exceed their expectations.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
+            caption: "Motto Signage 02 — 'Solution Oriented: We focus on solutions, not problems.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
+            caption: "Motto Signage 03 — 'On-Time Delivery: We are committed to delivering on time, every time.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
+            caption: "Motto Signage 04 — 'Personal Accountability: We take responsibility for our actions and outcomes.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
+            caption: "Motto Signage 05 — 'Continuous Self-Improvement: We are dedicated to learning and growing every day.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
+            caption: "Motto Signage 06 — 'Team Commitment: We support and uplift each other to achieve common goals.'",
+            type: "carousel",
+            aspectRatio: "1/1"
+          }
+        
+            ]
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -3008,7 +3104,62 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
         caption: "Thought Leadership Event — NYC AI Policy Op-Ed (Shahed Islam & Tom Grech)",
         type: "carousel"
-      }
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
+        caption: "21st Anniversary Social Banner — Asymmetrical Photo Clusters",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
+        caption: "21st Anniversary Social Banner — Polaroids & Outdoor Retreats",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
+        caption: "21st Anniversary Social Banner — Awards & Nasdaq Times Square",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
+        caption: "21st Anniversary Photobooth Frame — Dot-Matrix Edition",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
+        caption: "21st Anniversary Photobooth Frame — Sunset Gradient Edition",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
+        caption: "21st Anniversary Motto Signage — 01 Client First Mind-Set",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
+        caption: "21st Anniversary Motto Signage — 02 Solution Oriented",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
+        caption: "21st Anniversary Motto Signage — 03 On-Time Delivery",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
+        caption: "21st Anniversary Motto Signage — 04 Personal Accountability",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
+        caption: "21st Anniversary Motto Signage — 05 Continuous Self-Improvement",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
+        caption: "21st Anniversary Motto Signage — 06 Team Commitment",
+        type: "desktop"
+      },
     ]
   },
   {
@@ -7747,839 +7898,386 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "SJI All Hands Meeting Slide Template Redesign",
-        sectionDescription: "Comprehensive 25-slide corporate presentation design system created for SJ Innovation's quarterly All-Hands meetings across 4 global campuses (New York, Goa, Sylhet, Dhaka). Features bespoke 3D sculpted section title graphics (Icebreaker, Birthdays, Work Anniversaries, Performer of the Month, Welcome, Farewell), illustrated city skyline dividers, celebratory event photo grids, executive founder directives from Shahed & Shahera, Q4 webinar recaps, and 2026 company goal milestones.",
-        documentUrl: "/assets/projects/creative-initiatives/all-hands-deck/sji-all-hands-meeting-slides-template-2026.pdf",
-        documentTitle: "SJI All Hands Meeting Slides Template for 2026 (PDF)",
-        images: [
+        sectionTitle: "Corporate Presentations & Slide Decks",
+        sectionDescription: "Comprehensive suite of multi-slide enterprise presentations designed for global all-hands meetings, client industry showcases, and executive pitch overviews.",
+        carousels: [
+          {
+            id: "sji-all-hands-template",
+            title: "SJI All Hands Meeting Template (25 Slides)",
+            description: "Quarterly all-hands deck design system across 4 global campuses with 3D sculpted typography, skyline campus dividers, and 2026 goal roadmaps.",
+            documentUrl: "/assets/projects/creative-initiatives/all-hands-deck/sji-all-hands-meeting-slides-template-2026.pdf",
+            documentTitle: "SJI All Hands Meeting Slides Template for 2026 (PDF)",
+            slides: [
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
             caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-02.webp",
             caption: "Slide 02 — Section Header: Icebreaker (3D Sculpted Typography with Celebration Metaphors)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-03.webp",
             caption: "Slide 03 — Campus Divider: New York Office (Empire State & Manhattan Skyline Silhouette)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-04.webp",
             caption: "Slide 04 — Campus Divider: Goa Office (Lighthouse, Palm Canopies & Coastal Architecture)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-05.webp",
             caption: "Slide 05 — Campus Divider: Sylhet Office (Keane Bridge, Tea Hills & Dargah Heritage)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-06.webp",
             caption: "Slide 06 — Campus Divider: Dhaka Office (National Parliament Architecture & Urban Skyline)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-07.webp",
             caption: "Slide 07 — Event Gallery: New York Office Christmas Celebration Photo Collage",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-08.webp",
             caption: "Slide 08 — Event Gallery: Sylhet Office Ramadan Kareem Celebration Photo Collage",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-09.webp",
             caption: "Slide 09 — Section Header: Birthdays (3D Celebratory Lettering, Cake, Balloons & Bunting)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-10.webp",
             caption: "Slide 10 — Member Spotlight: New York Office Birthday Celebrations Grid",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-11.webp",
             caption: "Slide 11 — Section Header: Work Anniversaries (3D Typography, Calendar Icon, Medal & Confetti)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-12.webp",
             caption: "Slide 12 — Milestone Spotlight: New York Office Work Anniversary Celebrations (1st–4th Years)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-13.webp",
             caption: "Slide 13 — Knowledge Sharing: Outreach — Webinars Conducted in Q4 (Vibe Code Series)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-14.webp",
             caption: "Slide 14 — Section Header: Performer of the Month (3D Golden Trophy, Rosette & Metrics)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-15.webp",
             caption: "Slide 15 — Global Honors: Performer of the Month — January 2026 Awardees",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-16.webp",
             caption: "Slide 16 — Performance Review: Analytics & Marketing Report (Executive Presentation Canvas)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-17.webp",
             caption: "Slide 17 — Leadership Keynote: Updates from Shahed & Shahera (Executive Founder Avatars)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-18.webp",
             caption: "Slide 18 — Leadership Directives: Update from Shahed & Shahera (Strategic Agenda Cards)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-19.webp",
             caption: "Slide 19 — Section Header: Welcome (3D Shaking Hands, Open Door & Paper Airplane)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-20.webp",
             caption: "Slide 20 — Team Growth: Welcome — New Joinees Talent Showcase",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-21.webp",
             caption: "Slide 21 — Cohort Growth: Welcome — New Interns Academic Cohort",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-22.webp",
             caption: "Slide 22 — Section Header: Farewell (3D Luggage, Waving Hand & Keepsake Memories)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-23.webp",
             caption: "Slide 23 — Alumni Tribute: Farewell Honors & Appreciation",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-24.webp",
             caption: "Slide 24 — Strategic Horizons: Goal Overview — Company Goal 2026",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
             caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           }
-        ],
-        carousels: [
-          {
-            id: "sji-all-hands-deck",
-            title: "SJI All Hands Meeting Slide Template Redesign (25 Slides)",
-            description: "Standardized 25-slide presentation framework featuring 3D extruded event typography, campus skyline dividers, employee milestones, and founder keynotes.",
-            documentUrl: "/assets/projects/creative-initiatives/all-hands-deck/sji-all-hands-meeting-slides-template-2026.pdf",
-            documentTitle: "Download SJI All Hands Slides Template (PDF)",
-            slides: [
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
-                caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-02.webp",
-                caption: "Slide 02 — Section Header: Icebreaker (3D Sculpted Typography with Celebration Metaphors)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-03.webp",
-                caption: "Slide 03 — Campus Divider: New York Office (Empire State & Manhattan Skyline Silhouette)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-04.webp",
-                caption: "Slide 04 — Campus Divider: Goa Office (Lighthouse, Palm Canopies & Coastal Architecture)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-05.webp",
-                caption: "Slide 05 — Campus Divider: Sylhet Office (Keane Bridge, Tea Hills & Dargah Heritage)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-06.webp",
-                caption: "Slide 06 — Campus Divider: Dhaka Office (National Parliament Architecture & Urban Skyline)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-07.webp",
-                caption: "Slide 07 — Event Gallery: New York Office Christmas Celebration Photo Collage",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-08.webp",
-                caption: "Slide 08 — Event Gallery: Sylhet Office Ramadan Kareem Celebration Photo Collage",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-09.webp",
-                caption: "Slide 09 — Section Header: Birthdays (3D Celebratory Lettering, Cake, Balloons & Bunting)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-10.webp",
-                caption: "Slide 10 — Member Spotlight: New York Office Birthday Celebrations Grid",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-11.webp",
-                caption: "Slide 11 — Section Header: Work Anniversaries (3D Typography, Calendar Icon, Medal & Confetti)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-12.webp",
-                caption: "Slide 12 — Milestone Spotlight: New York Office Work Anniversary Celebrations (1st–4th Years)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-13.webp",
-                caption: "Slide 13 — Knowledge Sharing: Outreach — Webinars Conducted in Q4 (Vibe Code Series)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-14.webp",
-                caption: "Slide 14 — Section Header: Performer of the Month (3D Golden Trophy, Rosette & Metrics)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-15.webp",
-                caption: "Slide 15 — Global Honors: Performer of the Month — January 2026 Awardees",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-16.webp",
-                caption: "Slide 16 — Performance Review: Analytics & Marketing Report (Executive Presentation Canvas)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-17.webp",
-                caption: "Slide 17 — Leadership Keynote: Updates from Shahed & Shahera (Executive Founder Avatars)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-18.webp",
-                caption: "Slide 18 — Leadership Directives: Update from Shahed & Shahera (Strategic Agenda Cards)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-19.webp",
-                caption: "Slide 19 — Section Header: Welcome (3D Shaking Hands, Open Door & Paper Airplane)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-20.webp",
-                caption: "Slide 20 — Team Growth: Welcome — New Joinees Talent Showcase",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-21.webp",
-                caption: "Slide 21 — Cohort Growth: Welcome — New Interns Academic Cohort",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-22.webp",
-                caption: "Slide 22 — Section Header: Farewell (3D Luggage, Waving Hand & Keepsake Memories)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-23.webp",
-                caption: "Slide 23 — Alumni Tribute: Farewell Honors & Appreciation",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-24.webp",
-                caption: "Slide 24 — Strategic Horizons: Goal Overview — Company Goal 2026",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-25.webp",
-                caption: "Slide 25 — Closing: Thank You & Take Care (Branded Sunset-to-Cerulean Gradient)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              }
+        
             ]
-          }
-        ]
-      },
-      {
-        sectionTitle: "SJ Innovation Medical & Pharma Client Showcase Presentation",
-        sectionDescription: "High-stakes enterprise capability deck created for SJ Innovation's life sciences, pharmaceutical, and healthcare agency prospects. Highlights 10 years of technical partnership with Janssen Pharmaceuticals (Erleada, Stelara, Balversa, Tremfya, Darzalex), consumer health platforms for Kenvue (Listerine, Tylenol, Neutrogena, SmartCheck otoscope app), and digital campaign infrastructure for Propel Health Communications, underpinned by ISO 9001:2015 and HIPAA compliance.",
-        documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-presentation-medical-pharma-2026.pdf",
-        documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
-        images: [
+          },
+          {
+            id: "sji-medical-pharma-showcase",
+            title: "Medical & Pharma Client Showcase (15 Slides)",
+            description: "Industry-tailored capability deck featuring healthcare compliance (HIPAA, 21 CFR Part 11, GAMP 5) and pharma case studies.",
+            documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-medical-pharma-presentation.pdf",
+            documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
+            slides: [
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-01.webp",
             caption: "Slide 01 — Title: Empowered Teams, Thriving Clients — Delivering Solutions with Accountability (Cover)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-02.webp",
             caption: "Slide 02 — At a Glance: 1,200+ Projects Delivered, 500+ Clients, 4 Global Campuses (NYC, Goa, Sylhet, Dhaka)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-03.webp",
             caption: "Slide 03 — Motto & Culture: Client-First Mindset, On-Time Delivery, Solution Oriented, Continuous Improvement",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-04.webp",
             caption: "Slide 04 — Industries We Serve: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Restaurants",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-05.webp",
             caption: "Slide 05 — Capabilities: AI Automation & Agentic AI, Web/Mobile/CMS, Cloud & DevOps, Marketing Solutions",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-06.webp",
             caption: "Slide 06 — Proprietary Products: CollabAI, PlatePresence, LeadsLift, and BuildYourAI Ecosystem",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-07.webp",
             caption: "Slide 07 — Enterprise Client Showcase: Healthcare & Pharma Brand Logos (Janssen, Neutrogena, Kenvue, etc.)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-08.webp",
             caption: "Slide 08 — Client Deep-Dive: Janssen Pharmaceuticals — 10 Years Partnership Across Erleada, Stelara, Balversa, Tremfya",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-09.webp",
             caption: "Slide 09 — Client Deep-Dive: Kenvue — Listerine, Benadryl, Zyrtec, Tylenol SmartCheck Mobile Otoscope App",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-10.webp",
             caption: "Slide 10 — Client Deep-Dive: Propel Health Communications — Patient Portals & Clinical Disease Awareness Sites",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-11.webp",
             caption: "Slide 11 — Industry Honors: Inc. 5000 (#4,332), Clutch Top 100 NYC B2B, Top Rated Upwork, ISO 9001:2015",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-12.webp",
             caption: "Slide 12 — Enterprise Certifications: AWS Certified Solutions Architect, Acquia Drupal, Contentful, Salesforce, ISTQB",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-13.webp",
             caption: "Slide 13 — Global Culture: Collaborative Photos Across Times Square Nasdaq, Goa Retreats, and Global Offices",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-14.webp",
             caption: "Slide 14 — Community Outreach: Seminars, Webinars, Youth STEM Classes, Hackathons, and Charity Initiatives",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-15.webp",
             caption: "Slide 15 — Closing: Thank You & Executive Partnership Contact (sjinnovation.com)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           }
-        ],
-        carousels: [
-          {
-            id: "sji-medical-pharma-deck",
-            title: "SJ Innovation Medical & Pharma Client Showcase Presentation (15 Slides)",
-            description: "High-stakes enterprise capability deck created for SJ Innovation's life sciences, pharmaceutical, and healthcare agency prospects. Highlights 10 years of technical partnership with Janssen Pharmaceuticals (Erleada, Stelara, Balversa, Tremfya, Darzalex), consumer health platforms for Kenvue (Listerine, Tylenol, Neutrogena, SmartCheck otoscope app), and digital campaign infrastructure for Propel Health Communications, underpinned by ISO 9001:2015 and HIPAA compliance.",
-            documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-presentation-medical-pharma-2026.pdf",
-            documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
-            slides: [
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-01.webp",
-                caption: "Slide 01 — Title: Empowered Teams, Thriving Clients — Delivering Solutions with Accountability (Cover)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-02.webp",
-                caption: "Slide 02 — At a Glance: 1,200+ Projects Delivered, 500+ Clients, 4 Global Campuses (NYC, Goa, Sylhet, Dhaka)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-03.webp",
-                caption: "Slide 03 — Motto & Culture: Client-First Mindset, On-Time Delivery, Solution Oriented, Continuous Improvement",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-04.webp",
-                caption: "Slide 04 — Industries We Serve: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Restaurants",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-05.webp",
-                caption: "Slide 05 — Capabilities: AI Automation & Agentic AI, Web/Mobile/CMS, Cloud & DevOps, Marketing Solutions",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-06.webp",
-                caption: "Slide 06 — Proprietary Products: CollabAI, PlatePresence, LeadsLift, and BuildYourAI Ecosystem",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-07.webp",
-                caption: "Slide 07 — Enterprise Client Showcase: Healthcare & Pharma Brand Logos (Janssen, Neutrogena, Kenvue, etc.)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-08.webp",
-                caption: "Slide 08 — Client Deep-Dive: Janssen Pharmaceuticals — 10 Years Partnership Across Erleada, Stelara, Balversa, Tremfya",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-09.webp",
-                caption: "Slide 09 — Client Deep-Dive: Kenvue — Listerine, Benadryl, Zyrtec, Tylenol SmartCheck Mobile Otoscope App",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-10.webp",
-                caption: "Slide 10 — Client Deep-Dive: Propel Health Communications — Patient Portals & Clinical Disease Awareness Sites",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-11.webp",
-                caption: "Slide 11 — Industry Honors: Inc. 5000 (#4,332), Clutch Top 100 NYC B2B, Top Rated Upwork, ISO 9001:2015",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-12.webp",
-                caption: "Slide 12 — Enterprise Certifications: AWS Certified Solutions Architect, Acquia Drupal, Contentful, Salesforce, ISTQB",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-13.webp",
-                caption: "Slide 13 — Global Culture: Collaborative Photos Across Times Square Nasdaq, Goa Retreats, and Global Offices",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-14.webp",
-                caption: "Slide 14 — Community Outreach: Seminars, Webinars, Youth STEM Classes, Hackathons, and Charity Initiatives",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/medical-pharma-deck/medical-pharma-slide-15.webp",
-                caption: "Slide 15 — Closing: Thank You & Executive Partnership Contact (sjinnovation.com)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              }
+        
             ]
-          }
-        ]
-      },
-      {
-        sectionTitle: "SJ Innovation Corporate Company Deck (2026)",
-        sectionDescription: "Flagship 18-slide corporate credential deck articulating SJ Innovation's 21-year evolution from a 2004 New York startup into an international AI-First engineering firm. Features founder leadership (Shahed Islam & Shahera Choudhury), core cultural mottos, 1,200+ projects delivered, 4 global campuses, accredited certifications (ISO 9001, Veeva, AWS, Inc. 5000), client reviews, and proprietary product spinouts.",
-        documentUrl: "/assets/projects/creative-initiatives/company-deck/sji-company-deck-2026.pdf",
-        documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
-        images: [
+          },
+          {
+            id: "sji-corporate-company-deck",
+            title: "Corporate Company Deck 2026 (18 Slides)",
+            description: "Flagship corporate capabilities deck covering global engineering presence, core competencies, client testimonials, and enterprise engagement models.",
+            documentUrl: "/assets/projects/creative-initiatives/company-deck/sj-innovation-company-deck-2026.pdf",
+            documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
+            slides: [
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-01.webp",
             caption: "Slide 01 — Title: SJ Innovation LLC Company Deck 2026 (Cover)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-02.webp",
             caption: "Slide 02 — Story: Founded in 2004, NYC Headquarters, 21 Years of Excellence, MBE & Inc. 5000 Accredited",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-03.webp",
             caption: "Slide 03 — Executive Leadership: Co-Founders Shahed Islam (CEO) & Shahera Choudhury (COO)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-04.webp",
             caption: "Slide 04 — Global Footprint: 100+ Team Members Across 4 Offices (New York, Goa, Sylhet, Dhaka)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-05.webp",
             caption: "Slide 05 — Offerings: Agentic AI, Headless CMS, Cloud Architecture, and Performance Marketing",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-06.webp",
             caption: "Slide 06 — Core Values: Client-First, Solution Oriented, On-Time Delivery, Personal Accountability",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-07.webp",
             caption: "Slide 07 — Culture & Retreats: Annual Milestones, Team Banquets, and Times Square Celebrations",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-08.webp",
             caption: "Slide 08 — Certifications: ISO 9001:2015, Veeva Vault, Contentful, AWS, Clutch Global Leader",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-09.webp",
             caption: "Slide 09 — Client Ecosystem: Janssen, Council on Foreign Relations, Neutrogena, Listerine, SDSU",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-10.webp",
             caption: "Slide 10 — Vertical Sectors: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Food Service",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-11.webp",
             caption: "Slide 11 — Client Testimonials: Johnson & Johnson, IVolunteer, Tour Patron, PowerLean (4.9 Clutch, 4.8 Google)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-12.webp",
             caption: "Slide 12 — Portfolio Highlights: Multi-Screen Responsive Web, Mobile Apps, and Enterprise Platforms",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-13.webp",
             caption: "Slide 13 — Philanthropy: Community Outreach, Tech Education, Youth Hackathons, and Seminars",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-14.webp",
             caption: "Slide 14 — Proprietary Product Ventures: CollabAI, PlatePresence, LeadsLift, BuildYourAI",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-15.webp",
             caption: "Slide 15 — Closing: Thank You — Connect with SJ Innovation (www.sjinnovation.com)",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-16.webp",
             caption: "Slide 16 — Appendix: Extended Client Testimonials & Endorsements",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-17.webp",
             caption: "Slide 17 — Appendix: Global Campus Capabilities & Follow-the-Sun Delivery",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           },
           {
             url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
             caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
-            type: "desktop",
+            type: "carousel",
             aspectRatio: "16/9"
           }
-        ],
-        carousels: [
-          {
-            id: "sji-company-deck-2026",
-            title: "SJ Innovation Corporate Company Deck (2026) (18 Slides)",
-            description: "Flagship 18-slide corporate credential deck articulating SJ Innovation's 21-year evolution from a 2004 New York startup into an international AI-First engineering firm. Features founder leadership (Shahed Islam & Shahera Choudhury), core cultural mottos, 1,200+ projects delivered, 4 global campuses, accredited certifications (ISO 9001, Veeva, AWS, Inc. 5000), client reviews, and proprietary product spinouts.",
-            documentUrl: "/assets/projects/creative-initiatives/company-deck/sji-company-deck-2026.pdf",
-            documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
-            slides: [
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-01.webp",
-                caption: "Slide 01 — Title: SJ Innovation LLC Company Deck 2026 (Cover)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-02.webp",
-                caption: "Slide 02 — Story: Founded in 2004, NYC Headquarters, 21 Years of Excellence, MBE & Inc. 5000 Accredited",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-03.webp",
-                caption: "Slide 03 — Executive Leadership: Co-Founders Shahed Islam (CEO) & Shahera Choudhury (COO)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-04.webp",
-                caption: "Slide 04 — Global Footprint: 100+ Team Members Across 4 Offices (New York, Goa, Sylhet, Dhaka)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-05.webp",
-                caption: "Slide 05 — Offerings: Agentic AI, Headless CMS, Cloud Architecture, and Performance Marketing",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-06.webp",
-                caption: "Slide 06 — Core Values: Client-First, Solution Oriented, On-Time Delivery, Personal Accountability",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-07.webp",
-                caption: "Slide 07 — Culture & Retreats: Annual Milestones, Team Banquets, and Times Square Celebrations",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-08.webp",
-                caption: "Slide 08 — Certifications: ISO 9001:2015, Veeva Vault, Contentful, AWS, Clutch Global Leader",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-09.webp",
-                caption: "Slide 09 — Client Ecosystem: Janssen, Council on Foreign Relations, Neutrogena, Listerine, SDSU",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-10.webp",
-                caption: "Slide 10 — Vertical Sectors: Healthcare, Mortgage, Legal, Non-Profit, Accounting, Agency, Food Service",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-11.webp",
-                caption: "Slide 11 — Client Testimonials: Johnson & Johnson, IVolunteer, Tour Patron, PowerLean (4.9 Clutch, 4.8 Google)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-12.webp",
-                caption: "Slide 12 — Portfolio Highlights: Multi-Screen Responsive Web, Mobile Apps, and Enterprise Platforms",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-13.webp",
-                caption: "Slide 13 — Philanthropy: Community Outreach, Tech Education, Youth Hackathons, and Seminars",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-14.webp",
-                caption: "Slide 14 — Proprietary Product Ventures: CollabAI, PlatePresence, LeadsLift, BuildYourAI",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-15.webp",
-                caption: "Slide 15 — Closing: Thank You — Connect with SJ Innovation (www.sjinnovation.com)",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-16.webp",
-                caption: "Slide 16 — Appendix: Extended Client Testimonials & Endorsements",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-17.webp",
-                caption: "Slide 17 — Appendix: Global Campus Capabilities & Follow-the-Sun Delivery",
-                type: "carousel",
-                aspectRatio: "16/9"
-              },
-              {
-                url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
-                caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
-                type: "carousel",
-                aspectRatio: "16/9"
-              }
+        
             ]
-          }
-        ]
-      },
-      {
-        sectionTitle: "SJ Innovation 21st Anniversary — Social Media Banners",
-        sectionDescription: "Panoramic commemorative social media banner suite celebrating 21 years of engineering excellence, AI-first innovation, and team culture across global campuses. Features the central anniversary insignia, subsidiary brand ecosystem (BuildYourAI, CollabAI, LeadsLift, Plate Presence), enterprise accreditation credentials, and curated photo collages of team members, retreats, and milestones.",
-        images: [
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
-            caption: "21st Anniversary Social Banner — Direction 01 (Asymmetrical Photo Clusters & Team Retreats)",
-            type: "carousel",
-            aspectRatio: "1024/373"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
-            caption: "21st Anniversary Social Banner — Direction 02 (Polaroids, Outdoor Sports & Company Celebrations)",
-            type: "carousel",
-            aspectRatio: "1024/373"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
-            caption: "21st Anniversary Social Banner — Direction 03 (Awards Dinners, Nasdaq Times Square & Team Milestones)",
-            type: "carousel",
-            aspectRatio: "1024/379"
-          }
-        ]
-      },
-      {
-        sectionTitle: "SJ Innovation 21st Anniversary — Interactive Photobooth Frames",
-        sectionDescription: "Custom-designed event selfie and photobooth cutout frames created for campus-wide 21st Anniversary celebrations (August 18th, 2025). Features dual design directions: a dot-matrix light minimalist edition with corporate confetti dots, and a vibrant sunset-orange to deep indigo gradient edition.",
-        images: [
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
-            caption: "Photobooth Frame 01 — Dot-Matrix Minimalist Edition (Pristine White & Multicolored Confetti Dots)",
-            type: "carousel",
-            aspectRatio: "585/1024"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
-            caption: "Photobooth Frame 02 — Sunset Gradient Edition (Bold Tangerine & Indigo Halftone Matrix)",
-            type: "carousel",
-            aspectRatio: "585/1024"
-          }
-        ]
-      },
-      {
-        sectionTitle: "SJ Innovation 21st Anniversary — Core Value Motto Signage",
-        sectionDescription: "Environmental culture signage and wall placards celebrating SJ Innovation's defining core values during the 21st Anniversary milestone. Designed with large-format numeral typography, domain icons, and high-contrast brand color blocking.",
-        images: [
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
-            caption: "Motto Signage 01 — 'Client First Mind-Set: We prioritize our client needs and strive to exceed their expectations.'",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
-            caption: "Motto Signage 02 — 'Solution Oriented: We focus on solutions, not problems.'",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
-            caption: "Motto Signage 03 — 'On-Time Delivery: We are committed to delivering on time, every time.'",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
-            caption: "Motto Signage 04 — 'Personal Accountability: We take responsibility for our actions and outcomes.'",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
-            caption: "Motto Signage 05 — 'Continuous Self-Improvement: We are dedicated to learning and growing every day.'",
-            type: "desktop",
-            aspectRatio: "1/1"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
-            caption: "Motto Signage 06 — 'Team Commitment: We support and uplift each other to achieve common goals.'",
-            type: "desktop",
-            aspectRatio: "1/1"
           }
         ]
       }
@@ -8633,61 +8331,7 @@ export const PROJECTS: Project[] = [
         caption: "New Year 2026 Animated Motion Countdown — High-Tech Gauge Meter",
         type: "desktop"
       },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-01.webp",
-        caption: "21st Anniversary Social Banner — Asymmetrical Photo Clusters",
-        type: "carousel"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-02.webp",
-        caption: "21st Anniversary Social Banner — Polaroids & Outdoor Retreats",
-        type: "carousel"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-social-banner-03.webp",
-        caption: "21st Anniversary Social Banner — Awards & Nasdaq Times Square",
-        type: "carousel"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-01-dot-matrix.webp",
-        caption: "21st Anniversary Photobooth Frame — Dot-Matrix Edition",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-photobooth-02-sunset-gradient.webp",
-        caption: "21st Anniversary Photobooth Frame — Sunset Gradient Edition",
-        type: "portrait"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-01-client-first.webp",
-        caption: "21st Anniversary Motto Signage — 01 Client First Mind-Set",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-02-solution-oriented.webp",
-        caption: "21st Anniversary Motto Signage — 02 Solution Oriented",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-03-on-time-delivery.webp",
-        caption: "21st Anniversary Motto Signage — 03 On-Time Delivery",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-04-personal-accountability.webp",
-        caption: "21st Anniversary Motto Signage — 04 Personal Accountability",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-05-continuous-self-improvement.webp",
-        caption: "21st Anniversary Motto Signage — 05 Continuous Self-Improvement",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/creative-initiatives/anniversary-21st-motto-06-team-commitment.webp",
-        caption: "21st Anniversary Motto Signage — 06 Team Commitment",
-        type: "desktop"
-      },
+      
       {
         url: "/assets/projects/creative-initiatives/all-hands-deck/all-hands-slide-01.webp",
         caption: "Slide 01 — Title: All Office All Hands Meeting June 2026 (SJ Innovation LLC)",
