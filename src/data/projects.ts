@@ -363,12 +363,30 @@ export const PROJECTS: Project[] = [
     problem: "Standard hiring portfolios sanitize personality in favor of safe corporate templates. This project was conceived as an authentic digital habitat celebrating personal prose, pastime logs, and deep creative engineering.",
     process: [
       {
-        title: "Interactive 3D Physics Lanyard Badge",
-        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D physics engines with dynamic lighting, collision detection, and tactile spring dynamics.",
+        title: "Interactive 3D Physics Lanyard Badge & Profile",
+        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D rigid-body physics with dynamic spring tension, collision boundaries, and tactile inertia.",
         details: [
-          "Real-time WebGL mesh rendering with ambient grain and scanline post-processing",
-          "Bilingual poetry interface with paper-textured reader toggle and custom Bengali typography",
-          "Integrated multimedia pastime tracker with live status chips for anime, cinema, and literature"
+          "Real-time WebGL mesh rendering with subtle ambient paper grain and responsive drag interactions",
+          "Clean bilingual profile layout highlighting credentials, design competencies, and full resume access",
+          "Smooth physics dampening calibrated for both desktop mouse dragging and mobile touch gestures"
+        ]
+      },
+      {
+        title: "Stark Editorial Direction & Bilingual Poetry Reader",
+        description: "Crafted an intimate literary reading environment celebrating classical publication aesthetics, illuminated drop caps, and thoughtful typography.",
+        details: [
+          "Playful, unapologetic landing statement ('I shall pull a design out of my a—') paired with warm paper-textured negative space",
+          "Custom illuminated woodcut drop-cap initial ('Y') for the prose poem 'cosmotellurian'",
+          "Real-time live local Dhaka timestamp (GMT+6) anchored in the editorial colophon footer"
+        ]
+      },
+      {
+        title: "Embedded Portfolio Portal & Habitat Connectivity",
+        description: "Engineered a seamless visual bridge connecting the personal creative archive back to the primary commercial design portfolio.",
+        details: [
+          "High-contrast dark card viewport with animated glowing 'enter portfolio' button",
+          "Frictionless bi-directional routing between personal creative writings and client case studies",
+          "Zero framework bloat with instant page transitions and lightweight bundle footprint"
         ]
       }
     ],
@@ -378,10 +396,67 @@ export const PROJECTS: Project[] = [
       { label: "Authenticity", value: "100%", subtext: "Direct uncompromised expression of design, poetry, and technical craft" }
     ],
     outcomeSummary: "An unapologetically personal, tactile web experience that proves depth of craft and technical mastery beyond conventional portfolio bounds.",
+    gallerySections: [
+      {
+        sectionTitle: "Editorial Spaces & Interactive 3D Physics",
+        sectionDescription: "High-resolution production captures showcasing the key environments of the personal digital archive: stark typographic landing views, draggable 3D physics lanyard badge, illuminated poetry reader, and embedded design portfolio portals.",
+        images: [
+          {
+            url: "/assets/projects/szk-archive/szk-01-statement-landing.webp",
+            caption: "Stark Editorial Landing Statement — 'I shall pull a design out of my a—' with subtle paper texture and minimalist navigation",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/szk-archive/szk-02-physics-lanyard-badge.webp",
+            caption: "Interactive 3D Physics Lanyard Badge (Profile & Resume) — Draggable Rapier3D rigid-body badge suspended over professional credentials",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/szk-archive/szk-03-poetry-reader-cosmotellurian.webp",
+            caption: "Vintage Bilingual Poetry Reader ('cosmotellurian') — Classical illuminated woodcut drop-cap initial, fine-line layout, and live Dhaka time",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/szk-archive/szk-04-portal-to-portfolio.webp",
+            caption: "Embedded Portfolio Portal — Interactive dark-mode bridge leading directly to commercial UI/UX work and design systems",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
+        url: "/assets/projects/szk-archive/szk-02-physics-lanyard-badge.webp",
+        caption: "Interactive 3D Physics Lanyard Badge — Profile & resume view",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/szk-archive/szk-01-statement-landing.webp",
+        caption: "Stark Editorial Landing Statement — 'I shall pull a design out of my a—'",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/szk-archive/szk-03-poetry-reader-cosmotellurian.webp",
+        caption: "Poetry Reader ('cosmotellurian') with illuminated woodcut drop-cap",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/szk-archive/szk-04-portal-to-portfolio.webp",
+        caption: "Portal to Portfolio — Embedded interactive workspace card",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
         url: "/assets/projects/szk-mockup.webp",
-        caption: "My Personal Digital Archive — Minimalist editorial landing view with stark typography and poetry navigation",
+        caption: "My Personal Digital Archive — Desktop mockup overview",
+        aspectRatio: "1024/640",
         type: "desktop"
       }
     ]
