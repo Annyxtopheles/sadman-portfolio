@@ -409,8 +409,10 @@ export const CaseStudyDetail: React.FC = () => {
           {project.gallerySections && project.gallerySections.length > 0 ? (
             <div className="space-y-16 pt-2">
               {project.gallerySections.map((section, sIdx) => {
+                const sectionImages =
+                  section.images || section.carousels?.flatMap((c) => c.slides) || [];
                 const isCarouselSection =
-                  section.images.length > 1 && section.images.every((img) => img.type === 'carousel');
+                  sectionImages.length > 1 && sectionImages.every((img) => img.type === 'carousel');
                 const currentSectionMode = sectionViewModes[sIdx] ?? (isCarouselSection ? 'carousel' : 'grid');
 
                 return (
@@ -454,7 +456,7 @@ export const CaseStudyDetail: React.FC = () => {
                                 : 'text-[#777777] hover:text-[#DDDDDD]'
                             }`}
                           >
-                            Grid ({section.images.length})
+                            Grid ({sectionImages.length})
                           </button>
                         </div>
                       )}
@@ -517,7 +519,7 @@ export const CaseStudyDetail: React.FC = () => {
                       ) : isCarouselSection && currentSectionMode === 'carousel' ? (
                         <div className="max-w-xl mx-auto w-full">
                           <CarouselViewer
-                            slides={section.images}
+                            slides={sectionImages}
                             title={section.sectionTitle}
                             documentUrl={section.documentUrl}
                             documentTitle={section.documentTitle}
@@ -527,20 +529,12 @@ export const CaseStudyDetail: React.FC = () => {
                       ) : (
                         <div
                           className={`grid gap-6 lg:gap-8 ${
-                            section.images.length === 1
-                              ? section.images[0]?.aspectRatio === '1/1'
-                                ? 'grid-cols-1 max-w-[360px] sm:max-w-[380px]'
-                                : section.images[0]?.aspectRatio === '9/16' || section.images[0]?.aspectRatio === '4/5'
-                                ? 'grid-cols-1 max-w-[340px] sm:max-w-[380px]'
-                                : 'grid-cols-1 max-w-4xl'
-                              : section.images.every((img) => img.type === 'comparison')
-                              ? 'grid-cols-1 lg:grid-cols-2'
-                              : section.images.length === 2 && !section.images.some((img) => img.aspectRatio === '9/16' || img.aspectRatio === '4/5' || img.type === 'portrait' || img.type === 'mobile')
+                            sectionImages.every((img) => img.type === 'comparison')
                               ? 'grid-cols-1 lg:grid-cols-2'
                               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
                           }`}
                         >
-                      {section.images.map((img, gIdx) => {
+                      {sectionImages.map((img, gIdx) => {
                         const embedKey = `${sIdx}-${gIdx}`;
                         const isEmbedActive = activeEmbeds[embedKey];
 
@@ -682,7 +676,7 @@ export const CaseStudyDetail: React.FC = () => {
                   /* Mode 2: Minimized View (Small Previews with Large Hover Pop-Up, exactly like About page) */
                   <div className="relative">
                       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                        {section.images.map((img, gIdx) => (
+                        {sectionImages.map((img, gIdx) => (
                           <CompactThumbnailCard
                             key={gIdx}
                             img={img}
