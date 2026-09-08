@@ -3538,19 +3538,19 @@ export const PROJECTS: Project[] = [
     coverImage: "/assets/projects/print-designs/womens-day-office-print-banner.webp",
     liveUrl: null,
     tldr: {
-      challenge: "Workplace guidelines, cultural values, and employee recognition often get lost in digital noise. The goal was to design high-impact physical print collateral, office wall posters, and official certificate systems that celebrate achievement and communicate operational clarity.",
-      role: "Lead Visual & Brand Designer — conceptualized, illustrated, and typeset all physical print collateral, workplace infographics, environmental posters, and recognition certificates for SJ Innovation and SJ Control Tower.",
-      method: "Applied modular information hierarchy, clean iconography, high-contrast brand colors (SJ cobalt, vibrant orange, and crisp white), subtle background textures (grids, topological contours, geometric mesh), and large-format editorial typography."
+      challenge: "Workplace environments and corporate celebrations often suffer from generic stock collateral or disconnected print assets that fail to inspire teams or reinforce organizational identity across disparate global offices.",
+      role: "Lead Visual & Print Designer — conceptualized, illustrated, typeset, and pre-flighted all physical print assets from initial concept sketches through final press-ready production files.",
+      method: "Engineered cohesive visual systems tailored to physical environments: bold vectors for large-format wall art, fine-line ink & watercolor illustrations for personalized keepsakes, and high-contrast typography for event collateral."
     },
-    problem: "Ineffective meetings, passive office environments, and unrecognized milestone achievements drain creative momentum. SJ Innovation needed tangible, engaging print assets—reminding teams to run intentional meetings, fostering an inspiring culture, and officially honoring outstanding team contributions.",
+    problem: "Standard corporate print collateral often feels impersonal, disjointed, and visually fatigued. SJ Innovation required high-impact visual systems for multiple high-stakes physical touchpoints: motivating engineering teams through environmental office walls, celebrating global observances (Women's Day, Men's Day, Thanksgiving, New Year), rallying departmental camaraderie at Sports Day, and sending tangible, premium holiday appreciation to high-value enterprise clients in the US.",
     process: [
       {
         title: "Information Architecture for Rapid Scanning",
-        description: "Deconstructed operational meeting frameworks and employee wellness research into scannable infographics with distinct visual anchors.",
+        description: "Deconstructed complex workplace policies and company values into scannable, visually compelling print infographics that employees engage with daily.",
         details: [
-          "Crafted custom vector iconography representing Intent (target), Decisions (checklist), and Insights (lightbulb)",
-          "Structured the 7 Dimensions of Employee Happiness into a circular radial infographic mapping compensation, growth, and work-life harmony",
-          "Balanced brand-consistent warm orange gradients with clean white backgrounds for optimal print reproduction"
+          "Organized dense instructional content into clear visual hierarchies using numbered badges, thematic icon containers, and color-coded sections",
+          "Balanced large display typography with comfortable body-copy leading to ensure readability from 3 to 10 feet away",
+          "Engineered consistent layout grids adaptable across multiple physical dimensions (A3, A2, wide banner, and tabletop formats)"
         ]
       },
       {
@@ -3658,7 +3658,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Personalized Member Birthday Keepsake Cards",
-        sectionDescription: "Bespoke print greeting cards designed for team members across SJ Innovation global campuses. Spans a playful corporate color-blocked cake illustration, festive confetti ribbon typography for Shahera, a high-contrast editorial silhouette card for Sadman Zaman Khan, frosted translucent glassmorphism typography for Manju Ayali, an ink illustration of Rajib Chowdhury at his dual-monitor workstation, and an expressive fine art watercolor portrait keepsake.",
+        sectionDescription: "Bespoke print greeting cards designed for team members across SJ Innovation global campuses. Spans a playful corporate color-blocked cake illustration, festive confetti ribbon typography for Shahera, a high-contrast editorial silhouette card for Sadman Zaman Khan, frosted translucent glassmorphism typography for Manju Ayali, dual ink & watercolor portraits for Rajib Chowdhury, and a playful suite of custom 'pookie' meme cats and ethereal botanical floral keepsake cards celebrating the female queens of our offices (including Akshata Alornekar).",
         images: [
           {
             url: "/assets/projects/print-designs/birthday-card-01-minimalist-cake-vector.webp",
@@ -3694,6 +3694,24 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/birthday-card-06-rajib-watercolor-portrait.webp",
             caption: "Fine Art Watercolor Birthday Card for Rajib Chowdhury — Expressive hand-painted watercolor portrait keepsake with azure and amber atmospheric splashes.",
             aspectRatio: "727/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-07-akshata-pookie-cats.webp",
+            caption: "Personalized 'Pookie' Meme Birthday Keepsake Card (Akshata Alornekar) — Celebratory party-hat meme cats, festive pastel bunting, and birthday cake on pristine white.",
+            aspectRatio: "721/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-08-hijab-pookie-cats-balloons.webp",
+            caption: "Personalized 'Pookie' Birthday Keepsake Card — Cuddly hugging kittens, monkey plushies, floral bouquets, and 3D metallic pink foil balloon lettering.",
+            aspectRatio: "721/1024",
+            type: "portrait"
+          },
+          {
+            url: "/assets/projects/print-designs/birthday-card-09-botanical-daisy-portrait.webp",
+            caption: "Personalized Ethereal Botanical Birthday Keepsake Card — Multi-exposure soft portrait encircled by hand-lettered golden calligraphy, blooming sunflowers, and delicate spring daisies.",
+            aspectRatio: "722/1024",
             type: "portrait"
           }
         ]
@@ -3992,6 +4010,21 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/birthday-card-06-rajib-watercolor-portrait.webp",
         caption: "Member Birthday Card — Rajib Chowdhury (Watercolor Fine Art)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-07-akshata-pookie-cats.webp",
+        caption: "Member Birthday Card — Akshata Alornekar (Pookie Meme Cats & Party Hats)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-08-hijab-pookie-cats-balloons.webp",
+        caption: "Member Birthday Card — Pookie Pastel Kittens & Foil Balloons Keepsake",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/birthday-card-09-botanical-daisy-portrait.webp",
+        caption: "Member Birthday Card — Ethereal Botanical Wildflower & Daisies Keepsake",
         type: "portrait"
       },
       {
@@ -4920,8 +4953,8 @@ export const PROJECTS: Project[] = [
     client: "Internal Initiatives & People Operations",
     year: "2025 – Present",
     duration: "Ongoing",
-    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Recognition Systems", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, and the Member Birthday Carousel motion initiative that replaced static circular cake graphics with dynamic member-first video spotlights.",
+    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and the Member Birthday Carousel motion initiative that replaced static circular cake graphics with dynamic member-first video spotlights.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
@@ -5019,6 +5052,23 @@ export const PROJECTS: Project[] = [
             type: "portrait",
             embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1492889088963334%2F&show_text=false&t=0",
             externalUrl: "https://www.facebook.com/reel/1492889088963334"
+          },
+          {
+            url: "/assets/projects/creative-initiatives/birthday-carousel-spotlight-akshata.webp",
+            caption: "Member Birthday Spotlight Carousel Slide — High-vibrancy portrait motion spotlight for Akshata Alornekar (January Edition), featuring branded sunset-to-cerulean lighting, festive script typography, and corporate AI-First identity.",
+            aspectRatio: "576/1024",
+            type: "portrait"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Proactive Culture Initiatives — New Year 2026 Animated Motion Countdown",
+        sectionDescription: "Bespoke animated motion graphic countdown conceived for SJ Innovation ringing in 2026. Features a futuristic speedometer-style gauge dial transitioning from 2025 to 2026 against a corporate sunset-to-cerulean atmospheric gradient, crowned with the official SJ Innovation AI First Solutions lockup.",
+        images: [
+          {
+            url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
+            caption: "New Year 2026 Animated Motion Countdown — Futuristic gauge meter transitioning from 2025 into 2026 with corporate gradient glow and AI-First branding.",
+            aspectRatio: "1/1"
           }
         ]
       },
@@ -5144,6 +5194,21 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/onboarding-welcome-akshata-alornekar.webp",
         caption: "Welcome Aboard — Talent Onboarding Social Showcase (Akshata Alornekar)",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/reels/reel-03-member-birthday-carousel-initiative.webp",
+        caption: "Member Birthday Carousel Motion Initiative — Social Video Spotlight Reel",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/birthday-carousel-spotlight-akshata.webp",
+        caption: "Member Birthday Spotlight Carousel Slide — Akshata Alornekar (January)",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
+        caption: "New Year 2026 Animated Motion Countdown — High-Tech Gauge Meter",
         type: "desktop"
       },
       {
