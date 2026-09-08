@@ -568,6 +568,8 @@ export const PROJECTS: Project[] = [
       "Social Design Systems",
       "LinkedIn Carousels",
       "Instagram Creatives",
+      "Paid Social Ad Creatives",
+      "Member Profile Banners",
       "B2B SaaS Pricing Teardowns",
       "Motion Video Reels",
       "Direct-Response Copywriting",
@@ -612,12 +614,21 @@ export const PROJECTS: Project[] = [
           "Produced the Black Friday Extended Offer Campaign Reel, driving urgency around $300 starter discounts and 20% pro tier savings",
           "Maintained consistent brand typography, neon cyan and deep cobalt color grading, and high-tempo beat synchronization"
         ]
+      },
+      {
+        title: "Direct-Response Ads & Member Profile Branding",
+        description: "Engineered high-converting 1:1 feed ad creatives and promotional LinkedIn profile banners for team advocates.",
+        details: [
+          "Developed 'Your Data, Your Servers, Your Control' feed ads featuring 3D holographic security shield lockups and compliance proofs (SOC 2, HIPAA, GDPR)",
+          "Executed the disruptive 'Like Ch*tGPT, but we can't see your chats' privacy campaign tailored for financial modeling and academic research contexts",
+          "Designed the Black Friday Sale 20% Off member LinkedIn profile banner, establishing visual alignment across employee networks during peak promotional windows"
+        ]
       }
     ],
     outcomes: [
       { label: "Cost Transparency", value: "50–60% Savings", subtext: "Clear financial contrast of $9k/yr per-seat vs $3k–$4k direct API costs" },
-      { label: "Carousel Formats", value: "4 Full Campaigns (4:5)", subtext: "15 high-retention slides optimized for LinkedIn & Instagram mobile feeds" },
-      { label: "Campaign Ecosystem", value: "Carousels + 9:16 Video", subtext: "Integrated social carousels and motion video reels into unified campaign" }
+      { label: "Campaign Ecosystem", value: "Carousels, Ads & Reels", subtext: "15 carousel slides, 4 paid feed ads, 1 member banner, and 2 video reels" },
+      { label: "Data Sovereignty", value: "Zero-Logging Focus", subtext: "High-contrast positioning on behind-firewall security and data privacy" }
     ],
     outcomeSummary: "Turned complex SaaS pricing mechanics into an authoritative, viral social campaign that directly positions CollabAI Control Tower as the financially superior, enterprise-grade alternative to generic per-seat chatbot subscriptions.",
     gallerySections: [
@@ -834,6 +845,48 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
+        sectionTitle: "Direct-Response Paid Ads & Privacy Creatives",
+        sectionDescription: "High-conversion 1:1 feed advertisements targeting enterprise founders and operators, focusing on behind-your-firewall data infrastructure and absolute privacy guarantees.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-ad-01-your-data-servers-control-shield.webp",
+            caption: "Paid Social Ad — 'Your Data, Your Servers, Your Control': Self-Hosted AI Agents That Never Leave Your Infrastructure",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-ad-02-enterprise-firewall-features-demo.webp",
+            caption: "Enterprise Features & Demo CTA — 'Deploy Enterprise AI Behind Your Firewall': SOC 2, HIPAA & GDPR Compliance, Custom Access Controls & Book a Demo",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-ad-03-chatgpt-privacy-finance-home.webp",
+            caption: "Privacy Positioning Ad — 'Like Ch*tGPT, But We Can't See Your Chats': Confidential Financial, Tax & Accounting Workflows",
+            type: "desktop",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/collabai/creatives/collabai-ad-04-chatgpt-privacy-research-library.webp",
+            caption: "Privacy Positioning Ad — 'Like Ch*tGPT, But We Can't See Your Chats': Secure Academic & Deep Corporate Research",
+            type: "desktop",
+            aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "Promotional Campaigns & Member Profile Banners",
+        sectionDescription: "Digital brand amplification assets and LinkedIn profile banners created for team members and brand advocates to drive seasonal conversion during high-impact promotions.",
+        images: [
+          {
+            url: "/assets/projects/collabai/creatives/collabai-banner-black-friday-linkedin-profile.webp",
+            caption: "CollabAI Black Friday Sale — Member LinkedIn Profile Banner (20% Off Limited Time Offer)",
+            type: "desktop",
+            aspectRatio: "4/1"
+          }
+        ]
+      },
+      {
         sectionTitle: "High-Impact Video Reels & Paid Social Campaigns",
         sectionDescription: "Vertical 9:16 motion video reels driving product education, feature adoption, and promotional conversions across Meta channels.",
         images: [
@@ -946,6 +999,36 @@ export const PROJECTS: Project[] = [
         caption: "Slide 03 — Self-Hosted AI Without the Self-Hosting Headaches",
         type: "carousel",
         aspectRatio: "4/5"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-ad-01-your-data-servers-control-shield.webp",
+        caption: "Paid Social Ad — Your Data, Your Servers, Your Control (Self-Hosted Infrastructure)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-ad-02-enterprise-firewall-features-demo.webp",
+        caption: "Enterprise Features & Demo CTA — Deploy Enterprise AI Behind Your Firewall",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-ad-03-chatgpt-privacy-finance-home.webp",
+        caption: "Privacy Positioning Ad — Like Ch*tGPT, But We Can't See Your Chats (Finance & Accounting)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-ad-04-chatgpt-privacy-research-library.webp",
+        caption: "Privacy Positioning Ad — Like Ch*tGPT, But We Can't See Your Chats (Academic & Research)",
+        type: "desktop",
+        aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/collabai/creatives/collabai-banner-black-friday-linkedin-profile.webp",
+        caption: "CollabAI Black Friday Sale — Member LinkedIn Profile Banner",
+        type: "desktop",
+        aspectRatio: "4/1"
       },
       {
         url: "/assets/projects/reels/reel-10-collabai-nonprofit-ai.webp",

@@ -55,6 +55,11 @@ const CompactThumbnailCard: React.FC<CompactThumbnailCardProps> = ({
           wrapperWidth: 'w-[320px] sm:w-[500px]',
           aspectClass: 'aspect-[16/9]',
         };
+      case '4/1':
+        return {
+          wrapperWidth: 'w-[320px] sm:w-[560px]',
+          aspectClass: 'aspect-[4/1]',
+        };
       default:
         return {
           wrapperWidth: 'w-[320px] sm:w-[480px]',
