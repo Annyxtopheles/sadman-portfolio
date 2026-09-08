@@ -181,6 +181,167 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "ephysician-redesign",
+    slug: "ephysician-redesign",
+    title: "ePhysician Redesign — AI Front Desk Automation",
+    category: "AI Systems",
+    status: "LIVE",
+    company: "CollabAI / SJ Innovation",
+    client: "ePhysician HealthHub AI",
+    year: "2026",
+    duration: "2 Months",
+    scope: [
+      "Product Redesign",
+      "Healthcare UX",
+      "Design Systems",
+      "Conversion Optimization",
+      "Visual Identity",
+      "Interactive Prototyping",
+      "Frontend Engineering"
+    ],
+    summary: "Comprehensive landing page and product UI/UX redesign for ePhysician — an enterprise AI front-desk automation platform powered by Collab AI for US medical and dental clinics. Replaces a fragmented, low-contrast legacy interface with an immersive clinical command center experience that clearly communicates 24/7 EHR phone intake, automated insurance verification, HIPAA compliance, and clinic ROI.",
+    coverImage: "/assets/projects/ephysician/ephysician-cover.webp",
+    liveUrl: "https://annyxtopheles.github.io/ephysician-redesign/",
+    tldr: {
+      challenge: "The legacy landing page suffered from generic white-label positioning, unclear value proposition ('AI That Answers Your Phones'), low visual contrast, and an uninspiring conversion funnel that failed to convert busy healthcare clinic directors.",
+      role: "Lead Product & Brand Designer — spearheaded the end-to-end messaging overhaul, design system creation, interactive command center mockups, and high-trust conversion architecture.",
+      method: "Engineered an empathetic pain-point hook ('Stop Starting Your Day 40 Voicemails Deep'), an immersive clinical blue hero showcasing the Agentic Command Center, an interactive ROI cost calculator, and a high-trust dark conversion footer backed by HIPAA and PCI-DSS compliance badges."
+    },
+    problem: "Medical and dental practices receive dozens of missed calls, appointment reschedules, and insurance inquiries every morning, leading to severe staff burnout and lost clinic revenue. The original website communicated technical features in a sterile, low-contrast layout without showing what the platform actually looked like or addressing physician skepticism around patient trust and EHR safety.",
+    process: [
+      {
+        title: "Empathy-First Messaging & Hero Overhaul",
+        description: "Pivoted the core narrative from generic AI buzzwords to visceral front-desk operational pain points. Replaced 'AI That Answers Your Phones' with 'Stop Starting Your Day 40 Voicemails Deep' — immediately resonating with medical practice managers overwhelmed by morning backlogs.",
+        details: [
+          "Highlighted conversational AI agent 'Sarah' capable of 24/7 call triage, insurance verification, and direct EHR booking",
+          "Engineered an immersive clinical cyan-to-azure gradient backdrop with a floating glassmorphic navigation bar",
+          "Showcased the live Agentic Command Center interface featuring Provider Change, Clinic FAQ, and After-Hours triage agents"
+        ]
+      },
+      {
+        title: "Healthcare Trust, Compliance & Integration Architecture",
+        description: "Addressed critical provider objections regarding patient data privacy and technical friction by placing certified compliance and seamless EHR integrations front and center.",
+        details: [
+          "Integrated prominent HIPAA Compliant and PCI-DSS Validated Level 1 security credential seals",
+          "Surfaced live integrations with top EHR/PMS systems including NexHealth, eClinicalWorks, Sikka, Twilio, Stedi, and Stripe",
+          "Emphasized zero hardware requirements and rapid 10-minute clinic onboarding"
+        ]
+      },
+      {
+        title: "Conversion Funnel & Footer Transformation",
+        description: "Replaced a sterile, uninspiring reseller footer with an emotional, high-conversion closing banner: 'Give your front desk its mornings back'.",
+        details: [
+          "Designed a high-contrast dark visual card featuring a relaxed physician in a calm clinic environment",
+          "Incorporated dynamic EKG heartbeat pulse dividers to reinforce clinical reliability",
+          "Built a frictionless 1-click 'Request a Demo' modal providing scheduled overview transparency without credit card commitments"
+        ]
+      }
+    ],
+    aiWorkflow: "Modeled real-time clinical conversation flows, interactive EHR appointment booking states, and live telephony agent simulations to stress-test layout contrast, modal transitions, and mobile viewport ergonomics.",
+    outcomes: [
+      { label: "Narrative Clarity", value: "100%", subtext: "Replaced sterile white-label copy with empathetic clinical pain points" },
+      { label: "Visual Trust", value: "HIPAA & PCI", subtext: "Prominent compliance seals, EHR badges, and certified data privacy" },
+      { label: "Live Deployment", value: "Production", subtext: "Fully responsive modern web experience deployed on GitHub Pages" }
+    ],
+    outcomeSummary: "Transformed ePhysician from a generic software utility into an authoritative, high-trust healthcare AI platform that visually proves operational ROI and resonates deeply with clinic managers.",
+    beforeAfter: {
+      beforeImage: "/assets/projects/ephysician/ephysician-hero-before.webp",
+      afterImage: "/assets/projects/ephysician/ephysician-hero-after.webp",
+      beforeLabel: "Original White Landing Page",
+      afterLabel: "Redesigned Clinical Command Center",
+      caption: "Hero Section Evolution — Slide to compare the legacy generic layout vs. the immersive, high-contrast command center hero",
+      aspectRatio: "1024/528"
+    },
+    gallerySections: [
+      {
+        sectionTitle: "Interface Evolutions & Before/After Comparisons",
+        sectionDescription: "Direct side-by-side and interactive slider comparisons contrasting the original legacy ePhysician landing page against the redesigned clinical experience. Slide horizontally across both views to inspect the dramatic improvements in typography, visual hierarchy, and conversion design.",
+        images: [
+          {
+            url: "/assets/projects/ephysician/ephysician-hero-after.webp",
+            caption: "Hero Section Redesign — Slide to compare legacy generic hero vs. redesigned immersive command center",
+            aspectRatio: "1024/528",
+            type: "comparison",
+            comparison: {
+              beforeImage: "/assets/projects/ephysician/ephysician-hero-before.webp",
+              afterImage: "/assets/projects/ephysician/ephysician-hero-after.webp",
+              beforeLabel: "Original White Layout",
+              afterLabel: "Redesigned Command Center"
+            }
+          },
+          {
+            url: "/assets/projects/ephysician/ephysician-footer-after.webp",
+            caption: "Closing Conversion Banner — Slide to compare legacy reseller footer vs. high-converting emotional CTA banner",
+            aspectRatio: "1024/528",
+            type: "comparison",
+            comparison: {
+              beforeImage: "/assets/projects/ephysician/ephysician-footer-before.webp",
+              afterImage: "/assets/projects/ephysician/ephysician-footer-after.webp",
+              beforeLabel: "Original Reseller Footer",
+              afterLabel: "Redesigned High-Trust CTA"
+            }
+          }
+        ]
+      },
+      {
+        sectionTitle: "Clinical Automation Architecture & Production Assets",
+        sectionDescription: "Key production visuals and visual design artifacts that power the redesigned ePhysician digital presence.",
+        images: [
+          {
+            url: "/assets/projects/ephysician/ephysician-cover.webp",
+            caption: "ePhysician Redesign — Official Showcase Cover & Hero Presentation",
+            aspectRatio: "1024/576",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/ephysician/ephysician-hero-after.webp",
+            caption: "Agentic Command Center & Hero UI — Full panoramic desktop viewport",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/ephysician/ephysician-footer-after.webp",
+            caption: "High-Trust Conversion Suite — 'Give your front desk its mornings back' CTA banner with compliance verification",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          }
+        ]
+      }
+    ],
+    galleryImages: [
+      {
+        url: "/assets/projects/ephysician/ephysician-cover.webp",
+        caption: "ePhysician Redesign — AI Front Desk Automation",
+        aspectRatio: "1024/576",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/ephysician/ephysician-hero-after.webp",
+        caption: "Redesigned Agentic Command Center Hero",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/ephysician/ephysician-footer-after.webp",
+        caption: "High-Trust Clinic Demo CTA Banner",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/ephysician/ephysician-hero-before.webp",
+        caption: "Legacy ePhysician Hero (Before)",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/ephysician/ephysician-footer-before.webp",
+        caption: "Legacy Reseller Footer (Before)",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      }
+    ]
+  },
+  {
     id: "szk-personal-archive",
     slug: "szk-personal-archive",
     title: "My Personal Digital Archive",
