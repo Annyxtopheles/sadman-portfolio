@@ -1635,11 +1635,17 @@ export const PROJECTS: Project[] = [
           },
           {
             title: "International Men's Day — Celebrating Guidance & Quiet Strength (19 November)",
-            description: "Sleek social media commemorative graphic designed for International Men's Day honoring dedication, mentorship, and quiet strength. Features a tailored suit silhouette, bold orange polka-dot necktie, subtle gender symbol watermark, and playful mustache emblem integrated into high-contrast typography.",
+            description: "Two sleek social media commemorative directions designed for International Men's Day honoring dedication, mentorship, and quiet strength. Features modern sartorial styling with tailored suits, polka-dot neckties, collar adjustment gestures, subtle male gender symbol watermarks, and playful mustache emblems integrated into typography.",
             slides: [
               {
                 url: "/assets/projects/social-greetings/international-mens-day-social.webp",
-                caption: "International Men's Day Social Greeting — Modern sartorial styling with tailored suit lapel, polka-dot necktie, and custom mustache typography on deep cobalt blue.",
+                caption: "Direction 01 — Modern Sartorial Silhouette: Deep cobalt blue styling with tailored suit lapel, orange polka-dot necktie, and custom mustache typography.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/international-mens-day-02-orange-suit-tie-adjustment.webp",
+                caption: "Direction 02 — Vibrant Suit & Tie Adjustment: High-energy electric blue and warm orange composition featuring a tailored suit, crisp collar adjustment gesture, mustache emblem, and official SJ Innovation branding.",
                 type: "carousel",
                 aspectRatio: "1/1"
               }
@@ -2105,7 +2111,13 @@ export const PROJECTS: Project[] = [
           },
           {
             url: "/assets/projects/social-greetings/international-mens-day-social.webp",
-            caption: "International Men's Day Social Greeting — Modern sartorial styling with tailored suit lapel, polka-dot necktie, and custom mustache typography on deep cobalt blue.",
+            caption: "Direction 01 — Modern Sartorial Silhouette: Deep cobalt blue styling with tailored suit lapel, orange polka-dot necktie, and custom mustache typography.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/international-mens-day-02-orange-suit-tie-adjustment.webp",
+            caption: "Direction 02 — Vibrant Suit & Tie Adjustment: High-energy electric blue and warm orange composition featuring a tailored suit, crisp collar adjustment gesture, mustache emblem, and official SJ Innovation branding.",
             type: "carousel",
             aspectRatio: "1/1"
           },
@@ -2490,6 +2502,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/international-mens-day-social.webp",
         caption: "International Men's Day — Sartorial Silhouette Social Greeting",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/international-mens-day-02-orange-suit-tie-adjustment.webp",
+        caption: "International Men's Day — Vibrant Suit & Tie Adjustment Social Greeting",
         type: "carousel"
       },
       {
@@ -3556,7 +3573,7 @@ export const PROJECTS: Project[] = [
     ],
     outcomes: [
       { label: "Mediums", value: "Print & Stationery", subtext: "Postcards, event cards, posters, awards, & placards" },
-      { label: "Assets Delivered", value: "40 Designs", subtext: "3 infographics, 2 posters, 6 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
+      { label: "Assets Delivered", value: "44 Designs", subtext: "3 infographics, 6 posters, 7 certificates, 14 holiday & Thanksgiving cards, 3 Women's Day, 2 Men's Day, 6 birthday, 4 placards" },
       { label: "Office & Outreach", value: "Multi-Campus & US", subtext: "Displayed across campuses and mailed to US enterprise clients" }
     ],
     outcomeSummary: "Delivered a cohesive suite of workplace print collateral that transforms blank office walls into functional frameworks, cultural anchors, and official honors of team excellence.",
@@ -3578,8 +3595,8 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "Recognition Systems — SJ Control Tower Appreciation Certificates",
-        sectionDescription: "Modular certificate design system created for the SJ Control Tower internal recognition program. Designed in horizontal A4 landscape format with distinct domain badge iconography, subtle geometric grid and topological linework textures, and brand-aligned pastel gradients honoring exceptional team contributions.",
+        sectionTitle: "Recognition & Certification Systems — SJ Innovation Appreciation & AI Internship Certificates",
+        sectionDescription: "Official corporate recognition and academic certification systems engineered for SJ Innovation. Features modular horizontal A4 appreciation certificates for the internal SJ Control Tower program with custom domain badge iconography, alongside official AI Internship completion certificates styled with dynamic polygonal mosaic borders, verifiable credential IDs, and executive leadership sign-offs.",
         images: [
           {
             url: "/assets/projects/print-designs/certificate-01-innovation-instigator.webp",
@@ -3610,6 +3627,11 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/certificate-06-urgent-attention.webp",
             caption: "Urgent Attention — Policy Non-Compliance Novelty Citation (Issued to Yeasin Ramin)",
             aspectRatio: "1024/724"
+          },
+          {
+            url: "/assets/projects/print-designs/certificate-07-ai-internship-christiana-mattheopoulos.webp",
+            caption: "Certificate of AI Internship — Official 6-Week Completion Honor with Geometric Mosaic Borders (Awarded to Christiana Mattheopoulos)",
+            aspectRatio: "964/715"
           }
         ]
       },
@@ -3828,7 +3850,7 @@ export const PROJECTS: Project[] = [
       },
       {
         sectionTitle: "Office Culture & Motivational Wall Posters",
-        sectionDescription: "Large-format environmental posters designed to energize engineering pods and communal break areas, celebrating grit, championship mindset, and everyday team camaraderie.",
+        sectionDescription: "Large-format environmental posters designed to energize engineering pods, collaborative hubs, and executive corridors. Spans championship mindset, team camaraderie through laughter, employee wellbeing frameworks, AI workplace innovation catalysts, and forward-looking career trajectory murals.",
         images: [
           {
             url: "/assets/projects/print-designs/mohammad-ali-champion-office-poster.webp",
@@ -3844,6 +3866,21 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
             caption: "7 Dimensions of Employee Happiness — Workplace Wellbeing Wall Poster",
             aspectRatio: "512/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/ai-workplace-innovation-catalyst-poster.webp",
+            caption: "Workplace Innovation Catalyst Poster — 'AI: The Secret Sauce for Businesses That Want to Be Unfairly Brilliant'",
+            aspectRatio: "512/1024"
+          },
+          {
+            url: "/assets/projects/print-designs/crafting-tomorrows-solutions-ai-poster.webp",
+            caption: "Future Solutions Wall Poster — 'Crafting Tomorrow's Solutions with Today's AI'",
+            aspectRatio: "1024/682"
+          },
+          {
+            url: "/assets/projects/print-designs/elevate-career-trajectory-ai-insights-poster.webp",
+            caption: "Career Trajectory Wall Poster — 'Elevate Your Career Trajectory with the Insights of AI'",
+            aspectRatio: "1024/682"
           }
         ]
       }
@@ -3887,6 +3924,11 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/print-designs/certificate-06-urgent-attention.webp",
         caption: "SJ Control Tower Citation — Urgent Attention",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/certificate-07-ai-internship-christiana-mattheopoulos.webp",
+        caption: "SJ Innovation Certificate of AI Internship (Christiana Mattheopoulos)",
         type: "desktop"
       },
       {
@@ -4048,6 +4090,21 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/print-designs/employee-happiness-7-dimensions-infographic.webp",
         caption: "Office Wall Poster — 7 Dimensions of Employee Happiness",
         type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/ai-workplace-innovation-catalyst-poster.webp",
+        caption: "Office Wall Poster — AI Workplace Innovation Catalyst",
+        type: "portrait"
+      },
+      {
+        url: "/assets/projects/print-designs/crafting-tomorrows-solutions-ai-poster.webp",
+        caption: "Office Wall Poster — Crafting Tomorrow's Solutions with Today's AI",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/print-designs/elevate-career-trajectory-ai-insights-poster.webp",
+        caption: "Office Wall Poster — Elevate Your Career Trajectory with AI Insights",
+        type: "desktop"
       }
     ]
   },
