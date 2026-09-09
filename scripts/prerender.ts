@@ -299,12 +299,16 @@ function updateHtmlTags(
   html = html.replace(/<meta\s+name=["']twitter:url["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:url" content="${escapeHtml(options.url)}" />`);
   html = html.replace(/<meta\s+name=["']twitter:image["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:image" content="${escapeHtml(options.image)}" />`);
 
-  // 5. Inject Canonical & JSON-LD if not present
-  const headExtra = `
-    <link rel="canonical" href="${escapeHtml(options.url)}" />
-    ${options.jsonLd ? `<script type="application/ld+json">${JSON.stringify(options.jsonLd)}</script>` : ""}
-  </head>`;
-  html = html.replace(/<\/head>/i, headExtra);
+  // 5. Replace or Inject Canonical & JSON-LD
+  if (/<link\s+rel=["']canonical["'][^>]*\/?>/i.test(html)) {
+    html = html.replace(/<link\s+rel=["']canonical["'][^>]*\/?>/i, `<link rel="canonical" href="${escapeHtml(options.url)}" />`);
+  } else {
+    html = html.replace(/<\/head>/i, `    <link rel="canonical" href="${escapeHtml(options.url)}" />\n  </head>`);
+  }
+
+  if (options.jsonLd) {
+    html = html.replace(/<\/head>/i, `    <script type="application/ld+json">${JSON.stringify(options.jsonLd)}</script>\n  </head>`);
+  }
 
   // 6. Inject prerendered body into #root
   html = html.replace('<div id="root"></div>', `<div id="root">${options.contentHtml}</div>`);
