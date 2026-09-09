@@ -244,14 +244,6 @@ export const PROJECTS: Project[] = [
       { label: "Live Deployment", value: "Production", subtext: "Fully responsive modern web experience deployed on GitHub Pages" }
     ],
     outcomeSummary: "Transformed ePhysician from a generic software utility into an authoritative, high-trust healthcare AI platform that visually proves operational ROI and resonates deeply with clinic managers.",
-    beforeAfter: {
-      beforeImage: "/assets/projects/ephysician/ephysician-hero-before.webp",
-      afterImage: "/assets/projects/ephysician/ephysician-hero-after.webp",
-      beforeLabel: "Original White Landing Page",
-      afterLabel: "Redesigned Clinical Command Center",
-      caption: "Hero Section Evolution — Slide to compare the legacy generic layout vs. the immersive, high-contrast command center hero",
-      aspectRatio: "1024/528"
-    },
     gallerySections: [
       {
         sectionTitle: "Interface Evolutions & Before/After Comparisons",
@@ -282,39 +274,9 @@ export const PROJECTS: Project[] = [
             }
           }
         ]
-      },
-      {
-        sectionTitle: "Clinical Automation Architecture & Production Assets",
-        sectionDescription: "Key production visuals and visual design artifacts that power the redesigned ePhysician digital presence.",
-        images: [
-          {
-            url: "/assets/projects/ephysician/ephysician-cover.webp",
-            caption: "ePhysician Redesign — Official Showcase Cover & Hero Presentation",
-            aspectRatio: "1024/576",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/ephysician/ephysician-hero-after.webp",
-            caption: "Agentic Command Center & Hero UI — Full panoramic desktop viewport",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/ephysician/ephysician-footer-after.webp",
-            caption: "High-Trust Conversion Suite — 'Give your front desk its mornings back' CTA banner with compliance verification",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          }
-        ]
       }
     ],
     galleryImages: [
-      {
-        url: "/assets/projects/ephysician/ephysician-cover.webp",
-        caption: "ePhysician Redesign — AI Front Desk Automation",
-        aspectRatio: "1024/576",
-        type: "desktop"
-      },
       {
         url: "/assets/projects/ephysician/ephysician-hero-after.webp",
         caption: "Redesigned Agentic Command Center Hero",
