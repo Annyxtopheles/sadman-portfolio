@@ -2,7 +2,7 @@
 
 The official portfolio of **Sadman Zaman Khan** — designer and poet crafting meticulous designs for brands and digital products.
 
-🌐 **Live Website**: [https://sadman-portfolio.pages.dev](https://sadman-portfolio.pages.dev)
+🌐 **Live Website**: [https://sadmanportfolio.vercel.app](https://sadmanportfolio.vercel.app)
 
 ---
 

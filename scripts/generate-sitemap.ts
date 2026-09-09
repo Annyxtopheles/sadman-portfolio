@@ -4,7 +4,7 @@ import { POEMS } from "../src/data/poems";
 import { POSTS } from "../src/data/posts";
 import { PROJECTS } from "../src/data/projects";
 
-const BASE_URL = "https://sadman-portfolio.pages.dev";
+const BASE_URL = "https://sadmanportfolio.vercel.app";
 
 interface SitemapEntry {
   path: string;

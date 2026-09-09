@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { PROJECTS, Project } from "../src/data/projects";
 
-const BASE_URL = "https://sadman-portfolio.pages.dev";
+const BASE_URL = "https://sadmanportfolio.vercel.app";
 
 function escapeHtml(str: string | undefined | null): string {
   if (!str) return "";

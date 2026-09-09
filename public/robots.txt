@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://sadman-portfolio.pages.dev/sitemap.xml
+Sitemap: https://sadmanportfolio.vercel.app/sitemap.xml
