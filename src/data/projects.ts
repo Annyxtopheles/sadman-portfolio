@@ -435,7 +435,7 @@ export const PROJECTS: Project[] = [
     duration: "1 Month",
     scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
     summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
-    coverImage: "/assets/projects/clandest-mockup.webp",
+    coverImage: "/assets/projects/clandest/clandest-cover.webp",
     liveUrl: "https://clandestagency.vercel.app/",
     tldr: {
       challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
@@ -452,6 +452,15 @@ export const PROJECTS: Project[] = [
           "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
           "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
         ]
+      },
+      {
+        title: "Founder Collective Storytelling & Direct Intake Funnel",
+        description: "Bridged technical craft with personal authenticity by spotlighting the four-founder origin story from Munshiganj Polytechnic, paired with a frictionless direct-to-founder consultation form.",
+        details: [
+          "Curated an atmospheric collegiate team portrait celebrating the collective's four key disciplines: UI/UX design, client strategy, software engineering, and cinematic motion graphics",
+          "Engineered an interactive filterable video portfolio showcasing direct-response VSLs, product ads, and creator UGC",
+          "Integrated frictionless contact pathways including 1-click WhatsApp chat and 15-minute Google Meet scheduling without account-manager bureaucracy"
+        ]
       }
     ],
     aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
@@ -460,15 +469,61 @@ export const PROJECTS: Project[] = [
       { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
     ],
     outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
+    gallerySections: [
+      {
+        sectionTitle: "Studio Web Experience & Production Screenshots",
+        sectionDescription: "High-resolution desktop captures of the live Clandest Agency web presence highlighting the clean typography, filterable video reel portfolio, founding collective story, and direct conversion funnel.",
+        images: [
+          {
+            url: "/assets/projects/clandest/clandest-hero.webp",
+            caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/clandest/clandest-services.webp",
+            caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/clandest/clandest-founders.webp",
+            caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          },
+          {
+            url: "/assets/projects/clandest/clandest-contact.webp",
+            caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
+            aspectRatio: "1024/528",
+            type: "desktop"
+          }
+        ]
+      }
+    ],
     galleryImages: [
       {
-        url: "/assets/projects/clandest-mockup.webp",
-        caption: "Clandest Agency — Studio homepage showcasing brand, web development, and marketing video services",
+        url: "/assets/projects/clandest/clandest-hero.webp",
+        caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
+        aspectRatio: "1024/528",
         type: "desktop"
       },
       {
-        url: "/assets/projects/clandest-services.webp",
-        caption: "Services visual architecture — responsive card grid with fluid micro-interactions",
+        url: "/assets/projects/clandest/clandest-services.webp",
+        caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/clandest/clandest-founders.webp",
+        caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/clandest/clandest-contact.webp",
+        caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
+        aspectRatio: "1024/528",
         type: "desktop"
       }
     ]
