@@ -25,7 +25,7 @@ interface Experience {
 
 interface CapabilityItem {
   name: string;
-  category: 'uiux' | 'frontend' | 'ai' | 'brand';
+  category: 'uiux' | 'ai' | 'brand' | 'marketing';
   categoryLabel: string;
   description: string;
   proofProjects: { name: string; slug: string }[];
@@ -37,7 +37,7 @@ const CAPABILITIES: CapabilityItem[] = [
     name: 'Figma & Design Systems',
     category: 'uiux',
     categoryLabel: 'UI/UX Design',
-    description: 'Building tokenized variable libraries, responsive auto-layout components, and interactive prototypes for desktop and mobile.',
+    description: 'Building component libraries, auto-layout variants, variables, and high-fidelity interactive prototypes for web and mobile.',
     proofProjects: [
       { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
       { name: 'CollabAI Suite', slug: 'collabai-suite' },
@@ -45,10 +45,10 @@ const CAPABILITIES: CapabilityItem[] = [
     ]
   },
   {
-    name: 'High-Density Dashboards',
+    name: 'Dashboard Interface Design',
     category: 'uiux',
     categoryLabel: 'UI/UX Design',
-    description: 'Organizing complex financial, clinical, and operational data into clear, scannable modules with intuitive alert states.',
+    description: 'Organizing complex financial, clinical, and operational data into clear, scannable modules with intuitive alert hierarchies in Figma.',
     proofProjects: [
       { name: 'ICR Surveillance', slug: 'icr-debt-surveillance' },
       { name: 'Alyssa Kristin SaaS', slug: 'alyssa-kristin-saas' }
@@ -58,78 +58,57 @@ const CAPABILITIES: CapabilityItem[] = [
     name: 'User Flows & Wireframing',
     category: 'uiux',
     categoryLabel: 'UI/UX Design',
-    description: 'Mapping conversion funnels and user journeys to resolve usability bottlenecks before committing to high-fidelity layouts.',
+    description: 'Mapping conversion funnels and user journeys to fix layout confusion and hesitation before committing to polished designs.',
     proofProjects: [
       { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
       { name: 'Clandest Agency', slug: 'clandest-agency' }
     ]
   },
-  // Frontend & Prototyping
+  // AI-Assisted Workflows
   {
-    name: 'Semantic HTML5 & Fluid CSS',
-    category: 'frontend',
-    categoryLabel: 'Frontend & Prototyping',
-    description: 'Authoring clean semantic markup, fluid clamp typography scales, and accessible component styles with zero layout shift.',
+    name: 'Google Antigravity',
+    category: 'ai',
+    categoryLabel: 'AI Prototyping',
+    description: 'Directing Google Antigravity to translate design systems and layouts into live, responsive web prototypes and production pages.',
     proofProjects: [
-      { name: 'Clandest Agency', slug: 'clandest-agency' },
-      { name: 'Archivest', slug: 'archivest' }
+      { name: 'Personal Portfolio', slug: 'szk-personal-archive' },
+      { name: 'Clandest Agency', slug: 'clandest-agency' }
     ]
   },
   {
-    name: 'React, TypeScript & Tailwind',
-    category: 'frontend',
-    categoryLabel: 'Frontend & Prototyping',
-    description: 'Developing responsive web applications with static prerendering, client-side routing, and clean modular component state.',
+    name: 'ComfyUI (Local Models)',
+    category: 'ai',
+    categoryLabel: 'AI Generation',
+    description: 'Setting up local image generation workflows with custom safetensors checkpoints to generate unique visual assets.',
     proofProjects: [
-      { name: 'Personal Portfolio', slug: 'szk-personal-archive' },
       { name: 'CollabAI Suite', slug: 'collabai-suite' }
     ]
   },
   {
-    name: 'WebGL & Interactive Physics',
-    category: 'frontend',
-    categoryLabel: 'Frontend & Prototyping',
-    description: 'Integrating Three.js canvas elements, custom shader textures, and Rapier 3D rigid-body simulations for memorable interactive moments.',
-    proofProjects: [
-      { name: '3D Lanyard Badge', slug: 'szk-personal-archive' }
-    ]
-  },
-  // AI Workflows
-  {
-    name: 'AI-Assisted Prototyping',
+    name: 'Lovable & Claude Code',
     category: 'ai',
-    categoryLabel: 'AI Workflows',
-    description: 'Combining Claude Code, Lovable, and Figma AI plugins to move from rough concept to testable browser prototype in hours.',
+    categoryLabel: 'AI Prototyping',
+    description: 'Using Lovable and Claude to quickly turn wireframes into testable web applications to review UX with stakeholders.',
     proofProjects: [
       { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
       { name: 'CollabAI Suite', slug: 'collabai-suite' }
     ]
   },
   {
-    name: 'Local Models & Ollama',
+    name: 'Ollama (Local LLMs)',
     category: 'ai',
-    categoryLabel: 'AI Workflows',
-    description: 'Running local open-source LLMs to prototype private UX analysis, structured outputs, and multimodal asset pipelines.',
+    categoryLabel: 'AI Research',
+    description: 'Running local open-source models for competitive UX research, content exploration, and prompt testing.',
     proofProjects: [
       { name: 'CollabAI Suite', slug: 'collabai-suite' }
     ]
   },
+  // Brand & Visual
   {
-    name: 'Agentic Interface Design',
-    category: 'ai',
-    categoryLabel: 'AI Workflows',
-    description: 'Designing conversational turn states, model-selection toggles, and live streaming feedback for multi-agent workflows.',
-    proofProjects: [
-      { name: 'CollabAI Suite', slug: 'collabai-suite' },
-      { name: 'Control Tower Suite', slug: 'control-tower-suite' }
-    ]
-  },
-  // Brand & Production
-  {
-    name: 'Brand Systems & Vector Identity',
+    name: 'Adobe Illustrator & Photoshop',
     category: 'brand',
-    categoryLabel: 'Brand & Production',
-    description: 'Designing full vector mark suites, typographic scales, color systems, and comprehensive brand guideline manuals.',
+    categoryLabel: 'Brand Identity',
+    description: 'Designing full vector mark suites, brand guidelines, color palettes, typographic scales, and marketing assets.',
     proofProjects: [
       { name: 'NEXURA Identity', slug: 'nexura-brand-system' },
       { name: 'Clandest Agency', slug: 'clandest-agency' },
@@ -137,23 +116,34 @@ const CAPABILITIES: CapabilityItem[] = [
     ]
   },
   {
-    name: 'Direct-Response Ad Creative',
+    name: 'Marketing Graphics & Print',
     category: 'brand',
-    categoryLabel: 'Brand & Production',
-    description: 'Creating high-converting static, vertical story, and carousel ads configured directly in Meta Ads Manager for lead generation.',
+    categoryLabel: 'Visual Production',
+    description: 'Designing corporate banners, merchandise, social media carousels, and promotional event assets under tight turnarounds.',
+    proofProjects: [
+      { name: 'LuCreativ Theme Parks', slug: 'creative-initiatives' },
+      { name: 'Campus Rebranding', slug: 'campus-rebranding' }
+    ]
+  },
+  // Marketing & Growth
+  {
+    name: 'Meta Ads Manager & Creative',
+    category: 'marketing',
+    categoryLabel: 'Growth & Ads',
+    description: 'Designing direct-response ad visuals (feed, 9:16 story, carousels) and setting up targeted lead campaigns in Ads Manager.',
     proofProjects: [
       { name: 'ePhysician Paid Social', slug: 'ephysician-redesign' },
       { name: 'NonProfit AI Campaign', slug: 'control-tower-suite' }
     ]
   },
   {
-    name: 'Print, Pre-Press & OOH Signage',
-    category: 'brand',
-    categoryLabel: 'Brand & Production',
-    description: 'Preparing large-format corporate event backdrops, multi-venue theme park promotional collateral, and publication print layouts.',
+    name: 'On-Page SEO & Search Console',
+    category: 'marketing',
+    categoryLabel: 'On-Page SEO',
+    description: 'Structuring clean heading hierarchies, metadata, sitemaps, and verifying indexing through Google Search Console.',
     proofProjects: [
-      { name: 'LuCreativ Theme Parks', slug: 'creative-initiatives' },
-      { name: 'Campus Rebranding', slug: 'campus-rebranding' }
+      { name: 'Personal Portfolio', slug: 'szk-personal-archive' },
+      { name: 'Clandest Agency', slug: 'clandest-agency' }
     ]
   }
 ];
@@ -161,7 +151,7 @@ const CAPABILITIES: CapabilityItem[] = [
 const About: React.FC = () => {
   const { recordPortalFound } = useExploration();
   const portalRef = useRef<HTMLDivElement>(null);
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'uiux' | 'frontend' | 'ai' | 'brand'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'uiux' | 'ai' | 'brand' | 'marketing'>('all');
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   useEffect(() => {
@@ -179,7 +169,6 @@ const About: React.FC = () => {
     return () => observer.disconnect();
   }, [recordPortalFound]);
 
-  // Lock body scroll when resume modal is open
   useEffect(() => {
     if (isResumeModalOpen) {
       document.body.style.overflow = 'hidden';
@@ -225,45 +214,47 @@ const About: React.FC = () => {
     }
   ];
 
-  // Professional Experience with Thematic Impact Buckets
+  // Professional Experience
   const experiences: Experience[] = [
     {
       role: 'UI/UX Designer',
       company: 'SJ Innovation LLC',
       location: 'Dhaka, Bangladesh',
       period: 'September 2025 – Present',
-      highlight: 'Sole designer at SJ Innovation since February 2026, independently leading client and internal design initiatives across the company.',
+      highlight: 'Sole designer at SJ Innovation since February 2026, independently leading client and internal design work across the company.',
       thematicBuckets: [
         {
-          category: 'Sole Ownership & Brand Standards',
+          category: 'Brand Systems & Design Ownership',
           points: [
-            'Sole designer owning client and company-wide design work since February 2026, reporting directly to executive leadership.',
-            'Authored company-wide visual brand guidelines and design standards spanning product interfaces, presentation decks, and marketing collateral.',
-            'Designed brand identity and promotional materials for major milestones including SJ Innovation\'s 22nd Anniversary celebration and the Queens AI Week partnership (Queens Chamber of Commerce × SJ Innovation × Firstlight Cloud Xchange).'
+            'Independently own all client and internal design deliverables across the company since February 2026, reporting directly to executive leadership.',
+            'Authored company-wide visual brand guidelines and design standards spanning presentation decks, marketing collateral, and product identities.',
+            'Designed the official logo for Queens AI Week.',
+            'Led design and execution for SJ Innovation\'s 22nd Anniversary celebration (trophy crests, event collateral, merchandise, and media capture).'
           ]
         },
         {
-          category: 'AI-Native Products & Healthcare UX',
+          category: 'Interface Design & Dashboards',
           points: [
-            'Designed complete visual identities, design systems, and product UI/UX for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI, Marketing AI, RealtorHelp).',
-            'Led end-to-end UI/UX redesign of CollabAI\'s multi-agent platform, replacing a cluttered layout with a focused dark interface, clean typography, and real-time model integrations (Groq, Gemini, OpenRouter).',
-            'Designed InfoFluence diagnostic reports with structured data hierarchy for high-stakes AWS partner presentations.'
+            'Designed visual identities and logos for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI, Marketing AI, RealtorHelp).',
+            'Led the UI/UX redesign of CollabAI\'s multi-agent platform, replacing a cluttered layout with a clean dark interface and scannable typography.',
+            'Designed ICR Debt Surveillance — a 15-module Bloomberg Terminal–style dashboard layout in Figma for credit investors.',
+            'Alyssa Kristin (luxury bridal SaaS) — designed connected mobile Stylist App, Admin CMS, and CRM interfaces; client praised the designs as "clean, thorough, and easily accessible."',
+            'InfoFluence — designed diagnostic report presentations with clean visual hierarchy for AWS partner meetings.'
           ]
         },
         {
-          category: 'Client Scale & High-Density Systems',
+          category: 'Client Scale & Visual Production',
           points: [
-            'Scaled the LuCreativ theme-park account from an initial engagement to sustained near-daily production across 7+ properties (Six Flags St. Louis, Valleyfair, Michigan\'s Adventure, Worlds of Fun, Schlitterbahn Galveston), consistently recognized for fast turnaround and reliability.',
-            'Designed ICR Debt Surveillance — a Bloomberg Terminal–style 15-module dashboard for credit investors, featuring live data layouts, alert states, and investor charts.',
-            'Designed unified multi-surface experience for Alyssa Kristin luxury bridal SaaS: connecting mobile Stylist App, Admin CMS, and CRM into one coherent system.'
+            'Scaled the LuCreativ theme-park account from an initial engagement to sustained, near-daily production across 7+ properties (Six Flags St. Louis, Valleyfair, Michigan\'s Adventure, Worlds of Fun, Schlitterbahn Galveston), consistently praised by the client for reliability and fast turnaround.'
           ]
         },
         {
-          category: 'Prototyping, Paid Growth & SEO',
+          category: 'AI Prototyping, Paid Ads & SEO',
           points: [
-            'Built functional front-end prototypes using low-code platforms (Lovable) and hand-coded HTML/CSS/React to test layouts with stakeholders and validate usability prior to development.',
-            'Rebuilt underperforming Meta ad creatives for ePhysician from sales lead data, turning a 0-lead, 4-day campaign into an active ~2–3.5 leads/day pipeline on the same budget.',
-            'Conducted technical on-page SEO audits across product landing pages, resolving heading hierarchies, duplicate canonical tags, and mobile Core Web Vitals.'
+            'Used Google Antigravity and Lovable to build working, testable browser prototypes from Figma designs to validate user flows with stakeholders before development.',
+            'Built and ran Meta ad campaigns (ePhysician, NonProfit AI) in Ads Manager: designed targeted ad creatives that generated 5 leads on day one, turning a stalled campaign into an active ~2–3.5 leads/day pipeline on the same budget.',
+            'Conducted on-page SEO audits across landing pages, fixing heading structures, metadata, and verifying indexing via Google Search Console.',
+            'Set up local ComfyUI image generation workflows with safetensors models and tested local LLMs (Ollama) for competitive UX research.'
           ]
         }
       ],
@@ -291,7 +282,7 @@ const About: React.FC = () => {
       location: 'Dhaka, Bangladesh',
       period: 'May 2025 – September 2025',
       bullets: [
-        'Designed and delivered 200+ digital and print assets for US-based global campaigns, including targeted Meta ads, LinkedIn editorial carousels, large-format event banners, and internal brand installations.'
+        'Designed 200+ digital and print marketing assets for US-based campaigns, including targeted Meta ads, LinkedIn carousels, event banners, and internal office graphics.'
       ],
       images: [
         {
@@ -312,7 +303,7 @@ const About: React.FC = () => {
       location: 'Global Clients',
       period: 'March 2025 – April 2025',
       bullets: [
-        'Completed 4 client engagements for US-based businesses (edtech branding, physical store signage, gym marketing collateral) during post-graduation period, delivering logo designs and brand systems with 100% on-time delivery.'
+        'Completed 4 client engagements for US businesses (edtech branding, store signage, gym promotional materials), delivering logos and brand assets with 100% on-time delivery.'
       ],
       images: [
         {
@@ -329,83 +320,59 @@ const About: React.FC = () => {
     }
   ];
 
-  // Independent Technical Projects
-  const technicalProjects = [
+  // Selected Projects (combining independent and academic)
+  const selectedProjects = [
+    {
+      title: 'ePhysician Landing Page Redesign',
+      role: 'Lead Product & Brand Designer',
+      slug: 'ephysician-redesign',
+      description: 'Comprehensive landing page and branding redesign for an enterprise AI front-desk platform. Overhauled messaging, high-contrast command center hero, interactive ROI calculator, and HIPAA/PCI trust seals.'
+    },
     {
       title: 'Clandest Agency',
-      role: 'Co-Founder, UI/UX & Brand Design',
-      link: 'https://clandestagency.vercel.app',
+      role: 'Co-Founder & Lead Designer',
       slug: 'clandest-agency',
-      description: 'Co-founded a 4-person creative studio. Built and shipped the production website with semantic HTML5, fluid clamp CSS typography, and structured data with an AI crawler manifest (llms.txt) for clean search indexing.'
+      link: 'https://clandestagency.vercel.app',
+      description: 'Co-founded a 4-person creative studio. Designed the visual identity, typography system, and web layout, using AI tools to ship a clean site with on-page SEO.'
     },
     {
-      title: 'Commercial Portfolio Architecture',
-      role: 'Sole Architect & Designer',
-      link: 'https://sadmanportfolio.vercel.app',
+      title: 'Personal Portfolio Architecture',
+      role: 'Designer & AI-Directed Creator',
       slug: 'szk-personal-archive',
-      description: 'Engineered this multi-case-study portfolio with automated static prerendering across 41+ routes for zero-JavaScript crawlability, custom WebP image pipelines, and subtle interactive micro-interactions.'
+      link: 'https://sadmanportfolio.vercel.app',
+      description: 'Designed an interactive 19-project portfolio with dark aesthetic and case studies, directing Google Antigravity to build and deploy static pages with verified Google indexing.'
     },
     {
-      title: 'AncestryForge',
-      role: 'Full-Stack Architecture & Design',
-      description: 'Designed and built a family-tree platform from scratch: a directed acyclic graph (DAG) engine handling pedigree collapse, multiple marriages, and historical dates with GEDCOM 5.5.1 import/export.'
+      title: 'NEXURA — Brand Identity System',
+      role: 'Capstone Project · Score: 4.0',
+      slug: 'nexura-brand-system',
+      description: 'Led end-to-end brand identity development in Illustrator & Photoshop: created custom logo system, 40-page brand guideline book, and mockups across 20+ applications (stationery, packaging, signage).'
     },
     {
-      title: 'Design Token System',
-      role: 'Systems Architecture',
-      description: 'Authored a lightweight design-token compiler generating tokens across color, typography, spacing, and elevation, coupled with an automated validation suite for WCAG contrast and scale consistency.'
+      title: 'Campus Rebranding & Digital Presence',
+      role: 'Munshiganj Polytechnic Institute (2022 – 2025)',
+      slug: 'campus-rebranding',
+      description: 'Designed visual branding and event print materials for campus ceremonies; designed the logo and social guidelines for the Computer Club; built and managed a custom resource website.'
     }
   ];
 
-  // Key Projects & Endeavors
-  const keyProjects = [
+  // Recognition & Praise (Accurate Attribution)
+  const recognitionAndPraise = [
     {
-      title: 'Campus Rebranding & Digital Infrastructure',
-      organization: 'Munshiganj Polytechnic Institute',
-      period: '2022 – 2025',
-      description: 'Spearheaded an end-to-end visual branding overhaul for campus ceremonies, providing professional print suites (signage, custom recognition materials) and establishing standardized digital guidelines across social media.',
-      points: [
-        'Developed and deployed a fully functional custom website to digitize unit resources, while managing multi-channel social growth and high-impact marketing collateral over three years.',
-        'Designed foundational brand identity for the new campus Computer Club, including custom logos, typography, and automated social media layout frameworks.'
-      ]
+      title: 'StoryGroove Project Dedication',
+      detail: '"In the StoryGroove project, your dedication to taking full ownership of the work was instrumental in delivering the end product to the client and ensuring her success. The effort you put in, including working late nights and weekends, was truly impressive and made a noticeable difference for the team. As a result, the client was very satisfied with the outcome, and we were able to strengthen our relationship and build trust and confidence with her."'
     },
     {
-      title: 'NEXURA — Brand Identity System (Final Capstone Project)',
-      organization: 'Munshiganj Polytechnic Institute · Score: 4.0 in 8th Semester',
-      period: 'Capstone Project',
-      description: 'Led end-to-end brand identity development: designed custom logo system with multiple mark variations, developed a comprehensive 40-page brand guideline document, and created application mockups across 20+ touchpoints.',
-      points: [
-        'Established typographic hierarchy, color psychology framework, and usage standards to ensure visual consistency across all media applications.',
-        'Delivered formal presentation to faculty evaluators, articulating strategic rationale for all design decisions; scored a perfect 4.0 evaluation.'
-      ]
-    }
-  ];
-
-  // Professional Achievements
-  const professionalAchievements = [
-    {
-      title: 'Client Impact & Ownership',
-      detail: 'Took full ownership of the StoryGroove project during its launch phase, working late nights and weekends to deliver on tight deadlines. Client feedback praised the designs as "clean, thorough, and easily accessible," strengthening repeat engagement.'
+      title: 'Alyssa Kristin Bridal SaaS',
+      detail: 'Client specifically praised the multi-platform design deliverable (mobile Stylist App, Admin CMS, CRM) as "clean, thorough, and easily accessible."'
     },
     {
-      title: 'Brand Consistency Leadership',
-      detail: 'Have led SJ Innovation\'s visual brand consistency since probation—spanning the Control Tower product suite, internal culture materials, and company-wide presentations—including authoring the current brand guidelines from concept to implementation.'
+      title: 'LuCreativ Theme-Park Scale',
+      detail: 'Scaled from an initial project to sustained, near-daily production across 7+ theme-park venues (Six Flags, Valleyfair, Schlitterbahn), consistently recognized by the client for reliability, fast turnaround, and visual quality.'
     },
     {
-      title: 'Operational Resilience',
-      detail: 'Repeatedly stepped in during critical, short-notice periods (Restock Resource, weekend coverage during a teammate\'s family emergency) to maintain project continuity and client delivery timelines under pressure.'
-    },
-    {
-      title: 'Collaboration & Mentorship',
-      detail: 'Team members described collaborative approach as "pillars and compass," citing significant learning improvements and clarity from working together on complex tasks.'
-    },
-    {
-      title: 'UX Problem Solving',
-      detail: 'Resolved button-placement and layout friction on the Calysta Pro CRM campaign workflow that was creating user hesitation—team members specifically credited the improved clarity.'
-    },
-    {
-      title: 'Culture & Event Design',
-      detail: 'Led design and execution for SJ Innovation\'s 22nd Anniversary celebration—crest/trophy designs, zoom backgrounds, gift boxes, event props, and media capture—recognized by HR leadership for dedication.'
+      title: 'Team Ownership & Collaboration',
+      detail: 'Recognized by colleagues and senior business analysts for proactive ownership, clear communication, and delivering work with integrated self-critique.'
     }
   ];
 
@@ -479,7 +446,7 @@ const About: React.FC = () => {
     <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
         title="About & Resume — Sadman Zaman Khan"
-        description="Experience timeline, capabilities, achievements, and background of Sadman Zaman Khan — UI/UX Designer specializing in design systems, high-density dashboards, and AI-assisted prototyping."
+        description="Experience timeline, capabilities, and background of Sadman Zaman Khan — UI/UX Designer specializing in design systems, web dashboards, and AI-assisted prototyping."
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-16">
@@ -493,7 +460,7 @@ const About: React.FC = () => {
                   Sadman Zaman Khan
                 </h1>
                 <p className="text-xl sm:text-2xl text-[#888888] font-normal pt-1">
-                  UI/UX Designer | Design Systems | AI-Assisted Prototyping
+                  UI/UX Designer | Brand Systems | AI-Assisted Prototyping
                 </p>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-[#777777] pt-1">
                   <span>Dhaka, Bangladesh</span>
@@ -510,7 +477,7 @@ const About: React.FC = () => {
 
               {/* Honest, modest bio */}
               <p className="text-base sm:text-lg text-[#999999] font-normal leading-relaxed">
-                UI/UX Designer with hands-on experience across design systems, complex enterprise dashboards, and AI-assisted prototyping. I design practical interfaces—from healthcare automation tools to financial surveillance platforms—and build front-end prototypes to test ideas with teams quickly. Currently the sole designer at SJ Innovation, independently handling client and internal design initiatives.
+                UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, using AI tools like Google Antigravity and Lovable to translate design concepts into working, testable web prototypes quickly. Currently the sole designer at SJ Innovation, independently handling client and internal design projects across branding, interfaces, and marketing.
               </p>
 
               {/* Dual Resume CTAs & Quick Links */}
@@ -561,7 +528,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 2. Interactive Tool & Capabilities Stack (Concept C) */}
+        {/* 2. Interactive Tool & Capabilities Stack */}
         <section className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#1F1F1F] pb-4">
             <div className="space-y-1">
@@ -569,7 +536,7 @@ const About: React.FC = () => {
                 Capabilities &amp; Tool Stack
               </h2>
               <p className="text-sm text-[#888888]">
-                What I do, how I apply each tool, and where it was proven in production.
+                What I do, how I apply each tool, and where it was proven in real work.
               </p>
             </div>
 
@@ -578,9 +545,9 @@ const About: React.FC = () => {
               {[
                 { id: 'all', label: 'All' },
                 { id: 'uiux', label: 'UI/UX Design' },
-                { id: 'frontend', label: 'Frontend' },
-                { id: 'ai', label: 'AI Workflows' },
-                { id: 'brand', label: 'Brand & Print' }
+                { id: 'ai', label: 'AI Prototyping' },
+                { id: 'brand', label: 'Brand & Visual' },
+                { id: 'marketing', label: 'Growth & SEO' }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -638,7 +605,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 3. Professional Experience Timeline with Thematic Impact Buckets */}
+        {/* 3. Professional Experience Timeline */}
         <section className="space-y-8">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
@@ -716,19 +683,19 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 4. Independent Technical Projects */}
+        {/* 4. Selected Projects */}
         <section className="space-y-6">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Independent Technical Projects
+              Selected Projects &amp; Initiatives
             </h2>
             <p className="text-sm text-[#888888] pt-1">
-              Platforms, open tooling, and web architectures designed and engineered independently.
+              Key commercial redesigns, independent studio projects, and foundational work.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {technicalProjects.map((proj, pIdx) => (
+            {selectedProjects.map((proj, pIdx) => (
               <div
                 key={pIdx}
                 className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3 flex flex-col justify-between"
@@ -767,69 +734,33 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 5. Key Endeavors & Academic Projects */}
+        {/* 5. Recognition & Client Feedback */}
         <section className="space-y-6">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Key Endeavors &amp; Capstone
+              Recognition &amp; Feedback
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {keyProjects.map((proj, pIdx) => (
-              <div
-                key={pIdx}
-                className="p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-4 flex flex-col justify-between"
-              >
-                <div className="space-y-3">
-                  <div className="flex items-baseline justify-between gap-2 border-b border-[#1F1F1F] pb-3">
-                    <h3 className="text-lg font-normal text-[#FFFFFF]">{proj.title}</h3>
-                    <span className="text-xs text-[#777777] font-mono shrink-0">{proj.period}</span>
-                  </div>
-                  <p className="text-xs text-[#888888] font-normal">{proj.organization}</p>
-                  <p className="text-sm text-[#CCCCCC] font-normal leading-relaxed">{proj.description}</p>
-                </div>
-
-                <ul className="space-y-2 pt-2 text-xs text-[#999999] leading-relaxed">
-                  {proj.points.map((pt, ptIdx) => (
-                    <li key={ptIdx} className="flex items-start gap-2">
-                      <span className="text-[#FFFFFF] mt-0.5 shrink-0">›</span>
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* 6. Professional Contributions & Achievements */}
-        <section className="space-y-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Professional Contributions &amp; Achievements
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {professionalAchievements.map((ach, aIdx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {recognitionAndPraise.map((item, aIdx) => (
               <div
                 key={aIdx}
                 className="p-5 sm:p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-2"
               >
                 <div className="text-sm font-normal text-[#FFFFFF] border-b border-[#1F1F1F] pb-2 flex items-center justify-between">
-                  <span>{ach.title}</span>
+                  <span>{item.title}</span>
                   <span className="text-[10px] text-[#555555] font-mono">0{aIdx + 1}</span>
                 </div>
-                <p className="text-xs text-[#999999] font-normal leading-relaxed pt-1">
-                  {ach.detail}
+                <p className="text-xs text-[#AAAAAA] font-normal leading-relaxed pt-1 italic">
+                  {item.detail}
                 </p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* 7. Education & Certifications */}
+        {/* 6. Education & Certifications */}
         <section className="space-y-6">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
@@ -874,7 +805,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 8. Personal Interests & Human Dimension */}
+        {/* 7. Personal Interests & Human Dimension */}
         <section className="space-y-6">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
@@ -900,10 +831,9 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 9. Gateway to Personal Archive (Updated URL) */}
+        {/* 8. Gateway to Personal Archive */}
         <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
           <div className="max-w-4xl mx-auto space-y-10 text-center">
-            {/* SZK Header */}
             <div className="space-y-3">
               <span className="font-scanport text-[15pt] lowercase tracking-wider text-[#9E9484]">
                 beyond the corporate showcase
@@ -913,7 +843,6 @@ const About: React.FC = () => {
               </h2>
             </div>
 
-            {/* The Gateway Card — Styled in SZK's signature warm BorderGlow aesthetic */}
             <div className="relative w-full flex items-center justify-center">
               <a
                 href="https://sadmanzamankhan.vercel.app/"
@@ -935,17 +864,14 @@ const About: React.FC = () => {
                   className="w-full aspect-[16/10] min-h-[360px] sm:min-h-[440px] shadow-2xl transition-transform duration-300 rounded-[28px]"
                 >
                   <div className="relative w-full h-full overflow-hidden rounded-[26px]">
-                    {/* Real Screenshot Preview of SZK personal archive */}
                     <img
                       src="/assets/projects/szk-mockup.webp"
                       alt="sadman zaman khan personal archive live preview"
                       className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
 
-                    {/* Atmospheric warm vignette overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0E0D0B]/85 via-[#0E0D0B]/35 to-transparent group-hover:via-[#0E0D0B]/25 transition-colors duration-300" />
 
-                    {/* Centered Literary SZK-style Button */}
                     <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
                       <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F5F2EB] hover:bg-[#FFFFFF] text-[#1A1918] shadow-2xl border border-[#E5DFD3] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-scanport text-base sm:text-lg lowercase tracking-normal cursor-pointer">
                         <span>enter personal archive</span>
@@ -1008,7 +934,7 @@ const About: React.FC = () => {
                 <div className="space-y-1">
                   <h2 className="text-2xl font-bold text-[#FFFFFF]">SADMAN ZAMAN KHAN</h2>
                   <p className="text-sm text-[#AAAAAA]">
-                    UI/UX Designer | Design Systems | AI-Assisted Prototyping
+                    UI/UX Designer | Brand Systems | AI-Assisted Prototyping
                   </p>
                   <p className="text-xs text-[#777777] pt-1">
                     Dhaka, Bangladesh · +880 1869 504 388 · sadmanz.khan@gmail.com · sadmanportfolio.vercel.app
@@ -1021,7 +947,7 @@ const About: React.FC = () => {
                     Professional Summary
                   </h3>
                   <p className="text-xs text-[#AAAAAA] leading-relaxed">
-                    UI/UX Designer with hands-on experience in enterprise dashboards, design systems, and AI-assisted prototyping. Uses Figma and code-first prototypes (React/Tailwind) to turn complex requirements into testable products quickly. Sole designer at SJ Innovation since February 2026, independently leading client and internal design initiatives.
+                    UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, using AI tools like Google Antigravity and Lovable to translate design concepts into working, testable web prototypes quickly. Currently the sole designer at SJ Innovation, independently handling client and internal design projects across branding, interfaces, and marketing.
                   </p>
                 </div>
 
@@ -1032,16 +958,16 @@ const About: React.FC = () => {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#AAAAAA]">
                     <div>
-                      <strong className="text-[#FFFFFF]">UI/UX Design:</strong> Figma (Design Systems, Auto-layout), High-Density Dashboards, User Flows, Wireframing, Responsive Layouts.
+                      <strong className="text-[#FFFFFF]">UI/UX Design:</strong> Figma (Design Systems, Auto-layout, Variables, Wireframing, User Flows, Prototyping), Responsive Web &amp; Mobile Layouts, Dashboard Interface Design.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">Frontend &amp; Code:</strong> HTML5, CSS3/Tailwind, React, TypeScript, Three.js/Rapier, Git, Static Site Generation.
+                      <strong className="text-[#FFFFFF]">AI-Assisted Workflows:</strong> Google Antigravity (AI-directed web prototyping), ComfyUI (safetensors models), Lovable, Claude Code, Ollama (local models), Figma AI.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">AI Workflows:</strong> Claude Code, Ollama (Local Models), Replicate API, Lovable Prototyping, Prompt Engineering.
+                      <strong className="text-[#FFFFFF]">Brand Identity &amp; Visual:</strong> Adobe Illustrator &amp; Photoshop, Logo &amp; Brand Systems, Vector Illustration, Marketing Graphics, Social Carousels, Event Banners.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">Brand &amp; Growth:</strong> Adobe Illustrator/Photoshop, Vector Identity, Meta Ads Manager, Print Pre-press, Technical SEO.
+                      <strong className="text-[#FFFFFF]">Marketing &amp; Growth:</strong> Meta Ads Manager (ad creative design &amp; campaign setup), On-Page SEO (metadata, headings, sitemaps, Search Console), WordPress Administration.
                     </div>
                   </div>
                 </div>
@@ -1061,11 +987,12 @@ const About: React.FC = () => {
                       Sole designer since Feb 2026, leading all client and internal design work across the company.
                     </p>
                     <ul className="list-disc pl-4 space-y-1 text-xs text-[#AAAAAA] leading-relaxed">
-                      <li>Designed complete visual identities and UI/UX for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI).</li>
-                      <li>Scaled LuCreativ theme-park account across 7+ properties (Six Flags, Schlitterbahn, Valleyfair) with near-daily turnaround.</li>
-                      <li>Designed ICR Debt Surveillance: 15-module Bloomberg-style financial dashboard with live data tables and alert metrics.</li>
-                      <li>Led CollabAI platform redesign: replaced cluttered interface with minimal multi-model chat UI tested across viewports.</li>
-                      <li>Rebuilt ePhysician Meta ad campaigns from sales lead data, producing an active ~2–3.5 leads/day pipeline on the same budget.</li>
+                      <li>Designed visual identities and logos for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI).</li>
+                      <li>Scaled LuCreativ theme-park account across 7+ properties (Six Flags, Valleyfair, Schlitterbahn) with near-daily turnaround.</li>
+                      <li>Designed ICR Debt Surveillance: 15-module Bloomberg-style financial dashboard layout in Figma.</li>
+                      <li>Alyssa Kristin luxury bridal SaaS: designed connected mobile Stylist App, Admin CMS, and CRM interfaces (client praised designs as "clean, thorough, and easily accessible").</li>
+                      <li>Built and ran Meta ad campaigns in Ads Manager (ePhysician), producing an active ~2–3.5 leads/day pipeline on the same budget.</li>
+                      <li>Built working browser prototypes with Google Antigravity and Lovable to test user flows with stakeholders before development.</li>
                     </ul>
                   </div>
 
@@ -1075,7 +1002,7 @@ const About: React.FC = () => {
                       <span className="text-xs text-[#777777] font-mono">May 2025 – Sep 2025</span>
                     </div>
                     <p className="text-xs text-[#AAAAAA] leading-relaxed">
-                      Delivered 200+ digital and print assets for US client campaigns, including Meta ads, LinkedIn carousels, and event installations.
+                      Designed 200+ digital and print assets for US client campaigns, including Meta ads, LinkedIn carousels, and event banners.
                     </p>
                   </div>
                 </div>
