@@ -10152,7 +10152,7 @@ export const PROJECTS: Project[] = [
             id: "sji-medical-pharma-showcase",
             title: "Medical & Pharma Client Showcase (15 Slides)",
             description: "Industry-tailored capability deck featuring healthcare compliance (HIPAA, 21 CFR Part 11, GAMP 5) and pharma case studies.",
-            documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-medical-pharma-presentation.pdf",
+            documentUrl: "/assets/projects/creative-initiatives/medical-pharma-deck/sji-presentation-medical-pharma-2026.pdf",
             documentTitle: "SJI Medical & Pharma Client Showcase Presentation (PDF)",
             slides: [
           {
@@ -10252,7 +10252,7 @@ export const PROJECTS: Project[] = [
             id: "sji-corporate-company-deck",
             title: "Corporate Company Deck 2026 (18 Slides)",
             description: "Flagship corporate capabilities deck covering global engineering presence, core competencies, client testimonials, and enterprise engagement models.",
-            documentUrl: "/assets/projects/creative-initiatives/company-deck/sj-innovation-company-deck-2026.pdf",
+            documentUrl: "/assets/projects/creative-initiatives/company-deck/sji-company-deck-2026.pdf",
             documentTitle: "SJ Innovation LLC Company Deck 2026 (PDF)",
             slides: [
           {
