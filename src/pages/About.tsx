@@ -226,35 +226,36 @@ const About: React.FC = () => {
         {
           category: 'Brand Systems & Design Ownership',
           points: [
-            'Independently own all client and internal design deliverables across the company since February 2026, reporting directly to executive leadership.',
-            'Authored company-wide visual brand guidelines and design standards spanning presentation decks, marketing collateral, and product identities.',
-            'Designed the official logo for Queens AI Week.',
-            'Led design and execution for SJ Innovation\'s 22nd Anniversary celebration (trophy crests, event collateral, merchandise, and media capture).'
+            'Independently own all client and internal design deliverables across SJ Innovation since February 2026, reporting directly to executive leadership.',
+            'Created complete visual identities, logos, OpenGraph preview assets, and 10+ comprehensive sales enablement decks for AI Control Tower products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI, Agency CT, HR CT).',
+            'Designed the official logo for Queens AI Week (Queens Chamber of Commerce × SJ Innovation × Firstlight Cloud Xchange).',
+            'Spearheaded end-to-end creative direction for SJ Innovation\'s 22nd Anniversary across 3 global offices (Dhaka, Sylhet, Goa) — designed anniversary logo, event banners, award crests/trophies, merchandise packaging, and post-event video reel.'
           ]
         },
         {
-          category: 'Interface Design & Dashboards',
+          category: 'Interface Design & High-Stakes Client Delivery',
           points: [
-            'Designed visual identities and logos for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI, Marketing AI, RealtorHelp).',
-            'Led the UI/UX redesign of CollabAI\'s multi-agent platform, replacing a cluttered layout with a clean dark interface and scannable typography.',
-            'Designed ICR Debt Surveillance — a 15-module Bloomberg Terminal–style dashboard layout in Figma for credit investors.',
-            'Alyssa Kristin (luxury bridal SaaS) — designed connected mobile Stylist App, Admin CMS, and CRM interfaces; client praised the designs as "clean, thorough, and easily accessible."',
-            'InfoFluence — designed diagnostic report presentations with clean visual hierarchy for AWS partner meetings.'
+            'Alyssa Kristin (luxury bridal SaaS) — designed connected multi-platform ecosystem (mobile Stylist App, Web Admin CMS, and CRM); praised by client leadership as "clean, thorough, and easily accessible."',
+            'StoryGrooveAI — conducted comprehensive 40+ point UX audit, redesigning hero layout, pricing tiers, and onboarding flows to drive user clarity; recognized by project leadership for taking full ownership to ensure client success.',
+            'CollabAI Suite — led UI/UX overhaul of multi-agent platform, transforming a complex layout into an intuitive dark command-center interface with scannable typography.',
+            'ICR Debt Surveillance — designed 15-module Bloomberg Terminal–style credit surveillance dashboard layout in Figma with distinct visual alert hierarchies.',
+            'InfoFluence — designed McKinsey-style strategic diagnostic reports and presentation decks for AWS partner executive reviews.'
           ]
         },
         {
-          category: 'Client Scale & Visual Production',
+          category: 'Client Scale & Rapid Production',
           points: [
-            'Scaled the LuCreativ theme-park account from an initial engagement to sustained, near-daily production across 7+ properties (Six Flags St. Louis, Valleyfair, Michigan\'s Adventure, Worlds of Fun, Schlitterbahn Galveston), consistently praised by the client for reliability and fast turnaround.'
+            'Scaled the LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan\'s Adventure, Worlds of Fun, Schlitterbahn Galveston, Enchanted Parks).',
+            'Commended by client leadership for consistent same-day delivery, managing high-volume promotional asset pipelines, and proactively catching template flaws before publication.'
           ]
         },
         {
-          category: 'AI Prototyping, Paid Ads & SEO',
+          category: 'AI Prototyping, Web Discovery & Growth',
           points: [
-            'Used Google Antigravity and Lovable to build working, testable browser prototypes from Figma designs to validate user flows with stakeholders before development.',
-            'Built and ran Meta ad campaigns (ePhysician, NonProfit AI) in Ads Manager: designed targeted ad creatives that generated 5 leads on day one, turning a stalled campaign into an active ~2–3.5 leads/day pipeline on the same budget.',
-            'Conducted on-page SEO audits across landing pages, fixing heading structures, metadata, and verifying indexing via Google Search Console.',
-            'Set up local ComfyUI image generation workflows with safetensors models and tested local LLMs (Ollama) for competitive UX research.'
+            'Structured and optimized 761+ pages across 3 major website properties for AI discoverability and on-page SEO on the Lovable platform (JSON-LD schemas, heading hierarchies, metadata, and Google Search Console indexing).',
+            'Used Google Antigravity and Lovable to rapidly convert Figma designs into functional, testable browser prototypes to validate user flows with stakeholders prior to engineering.',
+            'Built and managed targeted Meta ad campaigns in Ads Manager (ePhysician, NonProfit AI), taking a stalled campaign to an active ~2–3.5 qualified leads/day on the same budget.',
+            'Set up local ComfyUI image generation workflows with custom safetensors checkpoints; tested local open-source models (Ollama) for competitive UX research.'
           ]
         }
       ],
@@ -356,23 +357,27 @@ const About: React.FC = () => {
     }
   ];
 
-  // Recognition & Praise (Accurate Attribution)
+  // Recognition & Praise (Paraphrased & Accurately Attributed)
   const recognitionAndPraise = [
     {
-      title: 'StoryGroove Project Dedication',
-      detail: '"In the StoryGroove project, your dedication to taking full ownership of the work was instrumental in delivering the end product to the client and ensuring her success. The effort you put in, including working late nights and weekends, was truly impressive and made a noticeable difference for the team. As a result, the client was very satisfied with the outcome, and we were able to strengthen our relationship and build trust and confidence with her."'
+      title: 'Client Trust & Full Ownership (StoryGrooveAI)',
+      detail: 'Commended by project leadership for taking complete ownership under tight deadlines, conducting an in-depth 40+ point UX audit and redesign that built strong client confidence and delivered a successful product launch.'
     },
     {
-      title: 'Alyssa Kristin Bridal SaaS',
-      detail: 'Client specifically praised the multi-platform design deliverable (mobile Stylist App, Admin CMS, CRM) as "clean, thorough, and easily accessible."'
+      title: 'Multi-Platform Usability (Alyssa Kristin Bridal SaaS)',
+      detail: 'Multi-device design deliverables (mobile Stylist App, Web Admin CMS, and CRM) commended directly by client leadership during review as "clean, thorough, and easily accessible."'
     },
     {
-      title: 'LuCreativ Theme-Park Scale',
-      detail: 'Scaled from an initial project to sustained, near-daily production across 7+ theme-park venues (Six Flags, Valleyfair, Schlitterbahn), consistently recognized by the client for reliability, fast turnaround, and visual quality.'
+      title: 'Rapid Production & Proactive QA (LuCreativ Theme Parks)',
+      detail: 'Praised by external agency partners for reliable same-day turnarounds across 7+ regional theme parks (Six Flags, Valleyfair, Schlitterbahn) and actively catching template flaws before publication.'
     },
     {
-      title: 'Team Ownership & Collaboration',
-      detail: 'Recognized by colleagues and senior business analysts for proactive ownership, clear communication, and delivering work with integrated self-critique.'
+      title: 'Cross-Functional Dependability (Team & Leadership)',
+      detail: 'Recognized by QA leads and senior business analysts as a dependable design partner who works with proactive self-critique, bridges brand and functional requirements, and requires zero handholding.'
+    },
+    {
+      title: 'Honors & Corporate Milestones (SJ Innovation)',
+      detail: 'Awarded Performer of the Month (November 2025) for high-impact creative output; Runner-Up at the AI Innovation Hackathon (November 2025); celebrated 1-Year Work Anniversary milestone.'
     }
   ];
 
@@ -973,48 +978,79 @@ const About: React.FC = () => {
                 </div>
 
                 {/* Experience */}
-                <div className="space-y-4 border-t border-[#1F1F1F] pt-4">
+                <div className="space-y-5 border-t border-[#1F1F1F] pt-4">
                   <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
                     Professional Experience
                   </h3>
 
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-baseline">
-                      <h4 className="font-semibold text-[#FFFFFF]">UI/UX Designer — SJ Innovation LLC</h4>
-                      <span className="text-xs text-[#777777] font-mono">Sep 2025 – Present</span>
+                  <div className="space-y-3">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
+                      <h4 className="font-semibold text-[#FFFFFF] text-sm">UI/UX Designer — SJ Innovation LLC</h4>
+                      <span className="text-xs text-[#888888] font-mono">Sep 2025 – Present · Dhaka, Bangladesh</span>
                     </div>
-                    <p className="text-xs text-[#999999] italic">
-                      Sole designer since Feb 2026, leading all client and internal design work across the company.
+                    <p className="text-xs text-[#AAAAAA] italic bg-[#141414] px-3 py-1.5 rounded-[3px] border border-[#222222]">
+                      Promoted to Sole Designer in Feb 2026, independently leading all corporate and client design initiatives across the company.
                     </p>
-                    <ul className="list-disc pl-4 space-y-1 text-xs text-[#AAAAAA] leading-relaxed">
-                      <li>Designed visual identities and logos for 10+ AI-native Control Tower products (ePhysician, MortgageAI, NonProfit AI).</li>
-                      <li>Scaled LuCreativ theme-park account across 7+ properties (Six Flags, Valleyfair, Schlitterbahn) with near-daily turnaround.</li>
-                      <li>Designed ICR Debt Surveillance: 15-module Bloomberg-style financial dashboard layout in Figma.</li>
-                      <li>Alyssa Kristin luxury bridal SaaS: designed connected mobile Stylist App, Admin CMS, and CRM interfaces (client praised designs as "clean, thorough, and easily accessible").</li>
-                      <li>Built and ran Meta ad campaigns in Ads Manager (ePhysician), producing an active ~2–3.5 leads/day pipeline on the same budget.</li>
-                      <li>Built working browser prototypes with Google Antigravity and Lovable to test user flows with stakeholders before development.</li>
+                    <ul className="list-disc pl-4 space-y-2 text-xs text-[#AAAAAA] leading-relaxed">
+                      <li><strong className="text-[#FFFFFF]">Interface Design &amp; Client Delivery:</strong> Designed connected multi-device SaaS suite for Alyssa Kristin (mobile Stylist App, Admin CMS, CRM), praised by client leadership as "clean, thorough, and easily accessible." Conducted 40+ point UX audit and redesign for StoryGrooveAI to improve conversion funnels; overhauled CollabAI into a clean, dark command-center interface; designed 15-module Bloomberg-style credit surveillance layout for ICR in Figma.</li>
+                      <li><strong className="text-[#FFFFFF]">Brand Systems &amp; Sales Enablement:</strong> Created full visual identities, logos, OpenGraph assets, and 10+ comprehensive sales enablement decks for AI-native Control Tower suites (ePhysician, Marketing AI, Client Success AI, MortgageAI, NonProfit AI, RealtorHelp). Designed official logo for Queens AI Week. Directed full visual campaign for SJ Innovation's 22nd Anniversary across 3 global offices (trophies, stage banners, merchandise, post-event reel).</li>
+                      <li><strong className="text-[#FFFFFF]">Client Scale &amp; Rapid Production:</strong> Scaled LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston). Commended by client leadership for reliable same-day delivery and proactive template QA.</li>
+                      <li><strong className="text-[#FFFFFF]">AI Prototyping, Web Discovery &amp; Growth:</strong> Structured and optimized 761+ pages across 3 major properties on the Lovable platform for on-page SEO and AI discoverability (JSON-LD schemas, heading hierarchies, Search Console indexing). Used Google Antigravity and Lovable to build testable web prototypes from Figma designs to validate user journeys before engineering. Built Meta ad creative suites and managed ad sets in Ads Manager (ePhysician, NonProfit AI), establishing an active ~2–3.5 leads/day pipeline.</li>
                     </ul>
                   </div>
 
-                  <div className="space-y-1 pt-2">
-                    <div className="flex justify-between items-baseline">
-                      <h4 className="font-semibold text-[#FFFFFF]">Intern Graphic Designer — SJ Innovation LLC</h4>
-                      <span className="text-xs text-[#777777] font-mono">May 2025 – Sep 2025</span>
+                  <div className="space-y-2 pt-2 border-t border-[#1a1a1a]">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
+                      <h4 className="font-semibold text-[#FFFFFF] text-sm">Intern Graphic Designer — SJ Innovation LLC</h4>
+                      <span className="text-xs text-[#888888] font-mono">May 2025 – Sep 2025 · Dhaka, Bangladesh</span>
                     </div>
-                    <p className="text-xs text-[#AAAAAA] leading-relaxed">
-                      Designed 200+ digital and print assets for US client campaigns, including Meta ads, LinkedIn carousels, and event banners.
+                    <ul className="list-disc pl-4 space-y-1 text-xs text-[#AAAAAA] leading-relaxed">
+                      <li>Produced 200+ digital and print marketing assets for US-based client and internal campaigns, including high-converting Meta feed/story ads, technical LinkedIn editorial carousels, and corporate event signage.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Selected Independent Work */}
+                <div className="space-y-3 border-t border-[#1F1F1F] pt-4">
+                  <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                    Selected Independent Projects
+                  </h3>
+                  <div className="space-y-2 text-xs text-[#AAAAAA] leading-relaxed">
+                    <p>
+                      <strong className="text-[#FFFFFF]">Clandest Agency (2025):</strong> Co-founded a 4-person creative studio. Led visual identity, typography system, and responsive web design, directing AI tools to ship a clean online presence with on-page SEO.
+                    </p>
+                    <p>
+                      <strong className="text-[#FFFFFF]">Personal Portfolio Archive (2025–2026):</strong> Designed and directed the development of a 19-project interactive portfolio featuring custom dark aesthetics, case study architectures, and verified Google indexing.
                     </p>
                   </div>
                 </div>
 
+                {/* Endorsements & Recognition */}
+                <div className="space-y-3 border-t border-[#1F1F1F] pt-4">
+                  <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                    Key Endorsements &amp; Honors
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#AAAAAA]">
+                    <div className="space-y-1">
+                      <p><strong className="text-[#FFFFFF]">Client Commendations:</strong> Praised by Alyssa Kristin leadership for "clean, thorough, easily accessible" multi-device UX; commended by LuCreativ / 3i Advertising for same-day delivery and proactive template QA.</p>
+                      <p><strong className="text-[#FFFFFF]">Leadership Recognition:</strong> Commended by project leadership for taking full ownership to ensure client success on tight deadlines (StoryGrooveAI); recognized as a dependable cross-functional design partner.</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p><strong className="text-[#FFFFFF]">Performer of the Month:</strong> Awarded November 2025 at SJ Innovation for outstanding creative output.</p>
+                      <p><strong className="text-[#FFFFFF]">AI Hackathon Runner-Up:</strong> Recognized for AI mortgage transparency prototype (Nov 2025).</p>
+                      <p><strong className="text-[#FFFFFF]">1-Year Milestone:</strong> Honored for progression from intern to sole designer (May 2026).</p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Education */}
-                <div className="space-y-1.5 border-t border-[#1F1F1F] pt-4">
+                <div className="space-y-2 border-t border-[#1F1F1F] pt-4">
                   <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
                     Education &amp; Certifications
                   </h3>
-                  <div className="text-xs text-[#AAAAAA] space-y-1">
+                  <div className="text-xs text-[#AAAAAA] space-y-1.5">
                     <p><strong className="text-[#FFFFFF]">Diploma in Engineering in Computer Science</strong> — Munshiganj Polytechnic Institute (2021 – 2025)</p>
-                    <p>Certifications: Design System in Figma (Grameenphone Academy), Claude Code in Action (Anthropic), User Experience (Accenture), Inbound Marketing (HubSpot).</p>
+                    <p><strong className="text-[#FFFFFF]">Certifications:</strong> Claude Code in Action (Anthropic, 2026) · Design System in Figma (Grameenphone Academy, 2025) · Digital Skills: User Experience (Accenture, 2025) · HubSpot Inbound Marketing (2026) · B1 English for Developers, 95.2% (freeCodeCamp, 2026) · Graphic Design Level-3 (NSDA, 2024).</p>
                   </div>
                 </div>
               </div>
