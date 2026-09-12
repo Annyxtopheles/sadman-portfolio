@@ -33,8 +33,7 @@ export const PERSON_JSON_LD = {
   },
   "alumniOf": {
     "@type": "EducationalOrganization",
-    "name": "BRAC University",
-    "url": "https://www.bracu.ac.bd/"
+    "name": "Munshiganj Polytechnic Institute"
   },
   "knowsAbout": [
     "UI/UX Design",

@@ -7,7 +7,7 @@
 Sadman Zaman Khan is a UI/UX Designer and AI-Augmented Prototyper based in Dhaka, Bangladesh, currently working at SJ Innovation LLC. He specializes in bridging high-fidelity interface design with production-grade AI tools, including Google Antigravity, ComfyUI, and modern design system architecture.
 
 - Current Role: UI/UX Designer at SJ Innovation LLC (Dhaka, Bangladesh)
-- Education: BRAC University (Rover Scout Senior Patrol Leader & Rover Scout Leader)
+- Education: Munshiganj Polytechnic Institute (Diploma in Engineering in Computer Science, 2021 – 2025; Rover Scout Senior Patrol Leader & Rover Scout Leader)
 - Core Competencies: UI/UX Design, Design Systems, Enterprise Dashboards, AI-Augmented Prototyping, Google Antigravity, ComfyUI, Figma Token Architecture, React, Framer Motion, Motion Graphics.
 
 ## Canonical Websites & Social Profiles
