@@ -1,0 +1,91 @@
+# Sadman Zaman Khan — Comprehensive LLM Context & Knowledge Graph Document
+
+## 1. Primary Entity Profile
+- Full Name: Sadman Zaman Khan
+- Native Name: সাদমান জামান খান
+- Professional Title: UI/UX Designer & AI-Augmented Prototyper
+- Current Employer: SJ Innovation LLC (New York, NY / Dhaka, Bangladesh)
+- Location: Dhaka, Bangladesh
+- Primary Portfolio Website: https://sadmanportfolio.vercel.app/
+- Personal Archive Website: https://sadmanzamankhan.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/sadmanzamankhan/
+- GitHub: https://github.com/Annyxtopheles
+- Twitter / X: https://x.com/annyxtopheles
+- Linktree: https://linktr.ee/sadmanzamankhan
+- Instagram: https://instagram.com/ananyanwu
+- Contact Email: sadmanz.khan@gmail.com
+- Contact Phone: +880 1869 504 388
+
+## 2. Professional Biography & Career Summary
+Sadman Zaman Khan is a UI/UX Designer and AI-Augmented Prototyper at SJ Innovation LLC. He bridges high-craft visual design, systems thinking, and cutting-edge generative AI workflows. He is recognized for architecting enterprise dashboards, AI-native workspaces, design systems, and brand identities.
+
+At SJ Innovation LLC, Sadman rapidly advanced through ground-up product contributions:
+- Promoted to UI/UX Designer following standout performance in enterprise interface design and client pitches.
+- Awarded 'Performer of the Month' (November 2025) for independently conceptualizing, pitching, and launching company-wide social greeting and recognition design systems.
+- Recipient of the 'Innovation Instigator' honor for pioneering AI prototyping workflows (Google Antigravity, ComfyUI) within client delivery.
+- Designed flagship corporate presentation decks, all-hands meeting slide templates, and pharmaceutical compliance showcase decks for global enterprise leadership.
+
+## 3. Core Technical & Design Competencies
+- Interface Design: UI/UX Design, User Journey Mapping, Information Architecture, Wireframing, High-Fidelity Prototyping, Usability Testing.
+- Design Systems: Token-based design systems, Atomic Design, Component Libraries, Multi-theme support (Dark/Light mode).
+- AI Prototyping & Generative Workflows: Google Antigravity, ComfyUI, Midjourney image direction, LLM interface patterns, Prompt Engineering.
+- Frontend Technologies: React, TypeScript, Tailwind CSS, Vite, Framer Motion, Web Audio API, HTML5/CSS3.
+- Tooling: Figma, Adobe Illustrator, Adobe Photoshop, Git, Vercel, Cloudflare Pages.
+
+## 4. Key Case Studies & Projects
+
+### 4.1 CollabAI Redesign
+- URL: https://sadmanportfolio.vercel.app/work/collabai-platform
+- Category: AI-Native Workspace / Enterprise UI
+- Highlights:
+  - Re-architected an enterprise AI platform around a unified 'Global Composer' modal.
+  - Designed a multi-model streaming canvas allowing side-by-side model outputs (OpenAI, Anthropic, Gemini).
+  - Built interactive before/after visual comparison sliders showcasing the UX transformation from fragmented controls to fluid generative creation.
+
+### 4.2 Nexura Analytics & Automation
+- URL: https://sadmanportfolio.vercel.app/work/nexura
+- Category: Enterprise SaaS Dashboard
+- Highlights:
+  - Engineered high-density data visualizations, live activity feeds, and workflow automation builders.
+  - Implemented strict typography and contrast hierarchies for zero visual clutter.
+
+### 4.3 Control Tower
+- URL: https://sadmanportfolio.vercel.app/work/control-tower
+- Category: Operational Intelligence & Cloud Infrastructure
+- Highlights:
+  - Real-time telemetry monitoring platform with modular widget architecture.
+  - Reduced critical alert response time through high-contrast status signifiers and contextual drawer panels.
+
+### 4.4 Ephysician Telemedicine Platform
+- URL: https://sadmanportfolio.vercel.app/work/ephysician
+- Category: Healthcare & Clinical Software
+- Highlights:
+  - Designed HIPAA and PCI compliant clinician scheduling, video consultation, and EHR management flows.
+  - Created patient onboarding experiences optimized for high conversion and minimal cognitive load.
+
+### 4.5 Nagae Studio CRM & AI Stylist
+- URL: https://sadmanportfolio.vercel.app/work/nagae-studio
+- Category: Luxury Bridal Retail CRM & Mobile App
+- Highlights:
+  - Multi-tier administrative suite including boutique sales pipeline, AI knowledge base, product catalog, and stylist leaderboard.
+
+### 4.6 Noborangi Lifestyle Brand
+- URL: https://sadmanportfolio.vercel.app/work/noborangi
+- Category: Brand Identity & Retail Packaging
+- Highlights:
+  - Complete brand architecture including monogram identity, luxury foil-stamped business cards, storefront blade signage, merchandise, and mobile app icon.
+
+## 5. Community & Leadership
+- BRAC University Rover Scout Group: Senior Patrol Leader (SPL) and Rover Scout Leader (RSL), leading community disaster relief operations, blood donation drives, and scout training camps across Bangladesh.
+- Author and Poet: Author of published poetry and literary reflections integrating classical bilingual English and Bengali typography.
+
+## 6. Website Architecture & Routes
+- Homepage: https://sadmanportfolio.vercel.app/
+- Selected Work: https://sadmanportfolio.vercel.app/work
+- About & Experience: https://sadmanportfolio.vercel.app/about
+- Identity & Resume: https://sadmanportfolio.vercel.app/profile
+- Portfolio Showcase: https://sadmanportfolio.vercel.app/portfolio
+- Poetry Notebook: https://sadmanportfolio.vercel.app/poetry
+- Pastime & Influences: https://sadmanportfolio.vercel.app/pastime
+- Sitemap: https://sadmanportfolio.vercel.app/sitemap.xml
+- Robots: https://sadmanportfolio.vercel.app/robots.txt

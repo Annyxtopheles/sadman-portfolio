@@ -2,6 +2,7 @@ import React from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import { WorkGrid } from '@/components/WorkGrid';
+import { WEBSITE_JSON_LD, PERSON_JSON_LD } from '@/data/siteSettings';
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <SEOHead
         title="Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper"
         description="Personal portfolio of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper designing enterprise dashboards, AI-native product interfaces, motion graphics, and brand systems."
+        jsonLd={[WEBSITE_JSON_LD, PERSON_JSON_LD]}
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[96px] md:pt-[110px]">

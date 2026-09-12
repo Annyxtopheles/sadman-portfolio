@@ -6,6 +6,8 @@ import Lanyard from '@/components/profile/Lanyard';
 import idCardFrontSvg from '@/assets/ID Card Front for Profile in SZK.svg';
 import sjiIconSvg from '@/assets/SJI Icon.svg';
 
+import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
+
 const Profile = () => {
   return (
     <div className="relative min-h-screen bg-background flex flex-col justify-between overflow-x-clip">
@@ -15,9 +17,11 @@ const Profile = () => {
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'ProfilePage',
+          '@id': `${CANONICAL_SITE_URL}/profile#profilepage`,
           name: 'Sadman Zaman Khan — Profile & Resume',
           description: 'UI/UX Designer | AI-Augmented Prototyping | Brand Systems',
-          url: 'https://sadmanzamankhan.pages.dev/profile',
+          url: `${CANONICAL_SITE_URL}/profile`,
+          mainEntity: PERSON_JSON_LD,
         }}
       />
 

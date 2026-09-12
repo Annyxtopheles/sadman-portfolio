@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { PROJECTS, Project } from "../src/data/projects";
+import { PERSON_JSON_LD, PERSON_SAME_AS } from "../src/data/siteSettings";
 
 const BASE_URL = "https://sadmanportfolio.vercel.app";
 
@@ -255,10 +256,10 @@ function buildAboutHtml(): string {
       <section style="margin-bottom: 2rem;">
         <h2 style="font-size: 1.3rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Core Competencies</h2>
         <ul style="color: #ccc; margin-top: 1rem; line-height: 1.8; padding-left: 1.25rem;">
-          <li><strong>UI/UX Design:</strong> Enterprise SaaS, Design Systems (Figma), Responsive Web Layouts, User Flow Mapping, Interactive Prototyping.</li>
-          <li><strong>AI Integration &amp; Prototyping:</strong> Claude Code, Ollama, Replicate API, Prompt Engineering, Agentic UX.</li>
-          <li><strong>Visual &amp; Print Production:</strong> Adobe Creative Cloud (Illustrator, Photoshop), Vector Geometry, Large-Format Event Collateral, Publication Typography.</li>
-          <li><strong>Frontend Engineering:</strong> Semantic HTML5, CSS3/Tailwind, React/Vite, WebGL/Three.js, Rapier3D physics.</li>
+          <li><strong>UI/UX Design:</strong> Enterprise SaaS, Design Systems (Figma Token Architecture), Responsive Web Layouts, User Flow Mapping, Interactive Prototyping.</li>
+          <li><strong>AI Integration &amp; Prototyping:</strong> Google Antigravity, ComfyUI Generative Workflows, LLM Interface Patterns, Prompt Engineering.</li>
+          <li><strong>Visual &amp; Brand Systems:</strong> Identity Systems, Monograms, Packaging, Editorial Typography, Adobe Creative Cloud.</li>
+          <li><strong>Frontend Engineering:</strong> Semantic HTML5, CSS3/Tailwind, React/Vite, Web Audio API, Framer Motion.</li>
         </ul>
       </section>
     </main>
@@ -335,14 +336,7 @@ export function prerender() {
     url: `${BASE_URL}/`,
     image: `${BASE_URL}/og-image.webp`,
     contentHtml: buildHomeHtml(),
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sadman Zaman Khan",
-      "jobTitle": "UI/UX Designer & AI-Augmented Prototyper",
-      "url": BASE_URL,
-      "sameAs": ["https://github.com/Annyxtopheles", "https://twitter.com/annyxtopheles"]
-    }
+    jsonLd: PERSON_JSON_LD
   });
   writeFileSync(resolve(distDir, "index.html"), homeHtml, "utf-8");
   count++;
@@ -360,7 +354,13 @@ export function prerender() {
   writeFileSync(workPath, workHtml, "utf-8");
   count++;
 
-  // 3. Prerender /about
+  // 3. Prerender /portfolio (alias to /work)
+  const portfolioPath = resolve(distDir, "portfolio", "index.html");
+  ensureDir(portfolioPath);
+  writeFileSync(portfolioPath, workHtml, "utf-8");
+  count++;
+
+  // 4. Prerender /about
   const aboutHtml = updateHtmlTags(templateHtml, {
     title: "About & Experience — Sadman Zaman Khan",
     description: "Biography, design competencies, technical skills, and experience of UI/UX Designer Sadman Zaman Khan.",
@@ -373,7 +373,20 @@ export function prerender() {
   writeFileSync(aboutPath, aboutHtml, "utf-8");
   count++;
 
-  // 4. Prerender all projects
+  // 5. Prerender /profile (Bio & Archive profile)
+  const profileHtml = updateHtmlTags(templateHtml, {
+    title: "Personal Profile & Bio — Sadman Zaman Khan",
+    description: "Comprehensive background, design philosophy, values, education, and portfolio archive of Sadman Zaman Khan.",
+    url: `${BASE_URL}/profile`,
+    image: `${BASE_URL}/og-image.webp`,
+    contentHtml: buildAboutHtml()
+  });
+  const profilePath = resolve(distDir, "profile", "index.html");
+  ensureDir(profilePath);
+  writeFileSync(profilePath, profileHtml, "utf-8");
+  count++;
+
+  // 6. Prerender all projects
   for (const project of PROJECTS) {
     const projectUrl = `${BASE_URL}/work/${project.slug}`;
     const imageUrl = project.coverImage.startsWith("http")

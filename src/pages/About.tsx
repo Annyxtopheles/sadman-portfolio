@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { useExploration } from '@/context/ExplorationContext';
 import { BorderGlow } from '@/components/effects/BorderGlow';
 import { ArtifactCollage, ArtifactImage } from '@/components/ArtifactCollage';
+import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 interface ThematicBucket {
   category: string;
@@ -452,6 +453,26 @@ const About: React.FC = () => {
       <SEOHead
         title="About & Resume — Sadman Zaman Khan"
         description="Experience timeline, capabilities, and background of Sadman Zaman Khan — UI/UX Designer specializing in design systems, web dashboards, and AI-assisted prototyping."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "@id": `${CANONICAL_SITE_URL}/about#profilepage`,
+          "name": "About & Career Resume — Sadman Zaman Khan",
+          "url": `${CANONICAL_SITE_URL}/about`,
+          "mainEntity": PERSON_JSON_LD,
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Corporate Company Deck 2026",
+              "creator": { "@id": `${CANONICAL_SITE_URL}/#person` }
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Medical & Pharma Showcase Deck",
+              "creator": { "@id": `${CANONICAL_SITE_URL}/#person` }
+            }
+          ]
+        }}
       />
 
       <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-16">

@@ -2,6 +2,7 @@ import React from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import { ShowcaseGallerySection } from '@/components/portfolio/ShowcaseGallery';
+import { CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 const Portfolio = () => {
   return (
@@ -9,6 +10,15 @@ const Portfolio = () => {
       <SEOHead
         title="Portfolio — Sadman Zaman Khan"
         description="Selected design works, enterprise case studies, and visual explorations by Sadman Zaman Khan: design systems, interface architecture, and interactive experiences."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": `${CANONICAL_SITE_URL}/portfolio#gallery`,
+          "name": "Design Works & Visual Showcase — Sadman Zaman Khan",
+          "url": `${CANONICAL_SITE_URL}/portfolio`,
+          "description": "Selected design works, enterprise case studies, and visual explorations by Sadman Zaman Khan: design systems, interface architecture, and interactive experiences.",
+          "creator": { "@id": `${CANONICAL_SITE_URL}/#person` }
+        }}
       />
 
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full">

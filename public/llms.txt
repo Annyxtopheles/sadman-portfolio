@@ -1,11 +1,47 @@
-# Sadman Zaman Khan
+# Sadman Zaman Khan — Portfolio & Profile
 
-> Personal site of Sadman Zaman Khan — a portfolio of selected work, a notebook of poems, and a quiet blog about design, software, and attention.
+> Personal portfolio and design archive of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper crafting enterprise dashboards, AI-native product interfaces, brand systems, and design systems.
 
-## Pages
+## Professional Summary
 
-- [Home](/): Hero, featured projects, recent poetry and writing.
-- [Portfolio](/portfolio): Selected design, product, and side projects.
-- [Poetry](/poetry): A growing notebook of poems.
-- [Blog](/blog): Essays and short writing.
-- [Contact](/contact): Send Sadman a message.
+Sadman Zaman Khan is a UI/UX Designer and AI-Augmented Prototyper based in Dhaka, Bangladesh, currently working at SJ Innovation LLC. He specializes in bridging high-fidelity interface design with production-grade AI tools, including Google Antigravity, ComfyUI, and modern design system architecture.
+
+- Current Role: UI/UX Designer at SJ Innovation LLC (Dhaka, Bangladesh)
+- Education: BRAC University (Rover Scout Senior Patrol Leader & Rover Scout Leader)
+- Core Competencies: UI/UX Design, Design Systems, Enterprise Dashboards, AI-Augmented Prototyping, Google Antigravity, ComfyUI, Figma Token Architecture, React, Framer Motion, Motion Graphics.
+
+## Canonical Websites & Social Profiles
+
+- Portfolio: https://sadmanportfolio.vercel.app/
+- Personal Archive: https://sadmanzamankhan.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/sadmanzamankhan/
+- GitHub: https://github.com/Annyxtopheles
+- Twitter / X: https://x.com/annyxtopheles
+- Linktree: https://linktr.ee/sadmanzamankhan
+- Instagram: https://instagram.com/ananyanwu
+- Facebook: https://facebook.com/SadmanZ.Khan
+- YouTube: https://www.youtube.com/@annyxtopheles
+
+## Core Pages
+
+- [Home](https://sadmanportfolio.vercel.app/): Executive design statement and curated work showcase.
+- [Work](https://sadmanportfolio.vercel.app/work): Complete index of enterprise case studies, AI interfaces, motion graphics, and brand designs.
+- [About & Resume](https://sadmanportfolio.vercel.app/about): In-depth experience timeline, authentic recognition, awards, promotion milestones at SJ Innovation, and printable resume.
+- [Profile](https://sadmanportfolio.vercel.app/profile): Interactive 3D lanyard identity badge, core competencies, and career summary.
+- [Portfolio Gallery](https://sadmanportfolio.vercel.app/portfolio): Visual exploration gallery and standalone artifact showcases.
+- [Poetry](https://sadmanportfolio.vercel.app/poetry): Published original poems with bilingual English/Bengali typography.
+- [Pastime](https://sadmanportfolio.vercel.app/pastime): Curated stream of cinema, music, and literary influences.
+
+## Flagship Case Studies
+
+- [CollabAI Redesign](https://sadmanportfolio.vercel.app/work/collabai-platform): Complete redesign of an AI-native workspace featuring a unified Global Composer, multi-model streaming canvas, and live interactive before/after comparisons.
+- [Nexura](https://sadmanportfolio.vercel.app/work/nexura): Enterprise analytics and workflow automation dashboard with strict information hierarchy.
+- [Control Tower](https://sadmanportfolio.vercel.app/work/control-tower): Enterprise monitoring system and operational dashboard.
+- [Ephysician](https://sadmanportfolio.vercel.app/work/ephysician): Telemedicine and clinical compliance platform (HIPAA & PCI compliant).
+- [Nagae Studio](https://sadmanportfolio.vercel.app/work/nagae-studio): Luxury bridal boutique management CRM and AI stylist platform.
+- [Noborangi](https://sadmanportfolio.vercel.app/work/noborangi): Complete brand identity and retail packaging suite for a contemporary lifestyle brand.
+
+## Full Context for LLMs
+
+For the comprehensive, unabridged dataset for AI engines, refer to:
+- [Full LLM Context](https://sadmanportfolio.vercel.app/llms-full.txt)

@@ -16,9 +16,39 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/profile</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/poetry</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/pastime</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/collabai-platform</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/collabai-platform</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/ephysician-redesign</loc>
@@ -26,9 +56,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/ephysician-redesign</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/szk-personal-archive</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/szk-personal-archive</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/clandest-agency</loc>
@@ -36,9 +76,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/clandest-agency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/archivest</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/archivest</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/buildyourai-creatives</loc>
@@ -46,9 +96,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/buildyourai-creatives</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/collabai-creatives</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/collabai-creatives</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/social-media-greetings</loc>
@@ -56,9 +116,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/social-media-greetings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/kaldwin-co-pr-deck</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/kaldwin-co-pr-deck</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/aegis-credit-terminal</loc>
@@ -66,9 +136,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/aegis-credit-terminal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/control-tower-products</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/control-tower-products</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/nagae-studio</loc>
@@ -76,9 +156,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/nagae-studio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/nexura-brand-system</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/nexura-brand-system</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/noborangi</loc>
@@ -86,9 +176,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/noborangi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/print-designs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/print-designs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/industrial-training-freelance</loc>
@@ -96,9 +196,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/industrial-training-freelance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/creative-initiatives</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/creative-initiatives</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sadmanportfolio.vercel.app/work/youtube-webinar-thumbnails</loc>
@@ -106,8 +216,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/youtube-webinar-thumbnails</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sadmanportfolio.vercel.app/work/motion-graphics-social-reels</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/portfolio/motion-graphics-social-reels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/poetry/cosmotellurian</loc>
+    <lastmod>2026-06-27T02:43:54.505Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sadmanportfolio.vercel.app/blog/the-oxygen-paradox-how-the-air-we-breathe-may-be-slowly-killing-us</loc>
+    <lastmod>2026-06-27T06:15:36.333Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
