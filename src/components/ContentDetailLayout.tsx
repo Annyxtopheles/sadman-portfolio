@@ -48,7 +48,7 @@ export const ContentDetailLayout: React.FC<ContentDetailLayoutProps> = ({
           </div>
 
           {/* Headline */}
-          <h1 className="font-scanport text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight mb-8 leading-[1.08]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight mb-8 leading-[1.08]">
             {title}
           </h1>
 
@@ -83,7 +83,7 @@ export const ContentDetailLayout: React.FC<ContentDetailLayoutProps> = ({
               // Handle sub-headings inside markdown text
               if (block.startsWith('### ')) {
                 return (
-                  <h2 key={i} className="font-scanport text-2xl md:text-3xl font-medium tracking-tight pt-6 pb-2 opacity-100">
+                  <h2 key={i} className="text-2xl md:text-3xl font-medium tracking-tight pt-6 pb-2 opacity-100">
                     {block.replace('### ', '')}
                   </h2>
                 );

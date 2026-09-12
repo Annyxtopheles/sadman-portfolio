@@ -42,7 +42,7 @@ export const TestimonialsMarquee: React.FC = () => {
   return (
     <section className="py-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 mb-10">
-        <h2 className="font-scanport text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight lowercase">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight lowercase">
           what people have said about me
         </h2>
       </div>

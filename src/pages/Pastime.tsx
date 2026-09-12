@@ -50,7 +50,7 @@ const Pastime = () => {
         {/* Page Header */}
         <section className="pt-36 md:pt-44 lg:pt-52 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-scanport text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight mb-8 lowercase">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight mb-8 lowercase">
               pastime
             </h1>
 
@@ -113,7 +113,7 @@ const Pastime = () => {
         {(tab === 'all' || tab === 'films') && (
           <section className="pb-16 pt-4">
             <div className="flex items-baseline justify-between mb-6">
-              <h2 className="font-scanport text-2xl md:text-3xl font-medium tracking-tight lowercase">
+              <h2 className="text-2xl md:text-3xl font-medium tracking-tight lowercase">
                 films
               </h2>
               <a
@@ -177,7 +177,7 @@ const Pastime = () => {
         {(tab === 'all' || tab === 'music') && (
           <section className="pb-16 pt-4">
             <div className="flex items-baseline justify-between mb-6">
-              <h2 className="font-scanport text-2xl md:text-3xl font-medium tracking-tight lowercase">
+              <h2 className="text-2xl md:text-3xl font-medium tracking-tight lowercase">
                 music
               </h2>
               <a
@@ -238,7 +238,7 @@ const Pastime = () => {
         {(tab === 'all' || tab === 'anime') && (
           <section className="pb-16 pt-4">
             <div className="flex items-baseline justify-between mb-6">
-              <h2 className="font-scanport text-2xl md:text-3xl font-medium tracking-tight lowercase">
+              <h2 className="text-2xl md:text-3xl font-medium tracking-tight lowercase">
                 anime
               </h2>
               <a
@@ -302,7 +302,7 @@ const Pastime = () => {
         {(tab === 'all' || tab === 'thoughts') && (
           <section className="pb-24 pt-4">
             <div className="flex items-baseline justify-between mb-6">
-              <h2 className="font-scanport text-2xl md:text-3xl font-medium tracking-tight lowercase">
+              <h2 className="text-2xl md:text-3xl font-medium tracking-tight lowercase">
                 things i'm thinking about
               </h2>
               <span className="text-base lowercase opacity-40">thoughts &amp; philosophy</span>
@@ -319,7 +319,7 @@ const Pastime = () => {
                       <span>{c.category || 'thought'}</span>
                       {c.date && <span>{c.date}</span>}
                     </div>
-                    <h3 className="font-scanport text-2xl font-medium mb-3 tracking-tight lowercase">
+                    <h3 className="text-2xl font-medium mb-3 tracking-tight lowercase">
                       {c.title}
                     </h3>
                     <p className="text-base opacity-70 leading-relaxed font-sans">

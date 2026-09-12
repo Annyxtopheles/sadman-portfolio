@@ -80,7 +80,7 @@ const BlogDetail = () => {
           <div className="text-sm uppercase font-medium tracking-wider mb-4 opacity-40">
             {new Date(post.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </div>
-          <h1 className="font-scanport text-4xl sm:text-5xl md:text-6xl font-medium mb-4 tracking-tight">{post.title}</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium mb-4 tracking-tight">{post.title}</h1>
           {post.excerpt && <p className="text-xl opacity-70 mb-10 leading-relaxed">{post.excerpt}</p>}
 
           {post.cover_image_url && (

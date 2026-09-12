@@ -140,7 +140,7 @@ export function PortfolioCard({ item }: { item: PortfolioItem }) {
       {/* Metadata Underneath Thumbnail */}
       <div className="mt-3.5 px-0.5">
         <div className="flex items-baseline justify-between gap-2">
-          <h2 className="font-scanport text-2xl font-medium tracking-tight group-hover:opacity-60 transition-opacity">
+          <h2 className="text-2xl font-medium tracking-tight group-hover:opacity-60 transition-opacity">
             {item.title}
           </h2>
           {isCaseStudy && (
@@ -226,7 +226,7 @@ function GalleryModal() {
             {(selectedImage.title || selectedImage.category) && (
               <div className="mt-4 text-center text-white/90">
                 {selectedImage.title && (
-                  <div className="font-scanport text-xl tracking-tight">{selectedImage.title}</div>
+                  <div className="text-xl tracking-tight">{selectedImage.title}</div>
                 )}
                 {selectedImage.category && (
                   <div className="text-sm text-white/60 lowercase mt-0.5">{selectedImage.category}</div>

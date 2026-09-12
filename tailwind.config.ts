@@ -14,10 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
-        'sans': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
-        'mono': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
-        'heading': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
+        'display': ['"Oregon LDO"', 'system-ui', '-apple-system', 'sans-serif'],
+        'sans': ['"Oregon LDO"', 'system-ui', '-apple-system', 'sans-serif'],
+        'mono': ['"Oregon LDO"', 'monospace', 'sans-serif'],
+        'heading': ['"Oregon LDO"', 'system-ui', '-apple-system', 'sans-serif'],
+        'oregon': ['"Oregon LDO"', 'system-ui', '-apple-system', 'sans-serif'],
         'fell': ['"IM Fell English"', 'Georgia', 'serif'],
         'bengali': ['"Noto Serif Bengali"', 'Georgia', 'serif'],
         'scanport': ['Scanport', 'sans-serif'],

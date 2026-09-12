@@ -15,7 +15,7 @@ const Portfolio = () => {
         {/* Page Header */}
         <section className="pt-36 md:pt-44 lg:pt-52 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-scanport text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight lowercase">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight lowercase">
               selected work
             </h1>
           </div>

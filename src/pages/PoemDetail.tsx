@@ -122,7 +122,7 @@ const PoemDetail = () => {
             </>
           )}
 
-          <h1 className="poem-title font-scanport text-4xl md:text-6xl font-medium mb-3 tracking-tight">
+          <h1 className="poem-title text-4xl md:text-6xl font-medium mb-3 tracking-tight">
             {poem.title}
           </h1>
           {dateStr && <p className="text-base opacity-40 mb-10">{dateStr}</p>}

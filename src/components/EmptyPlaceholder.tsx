@@ -25,7 +25,7 @@ export const EmptyPlaceholder: React.FC<EmptyPlaceholderProps> = ({
         {eyebrow}
       </div>
     )}
-    <h3 className="font-scanport text-2xl md:text-3xl font-medium mb-3 tracking-tight">{title}</h3>
+    <h3 className="text-2xl md:text-3xl font-medium mb-3 tracking-tight">{title}</h3>
     {description && (
       <p className="text-sm md:text-base opacity-60 max-w-md mx-auto leading-relaxed">{description}</p>
     )}

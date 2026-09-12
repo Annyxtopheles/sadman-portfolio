@@ -26,7 +26,7 @@ const Section: React.FC<{ title?: string; children: React.ReactNode; className?:
 }) => (
   <section className={`mt-20 md:mt-28 ${className}`}>
     {title && (
-      <h2 className="font-scanport text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-8 lowercase">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-8 lowercase">
         {title}
       </h2>
     )}
@@ -562,7 +562,7 @@ const FamilyDetailModal: React.FC<{
 
           <div className="flex-1 min-w-0 pr-4">
             <div className="text-xs uppercase tracking-wider opacity-50">{n.relation}</div>
-            <h3 className="font-scanport text-2xl font-medium leading-tight mt-1">{n.name || '—'}</h3>
+            <h3 className="text-2xl font-medium leading-tight mt-1">{n.name || '—'}</h3>
             {n.profession && <div className="text-sm opacity-75 mt-1">{n.profession}</div>}
             {n.location_label && (
               <div className="text-xs opacity-50 mt-2 flex items-center gap-1">
@@ -960,7 +960,7 @@ const ProfileView: React.FC<{ data: MatrimonyPayload }> = ({ data }) => {
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-36 md:pt-44 lg:pt-52 pb-24 flex-1 w-full">
         {/* ---- HERO ---- */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h1 className="font-scanport text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight mb-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight mb-2">
             <MorphingText
               texts={["Sadman Zaman Khan", "সাদমান জামান খান"]}
               align="left"

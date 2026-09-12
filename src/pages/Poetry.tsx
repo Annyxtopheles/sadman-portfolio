@@ -25,7 +25,7 @@ const Poetry = () => {
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full">
         <section className="pt-36 md:pt-44 lg:pt-52 pb-12 md:pb-16">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-scanport text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight lowercase">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight lowercase">
               a book of poems
             </h1>
           </div>

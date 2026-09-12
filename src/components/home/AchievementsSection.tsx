@@ -5,7 +5,7 @@ export const AchievementsSection: React.FC<{ items?: AchievementItem[] }> = ({ i
   return (
     <section className="py-20">
       <div className="mb-10">
-        <h2 className="font-scanport text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight lowercase">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight lowercase">
           recognition &amp; impact
         </h2>
       </div>
@@ -17,7 +17,7 @@ export const AchievementsSection: React.FC<{ items?: AchievementItem[] }> = ({ i
             className="p-6 md:p-8 rounded-lg bg-foreground/5 flex flex-col justify-between space-y-6 group hover:bg-foreground/[0.08] transition-colors"
           >
             <div className="flex items-center justify-between">
-              <span className="font-scanport text-4xl sm:text-5xl font-medium tracking-tight text-foreground">
+              <span className="text-4xl sm:text-5xl font-medium tracking-tight text-foreground">
                 {item.metric}
               </span>
               {item.tag && (
