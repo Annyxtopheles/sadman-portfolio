@@ -8,7 +8,7 @@ The official portfolio of **Sadman Zaman Khan** — designer and poet crafting m
 
 ## ✨ Features & Architecture
 
-- **Meticulous Monochrome Design**: Strict black-and-white visual identity with fine geometric borders, zero visual clutter, and pure **Oregon LDO** typography.
+- **Meticulous Monochrome Design**: Strict black-and-white visual identity with fine geometric borders, zero visual clutter, pure **Satoshi** reading typography, and bespoke **Oregon LDO** branding.
 - **Interactive 3D Perspective Tilt**: Physics-driven cursor tracking on work cards with spring physics (`damping: 30`, `stiffness: 100`).
 - **Spotlight Focus on Hover**: Hovering any card softens the surrounding screen and focuses the eye with an airy, unobtrusive ambient backdrop tint.
 - **ClickSpark & Tactile Audio**: Custom canvas micro-particle sparks paired with a zero-latency Web Audio API mechanical micro-click synthesizer.

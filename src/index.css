@@ -1,3 +1,4 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Noto+Serif+Bengali:wght@400;500;600&display=swap');
 
 @tailwind base;
@@ -37,19 +38,19 @@
   html {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: 'Oregon LDO', system-ui, -apple-system, sans-serif;
+    font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
   }
 
   body {
     background-color: #000000;
     color: #999999;
-    font-family: 'Oregon LDO', system-ui, -apple-system, sans-serif;
+    font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading, .font-display {
-    font-family: 'Oregon LDO', system-ui, -apple-system, sans-serif;
+    font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
     color: #FFFFFF;
     font-weight: 400;
     letter-spacing: -0.01em;
