@@ -30,7 +30,7 @@ const Profile = () => {
         {/* Header / Intro */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
           <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium font-oregon tracking-wide mb-3">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight mb-3">
               <MorphingText
                 texts={["Sadman Zaman Khan", "সাদমান জামান খান"]}
                 align="left"

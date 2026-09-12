@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-oregon text-xl font-normal tracking-wide"
+          className="text-[#FFFFFF] hover:text-[#CCCCCC] transition-colors font-display text-xl font-normal tracking-tight"
         >
           Sadman Zaman Khan
         </Link>

@@ -461,7 +461,7 @@ const About: React.FC = () => {
             {/* Left Column: Bio & Identity Details */}
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal font-oregon tracking-wide text-[#FFFFFF]">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FFFFFF]">
                   Sadman Zaman Khan
                 </h1>
                 <p className="text-xl sm:text-2xl text-[#888888] font-normal pt-1">
