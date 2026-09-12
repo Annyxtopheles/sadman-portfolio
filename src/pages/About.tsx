@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { useExploration } from '@/context/ExplorationContext';
 import { BorderGlow } from '@/components/effects/BorderGlow';
 import { ArtifactCollage, ArtifactImage } from '@/components/ArtifactCollage';
+import { TestimonialsMarquee } from '@/components/home/TestimonialsMarquee';
 import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 interface ThematicBucket {
@@ -857,7 +858,12 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 8. Gateway to Personal Archive */}
+        {/* 8. Endorsements & Testimonials Marquee */}
+        <div className="-mx-6 sm:-mx-10 md:-mx-14 lg:-mx-16 xl:-mx-20">
+          <TestimonialsMarquee />
+        </div>
+
+        {/* 9. Gateway to Personal Archive */}
         <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
           <div className="max-w-4xl mx-auto space-y-10 text-center">
             <div className="space-y-3">
