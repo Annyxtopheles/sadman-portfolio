@@ -491,17 +491,28 @@ export const CaseStudyDetail: React.FC = () => {
                     {/* Mode 1: Expanded View */}
                     {viewMode === 'expanded' ? (
                       section.carousels && section.carousels.length > 0 ? (
-                        section.carousels.length === 1 ? (
-                          <div className="max-w-xl mx-auto w-full">
-                            <CarouselViewer
-                              slides={section.carousels[0].slides}
-                              title={section.carousels[0].title}
-                              documentUrl={section.carousels[0].documentUrl || section.documentUrl}
-                              documentTitle={section.carousels[0].documentTitle || section.documentTitle}
-                              onOpenLightbox={handleOpenLightbox}
-                            />
-                          </div>
-                        ) : (
+                        section.carousels.length === 1 ? (() => {
+                          const firstRatio = section.carousels[0].slides[0]?.aspectRatio;
+                          const isLandscape = (() => {
+                            if (!firstRatio) return false;
+                            const parts = firstRatio.split('/');
+                            return parts.length === 2 && parseFloat(parts[0]) > parseFloat(parts[1]);
+                          })();
+
+                          return (
+                            <div className={`mx-auto w-full transition-all ${
+                              isLandscape ? 'max-w-4xl xl:max-w-5xl' : 'max-w-xl'
+                            }`}>
+                              <CarouselViewer
+                                slides={section.carousels[0].slides}
+                                title={section.carousels[0].title}
+                                documentUrl={section.carousels[0].documentUrl || section.documentUrl}
+                                documentTitle={section.carousels[0].documentTitle || section.documentTitle}
+                                onOpenLightbox={handleOpenLightbox}
+                              />
+                            </div>
+                          );
+                        })() : (
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                             {section.carousels.map((carousel, cIdx) => (
                               <div key={cIdx} className="flex flex-col">
@@ -516,17 +527,28 @@ export const CaseStudyDetail: React.FC = () => {
                             ))}
                           </div>
                         )
-                      ) : isCarouselSection && currentSectionMode === 'carousel' ? (
-                        <div className="max-w-xl mx-auto w-full">
-                          <CarouselViewer
-                            slides={sectionImages}
-                            title={section.sectionTitle}
-                            documentUrl={section.documentUrl}
-                            documentTitle={section.documentTitle}
-                            onOpenLightbox={handleOpenLightbox}
-                          />
-                        </div>
-                      ) : (
+                      ) : isCarouselSection && currentSectionMode === 'carousel' ? (() => {
+                        const firstRatio = sectionImages[0]?.aspectRatio;
+                        const isLandscape = (() => {
+                          if (!firstRatio) return false;
+                          const parts = firstRatio.split('/');
+                          return parts.length === 2 && parseFloat(parts[0]) > parseFloat(parts[1]);
+                        })();
+
+                        return (
+                          <div className={`mx-auto w-full transition-all ${
+                            isLandscape ? 'max-w-4xl xl:max-w-5xl' : 'max-w-xl'
+                          }`}>
+                            <CarouselViewer
+                              slides={sectionImages}
+                              title={section.sectionTitle}
+                              documentUrl={section.documentUrl}
+                              documentTitle={section.documentTitle}
+                              onOpenLightbox={handleOpenLightbox}
+                            />
+                          </div>
+                        );
+                      })() : (
                         <div
                           className={`grid gap-6 lg:gap-8 ${
                             sectionImages.every((img) => img.type === 'comparison')
