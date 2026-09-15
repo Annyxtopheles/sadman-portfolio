@@ -7525,18 +7525,6 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Created a versatile, cohesive fashion brand identity during my SJ Innovation internship that demonstrates the capacity to conceptualize, style, and scale a luxury retail brand across architectural, print, merchandise, and digital touchpoints.",
     gallerySections: [
       {
-        sectionTitle: "Editorial Identity & Art Direction",
-        sectionDescription: "The signature visual anchor for Noborangi: a high-contrast editorial serif wordmark set against regal floral crimson photography, establishing the core brand ethos 'Celebrate tradition with Style'.",
-        images: [
-          {
-            url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
-            caption: "Noborangi Editorial Banner — Signature crimson duotone fashion portrait featuring intricate floral embroidery and the bold white NOBO RANGI logotype.",
-            type: "portrait",
-            aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
         sectionTitle: "Touchpoint Applications & Collateral System",
         sectionDescription: "Detailed breakdown of each physical and digital touchpoint engineered for the Noborangi retail experience.",
         images: [
@@ -7598,12 +7586,6 @@ export const PROJECTS: Project[] = [
       }
     ],
     galleryImages: [
-      {
-        url: "/assets/projects/noborangi/noborangi-banner-cover.webp",
-        caption: "Noborangi Editorial Cover Banner",
-        type: "portrait",
-        aspectRatio: "1/1"
-      },
       {
         url: "/assets/projects/noborangi/noborangi-01-logo-tagline.webp",
         caption: "Primary Logotype & Tagline Lockup",
