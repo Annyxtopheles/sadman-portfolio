@@ -442,6 +442,55 @@ const About: React.FC = () => {
     },
   ];
 
+  // Education Artifacts (Munshiganj Polytechnic Institute)
+  const educationImages: ArtifactImage[] = [
+    {
+      url: '/assets/profile/mupi-rover-scout-pledge-leading.webp',
+      caption: 'Rover Scout Leadership — Leading the scout oath & ceremony at Munshiganj Polytechnic Institute',
+      tag: 'Rover Scout'
+    },
+    {
+      url: '/assets/profile/mupi-campus-peers-evening.webp',
+      caption: 'Campus Fellowship — Evening gathering with polytechnic peers and classmates',
+      tag: 'Campus Life'
+    },
+    {
+      url: '/assets/profile/mupi-student-uniform-portrait.webp',
+      caption: 'Institute Life — Academic session in official Munshiganj Polytechnic uniform',
+      tag: 'Academic'
+    }
+  ];
+
+  // Extracurricular Activities
+  interface ExtracurricularActivity {
+    role: string;
+    organization: string;
+    period: string;
+    description: string;
+    bullets?: string[];
+    images?: ArtifactImage[];
+  }
+
+  const extracurricularActivities: ExtracurricularActivity[] = [
+    {
+      role: 'Rover Scout',
+      organization: 'Munshiganj Polytechnic Institute Rover Scout Group · Bangladesh Scouts',
+      period: '2022 – 2025',
+      description: 'Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and regional scout gatherings while upholding the Scout Promise and Law.',
+      bullets: [
+        'Led official troop oath-taking ceremonies, parade formations, and campus clean-up operations as an active Rover.',
+        'Designed institutional branding, roll-up exhibition banners, and commemorative social media graphics for Bangladesh Scouts regional workshops and events.'
+      ],
+      images: [
+        {
+          url: '/assets/profile/mupi-rover-scout-pledge-leading.webp',
+          caption: 'Rover Scout Leadership — Leading the scout oath & ceremony at Munshiganj Polytechnic Institute',
+          tag: 'Rover Scout'
+        }
+      ]
+    }
+  ];
+
   const personalPursuits = [
     {
       title: 'Film & Human Narrative',
@@ -817,19 +866,29 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Education Card */}
-            <div className="lg:col-span-4 p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-3">
-              <div className="text-xs uppercase tracking-wider text-[#FFFFFF] font-normal border-b border-[#1F1F1F] pb-2">
-                Education
+            <div className="lg:col-span-5 p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 flex flex-col justify-between">
+              <div className="space-y-3">
+                <div className="text-xs uppercase tracking-wider text-[#FFFFFF] font-normal border-b border-[#1F1F1F] pb-2">
+                  Education
+                </div>
+                <div className="space-y-1 pt-1">
+                  <h3 className="text-base font-normal text-[#FFFFFF]">Diploma in Engineering in Computer Science</h3>
+                  <p className="text-xs text-[#888888]">Munshiganj Polytechnic Institute</p>
+                  <p className="text-xs text-[#666666] font-mono pt-1">2021 – 2025</p>
+                </div>
               </div>
-              <div className="space-y-1 pt-1">
-                <h3 className="text-base font-normal text-[#FFFFFF]">Diploma in Engineering in Computer Science</h3>
-                <p className="text-xs text-[#888888]">Munshiganj Polytechnic Institute</p>
-                <p className="text-xs text-[#666666] font-mono pt-1">2021 – 2025</p>
+
+              {/* Education Artifacts Collage */}
+              <div className="pt-2">
+                <ArtifactCollage
+                  images={educationImages}
+                  title="Munshiganj Polytechnic Artifacts"
+                />
               </div>
             </div>
 
             {/* Certifications Grid */}
-            <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certifications.map((cert, cIdx) => (
                 <a
                   key={cIdx}
@@ -852,7 +911,75 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 7. Personal Interests & Human Dimension */}
+        {/* 7. Extracurricular Activities */}
+        <section className="space-y-6">
+          <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
+                Extracurricular Activities
+              </h2>
+              <p className="text-xs text-[#777777] font-mono mt-1">
+                Leadership, community service &amp; the Scouts Movement
+              </p>
+            </div>
+            <span className="text-xs font-mono text-[#555555]">
+              {extracurricularActivities.length < 10 ? `0${extracurricularActivities.length}` : extracurricularActivities.length} INITIATIVE{extracurricularActivities.length !== 1 ? 'S' : ''}
+            </span>
+          </div>
+
+          <div className="space-y-6">
+            {extracurricularActivities.map((act, aIdx) => (
+              <div
+                key={aIdx}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#2A2A2A] transition-colors"
+              >
+                {/* Left Column: Details */}
+                <div className={`${act.images && act.images.length > 0 ? 'lg:col-span-7' : 'lg:col-span-12'} space-y-4`}>
+                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 border-b border-[#1F1F1F] pb-3">
+                    <div>
+                      <h3 className="text-lg font-normal text-[#FFFFFF]">
+                        {act.role}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#888888] pt-0.5">
+                        {act.organization}
+                      </p>
+                    </div>
+                    <span className="text-xs text-[#666666] font-mono shrink-0">
+                      {act.period}
+                    </span>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
+                    {act.description}
+                  </p>
+
+                  {act.bullets && act.bullets.length > 0 && (
+                    <ul className="space-y-1.5 pt-1">
+                      {act.bullets.map((b, bIdx) => (
+                        <li key={bIdx} className="text-xs sm:text-sm text-[#888888] flex items-start gap-2">
+                          <span className="text-[#555555] mt-1 text-[8px]">▪</span>
+                          <span className="leading-relaxed">{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+
+                {/* Right Column: Visual Artifacts Collage */}
+                {act.images && act.images.length > 0 && (
+                  <div className="lg:col-span-5 pt-1">
+                    <ArtifactCollage
+                      images={act.images}
+                      title={`${act.role} Artifacts`}
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* 8. Personal Interests & Human Dimension */}
         <section className="space-y-6">
           <div>
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
