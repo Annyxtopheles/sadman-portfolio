@@ -5,6 +5,7 @@ export interface ArtifactImage {
   url: string;
   caption: string;
   tag?: string;
+  objectPosition?: string;
 }
 
 interface ArtifactCollageProps {
@@ -54,7 +55,9 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
                     src={img.url}
                     alt={img.caption}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                    className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${
+                      img.objectPosition || 'object-center'
+                    }`}
                   />
                 </div>
 
@@ -105,7 +108,7 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
                 <img
                   src={activeItem.url}
                   alt={activeItem.caption}
-                  className="w-full h-full object-cover object-top"
+                  className={`w-full h-full object-cover ${activeItem.objectPosition || 'object-center'}`}
                 />
               </div>
 

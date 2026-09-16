@@ -899,7 +899,7 @@ const About: React.FC = () => {
                     <img
                       src="/assets/projects/szk-mockup.webp"
                       alt="sadman zaman khan personal archive live preview"
-                      className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
 
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0E0D0B]/85 via-[#0E0D0B]/35 to-transparent group-hover:via-[#0E0D0B]/25 transition-colors duration-300" />

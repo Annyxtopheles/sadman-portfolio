@@ -129,7 +129,7 @@ const CompactThumbnailCard: React.FC<CompactThumbnailCardProps> = ({
           src={img.url}
           alt={img.caption}
           loading="lazy"
-          className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
         />
 
         {/* Video Reel Play Indicator Badge on Thumbnail (Clean central icon, no corner text badge) */}
