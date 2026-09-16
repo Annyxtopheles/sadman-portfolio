@@ -268,14 +268,29 @@ const About: React.FC = () => {
           tag: 'UI/UX Redesign'
         },
         {
-          url: '/assets/projects/buildyourai/byai-yt-automate-business-ops-control-tower.webp',
-          caption: 'Control Tower — Visual identity & enterprise ops suite',
-          tag: 'Brand & UI'
+          url: '/assets/profile/sji-22nd-anniversary-sales-marketing.webp',
+          caption: 'SJ Innovation 22nd Anniversary — Celebration with Sales & Marketing team',
+          tag: '22nd Anniversary'
         },
         {
-          url: '/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp',
-          caption: 'NonProfit AI — High-converting Meta ad creative suite',
-          tag: 'Paid Social'
+          url: '/assets/profile/sji-ai-hackathon-team-award.webp',
+          caption: 'AI Hackathon Runners-Up — Certificate & project award with teammates',
+          tag: 'AI Hackathon'
+        },
+        {
+          url: '/assets/profile/sji-1-year-work-anniversary.webp',
+          caption: '1-Year Work Anniversary — Recognition and milestone celebration at SJ Innovation',
+          tag: 'Milestone'
+        },
+        {
+          url: '/assets/profile/sji-dhaka-all-hands-blue.webp',
+          caption: 'SJ Innovation Dhaka Team — All-hands team gathering at the headquarters',
+          tag: 'Team Culture'
+        },
+        {
+          url: '/assets/profile/sji-annual-team-retreat-dera.webp',
+          caption: 'Annual Team Retreat — Company outing and team building at DERA Resort & Spa',
+          tag: 'Team Retreat'
         }
       ]
     },
