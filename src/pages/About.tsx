@@ -289,14 +289,19 @@ const About: React.FC = () => {
       ],
       images: [
         {
-          url: '/assets/projects/buildyourai/byai-nsa-cisa-01-cover.webp',
-          caption: 'NSA/CISA Data Security — 10-step editorial carousel cover',
-          tag: 'Editorial Design'
+          url: '/assets/profile/internship-presentation-decisiontech.webp',
+          caption: 'Internal Presentation — Presenting DecisionTech research & design insights at SJ Innovation',
+          tag: 'Presentation'
         },
         {
-          url: '/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp',
-          caption: 'Vertical story ad creative with direct booking CTA',
-          tag: '9:16 Social'
+          url: '/assets/profile/internship-sji-team-celebration.webp',
+          caption: 'SJ Innovation Team — All-hands team celebration at Dhaka headquarters',
+          tag: 'Team Culture'
+        },
+        {
+          url: '/assets/profile/internship-sji-21st-anniversary.webp',
+          caption: 'SJ Innovation 21st Anniversary — Corporate milestone celebration with colleagues',
+          tag: 'Anniversary'
         }
       ]
     },
