@@ -476,8 +476,9 @@ const About: React.FC = () => {
       role: 'Rover Scout',
       organization: 'Munshiganj Polytechnic Institute Rover Scout Group · Bangladesh Scouts',
       period: '2022 – 2025',
-      description: 'Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and regional scout gatherings while upholding the Scout Promise and Law.',
+      description: 'Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and national/regional moots while upholding the Scout Promise and Law.',
       bullets: [
+        'Served in the Service Team (সেবাদল) at the Golden Jubilee Rover Moot 2023 (সুবর্ণজয়ন্তী রোভার মুট ২০২৩), receiving the official Service Team Award crest with troop peers.',
         'Led official troop oath-taking ceremonies, parade formations, and campus clean-up operations as an active Rover.',
         'Designed institutional branding, roll-up exhibition banners, and commemorative social media graphics for Bangladesh Scouts regional workshops and events.'
       ],
@@ -485,7 +486,12 @@ const About: React.FC = () => {
         {
           url: '/assets/profile/mupi-rover-scout-pledge-leading.webp',
           caption: 'Rover Scout Leadership — Leading the scout oath & ceremony at Munshiganj Polytechnic Institute',
-          tag: 'Rover Scout'
+          tag: 'Scout Pledge'
+        },
+        {
+          url: '/assets/profile/rover-scout-golden-jubilee-moot-award.webp',
+          caption: 'Golden Jubilee Rover Moot 2023 — Service Team Award crest with troop mates (Bangladesh Scouts, Rover Region)',
+          tag: 'Golden Jubilee Moot'
         }
       ]
     }
