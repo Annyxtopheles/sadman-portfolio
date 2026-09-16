@@ -2551,6 +2551,42 @@ export const PROJECTS: Project[] = [
             ]
           },
           {
+            title: "Indigenous Peoples' Day — Honoring Heritage & Ancestral Lands",
+            description: "Five distinct creative directions honoring Indigenous Peoples' Day for SJ Innovation. Explores 3D sculpted feathered regalia and dreamcatchers, vibrant Southwestern geometric textile bands, panoramic mountain sunset horizons with translucent quilt weaving overlays, expressive riverbank fishing illustrations under a radiant sun disc, and archival duotone photographic portraits of Native American elders.",
+            slides: [
+              {
+                url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-01-3d-headdress-dreamcatchers.webp",
+                caption: "Direction 01 — 3D Sculpted Feathered Headdress & Dreamcatchers: Dimensional ceremonial war bonnet rendered in signature cobalt blue, warm orange, and white feathers, flanked by hanging dreamcatchers.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-02-geometric-textile-border.webp",
+                caption: "Direction 02 — Southwestern Geometric Textile Band: Minimalist typography framed by feather accents and an intricate multi-layered indigenous textile pattern band featuring traditional diamond, wave, and arrowhead motifs.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-03-mountain-sunset-textile-overlay.webp",
+                caption: "Direction 03 — Sacred Mountain Sunset & Translucent Quilt Overlay: Golden hour mountain ridges and sunset waters layered with a subtle semi-transparent geometric diamond weave pattern honoring ancestral lands.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-04-illustrated-river-fishing-sun.webp",
+                caption: "Direction 04 — River Harvest & Radiant Sun Disc: Expressive illustrated tribute depicting an indigenous woman in traditional fringed regalia fishing by the riverbank against a monumental orange sun disc.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-05-archival-duotone-elders-portrait.webp",
+                caption: "Direction 05 — Archival Duotone Elder Portrait: Historic photographic study of indigenous elders in ceremonial beaded regalia and silver adornments, color-graded in dramatic cobalt and copper duotone.",
+                type: "carousel",
+                aspectRatio: "1/1"
+              }
+            ]
+          },
+          {
             title: "Executive Thought Leadership & Op-Ed Campaigns (NYC AI Policy)",
             description: "High-impact social media campaign creative promoting an executive op-ed co-authored by Shahed Islam (CEO, SJ Innovation) and Tom Grech (CEO, Queens Chamber of Commerce). Highlights AI's transformative impact on New York City and advocates for forward-thinking, inclusive municipal AI policymaking.",
             slides: [
@@ -3017,6 +3053,36 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
             caption: "Executive Op-Ed Creative — 'AI is Shaping the Future of New York City, But Policy Must Evolve With It' featuring glowing Empire State Building neural net and executive portraits.",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-01-3d-headdress-dreamcatchers.webp",
+            caption: "Indigenous Peoples' Day: Direction 01 — 3D Sculpted Feathered Headdress & Dreamcatchers",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-02-geometric-textile-border.webp",
+            caption: "Indigenous Peoples' Day: Direction 02 — Southwestern Geometric Textile Band",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-03-mountain-sunset-textile-overlay.webp",
+            caption: "Indigenous Peoples' Day: Direction 03 — Sacred Mountain Sunset & Translucent Quilt Overlay",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-04-illustrated-river-fishing-sun.webp",
+            caption: "Indigenous Peoples' Day: Direction 04 — River Harvest & Radiant Sun Disc",
+            type: "carousel",
+            aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-05-archival-duotone-elders-portrait.webp",
+            caption: "Indigenous Peoples' Day: Direction 05 — Archival Duotone Elder Portrait",
             type: "carousel",
             aspectRatio: "1/1"
           }
@@ -3566,6 +3632,31 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/social-greetings/events/event-nyc-ai-policy-oped-shahed-grech.webp",
         caption: "Thought Leadership Event — NYC AI Policy Op-Ed (Shahed Islam & Tom Grech)",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-01-3d-headdress-dreamcatchers.webp",
+        caption: "Indigenous Peoples' Day — 3D Sculpted Headdress & Dreamcatchers",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-02-geometric-textile-border.webp",
+        caption: "Indigenous Peoples' Day — Southwestern Geometric Textile Band",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-03-mountain-sunset-textile-overlay.webp",
+        caption: "Indigenous Peoples' Day — Sacred Mountain Sunset & Translucent Quilt Overlay",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-04-illustrated-river-fishing-sun.webp",
+        caption: "Indigenous Peoples' Day — River Harvest & Radiant Sun Disc",
+        type: "carousel"
+      },
+      {
+        url: "/assets/projects/social-greetings/indigenous-peoples-day/indigenous-day-05-archival-duotone-elders-portrait.webp",
+        caption: "Indigenous Peoples' Day — Archival Duotone Elder Portrait",
         type: "carousel"
       },
       {
