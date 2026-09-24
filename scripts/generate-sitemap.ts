@@ -17,8 +17,6 @@ const staticEntries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/work", changefreq: "weekly", priority: "0.9" },
   { path: "/about", changefreq: "weekly", priority: "0.9" },
-  { path: "/profile", changefreq: "monthly", priority: "0.8" },
-  { path: "/portfolio", changefreq: "monthly", priority: "0.8" },
   { path: "/poetry", changefreq: "weekly", priority: "0.8" },
   { path: "/blog", changefreq: "weekly", priority: "0.8" },
   { path: "/pastime", changefreq: "monthly", priority: "0.7" },
@@ -48,10 +46,9 @@ function generateSitemap(entries: SitemapEntry[]) {
 (() => {
   const dynamic: SitemapEntry[] = [];
 
-  // All Projects / Case Studies
+  // All Projects / Case Studies (Canonical /work routes only)
   for (const p of PROJECTS) {
     dynamic.push({ path: `/work/${p.slug}`, changefreq: "monthly", priority: "0.8" });
-    dynamic.push({ path: `/portfolio/${p.slug}`, changefreq: "monthly", priority: "0.7" });
   }
 
   // All Poems

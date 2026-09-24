@@ -277,7 +277,7 @@ export const CaseStudyDetail: React.FC = () => {
   return (
     <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
-        title={`${project.title} — Sadman Zaman Khan`}
+        title={project.title}
         description={project.summary}
         image={project.coverImage}
       />

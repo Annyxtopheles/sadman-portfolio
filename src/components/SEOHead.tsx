@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { formatSeoTitle, formatMetaDescription } from '@/lib/seoHelpers';
 
 const SITE_URL = 'https://sadmanportfolio.vercel.app';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.webp`;
@@ -32,18 +33,17 @@ export const SEOHead = ({
     (typeof window !== 'undefined' ? window.location.pathname : '/');
   const canonical = pathname.startsWith('http') ? pathname : `${SITE_URL}${pathname}`;
 
-  const fullTitle = /sadman zaman khan/i.test(title)
-    ? title
-    : `${title} — Sadman Zaman Khan`;
+  const formattedTitle = formatSeoTitle(title);
+  const formattedDescription = formatMetaDescription(description);
 
   const ogImage = image.startsWith('http') ? image : `${SITE_URL}${image.startsWith('/') ? '' : '/'}${image}`;
   const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
     <Helmet>
-      <title>{fullTitle}</title>
-      <meta name="title" content={fullTitle} />
-      <meta name="description" content={description} />
+      <title>{formattedTitle}</title>
+      <meta name="title" content={formattedTitle} />
+      <meta name="description" content={formattedDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonical} />
 
@@ -51,18 +51,18 @@ export const SEOHead = ({
       <meta property="og:type" content={article ? 'article' : 'website'} />
       <meta property="og:site_name" content="Sadman Zaman Khan" />
       <meta property="og:url" content={canonical} />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={formattedTitle} />
+      <meta property="og:description" content={formattedDescription} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:image:alt" content={fullTitle} />
+      <meta property="og:image:alt" content={formattedTitle} />
 
       {/* Twitter / X Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@annyxtopheles" />
       <meta name="twitter:creator" content="@annyxtopheles" />
       <meta name="twitter:url" content={canonical} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={formattedTitle} />
+      <meta name="twitter:description" content={formattedDescription} />
       <meta name="twitter:image" content={ogImage} />
 
       {/* Article metadata if applicable */}

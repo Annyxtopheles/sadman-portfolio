@@ -42,7 +42,7 @@ const Pastime = () => {
           '@type': 'CollectionPage',
           name: 'Pastime — Live Cultural Diary',
           description: 'A live stream of films, music, anime, and thoughts by Sadman Zaman Khan.',
-          url: 'https://sadmanzamankhan.pages.dev/pastime',
+          url: 'https://sadmanportfolio.vercel.app/pastime',
         }}
       />
 

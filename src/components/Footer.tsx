@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
@@ -8,6 +9,25 @@ export const Footer: React.FC<{ className?: string }> = ({ className = '' }) => 
         <div className="text-center lg:text-left">
           <span>© {new Date().getFullYear()} Sadman Zaman Khan</span>
         </div>
+
+        {/* Center: Internal Navigation */}
+        <nav className="flex flex-wrap items-center justify-center gap-5 sm:gap-6 text-xs text-[#777777]">
+          <Link to="/work" className="hover:text-[#FFFFFF] transition-colors">
+            Work
+          </Link>
+          <Link to="/about" className="hover:text-[#FFFFFF] transition-colors">
+            About
+          </Link>
+          <Link to="/poetry" className="hover:text-[#FFFFFF] transition-colors">
+            Poetry
+          </Link>
+          <Link to="/blog" className="hover:text-[#FFFFFF] transition-colors">
+            Blog
+          </Link>
+          <Link to="/pastime" className="hover:text-[#FFFFFF] transition-colors">
+            Pastime
+          </Link>
+        </nav>
 
         {/* Right: Direct links & Email */}
         <div className="flex flex-wrap items-center justify-center lg:justify-end gap-6 sm:gap-8">

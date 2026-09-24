@@ -55,7 +55,7 @@ const PoemDetail = () => {
 
   const handleCopyPoem = useCallback(() => {
     if (!poem) return;
-    const formatted = `${poem.title}\nby Sadman Zaman Khan\n\n${poem.content}\n\nhttps://sadmanzamankhan.pages.dev/poetry/${poem.slug}`;
+    const formatted = `${poem.title}\nby Sadman Zaman Khan\n\n${poem.content}\n\nhttps://sadmanportfolio.vercel.app/poetry/${poem.slug}`;
     navigator.clipboard.writeText(formatted).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
@@ -79,12 +79,12 @@ const PoemDetail = () => {
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CreativeWork',
-          '@id': `https://sadmanzamankhan.pages.dev/poetry/${poem.slug}`,
+          '@id': `https://sadmanportfolio.vercel.app/poetry/${poem.slug}`,
           name: poem.title,
           genre: 'Poetry',
           datePublished: poem.published_at || undefined,
           author: { '@type': 'Person', name: 'Sadman Zaman Khan' },
-          url: `https://sadmanzamankhan.pages.dev/poetry/${poem.slug}`,
+          url: `https://sadmanportfolio.vercel.app/poetry/${poem.slug}`,
         }}
       />
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full">

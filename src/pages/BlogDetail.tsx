@@ -63,7 +63,7 @@ const BlogDetail = () => {
           dateModified: post.updated_at,
           author: { '@type': 'Person', name: 'Sadman Zaman Khan' },
           publisher: { '@type': 'Person', name: 'Sadman Zaman Khan' },
-          mainEntityOfPage: `https://sadmanzamankhan.pages.dev/blog/${post.slug}`,
+          mainEntityOfPage: `https://sadmanportfolio.vercel.app/blog/${post.slug}`,
         }}
       />
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex-1 w-full">

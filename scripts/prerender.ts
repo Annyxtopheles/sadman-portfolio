@@ -1,7 +1,11 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { PROJECTS, Project } from "../src/data/projects";
-import { PERSON_JSON_LD, PERSON_SAME_AS } from "../src/data/siteSettings";
+import { POEMS, Poem } from "../src/data/poems";
+import { POSTS, Post } from "../src/data/posts";
+import { CONTEMPLATIONS } from "../src/data/contemplations";
+import { PERSON_JSON_LD } from "../src/data/siteSettings";
+import { formatSeoTitle, formatMetaDescription } from "../src/lib/seoHelpers";
 
 const BASE_URL = "https://sadmanportfolio.vercel.app";
 
@@ -236,30 +240,254 @@ function buildWorkHtml(): string {
 
 function buildAboutHtml(): string {
   return `
-    <main class="static-prerender" style="max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
-      <header style="margin-bottom: 2.5rem;">
+    <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
+      <header style="margin-bottom: 2.5rem; border-bottom: 1px solid #222; padding-bottom: 2rem;">
         <nav style="margin-bottom: 1.5rem;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
-        <h1 style="font-size: 2.5rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff;">About Sadman Zaman Khan</h1>
-        <p style="color: #aaa; font-size: 1.15rem;">UI/UX Designer &amp; AI-Augmented Prototyper based in Dhaka, Bangladesh.</p>
+        <h1 style="font-size: 2.75rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff;">About Sadman Zaman Khan</h1>
+        <p style="color: #aaa; font-size: 1.2rem; margin: 0 0 1rem;">UI/UX Designer &amp; AI-Augmented Prototyper based in Dhaka, Bangladesh.</p>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; color: #777; font-size: 0.9rem;">
+          <span>Location: Dhaka, Bangladesh</span>
+          <span>Email: <a href="mailto:sadmanz.khan@gmail.com" style="color: #bbb;">sadmanz.khan@gmail.com</a></span>
+          <span>Resume: <a href="/Sadman_Zaman_Khan_Resume.pdf" target="_blank" style="color: #fff;">Download PDF ↗</a></span>
+        </div>
       </header>
 
-      <section style="margin-bottom: 2rem;">
-        <h2 style="font-size: 1.3rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Background &amp; Philosophy</h2>
-        <p style="color: #ccc; margin-top: 1rem; line-height: 1.7;">
-          Versatile UI/UX Designer with hands-on experience across enterprise SaaS dashboards, AI agent workflows, design systems, and rapid prototyping. Sole designer at SJ Innovation LLC independently owning client and internal design initiatives.
+      <section style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Background &amp; Philosophy</h2>
+        <p style="color: #ccc; margin-top: 1rem; line-height: 1.8;">
+          UI/UX and Brand Designer with hands-on experience in enterprise SaaS design systems, complex web dashboards, and AI-assisted prototyping. Skilled in Figma token architecture and Adobe Creative Suite, utilizing modern generative and agentic workflows (Google Antigravity, Lovable, ComfyUI) to transform product requirements into working, interactive web prototypes quickly.
         </p>
-        <p style="color: #ccc; line-height: 1.7;">
-          My work synthesizes rigorous information architecture with high-craft aesthetics—transforming dense financial datasets, clinical automation workflows, and multi-agent platforms into intuitive, memorable interfaces.
+        <p style="color: #ccc; line-height: 1.8;">
+          Currently the sole designer at SJ Innovation LLC, independently owning client and internal design initiatives spanning financial terminals, clinical healthcare platforms, and multi-agent AI ecosystems. My design philosophy balances rigorous information architecture with high-craft typography and immersive micro-interactions.
         </p>
       </section>
 
-      <section style="margin-bottom: 2rem;">
-        <h2 style="font-size: 1.3rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Core Competencies</h2>
+      <section style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Professional Experience</h2>
+        
+        <article style="background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222; margin-top: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1.25rem; color: #fff; margin: 0;">UI/UX Designer</h3>
+            <span style="color: #888; font-size: 0.85rem; font-family: monospace;">June 2024 – Present</span>
+          </div>
+          <div style="color: #aaa; font-size: 0.95rem; margin-bottom: 1rem;">SJ Innovation LLC · Dhaka, Bangladesh</div>
+          <p style="color: #ccc; line-height: 1.7;">
+            Independently spearheading all product interface and design system initiatives across international client engagements. Architected comprehensive multi-brand Figma token libraries, reduced front-end handoff latency, and built interactive prototypes for executive stakeholders.
+          </p>
+          <ul style="color: #bbb; line-height: 1.7; padding-left: 1.25rem; margin-top: 0.75rem;">
+            <li><strong>Design Systems:</strong> Built scalable component libraries and token architectures adopted across cross-functional engineering squads.</li>
+            <li><strong>Enterprise SaaS:</strong> Designed data-dense financial, logistics, and healthcare interfaces focused on cognitive clarity and operational throughput.</li>
+            <li><strong>AI-Assisted Prototyping:</strong> Leveraged agentic workflows and LLM-assisted coding to accelerate concept validation and high-fidelity testing.</li>
+          </ul>
+        </article>
+
+        <article style="background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222; margin-top: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1.25rem; color: #fff; margin: 0;">Intern Graphic Designer</h3>
+            <span style="color: #888; font-size: 0.85rem; font-family: monospace;">Jan 2024 – May 2024</span>
+          </div>
+          <div style="color: #aaa; font-size: 0.95rem; margin-bottom: 1rem;">SJ Innovation LLC · Dhaka, Bangladesh</div>
+          <p style="color: #ccc; line-height: 1.7;">
+            Designed comprehensive visual identity assets, promotional print materials, corporate apparel, social media campaigns, and internal hackathon branding. Promoted directly to full-time UI/UX Designer upon completion.
+          </p>
+        </article>
+      </section>
+
+      <section style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Education &amp; Academic Training</h2>
+        <article style="background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222; margin-top: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1.2rem; color: #fff; margin: 0;">Diploma in Engineering in Computer Science &amp; Technology</h3>
+            <span style="color: #888; font-size: 0.85rem; font-family: monospace;">2021 – 2025</span>
+          </div>
+          <div style="color: #aaa; font-size: 0.95rem; margin-bottom: 0.5rem;">Munshiganj Polytechnic Institute · Bangladesh Technical Education Board</div>
+          <p style="color: #bbb; line-height: 1.7; margin: 0;">
+            Rigorous four-year engineering curriculum covering data structures, object-oriented programming, database management, computer networks, and human-computer interaction principles.
+          </p>
+        </article>
+      </section>
+
+      <section style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Extracurricular Activities &amp; Leadership</h2>
+        <article style="background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222; margin-top: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1.2rem; color: #fff; margin: 0;">Rover Scout · Scouts Movement</h3>
+            <span style="color: #888; font-size: 0.85rem; font-family: monospace;">Bangladesh Scouts</span>
+          </div>
+          <p style="color: #ccc; line-height: 1.7; margin-top: 0.5rem;">
+            Active member of the international Scouts Movement. Served as patrol leader during major jamborees and community mobilization initiatives, honing values of discipline, selfless civic service, and team coordination.
+          </p>
+          <ul style="color: #bbb; line-height: 1.7; padding-left: 1.25rem; margin-top: 0.5rem;">
+            <li><strong>Golden Jubilee Rover Moot 2023:</strong> Participated in the national Rover Moot held at the National Scout Training Centre, Gazipur, leading field navigation, emergency preparedness, and campcraft challenges.</li>
+            <li><strong>Community Service &amp; Relief:</strong> Coordinated logistics for local disaster preparedness, health awareness drives, and regional environmental conservation efforts.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 1.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem;">Core Competencies</h2>
         <ul style="color: #ccc; margin-top: 1rem; line-height: 1.8; padding-left: 1.25rem;">
           <li><strong>UI/UX Design:</strong> Enterprise SaaS, Design Systems (Figma Token Architecture), Responsive Web Layouts, User Flow Mapping, Interactive Prototyping.</li>
           <li><strong>AI Integration &amp; Prototyping:</strong> Google Antigravity, ComfyUI Generative Workflows, LLM Interface Patterns, Prompt Engineering.</li>
           <li><strong>Visual &amp; Brand Systems:</strong> Identity Systems, Monograms, Packaging, Editorial Typography, Adobe Creative Cloud.</li>
           <li><strong>Frontend Engineering:</strong> Semantic HTML5, CSS3/Tailwind, React/Vite, Web Audio API, Framer Motion.</li>
+        </ul>
+      </section>
+    </main>
+  `;
+}
+
+function buildPoetryHtml(): string {
+  return `
+    <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
+      <header style="margin-bottom: 3rem; text-align: center;">
+        <nav style="margin-bottom: 1.5rem; text-align: left;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
+        <h1 style="font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; margin-bottom: 0.5rem;">A Book of Poems</h1>
+        <p style="color: #888; font-size: 1.1rem;">Original poetry by Sadman Zaman Khan — quiet observations, kept lines, and small hours set down in verse.</p>
+      </header>
+
+      <div style="display: grid; gap: 1.5rem;">
+        ${POEMS.map(
+          (p) => `
+          <article style="background: #111; padding: 1.75rem; border-radius: 8px; border: 1px solid #222;">
+            <p style="color: #777; font-size: 0.85rem; font-mono; margin: 0 0 0.5rem;">${escapeHtml(p.date || "")}</p>
+            <h2 style="font-size: 1.4rem; margin: 0 0 0.75rem;">
+              <a href="/poetry/${escapeHtml(p.slug)}" style="color: #fff; text-decoration: none;">${escapeHtml(p.title)}</a>
+            </h2>
+            <pre style="color: #aaa; font-family: inherit; font-size: 0.95rem; line-height: 1.6; white-space: pre-wrap; margin: 0 0 1rem;">${escapeHtml(p.excerpt || p.content.slice(0, 150))}</pre>
+            <a href="/poetry/${escapeHtml(p.slug)}" style="color: #3b82f6; font-size: 0.9rem; text-decoration: none;">Read poem →</a>
+          </article>
+        `
+        ).join("")}
+      </div>
+    </main>
+  `;
+}
+
+function buildPoemHtml(poem: Poem): string {
+  return `
+    <main class="static-prerender" style="max-width: 750px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.8;">
+      <nav style="margin-bottom: 2.5rem; font-size: 0.9rem;">
+        <a href="/" style="color: #888; text-decoration: none;">Home</a>
+        <span style="color: #444; margin: 0 0.5rem;">/</span>
+        <a href="/poetry" style="color: #888; text-decoration: none;">Poetry</a>
+        <span style="color: #444; margin: 0 0.5rem;">/</span>
+        <span style="color: #fff;">${escapeHtml(poem.title)}</span>
+      </nav>
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.5rem; font-weight: 600; color: #fff; margin: 0 0 0.5rem; letter-spacing: -0.02em;">
+          ${escapeHtml(poem.title)}
+        </h1>
+        <p style="color: #777; font-size: 0.9rem;">By Sadman Zaman Khan · ${escapeHtml(poem.date || "")}</p>
+      </header>
+
+      <article style="background: #111; padding: 2rem; border-radius: 8px; border: 1px solid #222; font-size: 1.05rem; line-height: 1.9; color: #ddd;">
+        <pre style="font-family: Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 1.15rem; line-height: 1.8; white-space: pre-wrap; margin: 0;">${escapeHtml(poem.content)}</pre>
+      </article>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <a href="/poetry" style="color: #888; text-decoration: none; font-size: 0.95rem;">← Back to all poems</a>
+      </div>
+    </main>
+  `;
+}
+
+function buildBlogHtml(): string {
+  return `
+    <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
+      <header style="margin-bottom: 3rem; text-align: center;">
+        <nav style="margin-bottom: 1.5rem; text-align: left;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
+        <h1 style="font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; margin-bottom: 0.5rem;">My Ponderings</h1>
+        <p style="color: #888; font-size: 1.1rem;">Short writings on design, software craft, biology, attention, and side explorations.</p>
+      </header>
+
+      <div style="display: grid; gap: 1.5rem;">
+        ${POSTS.map(
+          (p) => `
+          <article style="background: #111; padding: 1.75rem; border-radius: 8px; border: 1px solid #222;">
+            <p style="color: #777; font-size: 0.85rem; margin: 0 0 0.5rem;">
+              ${escapeHtml(new Date(p.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }))}
+            </p>
+            <h2 style="font-size: 1.35rem; margin: 0 0 0.75rem;">
+              <a href="/blog/${escapeHtml(p.slug)}" style="color: #fff; text-decoration: none;">${escapeHtml(p.title)}</a>
+            </h2>
+            <p style="color: #aaa; font-size: 0.95rem; line-height: 1.6; margin: 0 0 1rem;">
+              ${escapeHtml(p.excerpt)}
+            </p>
+            <a href="/blog/${escapeHtml(p.slug)}" style="color: #3b82f6; font-size: 0.9rem; text-decoration: none;">Read essay →</a>
+          </article>
+        `
+        ).join("")}
+      </div>
+    </main>
+  `;
+}
+
+function buildPostHtml(post: Post): string {
+  return `
+    <main class="static-prerender" style="max-width: 750px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.8;">
+      <nav style="margin-bottom: 2.5rem; font-size: 0.9rem;">
+        <a href="/" style="color: #888; text-decoration: none;">Home</a>
+        <span style="color: #444; margin: 0 0.5rem;">/</span>
+        <a href="/blog" style="color: #888; text-decoration: none;">Ponderings</a>
+        <span style="color: #444; margin: 0 0.5rem;">/</span>
+        <span style="color: #fff;">${escapeHtml(post.title)}</span>
+      </nav>
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 700; color: #fff; margin: 0 0 0.75rem; letter-spacing: -0.02em; line-height: 1.3;">
+          ${escapeHtml(post.title)}
+        </h1>
+        <p style="color: #777; font-size: 0.9rem;">
+          By Sadman Zaman Khan · Published on ${escapeHtml(new Date(post.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }))}
+        </p>
+      </header>
+
+      <article style="font-size: 1.05rem; line-height: 1.8; color: #ccc;">
+        ${post.body
+          .split("\n\n")
+          .map((para) => `<p style="margin-bottom: 1.25rem;">${escapeHtml(para)}</p>`)
+          .join("")}
+      </article>
+
+      <div style="margin-top: 3rem; text-align: center; border-top: 1px solid #222; padding-top: 2rem;">
+        <a href="/blog" style="color: #888; text-decoration: none; font-size: 0.95rem;">← Back to all ponderings</a>
+      </div>
+    </main>
+  `;
+}
+
+function buildPastimeHtml(): string {
+  return `
+    <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
+      <header style="margin-bottom: 3rem;">
+        <nav style="margin-bottom: 1.5rem;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
+        <h1 style="font-size: 2.5rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff;">Pastime &amp; Cultural Diary</h1>
+        <p style="color: #aaa; font-size: 1.1rem; margin: 0;">A live pulse of cinema on Letterboxd, heavy music rotation on Last.fm, anime watching diary, and ongoing contemplations.</p>
+      </header>
+
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.4rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1.25rem;">Recent Contemplations</h2>
+        <div style="display: grid; gap: 1rem;">
+          ${CONTEMPLATIONS.map(
+            (c) => `
+            <article style="background: #111; padding: 1.25rem; border-radius: 8px; border: 1px solid #222;">
+              <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; font-family: monospace;">${escapeHtml(c.category || "Thought")} · ${escapeHtml(c.date || "")}</span>
+              <h3 style="font-size: 1.15rem; color: #fff; margin: 0.35rem 0 0.5rem;">${escapeHtml(c.title)}</h3>
+              <p style="color: #aaa; font-size: 0.95rem; line-height: 1.6; margin: 0;">${escapeHtml(c.body)}</p>
+            </article>
+          `
+          ).join("")}
+        </div>
+      </section>
+
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.4rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1.25rem;">Connected Feeds</h2>
+        <ul style="color: #aaa; line-height: 1.8; padding-left: 1.25rem;">
+          <li>Letterboxd: <a href="https://letterboxd.com/Annyxtopheles" target="_blank" rel="noopener noreferrer" style="color: #3b82f6;">Annyxtopheles ↗</a></li>
+          <li>Last.fm: <a href="https://www.last.fm/user/Asphyxtonihil" target="_blank" rel="noopener noreferrer" style="color: #3b82f6;">Asphyxtonihil ↗</a></li>
+          <li>MyAnimeList: <a href="https://myanimelist.net/profile/Annyxtopheles" target="_blank" rel="noopener noreferrer" style="color: #3b82f6;">Annyxtopheles ↗</a></li>
         </ul>
       </section>
     </main>
@@ -279,24 +507,27 @@ function updateHtmlTags(
 ): string {
   let html = templateHtml;
 
+  const formattedTitle = formatSeoTitle(options.title);
+  const formattedDescription = formatMetaDescription(options.description);
+
   // 1. Replace title
-  html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(options.title)}</title>`);
+  html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(formattedTitle)}</title>`);
 
   // 2. Replace meta description
   html = html.replace(
     /<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/i,
-    `<meta name="description" content="${escapeHtml(options.description)}">`
+    `<meta name="description" content="${escapeHtml(formattedDescription)}">`
   );
 
   // 3. Replace OG tags
-  html = html.replace(/<meta\s+property=["']og:title["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:title" content="${escapeHtml(options.title)}" />`);
-  html = html.replace(/<meta\s+property=["']og:description["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:description" content="${escapeHtml(options.description)}" />`);
+  html = html.replace(/<meta\s+property=["']og:title["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:title" content="${escapeHtml(formattedTitle)}" />`);
+  html = html.replace(/<meta\s+property=["']og:description["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:description" content="${escapeHtml(formattedDescription)}" />`);
   html = html.replace(/<meta\s+property=["']og:url["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:url" content="${escapeHtml(options.url)}" />`);
   html = html.replace(/<meta\s+property=["']og:image["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta property="og:image" content="${escapeHtml(options.image)}" />`);
 
   // 4. Replace Twitter tags
-  html = html.replace(/<meta\s+name=["']twitter:title["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:title" content="${escapeHtml(options.title)}" />`);
-  html = html.replace(/<meta\s+name=["']twitter:description["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:description" content="${escapeHtml(options.description)}" />`);
+  html = html.replace(/<meta\s+name=["']twitter:title["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:title" content="${escapeHtml(formattedTitle)}" />`);
+  html = html.replace(/<meta\s+name=["']twitter:description["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:description" content="${escapeHtml(formattedDescription)}" />`);
   html = html.replace(/<meta\s+name=["']twitter:url["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:url" content="${escapeHtml(options.url)}" />`);
   html = html.replace(/<meta\s+name=["']twitter:image["']\s+content=["'][^"']*["']\s*\/?>/i, `<meta name="twitter:image" content="${escapeHtml(options.image)}" />`);
 
@@ -331,8 +562,8 @@ export function prerender() {
 
   // 1. Prerender Homepage
   const homeHtml = updateHtmlTags(templateHtml, {
-    title: "Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper",
-    description: "Personal portfolio of Sadman Zaman Khan — UI/UX Designer & AI-Augmented Prototyper designing enterprise dashboards, AI-native product interfaces, and brand systems.",
+    title: "Sadman Zaman Khan — UI/UX Designer & Prototyper",
+    description: "Personal portfolio of Sadman Zaman Khan — UI/UX Designer designing enterprise dashboards, AI-native interfaces, and design systems.",
     url: `${BASE_URL}/`,
     image: `${BASE_URL}/og-image.webp`,
     contentHtml: buildHomeHtml(),
@@ -354,16 +585,10 @@ export function prerender() {
   writeFileSync(workPath, workHtml, "utf-8");
   count++;
 
-  // 3. Prerender /portfolio (alias to /work)
-  const portfolioPath = resolve(distDir, "portfolio", "index.html");
-  ensureDir(portfolioPath);
-  writeFileSync(portfolioPath, workHtml, "utf-8");
-  count++;
-
-  // 4. Prerender /about
+  // 3. Prerender /about
   const aboutHtml = updateHtmlTags(templateHtml, {
     title: "About & Experience — Sadman Zaman Khan",
-    description: "Biography, design competencies, technical skills, and experience of UI/UX Designer Sadman Zaman Khan.",
+    description: "Biography, design competencies, engineering background, and experience of UI/UX Designer Sadman Zaman Khan.",
     url: `${BASE_URL}/about`,
     image: `${BASE_URL}/og-image.webp`,
     contentHtml: buildAboutHtml()
@@ -373,20 +598,78 @@ export function prerender() {
   writeFileSync(aboutPath, aboutHtml, "utf-8");
   count++;
 
-  // 5. Prerender /profile (Bio & Archive profile)
-  const profileHtml = updateHtmlTags(templateHtml, {
-    title: "Personal Profile & Bio — Sadman Zaman Khan",
-    description: "Comprehensive background, design philosophy, values, education, and portfolio archive of Sadman Zaman Khan.",
-    url: `${BASE_URL}/profile`,
+  // 4. Prerender /poetry
+  const poetryHtml = updateHtmlTags(templateHtml, {
+    title: "Poetry & Kept Lines — Sadman Zaman Khan",
+    description: "Original poetry and verse by Sadman Zaman Khan — quiet observations, kept lines, and night hours.",
+    url: `${BASE_URL}/poetry`,
     image: `${BASE_URL}/og-image.webp`,
-    contentHtml: buildAboutHtml()
+    contentHtml: buildPoetryHtml()
   });
-  const profilePath = resolve(distDir, "profile", "index.html");
-  ensureDir(profilePath);
-  writeFileSync(profilePath, profileHtml, "utf-8");
+  const poetryPath = resolve(distDir, "poetry", "index.html");
+  ensureDir(poetryPath);
+  writeFileSync(poetryPath, poetryHtml, "utf-8");
   count++;
 
-  // 6. Prerender all projects
+  // 5. Prerender each Poem
+  for (const poem of POEMS) {
+    const poemUrl = `${BASE_URL}/poetry/${poem.slug}`;
+    const pHtml = updateHtmlTags(templateHtml, {
+      title: `${poem.title} — Poetry | Sadman Zaman Khan`,
+      description: poem.excerpt || poem.content.slice(0, 150),
+      url: poemUrl,
+      image: poem.cover_image_url || `${BASE_URL}/og-image.webp`,
+      contentHtml: buildPoemHtml(poem)
+    });
+    const pPath = resolve(distDir, "poetry", poem.slug, "index.html");
+    ensureDir(pPath);
+    writeFileSync(pPath, pHtml, "utf-8");
+    count++;
+  }
+
+  // 6. Prerender /blog
+  const blogHtml = updateHtmlTags(templateHtml, {
+    title: "My Ponderings & Essays — Sadman Zaman Khan",
+    description: "Short writings on design, software craft, biology, attention, and creative explorations by Sadman Zaman Khan.",
+    url: `${BASE_URL}/blog`,
+    image: `${BASE_URL}/og-image.webp`,
+    contentHtml: buildBlogHtml()
+  });
+  const blogPath = resolve(distDir, "blog", "index.html");
+  ensureDir(blogPath);
+  writeFileSync(blogPath, blogHtml, "utf-8");
+  count++;
+
+  // 7. Prerender each Post
+  for (const post of POSTS) {
+    const postUrl = `${BASE_URL}/blog/${post.slug}`;
+    const postHtml = updateHtmlTags(templateHtml, {
+      title: `${post.title} — Sadman Zaman Khan`,
+      description: post.excerpt,
+      url: postUrl,
+      image: post.cover_image_url || `${BASE_URL}/og-image.webp`,
+      contentHtml: buildPostHtml(post)
+    });
+    const pPath = resolve(distDir, "blog", post.slug, "index.html");
+    ensureDir(pPath);
+    writeFileSync(pPath, postHtml, "utf-8");
+    count++;
+  }
+
+  // 8. Prerender /pastime
+  const pastimeHtml = updateHtmlTags(templateHtml, {
+    title: "Pastime & Cultural Diary — Sadman Zaman Khan",
+    description: "A live pulse of cinema on Letterboxd, heavy music rotation on Last.fm, anime watching diary, and contemplations.",
+    url: `${BASE_URL}/pastime`,
+    image: `${BASE_URL}/og-image.webp`,
+    contentHtml: buildPastimeHtml()
+  });
+  const pastimePath = resolve(distDir, "pastime", "index.html");
+  ensureDir(pastimePath);
+  writeFileSync(pastimePath, pastimeHtml, "utf-8");
+  count++;
+
+  // 9. Prerender all projects in /work/[slug]
   for (const project of PROJECTS) {
     const projectUrl = `${BASE_URL}/work/${project.slug}`;
     const imageUrl = project.coverImage.startsWith("http")
@@ -394,7 +677,7 @@ export function prerender() {
       : `${BASE_URL}${project.coverImage}`;
 
     const projectHtml = updateHtmlTags(templateHtml, {
-      title: `${project.title} — Case Study | Sadman Zaman Khan`,
+      title: project.title,
       description: project.summary,
       url: projectUrl,
       image: imageUrl,
@@ -416,16 +699,9 @@ export function prerender() {
       }
     });
 
-    // Write to dist/work/[slug]/index.html
     const targetWork = resolve(distDir, "work", project.slug, "index.html");
     ensureDir(targetWork);
     writeFileSync(targetWork, projectHtml, "utf-8");
-    count++;
-
-    // Write alias to dist/portfolio/[slug]/index.html
-    const targetPortfolio = resolve(distDir, "portfolio", project.slug, "index.html");
-    ensureDir(targetPortfolio);
-    writeFileSync(targetPortfolio, projectHtml, "utf-8");
     count++;
   }
 

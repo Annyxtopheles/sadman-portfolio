@@ -18,7 +18,7 @@ const Poetry = () => {
           '@type': 'CollectionPage',
           name: 'Poetry — A Book of Poems',
           description: 'Original poetry by Sadman Zaman Khan.',
-          url: 'https://sadmanzamankhan.pages.dev/poetry',
+          url: 'https://sadmanportfolio.vercel.app/poetry',
         }}
       />
 

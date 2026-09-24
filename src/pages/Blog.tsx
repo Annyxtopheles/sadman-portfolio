@@ -17,7 +17,7 @@ const Blog = () => {
           '@type': 'CollectionPage',
           name: 'My Ponderings',
           description: 'Short writings on a myriad of things that piqued my interest.',
-          url: 'https://sadmanzamankhan.pages.dev/blog',
+          url: 'https://sadmanportfolio.vercel.app/blog',
         }}
       />
 
