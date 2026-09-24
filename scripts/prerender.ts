@@ -340,17 +340,27 @@ function buildAboutHtml(): string {
 function buildPoetryHtml(): string {
   return `
     <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
-      <header style="margin-bottom: 3rem; text-align: center;">
+      <header style="margin-bottom: 2.5rem; text-align: center;">
         <nav style="margin-bottom: 1.5rem; text-align: left;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
         <h1 style="font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; margin-bottom: 0.5rem;">A Book of Poems</h1>
         <p style="color: #888; font-size: 1.1rem;">Original poetry by Sadman Zaman Khan — quiet observations, kept lines, and small hours set down in verse.</p>
       </header>
 
+      <section style="margin-bottom: 2rem; background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222;">
+        <h2 style="font-size: 1.25rem; color: #fff; margin-bottom: 0.75rem;">Curatorial Note &amp; Literary Themes</h2>
+        <p style="color: #bbb; line-height: 1.7; margin-bottom: 0.75rem;">
+          A Book of Poems compiles personal verse, fragments, and quiet midnight thoughts written by Sadman Zaman Khan between 2024 and 2026. The poetry explores existential geometry, organic vulnerability in synthetic spaces, computational solitude, and astronomical imagery.
+        </p>
+        <p style="color: #bbb; line-height: 1.7; margin: 0;">
+          Presented with bespoke reader toggles allowing visitors to transition between minimalist modern digital typography and classical Caslon Antique archival typesetting.
+        </p>
+      </section>
+
       <div style="display: grid; gap: 1.5rem;">
         ${POEMS.map(
           (p) => `
           <article style="background: #111; padding: 1.75rem; border-radius: 8px; border: 1px solid #222;">
-            <p style="color: #777; font-size: 0.85rem; font-mono; margin: 0 0 0.5rem;">${escapeHtml(p.date || "")}</p>
+            <p style="color: #777; font-size: 0.85rem; font-family: monospace; margin: 0 0 0.5rem;">${escapeHtml(p.date || "")}</p>
             <h2 style="font-size: 1.4rem; margin: 0 0 0.75rem;">
               <a href="/poetry/${escapeHtml(p.slug)}" style="color: #fff; text-decoration: none;">${escapeHtml(p.title)}</a>
             </h2>
@@ -386,6 +396,16 @@ function buildPoemHtml(poem: Poem): string {
         <pre style="font-family: Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 1.15rem; line-height: 1.8; white-space: pre-wrap; margin: 0;">${escapeHtml(poem.content)}</pre>
       </article>
 
+      <section style="margin-top: 2.5rem; background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222;">
+        <h2 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.75rem;">Thematic Notes &amp; Poetic Structure</h2>
+        <p style="color: #bbb; line-height: 1.7; margin-bottom: 0.75rem;">
+          Written by Sadman Zaman Khan, this piece explores the friction between biological existence and cosmic indifference. Using heightened metaphysical vocabulary and celestial motifs (satellites, fringes, magellanic clouds), the poem examines human fragility against infinite voids.
+        </p>
+        <p style="color: #bbb; line-height: 1.7; margin: 0;">
+          Readers can toggle between contemporary sans-serif reading and antique archival typesetting to experience how typographical pacing alters rhythm and emotional delivery.
+        </p>
+      </section>
+
       <div style="margin-top: 3rem; text-align: center;">
         <a href="/poetry" style="color: #888; text-decoration: none; font-size: 0.95rem;">← Back to all poems</a>
       </div>
@@ -396,11 +416,21 @@ function buildPoemHtml(poem: Poem): string {
 function buildBlogHtml(): string {
   return `
     <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
-      <header style="margin-bottom: 3rem; text-align: center;">
+      <header style="margin-bottom: 2.5rem; text-align: center;">
         <nav style="margin-bottom: 1.5rem; text-align: left;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
         <h1 style="font-size: 2.75rem; font-weight: 500; letter-spacing: -0.02em; color: #fff; margin-bottom: 0.5rem;">My Ponderings</h1>
         <p style="color: #888; font-size: 1.1rem;">Short writings on design, software craft, biology, attention, and side explorations.</p>
       </header>
+
+      <section style="margin-bottom: 2rem; background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222;">
+        <h2 style="font-size: 1.25rem; color: #fff; margin-bottom: 0.75rem;">Field Notes, Research &amp; Explorations</h2>
+        <p style="color: #bbb; line-height: 1.7; margin-bottom: 0.75rem;">
+          My Ponderings collects working essays, architectural design notes, and interdisciplinary musings by Sadman Zaman Khan. Topics span human-agent interaction models, enterprise UI design systems, cognitive friction in digital tools, biological phenomena, and generative AI prototyping.
+        </p>
+        <p style="color: #bbb; line-height: 1.7; margin: 0;">
+          Each entry reflects hands-on prototyping experiments, cross-disciplinary reading, and production insights gained while designing software systems at SJ Innovation LLC.
+        </p>
+      </section>
 
       <div style="display: grid; gap: 1.5rem;">
         ${POSTS.map(
@@ -461,11 +491,21 @@ function buildPostHtml(post: Post): string {
 function buildPastimeHtml(): string {
   return `
     <main class="static-prerender" style="max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #ededed; line-height: 1.6;">
-      <header style="margin-bottom: 3rem;">
+      <header style="margin-bottom: 2.5rem;">
         <nav style="margin-bottom: 1.5rem;"><a href="/" style="color: #888; text-decoration: none;">← Home</a></nav>
         <h1 style="font-size: 2.5rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff;">Pastime &amp; Cultural Diary</h1>
         <p style="color: #aaa; font-size: 1.1rem; margin: 0;">A live pulse of cinema on Letterboxd, heavy music rotation on Last.fm, anime watching diary, and ongoing contemplations.</p>
       </header>
+
+      <section style="margin-bottom: 2.5rem; background: #111; padding: 1.5rem; border-radius: 8px; border: 1px solid #222;">
+        <h2 style="font-size: 1.25rem; color: #fff; margin-bottom: 0.75rem;">Cultural Inputs &amp; Aesthetic Influences</h2>
+        <p style="color: #bbb; line-height: 1.7; margin-bottom: 0.75rem;">
+          Design sensibility is informed by what one observes, listens to, and reflects upon during unhurried hours. This live cultural diary connects directly via third-party webhooks to track real-time cinema logs on Letterboxd, album rotations on Last.fm, and anime narrative arcs on MyAnimeList.
+        </p>
+        <p style="color: #bbb; line-height: 1.7; margin: 0;">
+          Alongside external feeds, short contemplations record emerging thoughts on design theory, monochrome minimalism, typography, and creative philosophy.
+        </p>
+      </section>
 
       <section style="margin-bottom: 3rem;">
         <h2 style="font-size: 1.4rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1.25rem;">Recent Contemplations</h2>
