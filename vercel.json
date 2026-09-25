@@ -20,6 +20,31 @@
       "source": "/contact",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/poetry",
+      "destination": "https://sadmanzamankhan.pages.dev/poetry",
+      "permanent": true
+    },
+    {
+      "source": "/poetry/:match*",
+      "destination": "https://sadmanzamankhan.pages.dev/poetry/:match*",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://sadmanzamankhan.pages.dev/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:match*",
+      "destination": "https://sadmanzamankhan.pages.dev/blog/:match*",
+      "permanent": true
+    },
+    {
+      "source": "/pastime",
+      "destination": "https://sadmanzamankhan.pages.dev/pastime",
+      "permanent": true
     }
   ],
   "headers": [

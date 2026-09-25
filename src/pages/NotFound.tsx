@@ -17,7 +17,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-transparent flex flex-col justify-between">
       <SEOHead
         title="404 — Page Not Found"
-        description="That page doesn't exist. Head back to the homepage to keep exploring Sadman Zaman Khan's portfolio, poetry, and writing."
+        description="That page doesn't exist. Head back to the homepage to keep exploring Sadman Zaman Khan's design portfolio and case studies."
       />
 
       <main className="flex-1 flex flex-col justify-center max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 w-full">

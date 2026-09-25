@@ -14,11 +14,6 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
 import About from "./pages/About";
-import Poetry from "./pages/Poetry";
-import PoemDetail from "./pages/PoemDetail";
-import Blog from "./pages/Blog";
-import BlogDetail from "./pages/BlogDetail";
-import Pastime from "./pages/Pastime";
 import NotFound from "./pages/NotFound";
 import ClickSpark from "@/components/ClickSpark";
 import AmbientStarfield from "@/components/AmbientStarfield";
@@ -49,11 +44,6 @@ const AnimatedRoutes = () => {
             <Route path="/portfolio/:slug" element={<PortfolioSlugRedirect />} />
             <Route path="/about" element={<About />} />
             <Route path="/profile" element={<Navigate to="/about" replace />} />
-            <Route path="/poetry" element={<Poetry />} />
-            <Route path="/poetry/:slug" element={<PoemDetail />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogDetail />} />
-            <Route path="/pastime" element={<Pastime />} />
             <Route path="/contact" element={<Navigate to="/about" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

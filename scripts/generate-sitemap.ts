@@ -1,7 +1,5 @@
 import { writeFileSync } from "fs";
 import { resolve } from "path";
-import { POEMS } from "../src/data/poems";
-import { POSTS } from "../src/data/posts";
 import { PROJECTS } from "../src/data/projects";
 
 const BASE_URL = "https://sadmanportfolio.vercel.app";
@@ -17,9 +15,6 @@ const staticEntries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/work", changefreq: "weekly", priority: "0.9" },
   { path: "/about", changefreq: "weekly", priority: "0.9" },
-  { path: "/poetry", changefreq: "weekly", priority: "0.8" },
-  { path: "/blog", changefreq: "weekly", priority: "0.8" },
-  { path: "/pastime", changefreq: "monthly", priority: "0.7" },
 ];
 
 function generateSitemap(entries: SitemapEntry[]) {
@@ -49,26 +44,6 @@ function generateSitemap(entries: SitemapEntry[]) {
   // All Projects / Case Studies (Canonical /work routes only)
   for (const p of PROJECTS) {
     dynamic.push({ path: `/work/${p.slug}`, changefreq: "monthly", priority: "0.8" });
-  }
-
-  // All Poems
-  for (const poem of POEMS) {
-    dynamic.push({
-      path: `/poetry/${poem.slug}`,
-      lastmod: poem.published_at || poem.date || undefined,
-      changefreq: "monthly",
-      priority: "0.7"
-    });
-  }
-
-  // All Blog Posts
-  for (const post of POSTS) {
-    dynamic.push({
-      path: `/blog/${post.slug}`,
-      lastmod: post.updated_at || post.created_at,
-      changefreq: "monthly",
-      priority: "0.7"
-    });
   }
 
   const entries = [...staticEntries, ...dynamic];

@@ -65,8 +65,8 @@ export const WEBSITE_JSON_LD = {
 
 export const SITE_SETTINGS = {
   name: "Sadman Zaman Khan",
-  title: "Sadman Zaman Khan — UI/UX Designer & Writer",
-  description: "Portfolio, poetry, and writing by Sadman Zaman Khan.",
+  title: "Sadman Zaman Khan — UI/UX Designer & AI Prototyper",
+  description: "Personal portfolio of Sadman Zaman Khan — UI/UX Designer and AI-Augmented Prototyper.",
   statusLine: "Drinking filtered tap water, fiddling with Figma, listening to Godspeed You! Black Emperor.",
   email: "sadmanz.khan@gmail.com",
   socials: [

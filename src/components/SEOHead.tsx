@@ -22,7 +22,7 @@ interface SEOHeadProps {
 export const SEOHead = ({
   title,
   description,
-  keywords = 'sadman zaman khan, ui/ux designer, product designer, portfolio, poetry, blog, typography',
+  keywords = 'sadman zaman khan, ui/ux designer, product designer, portfolio, case studies, design systems, ai prototyping',
   image = DEFAULT_OG_IMAGE,
   url,
   article,

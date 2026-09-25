@@ -15,7 +15,6 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { label: 'Work', path: '/work', isExternal: false },
     { label: 'About', path: '/about', isExternal: false },
-    { label: 'Pastime', path: '/pastime', isExternal: false },
     { label: 'Resume', path: '/Sadman_Zaman_Khan_Resume.pdf', isExternal: true },
   ];
 
