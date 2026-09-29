@@ -9375,7 +9375,7 @@ export const PROJECTS: Project[] = [
         sectionDescription: "Bespoke animated motion graphic countdown conceived for SJ Innovation ringing in 2026. Features a futuristic speedometer-style gauge dial transitioning from 2025 to 2026 against a corporate sunset-to-cerulean atmospheric gradient, crowned with the official SJ Innovation AI First Solutions lockup.",
         images: [
           {
-            url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
+            url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
             caption: "New Year 2026 Animated Motion Countdown — Futuristic gauge meter transitioning from 2025 into 2026 with corporate gradient glow and AI-First branding.",
             aspectRatio: "1/1"
           }
@@ -9821,7 +9821,7 @@ export const PROJECTS: Project[] = [
         type: "portrait"
       },
           {
-        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
+        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
         caption: "New Year 2026 Animated Motion Countdown — High-Tech Gauge Meter",
         type: "desktop"
       },
@@ -10543,7 +10543,7 @@ export const PROJECTS: Project[] = [
         type: "portrait"
       },
       {
-        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
+        url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.webp",
         caption: "New Year 2026 Animated Motion Countdown — High-Tech Gauge Meter",
         type: "desktop"
       },
