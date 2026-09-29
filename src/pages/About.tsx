@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Link } from 'react-router-dom';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import { useExploration } from '@/context/ExplorationContext';
@@ -9,151 +8,118 @@ import { ArtifactCollage, ArtifactImage } from '@/components/ArtifactCollage';
 import { TestimonialsMarquee } from '@/components/home/TestimonialsMarquee';
 import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
-interface ThematicBucket {
+interface CompetencyPillar {
+  number: string;
+  title: string;
   category: string;
-  points: string[];
+  skills: string[];
+  tools: string[];
 }
 
-interface Experience {
-  role: string;
-  company: string;
-  location: string;
-  period: string;
-  highlight?: string;
-  thematicBuckets?: ThematicBucket[];
-  bullets?: string[];
-  images?: ArtifactImage[];
+interface CertificationItem {
+  title: string;
+  issuer: string;
+  date: string;
+  url: string;
 }
 
-interface CapabilityItem {
-  name: string;
-  category: 'uiux' | 'ai' | 'brand' | 'marketing';
-  categoryLabel: string;
-  description: string;
-  proofProjects: { name: string; slug: string }[];
-}
+const COMPETENCY_PILLARS: CompetencyPillar[] = [
+  {
+    number: '01',
+    title: 'UI/UX & Design Systems',
+    category: 'Product Design',
+    skills: [
+      'Component Libraries & Auto-layout Variants',
+      'Design Tokens & Multi-variable Systems',
+      'Interactive Prototyping & User Flows',
+      'Responsive Web & Mobile Application Layouts',
+      'Dashboard & Command-Center Interfaces'
+    ],
+    tools: ['Figma', 'Design Systems', 'Tokens Studio', 'FigJam']
+  },
+  {
+    number: '02',
+    title: 'AI-Augmented Workflows',
+    category: 'Prototyping & Research',
+    skills: [
+      'AI-Directed Responsive Web Prototyping',
+      'Rapid User Flow Validation Before Engineering',
+      'Local Safetensors & ComfyUI Generation Pipelines',
+      'Local Open-Source LLMs for Competitive UX Research',
+      'Live Server-Sent Event (SSE) Stream Testing'
+    ],
+    tools: ['Google Antigravity', 'Lovable', 'Claude Code CLI', 'ComfyUI', 'Ollama']
+  },
+  {
+    number: '03',
+    title: 'Brand Systems & Visuals',
+    category: 'Brand Architecture',
+    skills: [
+      'Vector Identity Systems & Logo Suites',
+      'Enterprise Brand Guidelines & Design Governance',
+      'Executive Sales Enablement & Diagnostic Decks',
+      'High-Converting Editorial Carousels & Social Packaging',
+      'Large-Format Print Collateral & Event Signage'
+    ],
+    tools: ['Adobe Illustrator', 'Photoshop', 'InDesign', 'Brand Guidelines']
+  },
+  {
+    number: '04',
+    title: 'Growth & Web Discovery',
+    category: 'Performance & SEO',
+    skills: [
+      'Direct-Response Ad Creative Design & Testing',
+      'Targeted Campaign Setup & Optimization in Meta Ads',
+      'Semantic Heading Hierarchies & Metadata Optimization',
+      'JSON-LD Structured Data & Search Console Verification',
+      'WordPress & Web Content Administration'
+    ],
+    tools: ['Meta Ads Manager', 'Google Search Console', 'JSON-LD', 'WordPress']
+  }
+];
 
-const CAPABILITIES: CapabilityItem[] = [
-  // UI/UX Design
+const CERTIFICATIONS: CertificationItem[] = [
   {
-    name: 'Figma & Design Systems',
-    category: 'uiux',
-    categoryLabel: 'UI/UX Design',
-    description: 'Building component libraries, auto-layout variants, variables, and high-fidelity interactive prototypes for web and mobile.',
-    proofProjects: [
-      { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
-      { name: 'CollabAI Suite', slug: 'collabai-suite' },
-      { name: 'ICR Surveillance', slug: 'icr-debt-surveillance' }
-    ]
+    title: 'Claude Code in Action',
+    issuer: 'Anthropic',
+    date: 'February 2026',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   },
   {
-    name: 'Dashboard Interface Design',
-    category: 'uiux',
-    categoryLabel: 'UI/UX Design',
-    description: 'Organizing complex financial, clinical, and operational data into clear, scannable modules with intuitive alert hierarchies in Figma.',
-    proofProjects: [
-      { name: 'ICR Surveillance', slug: 'icr-debt-surveillance' },
-      { name: 'Alyssa Kristin SaaS', slug: 'alyssa-kristin-saas' }
-    ]
+    title: 'Design System in Figma',
+    issuer: 'Grameenphone Academy',
+    date: 'October 2025',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   },
   {
-    name: 'User Flows & Wireframing',
-    category: 'uiux',
-    categoryLabel: 'UI/UX Design',
-    description: 'Mapping conversion funnels and user journeys to fix layout confusion and hesitation before committing to polished designs.',
-    proofProjects: [
-      { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
-      { name: 'Clandest Agency', slug: 'clandest-agency' }
-    ]
-  },
-  // AI-Assisted Workflows
-  {
-    name: 'Google Antigravity',
-    category: 'ai',
-    categoryLabel: 'AI Prototyping',
-    description: 'Directing Google Antigravity to translate design systems and layouts into live, responsive web prototypes and production pages.',
-    proofProjects: [
-      { name: 'Personal Portfolio', slug: 'szk-personal-archive' },
-      { name: 'Clandest Agency', slug: 'clandest-agency' }
-    ]
+    title: 'Digital Skills: User Experience',
+    issuer: 'Accenture',
+    date: 'September 2025',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   },
   {
-    name: 'ComfyUI (Local Models)',
-    category: 'ai',
-    categoryLabel: 'AI Generation',
-    description: 'Setting up local image generation workflows with custom safetensors checkpoints to generate unique visual assets.',
-    proofProjects: [
-      { name: 'CollabAI Suite', slug: 'collabai-suite' }
-    ]
+    title: 'HubSpot Inbound Marketing Certification',
+    issuer: 'HubSpot',
+    date: 'March 2026',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   },
   {
-    name: 'Lovable & Claude Code',
-    category: 'ai',
-    categoryLabel: 'AI Prototyping',
-    description: 'Using Lovable and Claude to quickly turn wireframes into testable web applications to review UX with stakeholders.',
-    proofProjects: [
-      { name: 'ePhysician Redesign', slug: 'ephysician-redesign' },
-      { name: 'CollabAI Suite', slug: 'collabai-suite' }
-    ]
+    title: 'B1 English for Developers (Score: 95.2%)',
+    issuer: 'freeCodeCamp',
+    date: 'February 2026',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   },
   {
-    name: 'Ollama (Local LLMs)',
-    category: 'ai',
-    categoryLabel: 'AI Research',
-    description: 'Running local open-source models for competitive UX research, content exploration, and prompt testing.',
-    proofProjects: [
-      { name: 'CollabAI Suite', slug: 'collabai-suite' }
-    ]
-  },
-  // Brand & Visual
-  {
-    name: 'Adobe Illustrator & Photoshop',
-    category: 'brand',
-    categoryLabel: 'Brand Identity',
-    description: 'Designing full vector mark suites, brand guidelines, color palettes, typographic scales, and marketing assets.',
-    proofProjects: [
-      { name: 'NEXURA Identity', slug: 'nexura-brand-system' },
-      { name: 'Clandest Agency', slug: 'clandest-agency' },
-      { name: 'Queens AI Week', slug: 'control-tower-suite' }
-    ]
-  },
-  {
-    name: 'Marketing Graphics & Print',
-    category: 'brand',
-    categoryLabel: 'Visual Production',
-    description: 'Designing corporate banners, merchandise, social media carousels, and promotional event assets under tight turnarounds.',
-    proofProjects: [
-      { name: 'LuCreativ Theme Parks', slug: 'creative-initiatives' },
-      { name: 'Campus Rebranding', slug: 'campus-rebranding' }
-    ]
-  },
-  // Marketing & Growth
-  {
-    name: 'Meta Ads Manager & Creative',
-    category: 'marketing',
-    categoryLabel: 'Growth & Ads',
-    description: 'Designing direct-response ad visuals (feed, 9:16 story, carousels) and setting up targeted lead campaigns in Ads Manager.',
-    proofProjects: [
-      { name: 'ePhysician Paid Social', slug: 'ephysician-redesign' },
-      { name: 'NonProfit AI Campaign', slug: 'control-tower-suite' }
-    ]
-  },
-  {
-    name: 'On-Page SEO & Search Console',
-    category: 'marketing',
-    categoryLabel: 'On-Page SEO',
-    description: 'Structuring clean heading hierarchies, metadata, sitemaps, and verifying indexing through Google Search Console.',
-    proofProjects: [
-      { name: 'Personal Portfolio', slug: 'szk-personal-archive' },
-      { name: 'Clandest Agency', slug: 'clandest-agency' }
-    ]
+    title: 'Graphic Design for Freelancing Level-3',
+    issuer: 'NSDA',
+    date: 'October 2024',
+    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
   }
 ];
 
 const About: React.FC = () => {
   const { recordPortalFound } = useExploration();
   const portalRef = useRef<HTMLDivElement>(null);
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'uiux' | 'ai' | 'brand' | 'marketing'>('all');
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   useEffect(() => {
@@ -216,353 +182,87 @@ const About: React.FC = () => {
     }
   ];
 
-  // Professional Experience
-  const experiences: Experience[] = [
+  // Workplace & Leadership Culture Images
+  const workplaceImages: ArtifactImage[] = [
     {
-      role: 'UI/UX Designer',
-      company: 'SJ Innovation LLC',
-      location: 'Dhaka, Bangladesh',
-      period: 'September 2025 – Present',
-      highlight: 'Sole designer at SJ Innovation since February 2026, independently leading client and internal design work across the company.',
-      thematicBuckets: [
-        {
-          category: 'Brand Systems & Design Ownership',
-          points: [
-            'Independently own all client and internal design deliverables across SJ Innovation since February 2026, reporting directly to executive leadership.',
-            'Created complete visual identities, logos, OpenGraph preview assets, and 10+ comprehensive sales enablement decks for AI Control Tower products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI, Agency CT, HR CT).',
-            'Designed the official logo for Queens AI Week (Queens Chamber of Commerce × SJ Innovation × Firstlight Cloud Xchange).',
-            'Spearheaded end-to-end creative direction for SJ Innovation\'s 22nd Anniversary across 3 global offices (Dhaka, Sylhet, Goa) — designed anniversary logo, event banners, award crests/trophies, merchandise packaging, and post-event video reel.'
-          ]
-        },
-        {
-          category: 'Interface Design & High-Stakes Client Delivery',
-          points: [
-            'Alyssa Kristin (luxury bridal SaaS) — designed connected multi-platform ecosystem (mobile Stylist App, Web Admin CMS, and CRM); praised by client leadership as "clean, thorough, and easily accessible."',
-            'StoryGrooveAI — conducted comprehensive 40+ point UX audit, redesigning hero layout, pricing tiers, and onboarding flows to drive user clarity; recognized by project leadership for taking full ownership to ensure client success.',
-            'CollabAI Suite — led UI/UX overhaul of multi-agent platform, transforming a complex layout into an intuitive dark command-center interface with scannable typography.',
-            'ICR Debt Surveillance — designed 15-module Bloomberg Terminal–style credit surveillance dashboard layout in Figma with distinct visual alert hierarchies.',
-            'InfoFluence — designed McKinsey-style strategic diagnostic reports and presentation decks for AWS partner executive reviews.'
-          ]
-        },
-        {
-          category: 'Client Scale & Rapid Production',
-          points: [
-            'Scaled the LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan\'s Adventure, Worlds of Fun, Schlitterbahn Galveston, Enchanted Parks).',
-            'Commended by client leadership for consistent same-day delivery, managing high-volume promotional asset pipelines, and proactively catching template flaws before publication.'
-          ]
-        },
-        {
-          category: 'AI Prototyping, Web Discovery & Growth',
-          points: [
-            'Structured and optimized 761+ pages across 3 major website properties for AI discoverability and on-page SEO on the Lovable platform (JSON-LD schemas, heading hierarchies, metadata, and Google Search Console indexing).',
-            'Used Google Antigravity and Lovable to rapidly convert Figma designs into functional, testable browser prototypes to validate user flows with stakeholders prior to engineering.',
-            'Built and managed targeted Meta ad campaigns in Ads Manager (ePhysician, NonProfit AI), taking a stalled campaign to an active ~2–3.5 qualified leads/day on the same budget.',
-            'Set up local ComfyUI image generation workflows with custom safetensors checkpoints; tested local open-source models (Ollama) for competitive UX research.'
-          ]
-        }
-      ],
-      images: [
-        {
-          url: '/assets/projects/collabai-mockup.webp',
-          caption: 'CollabAI — Multi-agent interface redesign & live chat system',
-          tag: 'UI/UX Redesign'
-        },
-        {
-          url: '/assets/profile/sji-22nd-anniversary-sales-marketing.webp',
-          caption: 'SJ Innovation 22nd Anniversary — Celebration with Sales & Marketing team',
-          tag: '22nd Anniversary'
-        },
-        {
-          url: '/assets/profile/sji-ai-hackathon-team-award.webp',
-          caption: 'AI Hackathon Runners-Up — Certificate & project award with teammates',
-          tag: 'AI Hackathon'
-        },
-        {
-          url: '/assets/profile/sji-1-year-work-anniversary.webp',
-          caption: '1-Year Work Anniversary — Recognition and milestone celebration at SJ Innovation',
-          tag: 'Milestone'
-        },
-        {
-          url: '/assets/profile/sji-dhaka-all-hands-blue.webp',
-          caption: 'SJ Innovation Dhaka Team — All-hands team gathering at the headquarters',
-          tag: 'Team Culture'
-        },
-        {
-          url: '/assets/profile/sji-annual-team-retreat-dera.webp',
-          caption: 'Annual Team Retreat — Company outing and team building at DERA Resort & Spa',
-          tag: 'Team Retreat'
-        }
-      ]
+      url: '/assets/projects/collabai-mockup.webp',
+      caption: 'CollabAI — Multi-agent interface redesign & live chat system',
+      tag: 'UI/UX Redesign'
     },
     {
-      role: 'Intern Graphic Designer',
-      company: 'SJ Innovation LLC',
-      location: 'Dhaka, Bangladesh',
-      period: 'May 2025 – September 2025',
-      bullets: [
-        'Designed 200+ digital and print marketing assets for US-based campaigns, including targeted Meta ads, LinkedIn carousels, event banners, and internal office graphics.'
-      ],
-      images: [
-        {
-          url: '/assets/profile/internship-presentation-decisiontech.webp',
-          caption: 'Internal Presentation — Presenting DecisionTech research & design insights at SJ Innovation',
-          tag: 'Presentation'
-        },
-        {
-          url: '/assets/profile/internship-sji-team-celebration.webp',
-          caption: 'SJ Innovation Team — All-hands team celebration at Dhaka headquarters',
-          tag: 'Team Culture'
-        },
-        {
-          url: '/assets/profile/internship-sji-21st-anniversary.webp',
-          caption: 'SJ Innovation 21st Anniversary — Corporate milestone celebration with colleagues',
-          tag: 'Anniversary'
-        }
-      ]
+      url: '/assets/profile/sji-22nd-anniversary-sales-marketing.webp',
+      caption: 'SJ Innovation 22nd Anniversary — Celebration with Sales & Marketing team',
+      tag: '22nd Anniversary'
     },
     {
-      role: 'Freelance Graphic & Brand Designer',
-      company: 'Freelancer',
-      location: 'Global Clients',
-      period: 'March 2025 – April 2025',
-      bullets: [
-        'Completed 4 client engagements for US businesses (edtech branding, store signage, gym promotional materials), delivering logos and brand assets with 100% on-time delivery.'
-      ],
-      images: [
-        {
-          url: '/assets/projects/clandest-mockup.webp',
-          caption: 'Clandest Agency — Brand identity & studio web presence',
-          tag: 'Brand Identity'
-        },
-        {
-          url: '/assets/projects/clandest-services.webp',
-          caption: 'Services layout & typographic architecture',
-          tag: 'Web Systems'
-        }
-      ]
+      url: '/assets/profile/sji-ai-hackathon-team-award.webp',
+      caption: 'AI Hackathon Runners-Up — Certificate & project award with teammates',
+      tag: 'AI Hackathon'
+    },
+    {
+      url: '/assets/profile/sji-1-year-work-anniversary.webp',
+      caption: '1-Year Work Anniversary — Recognition and milestone celebration at SJ Innovation',
+      tag: 'Milestone'
+    },
+    {
+      url: '/assets/profile/sji-dhaka-all-hands-blue.webp',
+      caption: 'SJ Innovation Dhaka Team — All-hands team gathering at headquarters',
+      tag: 'Team Culture'
+    },
+    {
+      url: '/assets/profile/sji-annual-team-retreat-dera.webp',
+      caption: 'Annual Team Retreat — Company outing and team building at DERA Resort & Spa',
+      tag: 'Team Retreat'
     }
   ];
 
-  // Selected Projects (combining independent and academic)
-  const selectedProjects = [
-    {
-      title: 'ePhysician Landing Page Redesign',
-      role: 'Lead Product & Brand Designer',
-      slug: 'ephysician-redesign',
-      description: 'Comprehensive landing page and branding redesign for an enterprise AI front-desk platform. Overhauled messaging, high-contrast command center hero, interactive ROI calculator, and HIPAA/PCI trust seals.'
-    },
-    {
-      title: 'Clandest Agency',
-      role: 'Co-Founder & Lead Designer',
-      slug: 'clandest-agency',
-      link: 'https://clandestagency.vercel.app',
-      description: 'Co-founded a 4-person creative studio. Designed the visual identity, typography system, and web layout, using AI tools to ship a clean site with on-page SEO.'
-    },
-    {
-      title: 'Personal Portfolio Architecture',
-      role: 'Designer & AI-Directed Creator',
-      slug: 'szk-personal-archive',
-      link: 'https://sadmanportfolio.vercel.app',
-      description: 'Designed an interactive 19-project portfolio with dark aesthetic and case studies, directing Google Antigravity to build and deploy static pages with verified Google indexing.'
-    },
-    {
-      title: 'NEXURA — Brand Identity System',
-      role: 'Capstone Project · Score: 4.0',
-      slug: 'nexura-brand-system',
-      description: 'Led end-to-end brand identity development in Illustrator & Photoshop: created custom logo system, 40-page brand guideline book, and mockups across 20+ applications (stationery, packaging, signage).'
-    },
-    {
-      title: 'Campus Rebranding & Digital Presence',
-      role: 'Munshiganj Polytechnic Institute (2022 – 2025)',
-      slug: 'campus-rebranding',
-      description: 'Designed visual branding and event print materials for campus ceremonies; designed the logo and social guidelines for the Computer Club; built and managed a custom resource website.'
-    }
-  ];
-
-  // Recognition & Praise (Paraphrased & Accurately Attributed)
-  const recognitionAndPraise = [
-    {
-      title: 'Client Trust & Full Ownership (StoryGrooveAI)',
-      detail: 'Commended by project leadership for taking complete ownership under tight deadlines, conducting an in-depth 40+ point UX audit and redesign that built strong client confidence and delivered a successful product launch.'
-    },
-    {
-      title: 'Multi-Platform Usability (Alyssa Kristin Bridal SaaS)',
-      detail: 'Multi-device design deliverables (mobile Stylist App, Web Admin CMS, and CRM) commended directly by client leadership during review as "clean, thorough, and easily accessible."'
-    },
-    {
-      title: 'Rapid Production & Proactive QA (LuCreativ Theme Parks)',
-      detail: 'Praised by external agency partners for reliable same-day turnarounds across 7+ regional theme parks (Six Flags, Valleyfair, Schlitterbahn) and actively catching template flaws before publication.'
-    },
-    {
-      title: 'Cross-Functional Dependability (Team & Leadership)',
-      detail: 'Recognized by QA leads and senior business analysts as a dependable design partner who works with proactive self-critique, bridges brand and functional requirements, and requires zero handholding.'
-    },
-    {
-      title: 'Honors & Corporate Milestones (SJ Innovation)',
-      detail: 'Awarded Performer of the Month (November 2025) for high-impact creative output; Runner-Up at the AI Innovation Hackathon (November 2025); celebrated 1-Year Work Anniversary milestone.'
-    }
-  ];
-
-  const certifications = [
-    {
-      title: 'Design System in Figma',
-      issuer: 'Grameenphone Academy',
-      date: 'October 2025',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-    {
-      title: 'Claude Code in Action',
-      issuer: 'Anthropic',
-      date: 'February 2026',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-    {
-      title: 'Digital Skills: User Experience',
-      issuer: 'Accenture',
-      date: 'September 2025',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-    {
-      title: 'Graphic Design for Freelancing Level-3',
-      issuer: 'NSDA',
-      date: 'October 2024',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-    {
-      title: 'HubSpot Inbound Marketing Certification',
-      issuer: 'HubSpot',
-      date: 'March 2026',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-    {
-      title: 'B1 English for Developers (Score: 95.2%)',
-      issuer: 'freeCodeCamp',
-      date: 'February 2026',
-      url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
-    },
-  ];
-
-  // Education Artifacts (Munshiganj Polytechnic Institute)
-  const educationImages: ArtifactImage[] = [
+  // Rover Scout Images
+  const scoutImages: ArtifactImage[] = [
     {
       url: '/assets/profile/mupi-rover-scout-pledge-leading.webp',
       caption: 'Rover Scout Leadership — Leading the scout oath & ceremony at Munshiganj Polytechnic Institute',
-      tag: 'Rover Scout'
+      tag: 'Troop Oath'
     },
     {
-      url: '/assets/profile/mupi-campus-peers-evening.webp',
-      caption: 'Campus Fellowship — Evening gathering with polytechnic peers and classmates',
-      tag: 'Campus Life'
-    },
-    {
-      url: '/assets/profile/mupi-student-uniform-portrait.webp',
-      caption: 'Institute Life — Academic session in official Munshiganj Polytechnic uniform',
-      tag: 'Academic'
+      url: '/assets/profile/rover-scout-golden-jubilee-moot-award.webp',
+      caption: 'Golden Jubilee Rover Moot 2023 — Service Team Award crest with troop peers (Bangladesh Scouts)',
+      tag: 'Service Team Award'
     }
   ];
-
-  // Extracurricular Activities
-  interface ExtracurricularActivity {
-    role: string;
-    organization: string;
-    period: string;
-    description: string;
-    bullets?: string[];
-    images?: ArtifactImage[];
-  }
-
-  const extracurricularActivities: ExtracurricularActivity[] = [
-    {
-      role: 'Rover Scout',
-      organization: 'Munshiganj Polytechnic Institute Rover Scout Group · Bangladesh Scouts',
-      period: '2022 – 2025',
-      description: 'Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and national/regional moots while upholding the Scout Promise and Law.',
-      bullets: [
-        'Served in the Service Team (সেবাদল) at the Golden Jubilee Rover Moot 2023 (সুবর্ণজয়ন্তী রোভার মুট ২০২৩), receiving the official Service Team Award crest with troop peers.',
-        'Led official troop oath-taking ceremonies, parade formations, and campus clean-up operations as an active Rover.',
-        'Designed institutional branding, roll-up exhibition banners, and commemorative social media graphics for Bangladesh Scouts regional workshops and events.'
-      ],
-      images: [
-        {
-          url: '/assets/profile/mupi-rover-scout-pledge-leading.webp',
-          caption: 'Rover Scout Leadership — Leading the scout oath & ceremony at Munshiganj Polytechnic Institute',
-          tag: 'Scout Pledge'
-        },
-        {
-          url: '/assets/profile/rover-scout-golden-jubilee-moot-award.webp',
-          caption: 'Golden Jubilee Rover Moot 2023 — Service Team Award crest with troop mates (Bangladesh Scouts, Rover Region)',
-          tag: 'Golden Jubilee Moot'
-        }
-      ]
-    }
-  ];
-
-  const personalPursuits = [
-    {
-      title: 'Film & Human Narrative',
-      icon: '🎬',
-      description: 'Drawn to cinema that observes human complexity, discipline, and moral weight—works by Tarkovsky, Kurosawa, and Park Chan-wook. Watching how stories are paced and composed deepens my understanding of how people perceive and evaluate the world.'
-    },
-    {
-      title: 'Music & Focus',
-      icon: '🎧',
-      description: 'Listening spans atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d\'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM). Music provides the rhythmic backdrop for deep, uninterrupted creative focus.'
-    },
-    {
-      title: 'Writing & Conceptual Worlds',
-      icon: '✍️',
-      description: 'Writing poetry under pseudonyms since 2017, exploring themes of cosmic scale, mortality, and quiet observation. Building conceptual worlds from abstract ideas helps keep my thinking sharp and original.'
-    },
-    {
-      title: 'Physical & Spiritual Practice',
-      icon: '🥊',
-      description: 'Practicing discipline through regular bodyweight workouts, staircase climbing, and boxing conditioning. Also deepening my study of theology and perfecting Quranic recitation for daily prayer.'
-    }
-  ];
-
-  const filteredCapabilities = selectedCategory === 'all'
-    ? CAPABILITIES
-    : CAPABILITIES.filter((c) => c.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-transparent text-[#FFFFFF] flex flex-col justify-between selection:bg-[#FFFFFF] selection:text-[#000000]">
       <SEOHead
-        title="About & Resume — Sadman Zaman Khan"
-        description="Experience timeline, capabilities, and background of Sadman Zaman Khan — UI/UX Designer specializing in design systems, web dashboards, and AI-assisted prototyping."
+        title="About & Career Resume — Sadman Zaman Khan"
+        description="Experience, core competencies, and career background of Sadman Zaman Khan — UI/UX Designer specializing in design systems, web dashboards, and AI-assisted prototyping."
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "ProfilePage",
           "@id": `${CANONICAL_SITE_URL}/about#profilepage`,
           "name": "About & Career Resume — Sadman Zaman Khan",
           "url": `${CANONICAL_SITE_URL}/about`,
-          "mainEntity": PERSON_JSON_LD,
-          "hasPart": [
-            {
-              "@type": "CreativeWork",
-              "name": "Corporate Company Deck 2026",
-              "creator": { "@id": `${CANONICAL_SITE_URL}/#person` }
-            },
-            {
-              "@type": "CreativeWork",
-              "name": "Medical & Pharma Showcase Deck",
-              "creator": { "@id": `${CANONICAL_SITE_URL}/#person` }
-            }
-          ]
+          "mainEntity": PERSON_JSON_LD
         }}
       />
 
-      <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-16">
-        {/* 1. Profile Header & Bio with Personal Portraits Collage */}
-        <section className="pt-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <main className="animate-slide-up w-full px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex-1 pt-[100px] md:pt-[120px] space-y-20">
+        {/* =========================================================================
+            SECTION 1: Profile Header, Bio & Executive Stats
+        ========================================================================= */}
+        <section className="pt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Column: Bio & Identity Details */}
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-[3px] bg-[#141414] border border-[#262626] text-[11px] font-mono uppercase tracking-wider text-[#A0A0A0]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
+                  <span>Available for UI/UX &amp; Design System Engagements</span>
+                </div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FFFFFF]">
                   Sadman Zaman Khan
                 </h1>
-                <p className="text-xl sm:text-2xl text-[#888888] font-normal pt-1">
-                  UI/UX Designer | Brand Systems | AI-Assisted Prototyping
+                <p className="text-xl sm:text-2xl text-[#888888] font-normal pt-0.5">
+                  UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                 </p>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-[#777777] pt-1">
                   <span>Dhaka, Bangladesh</span>
@@ -577,13 +277,13 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              {/* Honest, modest bio */}
-              <p className="text-base sm:text-lg text-[#999999] font-normal leading-relaxed">
-                UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, using AI tools like Google Antigravity and Lovable to translate design concepts into working, testable web prototypes quickly. Currently the sole designer at SJ Innovation, independently handling client and internal design projects across branding, interfaces, and marketing.
+              {/* Direct, executive summary from updated resume */}
+              <p className="text-base sm:text-lg text-[#AAAAAA] font-normal leading-relaxed">
+                UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, utilizing AI tools (Google Antigravity, Lovable) to rapidly turn wireframes into functional, testable browser prototypes to validate user flows with stakeholders prior to engineering. Currently the sole designer at SJ Innovation, leading client and internal design initiatives spanning interface design, brand identity systems, and performance marketing creative.
               </p>
 
-              {/* Dual Resume CTAs & Quick Links */}
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+              {/* Action Buttons & Resume Downloads */}
+              <div className="flex flex-wrap items-center gap-3 pt-1">
                 <a
                   href="/Sadman_Zaman_Khan_Resume.pdf"
                   download="Sadman_Zaman_Khan_Resume.pdf"
@@ -612,14 +312,34 @@ const About: React.FC = () => {
                   <span className="text-xs">↗</span>
                 </a>
                 <a
-                  href="https://sadmanzamankhan.vercel.app/portfolio"
+                  href="https://sadmanzamankhan.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-[4px] text-xs uppercase tracking-wider bg-[#141414] hover:bg-[#1F1F1F] text-[#CCCCCC] hover:text-[#FFFFFF] border border-[#262626] hover:border-[#404040] transition-colors font-normal cursor-pointer"
                 >
-                  <span>SZK Archive</span>
+                  <span>Personal Archive</span>
                   <span className="text-xs">↗</span>
                 </a>
+              </div>
+
+              {/* Quick Proof Counters */}
+              <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+                <div className="p-3 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-0.5">
+                  <div className="text-lg font-bold text-[#FFFFFF]">1.5+ Yrs</div>
+                  <div className="text-[11px] text-[#777777]">Design Systems &amp; UX</div>
+                </div>
+                <div className="p-3 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-0.5">
+                  <div className="text-lg font-bold text-[#FFFFFF]">Sole Designer</div>
+                  <div className="text-[11px] text-[#777777]">SJ Innovation (Feb 2026)</div>
+                </div>
+                <div className="p-3 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-0.5">
+                  <div className="text-lg font-bold text-[#FFFFFF]">761+ Pages</div>
+                  <div className="text-[11px] text-[#777777]">Optimized SEO &amp; Schemas</div>
+                </div>
+                <div className="p-3 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-0.5">
+                  <div className="text-lg font-bold text-[#FFFFFF]">100% On-Time</div>
+                  <div className="text-[11px] text-[#777777]">High-Velocity Turnarounds</div>
+                </div>
               </div>
             </div>
 
@@ -630,76 +350,58 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 2. Interactive Tool & Capabilities Stack */}
+        {/* =========================================================================
+            SECTION 2: Technical & Core Competencies (4 Scannable Pillars)
+        ========================================================================= */}
         <section className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#1F1F1F] pb-4">
-            <div className="space-y-1">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#1F1F1F] pb-4">
+            <div>
               <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-                Capabilities &amp; Tool Stack
+                Technical &amp; Core Competencies
               </h2>
-              <p className="text-sm text-[#888888]">
-                What I do, how I apply each tool, and where it was proven in real work.
+              <p className="text-sm text-[#888888] pt-1">
+                Structured across 4 specialized pillars from interface engineering to AI discoverability.
               </p>
             </div>
-
-            {/* Category Filter Tabs */}
-            <div className="flex flex-wrap items-center gap-1.5 p-1 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] self-start sm:self-auto">
-              {[
-                { id: 'all', label: 'All' },
-                { id: 'uiux', label: 'UI/UX Design' },
-                { id: 'ai', label: 'AI Prototyping' },
-                { id: 'brand', label: 'Brand & Visual' },
-                { id: 'marketing', label: 'Growth & SEO' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setSelectedCategory(tab.id as any)}
-                  className={`px-3 py-1 text-xs rounded-[3px] transition-all font-mono uppercase tracking-wider cursor-pointer ${
-                    selectedCategory === tab.id
-                      ? 'bg-[#FFFFFF] text-[#000000] shadow-sm font-medium'
-                      : 'text-[#777777] hover:text-[#FFFFFF]'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+            <span className="text-xs font-mono text-[#555555]">
+              04 ARCHITECTURAL PILLARS
+            </span>
           </div>
 
-          {/* Capabilities Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filteredCapabilities.map((cap, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {COMPETENCY_PILLARS.map((pillar) => (
               <div
-                key={idx}
-                className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3 flex flex-col justify-between"
+                key={pillar.number}
+                className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors flex flex-col justify-between space-y-6"
               >
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between gap-2 border-b border-[#1F1F1F] pb-2">
-                    <h3 className="text-sm font-medium text-[#FFFFFF]">{cap.name}</h3>
-                    <span className="text-[10px] text-[#666666] uppercase tracking-wider font-mono">
-                      {cap.categoryLabel}
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
+                    <span className="text-xs font-mono text-[#666666]">{pillar.number}</span>
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#888888] px-2 py-0.5 rounded-[2px] bg-[#141414] border border-[#222222]">
+                      {pillar.category}
                     </span>
                   </div>
-                  <p className="text-xs text-[#AAAAAA] font-normal leading-relaxed">
-                    {cap.description}
-                  </p>
+                  <div>
+                    <h3 className="text-base font-normal text-[#FFFFFF]">{pillar.title}</h3>
+                  </div>
+                  <ul className="space-y-2 text-xs text-[#999999] leading-relaxed">
+                    {pillar.skills.map((skill, sIdx) => (
+                      <li key={sIdx} className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span>{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
-                {/* Proof Projects Badges */}
-                <div className="pt-2 border-t border-[#141414] flex flex-wrap items-center gap-1.5">
-                  <span className="text-[10px] text-[#555555] uppercase tracking-wider font-mono mr-1">
-                    Used In:
-                  </span>
-                  {cap.proofProjects.map((p, pIdx) => (
-                    <Link
-                      key={pIdx}
-                      to={`/work/${p.slug}`}
-                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-[3px] text-[10px] text-[#CCCCCC] bg-[#141414] hover:bg-[#222222] hover:text-[#FFFFFF] border border-[#222222] transition-colors font-mono cursor-pointer"
+                <div className="pt-3 border-t border-[#141414] flex flex-wrap gap-1.5">
+                  {pillar.tools.map((tool, tIdx) => (
+                    <span
+                      key={tIdx}
+                      className="px-2 py-0.5 rounded-[2px] text-[10px] font-mono text-[#CCCCCC] bg-[#141414] border border-[#222222]"
                     >
-                      <span>{p.name}</span>
-                      <span className="opacity-40">↗</span>
-                    </Link>
+                      {tool}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -707,317 +409,389 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* 3. Professional Experience Timeline */}
+        {/* =========================================================================
+            SECTION 3: Professional Experience (Impact-Driven Timeline)
+        ========================================================================= */}
         <section className="space-y-8">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Professional Experience
-            </h2>
-            <p className="text-sm text-[#888888] pt-1">
-              Full-time and client design history categorized by tangible business impact.
-            </p>
-          </div>
-
-          <div className="space-y-12">
-            {experiences.map((exp, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
-              >
-                {/* Left Column: Experience Details */}
-                <div className="lg:col-span-7 p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-6 hover:border-[#333333] transition-colors">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-[#1F1F1F] pb-4">
-                    <div className="space-y-0.5">
-                      <h3 className="text-xl font-normal text-[#FFFFFF]">{exp.role}</h3>
-                      <div className="text-sm text-[#888888] font-normal">{exp.company} · {exp.location}</div>
-                    </div>
-                    <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0 self-start sm:self-auto font-normal font-mono">
-                      {exp.period}
-                    </span>
-                  </div>
-
-                  {exp.highlight && (
-                    <p className="text-xs text-[#FFFFFF] bg-[#141414] border border-[#1F1F1F] px-3 py-2 rounded-[4px] font-normal leading-relaxed">
-                      {exp.highlight}
-                    </p>
-                  )}
-
-                  {/* Thematic Buckets (for SJ Innovation) */}
-                  {exp.thematicBuckets ? (
-                    <div className="space-y-5 pt-1">
-                      {exp.thematicBuckets.map((bucket, bIdx) => (
-                        <div key={bIdx} className="space-y-2">
-                          <h4 className="text-xs uppercase tracking-wider text-[#CCCCCC] font-medium flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
-                            <span>{bucket.category}</span>
-                          </h4>
-                          <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] font-normal leading-relaxed">
-                            {bucket.points.map((pt, pIdx) => (
-                              <li key={pIdx} className="flex items-start gap-2">
-                                <span className="text-[#555555] shrink-0 mt-0.5">—</span>
-                                <span>{pt}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <ul className="space-y-3 pt-2 text-sm text-[#999999] font-normal leading-relaxed">
-                      {exp.bullets?.map((bullet, bIdx) => (
-                        <li key={bIdx} className="flex items-start gap-2.5">
-                          <span className="text-[#FFFFFF] mt-1 shrink-0">•</span>
-                          <span>{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-
-                {/* Right Column: Contextual Visual Artifacts Collage */}
-                {exp.images && exp.images.length > 0 && (
-                  <div className="lg:col-span-5 pt-1">
-                    <ArtifactCollage images={exp.images} />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* 4. Selected Projects */}
-        <section className="space-y-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Selected Projects &amp; Initiatives
-            </h2>
-            <p className="text-sm text-[#888888] pt-1">
-              Key commercial redesigns, independent studio projects, and foundational work.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {selectedProjects.map((proj, pIdx) => (
-              <div
-                key={pIdx}
-                className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3 flex flex-col justify-between"
-              >
-                <div className="space-y-2">
-                  <div className="flex items-baseline justify-between gap-2 border-b border-[#1F1F1F] pb-3">
-                    <h3 className="text-lg font-normal text-[#FFFFFF]">{proj.title}</h3>
-                    {proj.slug && (
-                      <Link
-                        to={`/work/${proj.slug}`}
-                        className="text-xs text-[#888888] hover:text-[#FFFFFF] font-mono transition-colors"
-                      >
-                        Case Study ↗
-                      </Link>
-                    )}
-                  </div>
-                  <p className="text-xs text-[#888888] font-mono">{proj.role}</p>
-                  <p className="text-sm text-[#CCCCCC] font-normal leading-relaxed">{proj.description}</p>
-                </div>
-
-                {proj.link && (
-                  <div className="pt-2 border-t border-[#141414]">
-                    <a
-                      href={proj.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-[#3b82f6] hover:underline font-mono inline-flex items-center gap-1"
-                    >
-                      <span>{proj.link.replace('https://', '')}</span>
-                      <span>↗</span>
-                    </a>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* 5. Recognition & Client Feedback */}
-        <section className="space-y-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Recognition &amp; Feedback
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {recognitionAndPraise.map((item, aIdx) => (
-              <div
-                key={aIdx}
-                className="p-5 sm:p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-2"
-              >
-                <div className="text-sm font-normal text-[#FFFFFF] border-b border-[#1F1F1F] pb-2 flex items-center justify-between">
-                  <span>{item.title}</span>
-                  <span className="text-[10px] text-[#555555] font-mono">0{aIdx + 1}</span>
-                </div>
-                <p className="text-xs text-[#AAAAAA] font-normal leading-relaxed pt-1 italic">
-                  {item.detail}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* 6. Education & Certifications */}
-        <section className="space-y-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Education &amp; Certifications
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Education Card */}
-            <div className="lg:col-span-5 p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
-                <div className="text-xs uppercase tracking-wider text-[#FFFFFF] font-normal border-b border-[#1F1F1F] pb-2">
-                  Education
-                </div>
-                <div className="space-y-1 pt-1">
-                  <h3 className="text-base font-normal text-[#FFFFFF]">Diploma in Engineering in Computer Science</h3>
-                  <p className="text-xs text-[#888888]">Munshiganj Polytechnic Institute</p>
-                  <p className="text-xs text-[#666666] font-mono pt-1">2021 – 2025</p>
-                </div>
-              </div>
-
-              {/* Education Artifacts Collage */}
-              <div className="pt-2">
-                <ArtifactCollage
-                  images={educationImages}
-                  title="Munshiganj Polytechnic Artifacts"
-                />
-              </div>
-            </div>
-
-            {/* Certifications Grid */}
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {certifications.map((cert, cIdx) => (
-                <a
-                  key={cIdx}
-                  href={cert.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] space-y-1 transition-all block"
-                >
-                  <div className="text-xs sm:text-sm font-normal text-[#FFFFFF] group-hover:text-[#FFFFFF] transition-colors flex items-center justify-between">
-                    <span>{cert.title}</span>
-                    <span className="text-[#888888] group-hover:text-[#FFFFFF] text-xs transition-colors">↗</span>
-                  </div>
-                  <div className="text-[11px] text-[#888888] font-normal flex items-center justify-between pt-1">
-                    <span>{cert.issuer}</span>
-                    <span>{cert.date}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 7. Extracurricular Activities */}
-        <section className="space-y-6">
-          <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#1F1F1F] pb-4">
             <div>
               <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-                Extracurricular Activities
+                Professional Experience
               </h2>
-              <p className="text-xs text-[#777777] font-mono mt-1">
-                Leadership, community service &amp; the Scouts Movement
+              <p className="text-sm text-[#888888] pt-1">
+                Full-time and client design history focused on ownership, delivery velocity, and measurable impact.
               </p>
             </div>
             <span className="text-xs font-mono text-[#555555]">
-              {extracurricularActivities.length < 10 ? `0${extracurricularActivities.length}` : extracurricularActivities.length} INITIATIVE{extracurricularActivities.length !== 1 ? 'S' : ''}
+              CHRONOLOGICAL CAREER RECORD
             </span>
           </div>
 
-          <div className="space-y-6">
-            {extracurricularActivities.map((act, aIdx) => (
-              <div
-                key={aIdx}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#2A2A2A] transition-colors"
-              >
-                {/* Left Column: Details */}
-                <div className={`${act.images && act.images.length > 0 ? 'lg:col-span-7' : 'lg:col-span-12'} space-y-4`}>
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 border-b border-[#1F1F1F] pb-3">
-                    <div>
-                      <h3 className="text-lg font-normal text-[#FFFFFF]">
-                        {act.role}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-[#888888] pt-0.5">
-                        {act.organization}
-                      </p>
+          <div className="space-y-12">
+            {/* 1. Current Role: SJ Innovation UI/UX Designer */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-7 p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-6 hover:border-[#333333] transition-colors">
+                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-[#1F1F1F] pb-4">
+                  <div className="space-y-0.5">
+                    <h3 className="text-xl font-normal text-[#FFFFFF]">UI/UX Designer</h3>
+                    <div className="text-sm text-[#888888] font-normal">
+                      SJ Innovation LLC · Dhaka, Bangladesh
                     </div>
-                    <span className="text-xs text-[#666666] font-mono shrink-0">
-                      {act.period}
-                    </span>
                   </div>
+                  <span className="text-xs text-[#888888] px-3 py-1 rounded-[4px] bg-[#141414] border border-[#1F1F1F] shrink-0 self-start sm:self-auto font-mono">
+                    September 2025 – Present
+                  </span>
+                </div>
 
-                  <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
-                    {act.description}
-                  </p>
+                <div className="p-3 rounded-[4px] bg-[#121212] border border-[#262626] text-xs text-[#E5E5E5] leading-relaxed flex items-start gap-2.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] mt-1.5 shrink-0" />
+                  <span>
+                    <strong>Leadership Milestone:</strong> Leading client and corporate design deliverables across the company since February 2026, reporting directly to executive leadership.
+                  </span>
+                </div>
 
-                  {act.bullets && act.bullets.length > 0 && (
-                    <ul className="space-y-1.5 pt-1">
-                      {act.bullets.map((b, bIdx) => (
-                        <li key={bIdx} className="text-xs sm:text-sm text-[#888888] flex items-start gap-2">
-                          <span className="text-[#555555] mt-1 text-[8px]">▪</span>
-                          <span className="leading-relaxed">{b}</span>
-                        </li>
-                      ))}
+                {/* 4 Impact Buckets from Updated Resume */}
+                <div className="space-y-6 pt-1">
+                  {/* Bucket 1: Interface Design */}
+                  <div className="space-y-2.5">
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
+                      <span>Interface Design &amp; High-Stakes Client Delivery</span>
+                    </h4>
+                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">Alyssa Kristin (Luxury Bridal SaaS):</strong> Designed a connected multi-platform ecosystem spanning a mobile Stylist App, Web Admin CMS, and CRM; praised by the client via internal feedback as "clean, thorough, and easily accessible."</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">StoryGrooveAI:</strong> Performed a 40+ point UX audit and end-to-end redesign of the landing page, pricing tiers, and onboarding flows to reduce friction; recognized by project leadership for taking full ownership under tight deadlines to secure client trust.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">CollabAI Suite:</strong> Led the interface redesign of a multi-agent AI platform, transforming a dense layout into a clean, intuitive dark command-center interface with scannable typography and live streaming canvas.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">ICR Debt Surveillance &amp; InfoFluence:</strong> Designed a 15-module Bloomberg-style credit surveillance dashboard in Figma with distinct visual alert tiers, and crafted McKinsey-style executive diagnostic decks for AWS partner reviews.</span>
+                      </li>
                     </ul>
-                  )}
-                </div>
-
-                {/* Right Column: Visual Artifacts Collage */}
-                {act.images && act.images.length > 0 && (
-                  <div className="lg:col-span-5 pt-1">
-                    <ArtifactCollage
-                      images={act.images}
-                      title={`${act.role} Artifacts`}
-                    />
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
 
-        {/* 8. Personal Interests & Human Dimension */}
-        <section className="space-y-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Personal Pursuits &amp; Discipline
-            </h2>
-          </div>
+                  {/* Bucket 2: Brand Systems & Sales Enablement */}
+                  <div className="space-y-2.5">
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
+                      <span>Brand Systems &amp; Sales Enablement</span>
+                    </h4>
+                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">AI Control Tower Suite:</strong> Created complete brand identity systems, logos, OpenGraph social assets, and 10+ comprehensive sales enablement decks for enterprise products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI).</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">Queens AI Week:</strong> Designed the official logo and brand asset package for the Queens Chamber of Commerce × SJ Innovation × Firstlight Cloud Xchange initiative.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">22nd Corporate Anniversary:</strong> Led complete creative direction across 3 global offices (Dhaka, Sylhet, Goa), designing the anniversary identity, stage banners, recognition crests, merchandise packaging, and editing the post-event recap reel.</span>
+                      </li>
+                    </ul>
+                  </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {personalPursuits.map((pursuit, pIdx) => (
-              <div
-                key={pIdx}
-                className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-2.5"
-              >
-                <div className="flex items-center gap-2.5 border-b border-[#1F1F1F] pb-2.5">
-                  <span className="text-base">{pursuit.icon}</span>
-                  <h3 className="text-sm font-normal text-[#FFFFFF]">{pursuit.title}</h3>
+                  {/* Bucket 3: Client Scale & Rapid Production */}
+                  <div className="space-y-2.5">
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
+                      <span>Client Scale &amp; Rapid Production</span>
+                    </h4>
+                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">LuCreativ / 3i Advertising:</strong> Scaled account from an initial project to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston, Enchanted Parks).</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">Rapid Reliability:</strong> Praised by external agency leadership for reliable same-day turnarounds, managing high-volume promotional pipelines, and proactively catching layout flaws before publication.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Bucket 4: AI Prototyping, Web Discovery & Growth */}
+                  <div className="space-y-2.5">
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
+                      <span>AI Prototyping, Web Discovery &amp; Growth</span>
+                    </h4>
+                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">Web Architecture &amp; Discoverability:</strong> Structured and optimized 761+ pages across 3 major properties on the Lovable platform for on-page SEO and AI discoverability (JSON-LD schemas, semantic heading hierarchies, metadata, and Search Console indexing).</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span><strong className="text-[#CCCCCC]">Rapid Prototyping &amp; Paid Social:</strong> Used Google Antigravity and Lovable to convert design concepts into testable browser prototypes prior to engineering. Built Meta ad creative suites that scaled a stalled campaign to ~3.5 qualified leads/day on the same budget.</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <p className="text-xs sm:text-sm text-[#999999] font-normal leading-relaxed pt-1">
-                  {pursuit.description}
+              </div>
+
+              {/* Right Column: Contextual Visual Artifacts Collage */}
+              <div className="lg:col-span-5 pt-1">
+                <ArtifactCollage images={workplaceImages} title="SJ Innovation Artifacts &amp; Culture" />
+              </div>
+            </div>
+
+            {/* Earlier Experience (Compact Dual Nodes) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3">
+                <div className="flex items-baseline justify-between gap-2 border-b border-[#1A1A1A] pb-3">
+                  <div>
+                    <h4 className="text-base font-normal text-[#FFFFFF]">Intern Graphic Designer</h4>
+                    <p className="text-xs text-[#888888]">SJ Innovation LLC · Dhaka, Bangladesh</p>
+                  </div>
+                  <span className="text-xs font-mono text-[#666666]">May 2025 – Sep 2025</span>
+                </div>
+                <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
+                  Designed 200+ digital and print assets for US client campaigns, including high-converting Meta feed/story ads, technical LinkedIn editorial carousels, and corporate event signage.
                 </p>
               </div>
-            ))}
+
+              <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3">
+                <div className="flex items-baseline justify-between gap-2 border-b border-[#1A1A1A] pb-3">
+                  <div>
+                    <h4 className="text-base font-normal text-[#FFFFFF]">Freelance Graphic &amp; Brand Designer</h4>
+                    <p className="text-xs text-[#888888]">Independent Practice · US Businesses</p>
+                  </div>
+                  <span className="text-xs font-mono text-[#666666]">March 2025 – April 2025</span>
+                </div>
+                <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
+                  Completed 4 client engagements for US businesses (edtech branding, store signage, gym promotional materials) during post-graduation period, delivering logos and brand assets with 100% on-time delivery.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* 8. Endorsements & Testimonials Marquee */}
-        <div className="-mx-6 sm:-mx-10 md:-mx-14 lg:-mx-16 xl:-mx-20">
-          <TestimonialsMarquee />
-        </div>
+        {/* =========================================================================
+            SECTION 4: Credentials, Verified Praise & Social Proof
+        ========================================================================= */}
+        <section className="space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#1F1F1F] pb-4">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
+                Credentials &amp; Verified Feedback
+              </h2>
+              <p className="text-sm text-[#888888] pt-1">
+                Formal technical education, certified industry qualifications, and client endorsements.
+              </p>
+            </div>
+            <span className="text-xs font-mono text-[#555555]">
+              VERIFIED RECORD &amp; ENDORSEMENTS
+            </span>
+          </div>
 
-        {/* 9. Gateway to Personal Archive */}
-        <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Left Column: Education & Certifications */}
+            <div className="lg:col-span-6 space-y-6">
+              {/* Education Box */}
+              <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-3">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
+                  Academic Foundation
+                </span>
+                <div className="border-b border-[#1A1A1A] pb-3">
+                  <h3 className="text-base font-normal text-[#FFFFFF]">
+                    Diploma in Engineering in Computer Science
+                  </h3>
+                  <p className="text-xs text-[#888888] pt-0.5">Munshiganj Polytechnic Institute</p>
+                  <p className="text-xs text-[#666666] font-mono pt-1">2021 – 2025 · Graduated with Distinction</p>
+                </div>
+                <p className="text-xs text-[#999999] leading-relaxed">
+                  Combined foundational computer science concepts (algorithms, frontend structures, databases) with autonomous design systems research and campus leadership.
+                </p>
+              </div>
+
+              {/* Certifications Grid */}
+              <div className="space-y-3">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
+                  Verified Certifications (6)
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {CERTIFICATIONS.map((cert, cIdx) => (
+                    <a
+                      key={cIdx}
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group p-3.5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors block space-y-1"
+                    >
+                      <div className="text-xs font-normal text-[#FFFFFF] group-hover:text-[#FFFFFF] flex items-center justify-between">
+                        <span className="truncate pr-1">{cert.title}</span>
+                        <span className="text-[#666666] group-hover:text-[#FFFFFF] text-xs transition-colors shrink-0">↗</span>
+                      </div>
+                      <div className="text-[11px] text-[#777777] flex items-center justify-between pt-0.5">
+                        <span>{cert.issuer}</span>
+                        <span className="font-mono">{cert.date}</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Featured Client & Leadership Praise */}
+            <div className="lg:col-span-6 space-y-4">
+              {/* Highlighted Quote from StoryGroove */}
+              <div className="p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 relative overflow-hidden">
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#10B981] flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+                    <span>StoryGroove Project Dedication</span>
+                  </span>
+                  <span className="text-xs font-mono text-[#555555]">www.storygroove.ai</span>
+                </div>
+                <blockquote className="text-xs sm:text-sm text-[#CCCCCC] leading-relaxed italic border-l-2 border-[#333333] pl-4">
+                  "In the StoryGroove project, your dedication to taking full ownership of the work was instrumental in delivering the end product to the client and ensuring her success. The effort you put in, including working late nights and weekends, was truly impressive and made a noticeable difference for the team. As a result, the client was very satisfied with the outcome, and we were able to strengthen our relationship and build trust and confidence with her."
+                </blockquote>
+                <div className="text-xs text-[#888888] font-mono pt-1">
+                  — Project Leadership Feedback · Verified Client Delivery
+                </div>
+              </div>
+
+              {/* Compact Key Endorsement Badges */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
+                  <div className="text-[#FFFFFF] font-medium">"Clean, thorough, and easily accessible"</div>
+                  <div className="text-[11px] text-[#777777]">Client commendation during Alyssa Kristin Luxury Bridal SaaS review.</div>
+                </div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
+                  <div className="text-[#FFFFFF] font-medium">"Pillars and Compass"</div>
+                  <div className="text-[11px] text-[#777777]">Peer &amp; team description of collaborative guidance, KT, and shared design learnings.</div>
+                </div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
+                  <div className="text-[#FFFFFF] font-medium">Performer of the Month</div>
+                  <div className="text-[11px] text-[#777777]">Awarded November 2025 at SJ Innovation for outstanding creative output.</div>
+                </div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
+                  <div className="text-[#FFFFFF] font-medium">Operational Resilience</div>
+                  <div className="text-[11px] text-[#777777]">~15 hours logged over 3-week crunch protecting client deadlines with zero handholding.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Flowing Testimonials Marquee for Living Social Proof */}
+          <div className="-mx-6 sm:-mx-10 md:-mx-14 lg:-mx-16 xl:-mx-20 pt-4">
+            <TestimonialsMarquee />
+          </div>
+        </section>
+
+        {/* =========================================================================
+            SECTION 5: Beyond the Screen & Gateway to SZK Personal Archive
+        ========================================================================= */}
+        <section className="space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-[#1F1F1F] pb-4">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
+                Beyond the Screen &amp; Personal Discipline
+              </h2>
+              <p className="text-sm text-[#888888] pt-1">
+                Civic leadership in the Scouts Movement, artistic influences, and personal pursuits.
+              </p>
+            </div>
+            <span className="text-xs font-mono text-[#555555]">
+              HUMAN DIMENSION
+            </span>
+          </div>
+
+          {/* Integrated Rover Scout & Personal Pursuits Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Rover Scout Leadership Box with 2 Artifacts */}
+            <div className="lg:col-span-7 p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4">
+              <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
+                <div>
+                  <h3 className="text-base font-normal text-[#FFFFFF]">
+                    Rover Scout Leadership · Bangladesh Scouts
+                  </h3>
+                  <p className="text-xs text-[#888888] pt-0.5">
+                    Munshiganj Polytechnic Institute Rover Scout Group (WOSM) · 2022 – 2025
+                  </p>
+                </div>
+                <span className="text-xs font-mono text-[#666666]">CIVIC SERVICE</span>
+              </div>
+              <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
+                Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and national/regional moots while upholding the Scout Promise and Law.
+              </p>
+              <ul className="space-y-2 text-xs text-[#888888] leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span>Served in the Service Team (সেবাদল) at the Golden Jubilee Rover Moot 2023, receiving the official Service Team Award crest with troop peers.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span>Led official troop oath-taking ceremonies, parade formations, and campus civic clean-up operations as an active Rover.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span>Designed institutional branding, roll-up exhibition banners, and commemorative graphics for regional workshops.</span>
+                </li>
+              </ul>
+              <div className="pt-2">
+                <ArtifactCollage images={scoutImages} title="Rover Scout Leadership Artifacts" />
+              </div>
+            </div>
+
+            {/* Personal Pursuits (Cinema, Music, Writing, Conditioning) */}
+            <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
+                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
+                  <span>🎬</span>
+                  <span>Cinema &amp; Human Narrative</span>
+                </div>
+                <p className="text-xs text-[#999999] leading-relaxed">
+                  Drawn to cinema observing human complexity, discipline, and moral weight — works by Andrei Tarkovsky, Akira Kurosawa, and Park Chan-wook.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
+                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
+                  <span>🎧</span>
+                  <span>Music &amp; Focus</span>
+                </div>
+                <p className="text-xs text-[#999999] leading-relaxed">
+                  Atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM).
+                </p>
+              </div>
+
+              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
+                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
+                  <span>✍️</span>
+                  <span>Writing &amp; Conceptual Worlds</span>
+                </div>
+                <p className="text-xs text-[#999999] leading-relaxed">
+                  Writing poetry exploring cosmic scale, mortality, and quiet observation since 2017, building conceptual worlds from abstract thoughts.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
+                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
+                  <span>🥊</span>
+                  <span>Physical &amp; Spiritual Practice</span>
+                </div>
+                <p className="text-xs text-[#999999] leading-relaxed">
+                  Bodyweight training, running conditioning, and theological study, cultivating daily focus, humility, and mental resilience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =========================================================================
+            SECTION 6: Gateway to Personal Archive (SZK Portal)
+        ========================================================================= */}
+        <section ref={portalRef} className="relative pt-8 pb-16 overflow-hidden">
           <div className="max-w-4xl mx-auto space-y-10 text-center">
             <div className="space-y-3">
               <span className="font-scanport text-[15pt] lowercase tracking-wider text-[#9E9484]">
@@ -1048,25 +822,23 @@ const About: React.FC = () => {
                   fillOpacity={0.3}
                   className="w-full aspect-[16/10] min-h-[360px] sm:min-h-[440px] shadow-2xl transition-transform duration-300 rounded-[28px]"
                 >
-                  <div className="relative w-full h-full overflow-hidden rounded-[26px]">
-                    <img
-                      src="/assets/projects/szk-mockup.webp"
-                      alt="sadman zaman khan personal archive live preview"
-                      className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                    />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0E0D0B]/85 via-[#0E0D0B]/35 to-transparent group-hover:via-[#0E0D0B]/25 transition-colors duration-300" />
-
-                    <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
-                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F5F2EB] hover:bg-[#FFFFFF] text-[#1A1918] shadow-2xl border border-[#E5DFD3] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-scanport text-base sm:text-lg lowercase tracking-normal cursor-pointer">
-                        <span>enter personal archive</span>
-                        <span
-                          aria-hidden="true"
-                          className="inline-block shrink-0 text-base leading-none transition-transform duration-300 ease-out group-hover:-rotate-45"
-                        >
-                          →
-                        </span>
-                      </div>
+                  <div className="w-full h-full flex flex-col items-center justify-center p-8 sm:p-12 text-center space-y-6 relative z-10">
+                    <div className="space-y-2">
+                      <span className="text-xs font-mono tracking-widest text-[#D4A373] uppercase">
+                        SZK Unfiltered
+                      </span>
+                      <h3 className="font-fell text-3xl sm:text-4xl text-[#F7F2EB] lowercase tracking-tight">
+                        enter the personal chamber
+                      </h3>
+                    </div>
+                    <p className="max-w-lg text-xs sm:text-sm text-[#C4BCB1] leading-relaxed font-sans font-light">
+                      Visual poetry, philosophical essays, curated vinyl archives, and raw conceptual explorations kept outside commercial client portfolios.
+                    </p>
+                    <div className="pt-2">
+                      <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-[#F7F2EB] text-[#141311] group-hover:bg-[#FFFFFF] transition-colors font-medium">
+                        <span>Open Archive</span>
+                        <span>↗</span>
+                      </span>
                     </div>
                   </div>
                 </BorderGlow>
@@ -1076,25 +848,23 @@ const About: React.FC = () => {
         </section>
       </main>
 
-      {/* Formatted ATS-Style Resume Modal */}
+      {/* =========================================================================
+          MODAL: Formatted Resume (Updated 2026 Record)
+      ========================================================================= */}
       {isResumeModalOpen &&
         createPortal(
           <div
-            role="dialog"
-            aria-modal="true"
-            aria-label="Formatted Resume Modal"
-            onClick={() => setIsResumeModalOpen(false)}
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/85 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) setIsResumeModalOpen(false);
+            }}
           >
-            <div
-              onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-[8px] bg-[#0E0E0E] border border-[#262626] p-6 sm:p-10 shadow-2xl space-y-8 text-[#EDEDED]"
-            >
-              {/* Modal Top Actions */}
-              <div className="flex items-center justify-between border-b border-[#222222] pb-4">
+            <div className="relative w-full max-w-3xl my-8 rounded-[6px] border border-[#222222] bg-[#0A0A0A] p-6 sm:p-10 shadow-2xl space-y-8 max-h-[90vh] overflow-y-auto text-left selection:bg-[#FFFFFF] selection:text-[#000000]">
+              {/* Modal Top Control Bar */}
+              <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs uppercase tracking-wider text-[#888888] font-mono">
-                    Formatted Resume Preview
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#888888]">
+                    Official Curriculum Vitae
                   </span>
                   <a
                     href="/Sadman_Zaman_Khan_Resume.pdf"
@@ -1107,7 +877,7 @@ const About: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsResumeModalOpen(false)}
-                  className="text-xs font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors p-1"
+                  className="text-xs font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors p-1 cursor-pointer"
                 >
                   Close (esc) ✕
                 </button>
@@ -1119,10 +889,10 @@ const About: React.FC = () => {
                 <div className="space-y-1">
                   <h2 className="text-2xl font-bold text-[#FFFFFF]">SADMAN ZAMAN KHAN</h2>
                   <p className="text-sm text-[#AAAAAA]">
-                    UI/UX Designer | Brand Systems | AI-Assisted Prototyping
+                    UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                   </p>
                   <p className="text-xs text-[#777777] pt-1">
-                    Dhaka, Bangladesh · +880 1869 504 388 · sadmanz.khan@gmail.com · sadmanportfolio.vercel.app
+                    Dhaka, Bangladesh · +880 1869 504 388 · sadmanz.khan@gmail.com · linkedin.com/in/sadmanzamankhan · sadmanportfolio.vercel.app
                   </p>
                 </div>
 
@@ -1132,7 +902,7 @@ const About: React.FC = () => {
                     Professional Summary
                   </h3>
                   <p className="text-xs text-[#AAAAAA] leading-relaxed">
-                    UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, using AI tools like Google Antigravity and Lovable to translate design concepts into working, testable web prototypes quickly. Currently the sole designer at SJ Innovation, independently handling client and internal design projects across branding, interfaces, and marketing.
+                    UI/UX and Brand Designer with hands-on experience in design systems, web dashboards, and AI-assisted prototyping. Skilled in Figma and Adobe Creative Suite, utilizing AI tools (Google Antigravity, Lovable) to rapidly turn wireframes into functional, testable browser prototypes to validate user flows with stakeholders prior to engineering. Currently the sole designer at SJ Innovation, leading client and internal design initiatives spanning interface design, brand identity systems, and performance marketing creative.
                   </p>
                 </div>
 
@@ -1143,16 +913,16 @@ const About: React.FC = () => {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#AAAAAA]">
                     <div>
-                      <strong className="text-[#FFFFFF]">UI/UX Design:</strong> Figma (Design Systems, Auto-layout, Variables, Wireframing, User Flows, Prototyping), Responsive Web &amp; Mobile Layouts, Dashboard Interface Design.
+                      <strong className="text-[#FFFFFF]">UI/UX Design:</strong> Figma (Design Systems, Auto-layout, Component Libraries, Variables, Interactive Prototyping, Wireframing, User Flows), Responsive Web &amp; Mobile Layouts, Dashboard &amp; Command-Center Interface Design.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">AI-Assisted Workflows:</strong> Google Antigravity (AI-directed web prototyping), ComfyUI (safetensors models), Lovable, Claude Code, Ollama (local models), Figma AI.
+                      <strong className="text-[#FFFFFF]">AI-Assisted Workflows:</strong> Google Antigravity (AI-directed web prototyping), Lovable, Claude Code CLI, ComfyUI (custom safetensors workflows), Ollama (local LLM research), Figma AI.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">Brand Identity &amp; Visual:</strong> Adobe Illustrator &amp; Photoshop, Logo &amp; Brand Systems, Vector Illustration, Marketing Graphics, Social Carousels, Event Banners.
+                      <strong className="text-[#FFFFFF]">Brand Identity &amp; Visual:</strong> Adobe Illustrator, Adobe Photoshop, Brand Guidelines, Vector Identity Systems, Sales Enablement Decks, Editorial Carousels, Print &amp; Event Collateral.
                     </div>
                     <div>
-                      <strong className="text-[#FFFFFF]">Marketing &amp; Growth:</strong> Meta Ads Manager (ad creative design &amp; campaign setup), On-Page SEO (metadata, headings, sitemaps, Search Console), WordPress Administration.
+                      <strong className="text-[#FFFFFF]">Growth &amp; Web Discovery:</strong> Meta Ads Manager (ad creative design &amp; campaign setup), On-Page SEO (semantic heading hierarchies, metadata, JSON-LD structured data, Google Search Console), WordPress Administration.
                     </div>
                   </div>
                 </div>
@@ -1169,13 +939,13 @@ const About: React.FC = () => {
                       <span className="text-xs text-[#888888] font-mono">Sep 2025 – Present · Dhaka, Bangladesh</span>
                     </div>
                     <p className="text-xs text-[#AAAAAA] italic bg-[#141414] px-3 py-1.5 rounded-[3px] border border-[#222222]">
-                      Promoted to Sole Designer in Feb 2026, independently leading all corporate and client design initiatives across the company.
+                      Leading client and corporate design deliverables across the company since February 2026, reporting directly to executive leadership.
                     </p>
                     <ul className="list-disc pl-4 space-y-2 text-xs text-[#AAAAAA] leading-relaxed">
-                      <li><strong className="text-[#FFFFFF]">Interface Design &amp; Client Delivery:</strong> Designed connected multi-device SaaS suite for Alyssa Kristin (mobile Stylist App, Admin CMS, CRM), praised by client leadership as "clean, thorough, and easily accessible." Conducted 40+ point UX audit and redesign for StoryGrooveAI to improve conversion funnels; overhauled CollabAI into a clean, dark command-center interface; designed 15-module Bloomberg-style credit surveillance layout for ICR in Figma.</li>
-                      <li><strong className="text-[#FFFFFF]">Brand Systems &amp; Sales Enablement:</strong> Created full visual identities, logos, OpenGraph assets, and 10+ comprehensive sales enablement decks for AI-native Control Tower suites (ePhysician, Marketing AI, Client Success AI, MortgageAI, NonProfit AI, RealtorHelp). Designed official logo for Queens AI Week. Directed full visual campaign for SJ Innovation's 22nd Anniversary across 3 global offices (trophies, stage banners, merchandise, post-event reel).</li>
-                      <li><strong className="text-[#FFFFFF]">Client Scale &amp; Rapid Production:</strong> Scaled LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston). Commended by client leadership for reliable same-day delivery and proactive template QA.</li>
-                      <li><strong className="text-[#FFFFFF]">AI Prototyping, Web Discovery &amp; Growth:</strong> Structured and optimized 761+ pages across 3 major properties on the Lovable platform for on-page SEO and AI discoverability (JSON-LD schemas, heading hierarchies, Search Console indexing). Used Google Antigravity and Lovable to build testable web prototypes from Figma designs to validate user journeys before engineering. Built Meta ad creative suites and managed ad sets in Ads Manager (ePhysician, NonProfit AI), establishing an active ~2–3.5 leads/day pipeline.</li>
+                      <li><strong className="text-[#FFFFFF]">Interface Design &amp; High-Stakes Client Delivery:</strong> Designed connected multi-platform ecosystem for Alyssa Kristin (mobile Stylist App, Web Admin CMS, CRM); commended as "clean, thorough, and easily accessible." Conducted 40+ point UX audit and redesign for StoryGrooveAI; led interface redesign of CollabAI multi-agent platform; designed 15-module Bloomberg-style credit surveillance dashboard for ICR in Figma; crafted McKinsey-style diagnostic decks for InfoFluence AWS reviews.</li>
+                      <li><strong className="text-[#FFFFFF]">Brand Systems &amp; Sales Enablement:</strong> Created complete brand identity systems, logos, OpenGraph social assets, and 10+ comprehensive sales enablement decks for enterprise products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI). Designed official logo for Queens AI Week. Directed creative for SJ Innovation's 22nd Anniversary across 3 global offices.</li>
+                      <li><strong className="text-[#FFFFFF]">Client Scale &amp; Rapid Production:</strong> Scaled LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston). Commended for reliable same-day turnarounds and proactive template QA.</li>
+                      <li><strong className="text-[#FFFFFF]">AI Prototyping, Web Discovery &amp; Growth:</strong> Structured and optimized 761+ pages across 3 properties on Lovable for on-page SEO and AI discoverability (JSON-LD schemas, heading hierarchies, Search Console indexing). Used Google Antigravity and Lovable to convert design concepts into testable browser prototypes. Built Meta ad suites establishing ~3.5 qualified leads/day pipeline.</li>
                     </ul>
                   </div>
 
@@ -1185,45 +955,64 @@ const About: React.FC = () => {
                       <span className="text-xs text-[#888888] font-mono">May 2025 – Sep 2025 · Dhaka, Bangladesh</span>
                     </div>
                     <ul className="list-disc pl-4 space-y-1 text-xs text-[#AAAAAA] leading-relaxed">
-                      <li>Produced 200+ digital and print marketing assets for US-based client and internal campaigns, including high-converting Meta feed/story ads, technical LinkedIn editorial carousels, and corporate event signage.</li>
+                      <li>Designed 200+ digital and print assets for US client campaigns, including high-converting Meta feed/story ads, technical LinkedIn editorial carousels, and corporate event signage.</li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-[#1a1a1a]">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-0.5">
+                      <h4 className="font-semibold text-[#FFFFFF] text-sm">Freelance Graphic &amp; Brand Designer</h4>
+                      <span className="text-xs text-[#888888] font-mono">Mar 2025 – Apr 2025 · US Businesses</span>
+                    </div>
+                    <ul className="list-disc pl-4 space-y-1 text-xs text-[#AAAAAA] leading-relaxed">
+                      <li>Completed 4 client engagements for US businesses (edtech branding, store signage, gym promotional materials), delivering logos and brand assets with 100% on-time delivery.</li>
                     </ul>
                   </div>
                 </div>
 
-                {/* Selected Independent Work */}
+                {/* Selected Projects */}
                 <div className="space-y-3 border-t border-[#1F1F1F] pt-4">
                   <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
-                    Selected Independent Projects
+                    Selected Projects
                   </h3>
                   <div className="space-y-2 text-xs text-[#AAAAAA] leading-relaxed">
                     <p>
-                      <strong className="text-[#FFFFFF]">Clandest Agency (2025):</strong> Co-founded a 4-person creative studio. Led visual identity, typography system, and responsive web design, directing AI tools to ship a clean online presence with on-page SEO.
+                      <strong className="text-[#FFFFFF]">ePhysician Landing Page Redesign:</strong> Comprehensive redesign for US healthcare AI platform. Overhauled messaging, visual contrast, interactive ROI calculator, and HIPAA/PCI compliance trust seals.
                     </p>
                     <p>
-                      <strong className="text-[#FFFFFF]">Personal Portfolio Archive (2025–2026):</strong> Designed and directed the development of a 19-project interactive portfolio featuring custom dark aesthetics, case study architectures, and verified Google indexing.
+                      <strong className="text-[#FFFFFF]">Clandest Agency (Co-Founder &amp; Lead Designer):</strong> Designed visual identity, typography system, and web layout for creative studio, directing AI tools to ship with clean on-page SEO.
+                    </p>
+                    <p>
+                      <strong className="text-[#FFFFFF]">Personal Portfolio Architecture:</strong> Interactive 19-project portfolio with dark aesthetic and case studies, built and deployed as static crawlable pages on Vercel.
+                    </p>
+                    <p>
+                      <strong className="text-[#FFFFFF]">NEXURA — Brand Identity System (Capstone Project · Score: 4.0):</strong> Led end-to-end brand identity in Illustrator &amp; Photoshop: custom logo system, 40-page brand guideline book, and 20+ mockups.
                     </p>
                   </div>
                 </div>
 
-                {/* Endorsements & Recognition */}
+                {/* Contributions & Achievements */}
                 <div className="space-y-3 border-t border-[#1F1F1F] pt-4">
                   <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
-                    Key Endorsements &amp; Honors
+                    Professional Contributions &amp; Achievements
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#AAAAAA]">
-                    <div className="space-y-1">
-                      <p><strong className="text-[#FFFFFF]">Client Commendations:</strong> Praised by Alyssa Kristin leadership for "clean, thorough, easily accessible" multi-device UX; commended by LuCreativ / 3i Advertising for same-day delivery and proactive template QA.</p>
-                      <p><strong className="text-[#FFFFFF]">Leadership Recognition:</strong> Commended by project leadership for taking full ownership to ensure client success on tight deadlines (StoryGrooveAI); recognized as a dependable cross-functional design partner.</p>
+                    <div>
+                      <strong className="text-[#FFFFFF]">Client Ownership:</strong> Took full ownership of StoryGroove during critical launch phase, praised by client as "clean, thorough, and easily accessible."
                     </div>
-                    <div className="space-y-1">
-                      <p><strong className="text-[#FFFFFF]">Performer of the Month:</strong> Awarded November 2025 at SJ Innovation for outstanding creative output.</p>
-                      <p><strong className="text-[#FFFFFF]">AI Hackathon Runner-Up:</strong> Recognized for AI mortgage transparency prototype (Nov 2025).</p>
-                      <p><strong className="text-[#FFFFFF]">1-Year Milestone:</strong> Honored for progression from intern to sole designer (May 2026).</p>
+                    <div>
+                      <strong className="text-[#FFFFFF]">Brand Consistency:</strong> Led visual brand consistency across Control Tower product suite, internal culture, and authored company brand guidelines.
+                    </div>
+                    <div>
+                      <strong className="text-[#FFFFFF]">Operational Resilience:</strong> Stepped in during short-notice periods (Restock Resource, weekend coverage) with ~15 documented after-hours/weekend hours logged over 3-week crunch.
+                    </div>
+                    <div>
+                      <strong className="text-[#FFFFFF]">Mentorship:</strong> Formally assigned mentor to new design intern, providing hands-on KT, structured feedback, and building an onboarding project resource approved by management.
                     </div>
                   </div>
                 </div>
 
-                {/* Education */}
+                {/* Education & Certifications */}
                 <div className="space-y-2 border-t border-[#1F1F1F] pt-4">
                   <h3 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
                     Education &amp; Certifications
