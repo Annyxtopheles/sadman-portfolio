@@ -6,8 +6,8 @@ import {
 } from '@/data/testimonials';
 
 const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
-  <article className="w-[320px] sm:w-[400px] md:w-[440px] shrink-0 p-6 md:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] flex flex-col justify-between space-y-5 select-none group transition-colors">
-    <p className="text-xs sm:text-sm text-[#CCCCCC] font-normal leading-relaxed">
+  <article className="w-[320px] sm:w-[400px] md:w-[440px] shrink-0 p-6 md:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] flex flex-col justify-between space-y-5 select-text group transition-colors">
+    <p className="text-xs sm:text-sm text-[#CCCCCC] font-normal leading-relaxed select-text">
       "{item.quote}"
     </p>
 
@@ -57,7 +57,7 @@ export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHe
 
         {/* Row 1: Right to Left */}
         <div className="group flex overflow-hidden w-full">
-          <div className="flex gap-5 shrink-0 animate-scroll-left group-hover:[animation-play-state:paused] will-change-transform">
+          <div className="flex gap-5 shrink-0 animate-scroll-left group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform">
             {row1Duplicated.map((item, idx) => (
               <TestimonialCard key={`row1-${item.id}-${idx}`} item={item} />
             ))}
@@ -66,7 +66,7 @@ export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHe
 
         {/* Row 2: Left to Right */}
         <div className="group flex overflow-hidden w-full">
-          <div className="flex gap-5 shrink-0 animate-scroll-right group-hover:[animation-play-state:paused] will-change-transform">
+          <div className="flex gap-5 shrink-0 animate-scroll-right group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform">
             {row2Duplicated.map((item, idx) => (
               <TestimonialCard key={`row2-${item.id}-${idx}`} item={item} />
             ))}
