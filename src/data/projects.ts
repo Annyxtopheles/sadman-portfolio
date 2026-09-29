@@ -9256,8 +9256,8 @@ export const PROJECTS: Project[] = [
     client: "Internal Initiatives & People Operations",
     year: "2025 – Present",
     duration: "Ongoing",
-    scope: ["Autonomous Design Initiatives", "HR & Talent Campaigns", "Company All-Hands Slide Systems", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans modular 3D talent acquisition campaigns, a standardized 25-slide All-Hands meeting presentation design system, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and dynamic member-first video spotlights.",
+    scope: ["Autonomous Design Initiatives", "Office Environmental Branding", "3D Spatial Identity", "HR & Talent Campaigns", "Company All-Hands Slide Systems", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans architectural 3D office interior environmental branding mockups for global campuses, modular 3D talent acquisition campaigns, a standardized 25-slide All-Hands meeting presentation design system, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and dynamic member-first video spotlights.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
@@ -9366,6 +9366,49 @@ export const PROJECTS: Project[] = [
             url: "/assets/projects/creative-initiatives/new-year-2026-motion-countdown.gif",
             caption: "New Year 2026 Animated Motion Countdown — Futuristic gauge meter transitioning from 2025 into 2026 with corporate gradient glow and AI-First branding.",
             aspectRatio: "1/1"
+          }
+        ]
+      },
+      {
+        sectionTitle: "SJ Innovation — Office Environmental Branding & 3D Spatial Identity Mockups",
+        sectionDescription: "Autonomous spatial design and architectural interior branding explorations conceptualized for SJ Innovation's corporate headquarters and global offices. Visualizes the AI-First brand identity across executive suites, reception lobbies, acoustic collaborative feature walls, and custom circuit-etched frosted glass boardroom partitions.",
+        carousels: [
+          {
+            id: "sji-environmental-branding",
+            title: "Office Environmental Branding & Spatial Mockups (5 Concepts)",
+            description: "Architectural 3D environmental mockups visualizing SJ Innovation's AI-First corporate identity across executive walls, reception lobbies, acoustic feature panels, and glass partitions.",
+            slides: [
+              {
+                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-01-22-years-executive-wall.webp",
+                caption: "Concept 01 — Executive Suite & 22-Year Anniversary: Dimensional multi-line gradient '22 Years' emblem paired with SJ Innovation AI First Solutions signage on dark vertical fluted wood panels and illuminated floating shelves.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-02-reception-lobby-concrete.webp",
+                caption: "Concept 02 — Main Reception & Lobby: 3D dimensional orange-and-blue sphere network logo mark and typography mounted on minimalist micro-cement wall panels with dual-tone overhead cove lighting.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-03-conference-frosted-glass.webp",
+                caption: "Concept 03 — Boardroom & Conference Partition: Translucent frosted architectural glass divider featuring custom geometric circuit line etchings and monochrome SJ Innovation AI First Solutions branding.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-04-acoustic-textured-wall.webp",
+                caption: "Concept 04 — Collaborative Hub & Acoustic Wall: Sculpted high-relief blue & orange logo lockup set against dimpled acoustic textured wall panels under focused architectural spotlighting.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-05-executive-suite-accent-wall.webp",
+                caption: "Concept 05 — Executive Lounge & Architectural Concrete: Deep textured micro-perforated concrete accent wall integrated with dark walnut display shelving and dimensional 3D brand insignia.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
           }
         ]
       },
@@ -10781,6 +10824,36 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/creative-initiatives/company-deck/company-deck-slide-18.webp",
         caption: "Slide 18 — Appendix: Official Contact & Partnership Channels",
         type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-01-22-years-executive-wall.webp",
+        caption: "Office Environmental Branding — Executive Suite & 22-Year Anniversary Wall",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-02-reception-lobby-concrete.webp",
+        caption: "Office Environmental Branding — Main Reception & Lobby 3D Signage",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-03-conference-frosted-glass.webp",
+        caption: "Office Environmental Branding — Boardroom Frosted Glass Partition",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-04-acoustic-textured-wall.webp",
+        caption: "Office Environmental Branding — Collaborative Hub Acoustic Feature Wall",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-05-executive-suite-accent-wall.webp",
+        caption: "Office Environmental Branding — Executive Suite Architectural Accent Wall",
+        type: "desktop",
+        aspectRatio: "16/9"
       }
     ]
   },
