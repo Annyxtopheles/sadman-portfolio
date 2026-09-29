@@ -800,57 +800,57 @@ const About: React.FC = () => {
 
             {/* Personal Pursuits */}
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-              {/* Cinema -> Letterboxd (Letterboxd Green outline on hover) */}
+              {/* Cinema -> Letterboxd (Subtle green-tinted outline on hover) */}
               <a
                 href="https://letterboxd.com/Annyxtopheles/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#00E054] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#00E054]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#00E054]/30 transition-colors pb-2">
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎬</span>
                     <span>Cinema &amp; Human Narrative</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#00E054] transition-colors">letterboxd ↗</span>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">letterboxd ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Drawn to cinema observing human complexity, discipline, and moral weight — works by Andrei Tarkovsky, Akira Kurosawa, and Park Chan-wook.
                 </p>
               </a>
 
-              {/* Music -> Last.fm (Last.fm Red outline on hover) */}
+              {/* Music -> Last.fm (Subtle red-tinted outline on hover) */}
               <a
                 href="https://www.last.fm/user/Asphyxtonihil"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#D51007] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#D51007]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#D51007]/30 transition-colors pb-2">
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎧</span>
                     <span>Music &amp; Focus</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#D51007] transition-colors">last.fm ↗</span>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">last.fm ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM).
                 </p>
               </a>
 
-              {/* Writing -> SZK Poetry (Cerulean Blue outline on hover) */}
+              {/* Writing -> SZK Poetry (Subtle cerulean-tinted outline on hover) */}
               <a
                 href="https://sadmanzamankhan.vercel.app/poetry"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#38BDF8] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#38BDF8]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#38BDF8]/30 transition-colors pb-2">
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>✍️</span>
                     <span>Writing &amp; Conceptual Worlds</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#38BDF8] transition-colors">szk poetry ↗</span>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">szk poetry ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Writing poetry exploring cosmic scale, mortality, and quiet observation since 2017, building conceptual worlds from abstract thoughts.
