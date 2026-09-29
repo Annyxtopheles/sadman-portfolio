@@ -257,17 +257,17 @@ const About: React.FC = () => {
 
               {/* 3 High-Legibility Metrics */}
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#222222] space-y-1">
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
                   <div className="text-xl font-bold font-mono text-[#FFFFFF]">1.5+ Yrs</div>
-                  <div className="text-xs text-[#CCCCCC] font-normal leading-snug">Design Systems &amp; UX</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">Design Systems &amp; UX</div>
                 </div>
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#222222] space-y-1">
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
                   <div className="text-xl font-bold font-mono text-[#FFFFFF]">Sole Designer</div>
-                  <div className="text-xs text-[#CCCCCC] font-normal leading-snug">SJ Innovation (Feb 2026)</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">SJ Innovation (Feb 2026)</div>
                 </div>
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#222222] space-y-1">
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
                   <div className="text-xl font-bold font-mono text-[#FFFFFF]">100% On-Time</div>
-                  <div className="text-xs text-[#CCCCCC] font-normal leading-snug">Client &amp; Partner Delivery</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">Client &amp; Partner Delivery</div>
                 </div>
               </div>
             </div>
@@ -698,7 +698,7 @@ const About: React.FC = () => {
             {/* Right Column: Featured Client & Leadership Praise */}
             <div className="lg:col-span-6 space-y-4">
               {/* Highlighted Quote from StoryGroove */}
-              <div className="p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4 relative overflow-hidden">
+              <div className="p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-4 relative overflow-hidden">
                 <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
                   <span className="text-xs font-mono uppercase tracking-wider text-[#10B981] flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
@@ -716,21 +716,21 @@ const About: React.FC = () => {
 
               {/* Compact Key Endorsement Badges */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
-                  <div className="text-[#FFFFFF] font-medium">"Clean, thorough, and easily accessible"</div>
-                  <div className="text-[11px] text-[#777777]">Client commendation during Alyssa Kristin Luxury Bridal SaaS review.</div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
+                  <div className="text-[#FFFFFF] font-medium text-xs sm:text-sm">"Clean, thorough, and easily accessible"</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">Client commendation during Alyssa Kristin Luxury Bridal SaaS review.</div>
                 </div>
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
-                  <div className="text-[#FFFFFF] font-medium">"Pillars and Compass"</div>
-                  <div className="text-[11px] text-[#777777]">Peer &amp; team description of collaborative guidance, KT, and shared design learnings.</div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
+                  <div className="text-[#FFFFFF] font-medium text-xs sm:text-sm">"Pillars and Compass"</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">Peer &amp; team description of collaborative guidance, KT, and shared design learnings.</div>
                 </div>
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
-                  <div className="text-[#FFFFFF] font-medium">Performer of the Month</div>
-                  <div className="text-[11px] text-[#777777]">Awarded November 2025 at SJ Innovation for outstanding creative output.</div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
+                  <div className="text-[#FFFFFF] font-medium text-xs sm:text-sm">Performer of the Month</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">Awarded November 2025 at SJ Innovation for outstanding creative output.</div>
                 </div>
-                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-1">
-                  <div className="text-[#FFFFFF] font-medium">Operational Resilience</div>
-                  <div className="text-[11px] text-[#777777]">~15 hours logged over 3-week crunch protecting client deadlines with zero handholding.</div>
+                <div className="p-4 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-1">
+                  <div className="text-[#FFFFFF] font-medium text-xs sm:text-sm">Operational Resilience</div>
+                  <div className="text-xs sm:text-sm text-[#999999] leading-relaxed">~15 hours logged over 3-week crunch protecting client deadlines with zero handholding.</div>
                 </div>
               </div>
             </div>
@@ -764,7 +764,7 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Rover Scout Leadership Box with 2 Artifacts */}
-            <div className="lg:col-span-7 p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-4">
+            <div className="lg:col-span-7 p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-4">
               <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
                 <div>
                   <h3 className="text-base font-normal text-[#FFFFFF]">
@@ -800,70 +800,65 @@ const About: React.FC = () => {
 
             {/* Personal Pursuits */}
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+              {/* Cinema -> Letterboxd (Letterboxd Green outline on hover) */}
+              <a
+                href="https://letterboxd.com/Annyxtopheles/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#00E054] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+              >
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#00E054]/30 transition-colors pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎬</span>
                     <span>Cinema &amp; Human Narrative</span>
                   </div>
-                  <a
-                    href="https://letterboxd.com/Annyxtopheles/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
-                  >
-                    <span>Letterboxd</span>
-                    <span className="text-[10px]">↗</span>
-                  </a>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#00E054] transition-colors">letterboxd ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Drawn to cinema observing human complexity, discipline, and moral weight — works by Andrei Tarkovsky, Akira Kurosawa, and Park Chan-wook.
                 </p>
-              </div>
+              </a>
 
-              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+              {/* Music -> Last.fm (Last.fm Red outline on hover) */}
+              <a
+                href="https://www.last.fm/user/Asphyxtonihil"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#D51007] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+              >
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#D51007]/30 transition-colors pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎧</span>
                     <span>Music &amp; Focus</span>
                   </div>
-                  <a
-                    href="https://www.last.fm/user/Asphyxtonihil"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
-                  >
-                    <span>Last.fm</span>
-                    <span className="text-[10px]">↗</span>
-                  </a>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#D51007] transition-colors">last.fm ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM).
                 </p>
-              </div>
+              </a>
 
-              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+              {/* Writing -> SZK Poetry (Cerulean Blue outline on hover) */}
+              <a
+                href="https://sadmanzamankhan.vercel.app/poetry"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#38BDF8] transition-all duration-300 space-y-2 block cursor-pointer no-underline"
+              >
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] group-hover:border-[#38BDF8]/30 transition-colors pb-2">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>✍️</span>
                     <span>Writing &amp; Conceptual Worlds</span>
                   </div>
-                  <a
-                    href="https://sadmanzamankhan.vercel.app/poetry"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
-                  >
-                    <span>Poetry Archive</span>
-                    <span className="text-[10px]">↗</span>
-                  </a>
+                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#38BDF8] transition-colors">szk poetry ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Writing poetry exploring cosmic scale, mortality, and quiet observation since 2017, building conceptual worlds from abstract thoughts.
                 </p>
-              </div>
+              </a>
 
-              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
+              {/* Physical & Spiritual Practice */}
+              <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-2">
                 <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
                   <span>🥊</span>
                   <span>Physical &amp; Spiritual Practice</span>

@@ -26,9 +26,9 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
   return (
     <div className="relative space-y-2.5">
       {/* Small Header */}
-      <div className="text-[11px] font-mono uppercase tracking-wider text-[#666666] px-1 flex items-center justify-between">
+      <div className="text-xs font-mono uppercase tracking-wider text-[#999999] px-1 flex items-center justify-between">
         <span>{title}</span>
-        <span className="text-[10px] text-[#555555]">
+        <span className="text-xs text-[#999999] font-normal lowercase">
           {images.length} {images.length === 1 ? 'preview' : 'previews'} · hover to expand
         </span>
       </div>
@@ -61,12 +61,12 @@ export const ArtifactCollage: React.FC<ArtifactCollageProps> = ({
                   />
                 </div>
 
-                {/* Tiny Label */}
+                {/* Thumbnail Label */}
                 <div className="pt-1.5 px-0.5 flex items-center justify-between">
-                  <span className="text-[10px] font-normal text-[#777777] group-hover:text-[#CCCCCC] truncate transition-colors">
+                  <span className="text-xs font-normal text-[#999999] group-hover:text-[#FFFFFF] truncate transition-colors">
                     {img.caption.split('—')[0]?.trim() || img.caption}
                   </span>
-                  <span className="text-[10px] text-[#555555] group-hover:text-[#AAAAAA] shrink-0 font-mono transition-colors">
+                  <span className="text-xs text-[#888888] group-hover:text-[#FFFFFF] shrink-0 font-mono transition-colors">
                     ↗
                   </span>
                 </div>
