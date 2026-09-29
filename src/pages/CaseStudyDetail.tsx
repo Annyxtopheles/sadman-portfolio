@@ -491,7 +491,7 @@ export const CaseStudyDetail: React.FC = () => {
                     {/* Mode 1: Expanded View */}
                     {viewMode === 'expanded' ? (
                       section.carousels && section.carousels.length > 0 ? (
-                        section.carousels.length === 1 ? (() => {
+                        section.carousels.length === 1 && section.carouselLayout !== 'grid' ? (() => {
                           const firstRatio = section.carousels[0].slides[0]?.aspectRatio;
                           const isLandscape = (() => {
                             if (!firstRatio) return false;
@@ -536,16 +536,18 @@ export const CaseStudyDetail: React.FC = () => {
                         })();
 
                         return (
-                          <div className={`mx-auto w-full transition-all ${
+                          <div className={section.carouselLayout === 'grid' ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" : `mx-auto w-full transition-all ${
                             isLandscape ? 'max-w-4xl xl:max-w-5xl' : 'max-w-xl'
                           }`}>
-                            <CarouselViewer
-                              slides={sectionImages}
-                              title={section.sectionTitle}
-                              documentUrl={section.documentUrl}
-                              documentTitle={section.documentTitle}
-                              onOpenLightbox={handleOpenLightbox}
-                            />
+                            <div className={section.carouselLayout === 'grid' ? "flex flex-col" : "w-full"}>
+                              <CarouselViewer
+                                slides={sectionImages}
+                                title={section.sectionTitle}
+                                documentUrl={section.documentUrl}
+                                documentTitle={section.documentTitle}
+                                onOpenLightbox={handleOpenLightbox}
+                              />
+                            </div>
                           </div>
                         );
                       })() : (

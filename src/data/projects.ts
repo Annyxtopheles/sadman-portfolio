@@ -51,6 +51,7 @@ export interface GallerySection {
   documentTitle?: string;
   images?: GalleryImage[];
   carousels?: CarouselItem[];
+  carouselLayout?: 'grid' | 'full';
 }
 
 export interface BeforeAfterComparison {
@@ -9256,8 +9257,8 @@ export const PROJECTS: Project[] = [
     client: "Internal Initiatives & People Operations",
     year: "2025 – Present",
     duration: "Ongoing",
-    scope: ["Autonomous Design Initiatives", "Office Environmental Branding", "3D Spatial Identity", "HR & Talent Campaigns", "Company All-Hands Slide Systems", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
-    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans architectural 3D office interior environmental branding mockups for global campuses, modular 3D talent acquisition campaigns, a standardized 25-slide All-Hands meeting presentation design system, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and dynamic member-first video spotlights.",
+    scope: ["Autonomous Design Initiatives", "Immersive Zoom Backgrounds", "HR & Talent Campaigns", "Company All-Hands Slide Systems", "Social Recognition Systems", "Motion & Animated Greetings", "3D Glassmorphism", "Executive Alignment", "Employer Branding"],
+    summary: "Unsolicited creative initiatives conceived, designed, pitched, and operationalized autonomously for SJ Innovation. Spans bespoke immersive Zoom and virtual meeting backgrounds for team members and leadership, modular 3D talent acquisition campaigns, a standardized 25-slide All-Hands meeting presentation design system, a ground-up recognition system that transformed private Keka HRMS honors into public social showcases with 3-tier executive approval, futuristic New Year animated countdowns, and dynamic member-first video spotlights.",
     coverImage: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
     liveUrl: null,
     tldr: {
@@ -9305,21 +9306,43 @@ export const PROJECTS: Project[] = [
       {
         sectionTitle: "People Operations — 3D Glassmorphic Talent Acquisition Campaigns",
         sectionDescription: "Autonomous recruitment campaign suite designed for SJ Innovation's HR team. Features customized 3D floating glassmorphic iconography tailored to specific career disciplines, clean typographic hierarchies, and prominent call-to-actions.",
+        carouselLayout: "grid",
+        carousels: [
+          {
+            id: "talent-acquisition-campaigns",
+            title: "Talent Acquisition & Hiring Campaigns (3 Roles)",
+            description: "Modular 3D glassmorphic recruitment campaign slides tailored for UI/UX Design, Business Analysis, and Software Engineering roles.",
+            slides: [
+              {
+                url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
+                caption: "Paid Internship Opportunity — UI/UX & Graphic Design (Floating 3D Vector Tools & Color Swatches)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-02-business-analyst.webp",
+                caption: "We're Hiring — Business Analyst (Glassmorphic Enterprise Strategy & Analytics Cubes)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
+                caption: "We're Hiring — Jr. Software Developer (Glowing Glass Terminal, Code Blocks & AI Processor)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        sectionTitle: "People Operations & Culture — Employee Recognition & Welcome Aboard Showcases",
+        sectionDescription: "Standardized corporate people operations and social recognition systems for SJ Innovation. Features the ground-up Performer of the Month social transformation (elevated from private Keka HRMS certificates with 3-tier executive approval) alongside the standardized 'Welcome Aboard' talent onboarding templates celebrating new hires across global offices.",
         images: [
           {
-            url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
-            caption: "Paid Internship Opportunity — UI/UX & Graphic Design (Floating 3D Vector Tools & Color Swatches)",
-            aspectRatio: "1024/682"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/hiring-02-business-analyst.webp",
-            caption: "We're Hiring — Business Analyst (Glassmorphic Enterprise Strategy & Analytics Cubes)",
-            aspectRatio: "1024/682"
-          },
-          {
-            url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
-            caption: "We're Hiring — Jr. Software Developer (Glowing Glass Terminal, Code Blocks & AI Processor)",
-            aspectRatio: "1024/682"
+            url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
+            caption: "Performer of the Month — Ground-Up Initiative Pitching & Launching Social Recognition (Sadman Zaman Khan, November 2025)",
+            aspectRatio: "1/1"
           },
           {
             url: "/assets/projects/creative-initiatives/onboarding-welcome-leandra-sol.webp",
@@ -9329,17 +9352,6 @@ export const PROJECTS: Project[] = [
           {
             url: "/assets/projects/creative-initiatives/onboarding-welcome-akshata-alornekar.webp",
             caption: "Welcome Aboard Social Showcase — Standardized Talent Onboarding System (Akshata Alornekar, HR Admin Executive, Sylhet)",
-            aspectRatio: "1/1"
-          }
-        ]
-      },
-      {
-        sectionTitle: "Employee Recognition — Ground-Up Social Transformation from Keka HRMS",
-        sectionDescription: "Proactive cultural initiative conceived from the ground up: previously, monthly employee honors were locked inside internal HR software (Keka) as simple PDF certificates. Sadman conceptualized transforming these into public-facing, high-craft social showcases—pitching the concept upwards from Senior Designer to Engineering Manager and the Chief Operating Officer (COO) to secure complete executive approval.",
-        images: [
-          {
-            url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
-            caption: "Performer of the Month — Ground-Up Initiative Pitching & Launching Social Recognition (Sadman Zaman Khan, November 2025)",
             aspectRatio: "1/1"
           }
         ]
@@ -9370,41 +9382,42 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        sectionTitle: "SJ Innovation — Office Environmental Branding & 3D Spatial Identity Mockups",
-        sectionDescription: "Autonomous spatial design and architectural interior branding explorations conceptualized for SJ Innovation's corporate headquarters and global offices. Visualizes the AI-First brand identity across executive suites, reception lobbies, acoustic collaborative feature walls, and custom circuit-etched frosted glass boardroom partitions.",
+        sectionTitle: "SJ Innovation — Immersive Zoom & Virtual Meeting Backgrounds",
+        sectionDescription: "Autonomous spatial design and virtual environment explorations conceptualized for SJ Innovation's global team members and executive leadership. Features high-craft 16:9 immersive Zoom and virtual meeting backgrounds visualizing the AI-First corporate identity across executive suites, reception lobbies, acoustic collaborative feature walls, and custom circuit-etched frosted glass boardroom partitions.",
+        carouselLayout: "grid",
         carousels: [
           {
-            id: "sji-environmental-branding",
-            title: "Office Environmental Branding & Spatial Mockups (5 Concepts)",
-            description: "Architectural 3D environmental mockups visualizing SJ Innovation's AI-First corporate identity across executive walls, reception lobbies, acoustic feature panels, and glass partitions.",
+            id: "sji-zoom-backgrounds",
+            title: "Immersive Zoom & Meeting Backgrounds (5 Concepts)",
+            description: "Bespoke 16:9 virtual meeting and Zoom backgrounds visualizing SJ Innovation's AI-First corporate identity across executive walls, reception lobbies, acoustic feature panels, and glass partitions.",
             slides: [
               {
-                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-01-22-years-executive-wall.webp",
-                caption: "Concept 01 — Executive Suite & 22-Year Anniversary: Dimensional multi-line gradient '22 Years' emblem paired with SJ Innovation AI First Solutions signage on dark vertical fluted wood panels and illuminated floating shelves.",
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-01-22-years-executive-wall.webp",
+                caption: "Concept 01 — Executive Suite & 22-Year Anniversary: Immersive Zoom background featuring dimensional multi-line gradient '22 Years' emblem and SJ Innovation AI First Solutions signage against dark vertical fluted wood and ambient illuminated shelving.",
                 type: "carousel",
                 aspectRatio: "16/9"
               },
               {
-                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-02-reception-lobby-concrete.webp",
-                caption: "Concept 02 — Main Reception & Lobby: 3D dimensional orange-and-blue sphere network logo mark and typography mounted on minimalist micro-cement wall panels with dual-tone overhead cove lighting.",
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-02-reception-lobby-concrete.webp",
+                caption: "Concept 02 — Main Reception & Lobby: Virtual meeting background with 3D dimensional orange-and-blue sphere network logo mark mounted on minimalist micro-cement wall panels with dual-tone overhead cove lighting.",
                 type: "carousel",
                 aspectRatio: "16/9"
               },
               {
-                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-03-conference-frosted-glass.webp",
-                caption: "Concept 03 — Boardroom & Conference Partition: Translucent frosted architectural glass divider featuring custom geometric circuit line etchings and monochrome SJ Innovation AI First Solutions branding.",
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-03-conference-frosted-glass.webp",
+                caption: "Concept 03 — Boardroom & Conference Partition: Architectural Zoom background featuring translucent frosted glass divider with custom geometric circuit line etchings and monochrome SJ Innovation branding.",
                 type: "carousel",
                 aspectRatio: "16/9"
               },
               {
-                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-04-acoustic-textured-wall.webp",
-                caption: "Concept 04 — Collaborative Hub & Acoustic Wall: Sculpted high-relief blue & orange logo lockup set against dimpled acoustic textured wall panels under focused architectural spotlighting.",
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-04-acoustic-textured-wall.webp",
+                caption: "Concept 04 — Collaborative Hub & Acoustic Wall: Virtual background with sculpted high-relief blue & orange logo lockup set against dimpled acoustic textured wall panels under focused architectural spotlighting.",
                 type: "carousel",
                 aspectRatio: "16/9"
               },
               {
-                url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-05-executive-suite-accent-wall.webp",
-                caption: "Concept 05 — Executive Lounge & Architectural Concrete: Deep textured micro-perforated concrete accent wall integrated with dark walnut display shelving and dimensional 3D brand insignia.",
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-05-executive-suite-accent-wall.webp",
+                caption: "Concept 05 — Executive Lounge & Architectural Concrete: Immersive meeting background with deep textured micro-perforated concrete accent wall integrated with dark walnut display shelving and 3D brand insignia.",
                 type: "carousel",
                 aspectRatio: "16/9"
               }
@@ -10826,32 +10839,32 @@ export const PROJECTS: Project[] = [
         type: "desktop"
       },
       {
-        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-01-22-years-executive-wall.webp",
-        caption: "Office Environmental Branding — Executive Suite & 22-Year Anniversary Wall",
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-01-22-years-executive-wall.webp",
+        caption: "Immersive Zoom Background — Executive Suite & 22-Year Anniversary Wall",
         type: "desktop",
         aspectRatio: "16/9"
       },
       {
-        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-02-reception-lobby-concrete.webp",
-        caption: "Office Environmental Branding — Main Reception & Lobby 3D Signage",
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-02-reception-lobby-concrete.webp",
+        caption: "Immersive Zoom Background — Main Reception & Lobby 3D Signage",
         type: "desktop",
         aspectRatio: "16/9"
       },
       {
-        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-03-conference-frosted-glass.webp",
-        caption: "Office Environmental Branding — Boardroom Frosted Glass Partition",
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-03-conference-frosted-glass.webp",
+        caption: "Immersive Zoom Background — Boardroom Frosted Glass Partition",
         type: "desktop",
         aspectRatio: "16/9"
       },
       {
-        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-04-acoustic-textured-wall.webp",
-        caption: "Office Environmental Branding — Collaborative Hub Acoustic Feature Wall",
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-04-acoustic-textured-wall.webp",
+        caption: "Immersive Zoom Background — Collaborative Hub Acoustic Feature Wall",
         type: "desktop",
         aspectRatio: "16/9"
       },
       {
-        url: "/assets/projects/creative-initiatives/environmental-branding/sji-environmental-branding-05-executive-suite-accent-wall.webp",
-        caption: "Office Environmental Branding — Executive Suite Architectural Accent Wall",
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-05-executive-suite-accent-wall.webp",
+        caption: "Immersive Zoom Background — Executive Suite Architectural Accent Wall",
         type: "desktop",
         aspectRatio: "16/9"
       }
