@@ -27,7 +27,7 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
           item.author
         )}
       </div>
-      <div className="text-[#888888] text-xs mt-0.5 font-mono lowercase">
+      <div className="text-[#888888] text-xs mt-0.5 font-mono">
         {item.role}{item.company ? ` · ${item.company}` : ''}
       </div>
     </div>

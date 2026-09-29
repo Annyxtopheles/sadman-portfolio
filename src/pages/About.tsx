@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer';
 import { useExploration } from '@/context/ExplorationContext';
 import { ArtifactCollage, ArtifactImage } from '@/components/ArtifactCollage';
 import { TestimonialsMarquee } from '@/components/home/TestimonialsMarquee';
+import { BorderGlow } from '@/components/effects/BorderGlow';
 import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 interface CertificationItem {
@@ -329,22 +330,6 @@ const About: React.FC = () => {
                     <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
                   </svg>
                 </div>
-                {/* Tokens Studio / Variable Token */}
-                <div title="Design Tokens / Variables" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100">
-                  <svg className="h-6 w-auto" viewBox="0 0 24 24" fill="none">
-                    <rect x="3" y="3" width="8" height="8" rx="2" fill="#A855F7"/>
-                    <rect x="13" y="3" width="8" height="8" rx="2" fill="#9333EA"/>
-                    <rect x="3" y="13" width="8" height="8" rx="2" fill="#7E22CE"/>
-                    <rect x="13" y="13" width="8" height="8" rx="2" fill="#C084FC"/>
-                  </svg>
-                </div>
-                {/* FigJam */}
-                <div title="FigJam" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100">
-                  <svg className="h-6 w-auto" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="9" stroke="#FF7262" strokeWidth="2.5"/>
-                    <path d="M9 12H15M12 9V15" stroke="#FF7262" strokeWidth="2.5" strokeLinecap="round"/>
-                  </svg>
-                </div>
               </div>
             </div>
 
@@ -535,11 +520,10 @@ const About: React.FC = () => {
                 <div className="space-y-6 pt-1">
                   {/* Bucket 1: Interface Design */}
                   <div className="space-y-2.5">
-                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
-                      <span>Interface Design &amp; High-Stakes Client Delivery</span>
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                      Interface Design &amp; High-Stakes Client Delivery
                     </h4>
-                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                    <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Alyssa Kristin (Luxury Bridal SaaS):</strong> Designed a connected multi-platform ecosystem spanning a mobile Stylist App, Web Admin CMS, and CRM; praised by the client via internal feedback as "clean, thorough, and easily accessible."</span>
@@ -561,11 +545,10 @@ const About: React.FC = () => {
 
                   {/* Bucket 2: Brand Systems & Sales Enablement */}
                   <div className="space-y-2.5">
-                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
-                      <span>Brand Systems &amp; Sales Enablement</span>
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                      Brand Systems &amp; Sales Enablement
                     </h4>
-                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                    <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">AI Control Tower Suite:</strong> Created complete brand identity systems, logos, OpenGraph social assets, and 10+ comprehensive sales enablement decks for enterprise products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI).</span>
@@ -583,11 +566,10 @@ const About: React.FC = () => {
 
                   {/* Bucket 3: Client Scale & Rapid Production */}
                   <div className="space-y-2.5">
-                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
-                      <span>Client Scale &amp; Rapid Production</span>
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                      Client Scale &amp; Rapid Production
                     </h4>
-                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                    <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">LuCreativ / 3i Advertising:</strong> Scaled account from an initial project to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston, Enchanted Parks).</span>
@@ -601,11 +583,10 @@ const About: React.FC = () => {
 
                   {/* Bucket 4: AI Prototyping, Web Discovery & Growth */}
                   <div className="space-y-2.5">
-                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF]" />
-                      <span>AI Prototyping, Web Discovery &amp; Growth</span>
+                    <h4 className="text-xs uppercase tracking-wider text-[#FFFFFF] font-mono">
+                      AI Prototyping, Web Discovery &amp; Growth
                     </h4>
-                    <ul className="space-y-2 pl-3.5 text-xs sm:text-sm text-[#999999] leading-relaxed">
+                    <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Web Architecture &amp; Discoverability:</strong> Structured and optimized 761+ pages across 3 major properties on the Lovable platform for on-page SEO and AI discoverability (JSON-LD schemas, semantic heading hierarchies, metadata, and Search Console indexing).</span>
@@ -801,7 +782,7 @@ const About: React.FC = () => {
               <ul className="space-y-2 text-xs text-[#888888] leading-relaxed">
                 <li className="flex items-start gap-2">
                   <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
-                  <span>Served in the Service Team (সেবাদল) at the Golden Jubilee Rover Moot 2023, receiving the official Service Team Award crest with troop peers.</span>
+                  <span>Served in the Service Team at the Golden Jubilee Rover Moot 2023, receiving the official Service Team Award crest with troop peers.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
@@ -820,9 +801,20 @@ const About: React.FC = () => {
             {/* Personal Pursuits */}
             <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
               <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
-                  <span>🎬</span>
-                  <span>Cinema &amp; Human Narrative</span>
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                  <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
+                    <span>🎬</span>
+                    <span>Cinema &amp; Human Narrative</span>
+                  </div>
+                  <a
+                    href="https://letterboxd.com/Annyxtopheles/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
+                  >
+                    <span>Letterboxd</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Drawn to cinema observing human complexity, discipline, and moral weight — works by Andrei Tarkovsky, Akira Kurosawa, and Park Chan-wook.
@@ -830,9 +822,20 @@ const About: React.FC = () => {
               </div>
 
               <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
-                  <span>🎧</span>
-                  <span>Music &amp; Focus</span>
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                  <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
+                    <span>🎧</span>
+                    <span>Music &amp; Focus</span>
+                  </div>
+                  <a
+                    href="https://www.last.fm/user/Asphyxtonihil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
+                  >
+                    <span>Last.fm</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM).
@@ -840,9 +843,20 @@ const About: React.FC = () => {
               </div>
 
               <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-2">
-                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
-                  <span>✍️</span>
-                  <span>Writing &amp; Conceptual Worlds</span>
+                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                  <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
+                    <span>✍️</span>
+                    <span>Writing &amp; Conceptual Worlds</span>
+                  </div>
+                  <a
+                    href="https://sadmanzamankhan.vercel.app/poetry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors flex items-center gap-1"
+                  >
+                    <span>Poetry Archive</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Writing poetry exploring cosmic scale, mortality, and quiet observation since 2017, building conceptual worlds from abstract thoughts.
@@ -863,51 +877,63 @@ const About: React.FC = () => {
         </section>
 
         {/* =========================================================================
-            SECTION 7: Gateway to Personal Archive (Clean, Dark, Minimalist)
+            SECTION 7: Gateway to Personal Archive (SZK Cosmic Atmosphere)
         ========================================================================= */}
-        <section ref={portalRef} className="space-y-6 pt-4 pb-16">
-          <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4">
-            <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-              Gateway to Personal Archive
-            </h2>
-            <a
-              href="https://sadmanzamankhan.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-mono text-[#888888] hover:text-[#FFFFFF] transition-colors"
-            >
-              sadmanzamankhan.vercel.app ↗
-            </a>
-          </div>
+        <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
+          <div className="max-w-4xl mx-auto space-y-10 text-center">
+            <div className="space-y-3">
+              <span className="font-scanport text-[15pt] lowercase tracking-wider text-[#7DD3FC]">
+                beyond the corporate showcase
+              </span>
+              <h2 className="font-fell text-4xl sm:text-5xl md:text-6xl font-normal lowercase tracking-tight text-[#F8FAFC]">
+                gateway to personal archive
+              </h2>
+            </div>
 
-          <div className="relative w-full">
-            <a
-              href="https://sadmanzamankhan.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => recordPortalFound()}
-              className="group block w-full rounded-[6px] border border-[#222222] bg-[#080808] hover:border-[#444444] transition-all duration-500 overflow-hidden cursor-pointer"
-            >
-              <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] max-h-[460px] overflow-hidden bg-black flex items-center justify-center">
-                <img
-                  src="/assets/projects/szk-mockup.webp"
-                  alt="Sadman Zaman Khan Personal Archive Live Mockup"
-                  className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none" />
+            <div className="relative w-full flex items-center justify-center">
+              <a
+                href="https://sadmanzamankhan.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => recordPortalFound()}
+                className="group block w-full cursor-pointer select-none no-underline"
+              >
+                <BorderGlow
+                  borderRadius={28}
+                  glowRadius={140}
+                  glowIntensity={1.4}
+                  coneSpread={28}
+                  edgeSensitivity={20}
+                  glowColor="205 85 55"
+                  backgroundColor="#060A10"
+                  colors={['#38BDF8', '#0EA5E9', '#0284C7', '#1E3A5F', '#67E8F9']}
+                  fillOpacity={0.25}
+                  className="w-full aspect-[16/10] min-h-[360px] sm:min-h-[440px] shadow-2xl transition-transform duration-300 rounded-[28px]"
+                >
+                  <div className="relative w-full h-full overflow-hidden rounded-[26px]">
+                    <img
+                      src="/assets/projects/szk-mockup.webp"
+                      alt="Sadman Zaman Khan Personal Archive Live Preview"
+                      className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    />
 
-                {/* Clean centered action badge */}
-                <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 sm:pb-12 p-6 text-center space-y-3">
-                  <p className="text-xs sm:text-sm text-[#CCCCCC] font-normal max-w-md drop-shadow">
-                    Essays, poetry notebook, and personal writing.
-                  </p>
-                  <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider bg-[#FFFFFF] text-[#000000] group-hover:bg-[#E5E5E5] transition-all duration-300 font-medium shadow-2xl">
-                    <span>Enter Personal Archive</span>
-                    <span>→</span>
-                  </span>
-                </div>
-              </div>
-            </a>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#060910]/90 via-[#060910]/35 to-transparent group-hover:via-[#060910]/20 transition-colors duration-300" />
+
+                    <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
+                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F8FAFC] hover:bg-[#FFFFFF] text-[#060A10] shadow-[0_0_30px_rgba(56,189,248,0.25)] border border-[#BAE6FD] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-scanport text-base sm:text-lg lowercase tracking-normal cursor-pointer">
+                        <span>enter personal archive</span>
+                        <span
+                          aria-hidden="true"
+                          className="inline-block shrink-0 text-base leading-none transition-transform duration-300 ease-out group-hover:-rotate-45"
+                        >
+                          →
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </BorderGlow>
+              </a>
+            </div>
           </div>
         </section>
       </main>
