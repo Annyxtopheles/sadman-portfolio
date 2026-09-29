@@ -11,7 +11,7 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
       "{item.quote}"
     </p>
 
-    <div className="border-t border-[#1a1a1a] pt-3.5">
+    <div className="pt-2">
       <div className="font-normal text-[#FFFFFF] text-xs sm:text-sm">
         {item.link ? (
           <a

@@ -283,7 +283,7 @@ const About: React.FC = () => {
             SECTION 2: Technical & Core Competencies (With Vector Logos & Hover Color)
         ========================================================================= */}
         <section className="space-y-6">
-          <div className="border-b border-[#1F1F1F] pb-4">
+          <div className="pb-2">
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               Technical &amp; Core Competencies
             </h2>
@@ -319,7 +319,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Vector Logos: Monochrome by default, authentic brand colors on card hover */}
-              <div className="pt-4 border-t border-[#141414] flex items-center gap-3.5">
+              <div className="pt-2 flex items-center gap-3.5">
                 {/* Figma Logo */}
                 <div title="Figma" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100">
                   <svg className="h-6 w-auto" viewBox="0 0 38 57" fill="none">
@@ -362,7 +362,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Vector Logos: Antigravity, Lovable, Claude, ComfyUI, Ollama, Replicate */}
-              <div className="pt-4 border-t border-[#141414] flex flex-wrap items-center gap-3">
+              <div className="pt-2 flex flex-wrap items-center gap-3">
                 {/* Antigravity */}
                 <div title="Google Antigravity" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 shrink-0">
                   <img src="/assets/tools%20logos/google-antigravity-icon.svg" alt="Google Antigravity" className="h-6 w-auto max-w-[26px] object-contain" />
@@ -419,7 +419,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Vector Logos: Adobe Illustrator, Photoshop, Premiere Pro, Canva, CapCut */}
-              <div className="pt-4 border-t border-[#141414] flex flex-wrap items-center gap-3">
+              <div className="pt-2 flex flex-wrap items-center gap-3">
                 {/* Illustrator */}
                 <div title="Adobe Illustrator" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 shrink-0">
                   <img src="/assets/tools%20logos/adobe-illustrator-icon.svg" alt="Adobe Illustrator" className="h-6 w-auto max-w-[26px] object-contain" />
@@ -472,7 +472,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Vector Logos: Meta, Google Search Console, WordPress */}
-              <div className="pt-4 border-t border-[#141414] flex flex-wrap items-center gap-3.5">
+              <div className="pt-2 flex flex-wrap items-center gap-3.5">
                 {/* Meta Ads */}
                 <div title="Meta Ads & Business" className="transition-all duration-300 filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 shrink-0">
                   <img src="/assets/tools%20logos/meta-icon.svg" alt="Meta Ads & Business" className="h-6 w-auto max-w-[26px] object-contain" />
@@ -494,7 +494,7 @@ const About: React.FC = () => {
             SECTION 3: Professional Experience (Impact-Driven Timeline)
         ========================================================================= */}
         <section className="space-y-8">
-          <div className="border-b border-[#1F1F1F] pb-4">
+          <div className="pb-2">
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               Professional Experience
             </h2>
@@ -504,7 +504,7 @@ const About: React.FC = () => {
             {/* Current Role: SJ Innovation UI/UX Designer */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               <div className="lg:col-span-7 p-6 sm:p-8 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-6 hover:border-[#333333] transition-colors">
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-[#1F1F1F] pb-4">
+                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2">
                   <div className="space-y-0.5">
                     <h3 className="text-xl font-normal text-[#FFFFFF]">UI/UX Designer</h3>
                     <div className="text-sm text-[#888888] font-normal">
@@ -609,7 +609,7 @@ const About: React.FC = () => {
             {/* Earlier Experience (Compact Dual Nodes) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3">
-                <div className="flex items-baseline justify-between gap-2 border-b border-[#1A1A1A] pb-3">
+                <div className="flex items-baseline justify-between gap-2 pb-1">
                   <div>
                     <h4 className="text-base font-normal text-[#FFFFFF]">Intern Graphic Designer</h4>
                     <p className="text-xs text-[#888888]">SJ Innovation LLC · Dhaka, Bangladesh</p>
@@ -622,7 +622,7 @@ const About: React.FC = () => {
               </div>
 
               <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-3">
-                <div className="flex items-baseline justify-between gap-2 border-b border-[#1A1A1A] pb-3">
+                <div className="flex items-baseline justify-between gap-2 pb-1">
                   <div>
                     <h4 className="text-base font-normal text-[#FFFFFF]">Freelance Graphic &amp; Brand Designer</h4>
                     <p className="text-xs text-[#888888]">Independent Practice · US Businesses</p>
@@ -641,7 +641,7 @@ const About: React.FC = () => {
             SECTION 4: Credentials & Verified Feedback
         ========================================================================= */}
         <section className="space-y-8">
-          <div className="border-b border-[#1F1F1F] pb-4">
+          <div className="pb-2">
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               Credentials &amp; Verified Feedback
             </h2>
@@ -655,7 +655,7 @@ const About: React.FC = () => {
                 <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
                   Academic Foundation
                 </span>
-                <div className="border-b border-[#1A1A1A] pb-3">
+                <div className="pb-1">
                   <h3 className="text-base font-normal text-[#FFFFFF]">
                     Diploma in Engineering in Computer Science
                   </h3>
@@ -699,7 +699,7 @@ const About: React.FC = () => {
             <div className="lg:col-span-6 space-y-4">
               {/* Highlighted Quote from StoryGroove */}
               <div className="p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-4 relative overflow-hidden">
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
+                <div className="flex items-center justify-between pb-1">
                   <span className="text-xs font-mono uppercase tracking-wider text-[#10B981] flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
                     <span>StoryGroove Project Dedication</span>
@@ -741,7 +741,7 @@ const About: React.FC = () => {
             SECTION 5: What People Say (Full-Width Rolling Marquee, Left-Aligned Header)
         ========================================================================= */}
         <section className="space-y-6">
-          <div className="border-b border-[#1F1F1F] pb-4">
+          <div className="pb-2">
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               What People Say
             </h2>
@@ -756,7 +756,7 @@ const About: React.FC = () => {
             SECTION 6: Beyond the Screen & Personal Discipline
         ========================================================================= */}
         <section className="space-y-8">
-          <div className="border-b border-[#1F1F1F] pb-4">
+          <div className="pb-2">
             <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
               Beyond the Screen &amp; Personal Discipline
             </h2>
@@ -765,7 +765,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Rover Scout Leadership Box with 2 Artifacts */}
             <div className="lg:col-span-7 p-6 sm:p-7 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-4">
-              <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-3">
+              <div className="flex items-center justify-between pb-1">
                 <div>
                   <h3 className="text-base font-normal text-[#FFFFFF]">
                     Rover Scout Leadership · Bangladesh Scouts
@@ -807,7 +807,7 @@ const About: React.FC = () => {
                 rel="noopener noreferrer"
                 className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#00E054]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                <div className="flex items-center justify-between pb-1">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎬</span>
                     <span>Cinema &amp; Human Narrative</span>
@@ -826,7 +826,7 @@ const About: React.FC = () => {
                 rel="noopener noreferrer"
                 className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#D51007]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                <div className="flex items-center justify-between pb-1">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>🎧</span>
                     <span>Music &amp; Focus</span>
@@ -845,7 +845,7 @@ const About: React.FC = () => {
                 rel="noopener noreferrer"
                 className="group p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#38BDF8]/30 transition-colors space-y-2 block cursor-pointer no-underline"
               >
-                <div className="flex items-center justify-between border-b border-[#1A1A1A] pb-2">
+                <div className="flex items-center justify-between pb-1">
                   <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal">
                     <span>✍️</span>
                     <span>Writing &amp; Conceptual Worlds</span>
@@ -859,7 +859,7 @@ const About: React.FC = () => {
 
               {/* Physical & Spiritual Practice */}
               <div className="p-5 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] hover:border-[#333333] transition-colors space-y-2">
-                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal border-b border-[#1A1A1A] pb-2">
+                <div className="flex items-center gap-2 text-sm text-[#FFFFFF] font-normal pb-1">
                   <span>🥊</span>
                   <span>Physical &amp; Spiritual Practice</span>
                 </div>
