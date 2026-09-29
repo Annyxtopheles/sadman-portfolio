@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
     client: "CollabAI Platform",
     year: "2025 – 2026",
     duration: "2 Months",
-    scope: ["Multi-Agent UX", "Real-Time Streaming", "Global Composer", "Design System", "Full-Stack Prototype"],
+    scope: ["Multi-Agent UX", "Real-Time Streaming", "Global Composer", "Design System", "Theme Engine & Personalization", "Full-Stack Prototype"],
     summary: "Full UI/UX redesign of CollabAI's multi-agent collaboration platform, replacing a cluttered neon interface with a minimal dark workspace featuring multi-model streaming (Groq, Gemini, OpenRouter), agent orchestration, and in-context tool execution.",
     coverImage: "/assets/projects/collabai-mockup.webp",
     liveUrl: "https://collabai-redesign.onrender.com/",
@@ -125,6 +125,15 @@ export const PROJECTS: Project[] = [
           "Distinct visual identity cards for individual agents (Aster Architect, Reasoning Advisor, Color Palette Gen)",
           "Seamless model provider selection with real-time switching between Groq, Gemini, and OpenRouter",
           "Directory-connected Knowledge Base, persistent projects, and in-context tool attachments"
+        ]
+      },
+      {
+        title: "Multi-Theme Aesthetic Customization Engine",
+        description: "Engineered an adaptive theme architecture allowing developers and power users to tailor their workspace ambiance according to cognitive context and personal aesthetic preference.",
+        details: [
+          "Crafted 5 bespoke visual environments: Light (clean minimal), Pink (warm pastel with floating sakura petals), CRT (green phosphor terminal with scanlines & barrel distortion), Synth (80s outrun neon horizon grid), and SaaS (deep cosmic dark mode)",
+          "Maintained strict WCAG contrast compliance and ergonomic text legibility across all prompt composers and chat streams",
+          "Decoupled brand token hierarchies to allow dynamic background shaders, floating particle physics, and high-contrast control states"
         ]
       }
     ],
@@ -164,6 +173,49 @@ export const PROJECTS: Project[] = [
             }
           }
         ]
+      },
+      {
+        sectionTitle: "Theme System & Visual Personalization",
+        sectionDescription: "Multi-theme aesthetic customization designed for developer and designer workflows. Features 5 distinct visual environments ranging from distraction-free Light mode and warm pastel Pink to retro green phosphor CRT terminal, 80s Outrun Synthwave, and deep space enterprise SaaS dark mode.",
+        carousels: [
+          {
+            id: "collabai-theme-system",
+            title: "CollabAI Visual Themes (5 Aesthetics)",
+            description: "Explore the 5 bespoke visual themes designed for the CollabAI workspace: Light, Pink, CRT Terminal, Synthwave, and SaaS Dark.",
+            slides: [
+              {
+                url: "/assets/projects/collabai/themes/collabai-theme-01-light.webp",
+                caption: "Light Theme — Clean, high-key distraction-free workspace with floating mathematical glyphs and crisp black accents.",
+                type: "carousel",
+                aspectRatio: "1024/528"
+              },
+              {
+                url: "/assets/projects/collabai/themes/collabai-theme-02-pink.webp",
+                caption: "Pink Theme — Warm cream background with vibrant pink highlights, neo-brutalist dark pills, and floating cherry blossom petals.",
+                type: "carousel",
+                aspectRatio: "1024/528"
+              },
+              {
+                url: "/assets/projects/collabai/themes/collabai-theme-03-crt.webp",
+                caption: "CRT Terminal Theme — Retro cyber green phosphor display with curved barrel monitor distortion, scanlines, and matrix dot matrices.",
+                type: "carousel",
+                aspectRatio: "1024/528"
+              },
+              {
+                url: "/assets/projects/collabai/themes/collabai-theme-04-synth.webp",
+                caption: "Synthwave Theme — Retro-futuristic 80s outrun horizon grid with glowing magenta neon accents and deep violet gradients.",
+                type: "carousel",
+                aspectRatio: "1024/528"
+              },
+              {
+                url: "/assets/projects/collabai/themes/collabai-theme-05-saas.webp",
+                caption: "SaaS Dark Theme — Sleek enterprise deep space starfield with electric cyan glow and high-contrast ergonomic action bars.",
+                type: "carousel",
+                aspectRatio: "1024/528"
+              }
+            ]
+          }
+        ]
       }
     ],
     galleryImages: [
@@ -177,6 +229,36 @@ export const PROJECTS: Project[] = [
         url: "/assets/projects/collabai/collabai-chat-after.webp",
         caption: "CollabAI Redesigned Chat — Fluid conversational canvas with reasoning stream",
         aspectRatio: "1024/532",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/themes/collabai-theme-01-light.webp",
+        caption: "CollabAI Light Theme — Clean high-key workspace with floating mathematical glyphs",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/themes/collabai-theme-02-pink.webp",
+        caption: "CollabAI Pink Theme — Warm pastel cream with vibrant pink accents and cherry blossom petals",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/themes/collabai-theme-03-crt.webp",
+        caption: "CollabAI CRT Theme — Retro green phosphor terminal with curved scanlines and pixel matrices",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/themes/collabai-theme-04-synth.webp",
+        caption: "CollabAI Synthwave Theme — 80s outrun horizon grid with glowing magenta neon accents",
+        aspectRatio: "1024/528",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/collabai/themes/collabai-theme-05-saas.webp",
+        caption: "CollabAI SaaS Dark Theme — Deep space starfield with electric cyan glow and high-contrast controls",
+        aspectRatio: "1024/528",
         type: "desktop"
       }
     ]
