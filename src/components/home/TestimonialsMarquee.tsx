@@ -34,21 +34,20 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
   </article>
 );
 
-export const TestimonialsMarquee: React.FC = () => {
+export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
   // Duplicate arrays for seamless infinite loop without breaks
   const row1Duplicated = [...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1];
   const row2Duplicated = [...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2];
 
   return (
-    <section className="py-12 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 mb-8 space-y-1">
-        <span className="text-xs font-mono uppercase tracking-wider text-[#888888] block">
-          Endorsements & Feedback
-        </span>
-        <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
-          What People Say
-        </h2>
-      </div>
+    <section className={`overflow-hidden ${hideHeader ? 'py-4' : 'py-12'}`}>
+      {!hideHeader && (
+        <div className="px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 mb-8">
+          <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
+            What People Say
+          </h2>
+        </div>
+      )}
 
       {/* Marquee Container with fade gradient masks at edges */}
       <div className="relative w-full space-y-5">
