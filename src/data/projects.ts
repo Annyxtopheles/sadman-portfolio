@@ -51,7 +51,7 @@ export interface GallerySection {
   documentTitle?: string;
   images?: GalleryImage[];
   carousels?: CarouselItem[];
-  carouselLayout?: 'grid' | 'full';
+  carouselLayout?: 'grid' | 'full' | 'compact' | 'half';
 }
 
 export interface BeforeAfterComparison {
@@ -177,6 +177,7 @@ export const PROJECTS: Project[] = [
       {
         sectionTitle: "Theme System & Visual Personalization",
         sectionDescription: "Multi-theme aesthetic customization designed for developer and designer workflows. Features 5 distinct visual environments ranging from distraction-free Light mode and warm pastel Pink to retro green phosphor CRT terminal, 80s Outrun Synthwave, and deep space enterprise SaaS dark mode.",
+        carouselLayout: "compact",
         carousels: [
           {
             id: "collabai-theme-system",
