@@ -9310,8 +9310,8 @@ export const PROJECTS: Project[] = [
         carousels: [
           {
             id: "talent-acquisition-campaigns",
-            title: "Talent Acquisition & Hiring Campaigns (3 Roles)",
-            description: "Modular 3D glassmorphic recruitment campaign slides tailored for UI/UX Design, Business Analysis, and Software Engineering roles.",
+            title: "Talent Acquisition & Hiring Campaigns (7 Roles)",
+            description: "Modular 3D glassmorphic recruitment campaign slides tailored across UI/UX Design, Business Analysis, Software Engineering, AI Internship, Project Coordination, Marketing, and Network Engineering.",
             slides: [
               {
                 url: "/assets/projects/creative-initiatives/hiring-01-uiux-graphic-design-internship.webp",
@@ -9328,6 +9328,30 @@ export const PROJECTS: Project[] = [
               {
                 url: "/assets/projects/creative-initiatives/hiring-03-jr-software-developer.webp",
                 caption: "We're Hiring — Jr. Software Developer (Glowing Glass Terminal, Code Blocks & AI Processor)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-04-ai-intern.webp",
+                caption: "We're Hiring — AI Intern (Floating 3D Glass Icons: Resume, Graduation Cap, Lightbulb & Growth Sprout)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-05-project-coordinator.webp",
+                caption: "We're Hiring — Project Coordinator (Floating 3D Glass Icons: Kanban Board, Calendar, Checklist & Timeline)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-06-sr-marketing-executive.webp",
+                caption: "We're Hiring — Sr. Marketing Executive (Floating 3D Glass Icons: Analytics Chart, Megaphone, Email & Target)",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/hiring-07-sr-network-engineer.webp",
+                caption: "We're Hiring — Sr. Network Engineer (Floating 3D Glass Icons: Rack Servers, Network Node Topology, Wi-Fi & Shield)",
                 type: "carousel",
                 aspectRatio: "16/9"
               }
@@ -9388,7 +9412,7 @@ export const PROJECTS: Project[] = [
         carousels: [
           {
             id: "sji-zoom-backgrounds",
-            title: "Immersive Zoom & Meeting Backgrounds (5 Concepts)",
+            title: "Immersive Zoom & Meeting Backgrounds (6 Concepts)",
             description: "Bespoke 16:9 virtual meeting and Zoom backgrounds visualizing SJ Innovation's AI-First corporate identity across executive walls, reception lobbies, acoustic feature panels, and glass partitions.",
             slides: [
               {
@@ -9418,6 +9442,12 @@ export const PROJECTS: Project[] = [
               {
                 url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-05-executive-suite-accent-wall.webp",
                 caption: "Concept 05 — Executive Lounge & Architectural Concrete: Immersive meeting background with deep textured micro-perforated concrete accent wall integrated with dark walnut display shelving and 3D brand insignia.",
+                type: "carousel",
+                aspectRatio: "16/9"
+              },
+              {
+                url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-06-open-collaboration-acoustic-wall.webp",
+                caption: "Concept 06 — Open Collaboration & Acoustic Panel Wall: Minimalist high-key virtual meeting background with textured dimpled acoustic panels, dual-tone overhead cove lighting, and dimensional 3D brand insignia.",
                 type: "carousel",
                 aspectRatio: "16/9"
               }
@@ -10523,6 +10553,26 @@ export const PROJECTS: Project[] = [
         type: "desktop"
       },
       {
+        url: "/assets/projects/creative-initiatives/hiring-04-ai-intern.webp",
+        caption: "HR Creative — AI Intern Hiring Campaign",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/hiring-05-project-coordinator.webp",
+        caption: "HR Creative — Project Coordinator Hiring Campaign",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/hiring-06-sr-marketing-executive.webp",
+        caption: "HR Creative — Sr. Marketing Executive Hiring Campaign",
+        type: "desktop"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/hiring-07-sr-network-engineer.webp",
+        caption: "HR Creative — Sr. Network Engineer Hiring Campaign",
+        type: "desktop"
+      },
+      {
         url: "/assets/projects/creative-initiatives/recognition-performer-of-month-sadman.webp",
         caption: "Performer of the Month — Ground-Up Social Recognition Initiative",
         type: "desktop"
@@ -10865,6 +10915,12 @@ export const PROJECTS: Project[] = [
       {
         url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-05-executive-suite-accent-wall.webp",
         caption: "Immersive Zoom Background — Executive Suite Architectural Accent Wall",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/creative-initiatives/zoom-backgrounds/sji-zoom-bg-06-open-collaboration-acoustic-wall.webp",
+        caption: "Immersive Zoom Background — Open Collaboration & Acoustic Panel Wall",
         type: "desktop",
         aspectRatio: "16/9"
       }
