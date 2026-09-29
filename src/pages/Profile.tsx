@@ -2,10 +2,6 @@ import React from 'react';
 import { SEOHead } from '@/components/SEOHead';
 import { Footer } from '@/components/Footer';
 import { MorphingText } from '@/components/MorphingText';
-import Lanyard from '@/components/profile/Lanyard';
-import idCardFrontSvg from '@/assets/ID Card Front for Profile in SZK.svg';
-import sjiIconSvg from '@/assets/SJI Icon.svg';
-
 import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 const Profile = () => {
@@ -24,11 +20,6 @@ const Profile = () => {
           mainEntity: PERSON_JSON_LD,
         }}
       />
-
-      {/* Full-Screen 3D Lanyard ID Card Hanging from Top Ceiling (Full Viewport Bounds) */}
-      <div className="absolute top-0 left-0 w-full h-screen pointer-events-none z-30 overflow-visible">
-        <Lanyard frontImage={idCardFrontSvg} backImage={sjiIconSvg} />
-      </div>
 
       <main className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-36 md:pt-44 lg:pt-52 pb-24 flex-1 w-full relative z-10">
         {/* Header / Intro */}
