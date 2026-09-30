@@ -508,6 +508,151 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: "ancestry-forge",
+    slug: "ancestry-forge",
+    title: "AncestryForge — Scalable Family Tree Platform",
+    category: "Mobile & Web",
+    status: "LIVE",
+    company: "Independent Initiative / Archival System",
+    client: "Family Pedigree & Archival Heritage",
+    year: "2025 – 2026",
+    duration: "3 Months",
+    scope: [
+      "Full-Stack Architecture",
+      "DAG Graph Layout Engineering",
+      "React Flow Virtualization",
+      "Kinship Traversal Algorithm",
+      "GEDCOM 5.5.1 Standards",
+      "UI/UX & Design Systems"
+    ],
+    summary: "A scalable, graph-relational family tree platform designed to map complex pedigree lineages without data degradation. Solves pedigree collapse (cousin marriages), serial partnerships, and half-siblings via decoupled DAG unions, paired with 60fps React Flow viewport virtualization, dynamic kinship calculation, and bidirectional GEDCOM 5.5.1 interchange.",
+    coverImage: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
+    liveUrl: "https://ancestry-forge.vercel.app/",
+    tldr: {
+      challenge: "Traditional family tree platforms either collapse into tangled spaghetti layouts when handling cousin marriages (pedigree collapse) and multiple unions, or suffer catastrophic lag when rendering hundreds of members simultaneously on an interactive canvas.",
+      role: "Sole Product Designer & Full-Stack Architect — conceptualized the graph DAG lineage model, engineered the React Flow canvas with Dagre hierarchical auto-layout, designed custom nodes & inspector drawers, implemented kinship pathfinding, and deployed to production.",
+      method: "Decoupled parent-child edges from spousal/partnership unions to eliminate cycle collisions, implemented viewport virtualization for 60fps navigation across 150+ members, built a breadth-first kinship calculator, and integrated full GEDCOM 5.5.1 import/export."
+    },
+    problem: "Genealogical software is frequently restricted by rigid hierarchical tree structures that assume nuclear families. When faced with real-world lineage complexity—such as consanguineous marriages (pedigree collapse), multiple sequential marriages, foster relationships, or fuzzy historical dates (e.g. 'Abt. 1885', 'Bef. 1910')—existing tools either duplicate person records, distort relational distance, or crash user viewports under dense visual noise.",
+    process: [
+      {
+        title: "Decoupled Graph DAG Lineage Model",
+        description: "Architected a relational graph data structure separating individual person nodes from partnership union nodes, eliminating redundant duplicates and cyclic graph breaks.",
+        details: [
+          "Unions act as distinct hyper-edges connecting partners while routing descent vectors directly to offspring",
+          "Elegantly handles pedigree collapse (cousin marriages) where descendants share common ancestral roots through multiple paths",
+          "Supports typed relationships (biological, adopted, foster, step) and serial unions without distorting generation tiers"
+        ]
+      },
+      {
+        title: "60fps Virtualized Canvas & Hierarchical Auto-Layout",
+        description: "Built on @xyflow/react with Dagre layout algorithms to render large-scale family pedigree graphs with effortless panning, zooming, and node alignment.",
+        details: [
+          "Viewport virtualization ensures only in-frame nodes and relational vectors consume DOM paint cycles",
+          "Interactive canvas navigation featuring mini-map radar, zoom controls, generational tier guides, and one-click auto-alignment",
+          "Custom node design displaying avatar portraits, birth chronology, profession tags (e.g. UI/UX Designer), and union/offspring indicators"
+        ]
+      },
+      {
+        title: "Dynamic Kinship Traversal & Relation Discovery",
+        description: "Engineered a graph pathfinding engine utilizing breadth-first traversal to compute exact degrees of consanguinity and relational titles between any two arbitrary members.",
+        details: [
+          "Calculates direct lineage paths, common ancestors, sibling distance, and nth cousin m times removed designations in real time (<50ms)",
+          "Visualizes step-by-step lineage bridges between selected family members directly on the interactive canvas",
+          "Identifies generational gaps, matrimonial links, and collateral branches without manual family tracking"
+        ]
+      },
+      {
+        title: "Deep-Dive Archival Inspector Drawer & Chronology",
+        description: "Designed an intuitive slideout record drawer that surfaces vital personal chronology, generational lineage trails, and multimedia archival assets.",
+        details: [
+          "Vitals tab detailing exact or fuzzy birth/death dates, locations, living status badges, and archival notes",
+          "Lineage tab summarizing immediate parents, spouses, siblings, and offspring with one-click canvas focus targeting",
+          "Archival media gallery tab with high-resolution image lightboxes and family document preservation"
+        ]
+      },
+      {
+        title: "Open Standards Interoperability & Community Governance",
+        description: "Ensured complete data portability and collaborative tree curation through industry-standard interchange formats and granular role management.",
+        details: [
+          "Full bidirectional GEDCOM 5.5.1 import and export for cross-compatibility with legacy genealogical databases",
+          "One-click automated JSON backup downloads for complete data ownership and sovereignty",
+          "Firebase-backed role governance supporting authenticated Editor capabilities alongside secure public Viewer modes and community edit suggestions"
+        ]
+      }
+    ],
+    aiWorkflow: "Leveraged AI-assisted graph algorithm modeling and mathematical DAG layout heuristics to simulate and resolve edge routing conflicts across densely interconnected cousin lineages.",
+    outcomes: [
+      {
+        label: "Lineage Members",
+        value: "150+",
+        subtext: "Multi-generational family tree mapped with zero duplicate records"
+      },
+      {
+        label: "Canvas Rendering",
+        value: "60 fps",
+        subtext: "Silky smooth viewport virtualization via @xyflow/react and Dagre"
+      },
+      {
+        label: "Kinship Traversal",
+        value: "<50ms",
+        subtext: "Real-time breadth-first pathfinding computing exact familial degrees"
+      },
+      {
+        label: "Interoperability",
+        value: "100%",
+        subtext: "Bidirectional standard GEDCOM 5.5.1 file import & export compliance"
+      }
+    ],
+    outcomeSummary: "Delivered a high-craft, scalable family tree platform that bridges rigorous graph data architecture with modern canvas interaction design, successfully cataloging 150+ family records with seamless kinship discovery and zero layout collapse.",
+    galleryImages: [
+      {
+        url: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
+        caption: "Interactive Pedigree Canvas — Generational hierarchy, node cards, and canvas controls",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/ancestry-forge/ancestry-forge-inspector.png",
+        caption: "Individual Archival Record Drawer — Detailed vitals, chronology, lineage tabs, and archival notes for Sadman Zaman Khan",
+        type: "desktop",
+        aspectRatio: "16/9"
+      },
+      {
+        url: "/assets/projects/ancestry-forge/ancestry-forge-pedigree-wide.png",
+        caption: "Macro Lineage Topology — Zoomed-out high-density overview mapping 150+ individuals across multi-generational branches",
+        type: "desktop",
+        aspectRatio: "16/9"
+      }
+    ],
+    gallerySections: [
+      {
+        sectionTitle: "Interactive Canvas & Record Management",
+        sectionDescription: "High-resolution interface captures demonstrating the virtualized graph canvas, individual profile drawer, and multi-generational family tree topology.",
+        images: [
+          {
+            url: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
+            caption: "Interactive Pedigree Canvas — Real-time generation layout with union routing, search, and minimap radar",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/ancestry-forge/ancestry-forge-inspector.png",
+            caption: "Individual Archival Record Drawer — Chronology, profession badges, kinship analysis, and vitals",
+            type: "desktop",
+            aspectRatio: "16/9"
+          },
+          {
+            url: "/assets/projects/ancestry-forge/ancestry-forge-pedigree-wide.png",
+            caption: "Comprehensive Multi-Generational Topology — 150+ members visualized with zero layout collision or duplicate nodes",
+            type: "desktop",
+            aspectRatio: "16/9"
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: "clandest-agency",
     slug: "clandest-agency",
     title: "Clandest Agency Landing Page",
