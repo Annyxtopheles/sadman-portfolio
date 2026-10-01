@@ -526,7 +526,7 @@ export const PROJECTS: Project[] = [
       "UI/UX & Design Systems"
     ],
     summary: "A scalable, graph-relational family tree platform designed to map complex pedigree lineages without data degradation. Solves pedigree collapse (cousin marriages), serial partnerships, and half-siblings via decoupled DAG unions, paired with 60fps React Flow viewport virtualization, dynamic kinship calculation, and bidirectional GEDCOM 5.5.1 interchange.",
-    coverImage: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
+    coverImage: "/assets/projects/ancestry-forge/ancestry-forge-cover.png",
     liveUrl: "https://ancestry-forge.vercel.app/",
     tldr: {
       challenge: "Traditional family tree platforms either collapse into tangled spaghetti layouts when handling cousin marriages (pedigree collapse) and multiple unions, or suffer catastrophic lag when rendering hundreds of members simultaneously on an interactive canvas.",
@@ -607,6 +607,12 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Delivered a high-craft, scalable family tree platform that bridges rigorous graph data architecture with modern canvas interaction design, successfully cataloging 150+ family records with seamless kinship discovery and zero layout collapse.",
     galleryImages: [
       {
+        url: "/assets/projects/ancestry-forge/ancestry-forge-cover.png",
+        caption: "AncestryForge Brand Identity & Platform Emblem — Heritage tree symbol with gradient canvas backdrop",
+        type: "desktop",
+        aspectRatio: "16/10"
+      },
+      {
         url: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
         caption: "Interactive Pedigree Canvas — Generational hierarchy, node cards, and canvas controls",
         type: "desktop",
@@ -630,6 +636,12 @@ export const PROJECTS: Project[] = [
         sectionTitle: "Interactive Canvas & Record Management",
         sectionDescription: "High-resolution interface captures demonstrating the virtualized graph canvas, individual profile drawer, and multi-generational family tree topology.",
         images: [
+          {
+            url: "/assets/projects/ancestry-forge/ancestry-forge-cover.png",
+            caption: "AncestryForge Brand Identity & Platform Emblem — Heritage tree symbol with gradient canvas backdrop",
+            type: "desktop",
+            aspectRatio: "16/10"
+          },
           {
             url: "/assets/projects/ancestry-forge/ancestry-forge-canvas.png",
             caption: "Interactive Pedigree Canvas — Real-time generation layout with union routing, search, and minimap radar",
