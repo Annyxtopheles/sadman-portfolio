@@ -177,7 +177,7 @@ export const PROJECTS: Project[] = [
       {
         sectionTitle: "Theme System & Visual Personalization",
         sectionDescription: "Multi-theme aesthetic customization designed for developer and designer workflows. Features 5 distinct visual environments ranging from distraction-free Light mode and warm pastel Pink to retro green phosphor CRT terminal, 80s Outrun Synthwave, and deep space enterprise SaaS dark mode.",
-        carouselLayout: "compact",
+        carouselLayout: "half",
         carousels: [
           {
             id: "collabai-theme-system",
@@ -388,86 +388,77 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    id: "szk-personal-archive",
-    slug: "szk-personal-archive",
-    title: "My Personal Digital Archive",
+    id: "clandest-agency",
+    slug: "clandest-agency",
+    title: "Clandest Agency Landing Page",
     category: "Mobile & Web",
     status: "LIVE",
-    company: "Independent / Personal",
-    client: "Sadman Zaman Khan",
-    year: "2025 – 2026",
-    duration: "3 Months",
-    scope: ["3D WebGL", "Physics Simulation", "Creative Direction", "Bilingual Poetry UI", "Full-Stack React"],
-    summary: "An expressive personal digital archive and initial portfolio combining 3D physics lanyard simulation, bilingual poetry reader, multimedia pastime tracking, and vintage editorial typography.",
-    coverImage: "/assets/projects/szk-mockup.webp",
-    liveUrl: "https://sadmanzamankhan.pages.dev/",
+    company: "Clandest Agency",
+    client: "Clandest Studio",
+    year: "2026",
+    duration: "1 Month",
+    scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
+    summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
+    coverImage: "/assets/projects/clandest/clandest-cover.webp",
+    liveUrl: "https://clandestagency.vercel.app/",
     tldr: {
-      challenge: "Creating an intimate, unfiltered digital sanctuary that breaks away from cookie-cutter designer portfolios—blending technical 3D physics with poetry, cinema, and literary personal essays.",
-      role: "Creator, Designer & Engineer — conceived the editorial identity, engineered the Rapier3D interactive physics lanyard badge, and built custom reader modes.",
-      method: "Engineered with React Three Fiber, Rapier 3D rigid-body dynamics, custom audio synthesis, and Caslon Antique typography with ambient grain overlays."
+      challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
+      role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
+      method: "Engineered fluid clamp-based typography (Host Grotesk & Roboto Flex), custom animated SVG button states, and lightweight interactive service cards."
     },
-    problem: "Standard hiring portfolios sanitize personality in favor of safe corporate templates. This project was conceived as an authentic digital habitat celebrating personal prose, pastime logs, and deep creative engineering.",
+    problem: "Most creative agency websites are bloated with heavy JavaScript bundles, slow load times, and vague positioning copy that hides who is actually doing the work.",
     process: [
       {
-        title: "Interactive 3D Physics Lanyard Badge & Profile",
-        description: "Built a real-time draggable employee ID lanyard card using React Three Fiber, Drei, and Rapier3D rigid-body physics with dynamic spring tension, collision boundaries, and tactile inertia.",
+        title: "Direct Visual Hierarchy & Fluid Typography",
+        description: "Developed a human, conversational headline structure paired with fluid typography scales that automatically adapt across mobile, tablet, and ultra-wide screens without jarring layout shifts.",
         details: [
-          "Real-time WebGL mesh rendering with subtle ambient paper grain and responsive drag interactions",
-          "Clean bilingual profile layout highlighting credentials, design competencies, and full resume access",
-          "Smooth physics dampening calibrated for both desktop mouse dragging and mobile touch gestures"
+          "Curated distinct brand palette: Base Canvas (#E6E6E6) paired with deep Brand Navy (#2E4F94)",
+          "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
+          "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
         ]
       },
       {
-        title: "Stark Editorial Direction & Bilingual Poetry Reader",
-        description: "Crafted an intimate literary reading environment celebrating classical publication aesthetics, illuminated drop caps, and thoughtful typography.",
+        title: "Founder Collective Storytelling & Direct Intake Funnel",
+        description: "Bridged technical craft with personal authenticity by spotlighting the four-founder origin story from Munshiganj Polytechnic, paired with a frictionless direct-to-founder consultation form.",
         details: [
-          "Playful, unapologetic landing statement ('I shall pull a design out of my a—') paired with warm paper-textured negative space",
-          "Custom illuminated woodcut drop-cap initial ('Y') for the prose poem 'cosmotellurian'",
-          "Real-time live local Dhaka timestamp (GMT+6) anchored in the editorial colophon footer"
-        ]
-      },
-      {
-        title: "Embedded Portfolio Portal & Habitat Connectivity",
-        description: "Engineered a seamless visual bridge connecting the personal creative archive back to the primary commercial design portfolio.",
-        details: [
-          "High-contrast dark card viewport with animated glowing 'enter portfolio' button",
-          "Frictionless bi-directional routing between personal creative writings and client case studies",
-          "Zero framework bloat with instant page transitions and lightweight bundle footprint"
+          "Curated an atmospheric collegiate team portrait celebrating the collective's four key disciplines: UI/UX design, client strategy, software engineering, and cinematic motion graphics",
+          "Engineered an interactive filterable video portfolio showcasing direct-response VSLs, product ads, and creator UGC",
+          "Integrated frictionless contact pathways including 1-click WhatsApp chat and 15-minute Google Meet scheduling without account-manager bureaucracy"
         ]
       }
     ],
-    aiWorkflow: "Used generative design and procedural math scripting in GLSL shaders to tune realistic cloth physics and rope tension for the 3D lanyard strap.",
+    aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
     outcomes: [
-      { label: "3D Physics", value: "60 fps", subtext: "Silky smooth rigid-body simulation on both mobile and desktop browsers" },
-      { label: "Authenticity", value: "100%", subtext: "Direct uncompromised expression of design, poetry, and technical craft" }
+      { label: "Performance Score", value: "100", subtext: "Zero-framework vanilla architecture scoring 100 on Google PageSpeed" },
+      { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
     ],
-    outcomeSummary: "An unapologetically personal, tactile web experience that proves depth of craft and technical mastery beyond conventional portfolio bounds.",
+    outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
     gallerySections: [
       {
-        sectionTitle: "Editorial Spaces & Interactive 3D Physics",
-        sectionDescription: "High-resolution production captures showcasing the key environments of the personal digital archive: stark typographic landing views, draggable 3D physics lanyard badge, illuminated poetry reader, and embedded design portfolio portals.",
+        sectionTitle: "Studio Web Experience & Production Screenshots",
+        sectionDescription: "High-resolution desktop captures of the live Clandest Agency web presence highlighting the clean typography, filterable video reel portfolio, founding collective story, and direct conversion funnel.",
         images: [
           {
-            url: "/assets/projects/szk-archive/szk-01-statement-landing.webp",
-            caption: "Stark Editorial Landing Statement — 'I shall pull a design out of my a—' with subtle paper texture and minimalist navigation",
+            url: "/assets/projects/clandest/clandest-hero.webp",
+            caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
             aspectRatio: "1024/528",
             type: "desktop"
           },
           {
-            url: "/assets/projects/szk-archive/szk-02-physics-lanyard-badge.webp",
-            caption: "Interactive 3D Physics Lanyard Badge (Profile & Resume) — Draggable Rapier3D rigid-body badge suspended over professional credentials",
+            url: "/assets/projects/clandest/clandest-services.webp",
+            caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
             aspectRatio: "1024/528",
             type: "desktop"
           },
           {
-            url: "/assets/projects/szk-archive/szk-03-poetry-reader-cosmotellurian.webp",
-            caption: "Vintage Bilingual Poetry Reader ('cosmotellurian') — Classical illuminated woodcut drop-cap initial, fine-line layout, and live Dhaka time",
+            url: "/assets/projects/clandest/clandest-founders.webp",
+            caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
             aspectRatio: "1024/528",
             type: "desktop"
           },
           {
-            url: "/assets/projects/szk-archive/szk-04-portal-to-portfolio.webp",
-            caption: "Embedded Portfolio Portal — Interactive dark-mode bridge leading directly to commercial UI/UX work and design systems",
+            url: "/assets/projects/clandest/clandest-contact.webp",
+            caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
             aspectRatio: "1024/528",
             type: "desktop"
           }
@@ -476,33 +467,27 @@ export const PROJECTS: Project[] = [
     ],
     galleryImages: [
       {
-        url: "/assets/projects/szk-archive/szk-02-physics-lanyard-badge.webp",
-        caption: "Interactive 3D Physics Lanyard Badge — Profile & resume view",
+        url: "/assets/projects/clandest/clandest-hero.webp",
+        caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
         aspectRatio: "1024/528",
         type: "desktop"
       },
       {
-        url: "/assets/projects/szk-archive/szk-01-statement-landing.webp",
-        caption: "Stark Editorial Landing Statement — 'I shall pull a design out of my a—'",
+        url: "/assets/projects/clandest/clandest-services.webp",
+        caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
         aspectRatio: "1024/528",
         type: "desktop"
       },
       {
-        url: "/assets/projects/szk-archive/szk-03-poetry-reader-cosmotellurian.webp",
-        caption: "Poetry Reader ('cosmotellurian') with illuminated woodcut drop-cap",
+        url: "/assets/projects/clandest/clandest-founders.webp",
+        caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
         aspectRatio: "1024/528",
         type: "desktop"
       },
       {
-        url: "/assets/projects/szk-archive/szk-04-portal-to-portfolio.webp",
-        caption: "Portal to Portfolio — Embedded interactive workspace card",
+        url: "/assets/projects/clandest/clandest-contact.webp",
+        caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
         aspectRatio: "1024/528",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/szk-mockup.webp",
-        caption: "My Personal Digital Archive — Desktop mockup overview",
-        aspectRatio: "1024/640",
         type: "desktop"
       }
     ]
@@ -661,111 +646,6 @@ export const PROJECTS: Project[] = [
             aspectRatio: "16/9"
           }
         ]
-      }
-    ]
-  },
-  {
-    id: "clandest-agency",
-    slug: "clandest-agency",
-    title: "Clandest Agency Landing Page",
-    category: "Mobile & Web",
-    status: "LIVE",
-    company: "Clandest Agency",
-    client: "Clandest Studio",
-    year: "2026",
-    duration: "1 Month",
-    scope: ["Brand Identity", "Web Design", "Frontend Engineering", "Fluid Typography", "Vanilla HTML/CSS"],
-    summary: "High-performance studio landing page for Clandest Agency — a Dhaka-based design, development, and video post-production collective. Built with plain semantic HTML5, fluid clamp CSS3, and interactive hover mechanics with zero framework overhead.",
-    coverImage: "/assets/projects/clandest/clandest-cover.webp",
-    liveUrl: "https://clandestagency.vercel.app/",
-    tldr: {
-      challenge: "Building a lean, expressive web agency presence that communicates capabilities fast, highlights the 4-founder collective without corporate jargon, and scores 100 on Core Web Vitals.",
-      role: "Co-founder & Lead Designer — designed the brand visual language, responsive web layouts, typography system, and authored clean semantic HTML/CSS.",
-      method: "Engineered fluid clamp-based typography (Host Grotesk & Roboto Flex), custom animated SVG button states, and lightweight interactive service cards."
-    },
-    problem: "Most creative agency websites are bloated with heavy JavaScript bundles, slow load times, and vague positioning copy that hides who is actually doing the work.",
-    process: [
-      {
-        title: "Direct Visual Hierarchy & Fluid Typography",
-        description: "Developed a human, conversational headline structure paired with fluid typography scales that automatically adapt across mobile, tablet, and ultra-wide screens without jarring layout shifts.",
-        details: [
-          "Curated distinct brand palette: Base Canvas (#E6E6E6) paired with deep Brand Navy (#2E4F94)",
-          "Engineered animated CTA buttons with dual sliding arrows and hover circle expansion",
-          "Structured service preview cards for Marketing Video, Logo & Brand Design, and Website Redesign"
-        ]
-      },
-      {
-        title: "Founder Collective Storytelling & Direct Intake Funnel",
-        description: "Bridged technical craft with personal authenticity by spotlighting the four-founder origin story from Munshiganj Polytechnic, paired with a frictionless direct-to-founder consultation form.",
-        details: [
-          "Curated an atmospheric collegiate team portrait celebrating the collective's four key disciplines: UI/UX design, client strategy, software engineering, and cinematic motion graphics",
-          "Engineered an interactive filterable video portfolio showcasing direct-response VSLs, product ads, and creator UGC",
-          "Integrated frictionless contact pathways including 1-click WhatsApp chat and 15-minute Google Meet scheduling without account-manager bureaucracy"
-        ]
-      }
-    ],
-    aiWorkflow: "Leveraged rapid prototyping workflows to iterate through 15+ card compositions and font pairings in under 48 hours before writing production HTML and CSS.",
-    outcomes: [
-      { label: "Performance Score", value: "100", subtext: "Zero-framework vanilla architecture scoring 100 on Google PageSpeed" },
-      { label: "Bundle Size", value: "< 50 KB", subtext: "Total CSS and JavaScript footprint for instantaneous initial load" }
-    ],
-    outcomeSummary: "Created a distinct, warm, and highly functional studio identity that establishes instant credibility and highlights the founding team's combined design and engineering strengths.",
-    gallerySections: [
-      {
-        sectionTitle: "Studio Web Experience & Production Screenshots",
-        sectionDescription: "High-resolution desktop captures of the live Clandest Agency web presence highlighting the clean typography, filterable video reel portfolio, founding collective story, and direct conversion funnel.",
-        images: [
-          {
-            url: "/assets/projects/clandest/clandest-hero.webp",
-            caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/clandest/clandest-services.webp",
-            caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/clandest/clandest-founders.webp",
-            caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          },
-          {
-            url: "/assets/projects/clandest/clandest-contact.webp",
-            caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
-            aspectRatio: "1024/528",
-            type: "desktop"
-          }
-        ]
-      }
-    ],
-    galleryImages: [
-      {
-        url: "/assets/projects/clandest/clandest-hero.webp",
-        caption: "Studio Hero & Positioning — 'We design brands, websites, and edit marketing videos' with direct founder access hook",
-        aspectRatio: "1024/528",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/clandest/clandest-services.webp",
-        caption: "Featured Video Projects & Capabilities — Filterable direct-response VSLs, commercial product ads, and short-form UGC showcase",
-        aspectRatio: "1024/528",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/clandest/clandest-founders.webp",
-        caption: "Origin Story & Founding Team — 'From Munshiganj Polytechnic to Clandest' highlighting four-discipline team cohesion",
-        aspectRatio: "1024/528",
-        type: "desktop"
-      },
-      {
-        url: "/assets/projects/clandest/clandest-contact.webp",
-        caption: "Direct Intake & Conversion Funnel — 1-click WhatsApp/Google Meet booking and frictionless consultation form",
-        aspectRatio: "1024/528",
-        type: "desktop"
       }
     ]
   },
@@ -989,8 +869,9 @@ export const PROJECTS: Project[] = [
     outcomeSummary: "Delivered an authoritative marketing and sales enablement design system that turns complex technical compliance and enterprise AI capabilities into compelling visual assets across LinkedIn, Meta paid media, and YouTube.",
     gallerySections: [
       {
-        sectionTitle: "NSA/CISA AI Data Security Guide — LinkedIn Carousel & Briefing Document",
-        sectionDescription: "Editorial carousel and executive 2-page briefing document translating the multi-agency AI data security guidance (NSA, CISA, FBI, NCSC, ASD) into executive takeaways, lifecycle threat matrices, and plain-English actionable checklists. Developed in close coordination with the enterprise sales team as an authoritative B2B lead generation asset.",
+        sectionTitle: "NSA/CISA AI Security Guide & Paid Meta Ad Campaigns",
+        sectionDescription: "Multi-channel B2B marketing systems developed for BuildYourAI: translating joint federal cybersecurity guidance (NSA, CISA, FBI) into an executive briefing document and 7-slide LinkedIn carousel alongside responsive Paid Meta ad suites across square feed, vertical reels, and display formats.",
+        carouselLayout: "half",
         documentUrl: "/assets/projects/buildyourai/byai-nsa-cisa-security-guide.pdf",
         documentTitle: "Why AI Security Starts with Data and Why NYC Agencies Should Care (2-Page Executive Security Guide)",
         carousels: [
@@ -1043,6 +924,30 @@ export const PROJECTS: Project[] = [
                 aspectRatio: "4/5"
               }
             ]
+          },
+          {
+            title: "Paid Meta Social Ad Suite",
+            description: "Responsive multi-format advertising campaign across Square Feed (1:1), Stories/Reels (9:16), and Display (16:9).",
+            slides: [
+              {
+                url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
+                caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
+                type: "carousel",
+                aspectRatio: "1/1"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
+                caption: "Story & Reels Ad (9:16) — Vertical motion-ready creative for Instagram & Facebook Stories",
+                type: "carousel",
+                aspectRatio: "9/16"
+              },
+              {
+                url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
+                caption: "Landscape Display Ad (16:9) — Desktop feed and banner format with high-contrast value prop",
+                type: "carousel",
+                aspectRatio: "16/9"
+              }
+            ]
           }
         ],
         images: [
@@ -1087,18 +992,24 @@ export const PROJECTS: Project[] = [
             caption: "Slide 07 — Executive Consultation Call & Next Steps CTA",
             type: "carousel",
             aspectRatio: "4/5"
-          }
-        ]
-      },
-      {
-        sectionTitle: "BuildYourAI — Paid Meta Social Ad Creative",
-        sectionDescription: "High-contrast square social ad creative for BuildYourAI, pairing clear benefit-led value propositions with high-conversion CTAs for social feeds.",
-        images: [
+          },
           {
             url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-1x1-feed.webp",
-            caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
+            caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work'",
             type: "mockup",
             aspectRatio: "1/1"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
+            caption: "Story & Reels Ad (9:16) — Vertical motion-ready creative for Stories and Reels",
+            type: "mockup",
+            aspectRatio: "9/16"
+          },
+          {
+            url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
+            caption: "Landscape Display Ad (16:9) — Desktop feed and banner format",
+            type: "desktop",
+            aspectRatio: "16/9"
           }
         ]
       },
@@ -1217,6 +1128,18 @@ export const PROJECTS: Project[] = [
         caption: "Square Feed Ad (1:1) — 'Let AI manage your Fundraising Backend Work' targeted for Instagram & Facebook feeds",
         type: "mockup",
         aspectRatio: "1/1"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-9x16-story.webp",
+        caption: "Story & Reels Ad (9:16) — Vertical motion-ready creative for Stories and Reels",
+        type: "mockup",
+        aspectRatio: "9/16"
+      },
+      {
+        url: "/assets/projects/buildyourai/byai-meta-ad-fundraising-16x9-landscape.webp",
+        caption: "Landscape Display Ad (16:9) — Desktop feed and banner format",
+        type: "desktop",
+        aspectRatio: "16/9"
       }
     ]
   },

@@ -491,12 +491,26 @@ export const CaseStudyDetail: React.FC = () => {
                     {/* Mode 1: Expanded View */}
                     {viewMode === 'expanded' ? (
                       section.carousels && section.carousels.length > 0 ? (
-                        section.carouselLayout === 'compact' || section.carouselLayout === 'half' ? (
+                        section.carouselLayout === 'compact' ? (
                           <div className={
                             section.carousels.length > 1
                               ? "grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
                               : "mx-auto w-full max-w-xl lg:max-w-[540px]"
                           }>
+                            {section.carousels.map((carousel, cIdx) => (
+                              <div key={cIdx} className="w-full flex flex-col">
+                                <CarouselViewer
+                                  slides={carousel.slides}
+                                  title={carousel.title}
+                                  documentUrl={carousel.documentUrl || section.documentUrl}
+                                  documentTitle={carousel.documentTitle || section.documentTitle}
+                                  onOpenLightbox={handleOpenLightbox}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        ) : section.carouselLayout === 'half' ? (
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                             {section.carousels.map((carousel, cIdx) => (
                               <div key={cIdx} className="w-full flex flex-col">
                                 <CarouselViewer
