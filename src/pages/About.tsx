@@ -20,31 +20,43 @@ const CERTIFICATIONS: CertificationItem[] = [
     title: 'Claude Code in Action',
     issuer: 'Anthropic',
     date: 'February 2026',
+    url: 'https://verify.skilljar.com/c/jbp5i5svft5f'
+  },
+  {
+    title: 'Core Skills: EnglishScore (C1 Advanced)',
+    issuer: 'British Council',
+    date: 'February 2026',
     url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
+  },
+  {
+    title: 'Prompt Design in Vertex AI',
+    issuer: 'Google Cloud',
+    date: 'August 2026',
+    url: 'https://www.credly.com/'
   },
   {
     title: 'Design System in Figma',
     issuer: 'Grameenphone Academy',
     date: 'October 2025',
-    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
+    url: 'https://www.grameenphone.academy/cert/23bd0ee23e8f'
   },
   {
     title: 'Digital Skills: User Experience',
     issuer: 'Accenture',
     date: 'September 2025',
-    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
+    url: 'https://www.futurelearn.com/certificates/cox60ps'
   },
   {
-    title: 'HubSpot Inbound Marketing Certification',
-    issuer: 'HubSpot',
+    title: 'HubSpot Inbound Marketing',
+    issuer: 'HubSpot Academy',
     date: 'March 2026',
-    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
+    url: 'https://app-na2.hubspot.com/academy/achievements/gcpz79pp/en/1/sadman-zaman-khan/inbound'
   },
   {
-    title: 'B1 English for Developers (Score: 95.2%)',
+    title: 'B1 English for Developers (95.2%)',
     issuer: 'freeCodeCamp',
     date: 'February 2026',
-    url: 'https://www.linkedin.com/in/sadmanzamankhan/details/certifications/'
+    url: 'https://www.freecodecamp.org/certification/sadmanzamankhan/b1-english-for-developers'
   },
   {
     title: 'Graphic Design for Freelancing Level-3',
@@ -538,7 +550,7 @@ const About: React.FC = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
-                        <span><strong className="text-[#CCCCCC]">ICR Debt Surveillance &amp; InfoFluence:</strong> Designed a 15-module Bloomberg-style credit surveillance dashboard in Figma with distinct visual alert tiers, and crafted McKinsey-style executive diagnostic decks for AWS partner reviews.</span>
+                        <span><strong className="text-[#CCCCCC]">ICR Debt Surveillance &amp; InfoFluence:</strong> Designed a 15-module corporate debt and credit surveillance dashboard in Figma with distinct visual alert tiers, and crafted executive diagnostic decks for AWS partner reviews.</span>
                       </li>
                     </ul>
                   </div>
@@ -589,7 +601,7 @@ const About: React.FC = () => {
                     <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
-                        <span><strong className="text-[#CCCCCC]">Web Architecture &amp; Discoverability:</strong> Structured and optimized 761+ pages across 3 major properties on the Lovable platform for on-page SEO and AI discoverability (JSON-LD schemas, semantic heading hierarchies, metadata, and Search Console indexing).</span>
+                        <span><strong className="text-[#CCCCCC]">Web Discovery &amp; On-Page SEO:</strong> Structured on-page SEO hierarchies, metadata, JSON-LD structured data, and Google Search Console indexing across key company web properties.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#555555] shrink-0 mt-0.5">—</span>
@@ -670,7 +682,7 @@ const About: React.FC = () => {
               {/* Certifications Grid */}
               <div className="space-y-3">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
-                  Verified Certifications (6)
+                  Verified Certifications ({CERTIFICATIONS.length})
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {CERTIFICATIONS.map((cert, cIdx) => (
@@ -1024,10 +1036,10 @@ const About: React.FC = () => {
                       <span className="text-xs text-[#888888] font-mono">Sep 2025 – Present · Dhaka, Bangladesh</span>
                     </div>
                     <ul className="list-disc pl-4 space-y-2 text-xs text-[#AAAAAA] leading-relaxed">
-                      <li><strong className="text-[#FFFFFF]">Interface Design &amp; High-Stakes Client Delivery:</strong> Designed connected multi-platform ecosystem for Alyssa Kristin (mobile Stylist App, Web Admin CMS, CRM); commended as "clean, thorough, and easily accessible." Conducted 40+ point UX audit and redesign for StoryGrooveAI; led interface redesign of CollabAI multi-agent platform; designed 15-module Bloomberg-style credit surveillance dashboard for ICR in Figma; crafted McKinsey-style diagnostic decks for InfoFluence AWS reviews.</li>
+                      <li><strong className="text-[#FFFFFF]">Interface Design &amp; High-Stakes Client Delivery:</strong> Designed connected multi-platform ecosystem for Alyssa Kristin (mobile Stylist App, Web Admin CMS, CRM); commended as "clean, thorough, and easily accessible." Conducted 40+ point UX audit and redesign for StoryGrooveAI; led interface redesign of CollabAI multi-agent platform; designed 15-module corporate debt and credit surveillance dashboard for ICR in Figma; crafted executive diagnostic decks for InfoFluence AWS reviews.</li>
                       <li><strong className="text-[#FFFFFF]">Brand Systems &amp; Sales Enablement:</strong> Created complete brand identity systems, logos, OpenGraph social assets, and 10+ comprehensive sales enablement decks for enterprise products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI). Designed official logo for Queens AI Week. Directed creative for SJ Innovation's 22nd Anniversary across 3 global offices.</li>
                       <li><strong className="text-[#FFFFFF]">Client Scale &amp; Rapid Production:</strong> Scaled LuCreativ / 3i Advertising account to sustained, near-daily production across 7+ regional theme parks (Six Flags, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston). Commended for reliable same-day turnarounds and proactive template QA.</li>
-                      <li><strong className="text-[#FFFFFF]">AI Prototyping, Web Discovery &amp; Growth:</strong> Structured and optimized 761+ pages across 3 properties on Lovable for on-page SEO and AI discoverability (JSON-LD schemas, heading hierarchies, Search Console indexing). Used Google Antigravity and Lovable to convert design concepts into testable browser prototypes. Built Meta ad suites establishing ~3.5 qualified leads/day pipeline.</li>
+                      <li><strong className="text-[#FFFFFF]">AI Prototyping, Web Discovery &amp; Growth:</strong> Structured on-page SEO hierarchies, metadata, JSON-LD structured data, and Google Search Console indexing across key company web properties. Used Google Antigravity and Lovable to convert design concepts into testable browser prototypes. Built Meta ad suites establishing ~3.5 qualified leads/day pipeline.</li>
                     </ul>
                   </div>
 

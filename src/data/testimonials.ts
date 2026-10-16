@@ -17,6 +17,13 @@ export const TESTIMONIALS_ROW_1: TestimonialItem[] = [
     link: "https://www.linkedin.com/in/nurulhudasumon/",
   },
   {
+    id: "test-m1",
+    quote: "You did an exceptional job on the SJEMR landing page design. I really appreciate how quickly you adapt to and master new technologies. Setting up the landing page using Gravity and hosting it on GitHub is truly impressive work.",
+    author: "Mujammal Haque",
+    role: "Program & PM Lead",
+    company: "SJ Innovation LLC",
+  },
+  {
     id: "test-2",
     quote: "The client really loved the design on the Alyssa Kristin project. They said the UI/UX is clean, thorough, and easily accessible.",
     author: "Vishwanathan Shankar",
@@ -29,6 +36,13 @@ export const TESTIMONIALS_ROW_1: TestimonialItem[] = [
     author: "Julie Catona",
     role: "Client Partner",
     company: "3i Advertising",
+  },
+  {
+    id: "test-s1",
+    quote: "Tina's feedback has been consistently positive, and she specifically appreciated you catching a template inconsistency before it became a bigger issue. Really solid, responsive work across 3i Advertising.",
+    author: "Sayeed Ahmed",
+    role: "Client Operations Lead",
+    company: "SJ Innovation LLC",
   },
   {
     id: "test-4",
@@ -55,10 +69,24 @@ export const TESTIMONIALS_ROW_1: TestimonialItem[] = [
 
 export const TESTIMONIALS_ROW_2: TestimonialItem[] = [
   {
+    id: "test-p1",
+    quote: "From creative concepts to the designs you've delivered across different projects, you've made a valuable contribution to our team. We truly appreciate the creativity, effort, and dedication you bring to your work.",
+    author: "Pritesh Parshekar",
+    role: "Engineering & Design Manager",
+    company: "SJ Innovation LLC",
+  },
+  {
     id: "test-7",
     quote: "I don't think I need to check the creatives—I know your work. Always available in crucial times.",
     author: "Sumit Satardekar",
     role: "SEO & Paid Ads Specialist",
+    company: "SJ Innovation LLC",
+  },
+  {
+    id: "test-t1",
+    quote: "Whenever I have trouble understanding Tina's email replies, I reach out to you, and you always take the time to help me understand what she needs and guide me in the right direction. Your support has really helped me complete tasks smoothly.",
+    author: "Tuly Dhar",
+    role: "Junior Designer",
     company: "SJ Innovation LLC",
   },
   {

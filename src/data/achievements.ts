@@ -37,9 +37,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
   },
   {
     id: "ach-5",
-    metric: "5+",
+    metric: "8+",
     label: "Accredited Certifications",
-    detail: "Credentialed in Figma Design Systems, Anthropic Claude Code, Accenture UX, and HubSpot Inbound Systems.",
+    detail: "Credentialed in British Council C1 English, Anthropic Claude Code, Figma Design Systems, and Accenture UX.",
     tag: "Continuous Craft",
   },
   {
