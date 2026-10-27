@@ -16,14 +16,14 @@ export const LiveMusicStrip: React.FC<{ username?: string | null }> = ({ usernam
                   <img src={t.cover} alt={t.title} loading="lazy"
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter] duration-300 ease" />
                 ) : <div className="w-full h-full bg-accent-surface" />}
-                <div className="absolute top-2 left-2 flex items-center gap-1.5 px-2 py-1 bg-background/80 backdrop-blur-sm border border-foreground text-[10px] uppercase tracking-wider">
+                <div className="absolute top-2 left-2 flex items-center gap-1.5 px-2 py-1 bg-background/80 backdrop-blur-sm border border-foreground text-2xs uppercase tracking-wider">
                   {t.nowPlaying && <span className="w-1.5 h-1.5 rounded-full bg-accent-ink animate-pulse" />}
                   {t.nowPlaying ? 'Now Playing' : 'Recently Played'}
                 </div>
               </div>
               <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-300">{t.title}</h3>
               {t.artist && <p className="text-sm opacity-60 truncate">{t.artist}</p>}
-              {t.album && <p className="text-[11px] uppercase tracking-wider opacity-60 mt-1 truncate">{t.album}</p>}
+              {t.album && <p className="text-micro uppercase tracking-wider opacity-60 mt-1 truncate">{t.album}</p>}
             </a>
           ))}
         </div>

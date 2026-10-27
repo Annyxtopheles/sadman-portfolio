@@ -146,10 +146,10 @@ const CompactThumbnailCard: React.FC<CompactThumbnailCardProps> = ({
 
       {/* Tiny Label */}
       <div className="pt-1.5 px-0.5 flex items-center justify-between">
-        <span className="text-[10px] font-normal text-[#777777] group-hover:text-[#CCCCCC] truncate transition-colors">
+        <span className="text-2xs font-normal text-text-tertiary group-hover:text-[#CCCCCC] truncate transition-colors">
           {img.caption.split('—')[0]?.trim() || img.caption}
         </span>
-        <span className="text-[10px] text-[#555555] group-hover:text-[#AAAAAA] shrink-0 font-mono transition-colors">
+        <span className="text-2xs text-text-tertiary group-hover:text-[#AAAAAA] shrink-0 font-mono transition-colors">
           {img.embedUrl ? '▶' : '↗'}
         </span>
       </div>
@@ -194,7 +194,7 @@ const CompactThumbnailCard: React.FC<CompactThumbnailCardProps> = ({
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <span className="text-[11px] tracking-wider uppercase font-medium text-white bg-black/80 px-3 py-1 rounded-full border border-white/20">
+                  <span className="text-micro tracking-wider uppercase font-medium text-white bg-black/80 px-3 py-1 rounded-full border border-white/20">
                     Play Reel
                   </span>
                 </div>
@@ -310,15 +310,15 @@ export const CaseStudyDetail: React.FC = () => {
           {/* 2. Clean Meta Row: Client · Timeline · Duration */}
           <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-6 text-xs max-w-2xl font-normal">
             <div>
-              <span className="text-[#666666] block uppercase tracking-wider mb-1">Client / Org</span>
+              <span className="text-text-tertiary block uppercase tracking-wider mb-1">Client / Org</span>
               <span className="text-[#FFFFFF] text-sm font-normal">{project.client}</span>
             </div>
             <div>
-              <span className="text-[#666666] block uppercase tracking-wider mb-1">Timeline</span>
+              <span className="text-text-tertiary block uppercase tracking-wider mb-1">Timeline</span>
               <span className="text-[#FFFFFF] text-sm font-normal">{project.year}</span>
             </div>
             <div>
-              <span className="text-[#666666] block uppercase tracking-wider mb-1">Duration</span>
+              <span className="text-text-tertiary block uppercase tracking-wider mb-1">Duration</span>
               <span className="text-[#FFFFFF] text-sm font-normal">{project.duration}</span>
             </div>
           </div>
@@ -357,7 +357,7 @@ export const CaseStudyDetail: React.FC = () => {
                 className={`transition-colors cursor-pointer p-0.5 ${
                   viewMode === 'expanded'
                     ? 'text-[#FFFFFF]'
-                    : 'text-[#666666] hover:text-[#FFFFFF]'
+                    : 'text-text-tertiary hover:text-[#FFFFFF]'
                 }`}
                 title="Maximize view"
               >
@@ -384,7 +384,7 @@ export const CaseStudyDetail: React.FC = () => {
                 className={`transition-colors cursor-pointer p-0.5 ${
                   viewMode === 'compact'
                     ? 'text-[#FFFFFF]'
-                    : 'text-[#666666] hover:text-[#FFFFFF]'
+                    : 'text-text-tertiary hover:text-[#FFFFFF]'
                 }`}
                 title="Minimize view"
               >
@@ -440,7 +440,7 @@ export const CaseStudyDetail: React.FC = () => {
                             className={`px-3 py-1 text-xs rounded-[3px] transition-all font-mono uppercase tracking-wider cursor-pointer ${
                               currentSectionMode === 'carousel'
                                 ? 'bg-[#262626] text-[#FFFFFF] shadow-sm'
-                                : 'text-[#777777] hover:text-[#DDDDDD]'
+                                : 'text-text-tertiary hover:text-[#DDDDDD]'
                             }`}
                           >
                             Carousel Reader
@@ -453,7 +453,7 @@ export const CaseStudyDetail: React.FC = () => {
                             className={`px-3 py-1 text-xs rounded-[3px] transition-all font-mono uppercase tracking-wider cursor-pointer ${
                               currentSectionMode === 'grid'
                                 ? 'bg-[#262626] text-[#FFFFFF] shadow-sm'
-                                : 'text-[#777777] hover:text-[#DDDDDD]'
+                                : 'text-text-tertiary hover:text-[#DDDDDD]'
                             }`}
                           >
                             Grid ({sectionImages.length})
@@ -670,10 +670,10 @@ export const CaseStudyDetail: React.FC = () => {
                                     href={img.externalUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+                                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-micro bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
                                   >
                                     <span>Watch on Facebook</span>
-                                    <span className="text-[10px]">↗</span>
+                                    <span className="text-2xs">↗</span>
                                   </a>
                                 )}
                               </figcaption>
@@ -716,10 +716,10 @@ export const CaseStudyDetail: React.FC = () => {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   onClick={(e) => e.stopPropagation()}
-                                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-[11px] bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
+                                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] text-micro bg-[#141414] hover:bg-[#222222] text-[#E5E5E5] border border-[#2A2A2A] hover:border-[#444444] transition-colors shrink-0 font-medium cursor-pointer"
                                 >
                                   <span>Watch on Facebook</span>
-                                  <span className="text-[10px]">↗</span>
+                                  <span className="text-2xs">↗</span>
                                 </a>
                               )}
                             </figcaption>
@@ -872,7 +872,7 @@ export const CaseStudyDetail: React.FC = () => {
                   href={activeVideoModal.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[11px] text-[#888888] hover:text-[#FFFFFF] transition-colors shrink-0 font-normal cursor-pointer"
+                  className="inline-flex items-center gap-1 text-micro text-[#888888] hover:text-[#FFFFFF] transition-colors shrink-0 font-normal cursor-pointer"
                 >
                   <span>Facebook</span>
                   <span>↗</span>

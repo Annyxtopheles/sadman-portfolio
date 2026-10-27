@@ -147,7 +147,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         <div className="w-[2px] h-full bg-[#FFFFFF] shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
 
         {/* Handle Thumb */}
-        <div className={`absolute ${isInline ? 'w-7 h-7 text-[9px]' : 'w-8 h-8 text-[10px]'} rounded-full bg-[#000000] border-2 border-[#FFFFFF] shadow-[0_4px_16px_rgba(0,0,0,0.8)] flex items-center justify-center text-[#FFFFFF] font-mono select-none`}>
+        <div className={`absolute ${isInline ? 'w-7 h-7 text-[9px]' : 'w-8 h-8 text-2xs'} rounded-full bg-[#000000] border-2 border-[#FFFFFF] shadow-[0_4px_16px_rgba(0,0,0,0.8)] flex items-center justify-center text-[#FFFFFF] font-mono select-none`}>
           <span>⟨|⟩</span>
         </div>
       </div>
@@ -186,7 +186,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           <button
             type="button"
             onClick={() => setSliderPosition(100)}
-            className={`px-2.5 py-1 rounded-[3px] text-[11px] font-mono transition-colors cursor-pointer border ${
+            className={`px-2.5 py-1 rounded-[3px] text-micro font-mono transition-colors cursor-pointer border ${
               sliderPosition === 100
                 ? 'bg-[#FFFFFF] text-[#000000] border-[#FFFFFF]'
                 : 'bg-[#141414] text-[#888888] border-[#262626] hover:text-[#FFFFFF]'
@@ -197,7 +197,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           <button
             type="button"
             onClick={() => setSliderPosition(50)}
-            className={`px-2.5 py-1 rounded-[3px] text-[11px] font-mono transition-colors cursor-pointer border ${
+            className={`px-2.5 py-1 rounded-[3px] text-micro font-mono transition-colors cursor-pointer border ${
               sliderPosition === 50
                 ? 'bg-[#FFFFFF] text-[#000000] border-[#FFFFFF]'
                 : 'bg-[#141414] text-[#888888] border-[#262626] hover:text-[#FFFFFF]'
@@ -208,7 +208,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           <button
             type="button"
             onClick={() => setSliderPosition(0)}
-            className={`px-2.5 py-1 rounded-[3px] text-[11px] font-mono transition-colors cursor-pointer border ${
+            className={`px-2.5 py-1 rounded-[3px] text-micro font-mono transition-colors cursor-pointer border ${
               sliderPosition === 0
                 ? 'bg-[#FFFFFF] text-[#000000] border-[#FFFFFF]'
                 : 'bg-[#141414] text-[#888888] border-[#262626] hover:text-[#FFFFFF]'
@@ -228,7 +228,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           <div>
             {caption || 'Drag the slider or click anywhere to compare the legacy interface with the redesign.'}
           </div>
-          <div className="text-[11px] text-[#666666] font-mono shrink-0">
+          <div className="text-micro text-text-tertiary font-mono shrink-0">
             {Math.round(sliderPosition)}% Original / {Math.round(100 - sliderPosition)}% Redesign
           </div>
         </div>

@@ -20,7 +20,7 @@ export const LiveAnimeStrip: React.FC<{ username?: string | null }> = ({ usernam
                   ) : <div className="w-full h-full bg-accent-surface" />}
                 </div>
                 <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-300">{a.title}</h3>
-                <p className="text-[11px] uppercase tracking-wider opacity-60 mt-1">
+                <p className="text-micro uppercase tracking-wider opacity-60 mt-1">
                   EP {a.progress}{a.total ? `/${a.total}` : ''}{a.score ? ` · ★ ${a.score}` : ''}
                 </p>
               </a>

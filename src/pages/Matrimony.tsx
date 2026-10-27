@@ -494,7 +494,7 @@ const FamilyOrb = React.forwardRef<HTMLDivElement, {
           )}
         </span>
         <span className="mt-3 flex flex-col items-center whitespace-nowrap opacity-0 translate-y-1 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:scale-100">
-          <span className="text-[10px] uppercase tracking-wider opacity-60">{highlight ? 'Me' : n.relation}</span>
+          <span className="text-2xs uppercase tracking-wider opacity-60">{highlight ? 'Me' : n.relation}</span>
           <span className="text-xs leading-tight font-medium mt-0.5">{n.name || '—'}</span>
         </span>
       </button>
@@ -505,7 +505,7 @@ FamilyOrb.displayName = 'FamilyOrb';
 
 const DetailItem: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <div className="flex flex-col gap-0.5">
-    <span className="text-[10px] uppercase tracking-wider opacity-50">{label}</span>
+    <span className="text-2xs uppercase tracking-wider opacity-50">{label}</span>
     <span className="text-sm leading-snug">{value}</span>
   </div>
 );
@@ -554,7 +554,7 @@ const FamilyDetailModal: React.FC<{
           <div className="flex flex-col items-center gap-3 shrink-0">
             <Avatar url={n.photoUrl ?? null} name={n.name} size={110} />
             {n.is_self && (
-              <span className="text-[10px] uppercase tracking-wider opacity-70 bg-foreground/10 rounded-full px-3 py-1 font-medium">
+              <span className="text-2xs uppercase tracking-wider opacity-70 bg-foreground/10 rounded-full px-3 py-1 font-medium">
                 This is me
               </span>
             )}

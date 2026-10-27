@@ -108,13 +108,13 @@ export const ExplorationHUD: React.FC = () => {
                   <h3 className="text-lg font-normal text-[#FFFFFF] tracking-tight">
                     {currentLevel.title}
                   </h3>
-                  <p className="text-xs text-[#777777] font-normal">
+                  <p className="text-xs text-text-tertiary font-normal">
                     {currentLevel.description}
                   </p>
                 </div>
                 <button
                   onClick={() => setIsHUDOpen(false)}
-                  className="p-1 rounded text-[#777777] hover:text-[#FFFFFF] hover:bg-[#1A1A1A] transition-colors"
+                  className="p-1 rounded text-text-tertiary hover:text-[#FFFFFF] hover:bg-[#1A1A1A] transition-colors"
                   aria-label="Close checklist"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -146,16 +146,16 @@ export const ExplorationHUD: React.FC = () => {
                         <span className="text-[#FFFFFF]">🎁</span>
                         <span>Level {currentLevel.level} Reward Unlocked</span>
                       </div>
-                      <span className="text-[10px] font-mono text-[#888888]">
+                      <span className="text-2xs font-mono text-[#888888]">
                         Web Vault
                       </span>
                     </div>
-                    <p className="text-[#888888] text-[11px] leading-relaxed">
+                    <p className="text-[#888888] text-micro leading-relaxed">
                       You&apos;ve unlocked access to the Awesome Web Vault! Enjoy curated web discoveries like Zoomquilt, DoodleLab, GeoFS, and Neal.fun.
                     </p>
                     <button
                       onClick={handleOpenReward}
-                      className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-[11px] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                      className="w-full py-2.5 px-3 rounded-[3px] bg-[#FFFFFF] hover:bg-[#E5E5E5] text-[#000000] font-normal uppercase tracking-wider text-micro transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <span>Explore Fun Web Gifts</span>
                       <span>→</span>
@@ -165,14 +165,14 @@ export const ExplorationHUD: React.FC = () => {
                   <div className="p-3.5 rounded-[4px] bg-[#0E0E0E] border border-[#1C1C1C] space-y-1.5">
                     <div className="flex items-center justify-between text-xs text-[#888888]">
                       <div className="flex items-center gap-1.5">
-                        <span className="text-[11px]">🔒</span>
+                        <span className="text-micro">🔒</span>
                         <span>Web Gifts Vault</span>
                       </div>
-                      <span className="text-[10px] font-mono text-[#666666]">
+                      <span className="text-2xs font-mono text-text-tertiary">
                         Unlocks at Level 2 (20%)
                       </span>
                     </div>
-                    <p className="text-[#666666] text-[11px] leading-relaxed">
+                    <p className="text-text-tertiary text-micro leading-relaxed">
                       Explore projects, backstories, and interactive features to reach Level 2 and unlock fun, awesome corners of the web.
                     </p>
                   </div>
@@ -181,10 +181,10 @@ export const ExplorationHUD: React.FC = () => {
                 {/* Section 1: Projects Explored */}
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-[#888888] font-normal border-b border-[#1A1A1A] pb-2">
-                    <span className="uppercase tracking-wider font-mono text-[11px]">
+                    <span className="uppercase tracking-wider font-mono text-micro">
                       Projects Explored ({viewedCount}/{totalProjects})
                     </span>
-                    <span className="text-[11px] text-[#666666]">Click to inspect</span>
+                    <span className="text-micro text-text-tertiary">Click to inspect</span>
                   </div>
 
                   <div className="space-y-1.5">
@@ -205,10 +205,10 @@ export const ExplorationHUD: React.FC = () => {
                         >
                           <div className="flex items-center gap-2.5 truncate">
                             <span
-                              className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 ${
+                              className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-2xs shrink-0 ${
                                 isViewed
                                   ? 'bg-white/10 text-white border border-white/20'
-                                  : 'border border-[#333333] text-[#555555]'
+                                  : 'border border-[#333333] text-text-tertiary'
                               }`}
                             >
                               {isViewed ? '✓' : ''}
@@ -219,11 +219,11 @@ export const ExplorationHUD: React.FC = () => {
                           </div>
 
                           <div className="flex items-center gap-2 shrink-0">
-                            <span className="text-[10px] text-[#666666] font-mono hidden sm:inline">
+                            <span className="text-2xs text-text-tertiary font-mono hidden sm:inline">
                               {project.category}
                             </span>
                             {!isViewed && (
-                              <span className="text-[10px] text-[#AAAAAA] group-hover:text-[#FFFFFF] transition-colors">
+                              <span className="text-2xs text-[#AAAAAA] group-hover:text-[#FFFFFF] transition-colors">
                                 View →
                               </span>
                             )}
@@ -236,36 +236,36 @@ export const ExplorationHUD: React.FC = () => {
 
                 {/* Section 2: Exploration Quests */}
                 <div className="space-y-3">
-                  <div className="text-[#888888] font-normal border-b border-[#1A1A1A] pb-2 uppercase tracking-wider font-mono text-[11px]">
+                  <div className="text-[#888888] font-normal border-b border-[#1A1A1A] pb-2 uppercase tracking-wider font-mono text-micro">
                     Exploration Milestones
                   </div>
 
                   <div className="space-y-2">
                     {/* Milestone 1: Landed */}
                     <div className="flex items-start gap-2.5 p-2 rounded-[3px] bg-[#0E0E0E] border border-[#1A1A1A]">
-                      <span className="w-4 h-4 rounded-[2px] bg-white/10 text-white border border-white/20 flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5">
+                      <span className="w-4 h-4 rounded-[2px] bg-white/10 text-white border border-white/20 flex items-center justify-center font-mono text-2xs shrink-0 mt-0.5">
                         ✓
                       </span>
                       <div className="space-y-0.5">
                         <div className="text-[#DDDDDD] font-normal">First Contact</div>
-                        <div className="text-[#777777] text-[11px]">Landed on the portfolio grid.</div>
+                        <div className="text-text-tertiary text-micro">Landed on the portfolio grid.</div>
                       </div>
                     </div>
 
                     {/* Milestone 2: Read about */}
                     <div className="flex items-start gap-2.5 p-2 rounded-[3px] bg-[#0E0E0E] border border-[#1A1A1A]">
                       <span
-                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
+                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-2xs shrink-0 mt-0.5 ${
                           state.visitedRoutes.includes('/about')
                             ? 'bg-white/10 text-white border border-white/20'
-                            : 'border border-[#333333] text-[#555555]'
+                            : 'border border-[#333333] text-text-tertiary'
                         }`}
                       >
                         {state.visitedRoutes.includes('/about') ? '✓' : ''}
                       </span>
                       <div className="space-y-0.5">
                         <div className="text-[#DDDDDD] font-normal">The Backstory</div>
-                        <div className="text-[#777777] text-[11px]">
+                        <div className="text-text-tertiary text-micro">
                           Explored the About page & design philosophy.
                         </div>
                       </div>
@@ -274,10 +274,10 @@ export const ExplorationHUD: React.FC = () => {
                     {/* Milestone 3: Tactile clicks */}
                     <div className="flex items-start gap-2.5 p-2 rounded-[3px] bg-[#0E0E0E] border border-[#1A1A1A]">
                       <span
-                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
+                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-2xs shrink-0 mt-0.5 ${
                           state.clicksCount >= 5
                             ? 'bg-white/10 text-white border border-white/20'
-                            : 'border border-[#333333] text-[#555555]'
+                            : 'border border-[#333333] text-text-tertiary'
                         }`}
                       >
                         {state.clicksCount >= 5 ? '✓' : ''}
@@ -286,7 +286,7 @@ export const ExplorationHUD: React.FC = () => {
                         <div className="text-[#DDDDDD] font-normal">
                           Tactile Sparks ({Math.min(state.clicksCount, 5)}/5)
                         </div>
-                        <div className="text-[#777777] text-[11px]">
+                        <div className="text-text-tertiary text-micro">
                           Triggered the click particle sparks & mechanical clicks.
                         </div>
                       </div>
@@ -295,17 +295,17 @@ export const ExplorationHUD: React.FC = () => {
                     {/* Milestone 4: Raw archive portal */}
                     <div className="flex items-start gap-2.5 p-2 rounded-[3px] bg-[#0E0E0E] border border-[#1A1A1A]">
                       <span
-                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-[10px] shrink-0 mt-0.5 ${
+                        className={`w-4 h-4 rounded-[2px] flex items-center justify-center font-mono text-2xs shrink-0 mt-0.5 ${
                           state.foundPortal
                             ? 'bg-white/10 text-white border border-white/20'
-                            : 'border border-[#333333] text-[#555555]'
+                            : 'border border-[#333333] text-text-tertiary'
                         }`}
                       >
                         {state.foundPortal ? '✓' : ''}
                       </span>
                       <div className="space-y-0.5">
                         <div className="text-[#DDDDDD] font-normal">The Secret Portal</div>
-                        <div className="text-[#777777] text-[11px]">
+                        <div className="text-text-tertiary text-micro">
                           Found the gradual blur portal on the About page.
                         </div>
                       </div>
@@ -315,13 +315,13 @@ export const ExplorationHUD: React.FC = () => {
               </div>
 
               {/* Footer */}
-              <div className="p-4 border-t border-[#1F1F1F] bg-[#0E0E0E] flex items-center justify-between text-[11px] text-[#777777]">
+              <div className="p-4 border-t border-[#1F1F1F] bg-[#0E0E0E] flex items-center justify-between text-micro text-text-tertiary">
                 <button
                   onClick={() => {
                     recordClick();
                     resetProgress();
                   }}
-                  className="text-[#666666] hover:text-[#AAAAAA] underline transition-colors cursor-pointer font-mono"
+                  className="text-text-tertiary hover:text-[#AAAAAA] underline transition-colors cursor-pointer font-mono"
                 >
                   Reset progress
                 </button>

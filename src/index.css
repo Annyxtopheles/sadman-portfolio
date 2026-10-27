@@ -8,9 +8,12 @@
     --color-surface: #0A0A0A;
     --color-surface-hover: #141414;
     --color-border: #1F1F1F;
+    --color-border-subtle: #1F1F1F;
+    --color-border-medium: #2E2E2E;
+    --color-border-strong: #444444;
     --color-foreground: #FFFFFF;
-    --color-text-secondary: #999999;
-    --color-text-tertiary: #666666;
+    --color-text-secondary: #C8C8C8;
+    --color-text-tertiary: #8F8F8F;
     --color-accent: #FFFFFF;
     --radius: 0.25rem;
   }
@@ -20,9 +23,12 @@
     --color-surface: #0A0A0A;
     --color-surface-hover: #141414;
     --color-border: #1F1F1F;
+    --color-border-subtle: #1F1F1F;
+    --color-border-medium: #2E2E2E;
+    --color-border-strong: #444444;
     --color-foreground: #FFFFFF;
-    --color-text-secondary: #999999;
-    --color-text-tertiary: #666666;
+    --color-text-secondary: #C8C8C8;
+    --color-text-tertiary: #8F8F8F;
     --color-accent: #FFFFFF;
   }
 }
@@ -41,9 +47,16 @@
 
   body {
     background-color: #000000;
-    color: #999999;
+    color: #C8C8C8;
     font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+  }
+
+  .font-mono {
+    font-feature-settings: "tnum" 1, "zero" 1;
+    font-variant-numeric: tabular-nums;
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading, .font-display {

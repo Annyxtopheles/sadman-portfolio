@@ -14,7 +14,7 @@ export const LiveSkeleton: React.FC<{ count?: number }> = ({ count = 3 }) => (
 
 export const LiveSectionShell: React.FC<{ eyebrow: string; children: React.ReactNode }> = ({ eyebrow, children }) => (
   <div className="mb-12">
-    <div className="text-[11px] uppercase tracking-wider opacity-60 mb-4">{eyebrow}</div>
+    <div className="text-micro uppercase tracking-wider opacity-60 mb-4">{eyebrow}</div>
     {children}
   </div>
 );

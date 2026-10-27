@@ -7,7 +7,7 @@ const Stars: React.FC<{ rating: number | null }> = ({ rating }) => {
   const full = Math.floor(rating);
   const half = rating - full >= 0.5;
   return (
-    <span className="text-[11px] tracking-wider opacity-80">
+    <span className="text-micro tracking-wider opacity-80">
       {'★'.repeat(full)}{half ? '½' : ''}
     </span>
   );

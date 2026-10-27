@@ -209,7 +209,7 @@ const About: React.FC = () => {
                 <p className="text-xl sm:text-2xl text-[#888888] font-normal pt-0.5">
                   UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                 </p>
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-[#777777] pt-1">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-text-tertiary pt-1">
                   <span>Dhaka, Bangladesh</span>
                   <span className="opacity-40">·</span>
                   <a href="tel:+8801869504388" className="hover:text-[#FFFFFF] transition-colors">
@@ -308,23 +308,23 @@ const About: React.FC = () => {
                 <h3 className="text-base font-normal text-[#FFFFFF]">UI/UX &amp; Design Systems</h3>
                 <ul className="space-y-2 text-xs text-[#999999] leading-relaxed">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Component Libraries &amp; Auto-layout Variants</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Design Tokens &amp; Multi-variable Systems</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Interactive Prototyping &amp; User Flows</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Responsive Web &amp; Mobile Layouts</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Dashboard &amp; Command-Center Interfaces</span>
                   </li>
                 </ul>
@@ -351,23 +351,23 @@ const About: React.FC = () => {
                 <h3 className="text-base font-normal text-[#FFFFFF]">AI-Augmented Workflows</h3>
                 <ul className="space-y-2 text-xs text-[#999999] leading-relaxed">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>AI-Directed Responsive Web Prototyping</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Rapid User Flow Validation Before Engineering</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Local Safetensors &amp; ComfyUI Generation Pipelines</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Local Open-Source LLMs for Competitive Research</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Live Server-Sent Event (SSE) Stream Testing</span>
                   </li>
                 </ul>
@@ -408,23 +408,23 @@ const About: React.FC = () => {
                 <h3 className="text-base font-normal text-[#FFFFFF]">Brand Systems &amp; Visuals</h3>
                 <ul className="space-y-2 text-xs text-[#999999] leading-relaxed">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Vector Identity Systems &amp; Logo Suites</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Enterprise Brand Guidelines &amp; Governance</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Executive Sales Enablement &amp; Diagnostic Decks</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Editorial Carousels &amp; Social Packaging</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Large-Format Print Collateral &amp; Event Signage</span>
                   </li>
                 </ul>
@@ -461,23 +461,23 @@ const About: React.FC = () => {
                 <h3 className="text-base font-normal text-[#FFFFFF]">Growth &amp; Web Discovery</h3>
                 <ul className="space-y-2 text-xs text-[#999999] leading-relaxed">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Direct-Response Ad Creative Design &amp; Testing</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Targeted Campaign Setup &amp; Meta Ads Manager</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>Semantic Heading Hierarchies &amp; Metadata</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>JSON-LD Schemas &amp; Search Console Indexing</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                    <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                     <span>WordPress &amp; Web Content Administration</span>
                   </li>
                 </ul>
@@ -537,19 +537,19 @@ const About: React.FC = () => {
                     </h4>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Alyssa Kristin (Luxury Bridal SaaS):</strong> Designed a connected multi-platform ecosystem spanning a mobile Stylist App, Web Admin CMS, and CRM; praised by the client via internal feedback as "clean, thorough, and easily accessible."</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">StoryGrooveAI:</strong> Performed a 40+ point UX audit and end-to-end redesign of the landing page, pricing tiers, and onboarding flows to reduce friction; recognized by project leadership for taking full ownership under tight deadlines to secure client trust.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">CollabAI Suite:</strong> Led the interface redesign of a multi-agent AI platform, transforming a dense layout into a clean, intuitive dark command-center interface with scannable typography and live streaming canvas.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">ICR Debt Surveillance &amp; InfoFluence:</strong> Designed a 15-module corporate debt and credit surveillance dashboard in Figma with distinct visual alert tiers, and crafted executive diagnostic decks for AWS partner reviews.</span>
                       </li>
                     </ul>
@@ -562,15 +562,15 @@ const About: React.FC = () => {
                     </h4>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">AI Control Tower Suite:</strong> Created complete brand identity systems, logos, OpenGraph social assets, and 10+ comprehensive sales enablement decks for enterprise products (ePhysician, Marketing AI, Client Success AI, MortgageAI, RealtorHelp, Restaurant AI, NonProfit AI).</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Queens AI Week:</strong> Designed the official logo and brand asset package for the Queens Chamber of Commerce × SJ Innovation × Firstlight Cloud Xchange initiative.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">22nd Corporate Anniversary:</strong> Led complete creative direction across 3 global offices (Dhaka, Sylhet, Goa), designing the anniversary identity, stage banners, recognition crests, merchandise packaging, and editing the post-event recap reel.</span>
                       </li>
                     </ul>
@@ -583,11 +583,11 @@ const About: React.FC = () => {
                     </h4>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">LuCreativ / 3i Advertising:</strong> Scaled account from an initial project to sustained, near-daily production across 7+ regional theme parks (Six Flags St. Louis, Valleyfair, Michigan's Adventure, Worlds of Fun, Schlitterbahn Galveston, Enchanted Parks).</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Rapid Reliability:</strong> Praised by external agency leadership for reliable same-day turnarounds, managing high-volume promotional pipelines, and proactively catching layout flaws before publication.</span>
                       </li>
                     </ul>
@@ -600,11 +600,11 @@ const About: React.FC = () => {
                     </h4>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#999999] leading-relaxed">
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Web Discovery &amp; On-Page SEO:</strong> Structured on-page SEO hierarchies, metadata, JSON-LD structured data, and Google Search Console indexing across key company web properties.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#555555] shrink-0 mt-0.5">—</span>
+                        <span className="text-text-tertiary shrink-0 mt-0.5">—</span>
                         <span><strong className="text-[#CCCCCC]">Rapid Prototyping &amp; Paid Social:</strong> Used Google Antigravity and Lovable to convert design concepts into testable browser prototypes prior to engineering. Built Meta ad creative suites that scaled a stalled campaign to ~3.5 qualified leads/day on the same budget.</span>
                       </li>
                     </ul>
@@ -626,7 +626,7 @@ const About: React.FC = () => {
                     <h4 className="text-base font-normal text-[#FFFFFF]">Intern Graphic Designer</h4>
                     <p className="text-xs text-[#888888]">SJ Innovation LLC · Dhaka, Bangladesh</p>
                   </div>
-                  <span className="text-xs font-mono text-[#666666]">May 2025 – Sep 2025</span>
+                  <span className="text-xs font-mono text-text-tertiary">May 2025 – Sep 2025</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
                   Designed 200+ digital and print assets for US client campaigns, including high-converting Meta feed/story ads, technical LinkedIn editorial carousels, and corporate event signage.
@@ -639,7 +639,7 @@ const About: React.FC = () => {
                     <h4 className="text-base font-normal text-[#FFFFFF]">Freelance Graphic &amp; Brand Designer</h4>
                     <p className="text-xs text-[#888888]">Independent Practice · US Businesses</p>
                   </div>
-                  <span className="text-xs font-mono text-[#666666]">March 2025 – April 2025</span>
+                  <span className="text-xs font-mono text-text-tertiary">March 2025 – April 2025</span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
                   Completed 4 client engagements for US businesses (edtech branding, store signage, gym promotional materials) during post-graduation period, delivering logos and brand assets with 100% on-time delivery.
@@ -664,7 +664,7 @@ const About: React.FC = () => {
             <div className="lg:col-span-6 space-y-6">
               {/* Education Box */}
               <div className="p-6 rounded-[4px] bg-[#0A0A0A] border border-[#1F1F1F] space-y-3">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
+                <span className="text-2xs font-mono uppercase tracking-wider text-text-tertiary">
                   Academic Foundation
                 </span>
                 <div className="pb-1">
@@ -672,7 +672,7 @@ const About: React.FC = () => {
                     Diploma in Engineering in Computer Science
                   </h3>
                   <p className="text-xs text-[#888888] pt-0.5">Munshiganj Polytechnic Institute</p>
-                  <p className="text-xs text-[#666666] font-mono pt-1">2021 – 2025 · Graduated with Distinction</p>
+                  <p className="text-xs text-text-tertiary font-mono pt-1">2021 – 2025 · Graduated with Distinction</p>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Combined foundational computer science concepts (algorithms, frontend structures, databases) with autonomous design systems research and campus leadership.
@@ -681,7 +681,7 @@ const About: React.FC = () => {
 
               {/* Certifications Grid */}
               <div className="space-y-3">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[#777777]">
+                <span className="text-2xs font-mono uppercase tracking-wider text-text-tertiary">
                   Verified Certifications ({CERTIFICATIONS.length})
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -695,9 +695,9 @@ const About: React.FC = () => {
                     >
                       <div className="text-xs font-normal text-[#FFFFFF] group-hover:text-[#FFFFFF] flex items-center justify-between">
                         <span className="truncate pr-1">{cert.title}</span>
-                        <span className="text-[#666666] group-hover:text-[#FFFFFF] text-xs transition-colors shrink-0">↗</span>
+                        <span className="text-text-tertiary group-hover:text-[#FFFFFF] text-xs transition-colors shrink-0">↗</span>
                       </div>
-                      <div className="text-[11px] text-[#777777] flex items-center justify-between pt-0.5">
+                      <div className="text-micro text-text-tertiary flex items-center justify-between pt-0.5">
                         <span>{cert.issuer}</span>
                         <span className="font-mono">{cert.date}</span>
                       </div>
@@ -716,7 +716,7 @@ const About: React.FC = () => {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
                     <span>StoryGroove Project Dedication</span>
                   </span>
-                  <span className="text-xs font-mono text-[#555555]">www.storygroove.ai</span>
+                  <span className="text-xs font-mono text-text-tertiary">www.storygroove.ai</span>
                 </div>
                 <blockquote className="text-xs sm:text-sm text-[#CCCCCC] leading-relaxed italic border-l-2 border-[#333333] pl-4">
                   "In the StoryGroove project, your dedication to taking full ownership of the work was instrumental in delivering the end product to the client and ensuring her success. The effort you put in, including working late nights and weekends, was truly impressive and made a noticeable difference for the team. As a result, the client was very satisfied with the outcome, and we were able to strengthen our relationship and build trust and confidence with her."
@@ -786,22 +786,22 @@ const About: React.FC = () => {
                     Munshiganj Polytechnic Institute Rover Scout Group (WOSM) · 2022 – 2025
                   </p>
                 </div>
-                <span className="text-xs font-mono text-[#666666]">CIVIC SERVICE</span>
+                <span className="text-xs font-mono text-text-tertiary">CIVIC SERVICE</span>
               </div>
               <p className="text-xs sm:text-sm text-[#AAAAAA] leading-relaxed">
                 Active member and leader within the Rover Scout section of Bangladesh Scouts (World Organization of the Scout Movement). Participated in troop ceremonies, oath-taking pledges, civic service activities, and national/regional moots while upholding the Scout Promise and Law.
               </p>
               <ul className="space-y-2 text-xs text-[#888888] leading-relaxed">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span className="text-text-tertiary shrink-0 mt-0.5">▪</span>
                   <span>Served in the Service Team at the Golden Jubilee Rover Moot 2023, receiving the official Service Team Award crest with troop peers.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span className="text-text-tertiary shrink-0 mt-0.5">▪</span>
                   <span>Led official troop oath-taking ceremonies, parade formations, and campus civic clean-up operations as an active Rover.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#555555] shrink-0 mt-0.5">▪</span>
+                  <span className="text-text-tertiary shrink-0 mt-0.5">▪</span>
                   <span>Designed institutional branding, roll-up exhibition banners, and commemorative graphics for regional workshops.</span>
                 </li>
               </ul>
@@ -824,7 +824,7 @@ const About: React.FC = () => {
                     <span>🎬</span>
                     <span>Cinema &amp; Human Narrative</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">letterboxd ↗</span>
+                  <span className="text-xs font-mono text-text-tertiary group-hover:text-[#AAAAAA] transition-colors">letterboxd ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Drawn to cinema observing human complexity, discipline, and moral weight — works by Andrei Tarkovsky, Akira Kurosawa, and Park Chan-wook.
@@ -843,7 +843,7 @@ const About: React.FC = () => {
                     <span>🎧</span>
                     <span>Music &amp; Focus</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">last.fm ↗</span>
+                  <span className="text-xs font-mono text-text-tertiary group-hover:text-[#AAAAAA] transition-colors">last.fm ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Atmospheric post-rock (Godspeed You! Black Emperor, Sigur Rós) to extreme metal (Paysage d'Hiver, Ulver) and conscious hip-hop (Kendrick Lamar, MF DOOM).
@@ -862,7 +862,7 @@ const About: React.FC = () => {
                     <span>✍️</span>
                     <span>Writing &amp; Conceptual Worlds</span>
                   </div>
-                  <span className="text-xs font-mono text-[#666666] group-hover:text-[#AAAAAA] transition-colors">szk poetry ↗</span>
+                  <span className="text-xs font-mono text-text-tertiary group-hover:text-[#AAAAAA] transition-colors">szk poetry ↗</span>
                 </div>
                 <p className="text-xs text-[#999999] leading-relaxed">
                   Writing poetry exploring cosmic scale, mortality, and quiet observation since 2017, building conceptual worlds from abstract thoughts.
@@ -988,7 +988,7 @@ const About: React.FC = () => {
                   <p className="text-sm text-[#AAAAAA]">
                     UI/UX Designer | AI-Augmented Prototyping | Brand Systems
                   </p>
-                  <p className="text-xs text-[#777777] pt-1">
+                  <p className="text-xs text-text-tertiary pt-1">
                     Dhaka, Bangladesh · +880 1869 504 388 · sadmanz.khan@gmail.com · linkedin.com/in/sadmanzamankhan · sadmanportfolio.vercel.app
                   </p>
                 </div>

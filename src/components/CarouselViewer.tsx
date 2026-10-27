@@ -106,7 +106,7 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
 
         <div className="flex items-center gap-2 shrink-0">
           {/* Slide counter */}
-          <span className="text-[#888888] font-mono text-[11px] sm:text-xs px-2 py-0.5 rounded-[3px] bg-[#141414] border border-[#222222]">
+          <span className="text-[#888888] font-mono text-micro sm:text-xs px-2 py-0.5 rounded-[3px] bg-[#141414] border border-[#222222]">
             {currentIndex + 1} / {total}
           </span>
 
@@ -117,7 +117,7 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               title="Download full vector document PDF"
-              className="px-2.5 py-1 rounded-[3px] bg-[#1A1A1A] hover:bg-[#2A2A2A] text-[#E5E5E5] border border-[#2E2E2E] hover:border-[#444444] transition-colors text-[11px] font-mono inline-flex items-center gap-1.5 cursor-pointer"
+              className="px-2.5 py-1 rounded-[3px] bg-[#1A1A1A] hover:bg-[#2A2A2A] text-[#E5E5E5] border border-[#2E2E2E] hover:border-[#444444] transition-colors text-micro font-mono inline-flex items-center gap-1.5 cursor-pointer"
             >
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -242,7 +242,7 @@ export const CarouselViewer: React.FC<CarouselViewerProps> = ({
           <span className="truncate pr-4 font-normal text-[#CCCCCC]">
             {currentSlide.caption}
           </span>
-          <span className="font-mono text-[11px] text-[#666666] shrink-0">
+          <span className="font-mono text-micro text-text-tertiary shrink-0">
             Slide {currentIndex + 1} of {total}
           </span>
         </div>

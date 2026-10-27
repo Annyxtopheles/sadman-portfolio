@@ -210,7 +210,7 @@ export const Navbar: React.FC = () => {
               >
                 sadmanz.khan@gmail.com
               </a>
-              <span className="text-[#666666]">Dhaka, Bangladesh · UI/UX Designer</span>
+              <span className="text-text-tertiary">Dhaka, Bangladesh · UI/UX Designer</span>
             </div>
           </div>,
           document.body

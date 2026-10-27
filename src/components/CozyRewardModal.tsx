@@ -74,13 +74,13 @@ export const CozyRewardModal: React.FC = () => {
               <h3 className="text-lg sm:text-xl font-normal tracking-tight text-[#FFFFFF]">
                 Awesome Web Vault
               </h3>
-              <p className="text-xs text-[#777777] font-normal leading-relaxed">
+              <p className="text-xs text-text-tertiary font-normal leading-relaxed">
                 You’ve explored every corner of the portfolio. Enjoy these fun, fascinating corners of the internet.
               </p>
             </div>
             <button
               onClick={() => setIsRewardOpen(false)}
-              className="p-1 rounded-[3px] text-[#777777] hover:text-[#FFFFFF] hover:bg-[#141414] transition-colors"
+              className="p-1 rounded-[3px] text-text-tertiary hover:text-[#FFFFFF] hover:bg-[#141414] transition-colors"
               aria-label="Close reward modal"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,9 +103,9 @@ export const CozyRewardModal: React.FC = () => {
 
           {/* Featured Web Gems Quick Selection */}
           <div className="space-y-2">
-            <div className="flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[#888888]">
+            <div className="flex items-center justify-between text-micro font-mono uppercase tracking-wider text-[#888888]">
               <span>Featured Web Gems</span>
-              <span className="text-[10px] text-[#555555]">Click to preview</span>
+              <span className="text-2xs text-text-tertiary">Click to preview</span>
             </div>
             <div className="grid grid-cols-2 gap-2">
               {REWARD_WEBSITES.slice(0, 4).map((site, sIdx) => {
@@ -125,11 +125,11 @@ export const CozyRewardModal: React.FC = () => {
                       <div className="text-xs font-normal truncate text-[#FFFFFF]">
                         {site.title.split('—')[0].trim()}
                       </div>
-                      <div className="text-[10px] font-mono text-[#666666] truncate">
+                      <div className="text-2xs font-mono text-text-tertiary truncate">
                         {site.tag}
                       </div>
                     </div>
-                    <span className="text-[10px] text-[#555555] shrink-0 font-mono">
+                    <span className="text-2xs text-text-tertiary shrink-0 font-mono">
                       {isSelected ? '●' : '○'}
                     </span>
                   </button>
@@ -142,10 +142,10 @@ export const CozyRewardModal: React.FC = () => {
           <div className="relative rounded-[4px] border border-[#1F1F1F] bg-[#0E0E0E] p-4 space-y-3.5 overflow-hidden">
             {/* Top Row: Tag & Index */}
             <div className="flex items-center justify-between gap-2 text-xs">
-              <span className="px-2 py-0.5 rounded-[2px] text-[10px] font-mono tracking-wider uppercase bg-[#141414] text-[#CCCCCC] border border-[#262626]">
+              <span className="px-2 py-0.5 rounded-[2px] text-2xs font-mono tracking-wider uppercase bg-[#141414] text-[#CCCCCC] border border-[#262626]">
                 {currentSite.tag}
               </span>
-              <span className="text-[11px] font-mono text-[#666666]">
+              <span className="text-micro font-mono text-text-tertiary">
                 {currentIndex + 1} of {REWARD_WEBSITES.length}
               </span>
             </div>
@@ -164,7 +164,7 @@ export const CozyRewardModal: React.FC = () => {
                   <h4 className="text-base font-normal text-[#FFFFFF] tracking-tight">
                     {currentSite.title}
                   </h4>
-                  <span className="text-xs text-[#666666] font-mono truncate max-w-[200px]">
+                  <span className="text-xs text-text-tertiary font-mono truncate max-w-[200px]">
                     {currentSite.url.replace('https://', '').replace('http://', '').replace(/\/$/, '')}
                   </span>
                 </div>
@@ -198,7 +198,7 @@ export const CozyRewardModal: React.FC = () => {
             </div>
 
             {/* Pagination Controls */}
-            <div className="flex items-center justify-between pt-1 border-t border-[#181818] text-[11px] text-[#666666]">
+            <div className="flex items-center justify-between pt-1 border-t border-[#181818] text-micro text-text-tertiary">
               <button
                 type="button"
                 onClick={handlePrev}
@@ -206,7 +206,7 @@ export const CozyRewardModal: React.FC = () => {
               >
                 ← Previous
               </button>
-              <span className="font-mono text-[10px]">
+              <span className="font-mono text-2xs">
                 Browse all {REWARD_WEBSITES.length} websites
               </span>
               <button
@@ -220,8 +220,8 @@ export const CozyRewardModal: React.FC = () => {
           </div>
 
           {/* Footer Controls */}
-          <div className="flex items-center justify-between pt-1 text-xs text-[#666666]">
-            <span className="font-mono text-[11px]">
+          <div className="flex items-center justify-between pt-1 text-xs text-text-tertiary">
+            <span className="font-mono text-micro">
               Tip: Press &quot;Surprise Me&quot; anytime
             </span>
             <button
