@@ -46,16 +46,20 @@ export const Navbar: React.FC = () => {
     };
   }, [isMobileMenuOpen]);
 
-  // Close on Escape key
+  // Close on Escape key and lock body scroll
   useEffect(() => {
     if (!isMobileMenuOpen) return;
+    document.body.style.overflow = 'hidden';
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsMobileMenuOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [isMobileMenuOpen]);
 
   // Close on route change
@@ -130,7 +134,7 @@ export const Navbar: React.FC = () => {
             role="dialog"
             aria-modal="true"
             aria-label="Mobile Navigation"
-            className="md:hidden fixed inset-0 z-[100] flex flex-col justify-between bg-black/85 backdrop-blur-2xl p-0 min-h-[100dvh] overflow-y-auto animate-in fade-in duration-200"
+            className="md:hidden fixed inset-0 z-[100] flex flex-col justify-between bg-black/85 backdrop-blur-2xl p-0 min-h-[100dvh] overflow-y-auto overscroll-contain animate-in fade-in duration-200"
             style={{
               WebkitBackdropFilter: 'blur(28px)',
               backdropFilter: 'blur(28px)',

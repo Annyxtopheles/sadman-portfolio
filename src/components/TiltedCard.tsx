@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import './TiltedCard.css';
 
@@ -30,6 +30,7 @@ export default function TiltedCard({
   showTooltip = false,
 }: TiltedCardProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const lastYRef = useRef(0);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -43,10 +44,11 @@ export default function TiltedCard({
     mass: 1
   });
 
-  const [lastY, setLastY] = useState(0);
-
   function handleMouse(e: React.MouseEvent<HTMLDivElement>) {
     if (!ref.current) return;
+    if (typeof window !== 'undefined' && window.matchMedia && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      return;
+    }
 
     const rect = ref.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left - rect.width / 2;
@@ -61,12 +63,15 @@ export default function TiltedCard({
     x.set(e.clientX - rect.left);
     y.set(e.clientY - rect.top);
 
-    const velocityY = offsetY - lastY;
+    const velocityY = offsetY - lastYRef.current;
     rotateFigcaption.set(-velocityY * 0.6);
-    setLastY(offsetY);
+    lastYRef.current = offsetY;
   }
 
   function handleMouseEnter() {
+    if (typeof window !== 'undefined' && window.matchMedia && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      return;
+    }
     scale.set(scaleOnHover);
     opacity.set(1);
   }

@@ -59,6 +59,31 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ——— View Transitions API Enhancements ——— */
+  @view-transition {
+    navigation: auto;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 240ms;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  ::view-transition-old(project-hero),
+  ::view-transition-new(project-hero) {
+    animation-duration: 380ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
+  }
+
   h1, h2, h3, h4, h5, h6, .font-heading, .font-display {
     font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
     color: #FFFFFF;

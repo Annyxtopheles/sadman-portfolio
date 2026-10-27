@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   TESTIMONIALS_ROW_1,
   TESTIMONIALS_ROW_2,
@@ -35,6 +35,8 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
 );
 
 export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
+  const [isPaused, setIsPaused] = useState(false);
+
   // Duplicate arrays for seamless infinite loop without breaks
   const row1Duplicated = [...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1, ...TESTIMONIALS_ROW_1];
   const row2Duplicated = [...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2, ...TESTIMONIALS_ROW_2];
@@ -42,10 +44,19 @@ export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHe
   return (
     <section className={`overflow-hidden ${hideHeader ? 'py-4' : 'py-12'}`}>
       {!hideHeader && (
-        <div className="px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 mb-8">
+        <div className="px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20 mb-8 flex items-center justify-between">
           <h2 className="text-2xl sm:text-3xl font-normal text-[#FFFFFF]">
             What People Say
           </h2>
+          <button
+            type="button"
+            onClick={() => setIsPaused((prev) => !prev)}
+            aria-label={isPaused ? "Resume marquee scroll" : "Pause marquee scroll"}
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[3px] bg-[#121212] hover:bg-[#1A1A1A] border border-[#262626] text-micro font-mono text-text-tertiary hover:text-white transition-colors cursor-pointer select-none"
+          >
+            <span>{isPaused ? '▶' : '⏸'}</span>
+            <span>{isPaused ? 'Resume' : 'Pause'}</span>
+          </button>
         </div>
       )}
 
@@ -57,7 +68,11 @@ export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHe
 
         {/* Row 1: Right to Left */}
         <div className="group flex overflow-hidden w-full">
-          <div className="flex gap-5 shrink-0 animate-scroll-left group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform">
+          <div
+            className={`flex gap-5 shrink-0 animate-scroll-left group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform ${
+              isPaused ? '[animation-play-state:paused]' : ''
+            }`}
+          >
             {row1Duplicated.map((item, idx) => (
               <TestimonialCard key={`row1-${item.id}-${idx}`} item={item} />
             ))}
@@ -66,7 +81,11 @@ export const TestimonialsMarquee: React.FC<{ hideHeader?: boolean }> = ({ hideHe
 
         {/* Row 2: Left to Right */}
         <div className="group flex overflow-hidden w-full">
-          <div className="flex gap-5 shrink-0 animate-scroll-right group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform">
+          <div
+            className={`flex gap-5 shrink-0 animate-scroll-right group-hover:[animation-play-state:paused] hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] will-change-transform ${
+              isPaused ? '[animation-play-state:paused]' : ''
+            }`}
+          >
             {row2Duplicated.map((item, idx) => (
               <TestimonialCard key={`row2-${item.id}-${idx}`} item={item} />
             ))}
