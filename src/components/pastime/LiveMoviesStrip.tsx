@@ -25,10 +25,10 @@ export const LiveMoviesStrip: React.FC<{ username?: string | null }> = ({ userna
               <div className="aspect-[21/9] overflow-hidden border border-foreground bg-muted">
                 {m.poster ? (
                   <img src={m.poster} alt={m.title} loading="lazy"
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter] duration-[400ms] ease" />
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter] duration-300 ease" />
                 ) : <div className="w-full h-full bg-accent-surface" />}
               </div>
-              <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-[400ms]">
+              <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-300">
                 {m.title}{m.year ? <span className="opacity-60"> · {m.year}</span> : null}
               </h3>
               <div className="flex items-center gap-2 mt-1">

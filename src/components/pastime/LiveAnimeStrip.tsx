@@ -16,10 +16,10 @@ export const LiveAnimeStrip: React.FC<{ username?: string | null }> = ({ usernam
                 <div className="aspect-[21/9] overflow-hidden border border-foreground bg-muted">
                   {img ? (
                     <img src={img} alt={a.title} loading="lazy"
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter] duration-[400ms] ease" />
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter] duration-300 ease" />
                   ) : <div className="w-full h-full bg-accent-surface" />}
                 </div>
-                <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-[400ms]">{a.title}</h3>
+                <h3 className="text-base font-medium mt-3 truncate group-hover:text-accent-ink transition-colors duration-300">{a.title}</h3>
                 <p className="text-[11px] uppercase tracking-wider opacity-60 mt-1">
                   EP {a.progress}{a.total ? `/${a.total}` : ''}{a.score ? ` · ★ ${a.score}` : ''}
                 </p>

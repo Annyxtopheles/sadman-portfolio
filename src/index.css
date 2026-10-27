@@ -1,6 +1,3 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Noto+Serif+Bengali:wght@400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -278,13 +275,6 @@
   font-display: block;
 }
 
-/* ——— Isolated poetry viewer canvas ——— */
-@font-face {
-  font-family: 'CustomAntique';
-  src: url('/__l5e/assets-v1/421adcdc-a02e-47e5-8b76-551690f41c80/CaslonAntique.ttf') format('truetype');
-  font-display: swap;
-}
-
 .poetry-canvas {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
@@ -293,15 +283,15 @@
   transition: font-family 350ms ease, line-height 350ms ease, letter-spacing 350ms ease;
 }
 
-/* Antique — font swap only, no color/background changes */
+/* Antique mode — using IM Fell English */
 .poetry-canvas.antique .poem-body {
-  font-family: 'CustomAntique', 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+  font-family: 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
   line-height: 1.45;
   letter-spacing: 0.005em;
   font-weight: 400;
 }
 .poetry-canvas.antique .poem-title {
-  font-family: 'CustomAntique', 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+  font-family: 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
   letter-spacing: 0.01em;
 }
 

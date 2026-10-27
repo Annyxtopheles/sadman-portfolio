@@ -8,13 +8,15 @@ import { GrainOverlay } from "@/components/GrainOverlay";
 import { PageTransition } from "@/components/PageTransition";
 import { HeroHoverProvider } from "@/context/HeroHoverContext";
 import { AudioProvider } from "@/context/AudioContext";
+import { Suspense, lazy } from "react";
 import { Routes, Route, useLocation, Navigate, useParams } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Home from "./pages/Home";
-import Work from "./pages/Work";
-import CaseStudyDetail from "./pages/CaseStudyDetail";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+
+const Home = lazy(() => import("./pages/Home"));
+const Work = lazy(() => import("./pages/Work"));
+const CaseStudyDetail = lazy(() => import("./pages/CaseStudyDetail"));
+const About = lazy(() => import("./pages/About"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 import ClickSpark from "@/components/ClickSpark";
 import AmbientStarfield from "@/components/AmbientStarfield";
 import { ExplorationProvider } from "@/context/ExplorationContext";
@@ -35,18 +37,20 @@ const AnimatedRoutes = () => {
       <ScrollToTop />
       <Navbar />
       <AnimatePresence mode="wait" initial={false}>
-        <PageTransition routeKey={location.pathname}>
-          <Routes location={location}>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/work/:slug" element={<CaseStudyDetail />} />
-            <Route path="/portfolio" element={<Navigate to="/work" replace />} />
-            <Route path="/portfolio/:slug" element={<PortfolioSlugRedirect />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/profile" element={<Navigate to="/about" replace />} />
-            <Route path="/contact" element={<Navigate to="/about" replace />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+        <PageTransition key={location.pathname} routeKey={location.pathname}>
+          <Suspense fallback={<div className="min-h-screen bg-black" />}>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/work/:slug" element={<CaseStudyDetail />} />
+              <Route path="/portfolio" element={<Navigate to="/work" replace />} />
+              <Route path="/portfolio/:slug" element={<PortfolioSlugRedirect />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/profile" element={<Navigate to="/about" replace />} />
+              <Route path="/contact" element={<Navigate to="/about" replace />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </PageTransition>
       </AnimatePresence>
     </>
