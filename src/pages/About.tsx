@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer';
 import { useExploration } from '@/context/ExplorationContext';
 import { ArtifactCollage, ArtifactImage } from '@/components/ArtifactCollage';
 import { TestimonialsMarquee } from '@/components/home/TestimonialsMarquee';
-import { BorderGlow } from '@/components/effects/BorderGlow';
+import { PortalCtaButton } from '@/components/home/PortalCtaButton';
 import { PERSON_JSON_LD, CANONICAL_SITE_URL } from '@/data/siteSettings';
 
 interface CertificationItem {
@@ -884,63 +884,37 @@ const About: React.FC = () => {
         </section>
 
         {/* =========================================================================
-            SECTION 7: Gateway to Personal Archive (SZK Cosmic Atmosphere)
+            SECTION 7: Portal to Personal Archive (SZK Cosmic Atmosphere)
         ========================================================================= */}
-        <section ref={portalRef} className="relative pt-12 pb-16 overflow-hidden">
-          <div className="max-w-4xl mx-auto space-y-10 text-center">
-            <div className="space-y-3">
-              <span className="font-scanport text-[15pt] lowercase tracking-wider text-[#7DD3FC]">
-                beyond the corporate showcase
-              </span>
-              <h2 className="font-fell text-4xl sm:text-5xl md:text-6xl font-normal lowercase tracking-tight text-[#F8FAFC]">
-                gateway to personal archive
+        <section ref={portalRef} className="px-6 md:px-12 py-10 sm:py-14 border-t border-[#1F1F1F]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <h2 className="text-sm font-medium tracking-wide lowercase text-[#7DD3FC]/80">
+                portal to personal archive
               </h2>
             </div>
 
-            <div className="relative w-full flex items-center justify-center">
-              <a
-                href="https://sadmanzamankhan.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => recordPortalFound()}
-                className="group block w-full cursor-pointer select-none no-underline"
-              >
-                <BorderGlow
-                  borderRadius={28}
-                  glowRadius={140}
-                  glowIntensity={1.4}
-                  coneSpread={28}
-                  edgeSensitivity={20}
-                  glowColor="205 85 55"
-                  backgroundColor="#060A10"
-                  colors={['#38BDF8', '#0EA5E9', '#0284C7', '#1E3A5F', '#67E8F9']}
-                  fillOpacity={0.25}
-                  className="w-full aspect-[16/10] min-h-[360px] sm:min-h-[440px] shadow-2xl transition-transform duration-300 rounded-[28px]"
-                >
-                  <div className="relative w-full h-full overflow-hidden rounded-[26px]">
-                    <img
-                      src="/assets/projects/szk-mockup.webp"
-                      alt="Sadman Zaman Khan Personal Archive Live Preview"
-                      className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                    />
+            <a
+              href="https://sadmanzamankhan.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => recordPortalFound()}
+              className="group block w-full border border-[#1F1F1F] rounded-xl overflow-hidden bg-[#060A10] relative cursor-pointer transition-all duration-500 hover:border-[#38BDF8]/40 hover:shadow-[0_8px_30px_rgba(56,189,248,0.12)]"
+            >
+              <div className="aspect-[16/7] sm:aspect-[28/9] max-h-[220px] sm:max-h-[260px] w-full relative overflow-hidden">
+                <img
+                  src="/assets/projects/szk-mockup.webp"
+                  alt="Sadman Zaman Khan Personal Archive Live Preview"
+                  className="w-full h-full object-cover object-top opacity-55 saturate-[75%] group-hover:opacity-90 group-hover:saturate-100 transition-all duration-700 ease-out group-hover:scale-[1.01]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#060A10]/75 via-[#060A10]/25 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/15 transition-colors duration-500" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#060910]/90 via-[#060910]/35 to-transparent group-hover:via-[#060910]/20 transition-colors duration-300" />
-
-                    <div className="absolute inset-0 flex items-center justify-center z-10 p-4 pointer-events-none">
-                      <div className="pointer-events-auto px-8 py-3.5 sm:px-9 sm:py-4 rounded-full bg-[#F8FAFC] hover:bg-[#FFFFFF] text-[#060A10] shadow-[0_0_30px_rgba(56,189,248,0.25)] border border-[#BAE6FD] transition-all duration-300 group-hover:scale-105 flex items-center justify-center gap-3 font-scanport text-base sm:text-lg lowercase tracking-normal cursor-pointer">
-                        <span>enter personal archive</span>
-                        <span
-                          aria-hidden="true"
-                          className="inline-block shrink-0 text-base leading-none transition-transform duration-300 ease-out group-hover:-rotate-45"
-                        >
-                          →
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </BorderGlow>
-              </a>
-            </div>
+                <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <PortalCtaButton />
+                </div>
+              </div>
+            </a>
           </div>
         </section>
       </main>
