@@ -54,11 +54,6 @@
     overflow-x: hidden;
   }
 
-  .font-mono {
-    font-feature-settings: "tnum" 1, "zero" 1;
-    font-variant-numeric: tabular-nums;
-  }
-
   /* ——— View Transitions API Enhancements ——— */
   @view-transition {
     navigation: auto;

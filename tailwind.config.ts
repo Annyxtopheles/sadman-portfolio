@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         'display': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'sans': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
-        'mono': ['"Geist Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        'mono': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'heading': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
         'fell': ['"IM Fell English"', 'Georgia', 'serif'],
         'bengali': ['"Noto Serif Bengali"', 'Georgia', 'serif'],
